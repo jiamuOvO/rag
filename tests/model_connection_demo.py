@@ -1,4 +1,4 @@
-"""Minimal diagnostic for the project's OpenAI-compatible chat provider."""
+"""Minimal Chat and Embedding connection diagnostic for the real app providers."""
 
 from __future__ import annotations
 
@@ -7,10 +7,7 @@ import json
 import os
 import sys
 import time
-import urllib.error
 from pathlib import Path
-from urllib.parse import urlsplit, urlunsplit
-
 
 PROJECT_DIR = Path(__file__).resolve().parents[1]
 SRC_DIR = PROJECT_DIR / "src"
@@ -18,112 +15,85 @@ if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
 from rag.config import Settings  # noqa: E402
-from rag.errors import RagError  # noqa: E402
 from rag.models import Evidence  # noqa: E402
-from rag.providers import OpenAICompatibleProvider  # noqa: E402
+from rag.providers import OpenAICompatibleEmbeddingProvider, OpenAICompatibleProvider  # noqa: E402
 
 
-def safe_endpoint(base_url: str | None) -> str | None:
-    """Return the endpoint without credentials, query parameters, or fragments."""
-    if not base_url:
-        return None
-    parts = urlsplit(base_url.rstrip("/") + "/chat/completions")
-    hostname = parts.hostname or ""
-    if ":" in hostname and not hostname.startswith("["):
-        hostname = f"[{hostname}]"
-    netloc = hostname
-    if parts.port:
-        netloc += f":{parts.port}"
-    return urlunsplit((parts.scheme, netloc, parts.path, "", ""))
+def check(name: str, operation) -> dict:
+    started = time.perf_counter()
+    try:
+        detail = operation()
+        return {"ok": True, "elapsed_ms": round((time.perf_counter() - started) * 1000, 1), **detail}
+    except Exception as exc:
+        cause = exc.__cause__
+        return {
+            "ok": False,
+            "elapsed_ms": round((time.perf_counter() - started) * 1000, 1),
+            "error_code": getattr(exc, "code", f"{name.upper()}_CHECK_FAILED"),
+            "exception_type": type(exc).__name__,
+            "cause_type": type(cause).__name__ if cause else None,
+            "http_status": getattr(cause, "code", None),
+            "message": str(exc),
+        }
 
 
-def emit(payload: dict) -> None:
-    print(json.dumps(payload, ensure_ascii=False, indent=2))
-
-
-def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="只测试大模型连接，不执行检索或入库。")
-    parser.add_argument(
-        "--config",
-        type=Path,
-        default=Path(__file__).with_name("config_test.yaml"),
-        help="测试配置文件路径（默认：tests/config_test.yaml）",
-    )
-    return parser.parse_args()
+def check_embedding(settings: Settings) -> dict:
+    vectors = OpenAICompatibleEmbeddingProvider(settings).embed(["endpoint connection check"])
+    return {"model": settings.embedding_model, "vector_count": len(vectors), "dimensions": len(vectors[0])}
 
 
 def main() -> int:
-    args = parse_args()
+    parser = argparse.ArgumentParser(description="检查 Chat 和 Embedding 两个 OpenAI-compatible 接口。")
+    parser.add_argument("--config", type=Path, default=Path(__file__).with_name("config_test.yaml"))
+    args = parser.parse_args()
     config_path = args.config.expanduser().resolve()
     os.environ["RAG_CONFIG_FILE"] = str(config_path)
-    started = time.perf_counter()
 
     try:
         if not config_path.is_file():
             raise FileNotFoundError(f"配置文件不存在: {config_path}")
-
         settings = Settings.load()
-        endpoint = safe_endpoint(settings.chat_base_url)
-        missing = []
-        if settings.chat_provider != "openai_compatible":
-            missing.append("chat.provider 必须是 openai_compatible")
-        if not settings.chat_base_url or "REPLACE_WITH_" in settings.chat_base_url:
-            missing.append("请在 config_test.yaml 中填写真实 chat.base_url")
-        if not settings.chat_model or "REPLACE_WITH_" in settings.chat_model:
-            missing.append("请在 config_test.yaml 中填写真实 chat.model")
+        missing_keys = []
         if not settings.chat_api_key:
-            missing.append("当前终端未设置 RAG_CHAT_API_KEY")
-        if missing:
-            emit({
-                "success": False,
-                "error_code": "CHAT_CONFIG_MISSING",
-                "problems": missing,
-                "config": str(config_path),
-                "endpoint": endpoint,
-                "api_key_present": bool(settings.chat_api_key),
-            })
-            return 1
+            missing_keys.append("Chat API Key")
+        if not settings.embedding_api_key:
+            missing_keys.append("Embedding API Key")
+        if missing_keys:
+            raise ValueError("当前进程未设置: " + ", ".join(missing_keys))
 
-        provider = OpenAICompatibleProvider(settings)
         evidence = [Evidence(
-            evidence_id="demo-evidence-1",
-            chunk_id="demo-chunk-1",
-            paper_id="demo-paper-1",
-            paper_name="Connection test",
-            page_start=1,
-            page_end=1,
-            section_path="test",
-            excerpt="The connection test value is 42.",
-            score=1.0,
+            evidence_id="endpoint-check-1", chunk_id="endpoint-check-1",
+            paper_id="endpoint-check", paper_name="Endpoint check",
+            page_start=1, page_end=1, section_path="test",
+            excerpt="The endpoint check value is 42.", score=1.0,
         )]
-        answer = provider.answer("What is the connection test value?", evidence)
-        emit({
-            "success": True,
-            "provider": settings.chat_provider,
+        chat = check("chat", lambda: {
             "model": settings.chat_model,
-            "endpoint": endpoint,
-            "elapsed_ms": round((time.perf_counter() - started) * 1000, 1),
-            "answer": answer,
+            "answer_preview": OpenAICompatibleProvider(settings)
+            .answer("What is the endpoint check value?", evidence)[:160],
         })
-        return 0
+        embedding = check("embedding", lambda: check_embedding(settings))
+        result = {
+            "success": chat["ok"] and embedding["ok"],
+            "config": str(config_path),
+            "chat_api_key_present": True,
+            "embedding_api_key_present": True,
+            "chat": chat,
+            "embedding": embedding,
+        }
     except Exception as exc:
-        cause = exc.__cause__
-        http_status = cause.code if isinstance(cause, urllib.error.HTTPError) else None
-        emit({
+        result = {
             "success": False,
-            "error_code": exc.code if isinstance(exc, RagError) else "CHAT_TEST_FAILED",
+            "config": str(config_path),
+            "error_code": "MODEL_CHECK_SETUP_FAILED",
             "exception_type": type(exc).__name__,
-            "cause_type": type(cause).__name__ if cause else None,
-            "http_status": http_status,
             "message": str(exc),
-            "elapsed_ms": round((time.perf_counter() - started) * 1000, 1),
-            "hints": {
-                "401_or_403": "API Key 无效、权限不足，或该服务不接受 Bearer 认证。",
-                "404": "base_url 通常应以 /v1 结尾；也请确认模型服务兼容 /chat/completions。",
-                "timeout_or_url_error": "检查 base_url、网络、代理、防火墙以及服务是否启动。",
-            },
-        })
-        return 1
+        }
+
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    return 0 if result["success"] else 1
 
 
 if __name__ == "__main__":

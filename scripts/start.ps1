@@ -43,7 +43,7 @@ if (-not $env:RAG_SESSION_SECRET) {
 
 Write-Host "Checking Chat and Embedding endpoints..."
 if (-not $SkipModelCheck) {
-    & python .\tests\model_endpoints_check.py --config $ResolvedConfig
+    & python .\tests\model_connection_demo.py --config $ResolvedConfig
     if ($LASTEXITCODE -ne 0) {
         throw "Model endpoint check failed. Fix the chat/embedding configuration shown above."
     }
