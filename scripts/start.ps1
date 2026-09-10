@@ -14,11 +14,19 @@ $ResolvedConfig = (Resolve-Path -LiteralPath $ConfigPath -ErrorAction Stop).Path
 $env:RAG_CONFIG_FILE = $ResolvedConfig
 
 if (-not $env:RAG_CHAT_API_KEY) {
-    $SecureKey = Read-Host "Enter model API Key (input is hidden)" -AsSecureString
+    $SecureKey = Read-Host "Enter Chat API Key (input is hidden)" -AsSecureString
     $PlainKey = [Net.NetworkCredential]::new("", $SecureKey).Password
     if ([string]::IsNullOrWhiteSpace($PlainKey)) { throw "API Key cannot be empty." }
     $env:RAG_CHAT_API_KEY = $PlainKey
     $PlainKey = $null
+}
+
+if (-not $env:RAG_EMBEDDING_API_KEY) {
+    $SecureEmbeddingKey = Read-Host "Enter Embedding API Key (input is hidden)" -AsSecureString
+    $PlainEmbeddingKey = [Net.NetworkCredential]::new("", $SecureEmbeddingKey).Password
+    if ([string]::IsNullOrWhiteSpace($PlainEmbeddingKey)) { throw "Embedding API Key cannot be empty." }
+    $env:RAG_EMBEDDING_API_KEY = $PlainEmbeddingKey
+    $PlainEmbeddingKey = $null
 }
 
 if (-not $env:RAG_SESSION_SECRET) {

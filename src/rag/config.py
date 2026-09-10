@@ -75,7 +75,7 @@ class Settings:
         data = Path(os.getenv("RAG_DATA_DIR", _nested(config, "paths", "data_dir", str(project / "data")))).resolve()
         var = Path(os.getenv("RAG_VAR_DIR", _nested(config, "paths", "var_dir", str(project / "var")))).resolve()
         key_env = str(_nested(config, "chat", "api_key_env", "RAG_CHAT_API_KEY"))
-        embedding_key_env = str(_nested(config, "embedding", "api_key_env", key_env))
+        embedding_key_env = str(_nested(config, "embedding", "api_key_env", "RAG_EMBEDDING_API_KEY"))
         embedding_base_url = _nested(config, "embedding", "base_url")
         return cls(
             project_dir=project,

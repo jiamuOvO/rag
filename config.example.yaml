@@ -26,7 +26,7 @@ embedding:
   model: "Qwen3-Embedding-0.6B"
   timeout_seconds: 60
   batch_size: 10
-  api_key_env: RAG_CHAT_API_KEY
+  api_key_env: RAG_EMBEDDING_API_KEY
 
 reranker:
   # disabled by default; lexical_coverage is an explainable offline baseline.

@@ -47,7 +47,7 @@
 - 新增本地 [config.yaml](./config.yaml) 与可复制模板 [config.example.yaml](./config.example.yaml)。普通模型配置写入 YAML，API Key 只从 `RAG_CHAT_API_KEY` 等环境变量读取。
 - `config.yaml` 和 `.env` 已加入 `.gitignore`；如果 YAML 中出现明文 `chat.api_key` 或 `embedding.api_key`，程序会拒绝启动。
 - 配置 `Qwen3.6-35B-A3B` 作为答案生成模型，负责依据检索证据组织回答和引用。
-- 配置 `Qwen3-Embedding-0.6B` 作为向量模型，负责生成论文 chunk 向量和问题向量；两个模型使用不同 model、不同 base URL，但共用同一个 API Key。
+- 配置 `Qwen3-Embedding-0.6B` 作为向量模型，负责生成论文 chunk 向量和问题向量；两个模型使用不同 model、base URL 和 API Key。
 - 新增 OpenAI-compatible Embedding 接口、批量请求、返回数量/维度/有限值校验，以及 SQLite float32 向量持久化。
 - 检索升级为 BM25 关键词召回与 Dense 余弦相似度召回，再通过 Reciprocal Rank Fusion（RRF）融合排名。
 - 新增 embedding 模型名、provider、向量维度和数量检查；切换模型或维度时必须重建向量，禁止混用不同版本。
@@ -67,7 +67,7 @@ PDF 发现 → 文本提取 ─┬→ 结构感知切块 → Qwen Embedding → 
           每个阶段：request_id / run_id / paper_id + JSONL 耗时和错误码
 ```
 
-当前配置预留 Qwen3-Embedding-0.6B 做语义检索、Qwen3.6-35B-A3B 做答案生成。两者分别配置 model 和 base URL，但通过 `api_key_env` 共用同一个环境变量中的 API Key。未填写有效 base URL/Key 或服务失败时会明确标记降级并使用 BM25/抽取式证据，不会悄悄自由生成。
+当前配置预留 Qwen3-Embedding-0.6B 做语义检索、Qwen3.6-35B-A3B 做答案生成。两者分别配置 model、base URL 和 `api_key_env`，默认使用独立的 API Key 环境变量。未填写有效 base URL/Key 或服务失败时会明确标记降级并使用 BM25/抽取式证据，不会悄悄自由生成。
 
 ## 1. 快速开始（Conda + PowerShell）
 
@@ -75,7 +75,7 @@ PDF 发现 → 文本提取 ─┬→ 结构感知切块 → Qwen Embedding → 
 
 ### 一键安全启动
 
-`scripts/start.ps1` 会隐藏读取一次 API Key，仅保存到当前进程环境中，不写入配置、磁盘或命令历史；同时自动生成临时会话签名密钥。启动前会分别发送一个最小请求检查 Chat `/chat/completions` 与 Embedding `/embeddings`，只有两个接口都可用才启动网站：
+`scripts/start.ps1` 会分别隐藏读取 Chat 与 Embedding API Key，仅保存到当前进程环境中，不写入配置、磁盘或命令历史；同时自动生成临时会话签名密钥。启动前会分别发送一个最小请求检查 Chat `/chat/completions` 与 Embedding `/embeddings`，只有两个接口都可用才启动网站：
 
 ```powershell
 conda activate rag_lijia
@@ -85,7 +85,7 @@ Set-Location -LiteralPath 'F:\RAG\Li_Jia'
 
 模型地址与模型 ID 仍放在本地 `config.yaml`，API Key 不得写入 YAML。诊断输出只显示 Key 是否存在，不显示 Key 内容。需要使用其他配置文件时可传入 `-ConfigPath`。
 
-更新记录（2026-09-10 10 时，Asia/Shanghai）：新增隐藏输入单个共享 API Key、临时会话密钥、Chat/Embedding 双接口启动前检查及一键启动脚本。
+更新记录（2026-09-10 10 时，Asia/Shanghai）：新增 Chat/Embedding 两个独立 API Key 的隐藏输入、临时会话密钥、双接口启动前检查及一键启动脚本。
 
 ```powershell
 Set-Location -LiteralPath 'F:\RAG\Li_Jia'
@@ -201,13 +201,14 @@ embedding:
   model: "Qwen3-Embedding-0.6B"
   timeout_seconds: 60
   batch_size: 10
-  api_key_env: RAG_CHAT_API_KEY
+  api_key_env: RAG_EMBEDDING_API_KEY
 ```
 
 启动程序前，在当前 PowerShell 会话注入 Key：
 
 ```powershell
 $env:RAG_CHAT_API_KEY = '你的密钥'
+$env:RAG_EMBEDDING_API_KEY = '你的 Embedding 密钥'
 conda activate rag_lijia
 python -m rag.cli doctor
 python -m rag.cli serve
@@ -228,6 +229,7 @@ python -m rag.cli serve
 | `RAG_CHAT_PROVIDER` | `extractive` | 可设为 `openai_compatible` |
 | `RAG_CHAT_BASE_URL` | 空 | OpenAI-compatible `/v1` 根地址 |
 | `RAG_CHAT_API_KEY` | 空 | 名称可由 `chat.api_key_env` 改写；只从环境读取，不写日志 |
+| `RAG_EMBEDDING_API_KEY` | 空 | 名称可由 `embedding.api_key_env` 改写；只从环境读取，不写日志 |
 | `RAG_CHAT_MODEL` | 空 | 生成模型名 |
 | `RAG_CHAT_TIMEOUT_SECONDS` | `60` | 模型请求超时 |
 | `RAG_EMBEDDING_PROVIDER` | YAML 配置 | 可设为 `openai_compatible` 或 `disabled` |
@@ -247,6 +249,7 @@ OpenAI-compatible 示例：
 $env:RAG_CHAT_PROVIDER = 'openai_compatible'
 $env:RAG_CHAT_BASE_URL = 'https://your-service.example/v1'
 $env:RAG_CHAT_API_KEY = 'your-secret'
+$env:RAG_EMBEDDING_API_KEY = 'your-embedding-secret'
 $env:RAG_CHAT_MODEL = 'your-model'
 python -m rag.cli query "Summarize the reported furfural yields."
 ```

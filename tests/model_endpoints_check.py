@@ -47,8 +47,13 @@ def main() -> int:
 
     try:
         settings = Settings.load()
+        missing_keys = []
         if not settings.chat_api_key:
-            raise ValueError("当前进程未设置配置中 api_key_env 指定的 API Key 环境变量")
+            missing_keys.append("Chat API Key")
+        if not settings.embedding_api_key:
+            missing_keys.append("Embedding API Key")
+        if missing_keys:
+            raise ValueError("当前进程未设置: " + ", ".join(missing_keys))
 
         evidence = [Evidence(
             evidence_id="endpoint-check-1", chunk_id="endpoint-check-1",
@@ -66,7 +71,8 @@ def main() -> int:
         result = {
             "success": chat["ok"] and embedding["ok"],
             "config": str(config_path),
-            "api_key_present": True,
+            "chat_api_key_present": True,
+            "embedding_api_key_present": True,
             "chat": chat,
             "embedding": embedding,
         }
