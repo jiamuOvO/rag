@@ -14,9 +14,9 @@ $ResolvedConfig = (Resolve-Path -LiteralPath $ConfigPath -ErrorAction Stop).Path
 $env:RAG_CONFIG_FILE = $ResolvedConfig
 
 if (-not $env:RAG_CHAT_API_KEY) {
-    $SecureKey = Read-Host "请输入模型 API Key（输入内容不会显示）" -AsSecureString
+    $SecureKey = Read-Host "Enter model API Key (input is hidden)" -AsSecureString
     $PlainKey = [Net.NetworkCredential]::new("", $SecureKey).Password
-    if ([string]::IsNullOrWhiteSpace($PlainKey)) { throw "API Key 不能为空。" }
+    if ([string]::IsNullOrWhiteSpace($PlainKey)) { throw "API Key cannot be empty." }
     $env:RAG_CHAT_API_KEY = $PlainKey
     $PlainKey = $null
 }
@@ -27,13 +27,13 @@ if (-not $env:RAG_SESSION_SECRET) {
     $env:RAG_SESSION_SECRET = [Convert]::ToHexString($SessionBytes)
 }
 
-Write-Host "正在检查 Chat 与 Embedding 接口..."
+Write-Host "Checking Chat and Embedding endpoints..."
 if (-not $SkipModelCheck) {
     & python .\tests\model_endpoints_check.py --config $ResolvedConfig
     if ($LASTEXITCODE -ne 0) {
-        throw "模型接口检查未通过，网站未启动。请根据上方 chat/embedding 结果修正配置。"
+        throw "Model endpoint check failed. Fix the chat/embedding configuration shown above."
     }
 }
 
-Write-Host "模型接口检查通过，正在启动 http://${HostAddress}:$Port/"
+Write-Host "Model endpoint check passed. Starting http://${HostAddress}:$Port/"
 & python -m rag.cli serve --host $HostAddress --port $Port
