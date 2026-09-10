@@ -1,0 +1,26 @@
+services:
+  rag-web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      RAG_DATA_DIR: /app/data
+      RAG_VAR_DIR: /app/var
+      RAG_CHAT_PROVIDER: ${RAG_CHAT_PROVIDER:-extractive}
+      RAG_EMBEDDING_PROVIDER: ${RAG_EMBEDDING_PROVIDER:-disabled}
+      RAG_ADMIN_PASSWORD_HASH: ${RAG_ADMIN_PASSWORD_HASH:?set RAG_ADMIN_PASSWORD_HASH}
+      RAG_SESSION_SECRET: ${RAG_SESSION_SECRET:?set RAG_SESSION_SECRET}
+      RAG_COOKIE_SECURE: ${RAG_COOKIE_SECURE:-0}
+      RAG_RERANKER_PROVIDER: ${RAG_RERANKER_PROVIDER:-disabled}
+      RAG_STRUCTURED_EXTRACTION_ENABLED: ${RAG_STRUCTURED_EXTRACTION_ENABLED:-0}
+    volumes:
+      - ./data:/app/data:ro
+      - rag-var:/app/var
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+volumes:
+  rag-var:

@@ -1,10 +1,23 @@
-# rag
-关于生物质和呋喃小分子的rag系统
-# Li_Jia 科研论文 RAG（v0.1 baseline）
+# Li_Jia 科研论文 RAG（v0.2 可审计 Web）
 
-> 最后更新时间：2026-09-09 11:00（Asia/Shanghai，精确到小时）
+> 最后更新时间：2026-09-09 15:00（Asia/Shanghai，精确到小时）
 
 ## 更新记录
+
+### 2026-09-09 15:00：备份与容器端到端验收
+
+- 新增非覆盖式 SQLite 在线 `backup` 命令；真实库快照通过完整性检查并保留 18 篇论文、258 页、929 chunks 和迁移 v10。
+- Docker Compose 镜像完成实际构建；首次 smoke 暴露 OpenCV GUI 动态库问题，改用固定版本 headless OpenCV，并增加有限 pip 重试、超时和 BuildKit 缓存。
+- 修复后容器达到 healthy 且 `/ready=true`；RapidOCR 可导入，首页返回 200。
+- 在只读 `data` 与独立 volume 上完成容器单篇入库（18 页、38 chunks）及 HTTP 严格范围问答，首条证据定位第 7 页并包含 130°C / 71.1%。
+- 自动化回归保持 25 项全通过，并新增对 embedding、reranker、引用绑定和 OCR 降级日志的直接断言。
+
+### 2026-09-09 14:00：真实语料恢复与最终回归
+
+- 完整语料安全重建发现并修复 SI 外键替换顺序问题；失败事务均已回滚，随后逐篇重试成功，原始 PDF、SI 与本地秘密配置未修改。
+- 当前真实库为 18 篇论文、258 个物理页面、929 chunks 和 9 个 SI 登记；34 个 OCR 页面中 5 页明确保存为 `OCR_NO_TEXT`。
+- 项目 `.venv` 中自动化回归全部通过；其中直接覆盖管理员重试权限、`parent_run_id` 血缘及引用回查入口，轻量真实语料评测为 6/6。
+- 真实浏览器进一步验证重复 PDF 上传去重，以及从回答证据一键跳到正确论文并展开对应页面 chunk 的回查闭环。
 
 ### 2026-09-09 11:00：浏览器验收、结构化抽取与诊断集
 
@@ -43,7 +56,7 @@
 - 修复 SQLite 每个连接都启用外键约束，确保 `ingest --force` 能事务化替换论文、chunks 和旧向量。
 - 自动化回归测试更新为 11 项，覆盖 Dense 检索、RRF、YAML/环境变量密钥分离、明文密钥拒绝及强制重建。
 
-当前状态：代码已经支持两个模型，但 `config.yaml` 中的 `base_url` 仍为空，API Key 也未由用户注入，因此现有 929 个 chunks 尚未生成向量，`embedding_index.count` 当前为 `0`。填写配置后需要运行 `python -m rag.cli ingest --force`。
+当前状态：代码已经支持两个模型，但本机尚未提供可验证的模型 URL/API Key，因此现有 929 个 chunks 尚未生成向量，`embedding_index.count` 当前为 `0`。注入配置后先运行 `python -m rag.cli backup`，再运行 `python -m rag.cli embed`；无需重新解析 PDF 或 OCR。
 
 这是一个面向生物质与呋喃论文的小规模、可诊断 RAG 第一版。它不复制旧项目中依赖缺失、异常吞没和不稳定 ID 的实现，而是提供一条可独立运行的基线：
 
@@ -59,6 +72,20 @@ PDF 发现 → 文本提取 ─┬→ 结构感知切块 → Qwen Embedding → 
 ## 1. 快速开始（Conda + PowerShell）
 
 推荐使用已经创建好的 Conda 环境 `rag_lijia`：
+
+### 一键安全启动
+
+`scripts/start.ps1` 会隐藏读取一次 API Key，仅保存到当前进程环境中，不写入配置、磁盘或命令历史；同时自动生成临时会话签名密钥。启动前会分别发送一个最小请求检查 Chat `/chat/completions` 与 Embedding `/embeddings`，只有两个接口都可用才启动网站：
+
+```powershell
+conda activate rag_lijia
+Set-Location -LiteralPath 'F:\RAG\Li_Jia'
+.\scripts\start.ps1
+```
+
+模型地址与模型 ID 仍放在本地 `config.yaml`，API Key 不得写入 YAML。诊断输出只显示 Key 是否存在，不显示 Key 内容。需要使用其他配置文件时可传入 `-ConfigPath`。
+
+更新记录（2026-09-10 10 时，Asia/Shanghai）：新增隐藏输入单个共享 API Key、临时会话密钥、Chat/Embedding 双接口启动前检查及一键启动脚本。
 
 ```powershell
 Set-Location -LiteralPath 'F:\RAG\Li_Jia'
@@ -113,7 +140,7 @@ Docker Compose 使用相同两个必填秘密环境变量：
 docker compose up --build
 ```
 
-`data` 在容器中以只读卷挂载，运行数据库、上传和日志保存在独立 `rag-var` 卷。若通过 HTTPS 反向代理公开服务，将 `RAG_COOKIE_SECURE=1`。本机本轮 Compose 配置校验通过；由于 Docker Desktop 引擎未启动，镜像实际构建仍需在引擎可用后复验。
+`data` 在容器中以只读卷挂载，运行数据库、上传和日志保存在独立 `rag-var` 卷。若通过 HTTPS 反向代理公开服务，将 `RAG_COOKIE_SECURE=1`。本机 Compose 配置、镜像构建和容器 smoke 均已通过。容器使用 headless OpenCV，避免为 OCR 引入 Mesa/X11 GUI 运行库；pip 设置有限重试、120 秒读取超时和 BuildKit 缓存，以适应较慢网络。
 
 ## 2. CLI 与 API
 
@@ -128,6 +155,8 @@ CLI：
 | `serve` | 启动 FastAPI 服务 |
 | `hash-password` | 交互式生成 PBKDF2 管理员密码哈希，不把密码写入命令历史 |
 | `evaluate [--cases PATH]` | 运行轻量诊断问题集并返回每例 request_id 和失败环节提示 |
+| `embed` | 不重新解析/OCR，原子重建全部向量；失败时保留旧索引 |
+| `backup [--output PATH]` | 使用 SQLite 在线备份创建一致快照；默认写入 `var/backups`，拒绝覆盖已有文件 |
 
 HTTP：
 
@@ -228,12 +257,13 @@ python -m rag.cli query "Summarize the reported furfural yields."
 
 ```powershell
 python -m rag.cli doctor
-python -m rag.cli ingest --force
+python -m rag.cli backup
+python -m rag.cli embed
 ```
 
-`doctor` 中 `embedding_configured` 应为 `true`；入库结束后 `embedding_index.count` 应等于 chunk 数。切换 embedding 模型或维度后也必须执行 `--force`，不同模型的向量不会混用。
+`doctor` 中 `embedding_configured` 应为 `true`；`embed` 完成后 `embedding_index.count` 应等于 chunk 数。切换 embedding 模型或维度后也应执行 `embed`，不同模型的向量不会混用。
 
-注意：`--force` 会重新解析 PDF 和 OCR，并产生约 93 个 embedding 批请求（当前 929 chunks、批大小 10）。请先确认服务配额和费用。后续应增加“仅补向量、不重新解析 PDF”的独立维护命令。
+注意：当前 929 chunks、批大小 10 时，`embed` 会产生约 93 个 embedding 批请求。请先确认服务配额和费用。向量先写入临时表，全部成功后再原子替换；调用失败不会破坏现有索引。
 
 ## 4. 如何快速定位错误
 
@@ -265,10 +295,13 @@ Get-Content .\var\logs\rag.jsonl | Select-String 'run_xxx'
 Li_Jia/
 ├─ data/                 原始正文 PDF、SI ZIP、论文清单（不修改）
 ├─ src/rag/              解析、切块、存储、检索、生成、CLI/API
+│  └─ web/               同源浏览器应用（问答、论文、任务、诊断）
 ├─ tests/                单元与端到端测试
 ├─ scripts/              安装及 OCR smoke test
 ├─ var/                  运行生成：SQLite 和 JSONL（不提交）
 ├─ requirements.lock.txt 固定的第一版依赖
+├─ Dockerfile / compose.yaml 轻量单服务部署
+├─ 现状审计-2026-09-09.md  当前实现、数据协议与限制审计
 └─ 旧项目RAG技术复用评估.md
 ```
 
@@ -279,13 +312,16 @@ Li_Jia/
 ```powershell
 python -m pytest -q
 python .\scripts\smoke_ocr.py
+python -m rag.cli evaluate
 ```
 
-第一条覆盖稳定 ID、化学/数值 token、中英文 token、切块链接与 overlap、BM25、证据格式、脱敏、合成 PDF 端到端、幂等、论文范围约束和 API 校验。第二条只 OCR `1922_Commercial_Furfural_scanned.pdf` 前两页，验证扫描件路径而不耗时处理整本。
+测试现为 25 项，覆盖稳定 ID、切块来源、BM25/Dense/RRF/reranker、无证据拒答、引用绑定与一键回查、页面与查询快照、持久任务/中断、管理员认证、上传校验、重试血缘、一致性备份、正常生成及所有主要降级路径。OCR smoke 只处理历史扫描件前两页。`evaluate` 运行 6 个真实语料案例并返回每例 request_id。
 
 真实数据验收使用 `ingest` 返回的 `counts` 核对 discovered、succeeded、failed、pages、ocr_pages、chunks 和 attachments。
 
-本机 2026-09-08 的整批 smoke test：发现 18 篇 PDF；此前已入库的 1 篇被幂等跳过，其余 17 篇成功、0 篇失败；本轮处理 234 个有效页面、34 个 OCR 页面、生成 886 个新 chunks，并登记 9 个 SI。1922 扫描件有 5 个页面未识别出文字，但论文仍有 29 个有效页面并成功入库；这些页面保留 `OCR_NO_TEXT` 状态，没有伪装成正常页面。总耗时约 268 秒，主要消耗在历史扫描件 OCR。
+本机 2026-09-09 完整重建：18 篇论文、258 个物理页面、929 chunks、9 个 SI 登记。1922 扫描件 34 页全部触发 OCR，29 页有文本，5 页保存为 `OCR_NO_TEXT`，论文和全库运行均标为 `partial_failed`。重建曾暴露 SI 外键替换顺序问题；失败事务全部回滚，修复后 9 篇逐篇重试成功，原始 PDF/SI 未修改。
+
+真实浏览器已验证登录、重复上传去重、中文问答、引用一键回查、论文列表、OCR 页面/错误/置信度、chunk 关系、任务列表和 request_id 候选诊断。轻量问题集为 6/6；其中无关量子问题明确拒答。Docker Compose 镜像已实际构建；容器内 `/ready=true`、RapidOCR 可导入，单篇论文入库得到 18 页/38 chunks，HTTP 查询严格命中该论文第 7 页并返回含 71.1% 的 evidence。
 
 在完整语料的 20 次查询微基准中，未缓存版本平均约 236 ms/次；开启与关闭阶段日志分别约 233 ms 与 236 ms，差异落在运行波动内，未观察到明显日志开销。HTTP 常驻进程缓存全库 BM25 索引，入库后自动失效重建；缓存后的实测查询约 3.4 ms。CLI 每次启动需从 SQLite 恢复一次。
 
@@ -301,6 +337,11 @@ python .\scripts\smoke_ocr.py
 - 查询向量余弦召回，以及 BM25 与 Dense 排名的 RRF 融合。
 - 用户指定论文范围、无证据拒答、稳定 evidence ID、页码原文引用。
 - CLI、HTTP API、运行状态、逐论文失败隔离、结构化错误和轻量耗时日志。
+- 同源 Web 应用、PBKDF2 管理员认证、HttpOnly 会话、受控 PDF 访问和严格上传校验。
+- SQLite 持久任务、重复任务规则、重启中断标记、关联重试和逐阶段组件版本。
+- 页面、chunk、不可变查询候选、最终回答、provider/model/prompt 版本和抽取记录的复核 API。
+- 默认关闭的可解释 reranker 与 `reaction-evidence-v1` 结构化抽取原型。
+- Dockerfile/Compose，其中原始 `data` 只读挂载、运行数据使用独立 volume。
 
 ### 只是跑通链路的 Demo，需要优化
 
@@ -308,18 +349,24 @@ python .\scripts\smoke_ocr.py
 - 标题识别和结构切块使用启发式规则，对双栏阅读顺序、跨页段落及复杂版式不保证正确。
 - 中文问英文依赖共享术语、化学名和数值，尚不是跨语言语义检索。
 - BM25、Dense 与 RRF 参数尚未用标注问题集校准。
-- HTTP 入库任务使用进程内线程；进程重启时不会恢复正在运行的任务。
-- 整批入库当前按文件名串行处理；扫描件排在前面时会推迟现代文本 PDF，应在后续改成 OCR 独立队列和受控并行。
+- 后台执行器是单进程、单 worker 的 SQLite 队列；重启会真实标记中断并允许重试，但不支持多个 Uvicorn worker 并发抢占。
+- 整批入库按文件名串行处理；当前数据量可接受，扫描件会拉长总耗时。
 - OCR 是通用英文模型，历史字体、表格、上下标及化学式可能识别错误。
 - 引用表明使用了哪个检索文本块，不等于逐声明的科学蕴含验证。
 
 ### 仍然缺失
 
-- Reranker、经过评测的检索阈值和领域检索评测集。
+- 经人工标注扩充的检索阈值与 citation precision/recall 评测；现有 6 例只用于回归和故障归因。
 - 表格单元格、图片/图注、公式、bbox、对象级证据和 SI 内容解析。
-- 生物质/底物/催化剂/产物领域 Schema、同义词、实体及单位归一。
-- 结构化反应记录抽取、JSON Schema 校验、冲突检测和人工复核队列。
-- 逐声明引用验证、citation precision/recall、固定问答评测集与回归指标。
-- 持久任务队列、鉴权、限流、多进程协调、前端、容器及生产监控。
+- 更完整的催化剂/溶剂词典、单位换算、跨 evidence 实验条件组装和人工复核队列；当前 Schema 原型保守且可关闭。
+- 逐声明自然语言蕴含验证；当前只验证模型引用 ID 必须来自本次上下文。
+- 多进程协调、限流、外部指标系统和 TLS 反向代理配置。
+- 真实 chat/embedding 服务的正常路径验证（代码路径已有确定性集成测试；未提供外部模型 URL/Key 时按设计显式降级）。
 
 这些边界与 `旧项目RAG技术复用评估.md` 的结论一致：旧项目提供了方向参考，但其硬编码密钥、吞异常、文件名 ID、未验证阈值和缺失模块没有进入本实现。
+
+## 8. 依赖、资源与离线影响
+
+本轮没有新增第三方 Python 依赖，继续使用锁定版本。FastAPI/Pydantic 为 MIT，Uvicorn 为 BSD-3-Clause，NumPy 为 BSD，PyYAML 为 MIT，RapidOCR 代码为 Apache-2.0、ONNX Runtime 为 MIT。PyMuPDF 采用 AGPL/商业双许可证，若网站以不符合 AGPL 的方式对外分发或提供修改版，应在部署前由交付方确认商业许可证或完整 AGPL 合规方案。
+
+当前规模下 SQLite、BM25 和向量矩阵均驻留单机即可。常规文本 PDF 主要消耗 CPU 与磁盘；历史扫描件 OCR 是峰值 CPU/内存与耗时来源。929 个 float32 向量的磁盘量取决于模型维度，远小于引入独立向量数据库的固定成本。安装阶段需要 PyPI 或预先准备的 wheel 缓存；运行时 PyMuPDF、RapidOCR、BM25 和 `lexical_coverage` 可离线工作，OpenAI-compatible chat/embedding 需要配置的模型服务可达。模型不可达时系统显式降级，不会伪装正常回答。

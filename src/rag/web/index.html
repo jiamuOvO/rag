@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PaperTrace RAG</title><link rel="stylesheet" href="/assets/style.css"></head>
+<body><header><div><span class="eyebrow">RESEARCH EVIDENCE SYSTEM</span><h1>PaperTrace</h1></div><div id="health" class="pill">检查服务…</div></header>
+<nav><button data-view="ask" class="active">问答</button><button data-view="papers">论文</button><button data-view="tasks">任务</button><button data-view="login">管理员</button></nav>
+<main>
+ <section id="ask" class="view active"><div class="hero"><h2>从论文原文中寻找答案</h2><p>支持中英文问题。每条结果均可回查论文、页码与证据片段。</p></div><div class="panel"><textarea id="question" placeholder="例如：木糖制糠醛的最高收率及反应条件是什么？"></textarea><div class="row"><select id="scope" multiple></select><button id="askBtn" class="primary">检索并回答</button></div></div><div id="answer"></div></section>
+ <section id="papers" class="view"><div class="section-title"><div><h2>论文库</h2><p>解析状态、OCR 覆盖与可复核入口</p></div><label class="upload">上传 PDF<input id="upload" type="file" accept="application/pdf"></label></div><div id="paperList" class="grid"></div><div id="inspect" class="panel hidden"></div></section>
+ <section id="tasks" class="view"><div class="section-title"><div><h2>处理与诊断</h2><p>使用 run_id 或 request_id 追踪阶段、候选与失败原因</p></div><button id="runsBtn">刷新近期任务</button></div><div id="runsList" class="grid"></div><div class="panel"><input id="runId" placeholder="run_id"><button id="runBtn">查询任务</button><input id="requestId" placeholder="request_id"><button id="queryDiagBtn">查询检索诊断</button><pre id="runResult"></pre></div></section>
+ <section id="login" class="view"><div class="panel narrow"><h2>管理员登录</h2><p>上传、PDF 原文和诊断信息受到保护。</p><input id="password" type="password" placeholder="管理员密码"><button id="loginBtn" class="primary">登录</button><p id="loginState"></p></div></section>
+</main><div id="toast"></div><script src="/assets/app.js"></script></body></html>

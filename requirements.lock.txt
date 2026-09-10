@@ -1,0 +1,11 @@
+# Generated/validated baseline pins for Python 3.11. Install with:
+#   py -3.11 -m pip install -r requirements.lock.txt
+fastapi==0.115.12
+uvicorn[standard]==0.34.2
+pymupdf==1.25.5
+rapidocr-onnxruntime==1.4.4
+numpy==2.2.5
+PyYAML==6.0.3
+httpx==0.28.1
+pytest==8.3.5
+reportlab==4.4.0

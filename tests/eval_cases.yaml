@@ -1,0 +1,21 @@
+version: 1
+cases:
+  - id: zh_query_en_paper
+    question: 木糖制糠醛的收率和反应条件是什么？
+    required_terms: [xylose, furfural]
+  - id: chemical_abbreviation_hmf
+    question: What conditions were reported for HMF production from fructose?
+    required_terms: [hmf, fructose]
+  - id: exact_temperature_yield
+    question: Which xylose experiment reported 71.1% furfural yield at 130 C?
+    required_terms: [71.1, 130]
+  - id: single_paper_scope
+    question: What furfural yield was obtained from xylose?
+    paper_names: [2019_furfural_from_biomass_SnCl4_PMC6384620.pdf]
+    required_terms: [furfural]
+  - id: cross_paper_question
+    question: Compare reported furfural yields from xylose across papers.
+    required_terms: [furfural, xylose]
+  - id: no_evidence_refusal
+    question: What quantum entanglement lifetime was measured for superconducting zebra qubits?
+    expected_mode: refusal
