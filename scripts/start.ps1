@@ -23,8 +23,14 @@ if (-not $env:RAG_CHAT_API_KEY) {
 
 if (-not $env:RAG_SESSION_SECRET) {
     [byte[]]$SessionBytes = [byte[]]::new(32)
-    [Security.Cryptography.RandomNumberGenerator]::Fill($SessionBytes)
-    $env:RAG_SESSION_SECRET = [Convert]::ToHexString($SessionBytes)
+    $RandomGenerator = [Security.Cryptography.RandomNumberGenerator]::Create()
+    try {
+        $RandomGenerator.GetBytes($SessionBytes)
+    }
+    finally {
+        $RandomGenerator.Dispose()
+    }
+    $env:RAG_SESSION_SECRET = [BitConverter]::ToString($SessionBytes).Replace("-", "")
 }
 
 Write-Host "Checking Chat and Embedding endpoints..."
