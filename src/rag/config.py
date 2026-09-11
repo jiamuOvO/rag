@@ -67,6 +67,9 @@ class Settings:
     embedding_batch_size: int = 10
     reranker_provider: str = "disabled"
     structured_extraction_enabled: bool = False
+    default_tenant_id: str = "default"
+    temp_document_ttl_hours: int = 24
+    conversation_context_messages: int = 6
 
     @classmethod
     def load(cls) -> "Settings":
@@ -113,6 +116,9 @@ class Settings:
                 "RAG_STRUCTURED_EXTRACTION_ENABLED",
                 _nested(config, "structured_extraction", "enabled"), False,
             ),
+            default_tenant_id=os.getenv("RAG_DEFAULT_TENANT_ID", "default"),
+            temp_document_ttl_hours=int(os.getenv("RAG_TEMP_DOCUMENT_TTL_HOURS", "24")),
+            conversation_context_messages=int(os.getenv("RAG_CONVERSATION_CONTEXT_MESSAGES", "6")),
         )
 
     def ensure_runtime_dirs(self) -> None:

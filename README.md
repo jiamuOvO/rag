@@ -1,8 +1,71 @@
-# Li_Jia 科研论文 RAG（v0.2 可审计 Web）
+# Li_Jia 科研论文 RAG（v0.3 多作用域模块）
 
-> 最后更新时间：2026-09-09 15:00（Asia/Shanghai，精确到小时）
+## 当前状态快照（2026-09-11）
+
+- 真实 SQLite 已迁移到 schema v14，`integrity_check=ok`、WAL 开启、外键检查无违规。
+- 官方物理语料保持 18 篇论文、258 页、929 chunks 和 929 embeddings；18 个官方逻辑文档全部归入默认官方库。
+- 官方库、用户私人库和会话临时资料已在数据、权限、SQL 召回、PDF 和 evidence 回查层实现隔离。
+- 自动化回归为 36/36，OpenAPI 3.1 可生成（35 条路径），真实语料评测为 6/6。
+- 真实浏览器已验证会话恢复、私人/临时 PDF 上传、TTL、提升、多作用域问答、证据面板、管理员三页和窄屏抽屉。
+- 当前默认可以在模型不可用时显式降级到 BM25/抽取式证据；真实外部 Chat/Embedding 生产链路仍需部署方提供有效服务地址和密钥后验证。
+
+## v0.3 多作用域架构（2026-09-10）
+
+本项目是可嵌入上层业务的科研 RAG 子模块，不承担完整用户中心。核心边界为：
+
+- `Principal(tenant_id, subject, roles, auth_method)` 由 FastAPI 统一依赖解析；生产默认不信任 `X-User-ID`。现有管理员 HttpOnly 会话继续兼容。开发身份仅在 `RAG_DEV_AUTH_ENABLED=1` 且 `RAG_ENV!=production` 时接受 `X-RAG-Dev-Subject`。
+- `collections` 区分 `official`、`private`、`temporary`；现有 18 篇论文由幂等迁移自动映射到 `col_official_default`，旧 `paper_id/chunk_id` 保持不变。
+- `collection_documents` 是作用域内逻辑文档。相同内容可以安全映射到多个作用域，共享稳定的物理论文解析结果；列表、检索、证据和 PDF 均从逻辑文档做服务端授权。删除最后一个逻辑引用时才级联删除 pages、chunks 和 embeddings。迁移 v13/v14 同时把租户、会话、选中 collection 和逻辑来源固化进查询候选快照。
+- 私人和临时检索通过 SQL join 在候选构建前过滤，不能先搜全库再由前端隐藏。临时资料还必须匹配当前 conversation 且未超过 `expires_at`。
+- `conversations/messages` 保存标题、用户问题、独立检索问题字段、回答、引用和时间；每轮引用仍绑定本轮候选 evidence ID。
+- 临时文件默认 24 小时 TTL。后台工作线程会从持久数据库重复扫描，管理员 API 和 `cleanup-temp` CLI 可手动触发；文件删除只允许在 `var/private` 与 `var/temporary` 管理根目录下进行。
+
+### 新增 HTTP API
+
+| 方法与路径 | 说明 |
+| --- | --- |
+| `GET/POST /v1/conversations` | 列出或创建自己的会话 |
+| `GET/PATCH/DELETE /v1/conversations/{id}` | 恢复、重命名或删除自己的会话 |
+| `GET/POST /v1/collections` | 列出可访问知识库或创建私人研究库 |
+| `PATCH/DELETE /v1/collections/{id}` | 重命名或删除自己的私人库；官方库只读 |
+| `GET/POST /v1/collections/{id}/documents` | 搜索/列出或异步上传私人 PDF |
+| `GET/POST /v1/conversations/{id}/documents` | 列出或异步上传本会话临时 PDF |
+| `DELETE /v1/documents/{id}` | 删除自己的私人/临时逻辑文档及受控文件 |
+| `GET /v1/documents/{id}/status` | 查看自己的异步处理阶段和安全错误摘要 |
+| `POST /v1/documents/{id}/promote` | 将临时文档保存到指定私人库 |
+| `GET /v1/documents/{id}/pdf` | 经作用域授权读取 PDF |
+| `POST /v1/retrieve` | 仅执行 BM25 + Dense + RRF + 可选 reranker，不调用生成模型 |
+| `GET /v1/evidence/{evidence_id}` | 经作用域授权返回来源、论文、页码、章节和原文 |
+| `POST /v1/admin/temporary-documents/cleanup` | 管理员幂等清理过期临时资料 |
+| `GET /v1/queries` | 管理员查看近期查询状态、错误阶段与耗时 |
+
+`POST /v1/query` 保持旧 `question/top_k/paper_ids` 字段，并增加：
+
+```json
+{
+  "question": "这些条件下产率如何？",
+  "conversation_id": "conv_...",
+  "collection_ids": ["col_..."],
+  "include_official": true,
+  "top_k": 8
+}
+```
+
+未带私人范围的旧请求保持官方库兼容。指定私人库或 conversation 时必须具有已验证身份。响应证据增加 `document_id`、`collection_id` 和 `source_type`（`official/private/temporary`）。
+
+### 上层系统接入条件
+
+生产接入方需要提供可信身份适配器，将 JWT、可信反向代理身份或内部服务凭据转换为 `Principal`，并明确 tenant、subject 与 roles。可以向 `app.state.principal_resolver` 注入上层 JWT 解析器，或配置 `RAG_TRUSTED_IDENTITY_SECRET` 使用带 60 秒时效 HMAC 签名的 `X-RAG-Tenant/Subject/Roles/Identity-Timestamp/Identity-Signature` 可信代理协议。部署必须提供 `RAG_SESSION_SECRET`、管理员密码哈希以及模型密钥环境变量；不得开启开发身份头。当前实现不绑定特定厂商 JWT/JWKS，以免把本模块变成另一个用户中心。
+
+> 最后更新时间：2026-09-11 10:00（Asia/Shanghai，精确到小时）
 
 ## 更新记录
+
+### 2026-09-11 10:00：v0.3 多作用域真实浏览器验收
+
+- 实测新建、恢复和重命名会话，创建和重命名私人研究库，私人/临时 PDF 上传到 `ready`，临时资料到期时间和提升，三作用域问答与旁边证据面板。
+- 实测管理员文档处理、retrieve-only 排名和运行日志；390×844 视口下证据面板正确变为抽屉。
+- 修复共享物理论文的 evidence 回查丢失逻辑来源、临时上传值残留，以及内置浏览器不支持原生 `prompt/confirm` 的交互问题。
 
 ### 2026-09-09 15:00：备份与容器端到端验收
 
@@ -56,7 +119,7 @@
 - 修复 SQLite 每个连接都启用外键约束，确保 `ingest --force` 能事务化替换论文、chunks 和旧向量。
 - 自动化回归测试更新为 11 项，覆盖 Dense 检索、RRF、YAML/环境变量密钥分离、明文密钥拒绝及强制重建。
 
-当前状态：代码已经支持两个模型，但本机尚未提供可验证的模型 URL/API Key，因此现有 929 个 chunks 尚未生成向量，`embedding_index.count` 当前为 `0`。注入配置后先运行 `python -m rag.cli backup`，再运行 `python -m rag.cli embed`；无需重新解析 PDF 或 OCR。
+当前状态：代码已支持独立 Chat 和 Embedding provider。真实库现有 929 个 chunks 和 929 条同维度 embedding；切换 embedding provider、model 或维度时仍必须先执行非覆盖备份，再用 `python -m rag.cli embed` 原子重建，不需重新解析 PDF 或 OCR。本次最终浏览器验收使用抽取式 provider，不将其当作外部生成模型的正常路径验证。
 
 这是一个面向生物质与呋喃论文的小规模、可诊断 RAG 第一版。它不复制旧项目中依赖缺失、异常吞没和不稳定 ID 的实现，而是提供一条可独立运行的基线：
 
@@ -365,6 +428,13 @@ python -m rag.cli evaluate
 - 逐声明自然语言蕴含验证；当前只验证模型引用 ID 必须来自本次上下文。
 - 多进程协调、限流、外部指标系统和 TLS 反向代理配置。
 - 真实 chat/embedding 服务的正常路径验证（代码路径已有确定性集成测试；未提供外部模型 URL/Key 时按设计显式降级）。
+
+### 后续更新方向
+
+1. **短期：生产链路硬化。** 接入真实 Chat/Embedding 服务做正常路径、超时、限流和费用验收；配置可靠的 JWT/JWKS 或可信反向代理身份适配器；补充 TLS、Secret Manager、备份恢复演练与运维告警。
+2. **中期：提升检索可测性。** 扩展经人工标注的问题集，计算 retrieval/citation precision、recall 和拒答质量，再校准 BM25、Dense、RRF、reranker 及无证据阈值。
+3. **中长期：增强科研证据粒度。** 按真实业务优先级增加表格单元格、图注、公式、bbox、SI 和声明级蕴含验证，不在没有标注数据时冒进构建 GraphRAG 或复杂 Agent 平台。
+4. **规模化后：拆分执行层。** 当单进程 SQLite 队列成为瓶颈时，再引入可租约的多 worker 任务队列、外部指标系统和容量规划。
 
 这些边界与 `旧项目RAG技术复用评估.md` 的结论一致：旧项目提供了方向参考，但其硬编码密钥、吞异常、文件名 ID、未验证阈值和缺失模块没有进入本实现。
 

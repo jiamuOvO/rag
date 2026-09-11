@@ -214,8 +214,15 @@ def test_authenticated_browser_upload_and_review_flow(tmp_path: Path, monkeypatc
         assert answer["request_id"]
         frontend = client.get("/assets/app.js").text
         assert "回查原文" in frontend and "reviewEvidence" in frontend
+        homepage = client.get("/").text
+        assert all(label in homepage for label in (
+            "历史会话", "我的研究库", "临时 PDF", "文档处理", "检索测试", "运行日志"
+        ))
         diagnostic = client.get(f"/v1/queries/{answer['request_id']}")
         assert diagnostic.status_code == 200 and diagnostic.json()["candidates"]
+        recent_queries = client.get("/v1/queries")
+        assert recent_queries.status_code == 200
+        assert answer["request_id"] in {item["request_id"] for item in recent_queries.json()["items"]}
 
 
 def test_model_embedding_and_reranker_failures_are_explicit(tmp_path: Path, monkeypatch):

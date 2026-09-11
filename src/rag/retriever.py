@@ -103,6 +103,9 @@ class BM25Retriever:
                 section_path=chunk["section_path"],
                 excerpt=chunk["text"][:1600],
                 score=round(score, 6),
+                document_id=chunk.get("document_id"),
+                collection_id=chunk.get("collection_id"),
+                source_type=chunk.get("scope_type", "official"),
             ))
             if len(evidence) >= top_k:
                 break
@@ -140,6 +143,9 @@ class DenseRetriever:
                 paper_name=chunk["paper_name"], page_start=chunk["page_start"],
                 page_end=chunk["page_end"], section_path=chunk["section_path"],
                 excerpt=chunk["text"][:1600], score=round(score, 6),
+                document_id=chunk.get("document_id"),
+                collection_id=chunk.get("collection_id"),
+                source_type=chunk.get("scope_type", "official"),
             ))
         return result
 

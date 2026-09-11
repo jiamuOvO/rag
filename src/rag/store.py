@@ -158,6 +158,77 @@ ALTER TABLE query_runs ADD COLUMN answer_text TEXT;
     (10, """
 ALTER TABLE run_stages ADD COLUMN paper_id TEXT;
 """),
+    (11, """
+CREATE TABLE IF NOT EXISTS principals (
+  tenant_id TEXT NOT NULL, subject TEXT NOT NULL, created_at TEXT NOT NULL,
+  PRIMARY KEY(tenant_id, subject)
+);
+CREATE TABLE IF NOT EXISTS collections (
+  collection_id TEXT PRIMARY KEY, tenant_id TEXT NOT NULL, name TEXT NOT NULL,
+  scope_type TEXT NOT NULL CHECK(scope_type IN ('official','private','temporary')),
+  owner_id TEXT, conversation_id TEXT, created_at TEXT NOT NULL, updated_at TEXT NOT NULL,
+  CHECK((scope_type='official' AND owner_id IS NULL AND conversation_id IS NULL) OR
+        (scope_type='private' AND owner_id IS NOT NULL AND conversation_id IS NULL) OR
+        (scope_type='temporary' AND owner_id IS NOT NULL AND conversation_id IS NOT NULL))
+);
+CREATE INDEX IF NOT EXISTS idx_collections_access ON collections(tenant_id,scope_type,owner_id);
+CREATE TABLE IF NOT EXISTS conversations (
+  conversation_id TEXT PRIMARY KEY, tenant_id TEXT NOT NULL, owner_id TEXT NOT NULL,
+  title TEXT NOT NULL, created_at TEXT NOT NULL, updated_at TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_conversations_owner ON conversations(tenant_id,owner_id,updated_at);
+CREATE TABLE IF NOT EXISTS messages (
+  message_id TEXT PRIMARY KEY, conversation_id TEXT NOT NULL REFERENCES conversations(conversation_id) ON DELETE CASCADE,
+  role TEXT NOT NULL CHECK(role IN ('user','assistant')), content TEXT NOT NULL,
+  request_id TEXT, original_question TEXT, retrieval_question TEXT,
+  citations_json TEXT NOT NULL DEFAULT '[]', created_at TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_messages_conversation ON messages(conversation_id,created_at);
+CREATE TABLE IF NOT EXISTS collection_documents (
+  document_id TEXT PRIMARY KEY, collection_id TEXT NOT NULL REFERENCES collections(collection_id) ON DELETE CASCADE,
+  paper_id TEXT NOT NULL REFERENCES papers(paper_id) ON DELETE RESTRICT,
+  tenant_id TEXT NOT NULL, owner_id TEXT, scope_type TEXT NOT NULL,
+  conversation_id TEXT, expires_at TEXT, status TEXT NOT NULL DEFAULT 'ready',
+  source_name TEXT NOT NULL, stored_path TEXT, created_at TEXT NOT NULL,
+  UNIQUE(collection_id,paper_id)
+);
+CREATE INDEX IF NOT EXISTS idx_collection_documents_scope ON collection_documents(tenant_id,scope_type,owner_id,conversation_id,expires_at);
+CREATE INDEX IF NOT EXISTS idx_collection_documents_paper ON collection_documents(paper_id);
+CREATE TABLE IF NOT EXISTS cleanup_events (
+  cleanup_id TEXT PRIMARY KEY, document_id TEXT NOT NULL, status TEXT NOT NULL,
+  deleted_path INTEGER NOT NULL DEFAULT 0, created_at TEXT NOT NULL, detail_json TEXT NOT NULL DEFAULT '{}'
+);
+INSERT OR IGNORE INTO collections(collection_id,tenant_id,name,scope_type,owner_id,conversation_id,created_at,updated_at)
+VALUES('col_official_default','default','平台官方知识库','official',NULL,NULL,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT OR IGNORE INTO collection_documents(document_id,collection_id,paper_id,tenant_id,owner_id,scope_type,
+  conversation_id,expires_at,status,source_name,stored_path,created_at)
+SELECT 'doc_' || paper_id,'col_official_default',paper_id,'default',NULL,'official',NULL,NULL,status,file_name,file_path,CURRENT_TIMESTAMP
+FROM papers;
+"""),
+    (12, """
+ALTER TABLE ingestion_jobs ADD COLUMN tenant_id TEXT;
+ALTER TABLE ingestion_jobs ADD COLUMN owner_id TEXT;
+ALTER TABLE ingestion_jobs ADD COLUMN collection_id TEXT;
+ALTER TABLE ingestion_jobs ADD COLUMN scope_type TEXT;
+ALTER TABLE ingestion_jobs ADD COLUMN conversation_id TEXT;
+ALTER TABLE ingestion_jobs ADD COLUMN expires_at TEXT;
+ALTER TABLE ingestion_jobs ADD COLUMN document_id TEXT;
+CREATE INDEX IF NOT EXISTS idx_ingestion_jobs_scope ON ingestion_jobs(tenant_id,owner_id,collection_id);
+"""),
+    (13, """
+ALTER TABLE query_runs ADD COLUMN tenant_id TEXT;
+ALTER TABLE query_runs ADD COLUMN subject TEXT;
+ALTER TABLE query_runs ADD COLUMN collection_ids_json TEXT NOT NULL DEFAULT '[]';
+ALTER TABLE query_runs ADD COLUMN conversation_id TEXT;
+ALTER TABLE query_runs ADD COLUMN include_official INTEGER NOT NULL DEFAULT 1;
+ALTER TABLE query_runs ADD COLUMN retrieval_question TEXT;
+CREATE INDEX IF NOT EXISTS idx_query_runs_scope ON query_runs(tenant_id,subject,conversation_id,started_at);
+"""),
+    (14, """
+ALTER TABLE query_candidates ADD COLUMN document_id TEXT;
+ALTER TABLE query_candidates ADD COLUMN collection_id TEXT;
+ALTER TABLE query_candidates ADD COLUMN scope_type TEXT;
+"""),
 ]
 
 
@@ -230,24 +301,36 @@ class Store:
 
     def create_ingestion_job(self, run_id: str, request_id: str, *, file_path: str | None,
                              force: bool, parent_run_id: str | None = None,
-                             source_hash: str | None = None) -> None:
+                             source_hash: str | None = None,
+                             tenant_id: str | None = None, owner_id: str | None = None,
+                             collection_id: str | None = None, scope_type: str | None = None,
+                             conversation_id: str | None = None, expires_at: str | None = None,
+                             document_id: str | None = None) -> None:
         with self._write_lock, self.connect() as conn:
             conn.execute(
                 "INSERT INTO runs(run_id,request_id,kind,status,started_at) VALUES(?,?,?,?,?)",
                 (run_id, request_id, "ingestion", "queued", now()),
             )
             conn.execute(
-                """INSERT INTO ingestion_jobs(run_id,file_path,force,parent_run_id,created_at,source_hash)
-                   VALUES(?,?,?,?,?,?)""",
-                (run_id, file_path, int(force), parent_run_id, now(), source_hash),
+                """INSERT INTO ingestion_jobs(run_id,file_path,force,parent_run_id,created_at,source_hash,
+                   tenant_id,owner_id,collection_id,scope_type,conversation_id,expires_at,document_id)
+                   VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                (run_id, file_path, int(force), parent_run_id, now(), source_hash, tenant_id,
+                 owner_id, collection_id, scope_type, conversation_id, expires_at, document_id),
             )
 
-    def active_ingestion_for_hash(self, source_hash: str) -> dict | None:
+    def active_ingestion_for_hash(self, source_hash: str,
+                                  collection_id: str | None = None) -> dict | None:
         with self.connect() as conn:
-            row = conn.execute("""SELECT r.run_id,r.request_id,r.status FROM ingestion_jobs j
+            sql = """SELECT r.run_id,r.request_id,r.status FROM ingestion_jobs j
                                   JOIN runs r ON r.run_id=j.run_id
                                   WHERE j.source_hash=? AND r.status IN ('queued','running')
-                                  ORDER BY j.created_at LIMIT 1""", (source_hash,)).fetchone()
+                               """
+            params: list[object] = [source_hash]
+            if collection_id is not None:
+                sql += " AND j.collection_id=?"
+                params.append(collection_id)
+            row = conn.execute(sql + " ORDER BY j.created_at LIMIT 1", params).fetchone()
             return dict(row) if row else None
 
     def active_full_ingestion(self) -> dict | None:
@@ -374,7 +457,8 @@ class Store:
     def replace_paper(self, paper: dict, chunks: list[Chunk], embeddings: list[list[float]] | None = None,
                       pages: list | None = None,
                       *, embedding_provider: str | None = None,
-                      embedding_model: str | None = None) -> None:
+                      embedding_model: str | None = None,
+                      document_scope: dict | None = None) -> None:
         if not chunks:
             raise ValueError("refusing to mark paper ready with zero chunks")
         if embeddings is not None and len(embeddings) != len(chunks):
@@ -395,7 +479,24 @@ class Store:
                    indexed_at=excluded.indexed_at,last_error_json=NULL""",
                 (paper["paper_id"], paper["source_hash"], paper["file_name"], paper["file_path"],
                  paper["size_bytes"], paper.get("status", "ready"), paper["page_count"], paper["ocr_pages"],
-                 json.dumps(paper["failed_pages"], ensure_ascii=False), paper["parser_version"], now()),
+                json.dumps(paper["failed_pages"], ensure_ascii=False), paper["parser_version"], now()),
+            )
+            scope = document_scope or {
+                "document_id": f"doc_{paper['paper_id']}", "collection_id": "col_official_default",
+                "tenant_id": "default", "owner_id": None, "scope_type": "official",
+                "conversation_id": None, "expires_at": None,
+            }
+            conn.execute(
+                """INSERT INTO collection_documents(document_id,collection_id,paper_id,tenant_id,
+                   owner_id,scope_type,conversation_id,expires_at,status,source_name,stored_path,created_at)
+                   VALUES(?,?,?,?,?,?,?,?,?,?,?,?)
+                   ON CONFLICT(collection_id,paper_id) DO UPDATE SET status=excluded.status,
+                   source_name=excluded.source_name,stored_path=excluded.stored_path,
+                   expires_at=excluded.expires_at""",
+                (scope["document_id"], scope["collection_id"], paper["paper_id"], scope["tenant_id"],
+                 scope.get("owner_id"), scope["scope_type"], scope.get("conversation_id"),
+                 scope.get("expires_at"), paper.get("status", "ready"), paper["file_name"],
+                 paper["file_path"], now()),
             )
             conn.executemany(
                 """INSERT INTO chunks(chunk_id,paper_id,paper_name,page_start,page_end,section_path,text,
@@ -581,15 +682,22 @@ class Store:
 
     def begin_query(self, request_id: str, question: str, normalized_query: str,
                     paper_ids: list[str] | None, *, query_tokens: list[str] | None = None,
-                    expansions: list[str] | None = None) -> None:
+                    expansions: list[str] | None = None, tenant_id: str | None = None,
+                    subject: str | None = None, collection_ids: list[str] | None = None,
+                    conversation_id: str | None = None, include_official: bool = True,
+                    retrieval_question: str | None = None) -> None:
         with self._write_lock, self.connect() as conn:
             conn.execute(
                 """INSERT INTO query_runs(request_id,status,question,normalized_query,
-                   paper_ids_json,started_at,query_tokens_json,expansions_json) VALUES(?,?,?,?,?,?,?,?)""",
+                   paper_ids_json,started_at,query_tokens_json,expansions_json,tenant_id,subject,
+                   collection_ids_json,conversation_id,include_official,retrieval_question)
+                   VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
                 (request_id, "running", question, normalized_query,
                  json.dumps(paper_ids or [], ensure_ascii=False), now(),
                  json.dumps(query_tokens or [], ensure_ascii=False),
-                 json.dumps(expansions or [], ensure_ascii=False)),
+                 json.dumps(expansions or [], ensure_ascii=False), tenant_id, subject,
+                 json.dumps(collection_ids or [], ensure_ascii=False), conversation_id,
+                 int(include_official), retrieval_question or question),
             )
 
     def save_query_candidates(self, request_id: str, retriever: str, candidates: list,
@@ -598,12 +706,13 @@ class Store:
         with self._write_lock, self.connect() as conn:
             conn.executemany(
                 """INSERT OR REPLACE INTO query_candidates(request_id,chunk_id,retriever,rank,
-                   score,selected,evidence_id,paper_id,paper_name,page_start,page_end,section_path,excerpt)
-                   VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                   score,selected,evidence_id,paper_id,paper_name,page_start,page_end,section_path,excerpt,
+                   document_id,collection_id,scope_type)
+                   VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
                 [(request_id, item.chunk_id, retriever, rank, item.score,
                   int(item.chunk_id in selected_ids), item.evidence_id, item.paper_id,
                   item.paper_name, item.page_start, item.page_end, item.section_path,
-                  item.excerpt[:1600])
+                  item.excerpt[:1600], item.document_id, item.collection_id, item.source_type)
                  for rank, item in enumerate(candidates, start=1)],
             )
 
@@ -634,6 +743,7 @@ class Store:
                 return None
             item = dict(row)
             for source, target in (("paper_ids_json", "paper_ids"),
+                                   ("collection_ids_json", "collection_ids"),
                                    ("warnings_json", "warnings"), ("timings_json", "timings"),
                                    ("query_tokens_json", "query_tokens"),
                                    ("expansions_json", "expansions")):
@@ -648,6 +758,22 @@ class Store:
                 "SELECT * FROM extraction_runs WHERE request_id=? ORDER BY started_at", (request_id,)
             ).fetchall()]
             return item
+
+    def latest_query_runs(self, limit: int = 20) -> list[dict]:
+        with self.connect() as conn:
+            rows = conn.execute(
+                """SELECT request_id,status,answer_mode,degraded,insufficient_evidence,
+                          corpus_incomplete,timings_json,started_at,finished_at,error_json
+                   FROM query_runs ORDER BY started_at DESC LIMIT ?""", (limit,)
+            ).fetchall()
+        items = []
+        for row in rows:
+            item = dict(row)
+            item["timings"] = json.loads(item.pop("timings_json"))
+            raw_error = item.pop("error_json")
+            item["error"] = json.loads(raw_error) if raw_error else None
+            items.append(item)
+        return items
 
     def save_extraction(self, extraction_run_id: str, request_id: str, payload: dict,
                         *, extractor_version: str) -> None:
@@ -679,3 +805,382 @@ class Store:
                 record["normalized_value"] = json.loads(record.pop("normalized_value_json"))
                 item["records"].append(record)
             return item
+
+    # Multi-scope application model. Every method takes the verified tenant and
+    # subject explicitly so API handlers cannot accidentally perform an
+    # unscoped list/get/update.
+    def ensure_principal(self, tenant_id: str, subject: str) -> None:
+        with self._write_lock, self.connect() as conn:
+            conn.execute("INSERT OR IGNORE INTO principals VALUES(?,?,?)", (tenant_id, subject, now()))
+
+    def accessible_collections(self, tenant_id: str, subject: str) -> list[dict]:
+        with self.connect() as conn:
+            rows = conn.execute(
+                """SELECT * FROM collections WHERE tenant_id=? AND
+                   (scope_type='official' OR owner_id=?) ORDER BY scope_type,name""",
+                (tenant_id, subject),
+            ).fetchall()
+            return [dict(row) for row in rows]
+
+    def pending_scope_documents(self, tenant_id: str, subject: str, *,
+                                collection_ids: list[str] | None = None,
+                                conversation_id: str | None = None,
+                                include_official: bool = True) -> list[dict]:
+        accessible = self.accessible_collections(tenant_id, subject)
+        selected = set(collection_ids or [])
+        target_ids = {
+            item["collection_id"] for item in accessible
+            if (include_official and item["scope_type"] == "official")
+            or (item["scope_type"] == "private" and item["collection_id"] in selected)
+            or (item["scope_type"] == "temporary" and item["conversation_id"] == conversation_id)
+        }
+        pending: list[dict] = []
+        for collection_id in target_ids:
+            for item in self.collection_documents(collection_id, tenant_id, subject) or []:
+                if item["status"] not in {"ready", "completed"}:
+                    pending.append({"document_id": item["document_id"],
+                                    "source_name": item["source_name"], "status": item["status"]})
+        return pending
+
+    def link_document(self, *, document_id: str, collection_id: str, paper_id: str,
+                      tenant_id: str, owner_id: str | None, scope_type: str,
+                      source_name: str, stored_path: str | None,
+                      conversation_id: str | None = None, expires_at: str | None = None,
+                      status: str = "ready") -> dict:
+        with self._write_lock, self.connect() as conn:
+            conn.execute(
+                """INSERT INTO collection_documents(document_id,collection_id,paper_id,tenant_id,
+                   owner_id,scope_type,conversation_id,expires_at,status,source_name,stored_path,created_at)
+                   VALUES(?,?,?,?,?,?,?,?,?,?,?,?)
+                   ON CONFLICT(collection_id,paper_id) DO UPDATE SET status=excluded.status,
+                   source_name=excluded.source_name,stored_path=COALESCE(excluded.stored_path,stored_path),
+                   expires_at=excluded.expires_at""",
+                (document_id, collection_id, paper_id, tenant_id, owner_id, scope_type,
+                 conversation_id, expires_at, status, source_name, stored_path, now()),
+            )
+            row = conn.execute(
+                "SELECT * FROM collection_documents WHERE collection_id=? AND paper_id=?",
+                (collection_id, paper_id),
+            ).fetchone()
+            return dict(row)
+
+    def collection_documents(self, collection_id: str, tenant_id: str, subject: str,
+                             *, query: str | None = None) -> list[dict] | None:
+        collection = self.collection_for_owner(collection_id, tenant_id, subject)
+        if not collection:
+            return None
+        params: list[object] = [collection_id]
+        sql = """SELECT d.document_id,d.collection_id,d.paper_id,d.scope_type,d.conversation_id,
+                        d.expires_at,d.status,d.source_name,d.created_at,p.page_count,p.ocr_pages,
+                        p.failed_pages_json
+                 FROM collection_documents d JOIN papers p ON p.paper_id=d.paper_id
+                 WHERE d.collection_id=?"""
+        if query:
+            sql += " AND lower(d.source_name) LIKE ? ESCAPE '\\'"
+            escaped = query.lower().replace("\\", "\\\\").replace("%", "\\%").replace("_", "\\_")
+            params.append(f"%{escaped}%")
+        sql += " ORDER BY d.created_at DESC"
+        with self.connect() as conn:
+            items = [dict(row) for row in conn.execute(sql, params)]
+            pending = [dict(row) for row in conn.execute(
+                """SELECT j.document_id,j.collection_id,j.expires_at,r.status,j.created_at,j.file_path
+                   FROM ingestion_jobs j JOIN runs r ON r.run_id=j.run_id
+                   WHERE j.collection_id=? AND j.document_id IS NOT NULL
+                     AND NOT EXISTS(SELECT 1 FROM collection_documents d WHERE d.document_id=j.document_id)
+                   ORDER BY j.created_at DESC""", (collection_id,)
+            )]
+        for item in items:
+            item["failed_pages"] = json.loads(item.pop("failed_pages_json"))
+        for item in pending:
+            item.update({"paper_id": None, "scope_type": collection["scope_type"],
+                         "conversation_id": collection.get("conversation_id"),
+                         "source_name": Path(item.pop("file_path")).name,
+                         "page_count": 0, "ocr_pages": 0, "failed_pages": []})
+        items = pending + items
+        if query:
+            items = [item for item in items if query.casefold() in item["source_name"].casefold()]
+        return items
+
+    def official_papers(self) -> list[dict]:
+        official_ids: set[str]
+        with self.connect() as conn:
+            official_ids = {row[0] for row in conn.execute(
+                "SELECT paper_id FROM collection_documents WHERE scope_type='official'"
+            )}
+        return [item for item in self.papers() if item["paper_id"] in official_ids]
+
+    def official_paper(self, paper_id: str) -> dict | None:
+        with self.connect() as conn:
+            allowed = conn.execute(
+                "SELECT 1 FROM collection_documents WHERE paper_id=? AND scope_type='official'",
+                (paper_id,),
+            ).fetchone()
+        return self.paper(paper_id) if allowed else None
+
+    def document_for_user(self, document_id: str, tenant_id: str, subject: str,
+                          *, conversation_id: str | None = None) -> dict | None:
+        params: list[object] = [document_id, tenant_id, subject]
+        sql = """SELECT d.*,p.file_name,p.status AS paper_status,p.page_count,p.ocr_pages
+                 FROM collection_documents d JOIN papers p ON p.paper_id=d.paper_id
+                 WHERE d.document_id=? AND d.tenant_id=?
+                   AND (d.scope_type='official' OR d.owner_id=?)"""
+        if conversation_id is not None:
+            sql += " AND d.conversation_id=?"
+            params.append(conversation_id)
+        with self.connect() as conn:
+            row = conn.execute(sql, params).fetchone()
+            return dict(row) if row else None
+
+    def document_status(self, document_id: str, tenant_id: str, subject: str) -> dict | None:
+        with self.connect() as conn:
+            row = conn.execute(
+                """SELECT j.document_id,j.collection_id,j.conversation_id,j.expires_at,
+                          r.run_id,r.request_id,r.status,r.stage,r.started_at,r.finished_at,r.error_json
+                   FROM ingestion_jobs j JOIN runs r ON r.run_id=j.run_id
+                   WHERE j.document_id=? AND j.tenant_id=? AND j.owner_id=?""",
+                (document_id, tenant_id, subject),
+            ).fetchone()
+            if row:
+                item = dict(row)
+                raw_error = item.pop("error_json")
+                error = json.loads(raw_error) if raw_error else None
+                item["error"] = ({key: error.get(key) for key in
+                                  ("error_code", "stage", "message", "retryable")}
+                                 if error else None)
+                return item
+        document = self.document_for_user(document_id, tenant_id, subject)
+        if not document:
+            return None
+        return {key: document.get(key) for key in
+                ("document_id", "collection_id", "conversation_id", "expires_at", "status")}
+
+    def evidence_for_user(self, evidence_id: str, tenant_id: str, subject: str,
+                          *, conversation_id: str | None = None) -> dict | None:
+        conditions = ["d.scope_type='official'", "(d.scope_type='private' AND d.owner_id=?)"]
+        params: list[object] = [subject]
+        if conversation_id:
+            conditions.append("(d.scope_type='temporary' AND d.owner_id=? AND d.conversation_id=?)")
+            params.extend([subject, conversation_id])
+        sql = f"""SELECT qc.evidence_id,qc.chunk_id,qc.paper_id,qc.paper_name,qc.page_start,
+                         qc.page_end,qc.section_path,qc.excerpt,qc.score,d.document_id,
+                         d.collection_id,d.scope_type,d.conversation_id
+                  FROM query_candidates qc
+                  JOIN query_runs qr ON qr.request_id=qc.request_id
+                  JOIN collection_documents d
+                    ON (qc.document_id IS NOT NULL AND d.document_id=qc.document_id)
+                    OR (qc.document_id IS NULL AND d.paper_id=qc.paper_id)
+                  WHERE qc.evidence_id=? AND qc.selected=1 AND d.tenant_id=?
+                    AND (d.expires_at IS NULL OR d.expires_at>?)
+                    AND ({' OR '.join(conditions)})
+                  ORDER BY (qc.document_id IS NOT NULL AND d.document_id=qc.document_id) DESC,
+                           qr.started_at DESC LIMIT 1"""
+        params = [evidence_id, tenant_id, now(), *params]
+        with self.connect() as conn:
+            row = conn.execute(sql, params).fetchone()
+            return dict(row) if row else None
+
+    def set_document_status(self, document_id: str, status: str) -> None:
+        with self._write_lock, self.connect() as conn:
+            conn.execute("UPDATE collection_documents SET status=? WHERE document_id=?",
+                         (status, document_id))
+
+    def expired_temporary_documents(self, *, at: str | None = None) -> list[dict]:
+        with self.connect() as conn:
+            return [dict(row) for row in conn.execute(
+                """SELECT * FROM collection_documents WHERE scope_type='temporary'
+                   AND expires_at IS NOT NULL AND expires_at<=? ORDER BY expires_at""",
+                (at or now(),),
+            )]
+
+    def unlink_document(self, document_id: str, tenant_id: str | None = None,
+                        subject: str | None = None) -> dict | None:
+        """Delete one logical document and physical rows only when unreferenced."""
+        with self._write_lock, self.connect() as conn:
+            sql = "SELECT * FROM collection_documents WHERE document_id=?"
+            params: list[object] = [document_id]
+            if tenant_id is not None and subject is not None:
+                sql += " AND tenant_id=? AND owner_id=? AND scope_type IN ('private','temporary')"
+                params.extend([tenant_id, subject])
+            row = conn.execute(sql, params).fetchone()
+            if not row:
+                return None
+            item = dict(row)
+            conn.execute("DELETE FROM ingestion_jobs WHERE document_id=?", (document_id,))
+            conn.execute("DELETE FROM collection_documents WHERE document_id=?", (document_id,))
+            references = conn.execute(
+                "SELECT count(1) FROM collection_documents WHERE paper_id=?", (item["paper_id"],)
+            ).fetchone()[0]
+            item["physical_deleted"] = references == 0
+            if not references:
+                conn.execute("DELETE FROM papers WHERE paper_id=?", (item["paper_id"],))
+            return item
+
+    def record_cleanup(self, document_id: str, status: str, *, deleted_path: bool,
+                       detail: dict | None = None) -> None:
+        with self._write_lock, self.connect() as conn:
+            conn.execute(
+                "INSERT INTO cleanup_events VALUES(?,?,?,?,?,?)",
+                (f"cleanup_{uuid.uuid4().hex}", document_id, status, int(deleted_path),
+                 now(), json.dumps(detail or {}, ensure_ascii=False)),
+            )
+
+    def create_private_collection(self, tenant_id: str, subject: str, name: str) -> dict:
+        collection_id = f"col_{uuid.uuid4().hex}"
+        timestamp = now()
+        with self._write_lock, self.connect() as conn:
+            conn.execute("INSERT OR IGNORE INTO principals VALUES(?,?,?)", (tenant_id, subject, timestamp))
+            conn.execute(
+                """INSERT INTO collections(collection_id,tenant_id,name,scope_type,owner_id,
+                   conversation_id,created_at,updated_at) VALUES(?,?,?,'private',?,NULL,?,?)""",
+                (collection_id, tenant_id, name, subject, timestamp, timestamp),
+            )
+        return self.collection_for_owner(collection_id, tenant_id, subject) or {}
+
+    def collection_for_owner(self, collection_id: str, tenant_id: str, subject: str) -> dict | None:
+        with self.connect() as conn:
+            row = conn.execute(
+                """SELECT * FROM collections WHERE collection_id=? AND tenant_id=? AND
+                   (scope_type='official' OR owner_id=?)""", (collection_id, tenant_id, subject)
+            ).fetchone()
+            return dict(row) if row else None
+
+    def rename_private_collection(self, collection_id: str, tenant_id: str, subject: str, name: str) -> bool:
+        with self._write_lock, self.connect() as conn:
+            cursor = conn.execute(
+                """UPDATE collections SET name=?,updated_at=? WHERE collection_id=? AND tenant_id=?
+                   AND owner_id=? AND scope_type='private'""",
+                (name, now(), collection_id, tenant_id, subject),
+            )
+            return cursor.rowcount == 1
+
+    def delete_private_collection(self, collection_id: str, tenant_id: str, subject: str) -> bool:
+        with self._write_lock, self.connect() as conn:
+            cursor = conn.execute(
+                """DELETE FROM collections WHERE collection_id=? AND tenant_id=?
+                   AND owner_id=? AND scope_type='private'""", (collection_id, tenant_id, subject)
+            )
+            return cursor.rowcount == 1
+
+    def create_conversation(self, tenant_id: str, subject: str, title: str) -> dict:
+        conversation_id = f"conv_{uuid.uuid4().hex}"
+        collection_id = f"col_temp_{conversation_id[5:]}"
+        timestamp = now()
+        with self._write_lock, self.connect() as conn:
+            conn.execute("INSERT OR IGNORE INTO principals VALUES(?,?,?)", (tenant_id, subject, timestamp))
+            conn.execute("INSERT INTO conversations VALUES(?,?,?,?,?,?)",
+                         (conversation_id, tenant_id, subject, title, timestamp, timestamp))
+            conn.execute(
+                """INSERT INTO collections(collection_id,tenant_id,name,scope_type,owner_id,
+                   conversation_id,created_at,updated_at) VALUES(?,?,?,'temporary',?,?,?,?)""",
+                (collection_id, tenant_id, f"会话临时资料：{title}", subject,
+                 conversation_id, timestamp, timestamp),
+            )
+        return self.conversation(conversation_id, tenant_id, subject) or {}
+
+    def conversations(self, tenant_id: str, subject: str) -> list[dict]:
+        with self.connect() as conn:
+            return [dict(row) for row in conn.execute(
+                """SELECT * FROM conversations WHERE tenant_id=? AND owner_id=?
+                   ORDER BY updated_at DESC""", (tenant_id, subject)
+            )]
+
+    def conversation(self, conversation_id: str, tenant_id: str, subject: str) -> dict | None:
+        with self.connect() as conn:
+            row = conn.execute(
+                "SELECT * FROM conversations WHERE conversation_id=? AND tenant_id=? AND owner_id=?",
+                (conversation_id, tenant_id, subject),
+            ).fetchone()
+            if not row:
+                return None
+            item = dict(row)
+            item["messages"] = [dict(message) for message in conn.execute(
+                "SELECT * FROM messages WHERE conversation_id=? ORDER BY created_at,message_id",
+                (conversation_id,),
+            )]
+            for message in item["messages"]:
+                message["citations"] = json.loads(message.pop("citations_json"))
+            return item
+
+    def rename_conversation(self, conversation_id: str, tenant_id: str, subject: str, title: str) -> bool:
+        with self._write_lock, self.connect() as conn:
+            cursor = conn.execute(
+                """UPDATE conversations SET title=?,updated_at=? WHERE conversation_id=?
+                   AND tenant_id=? AND owner_id=?""", (title, now(), conversation_id, tenant_id, subject)
+            )
+            return cursor.rowcount == 1
+
+    def delete_conversation(self, conversation_id: str, tenant_id: str, subject: str) -> bool:
+        with self._write_lock, self.connect() as conn:
+            cursor = conn.execute(
+                "DELETE FROM conversations WHERE conversation_id=? AND tenant_id=? AND owner_id=?",
+                (conversation_id, tenant_id, subject),
+            )
+            return cursor.rowcount == 1
+
+    def add_message(self, conversation_id: str, tenant_id: str, subject: str, role: str,
+                    content: str, *, request_id: str | None = None,
+                    original_question: str | None = None,
+                    retrieval_question: str | None = None,
+                    citations: list[dict] | None = None) -> dict | None:
+        message_id = f"msg_{uuid.uuid4().hex}"
+        timestamp = now()
+        with self._write_lock, self.connect() as conn:
+            allowed = conn.execute(
+                "SELECT 1 FROM conversations WHERE conversation_id=? AND tenant_id=? AND owner_id=?",
+                (conversation_id, tenant_id, subject),
+            ).fetchone()
+            if not allowed:
+                return None
+            conn.execute(
+                """INSERT INTO messages(message_id,conversation_id,role,content,request_id,
+                   original_question,retrieval_question,citations_json,created_at)
+                   VALUES(?,?,?,?,?,?,?,?,?)""",
+                (message_id, conversation_id, role, content, request_id, original_question,
+                 retrieval_question, json.dumps(citations or [], ensure_ascii=False), timestamp),
+            )
+            conn.execute("UPDATE conversations SET updated_at=? WHERE conversation_id=?",
+                         (timestamp, conversation_id))
+        return {"message_id": message_id, "role": role, "content": content,
+                "request_id": request_id, "citations": citations or [], "created_at": timestamp}
+
+    def scoped_chunks(self, tenant_id: str, subject: str, *,
+                      collection_ids: list[str] | None = None,
+                      conversation_id: str | None = None,
+                      include_official: bool = True,
+                      paper_ids: list[str] | None = None,
+                      with_embeddings: bool = False,
+                      embedding_model: str | None = None) -> list[dict]:
+        """Return only authorized chunks; filtering happens in SQLite before retrieval."""
+        selected = list(dict.fromkeys(collection_ids or []))
+        clauses: list[str] = []
+        params: list[object] = [tenant_id]
+        if include_official:
+            clauses.append("d.scope_type='official'")
+        if selected:
+            marks = ",".join("?" for _ in selected)
+            clauses.append(f"(d.scope_type='private' AND d.owner_id=? AND d.collection_id IN ({marks}))")
+            params.extend([subject, *selected])
+        if conversation_id:
+            clauses.append("(d.scope_type='temporary' AND d.owner_id=? AND d.conversation_id=?)")
+            params.extend([subject, conversation_id])
+        if not clauses:
+            return []
+        embedding_join = "JOIN embeddings e ON e.chunk_id=c.chunk_id" if with_embeddings else ""
+        embedding_columns = ",e.provider,e.model,e.dimensions,e.vector" if with_embeddings else ""
+        embedding_filter = " AND e.model=?" if with_embeddings and embedding_model else ""
+        if embedding_filter:
+            params.append(embedding_model)
+        paper_filter = ""
+        if paper_ids:
+            paper_filter = f" AND c.paper_id IN ({','.join('?' for _ in paper_ids)})"
+            params.extend(paper_ids)
+        sql = f"""SELECT c.*,d.document_id,d.collection_id,d.scope_type,d.conversation_id,d.expires_at
+                  {embedding_columns} FROM collection_documents d
+                  JOIN chunks c ON c.paper_id=d.paper_id {embedding_join}
+                  WHERE d.tenant_id=? AND d.status='ready'
+                  AND (d.expires_at IS NULL OR d.expires_at>?) AND ({' OR '.join(clauses)})
+                  {embedding_filter} {paper_filter} ORDER BY c.paper_id,c.ordinal"""
+        # expires_at is deliberately checked in SQL on every query.
+        params.insert(1, now())
+        with self.connect() as conn:
+            return [dict(row) for row in conn.execute(sql, params)]

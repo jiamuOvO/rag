@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import re
+import shutil
 import threading
 import time
 import uuid
@@ -79,7 +80,8 @@ class Pipeline:
                                         output_count=output)
 
     def ingest(self, *, file: Path | None = None, force: bool = False,
-               run_id: str | None = None, request_id: str | None = None) -> dict:
+               run_id: str | None = None, request_id: str | None = None,
+               document_scope: dict | None = None) -> dict:
         generated_run, generated_request = self._ids()
         run_id, request_id = run_id or generated_run, request_id or generated_request
         if self.store.run(run_id) is None:
@@ -110,6 +112,11 @@ class Pipeline:
                     pid = paper_id(source_hash)
                     current = self.store.paper_by_hash(source_hash)
                     if current and current["status"] == "ready" and not force:
+                        if document_scope:
+                            self.store.link_document(
+                                **document_scope, paper_id=current["paper_id"],
+                                source_name=path.name, stored_path=str(path), status="ready",
+                            )
                         counts["skipped"] += 1
                         self.store.update_run_document(run_id, path.name, paper_id=pid,
                                                        status="skipped", stage="discover")
@@ -119,6 +126,11 @@ class Pipeline:
                             paper_id=pid, source_hash=source_hash, file_name=path.name,
                             file_path=str(path), size_bytes=path.stat().st_size,
                             parser_version="pymupdf-rapidocr-v1",
+                        )
+                    if document_scope:
+                        self.store.link_document(
+                            **document_scope, paper_id=pid, source_name=path.name,
+                            stored_path=str(path), status="processing",
                         )
                     self.store.update_run_document(run_id, path.name, paper_id=pid,
                                                    status="running", stage="parse")
@@ -192,7 +204,8 @@ class Pipeline:
                             "parser_version": "pymupdf-rapidocr-v1",
                         }, chunks, vectors, pages=parsed.pages,
                             embedding_provider=embedding_provider.name if embedding_provider else None,
-                            embedding_model=embedding_provider.model if embedding_provider else None)
+                            embedding_model=embedding_provider.model if embedding_provider else None,
+                            document_scope=document_scope)
                         metric["chunks"] = len(chunks)
                         with self._retriever_lock:
                             self._retriever = None
@@ -217,6 +230,8 @@ class Pipeline:
                                                    status="failed", stage=info["stage"], error=info)
                     if pid:
                         self.store.mark_paper_failed(pid, info)
+                    if document_scope:
+                        self.store.set_document_status(document_scope["document_id"], "failed")
                     self.log.emit("document_failed", run_id=run_id, request_id=request_id,
                                   paper_id=pid, file_name=path.name, **info)
                 finally:
@@ -249,8 +264,86 @@ class Pipeline:
             self.log.emit("run_failed", run_id=run_id, request_id=request_id, **info)
         return self.store.run(run_id) or {"run_id": run_id, "status": "failed"}
 
+    def retrieve(self, question: str, *, top_k: int = 8, tenant_id: str,
+                 subject: str, collection_ids: list[str] | None = None,
+                 conversation_id: str | None = None,
+                 include_official: bool = True,
+                 paper_ids: list[str] | None = None,
+                 request_id: str | None = None) -> dict:
+        if not question.strip():
+            raise RagError("QUERY_EMPTY", "retrieve", "question cannot be empty")
+        request_id = request_id or f"req_{uuid.uuid4().hex}"
+        analysis = analyze_query(question)
+        self.store.begin_query(request_id, question, analysis["normalized"], None,
+                               query_tokens=analysis["tokens"], expansions=analysis["expansions"],
+                               tenant_id=tenant_id, subject=subject, collection_ids=collection_ids,
+                               conversation_id=conversation_id, include_official=include_official,
+                               retrieval_question=question)
+        started = time.perf_counter()
+        pending = self.store.pending_scope_documents(
+            tenant_id, subject, collection_ids=collection_ids,
+            conversation_id=conversation_id, include_official=include_official,
+        )
+        chunks = self.store.scoped_chunks(
+            tenant_id, subject, collection_ids=collection_ids,
+            conversation_id=conversation_id, include_official=include_official, paper_ids=paper_ids,
+        )
+        candidate_k = max(30, top_k * 4)
+        lexical = BM25Retriever(chunks).search(question, candidate_k)
+        dense, degraded_reasons = [], []
+        try:
+            provider = configured_embedding_provider(self.settings)
+            if provider is None:
+                degraded_reasons.append("EMBEDDING_DISABLED")
+            else:
+                dense_chunks = self.store.scoped_chunks(
+                    tenant_id, subject, collection_ids=collection_ids,
+                    conversation_id=conversation_id, include_official=include_official,
+                    paper_ids=paper_ids,
+                    with_embeddings=True, embedding_model=self.settings.embedding_model,
+                )
+                if dense_chunks:
+                    dense = DenseRetriever(dense_chunks).search(provider.embed([question])[0], candidate_k)
+                else:
+                    degraded_reasons.append("EMBEDDING_INDEX_EMPTY")
+        except Exception as exc:
+            degraded_reasons.append(error_info(exc, "retrieve", self.settings.debug).error_code)
+        evidence = reciprocal_rank_fusion(lexical, dense, top_k=top_k) if dense else lexical[:top_k]
+        fused = list(evidence)
+        try:
+            reranker = configured_reranker(self.settings.reranker_provider)
+            if reranker is not None:
+                evidence = reranker.rerank(question, evidence)[:top_k]
+        except Exception as exc:
+            degraded_reasons.append(error_info(exc, "rerank", self.settings.debug).error_code)
+        evidence = [item for item in evidence if has_reliable_lexical_support(question, item.excerpt)]
+        selected_ids = {item.chunk_id for item in evidence}
+        self.store.save_query_candidates(request_id, "bm25", lexical, selected_ids)
+        if dense:
+            self.store.save_query_candidates(request_id, "dense", dense, selected_ids)
+            self.store.save_query_candidates(request_id, "rrf", fused, selected_ids)
+        timings = {"retrieve": round((time.perf_counter() - started) * 1000, 3)}
+        warnings = ([{"code": "DOCUMENTS_NOT_READY",
+                      "message": "部分所选文档尚未就绪，未参与本次检索", "documents": pending}]
+                    if pending else [])
+        self.store.finish_query(
+            request_id, status="completed", answer_mode="retrieve_only",
+            degraded=bool(degraded_reasons), insufficient_evidence=not evidence,
+            corpus_incomplete=bool(pending), warnings=warnings, timings=timings,
+            generation_provider="none", prompt_version="retrieve-v1", answer_text=None,
+        )
+        return {"request_id": request_id, "results": [item.to_dict() for item in evidence],
+                "warnings": warnings, "degraded": bool(degraded_reasons),
+                "degradation_reason": ",".join(dict.fromkeys(degraded_reasons)) or None,
+                "timings": timings}
+
     def query(self, question: str, *, top_k: int = 8,
-              paper_ids: list[str] | None = None, request_id: str | None = None) -> QueryResult:
+              paper_ids: list[str] | None = None, request_id: str | None = None,
+              tenant_id: str | None = None, subject: str | None = None,
+              collection_ids: list[str] | None = None,
+              conversation_id: str | None = None,
+              include_official: bool = True,
+              retrieval_question: str | None = None) -> QueryResult:
         if not question.strip():
             raise RagError("QUERY_EMPTY", "retrieve", "question cannot be empty")
         if not 1 <= top_k <= 50:
@@ -258,15 +351,36 @@ class Pipeline:
         request_id = request_id or f"req_{uuid.uuid4().hex}"
         timings: dict[str, float] = {}
         degraded_reasons: list[str] = []
-        analysis = analyze_query(question)
+        search_question = retrieval_question or question
+        analysis = analyze_query(search_question)
         normalized_query = analysis["normalized"]
         warnings: list[dict] = []
-        papers = self.store.papers()
+        scoped = tenant_id is not None and subject is not None
+        scoped_chunks: list[dict] | None = None
+        if scoped:
+            scoped_chunks = self.store.scoped_chunks(
+                tenant_id, subject, collection_ids=collection_ids,
+                conversation_id=conversation_id, include_official=include_official,
+                paper_ids=paper_ids,
+            )
+            accessible_paper_ids = {item["paper_id"] for item in scoped_chunks}
+            papers = [item for pid in accessible_paper_ids if (item := self.store.paper(pid))]
+        else:
+            papers = self.store.papers()
+        if scoped:
+            pending = self.store.pending_scope_documents(
+                tenant_id, subject, collection_ids=collection_ids,
+                conversation_id=conversation_id, include_official=include_official,
+            )
+            if pending:
+                warnings.append({"code": "DOCUMENTS_NOT_READY",
+                                 "message": "部分所选文档尚未就绪，未参与本次检索",
+                                 "documents": pending})
         requested = set(paper_ids or [])
         missing_scope = sorted(requested - {item["paper_id"] for item in papers})
         incomplete = [item for item in papers if (item["failed_pages"] or item["status"] != "ready") and
                       (not requested or item["paper_id"] in requested)]
-        corpus_incomplete = bool(missing_scope or incomplete)
+        corpus_incomplete = bool(missing_scope or incomplete or (scoped and pending))
         if missing_scope:
             warnings.append({"code": "PAPER_SCOPE_MISSING", "message": "部分限定论文不存在或不可用",
                              "paper_ids": missing_scope})
@@ -277,10 +391,16 @@ class Pipeline:
                           paper_ids=[item["paper_id"] for item in incomplete],
                           affected_pages=sum(len(item["failed_pages"]) for item in incomplete))
         self.store.begin_query(request_id, question, normalized_query, paper_ids,
-                               query_tokens=analysis["tokens"], expansions=analysis["expansions"])
+                               query_tokens=analysis["tokens"], expansions=analysis["expansions"],
+                               tenant_id=tenant_id, subject=subject, collection_ids=collection_ids,
+                               conversation_id=conversation_id, include_official=include_official,
+                               retrieval_question=search_question)
         started = time.perf_counter()
         with self._stage("retrieve", request_id=request_id) as metric:
-            if paper_ids:
+            if scoped:
+                chunks = scoped_chunks or []
+                retriever = BM25Retriever(chunks)
+            elif paper_ids:
                 chunks = self.store.chunks(paper_ids)
                 retriever = BM25Retriever(chunks)
             else:
@@ -290,7 +410,7 @@ class Pipeline:
                     retriever = self._retriever
                 chunks = retriever.chunks
             candidate_k = max(30, top_k * 4)
-            lexical = retriever.search(question, candidate_k)
+            lexical = retriever.search(search_question, candidate_k)
             dense = []
             try:
                 embedding_provider = configured_embedding_provider(self.settings)
@@ -299,8 +419,15 @@ class Pipeline:
                     self.log.emit("retrieval_degraded", request_id=request_id,
                                   error_code="EMBEDDING_DISABLED", exception_type="Configuration")
                 else:
-                    query_vector = embedding_provider.embed([question])[0]
-                    if paper_ids:
+                    query_vector = embedding_provider.embed([search_question])[0]
+                    if scoped:
+                        dense_chunks = self.store.scoped_chunks(
+                            tenant_id, subject, collection_ids=collection_ids,
+                            conversation_id=conversation_id, include_official=include_official,
+                            paper_ids=paper_ids,
+                            with_embeddings=True, embedding_model=self.settings.embedding_model,
+                        )
+                    elif paper_ids:
                         dense_chunks = self.store.chunks_with_embeddings(
                             paper_ids, self.settings.embedding_model
                         )
@@ -325,13 +452,13 @@ class Pipeline:
             try:
                 reranker = configured_reranker(self.settings.reranker_provider)
                 if reranker is not None:
-                    evidence = reranker.rerank(question, evidence)[:top_k]
+                    evidence = reranker.rerank(search_question, evidence)[:top_k]
             except Exception as exc:
                 reason = error_info(exc, "rerank", self.settings.debug).error_code
                 degraded_reasons.append(reason)
                 self.log.emit("reranker_degraded", request_id=request_id, error_code=reason,
                               exception_type=type(exc).__name__)
-            evidence = [item for item in evidence if has_reliable_lexical_support(question, item.excerpt)]
+            evidence = [item for item in evidence if has_reliable_lexical_support(search_question, item.excerpt)]
             selected_ids = {item.chunk_id for item in evidence[:5]}
             self.store.save_query_candidates(request_id, "bm25", lexical, selected_ids)
             if dense:
@@ -468,6 +595,85 @@ class Pipeline:
             self.store.update_run(run_id, status="failed", stage=info["stage"], counts=counts,
                                   error=info, finished=True)
         return self.store.run(run_id) or {"run_id": run_id, "status": "failed"}
+
+    def delete_scoped_document(self, document_id: str, tenant_id: str, subject: str) -> dict | None:
+        item = self.store.document_for_user(document_id, tenant_id, subject)
+        if not item or item["scope_type"] not in {"private", "temporary"}:
+            return None
+        deleted_path = False
+        if item.get("stored_path"):
+            path = Path(item["stored_path"]).resolve()
+            allowed = [(self.settings.var_dir / "private").resolve(),
+                       (self.settings.var_dir / "temporary").resolve()]
+            if not any(path.is_relative_to(root) for root in allowed):
+                raise RagError("DOCUMENT_PATH_UNSAFE", "cleanup", "document path is outside managed roots")
+            if path.is_file():
+                path.unlink()
+                deleted_path = True
+        removed = self.store.unlink_document(document_id, tenant_id, subject)
+        if removed:
+            self.store.record_cleanup(document_id, "deleted", deleted_path=deleted_path,
+                                      detail={"scope_type": item["scope_type"],
+                                              "physical_deleted": removed["physical_deleted"]})
+        return removed
+
+    def delete_private_collection(self, collection_id: str, tenant_id: str, subject: str) -> bool:
+        items = self.store.collection_documents(collection_id, tenant_id, subject)
+        if items is None:
+            return False
+        for item in items:
+            self.delete_scoped_document(item["document_id"], tenant_id, subject)
+        return self.store.delete_private_collection(collection_id, tenant_id, subject)
+
+    def delete_conversation(self, conversation_id: str, tenant_id: str, subject: str) -> bool:
+        if not self.store.conversation(conversation_id, tenant_id, subject):
+            return False
+        temporary = next((item for item in self.store.accessible_collections(tenant_id, subject)
+                          if item["scope_type"] == "temporary" and
+                          item["conversation_id"] == conversation_id), None)
+        if temporary:
+            for item in self.store.collection_documents(
+                    temporary["collection_id"], tenant_id, subject) or []:
+                self.delete_scoped_document(item["document_id"], tenant_id, subject)
+        return self.store.delete_conversation(conversation_id, tenant_id, subject)
+
+    def cleanup_expired_documents(self) -> dict:
+        items = self.store.expired_temporary_documents()
+        deleted, failed = 0, []
+        for item in items:
+            try:
+                if self.delete_scoped_document(item["document_id"], item["tenant_id"], item["owner_id"]):
+                    deleted += 1
+            except Exception as exc:
+                failed.append({"document_id": item["document_id"],
+                               "error_code": error_info(exc, "cleanup", self.settings.debug).error_code})
+        return {"status": "completed" if not failed else "partial_failed",
+                "expired": len(items), "deleted": deleted, "failed": failed}
+
+    def promote_temporary_document(self, document_id: str, target_collection_id: str,
+                                   tenant_id: str, subject: str) -> dict | None:
+        source = self.store.document_for_user(document_id, tenant_id, subject)
+        target = self.store.collection_for_owner(target_collection_id, tenant_id, subject)
+        if not source or source["scope_type"] != "temporary" or not target or target["scope_type"] != "private":
+            return None
+        source_path = Path(source["stored_path"]).resolve()
+        temp_root = (self.settings.var_dir / "temporary").resolve()
+        if not source_path.is_relative_to(temp_root) or not source_path.is_file():
+            raise RagError("DOCUMENT_SOURCE_UNAVAILABLE", "promote", "temporary PDF is unavailable")
+        promoted_id = f"doc_{uuid.uuid4().hex}"
+        destination = (self.settings.var_dir / "private" / tenant_id / subject /
+                       promoted_id / source["source_name"]).resolve()
+        private_root = (self.settings.var_dir / "private").resolve()
+        if not destination.is_relative_to(private_root):
+            raise RagError("DOCUMENT_PATH_UNSAFE", "promote", "promotion path is outside managed root")
+        destination.parent.mkdir(parents=True, exist_ok=False)
+        shutil.copy2(source_path, destination)
+        return self.store.link_document(
+            document_id=promoted_id, collection_id=target_collection_id,
+            paper_id=source["paper_id"], tenant_id=tenant_id, owner_id=subject,
+            scope_type="private", source_name=source["source_name"],
+            stored_path=str(destination), status="ready",
+        )
 
     def doctor(self) -> dict:
         deps = self.parser.dependencies()

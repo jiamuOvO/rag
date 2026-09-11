@@ -48,6 +48,9 @@ class Evidence:
     section_path: str
     excerpt: str
     score: float
+    document_id: str | None = None
+    collection_id: str | None = None
+    source_type: str = "official"
 
     def to_dict(self) -> dict:
         return asdict(self)

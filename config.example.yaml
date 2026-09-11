@@ -1,7 +1,7 @@
-# Copy this file to config.yaml. Never put an API key in this file.
+# Copy to config.yaml for local use. Never store API keys in this file.
 paths:
-  data_dir: "F:/RAG/Li_Jia/data"
-  var_dir: "F:/RAG/Li_Jia/var"
+  data_dir: "./data"
+  var_dir: "./var"
 
 ocr:
   enabled: true
@@ -12,29 +12,32 @@ chunking:
   overlap_tokens: 64
 
 chat:
-  provider: openai_compatible
+  provider: extractive
   base_url: null
-  model: "Qwen3.6-35B-A3B"
+  model: null
   timeout_seconds: 60
-  # The secret is read from this environment variable, never from YAML.
   api_key_env: RAG_CHAT_API_KEY
 
 embedding:
-  provider: openai_compatible
-  # The embedding service may use a different URL from the chat service.
+  provider: disabled
   base_url: null
-  model: "Qwen3-Embedding-0.6B"
+  model: null
   timeout_seconds: 60
   batch_size: 10
   api_key_env: RAG_EMBEDDING_API_KEY
 
 reranker:
-  # disabled by default; lexical_coverage is an explainable offline baseline.
   provider: disabled
 
 structured_extraction:
-  # Conservative evidence-bound rule prototype; failures never block text RAG.
   enabled: false
 
 observability:
   debug: false
+
+# Multi-scope settings are environment-driven in production:
+# RAG_DEFAULT_TENANT_ID=default
+# RAG_TEMP_DOCUMENT_TTL_HOURS=24
+# RAG_CONVERSATION_CONTEXT_MESSAGES=6
+# RAG_ENV=production
+# RAG_DEV_AUTH_ENABLED=0

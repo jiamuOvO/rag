@@ -3,6 +3,7 @@ from __future__ import annotations
 import re
 import hashlib
 import uuid
+from datetime import datetime, timedelta, timezone
 from urllib.parse import unquote
 from contextlib import asynccontextmanager
 from pathlib import Path
@@ -16,7 +17,8 @@ from fastapi.exceptions import RequestValidationError
 from .errors import RagError, error_info
 from .extraction import EXTRACTION_JSON_SCHEMA
 from .pipeline import Pipeline
-from .security import SessionSecurity
+from .conversation import ContextualQueryRewriter
+from .security import Principal, SessionSecurity, principal_from_request, require_user
 from .tasks import IngestionWorker
 
 pipeline = Pipeline()
@@ -25,6 +27,7 @@ security = SessionSecurity()
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    app.state.security = security
     worker = IngestionWorker(pipeline)
     app.state.worker = worker
     worker.start()
@@ -65,6 +68,25 @@ class QueryRequest(BaseModel):
     question: str = Field(min_length=1, max_length=8000)
     top_k: int = Field(default=8, ge=1, le=50)
     paper_ids: list[str] | None = Field(default=None, max_length=100)
+    collection_ids: list[str] | None = Field(default=None, max_length=50)
+    conversation_id: str | None = Field(default=None, max_length=80)
+    include_official: bool = True
+
+
+class NamedResourceRequest(BaseModel):
+    name: str = Field(min_length=1, max_length=120)
+
+
+class ConversationRequest(BaseModel):
+    title: str = Field(default="新对话", min_length=1, max_length=120)
+
+
+class PromoteRequest(BaseModel):
+    collection_id: str = Field(min_length=1, max_length=80)
+
+
+def current_user(request: Request) -> Principal:
+    return require_user(principal_from_request(request))
 
 
 def require_admin(request: Request) -> None:
@@ -94,6 +116,69 @@ def public_paper(item: dict) -> dict:
                               ("error_code", "stage", "message", "retryable")}
     safe["chunk_count"] = len(pipeline.store.paper_chunks(item["paper_id"], limit=500))
     return safe
+
+
+async def validated_pdf_body(request: Request) -> tuple[str, bytes, str]:
+    raw_name = unquote(request.headers.get("x-filename", "upload.pdf"))
+    name = Path(raw_name).name
+    if name != raw_name or not name.lower().endswith(".pdf") or len(name) > 180:
+        raise HTTPException(status_code=400, detail={"code": "UPLOAD_FILENAME_INVALID"})
+    if request.headers.get("content-type", "").split(";", 1)[0].lower() != "application/pdf":
+        raise HTTPException(status_code=415, detail={"code": "UPLOAD_MIME_INVALID", "message": "仅接受 application/pdf"})
+    maximum = 50 * 1024 * 1024
+    if int(request.headers.get("content-length", "0") or 0) > maximum:
+        raise HTTPException(status_code=413, detail={"code": "UPLOAD_TOO_LARGE"})
+    content = bytearray()
+    async for block in request.stream():
+        content.extend(block)
+        if len(content) > maximum:
+            raise HTTPException(status_code=413, detail={"code": "UPLOAD_TOO_LARGE"})
+    if len(content) < 5 or not content.startswith(b"%PDF-"):
+        raise HTTPException(status_code=400, detail={"code": "UPLOAD_NOT_PDF"})
+    try:
+        import fitz
+        with fitz.open(stream=bytes(content), filetype="pdf") as document:
+            if document.needs_pass:
+                raise HTTPException(status_code=400, detail={"code": "UPLOAD_PDF_ENCRYPTED"})
+            if document.page_count < 1:
+                raise HTTPException(status_code=400, detail={"code": "UPLOAD_PDF_EMPTY"})
+    except HTTPException:
+        raise
+    except Exception as exc:
+        raise HTTPException(status_code=400, detail={"code": "UPLOAD_PDF_INVALID"}) from exc
+    data = bytes(content)
+    return name, data, hashlib.sha256(data).hexdigest()
+
+
+async def queue_scoped_upload(request: Request, principal: Principal, *, collection: dict,
+                              conversation_id: str | None = None) -> dict:
+    name, content, source_hash = await validated_pdf_body(request)
+    active = pipeline.store.active_ingestion_for_hash(source_hash, collection["collection_id"])
+    if active:
+        raise HTTPException(status_code=409, detail={"code": "DUPLICATE_TASK_ACTIVE", **active})
+    document_id = f"doc_{uuid.uuid4().hex}"
+    run_id = f"run_{uuid.uuid4().hex}"
+    expires_at = None
+    root_name = "temporary" if collection["scope_type"] == "temporary" else "private"
+    if root_name == "temporary":
+        expires_at = (datetime.now(timezone.utc) + timedelta(
+            hours=pipeline.settings.temp_document_ttl_hours)).isoformat()
+    destination = (pipeline.settings.var_dir / root_name / principal.tenant_id /
+                   principal.subject / document_id / name).resolve()
+    expected_root = (pipeline.settings.var_dir / root_name).resolve()
+    if not destination.is_relative_to(expected_root):
+        raise HTTPException(status_code=400, detail={"code": "UPLOAD_PATH_INVALID"})
+    destination.parent.mkdir(parents=True, exist_ok=False)
+    destination.write_bytes(content)
+    pipeline.store.create_ingestion_job(
+        run_id, request.state.request_id, file_path=str(destination), force=False,
+        source_hash=source_hash, tenant_id=principal.tenant_id, owner_id=principal.subject,
+        collection_id=collection["collection_id"], scope_type=collection["scope_type"],
+        conversation_id=conversation_id, expires_at=expires_at, document_id=document_id,
+    )
+    request.app.state.worker.notify()
+    return {"document_id": document_id, "run_id": run_id,
+            "request_id": request.state.request_id, "status": "queued", "expires_at": expires_at}
 
 
 @app.exception_handler(RagError)
@@ -176,8 +261,181 @@ def logout(response: Response) -> dict:
 
 @app.get("/v1/auth/status")
 def auth_status(request: Request) -> dict:
+    principal = principal_from_request(request)
     return {"configured": security.configured,
-            "authenticated": security.valid(request.cookies.get(security.cookie_name))}
+            "authenticated": principal.subject != "anonymous",
+            "subject": None if principal.subject == "anonymous" else principal.subject,
+            "roles": sorted(principal.roles), "auth_method": principal.auth_method}
+
+
+@app.get("/v1/collections")
+def list_collections(principal: Principal = Depends(current_user)) -> dict:
+    items = pipeline.store.accessible_collections(principal.tenant_id, principal.subject)
+    return {"count": len(items), "items": items}
+
+
+@app.post("/v1/collections", status_code=201)
+def create_collection(body: NamedResourceRequest,
+                      principal: Principal = Depends(current_user)) -> dict:
+    return pipeline.store.create_private_collection(
+        principal.tenant_id, principal.subject, body.name.strip()
+    )
+
+
+@app.patch("/v1/collections/{collection_id}")
+def rename_collection(collection_id: str, body: NamedResourceRequest,
+                      principal: Principal = Depends(current_user)) -> dict:
+    if not pipeline.store.rename_private_collection(
+            collection_id, principal.tenant_id, principal.subject, body.name.strip()):
+        raise HTTPException(status_code=404, detail={"code": "COLLECTION_NOT_FOUND"})
+    return pipeline.store.collection_for_owner(collection_id, principal.tenant_id, principal.subject) or {}
+
+
+@app.delete("/v1/collections/{collection_id}", status_code=204)
+def delete_collection(collection_id: str, principal: Principal = Depends(current_user)) -> Response:
+    if not pipeline.delete_private_collection(collection_id, principal.tenant_id, principal.subject):
+        raise HTTPException(status_code=404, detail={"code": "COLLECTION_NOT_FOUND"})
+    return Response(status_code=204)
+
+
+@app.get("/v1/collections/{collection_id}/documents")
+def list_collection_documents(collection_id: str, q: str | None = None,
+                              principal: Principal = Depends(current_user)) -> dict:
+    items = pipeline.store.collection_documents(
+        collection_id, principal.tenant_id, principal.subject, query=q
+    )
+    if items is None:
+        raise HTTPException(status_code=404, detail={"code": "COLLECTION_NOT_FOUND"})
+    return {"count": len(items), "items": items}
+
+
+@app.post("/v1/collections/{collection_id}/documents", status_code=202)
+async def upload_collection_document(collection_id: str, request: Request,
+                                     principal: Principal = Depends(current_user)) -> dict:
+    collection = pipeline.store.collection_for_owner(
+        collection_id, principal.tenant_id, principal.subject
+    )
+    if not collection or collection["scope_type"] != "private":
+        raise HTTPException(status_code=404, detail={"code": "COLLECTION_NOT_FOUND"})
+    return await queue_scoped_upload(request, principal, collection=collection)
+
+
+@app.post("/v1/conversations", status_code=201)
+def create_conversation(body: ConversationRequest,
+                        principal: Principal = Depends(current_user)) -> dict:
+    return pipeline.store.create_conversation(
+        principal.tenant_id, principal.subject, body.title.strip()
+    )
+
+
+@app.post("/v1/conversations/{conversation_id}/documents", status_code=202)
+async def upload_temporary_document(conversation_id: str, request: Request,
+                                    principal: Principal = Depends(current_user)) -> dict:
+    conversation = pipeline.store.conversation(
+        conversation_id, principal.tenant_id, principal.subject
+    )
+    if not conversation:
+        raise HTTPException(status_code=404, detail={"code": "CONVERSATION_NOT_FOUND"})
+    collections = pipeline.store.accessible_collections(principal.tenant_id, principal.subject)
+    collection = next((item for item in collections if item["scope_type"] == "temporary" and
+                       item["conversation_id"] == conversation_id), None)
+    if not collection:
+        raise HTTPException(status_code=404, detail={"code": "CONVERSATION_NOT_FOUND"})
+    return await queue_scoped_upload(
+        request, principal, collection=collection, conversation_id=conversation_id
+    )
+
+
+@app.get("/v1/conversations/{conversation_id}/documents")
+def list_temporary_documents(conversation_id: str,
+                             principal: Principal = Depends(current_user)) -> dict:
+    conversation = pipeline.store.conversation(conversation_id, principal.tenant_id, principal.subject)
+    if not conversation:
+        raise HTTPException(status_code=404, detail={"code": "CONVERSATION_NOT_FOUND"})
+    collection = next((item for item in pipeline.store.accessible_collections(
+        principal.tenant_id, principal.subject
+    ) if item["scope_type"] == "temporary" and item["conversation_id"] == conversation_id), None)
+    items = pipeline.store.collection_documents(
+        collection["collection_id"], principal.tenant_id, principal.subject
+    ) if collection else []
+    return {"count": len(items or []), "items": items or []}
+
+
+@app.delete("/v1/documents/{document_id}", status_code=204)
+def delete_document(document_id: str, principal: Principal = Depends(current_user)) -> Response:
+    if not pipeline.delete_scoped_document(document_id, principal.tenant_id, principal.subject):
+        raise HTTPException(status_code=404, detail={"code": "DOCUMENT_NOT_FOUND"})
+    return Response(status_code=204)
+
+
+@app.get("/v1/documents/{document_id}/status")
+def document_status(document_id: str, principal: Principal = Depends(current_user)) -> dict:
+    item = pipeline.store.document_status(document_id, principal.tenant_id, principal.subject)
+    if not item:
+        raise HTTPException(status_code=404, detail={"code": "DOCUMENT_NOT_FOUND"})
+    return item
+
+
+@app.post("/v1/documents/{document_id}/promote", status_code=201)
+def promote_document(document_id: str, body: PromoteRequest,
+                     principal: Principal = Depends(current_user)) -> dict:
+    promoted = pipeline.promote_temporary_document(
+        document_id, body.collection_id, principal.tenant_id, principal.subject
+    )
+    if not promoted:
+        raise HTTPException(status_code=404, detail={"code": "DOCUMENT_NOT_FOUND"})
+    return promoted
+
+
+@app.get("/v1/documents/{document_id}/pdf")
+def scoped_pdf(document_id: str, principal: Principal = Depends(current_user)):
+    item = pipeline.store.document_for_user(document_id, principal.tenant_id, principal.subject)
+    if not item:
+        raise HTTPException(status_code=404, detail={"code": "DOCUMENT_NOT_FOUND"})
+    path = Path(item["stored_path"] or "").resolve()
+    roots = [pipeline.settings.data_dir.resolve(),
+             (pipeline.settings.var_dir / "private").resolve(),
+             (pipeline.settings.var_dir / "temporary").resolve()]
+    if not any(path.is_relative_to(root) for root in roots) or not path.is_file():
+        raise HTTPException(status_code=404, detail={"code": "PDF_UNAVAILABLE"})
+    return FileResponse(path, media_type="application/pdf", filename=item["source_name"])
+
+
+@app.post("/v1/admin/temporary-documents/cleanup", dependencies=[Depends(require_admin)])
+def cleanup_temporary_documents() -> dict:
+    return pipeline.cleanup_expired_documents()
+
+
+@app.get("/v1/conversations")
+def list_conversations(principal: Principal = Depends(current_user)) -> dict:
+    items = pipeline.store.conversations(principal.tenant_id, principal.subject)
+    return {"count": len(items), "items": items}
+
+
+@app.get("/v1/conversations/{conversation_id}")
+def get_conversation(conversation_id: str,
+                     principal: Principal = Depends(current_user)) -> dict:
+    item = pipeline.store.conversation(conversation_id, principal.tenant_id, principal.subject)
+    if not item:
+        raise HTTPException(status_code=404, detail={"code": "CONVERSATION_NOT_FOUND"})
+    return item
+
+
+@app.patch("/v1/conversations/{conversation_id}")
+def rename_conversation(conversation_id: str, body: ConversationRequest,
+                        principal: Principal = Depends(current_user)) -> dict:
+    if not pipeline.store.rename_conversation(
+            conversation_id, principal.tenant_id, principal.subject, body.title.strip()):
+        raise HTTPException(status_code=404, detail={"code": "CONVERSATION_NOT_FOUND"})
+    return get_conversation(conversation_id, principal)
+
+
+@app.delete("/v1/conversations/{conversation_id}", status_code=204)
+def delete_conversation(conversation_id: str,
+                        principal: Principal = Depends(current_user)) -> Response:
+    if not pipeline.delete_conversation(conversation_id, principal.tenant_id, principal.subject):
+        raise HTTPException(status_code=404, detail={"code": "CONVERSATION_NOT_FOUND"})
+    return Response(status_code=204)
 
 
 @app.post("/v1/uploads", status_code=202, dependencies=[Depends(require_admin)])
@@ -250,7 +508,11 @@ def retry_run(run_id: str, request: Request) -> dict:
     new_run, new_request = f"run_{uuid.uuid4().hex}", f"req_{uuid.uuid4().hex}"
     pipeline.store.create_ingestion_job(new_run, new_request, file_path=job["file_path"],
                                         force=bool(job["force"]), parent_run_id=run_id,
-                                        source_hash=job.get("source_hash"))
+                                        source_hash=job.get("source_hash"),
+                                        tenant_id=job.get("tenant_id"), owner_id=job.get("owner_id"),
+                                        collection_id=job.get("collection_id"), scope_type=job.get("scope_type"),
+                                        conversation_id=job.get("conversation_id"), expires_at=job.get("expires_at"),
+                                        document_id=job.get("document_id"))
     request.app.state.worker.notify()
     return {"run_id": new_run, "request_id": new_request, "status": "queued", "parent_run_id": run_id}
 
@@ -273,8 +535,71 @@ def get_run(run_id: str) -> dict:
 
 @app.post("/v1/query")
 def query(body: QueryRequest, request: Request) -> dict:
-    return pipeline.query(body.question, top_k=body.top_k, paper_ids=body.paper_ids,
-                          request_id=request.state.request_id).to_dict()
+    principal = principal_from_request(request)
+    # Legacy anonymous calls remain official-only. Private or conversation scope
+    # always requires a verified principal and ownership is enforced in SQL.
+    wants_private_scope = bool(body.collection_ids or body.conversation_id)
+    if wants_private_scope:
+        require_user(principal)
+    conversation = None
+    retrieval_question = body.question
+    if body.conversation_id:
+        conversation = pipeline.store.conversation(
+            body.conversation_id, principal.tenant_id, principal.subject
+        )
+        if not conversation:
+            raise HTTPException(status_code=404, detail={"code": "CONVERSATION_NOT_FOUND"})
+        retrieval_question = ContextualQueryRewriter(
+            pipeline.settings.conversation_context_messages
+        ).rewrite(body.question, conversation["messages"])
+    result = pipeline.query(
+        body.question, top_k=body.top_k, paper_ids=body.paper_ids,
+        request_id=request.state.request_id,
+        tenant_id=principal.tenant_id,
+        subject=principal.subject,
+        collection_ids=body.collection_ids,
+        conversation_id=body.conversation_id,
+        include_official=body.include_official,
+        retrieval_question=retrieval_question,
+    )
+    if body.conversation_id:
+        pipeline.store.add_message(
+            body.conversation_id, principal.tenant_id, principal.subject, "user", body.question,
+            request_id=result.request_id, original_question=body.question,
+            retrieval_question=retrieval_question,
+        )
+        pipeline.store.add_message(
+            body.conversation_id, principal.tenant_id, principal.subject, "assistant", result.answer,
+            request_id=result.request_id, citations=[item.to_dict() for item in result.evidence],
+        )
+    return result.to_dict()
+
+
+@app.post("/v1/retrieve")
+def retrieve(body: QueryRequest, request: Request) -> dict:
+    principal = principal_from_request(request)
+    if body.collection_ids or body.conversation_id:
+        require_user(principal)
+    return pipeline.retrieve(
+        body.question, top_k=body.top_k, tenant_id=principal.tenant_id,
+        subject=principal.subject, collection_ids=body.collection_ids,
+        conversation_id=body.conversation_id, include_official=body.include_official,
+        paper_ids=body.paper_ids,
+        request_id=request.state.request_id,
+    )
+
+
+@app.get("/v1/evidence/{evidence_id}")
+def evidence_detail(evidence_id: str, request: Request,
+                    conversation_id: str | None = None) -> dict:
+    principal = principal_from_request(request)
+    item = pipeline.store.evidence_for_user(
+        evidence_id, principal.tenant_id, principal.subject,
+        conversation_id=conversation_id,
+    )
+    if not item:
+        raise HTTPException(status_code=404, detail={"code": "EVIDENCE_NOT_FOUND"})
+    return item
 
 
 @app.get("/v1/queries/{request_id}", dependencies=[Depends(require_admin)])
@@ -283,6 +608,14 @@ def query_diagnostic(request_id: str) -> dict:
     if not result:
         raise HTTPException(status_code=404, detail="query not found")
     return result
+
+
+@app.get("/v1/queries", dependencies=[Depends(require_admin)])
+def list_query_runs(limit: int = 20) -> dict:
+    if not 1 <= limit <= 100:
+        raise HTTPException(status_code=400, detail={"code": "PAGINATION_INVALID"})
+    items = pipeline.store.latest_query_runs(limit)
+    return {"count": len(items), "items": items}
 
 
 @app.get("/v1/extractions/schema", dependencies=[Depends(require_admin)])
@@ -303,7 +636,7 @@ def papers(limit: int = 50, offset: int = 0, status: str | None = None,
            q: str | None = None) -> dict:
     if not 1 <= limit <= 200 or offset < 0:
         raise HTTPException(status_code=400, detail={"code": "PAGINATION_INVALID"})
-    items = pipeline.store.papers()
+    items = pipeline.store.official_papers()
     if status:
         if status not in {"ready", "partial_failed", "failed", "processing"}:
             raise HTTPException(status_code=400, detail={"code": "PAPER_STATUS_INVALID"})
@@ -318,7 +651,12 @@ def papers(limit: int = 50, offset: int = 0, status: str | None = None,
 
 @app.get("/v1/papers/{paper_id}")
 def paper_detail(paper_id: str) -> dict:
-    return public_paper(checked_paper(paper_id))
+    if not re.fullmatch(r"paper_[a-f0-9]{24}", paper_id):
+        raise HTTPException(status_code=400, detail="invalid paper_id")
+    item = pipeline.store.official_paper(paper_id)
+    if not item:
+        raise HTTPException(status_code=404, detail="paper not found")
+    return public_paper(item)
 
 
 @app.post("/v1/papers/{paper_id}/retry", status_code=202, dependencies=[Depends(require_admin)])

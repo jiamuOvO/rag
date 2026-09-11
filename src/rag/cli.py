@@ -38,6 +38,7 @@ def parser() -> argparse.ArgumentParser:
     commands.add_parser("embed", help="atomically rebuild vectors without reparsing PDFs")
     backup = commands.add_parser("backup", help="create a consistent non-overwriting SQLite backup")
     backup.add_argument("--output", type=Path)
+    commands.add_parser("cleanup-temp", help="safely remove expired temporary documents")
     return root
 
 
@@ -78,6 +79,8 @@ def main() -> int:
             return 0 if result["status"] == "completed" else 1
         elif args.command == "backup":
             output(pipeline.store.backup(args.output))
+        elif args.command == "cleanup-temp":
+            output(pipeline.cleanup_expired_documents())
         return 0
     except Exception as exc:
         output({"status": "failed", "error": error_info(exc, getattr(exc, "stage", "cli")).to_dict()})
