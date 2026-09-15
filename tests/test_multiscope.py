@@ -54,7 +54,7 @@ def test_multiscope_migrations_are_idempotent_and_create_official_scope(tmp_path
     pipeline = Pipeline(settings(tmp_path))
     pipeline.store.__class__(pipeline.settings.db_path)
     with pipeline.store.connect() as conn:
-        assert conn.execute("SELECT max(version) FROM schema_migrations").fetchone()[0] == 14
+        assert conn.execute("SELECT max(version) FROM schema_migrations").fetchone()[0] == 16
         row = conn.execute("SELECT * FROM collections WHERE collection_id='col_official_default'").fetchone()
         assert row and row["scope_type"] == "official" and row["owner_id"] is None
 
@@ -77,7 +77,7 @@ def test_realistic_v10_database_upgrades_without_changing_existing_ids(tmp_path:
     Store(path)
     with sqlite3.connect(path) as conn:
         assert conn.execute("PRAGMA integrity_check").fetchone()[0] == "ok"
-        assert conn.execute("SELECT max(version) FROM schema_migrations").fetchone()[0] == 14
+        assert conn.execute("SELECT max(version) FROM schema_migrations").fetchone()[0] == 16
         mapped = conn.execute("SELECT paper_id,scope_type FROM collection_documents").fetchone()
         assert mapped == ("paper_0123456789abcdef01234567", "official")
 

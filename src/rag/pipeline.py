@@ -17,6 +17,7 @@ from .models import QueryResult
 from .observability import JsonLogger
 from .parser import PdfParser
 from .providers import ExtractiveProvider, configured_embedding_provider, configured_provider
+from .visualizations import extract_visualization
 from .retriever import (BM25Retriever, DenseRetriever, analyze_query,
                         has_reliable_lexical_support, reciprocal_rank_fusion)
 from .reranker import configured_reranker
@@ -35,7 +36,36 @@ def paper_id(source_hash: str) -> str:
     return f"paper_{source_hash[:24]}"
 
 
+def validate_citation_boundary(answer: str, evidence_ids: set[str], policy: str) -> tuple[bool, str]:
+    cited = set(re.findall(r"\[(ev_[A-Za-z0-9_-]+)\]", answer or ""))
+    if cited - evidence_ids:
+        return False, "unknown_evidence_id"
+    if policy == "general":
+        return (not cited and "未经当前知识库验证" in answer), "general_must_be_unverified_and_uncited"
+    if not evidence_ids:
+        return (not cited and "未经当前知识库验证" in answer), "no_evidence_boundary_missing"
+    if not cited:
+        return False, "citation_missing"
+    marker = "未经当前知识库验证"
+    if policy == "evidence_first" and marker in answer and re.search(r"\[ev_[A-Za-z0-9_-]+\]", answer.split(marker, 1)[1]):
+        return False, "general_section_cited"
+    return True, "valid"
+
+
 class Pipeline:
+    # `fused` and `evidence` are two independent gates: `fused` caps the RRF list, `evidence`
+    # decides how many of those reach the model.  RRF gives a candidate that only one retriever
+    # found at most 1/(60+1), while a candidate both found scores 0.02-0.03, so the head of the
+    # fused list is a block of dual-list hits.  A window narrower than that block can never reach
+    # a single-list candidate, however strong it is elsewhere.  Measured on the corpus:
+    # "Which experiment reported 71.1% furfural yield at 130 C?" has 7 dual-list hits ahead of the
+    # gold chunk, so `standard` needs evidence >= 8 to keep the best lexical-only hit visible.
+    DEPTHS = {
+        "fast": {"bm25": 16, "dense": 16, "fused": 10, "evidence": 4, "rerank": False, "context": 4},
+        "standard": {"bm25": 30, "dense": 30, "fused": 16, "evidence": 8, "rerank": True, "context": 8},
+        "deep": {"bm25": 60, "dense": 60, "fused": 30, "evidence": 8, "rerank": True, "context": 8},
+    }
+    POLICIES = {"strict", "evidence_first", "general"}
     def __init__(self, settings: Settings | None = None, *, logging_enabled: bool = True):
         self.settings = settings or Settings.load()
         self.settings.ensure_runtime_dirs()
@@ -51,6 +81,14 @@ class Pipeline:
 
     def _ids(self) -> tuple[str, str]:
         return f"run_{uuid.uuid4().hex}", f"req_{uuid.uuid4().hex}"
+
+    def _rerank_enabled(self, depth: dict) -> bool:
+        """Single source of truth for "does the reranker run at this depth".
+
+        The refusal path used to report `bool(depth["rerank"])` while the normal path also checked
+        the configured provider, so a disabled reranker was logged as active on refusals.
+        """
+        return bool(depth["rerank"] and self.settings.reranker_provider not in {"", "disabled", "none"})
 
     @contextmanager
     def _stage(self, stage: str, **context):
@@ -343,17 +381,28 @@ class Pipeline:
               collection_ids: list[str] | None = None,
               conversation_id: str | None = None,
               include_official: bool = True,
-              retrieval_question: str | None = None) -> QueryResult:
+              retrieval_question: str | None = None,
+              retrieval_depth: str = "standard",
+              answer_policy: str = "evidence_first") -> QueryResult:
         if not question.strip():
             raise RagError("QUERY_EMPTY", "retrieve", "question cannot be empty")
         if not 1 <= top_k <= 50:
             raise RagError("TOP_K_INVALID", "retrieve", "top_k must be between 1 and 50")
+        if retrieval_depth not in self.DEPTHS:
+            raise RagError("RETRIEVAL_DEPTH_INVALID", "retrieve", "unknown retrieval depth")
+        if answer_policy not in self.POLICIES:
+            raise RagError("ANSWER_POLICY_INVALID", "generate", "unknown answer policy")
+        query_started = time.perf_counter()
+        normalize_started = time.perf_counter()
+        depth = self.DEPTHS[retrieval_depth]
         request_id = request_id or f"req_{uuid.uuid4().hex}"
         timings: dict[str, float] = {}
         degraded_reasons: list[str] = []
         search_question = retrieval_question or question
         analysis = analyze_query(search_question)
         normalized_query = analysis["normalized"]
+        timings["normalize"] = round((time.perf_counter() - normalize_started) * 1000, 3)
+        timings["rewrite"] = 0.0  # retrieval_question is caller-supplied; no model rewrite stage yet
         warnings: list[dict] = []
         scoped = tenant_id is not None and subject is not None
         scoped_chunks: list[dict] | None = None
@@ -394,8 +443,12 @@ class Pipeline:
                                query_tokens=analysis["tokens"], expansions=analysis["expansions"],
                                tenant_id=tenant_id, subject=subject, collection_ids=collection_ids,
                                conversation_id=conversation_id, include_official=include_official,
-                               retrieval_question=search_question)
+                               retrieval_question=search_question, retrieval_depth=retrieval_depth,
+                               answer_policy=answer_policy)
         started = time.perf_counter()
+        embedding_meta = {"provider": self.settings.embedding_provider,
+                          "model": self.settings.embedding_model}
+        embedding_provider = None
         with self._stage("retrieve", request_id=request_id) as metric:
             if scoped:
                 chunks = scoped_chunks or []
@@ -409,8 +462,15 @@ class Pipeline:
                         self._retriever = BM25Retriever(self.store.chunks())
                     retriever = self._retriever
                 chunks = retriever.chunks
-            candidate_k = max(30, top_k * 4)
-            lexical = retriever.search(search_question, candidate_k)
+            source_participation: dict[str, dict[str, int]] = {}
+            for chunk in chunks:
+                source = chunk.get("scope_type") or chunk.get("source_type") or "official"
+                source_participation.setdefault(source, {"documents": 0, "chunks": 0})["chunks"] += 1
+            for source, bucket in source_participation.items():
+                bucket["documents"] = len({chunk.get("document_id") or chunk.get("paper_id")
+                                            for chunk in chunks
+                                            if (chunk.get("scope_type") or chunk.get("source_type") or "official") == source})
+            lexical = retriever.search(search_question, max(depth["bm25"], top_k))
             dense = []
             try:
                 embedding_provider = configured_embedding_provider(self.settings)
@@ -420,6 +480,9 @@ class Pipeline:
                                   error_code="EMBEDDING_DISABLED", exception_type="Configuration")
                 else:
                     query_vector = embedding_provider.embed([search_question])[0]
+                    embedding_meta.update({"provider": embedding_provider.name,
+                                           "model": embedding_provider.model,
+                                           **getattr(embedding_provider, "last_call", {})})
                     if scoped:
                         dense_chunks = self.store.scoped_chunks(
                             tenant_id, subject, collection_ids=collection_ids,
@@ -441,37 +504,55 @@ class Pipeline:
                     if not dense_chunks:
                         raise RagError("EMBEDDING_INDEX_EMPTY", "retrieve",
                                        "no stored embeddings for configured model")
-                    dense = DenseRetriever(dense_chunks).search(query_vector, candidate_k)
+                    dense = DenseRetriever(dense_chunks).search(query_vector, max(depth["dense"], top_k))
             except Exception as exc:
+                if embedding_provider is not None:
+                    embedding_meta.update({"provider": embedding_provider.name,
+                                           "model": embedding_provider.model,
+                                           **getattr(embedding_provider, "last_call", {})})
                 reason = error_info(exc, getattr(exc, "stage", "retrieve"), self.settings.debug).error_code
                 degraded_reasons.append(reason)
                 self.log.emit("retrieval_degraded", request_id=request_id, error_code=reason,
                               exception_type=type(exc).__name__)
-            evidence = reciprocal_rank_fusion(lexical, dense, top_k=top_k) if dense else lexical[:top_k]
+            fusion_k = min(max(top_k, depth["fused"]), 50)
+            evidence = reciprocal_rank_fusion(lexical, dense, top_k=fusion_k) if dense else lexical[:fusion_k]
             fused = list(evidence)
+            rerank_started = time.perf_counter()
             try:
                 reranker = configured_reranker(self.settings.reranker_provider)
-                if reranker is not None:
+                if reranker is not None and depth["rerank"]:
                     evidence = reranker.rerank(search_question, evidence)[:top_k]
             except Exception as exc:
                 reason = error_info(exc, "rerank", self.settings.debug).error_code
                 degraded_reasons.append(reason)
                 self.log.emit("reranker_degraded", request_id=request_id, error_code=reason,
                               exception_type=type(exc).__name__)
+            timings["rerank"] = round((time.perf_counter() - rerank_started) * 1000, 3)
             evidence = [item for item in evidence if has_reliable_lexical_support(search_question, item.excerpt)]
-            selected_ids = {item.chunk_id for item in evidence[:5]}
+            selected_ids = {item.chunk_id for item in evidence[:depth["evidence"]]}
             self.store.save_query_candidates(request_id, "bm25", lexical, selected_ids)
             if dense:
                 self.store.save_query_candidates(request_id, "dense", dense, selected_ids)
                 self.store.save_query_candidates(request_id, "rrf", fused, selected_ids)
-            if self.settings.reranker_provider not in {"", "disabled", "none"}:
+            if self._rerank_enabled(depth):
                 self.store.save_query_candidates(request_id, "pre_rerank", fused, selected_ids)
                 self.store.save_query_candidates(request_id, "rerank", evidence, selected_ids)
             metric.update(candidates=len(chunks), lexical=len(lexical), dense=len(dense),
                           returned=len(evidence), degraded=bool(degraded_reasons))
         timings["retrieve"] = round((time.perf_counter() - started) * 1000, 3)
         # A hit must contain at least one lexical term. BM25 returns only positive hits.
-        if not evidence:
+        # The local extractive fallback has no independent knowledge to offer.  With
+        # no selected evidence it must remain an explicit refusal even when the
+        # requested policy would allow a configured generative model to add a
+        # clearly-labelled general-knowledge section.
+        if not evidence and (answer_policy == "strict" or self.settings.chat_provider == "extractive"):
+            timings["generate"] = 0.0
+            timings["total"] = round((time.perf_counter() - query_started) * 1000, 3)
+            refusal_metrics = {"bm25_candidates": len(lexical), "dense_candidates": len(dense),
+                               "fused_candidates": len(fused), "final_evidence": 0,
+                               "rerank": self._rerank_enabled(depth), "max_context_evidence": depth["context"],
+                               "source_participation": source_participation,
+                               "embedding": embedding_meta}
             result = QueryResult(
                 request_id=request_id,
                 answer="当前语料中证据不足，无法可靠回答该问题。",
@@ -483,42 +564,79 @@ class Pipeline:
                 warnings=warnings, corpus_incomplete=corpus_incomplete,
                 normalized_query=normalized_query,
                 timings_ms=timings,
+                retrieval_depth=retrieval_depth, answer_policy=answer_policy,
+                retrieval_metrics=refusal_metrics,
             )
             self.store.finish_query(request_id, status="refused", answer_mode="refusal",
                                     degraded=result.degraded, insufficient_evidence=True,
                                     corpus_incomplete=corpus_incomplete, warnings=warnings, timings=timings,
                                     generation_provider="none", prompt_version="refusal-v1",
-                                    answer_text=result.answer)
+                                    answer_text=result.answer, retrieval_metrics=refusal_metrics,
+                                    citation_validation="not_applicable")
             return result
-        selected = evidence[:5]
+        selected = evidence[:depth["evidence"]]
         generate_started = time.perf_counter()
         degraded, reason = bool(degraded_reasons), None
+        attempted_provider = None
+        generation_meta = {"provider": self.settings.chat_provider,
+                           "model": self.settings.chat_model,
+                           "configured_model": self.settings.chat_model,
+                           "answer_provider": None}
         with self._stage("generate", request_id=request_id) as metric:
             try:
                 provider = configured_provider(self.settings)
-                answer = provider.answer(question, selected)
+                attempted_provider = provider
+                provider_evidence = [] if answer_policy == "general" else selected
+                try:
+                    answer = provider.answer(question, provider_evidence, answer_policy=answer_policy)
+                except TypeError:
+                    answer = provider.answer(question, provider_evidence)
                 if provider.name == "extractive_demo":
                     degraded = True
                     degraded_reasons.append("CHAT_NOT_CONFIGURED")
                     self.log.emit("generation_degraded", request_id=request_id,
                                   error_code="CHAT_NOT_CONFIGURED", exception_type="Configuration")
                 else:
-                    cited = set(re.findall(r"\[(ev_[A-Za-z0-9_-]+)\]", answer))
                     allowed = {item.evidence_id for item in selected}
-                    if not cited or not cited.issubset(allowed):
-                        raise RagError("CITATION_BINDING_INVALID", "generate",
-                                       "model answer cited missing or unknown evidence IDs")
+                    valid, citation_state = validate_citation_boundary(answer, allowed, answer_policy)
+                    if not valid:
+                        if hasattr(provider, "repair_citations") and selected and answer_policy != "general":
+                            repaired = provider.repair_citations(question, selected, answer)
+                        else:
+                            try:
+                                repaired = provider.answer(question, provider_evidence, answer_policy=answer_policy)
+                            except TypeError:
+                                repaired = provider.answer(question, provider_evidence)
+                        valid, citation_state = validate_citation_boundary(repaired, allowed, answer_policy)
+                        if not valid:
+                            raise RagError("CITATION_BINDING_INVALID", "generate",
+                                           f"model answer remained invalid after one repair: {citation_state}")
+                        answer = repaired
+                        warnings.append({"code": "CITATION_FORMAT_REPAIRED", "message": "模型回答经一次受约束修复后通过引用校验"})
+                generation_meta.update({"provider": provider.name,
+                                        "model": getattr(provider, "model", None),
+                                        "prompt_version": getattr(provider, "prompt_version", None),
+                                        "answer_provider": provider.name,
+                                        **getattr(provider, "last_call", {})})
             except Exception as exc:
                 degraded = True
                 reason = error_info(exc, "generate", self.settings.debug).error_code
                 degraded_reasons.append(reason)
                 self.log.emit("generation_degraded", request_id=request_id,
                               error_code=reason, exception_type=type(exc).__name__)
+                if attempted_provider is not None:
+                    generation_meta.update({"provider": attempted_provider.name,
+                                            "model": getattr(attempted_provider, "model", None),
+                                            "prompt_version": getattr(attempted_provider, "prompt_version", None),
+                                            **getattr(attempted_provider, "last_call", {})})
                 provider = ExtractiveProvider()
                 answer = provider.answer(question, selected)
+                generation_meta["answer_provider"] = provider.name
             metric.update(provider=provider.name, evidence=len(selected), degraded=degraded)
         timings["generate"] = round((time.perf_counter() - generate_started) * 1000, 3)
-        timings["total"] = round((time.perf_counter() - started) * 1000, 3)
+        answer, visualizations, visualization_warnings = extract_visualization(answer, selected) if answer_policy != "general" else (answer, [], [])
+        warnings.extend(visualization_warnings)
+        timings["total"] = round((time.perf_counter() - query_started) * 1000, 3)
         if degraded_reasons:
             warnings.append({"code": "COMPONENT_DEGRADED",
                              "message": "部分组件不可用，本次结果已显式降级",
@@ -537,26 +655,35 @@ class Pipeline:
                 warnings.append({"code": code, "message": "结构化抽取失败，基础问答不受影响"})
                 self.log.emit("structured_extraction_failed", request_id=request_id,
                               error_code=code, exception_type=type(exc).__name__)
+        response_evidence = [] if answer_policy == "general" else selected
         result = QueryResult(
             request_id=request_id, answer=answer, answer_mode=provider.name,
-            evidence=selected, degraded=degraded,
+            evidence=response_evidence, degraded=degraded,
+            insufficient_evidence=not bool(selected),
             degradation_reason=",".join(degraded_reasons) or reason,
             warnings=warnings, corpus_incomplete=corpus_incomplete,
             normalized_query=normalized_query,
             structured_extraction=structured,
-            generation={"provider": provider.name,
-                        "model": getattr(provider, "model", None),
-                        "configured_model": self.settings.chat_model,
-                        "prompt_version": getattr(provider, "prompt_version", None)},
+            generation=generation_meta,
             timings_ms=timings,
+            visualizations=visualizations, retrieval_depth=retrieval_depth,
+            answer_policy=answer_policy,
+            retrieval_metrics={"bm25_candidates": len(lexical), "dense_candidates": len(dense),
+                               "fused_candidates": len(fused), "final_evidence": len(selected),
+                               "rerank": self._rerank_enabled(depth),
+                               "max_context_evidence": depth["context"],
+                               "source_participation": source_participation,
+                               "embedding": embedding_meta},
         )
         self.store.finish_query(request_id, status="completed", answer_mode=provider.name,
-                                degraded=degraded, insufficient_evidence=False,
+                                degraded=degraded, insufficient_evidence=not bool(selected),
                                 corpus_incomplete=corpus_incomplete, warnings=warnings, timings=timings,
-                                generation_provider=provider.name,
-                                generation_model=getattr(provider, "model", None) or self.settings.chat_model,
-                                prompt_version=getattr(provider, "prompt_version", None),
-                                answer_text=answer)
+                                generation_provider=generation_meta.get("provider"),
+                                generation_model=generation_meta.get("model"),
+                                prompt_version=generation_meta.get("prompt_version"),
+                                answer_text=answer, retrieval_metrics=result.retrieval_metrics,
+                                citation_validation=(citation_state if provider.name != "extractive_demo" else "degraded_extractive"),
+                                generation_meta=result.generation)
         return result
 
     def rebuild_embeddings(self) -> dict:

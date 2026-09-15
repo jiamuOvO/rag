@@ -223,6 +223,9 @@ def test_authenticated_browser_upload_and_review_flow(tmp_path: Path, monkeypatc
         recent_queries = client.get("/v1/queries")
         assert recent_queries.status_code == 200
         assert answer["request_id"] in {item["request_id"] for item in recent_queries.json()["items"]}
+        searched = client.get(f"/v1/queries?request_id={answer['request_id']}")
+        assert searched.status_code == 200 and searched.json()["items"][0]["request_id"] == answer["request_id"]
+        assert client.get("/v1/queries?request_id=bad").status_code == 400
 
 
 def test_model_embedding_and_reranker_failures_are_explicit(tmp_path: Path, monkeypatch):
@@ -252,6 +255,7 @@ def test_model_embedding_and_reranker_failures_are_explicit(tmp_path: Path, monk
     assert "EMBEDDING_TEST_FAILURE" in result.degradation_reason
     assert "RERANK_FAILED" in result.degradation_reason
     assert "CITATION_BINDING_INVALID" in result.degradation_reason
+    assert result.retrieval_metrics["embedding"] == {"provider": "broken", "model": "broken-v1"}
     log_text = cfg.log_path.read_text(encoding="utf-8")
     assert "EMBEDDING_TEST_FAILURE" in log_text
     assert "RERANK_FAILED" in log_text

@@ -3,6 +3,7 @@ from __future__ import annotations
 import re
 import hashlib
 import uuid
+import threading
 from datetime import datetime, timedelta, timezone
 from urllib.parse import unquote
 from contextlib import asynccontextmanager
@@ -20,9 +21,11 @@ from .pipeline import Pipeline
 from .conversation import ContextualQueryRewriter
 from .security import Principal, SessionSecurity, principal_from_request, require_user
 from .tasks import IngestionWorker
+from .text import evidence_highlights
 
 pipeline = Pipeline()
 security = SessionSecurity()
+generation_slots = threading.BoundedSemaphore(max(1, pipeline.settings.chat_max_concurrency))
 
 
 @asynccontextmanager
@@ -35,7 +38,7 @@ async def lifespan(app: FastAPI):
     worker.stop()
 
 
-app = FastAPI(title="Li_Jia Research RAG", version="0.2.0", lifespan=lifespan)
+app = FastAPI(title="Li_Jia Research RAG", version="0.4.0", lifespan=lifespan)
 web_dir = Path(__file__).with_name("web")
 app.mount("/assets", StaticFiles(directory=web_dir), name="assets")
 
@@ -71,6 +74,8 @@ class QueryRequest(BaseModel):
     collection_ids: list[str] | None = Field(default=None, max_length=50)
     conversation_id: str | None = Field(default=None, max_length=80)
     include_official: bool = True
+    retrieval_depth: str = Field(default="standard", pattern="^(fast|standard|deep)$")
+    answer_policy: str = Field(default="evidence_first", pattern="^(strict|evidence_first|general)$")
 
 
 class NamedResourceRequest(BaseModel):
@@ -114,7 +119,7 @@ def public_paper(item: dict) -> dict:
     if safe.get("last_error"):
         safe["last_error"] = {key: safe["last_error"].get(key) for key in
                               ("error_code", "stage", "message", "retryable")}
-    safe["chunk_count"] = len(pipeline.store.paper_chunks(item["paper_id"], limit=500))
+    safe["chunk_count"] = pipeline.store.paper_chunk_count(item["paper_id"])
     return safe
 
 
@@ -552,16 +557,23 @@ def query(body: QueryRequest, request: Request) -> dict:
         retrieval_question = ContextualQueryRewriter(
             pipeline.settings.conversation_context_messages
         ).rewrite(body.question, conversation["messages"])
-    result = pipeline.query(
-        body.question, top_k=body.top_k, paper_ids=body.paper_ids,
-        request_id=request.state.request_id,
-        tenant_id=principal.tenant_id,
-        subject=principal.subject,
-        collection_ids=body.collection_ids,
-        conversation_id=body.conversation_id,
-        include_official=body.include_official,
-        retrieval_question=retrieval_question,
-    )
+    if not generation_slots.acquire(blocking=False):
+        raise HTTPException(status_code=503, detail={"code": "GENERATION_BUSY", "message": "生成请求已满，请稍后重试", "retryable": True})
+    try:
+        result = pipeline.query(
+            body.question, top_k=body.top_k, paper_ids=body.paper_ids,
+            request_id=request.state.request_id,
+            tenant_id=principal.tenant_id,
+            subject=principal.subject,
+            collection_ids=body.collection_ids,
+            conversation_id=body.conversation_id,
+            include_official=body.include_official,
+            retrieval_question=retrieval_question,
+            retrieval_depth=body.retrieval_depth,
+            answer_policy=body.answer_policy,
+        )
+    finally:
+        generation_slots.release()
     if body.conversation_id:
         pipeline.store.add_message(
             body.conversation_id, principal.tenant_id, principal.subject, "user", body.question,
@@ -591,14 +603,17 @@ def retrieve(body: QueryRequest, request: Request) -> dict:
 
 @app.get("/v1/evidence/{evidence_id}")
 def evidence_detail(evidence_id: str, request: Request,
-                    conversation_id: str | None = None) -> dict:
+                    conversation_id: str | None = None,
+                    request_id: str | None = None) -> dict:
     principal = principal_from_request(request)
     item = pipeline.store.evidence_for_user(
         evidence_id, principal.tenant_id, principal.subject,
-        conversation_id=conversation_id,
+        conversation_id=conversation_id, request_id=request_id,
     )
     if not item:
         raise HTTPException(status_code=404, detail={"code": "EVIDENCE_NOT_FOUND"})
+    item.update(evidence_highlights(item.get("excerpt", ""), item.pop("query_tokens", []),
+                                    item.pop("expansions", [])))
     return item
 
 
@@ -611,9 +626,14 @@ def query_diagnostic(request_id: str) -> dict:
 
 
 @app.get("/v1/queries", dependencies=[Depends(require_admin)])
-def list_query_runs(limit: int = 20) -> dict:
+def list_query_runs(limit: int = 20, request_id: str | None = None) -> dict:
     if not 1 <= limit <= 100:
         raise HTTPException(status_code=400, detail={"code": "PAGINATION_INVALID"})
+    if request_id is not None:
+        if not re.fullmatch(r"req_[a-f0-9]{32}", request_id):
+            raise HTTPException(status_code=400, detail={"code": "REQUEST_ID_INVALID"})
+        item = pipeline.store.query_diagnostic(request_id)
+        return {"count": int(item is not None), "items": [item] if item else []}
     items = pipeline.store.latest_query_runs(limit)
     return {"count": len(items), "items": items}
 
@@ -662,7 +682,9 @@ def paper_detail(paper_id: str) -> dict:
 @app.post("/v1/papers/{paper_id}/retry", status_code=202, dependencies=[Depends(require_admin)])
 def retry_paper(paper_id: str, request: Request) -> dict:
     item = checked_paper(paper_id)
-    if item["status"] not in {"failed", "partial_failed"}:
+    quality = next((x for x in pipeline.store.pdf_quality_summary()["items"]
+                    if x["paper_id"] == paper_id), None)
+    if item["status"] not in {"failed", "partial_failed"} and not quality:
         raise HTTPException(status_code=409, detail={"code": "PAPER_NOT_RETRYABLE"})
     active = pipeline.store.active_ingestion_for_hash(item["source_hash"])
     if active:
@@ -671,12 +693,54 @@ def retry_paper(paper_id: str, request: Request) -> dict:
     roots = [pipeline.settings.data_dir.resolve(), (pipeline.settings.var_dir / "uploads").resolve()]
     if not any(path.is_relative_to(root) for root in roots) or not path.is_file():
         raise HTTPException(status_code=409, detail={"code": "PAPER_SOURCE_UNAVAILABLE"})
+    backup = pipeline.store.backup()
     run_id = f"run_{uuid.uuid4().hex}"
     pipeline.store.create_ingestion_job(run_id, request.state.request_id, file_path=str(path),
                                         force=True, source_hash=item["source_hash"])
     request.app.state.worker.notify()
     return {"run_id": run_id, "request_id": request.state.request_id, "status": "queued",
-            "paper_id": paper_id}
+            "paper_id": paper_id, "backup": backup, "quality_repair": bool(quality)}
+
+
+@app.get("/v1/admin/pdf-quality", dependencies=[Depends(require_admin)])
+def pdf_quality_summary() -> dict:
+    return pipeline.store.pdf_quality_summary()
+
+
+@app.post("/v1/admin/pdf-quality/repair", status_code=202,
+          dependencies=[Depends(require_admin)])
+def repair_pdf_quality(request: Request) -> dict:
+    summary = pipeline.store.pdf_quality_summary()
+    roots = [pipeline.settings.data_dir.resolve(), (pipeline.settings.var_dir / "uploads").resolve()]
+    ready = []
+    skipped = []
+    for quality in summary["items"]:
+        item = pipeline.store.official_paper(quality["paper_id"])
+        if not item:
+            skipped.append({"paper_id": quality["paper_id"], "reason": "NOT_OFFICIAL"})
+            continue
+        path = Path(item["file_path"]).resolve()
+        if not any(path.is_relative_to(root) for root in roots) or not path.is_file():
+            skipped.append({"paper_id": quality["paper_id"], "reason": "SOURCE_UNAVAILABLE"})
+            continue
+        if pipeline.store.active_ingestion_for_hash(item["source_hash"]):
+            skipped.append({"paper_id": quality["paper_id"], "reason": "ALREADY_ACTIVE"})
+            continue
+        ready.append((item, path))
+    if not ready:
+        return {"status": "no_op", "backup": None, "jobs": [], "skipped": skipped}
+    backup = pipeline.store.backup()
+    jobs = []
+    for item, path in ready:
+        run_id = f"run_{uuid.uuid4().hex}"
+        pipeline.store.create_ingestion_job(
+            run_id, request.state.request_id, file_path=str(path), force=True,
+            source_hash=item["source_hash"],
+        )
+        jobs.append({"run_id": run_id, "paper_id": item["paper_id"], "file_name": item["file_name"]})
+    request.app.state.worker.notify()
+    return {"status": "queued", "request_id": request.state.request_id,
+            "backup": backup, "jobs": jobs, "skipped": skipped}
 
 
 @app.get("/v1/papers/{paper_id}/pages", dependencies=[Depends(require_admin)])

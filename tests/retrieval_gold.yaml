@@ -1,0 +1,51 @@
+# Gold labels for retrieval quality metrics (Recall@K / Precision@K / HitRate@K / MRR / nDCG@K).
+#
+# Derived by scanning the production scope for chunks where every defining literal of the fact
+# occurs inside a single 400-character window, then hand-checked against the printed snippet.
+# A chunk whose numbers appear only in a far-away table or reference entry is NOT labelled
+# relevant.  Re-derive with tests/derive_gold.py after any re-ingestion.
+#
+# caveat: the questions name exact literals, so a perfect score is achievable by literal
+# matching alone.  These metrics measure whether the retriever surfaces the page that states
+# the fact - not whether it 'understands' the question.
+version: 1
+window: 400
+cases:
+  - id: exact_temperature_yield
+    question: Which xylose experiment reported 71.1% furfural yield at 130 C?
+    literals: ["71.1", "130"]
+    note: The sentence pairing 71.1% with 130 C in the SnCl4 paper.
+    relevant_chunk_ids:
+      - chk_23a0c15f43bbc31ba51d1d39
+      - chk_26d8babf0b1a956332b5a24d
+      - chk_33a6d883153f6b7171cdfe7a
+      - chk_3802f88572be015e0e26a58d
+      - chk_76e8cf8001bf01288fd488c1
+      - chk_7943e517bfdbc2b671b18f93
+      - chk_cac3807d9a18c151af2918db
+  - id: des_high_yield
+    question: Which experiment reported 89.5% furfural yield at 157.3 C in 1.74 min?
+    literals: ["89.5", "157.3", "1.74"]
+    note: Deep-eutectic-solvent paper, abstract and conclusions.
+    relevant_chunk_ids:
+      - chk_86d0fa326f0392661191cc1c
+      - chk_fbc7a95665f94f660bc1af2c
+  - id: cmf_temperature_peak
+    question: At which temperatures did the furfural molar yield peak at 88.8 and 96.8%?
+    literals: ["88.8", "96.8"]
+    note: Chloromethylfurfural paper, Figure 13 discussion.
+    relevant_chunk_ids:
+      - chk_4bf9c07e207731f07720a1fb
+  - id: three_value_comparison
+    question: Compare the furfural yields obtained at 120, 130 and 140 C.
+    literals: ["66.5", "71.1", "70.2"]
+    note: Single sentence listing all three yields with their residence times.
+    relevant_chunk_ids:
+      - chk_3802f88572be015e0e26a58d
+  - id: xylan_residence_time
+    question: What furfural yield did xylan give after 30 min and at its maximum?
+    literals: ["41.7", "50.1"]
+    note: Xylan conversion experiment in the EMIMBr/SnCl4 system at 130 C.
+    relevant_chunk_ids:
+      - chk_8cc5cec9a375be2393d7efb8
+      - chk_a31155b8bf9d90dce8836014

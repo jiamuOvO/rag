@@ -1,13 +1,53 @@
-# Li_Jia 科研论文 RAG（v0.3 多作用域模块）
+# Li_Jia 科研论文 RAG（v0.4.1 可调节、可诊断问答）
 
-## 当前状态快照（2026-09-11）
+## 当前状态（2026-09-15）
 
-- 真实 SQLite 已迁移到 schema v14，`integrity_check=ok`、WAL 开启、外键检查无违规。
+- 自动化回归为 **59 passed, 6 warnings**；真实 SQLite 为 schema v16，包含 18 篇论文、258 页、929 chunks 和 929 embeddings。
+- 端到端问题集位于 `tests/eval_cases.yaml`，共 8 题；检索金标位于 `tests/retrieval_gold.yaml`，共 5 题，支持 HitRate@K、Recall@K、Precision@K、MRR 和 nDCG@K。
+- 2026-09-15 真实 HTTP 复现确认：本地检索约 0.4 秒、Embedding 31 ms；跨论文比较请求在远端 Chat 返回响应头前等待 180 秒并触发 `CHAT_TIMEOUT`。TCP 连接仅 31 ms，响应体尚未开始读取，问题位于远端 Chat 服务的排队/生成层。
+- Chat 调用现记录 `connect_ms`、`headers_ms`、`body_ms` 和失败时的 `duration_ms`。详细证据与处理建议见 [`docs/Chat生成超时诊断-2026-09-15.md`](./docs/Chat生成超时诊断-2026-09-15.md)。
+
+### 已知问题
+
+1. Chat 接口仍为非流式请求。远端模型变慢时，页面只能等待完整响应；当前本地配置的总上限为 180 秒，超时后降级为抽取式证据。
+2. 现有计时已定位到等待响应头，但无法区分远端内部的队列时间和模型推理时间；需要远端服务日志才能继续拆分。
+3. `Pipeline` 选择 8 条 evidence，而 Chat provider 当前最多发送前 5 条，诊断窗口和真实提示词窗口尚未统一。
+4. 后台入库队列和生成并发控制以单进程部署为边界，不支持多个 Uvicorn worker 竞争任务。
+
+### 后续优化方向
+
+1. **先限制失败成本：** 用 8 题真实 HTTP 集验证 90 秒总超时和明确的输出 token 上限，比较成功率、降级率、P50/P95 与答案完整性。
+2. **再改善等待体验：** 若远端支持 OpenAI-compatible streaming，再实现 FastAPI SSE 转发和浏览器增量显示；流式输出不替代总超时。
+3. **扩充质量评测：** 将现有 5 题检索金标扩展到约 20 题，并增加逐结论引用支持度和拒答正确性人工标注。
+4. **按规模升级：** 只有单机 SQLite worker 成为真实瓶颈后，才引入多 worker 租约或外部任务队列。
+
+## v0.4 本轮优化（2026-09-11）
+
+- 提问会立即回显用户消息与检索占位；Enter 发送、Shift+Enter 换行，请求中防重，切换会话会取消旧请求，失败保留输入并显示可重试错误码。
+- 正文证据 ID 在浏览器稳定映射为 citations 顺序的 `[1]`、`[2]`；未知 ID 显示 `[?]`。引用使用事件委托，不再把语料 JSON 写入内联 `onclick`。
+- 新增 `fast`、`standard`、`deep` 三档检索深度和 `strict`、`evidence_first`、`general` 三种回答策略。默认 `evidence_first`；无证据时仍拒答，只有显式 `general` 才展示“未经当前知识库验证”的边界说明。
+- 查询响应新增 `visualizations`、`retrieval_depth`、`answer_policy` 和 `retrieval_metrics`。可视化只接受本地渲染的 `bar`/`table` 数据，至少三行，逐行绑定本轮 evidence，并逐值核验原文；失败即丢弃并告警。
+- PDF 解析会检测 C0/C1 控制字符、Unicode 替换符和私用区字形。污染页会尝试 OCR；只有 OCR 无污染、置信度不低于 0.85 且保留至少 60% 词量时才采用，否则保留原文并标为 `partial_failed`，不以删除字符伪装修复。
+- Chat 临时故障最多重试一次，并区分 `CHAT_TIMEOUT` 与服务不可用；生成增加小规模非阻塞并发准入，超限返回可重试 503。
+- `Store.paper()` 改为主键查询，论文 chunk 数改用 `COUNT(*)`，移除全表扫描和 500 条截断。
+
+`POST /v1/query` 新增参数示例：
+
+```json
+{"question":"比较三种条件的收率","retrieval_depth":"deep","answer_policy":"evidence_first"}
+```
+
+检索预算集中在 `Pipeline.DEPTHS`；当前 BM25/Dense 候选预算依次为 16/16、30/30、60/60，最终证据上限为 4、8、8。是否实际重排仍取决于本地 reranker 配置。
+
+## 历史状态快照（2026-09-14）
+
+- 真实 SQLite 已在非覆盖备份 `var/backups/rag-20260911T092320Z.sqlite3` 验证后迁移到 schema v16，`integrity_check=ok`、WAL 开启、外键检查无违规。
 - 官方物理语料保持 18 篇论文、258 页、929 chunks 和 929 embeddings；18 个官方逻辑文档全部归入默认官方库。
 - 官方库、用户私人库和会话临时资料已在数据、权限、SQL 召回、PDF 和 evidence 回查层实现隔离。
-- 自动化回归为 36/36，OpenAPI 3.1 可生成（35 条路径），真实语料评测为 6/6。
-- 真实浏览器已验证会话恢复、私人/临时 PDF 上传、TTL、提升、多作用域问答、证据面板、管理员三页和窄屏抽屉。
-- 当前默认可以在模型不可用时显式降级到 BM25/抽取式证据；真实外部 Chat/Embedding 生产链路仍需部署方提供有效服务地址和密钥后验证。
+- 当时自动化回归为 55/55，OpenAPI 3.1 可生成；既有 6 例检索评测为 6/6。2026-09-14 曾连续 5 个可靠证据问题由真实 `openai_compatible` 正常生成；该结果是历史样本，不代表当前服务稳定性。
+- 本轮真实浏览器已验证页面内部 0.7 ms 出现 pending、失败保留输入、编号引用不裸露 evidence ID、引用点击后产生实际 `<mark>`，以及小数与停用词高亮降噪。管理员凭据、三策略、可信图表和窄屏全矩阵仍待完成。
+- 用户凭据实例的五问 `fast + strict` 平均检索 0.689 秒、平均生成 24.4 秒、平均总计 25.3 秒；单次总耗时 9.5–55.6 秒，均未重试或降级。
+- 只读质量审计现按完整 C0/C1 范围统计为 46/258 页、138/929 chunks，涉及 13/12 篇；PyMuPDF `text`/`blocks` 同样污染。3 页 OCR 对照无控制字符，置信度 0.977–0.988，并将样本 `puri<U+E103>ed` 恢复为页面可见的 `purified`。尚未重入库，现有 chunk/evidence ID 未变化。
 
 ## v0.3 多作用域架构（2026-09-10）
 
@@ -38,6 +78,8 @@
 | `GET /v1/evidence/{evidence_id}` | 经作用域授权返回来源、论文、页码、章节和原文 |
 | `POST /v1/admin/temporary-documents/cleanup` | 管理员幂等清理过期临时资料 |
 | `GET /v1/queries` | 管理员查看近期查询状态、错误阶段与耗时 |
+| `GET /v1/admin/pdf-quality` | 管理员查看旧库页面/chunk 的实时符号污染汇总 |
+| `POST /v1/papers/{paper_id}/retry` | 对失败或污染文档先创建并验证非覆盖备份，再排队定向重建 |
 
 `POST /v1/query` 保持旧 `question/top_k/paper_ids` 字段，并增加：
 
@@ -57,7 +99,7 @@
 
 生产接入方需要提供可信身份适配器，将 JWT、可信反向代理身份或内部服务凭据转换为 `Principal`，并明确 tenant、subject 与 roles。可以向 `app.state.principal_resolver` 注入上层 JWT 解析器，或配置 `RAG_TRUSTED_IDENTITY_SECRET` 使用带 60 秒时效 HMAC 签名的 `X-RAG-Tenant/Subject/Roles/Identity-Timestamp/Identity-Signature` 可信代理协议。部署必须提供 `RAG_SESSION_SECRET`、管理员密码哈希以及模型密钥环境变量；不得开启开发身份头。当前实现不绑定特定厂商 JWT/JWKS，以免把本模块变成另一个用户中心。
 
-> 最后更新时间：2026-09-11 10:00（Asia/Shanghai，精确到小时）
+> 最后更新时间：2026-09-15 10:00（Asia/Shanghai）
 
 ## 更新记录
 
@@ -102,7 +144,7 @@
 - 新增可重复数据库迁移、逐页产物、任务阶段和查询候选诊断表。
 - 查询响应新增标准化查询、警告和语料覆盖状态；模型引用未知证据 ID 时显式降级。
 - 完整语料现保存 18 篇论文、258 个物理页面、929 chunks 和 9 个 SI 登记；扫描件 5 个无文本页保留失败记录。
-- 新增 Dockerfile/Compose 骨架与 [现状审计](./现状审计-2026-09-09.md)。回归测试为 13 项。
+- 新增 Dockerfile/Compose 骨架与历史现状审计。回归测试为 13 项。
 
 ### 2026-09-09：Conda、双模型 RAG 与安全配置
 
@@ -145,6 +187,14 @@ conda activate rag_lijia
 Set-Location -LiteralPath 'F:\RAG\Li_Jia'
 .\scripts\start.ps1
 ```
+
+如果 Chat 与 Embedding 服务明确使用同一个 Key，可只隐藏输入一次：
+
+```powershell
+.\scripts\start.ps1 -UseSameApiKey
+```
+
+不要在不确定时使用该开关；不同服务应保持默认的两次独立隐藏输入。其他使用者克隆项目、安装依赖并复制 `config.example.yaml` 为本地 `config.yaml` 后，运行同一脚本即可，Key 只存在于该服务进程及其子进程环境中。
 
 模型地址与模型 ID 仍放在本地 `config.yaml`，API Key 不得写入 YAML。诊断输出只显示 Key 是否存在，不显示 Key 内容。需要使用其他配置文件时可传入 `-ConfigPath`。
 
@@ -294,7 +344,10 @@ python -m rag.cli serve
 | `RAG_CHAT_API_KEY` | 空 | 名称可由 `chat.api_key_env` 改写；只从环境读取，不写日志 |
 | `RAG_EMBEDDING_API_KEY` | 空 | 名称可由 `embedding.api_key_env` 改写；只从环境读取，不写日志 |
 | `RAG_CHAT_MODEL` | 空 | 生成模型名 |
-| `RAG_CHAT_TIMEOUT_SECONDS` | `60` | 模型请求超时 |
+| `RAG_CHAT_CONNECT_TIMEOUT_SECONDS` | `10` | 建立 Chat 连接的上限 |
+| `RAG_CHAT_READ_TIMEOUT_SECONDS` | `60` | 单次读取 Chat 响应的上限 |
+| `RAG_CHAT_TOTAL_TIMEOUT_SECONDS` | `75` | 包含至多一次临时故障重试的总生成上限 |
+| `RAG_CHAT_MAX_CONCURRENCY` | `4` | 进程内非阻塞生成准入数；超限快速返回 503 |
 | `RAG_EMBEDDING_PROVIDER` | YAML 配置 | 可设为 `openai_compatible` 或 `disabled` |
 | `RAG_EMBEDDING_BASE_URL` | YAML 配置 | 独立的 Embedding 服务 `/v1` 根地址 |
 | `RAG_EMBEDDING_MODEL` | YAML 配置 | Embedding 模型 API ID |
@@ -367,8 +420,12 @@ Li_Jia/
 ├─ var/                  运行生成：SQLite 和 JSONL（不提交）
 ├─ requirements.lock.txt 固定的第一版依赖
 ├─ Dockerfile / compose.yaml 轻量单服务部署
-├─ 现状审计-2026-09-09.md  当前实现、数据协议与限制审计
-└─ 旧项目RAG技术复用评估.md
+├─ 审计报告-2026-09-11.md  当前缺陷与风险审计输入
+├─ 可视化接入方案-2026-09-11.md
+├─ 任务模式提示词-2026-09-11.md
+└─ docs/
+   ├─ README.md              当前文档索引
+   └─ archive/               历史材料，默认不作为任务上下文
 ```
 
 `paper_id` 来源于文件内容 SHA-256；重复内容即使改名也不会重复入库。SI ZIP 根据去掉 `_SI` 后的文件名关联正文，登记为 `registered_not_parsed`，不解压也不参与检索。
@@ -381,7 +438,7 @@ python .\scripts\smoke_ocr.py
 python -m rag.cli evaluate
 ```
 
-测试现为 25 项，覆盖稳定 ID、切块来源、BM25/Dense/RRF/reranker、无证据拒答、引用绑定与一键回查、页面与查询快照、持久任务/中断、管理员认证、上传校验、重试血缘、一致性备份、正常生成及所有主要降级路径。OCR smoke 只处理历史扫描件前两页。`evaluate` 运行 6 个真实语料案例并返回每例 request_id。
+测试现为 59 项，覆盖稳定 ID、切块来源、BM25/Dense/RRF/reranker、三档深度、三种回答策略、无证据拒答、引用绑定/修复/编号/高亮、可信可视化、PDF 污染 OCR 路由、页面与查询快照、持久任务/中断、管理员认证、作用域隔离、上传校验、重试血缘、一致性备份、正常生成、主要降级路径和 Chat 分阶段计时。OCR smoke 只处理历史扫描件前两页。`evaluate` 运行 8 个真实语料案例并返回每例 request_id；模型未配置时的全绿结果只表示检索检查通过，不表示生成模型验收通过。
 
 真实数据验收使用 `ingest` 返回的 `counts` 核对 discovered、succeeded、failed、pages、ocr_pages、chunks 和 attachments。
 
@@ -422,12 +479,12 @@ python -m rag.cli evaluate
 
 ### 仍然缺失
 
-- 经人工标注扩充的检索阈值与 citation precision/recall 评测；现有 6 例只用于回归和故障归因。
+- 经人工标注扩充的检索阈值与 citation precision/recall 评测；现有 8 题端到端集和 5 题检索金标仍只适合回归与故障归因。
 - 表格单元格、图片/图注、公式、bbox、对象级证据和 SI 内容解析。
 - 更完整的催化剂/溶剂词典、单位换算、跨 evidence 实验条件组装和人工复核队列；当前 Schema 原型保守且可关闭。
 - 逐声明自然语言蕴含验证；当前只验证模型引用 ID 必须来自本次上下文。
 - 多进程协调、限流、外部指标系统和 TLS 反向代理配置。
-- 真实 chat/embedding 服务的正常路径验证（代码路径已有确定性集成测试；未提供外部模型 URL/Key 时按设计显式降级）。
+- 远端 Chat 服务的稳定延迟与可用性保证；真实测试已覆盖正常和超时路径，但响应头耗时在 17.6 秒到超过 180 秒之间波动。
 
 ### 后续更新方向
 
@@ -436,7 +493,7 @@ python -m rag.cli evaluate
 3. **中长期：增强科研证据粒度。** 按真实业务优先级增加表格单元格、图注、公式、bbox、SI 和声明级蕴含验证，不在没有标注数据时冒进构建 GraphRAG 或复杂 Agent 平台。
 4. **规模化后：拆分执行层。** 当单进程 SQLite 队列成为瓶颈时，再引入可租约的多 worker 任务队列、外部指标系统和容量规划。
 
-这些边界与 `旧项目RAG技术复用评估.md` 的结论一致：旧项目提供了方向参考，但其硬编码密钥、吞异常、文件名 ID、未验证阈值和缺失模块没有进入本实现。
+这些边界与早期技术复用评估的结论一致：旧项目提供了方向参考，但其硬编码密钥、吞异常、文件名 ID、未验证阈值和缺失模块没有进入本实现。该历史评估现归档于 `docs/archive/`，后续任务默认无需读取。
 
 ## 8. 依赖、资源与离线影响
 

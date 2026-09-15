@@ -9,6 +9,14 @@ cases:
   - id: exact_temperature_yield
     question: Which xylose experiment reported 71.1% furfural yield at 130 C?
     required_terms: [71.1, 130]
+  - id: exact_temperature_yield_long_form
+    # Same fact, phrased with the entity and the time - the shape that used to retrieve correctly.
+    # Keep both: the short form is what regressed when BM25 lost the numeric token.
+    question: Which xylose experiment reported 71.1% furfural yield at 130 C, and what was the reaction time?
+    required_terms: [71.1, 130]
+  - id: zh_exact_temperature_yield
+    question: 木糖在130°C制糠醛的收率和反应时间是什么？
+    required_terms: [71.1, 130]
   - id: single_paper_scope
     question: What furfural yield was obtained from xylose?
     paper_names: [2019_furfural_from_biomass_SnCl4_PMC6384620.pdf]

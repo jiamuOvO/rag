@@ -6,7 +6,7 @@ from typing import Callable
 
 from .errors import RagError
 from .models import Page
-from .text import normalize_text
+from .text import normalize_text, text_quality_issues
 
 
 @dataclass
@@ -57,6 +57,18 @@ class PdfParser:
                 scores.append(float(item[2]))
         confidence = sum(scores) / len(scores) if scores else None
         return normalize_text("\n".join(lines)), confidence
+
+    @staticmethod
+    def _acceptable_quality_recovery(original: str, recovered: str,
+                                     confidence: float | None) -> bool:
+        """Reject clean-looking OCR that silently discarded most page information."""
+        if not recovered or text_quality_issues(recovered):
+            return False
+        if confidence is None or confidence < 0.85:
+            return False
+        original_words = len(original.split())
+        recovered_words = len(recovered.split())
+        return recovered_words >= max(20, int(original_words * 0.60))
 
     def parse(
         self,
@@ -109,6 +121,28 @@ class PdfParser:
                             })
                             if on_ocr:
                                 on_ocr(index + 1, False, None)
+                quality = text_quality_issues(text)
+                if quality and self.ocr_enabled and method == "text":
+                    try:
+                        if on_ocr_start:
+                            on_ocr_start(index + 1)
+                        recovered, recovered_confidence = self._ocr_page(page)
+                        accepted = self._acceptable_quality_recovery(
+                            text, recovered, recovered_confidence
+                        )
+                        if on_ocr:
+                            on_ocr(index + 1, accepted, recovered_confidence)
+                        if accepted:
+                            text, confidence = recovered, recovered_confidence
+                            method, quality = "ocr_quality_recovery", []
+                            ocr_count += 1
+                    except Exception as exc:
+                        page_message = f"OCR quality recovery failed: {str(exc)[:400]}"
+                if quality and status == "completed":
+                    status, page_error = "partial_failed", quality[0]
+                    page_message = "检测到控制字符、替换符或私用区字形；保留原文并标记待复核"
+                    failed.append({"page": index + 1, "error_code": page_error,
+                                   "message": page_message})
                 pages.append(Page(index + 1, text, method, confidence, status,
                                   page_error, page_message))
         if not any(page.text for page in pages):

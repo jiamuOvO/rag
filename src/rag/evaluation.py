@@ -5,6 +5,7 @@ from pathlib import Path
 import yaml
 
 from .pipeline import Pipeline
+from .security import ANONYMOUS
 
 
 def run_cases(pipeline: Pipeline, path: Path) -> dict:
@@ -14,7 +15,11 @@ def run_cases(pipeline: Pipeline, path: Path) -> dict:
     results = []
     for case in cases:
         scope = [papers[name] for name in case.get("paper_names", []) if name in papers] or None
-        result = pipeline.query(case["question"], top_k=int(case.get("top_k", 5)), paper_ids=scope)
+        # Scope the same way the web app does, otherwise the eval retrieves over every chunk in
+        # the database while production only sees collection documents with status='ready'
+        # (929 vs 697 chunks today), and the numbers do not transfer.
+        result = pipeline.query(case["question"], top_k=int(case.get("top_k", 5)), paper_ids=scope,
+                                tenant_id=ANONYMOUS.tenant_id, subject=ANONYMOUS.subject)
         evidence_text = " ".join(item.excerpt.lower() for item in result.evidence)
         expected_mode = case.get("expected_mode", "evidence")
         checks = {

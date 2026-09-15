@@ -70,6 +70,10 @@ class Settings:
     default_tenant_id: str = "default"
     temp_document_ttl_hours: int = 24
     conversation_context_messages: int = 6
+    chat_connect_timeout_seconds: float = 10.0
+    chat_read_timeout_seconds: float = 60.0
+    chat_total_timeout_seconds: float = 75.0
+    chat_max_concurrency: int = 4
 
     @classmethod
     def load(cls) -> "Settings":
@@ -119,6 +123,12 @@ class Settings:
             default_tenant_id=os.getenv("RAG_DEFAULT_TENANT_ID", "default"),
             temp_document_ttl_hours=int(os.getenv("RAG_TEMP_DOCUMENT_TTL_HOURS", "24")),
             conversation_context_messages=int(os.getenv("RAG_CONVERSATION_CONTEXT_MESSAGES", "6")),
+            chat_connect_timeout_seconds=float(os.getenv(
+                "RAG_CHAT_CONNECT_TIMEOUT_SECONDS", _nested(config, "chat", "connect_timeout_seconds", 10)
+            )),
+            chat_read_timeout_seconds=float(os.getenv("RAG_CHAT_READ_TIMEOUT_SECONDS", _nested(config, "chat", "read_timeout_seconds", 60))),
+            chat_total_timeout_seconds=float(os.getenv("RAG_CHAT_TOTAL_TIMEOUT_SECONDS", _nested(config, "chat", "total_timeout_seconds", 75))),
+            chat_max_concurrency=int(os.getenv("RAG_CHAT_MAX_CONCURRENCY", _nested(config, "chat", "max_concurrency", 4))),
         )
 
     def ensure_runtime_dirs(self) -> None:

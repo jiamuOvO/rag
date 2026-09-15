@@ -1,10 +1,13 @@
 .venv/
 __pycache__/
 .pytest_cache/
+.pytest_weekly/
+.workbuddy/
 *.py[cod]
 *.egg-info/
 var/
 data/
+tmp/
 .env
 config.yaml
 tests/config_test.yaml

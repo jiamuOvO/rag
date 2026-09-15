@@ -27,8 +27,13 @@ def test_stable_content_id(tmp_path: Path):
 def test_tokenizer_preserves_chemical_values_and_chinese_bigrams():
     tokens = tokenize("HMF yield 82.5% at 180°C 木糖制糠醛")
     assert "hmf" in tokens
-    assert "82.5%" in tokens
-    assert "180°c" in tokens
+    # The unit is no longer glued onto the number: a PDF writes "82.5 %" and a user types
+    # "82.5%", so gluing made the query token and the document token disagree.  The value and
+    # the unit both survive, as separate tokens.
+    assert {"82.5", "180"} <= set(tokens)
+    assert "82.5%" not in tokens and "180°c" not in tokens
+    assert "%" not in tokens
+    assert "c" in tokens
     assert "木糖" in tokens
     assert "糠醛" in tokens
     assert "furfural" in query_tokens("糠醛收率")

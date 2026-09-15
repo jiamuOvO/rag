@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import math
 from collections import Counter
+from dataclasses import replace
 
 import numpy as np
 
@@ -161,8 +162,12 @@ def reciprocal_rank_fusion(lexical: list[Evidence], dense: list[Evidence], *, to
     ordered = sorted(scores, key=scores.get, reverse=True)[:top_k]
     result = []
     for chunk_id in ordered:
-        item = items[chunk_id]
-        item.evidence_id = "ev_" + hashlib.sha256(f"{chunk_id}:hybrid".encode("utf-8")).hexdigest()[:20]
-        item.score = round(scores[chunk_id], 8)
-        result.append(item)
+        # replace() instead of mutating: the same Evidence instances are still referenced by the
+        # lexical/dense lists, and those get persisted to query_candidates after fusion.  Writing
+        # the fused score onto them made the admin panel report RRF scores as BM25/Dense scores.
+        result.append(replace(
+            items[chunk_id],
+            evidence_id="ev_" + hashlib.sha256(f"{chunk_id}:hybrid".encode("utf-8")).hexdigest()[:20],
+            score=round(scores[chunk_id], 8),
+        ))
     return result

@@ -71,6 +71,10 @@ class QueryResult:
     structured_extraction: dict | None = None
     generation: dict = field(default_factory=dict)
     timings_ms: dict[str, float] = field(default_factory=dict)
+    visualizations: list[dict] = field(default_factory=list)
+    retrieval_depth: str = "standard"
+    answer_policy: str = "evidence_first"
+    retrieval_metrics: dict = field(default_factory=dict)
 
     def to_dict(self) -> dict:
         data = asdict(self)

@@ -16,6 +16,10 @@ chat:
   base_url: null
   model: null
   timeout_seconds: 60
+  connect_timeout_seconds: 10
+  read_timeout_seconds: 60
+  total_timeout_seconds: 75
+  max_concurrency: 4
   api_key_env: RAG_CHAT_API_KEY
 
 embedding:

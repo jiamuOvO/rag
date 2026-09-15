@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Iterator
 
 from .models import Chunk
+from .text import text_quality_issues
 
 
 def now() -> str:
@@ -229,6 +230,15 @@ ALTER TABLE query_candidates ADD COLUMN document_id TEXT;
 ALTER TABLE query_candidates ADD COLUMN collection_id TEXT;
 ALTER TABLE query_candidates ADD COLUMN scope_type TEXT;
 """),
+    (15, """
+ALTER TABLE query_runs ADD COLUMN retrieval_depth TEXT NOT NULL DEFAULT 'standard';
+ALTER TABLE query_runs ADD COLUMN answer_policy TEXT NOT NULL DEFAULT 'evidence_first';
+ALTER TABLE query_runs ADD COLUMN retrieval_metrics_json TEXT NOT NULL DEFAULT '{}';
+ALTER TABLE query_runs ADD COLUMN citation_validation TEXT;
+"""),
+    (16, """
+ALTER TABLE query_runs ADD COLUMN generation_meta_json TEXT NOT NULL DEFAULT '{}';
+"""),
 ]
 
 
@@ -267,7 +277,7 @@ class Store:
     def backup(self, destination: Path | None = None) -> dict:
         """Create a transactionally consistent SQLite snapshot without overwriting files."""
         if destination is None:
-            stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+            stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
             destination = self.path.parent / "backups" / f"rag-{stamp}.sqlite3"
         destination = destination.resolve()
         if destination == self.path.resolve():
@@ -604,7 +614,22 @@ class Store:
             return result
 
     def paper(self, paper_id: str) -> dict | None:
-        return next((item for item in self.papers() if item["paper_id"] == paper_id), None)
+        with self.connect() as conn:
+            row = conn.execute("SELECT * FROM papers WHERE paper_id=?", (paper_id,)).fetchone()
+            if not row:
+                return None
+            item = dict(row)
+            item["failed_pages"] = json.loads(item.pop("failed_pages_json"))
+            raw_error = item.pop("last_error_json")
+            item["last_error"] = json.loads(raw_error) if raw_error else None
+            item["attachments"] = [dict(x) for x in conn.execute(
+                "SELECT * FROM attachments WHERE paper_id=? ORDER BY file_name", (paper_id,)
+            ).fetchall()]
+            return item
+
+    def paper_chunk_count(self, paper_id: str) -> int:
+        with self.connect() as conn:
+            return int(conn.execute("SELECT COUNT(*) FROM chunks WHERE paper_id=?", (paper_id,)).fetchone()[0])
 
     def pages(self, paper_id: str) -> list[dict]:
         with self.connect() as conn:
@@ -612,12 +637,38 @@ class Store:
                 "SELECT * FROM pages WHERE paper_id=? ORDER BY page_number", (paper_id,)
             ).fetchall()]
             for item in result:
+                item["quality_issues"] = text_quality_issues(item.get("text", ""))
                 item["chunk_ids"] = [row[0] for row in conn.execute(
                     """SELECT chunk_id FROM chunks WHERE paper_id=? AND page_start<=?
                        AND page_end>=? ORDER BY ordinal""",
                     (paper_id, item["page_number"], item["page_number"]),
                 ).fetchall()]
             return result
+
+    def pdf_quality_summary(self) -> dict:
+        """Read-only live scan so legacy rows gain quality visibility without a migration."""
+        with self.connect() as conn:
+            rows = conn.execute(
+                """SELECT p.paper_id,p.file_name,pg.text,'page' kind
+                   FROM pages pg JOIN papers p ON p.paper_id=pg.paper_id
+                   UNION ALL
+                   SELECT p.paper_id,p.file_name,c.text,'chunk' kind
+                   FROM chunks c JOIN papers p ON p.paper_id=c.paper_id"""
+            ).fetchall()
+        by_paper: dict[str, dict] = {}
+        for row in rows:
+            if not text_quality_issues(row["text"]):
+                continue
+            item = by_paper.setdefault(row["paper_id"], {
+                "paper_id": row["paper_id"], "file_name": row["file_name"],
+                "affected_pages": 0, "affected_chunks": 0,
+            })
+            item["affected_pages" if row["kind"] == "page" else "affected_chunks"] += 1
+        items = sorted(by_paper.values(), key=lambda x: (-x["affected_pages"], x["file_name"]))
+        return {"affected_papers": len(items),
+                "affected_pages": sum(x["affected_pages"] for x in items),
+                "affected_chunks": sum(x["affected_chunks"] for x in items),
+                "items": items}
 
     def page(self, paper_id: str, page_number: int) -> dict | None:
         with self.connect() as conn:
@@ -628,10 +679,13 @@ class Store:
 
     def paper_chunks(self, paper_id: str, *, limit: int = 100, offset: int = 0) -> list[dict]:
         with self.connect() as conn:
-            return [dict(row) for row in conn.execute(
+            items = [dict(row) for row in conn.execute(
                 "SELECT * FROM chunks WHERE paper_id=? ORDER BY ordinal LIMIT ? OFFSET ?",
                 (paper_id, limit, offset),
             ).fetchall()]
+            for item in items:
+                item["quality_issues"] = text_quality_issues(item.get("text", ""))
+            return items
 
     def chunk(self, chunk_id: str) -> dict | None:
         with self.connect() as conn:
@@ -685,19 +739,21 @@ class Store:
                     expansions: list[str] | None = None, tenant_id: str | None = None,
                     subject: str | None = None, collection_ids: list[str] | None = None,
                     conversation_id: str | None = None, include_official: bool = True,
-                    retrieval_question: str | None = None) -> None:
+                    retrieval_question: str | None = None,
+                    retrieval_depth: str = "standard", answer_policy: str = "evidence_first") -> None:
         with self._write_lock, self.connect() as conn:
             conn.execute(
                 """INSERT INTO query_runs(request_id,status,question,normalized_query,
                    paper_ids_json,started_at,query_tokens_json,expansions_json,tenant_id,subject,
-                   collection_ids_json,conversation_id,include_official,retrieval_question)
-                   VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                   collection_ids_json,conversation_id,include_official,retrieval_question,
+                   retrieval_depth,answer_policy)
+                   VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
                 (request_id, "running", question, normalized_query,
                  json.dumps(paper_ids or [], ensure_ascii=False), now(),
                  json.dumps(query_tokens or [], ensure_ascii=False),
                  json.dumps(expansions or [], ensure_ascii=False), tenant_id, subject,
                  json.dumps(collection_ids or [], ensure_ascii=False), conversation_id,
-                 int(include_official), retrieval_question or question),
+                 int(include_official), retrieval_question or question, retrieval_depth, answer_policy),
             )
 
     def save_query_candidates(self, request_id: str, retriever: str, candidates: list,
@@ -722,18 +778,24 @@ class Store:
                      generation_provider: str | None = None,
                      generation_model: str | None = None,
                      prompt_version: str | None = None,
-                     answer_text: str | None = None) -> None:
+                     answer_text: str | None = None,
+                     retrieval_metrics: dict | None = None,
+                     citation_validation: str | None = None,
+                     generation_meta: dict | None = None) -> None:
         with self._write_lock, self.connect() as conn:
             conn.execute(
                 """UPDATE query_runs SET status=?,answer_mode=?,degraded=?,
                    insufficient_evidence=?,corpus_incomplete=?,warnings_json=?,timings_json=?,
                    finished_at=?,error_json=?,generation_provider=?,generation_model=?,
-                   prompt_version=?,answer_text=? WHERE request_id=?""",
+                   prompt_version=?,answer_text=?,retrieval_metrics_json=?,citation_validation=?,
+                   generation_meta_json=? WHERE request_id=?""",
                 (status, answer_mode, int(degraded), int(insufficient_evidence),
                  int(corpus_incomplete), json.dumps(warnings, ensure_ascii=False),
                  json.dumps(timings, ensure_ascii=False), now(),
                  json.dumps(error, ensure_ascii=False) if error else None,
-                 generation_provider, generation_model, prompt_version, answer_text, request_id),
+                 generation_provider, generation_model, prompt_version, answer_text,
+                 json.dumps(retrieval_metrics or {}, ensure_ascii=False), citation_validation,
+                 json.dumps(generation_meta or {}, ensure_ascii=False), request_id),
             )
 
     def query_diagnostic(self, request_id: str) -> dict | None:
@@ -748,6 +810,8 @@ class Store:
                                    ("query_tokens_json", "query_tokens"),
                                    ("expansions_json", "expansions")):
                 item[target] = json.loads(item.pop(source))
+            item["retrieval_metrics"] = json.loads(item.pop("retrieval_metrics_json"))
+            item["generation_meta"] = json.loads(item.pop("generation_meta_json"))
             raw_error = item.pop("error_json")
             item["error"] = json.loads(raw_error) if raw_error else None
             item["candidates"] = [dict(value) for value in conn.execute(
@@ -955,7 +1019,8 @@ class Store:
                 ("document_id", "collection_id", "conversation_id", "expires_at", "status")}
 
     def evidence_for_user(self, evidence_id: str, tenant_id: str, subject: str,
-                          *, conversation_id: str | None = None) -> dict | None:
+                          *, conversation_id: str | None = None,
+                          request_id: str | None = None) -> dict | None:
         conditions = ["d.scope_type='official'", "(d.scope_type='private' AND d.owner_id=?)"]
         params: list[object] = [subject]
         if conversation_id:
@@ -963,7 +1028,8 @@ class Store:
             params.extend([subject, conversation_id])
         sql = f"""SELECT qc.evidence_id,qc.chunk_id,qc.paper_id,qc.paper_name,qc.page_start,
                          qc.page_end,qc.section_path,qc.excerpt,qc.score,d.document_id,
-                         d.collection_id,d.scope_type,d.conversation_id
+                         d.collection_id,d.scope_type,d.conversation_id,qc.request_id,
+                         qr.query_tokens_json,qr.expansions_json
                   FROM query_candidates qc
                   JOIN query_runs qr ON qr.request_id=qc.request_id
                   JOIN collection_documents d
@@ -972,12 +1038,18 @@ class Store:
                   WHERE qc.evidence_id=? AND qc.selected=1 AND d.tenant_id=?
                     AND (d.expires_at IS NULL OR d.expires_at>?)
                     AND ({' OR '.join(conditions)})
+                    {"AND qc.request_id=?" if request_id else ""}
                   ORDER BY (qc.document_id IS NOT NULL AND d.document_id=qc.document_id) DESC,
                            qr.started_at DESC LIMIT 1"""
-        params = [evidence_id, tenant_id, now(), *params]
+        params = [evidence_id, tenant_id, now(), *params, *([request_id] if request_id else [])]
         with self.connect() as conn:
             row = conn.execute(sql, params).fetchone()
-            return dict(row) if row else None
+            if not row:
+                return None
+            item = dict(row)
+            item["query_tokens"] = json.loads(item.pop("query_tokens_json"))
+            item["expansions"] = json.loads(item.pop("expansions_json"))
+            return item
 
     def set_document_status(self, document_id: str, status: str) -> None:
         with self._write_lock, self.connect() as conn:
