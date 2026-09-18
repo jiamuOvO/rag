@@ -1,8 +1,6 @@
 # 生物质与呋喃检索基准 v0.1.0（AI候选版）
 
-**2026-09-16已按用户要求安全暂停。** 当前351对已判断、303,609对待判断。后续应先阅读 [详细交接文档](HANDOFF_2026-09-16.md)，不得直接启动无硬预算的全量模型调用。
-
-本目录包含60题、冻结语料、逐对判断账本及真实检索运行记录。**候选集不等于验收通过的金标集。** 请首先查看 `validation_report.json` 中的 `semantic_annotation_complete`、`AI_review`、`release_ready` 和 `original_human_acceptance_standard_met`。尚未判断的块不得按不相关处理。
+本目录包含60题、冻结语料、逐对判断账本及真实检索运行记录。frozen scope 当前有1,194/1,312个组合具备有效等级，118个保持 `exhausted_unresolved`；**候选集和 Agent review 标签不等于经领域专家验收的完整金标。** 当前状态、维护流程和发布限制以 `EVALUATION_GUIDE.md` 为准，尚未判断的块不得按不相关处理。
 
 ## 来源与冻结
 

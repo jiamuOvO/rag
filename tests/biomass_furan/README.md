@@ -1,46 +1,46 @@
 # 生物质与呋喃检索测评
 
-**当前按用户要求暂停，禁止自动续跑。** 已保存351/303,960对判断，完整语义标注和复核尚未完成。恢复前先阅读 [安全暂停交接](HANDOFF_2026-09-16.md) 与 `stop_state.json`，尤其是调用硬预算、超时重试及尚未验证的思考模式修正。
+这是 Li_Jia RAG 的冻结检索 benchmark。当前版本包含 60 道问题、48 个来源和 5,066 个文本块；frozen scope 有 1,312 个组合，其中 1,194 个已有等级、118 个保持 `exhausted_unresolved`。结果状态为 `PROVISIONAL_UNJUDGED_AS_ZERO`，不是完整人工金标。
 
-先看 `validation_report.json`。60题候选集已经形成，但全量标注、AI复核与人工验收是独立状态；未完成qrels时不能发布正式Recall/nDCG等分数。
+## 先读
 
-在项目目录的PowerShell中，按原有方式启动服务并启用本地测评桥：
+- `EVALUATION_GUIDE.md`：当前维护、增量标注、重评分和红线规则。
+- `ANNOTATION_INSTRUCTIONS.md`：冻结的四级相关性判定规范。
+- `dataset_card.md`：数据集来源、结构和限制。
+- `FINAL_DELIVERY_2026-09-18.md`：首版最终交付留痕。
+- `../../docs/检索测评结果总结-2026-09-18.md`：面向普通读者的结果解释和术语表。
 
-```powershell
-.\scripts\start.ps1 -Benchmark
-```
+## 权威数据
 
-该开关仅允许loopback监听，生成一次性本地授权令牌；模型密钥仍由原启动脚本隐藏读取。普通启动没有测评接口。接口只接收冻结数据集的文档/问题ID，不接受任意提示词或文件路径。运行结束自动移除令牌。
+- 题目：`queries.jsonl`
+- 语料：`corpus.jsonl`、`sources.jsonl`
+- 固定范围：`frozen_scope_1312.json`
+- 标签唯一来源：`judgments/q_*.json`
+- frozen qrels：`qrels_frozen_scope_1312.tsv`
+- 状态账：`final_state.json`
+- 原始检索结果：`results/<运行ID>/runs.jsonl`
+- 当前派生摘要：`results/<运行ID>/summary_provisional.json`
 
-在另一终端执行（可由代理执行，无需再次输入密钥）：
+任何 judgments 变更后，都必须在同一轮重建 qrels、状态账和评分摘要。不得把未判定组合自动补成 0，也不得覆盖历史 run。
 
-```powershell
-python -B tests/biomass_furan/annotate.py run --bridge http://127.0.0.1:8000 --max-batches 1
-python -B tests/biomass_furan/annotate.py run --bridge http://127.0.0.1:8000
-python -B tests/biomass_furan/annotate.py review --bridge http://127.0.0.1:8000
-python -B tests/biomass_furan/annotate.py export
-python -B tests/biomass_furan/validate.py
-python -B tests/biomass_furan/evaluate.py http
-```
-
-`run`自动跳过已完成批次；中断不会把未判断项标为0。出现分歧时必须裁决后再验收，不自动覆盖种子证据。
-
-隔离模式及离线对照：
+## 常用命令
 
 ```powershell
-python -B tests/biomass_furan/secure_run.py
-python -B tests/biomass_furan/evaluate.py isolated --offline-bm25
-python -B -m pytest tests/biomass_furan/test_benchmark.py -q -p no:cacheprovider
+$P = 'D:\anaconda3\envs\rag_lijia\python.exe'
+
+# 重评已经保存的运行
+& $P -B tests\biomass_furan\evaluate.py score `
+  tests\biomass_furan\results\<运行ID> `
+  --provisional `
+  --qrels tests\biomass_furan\qrels_frozen_scope_1312.tsv
+
+# 机械校验
+& $P -B tests\biomass_furan\coverage_scope.py
+& $P -B tests\biomass_furan\verify_judgments.py
+& $P -B tests\biomass_furan\selfcheck_verify.py
+
+# benchmark 回归
+& $P -m pytest -q tests\biomass_furan\test_benchmark.py
 ```
 
-所有评测输出写在本目录；生产HTTP检索会按服务正常行为写入查询日志，这是用户后续明确授权的例外。为复用服务凭据，仅在 `scripts/start.ps1` 增加可选开关、在 `src/rag/api.py` 增加默认关闭的桥接加载入口；检索算法与原始知识库不变。
-
-真实结果位于 `results/<运行ID>/`。首轮生产服务中途停止的结果保留，不能删除失败后声称稳定。模型关闭的BM25对照不冒充正常混合检索。`score`默认需要完整qrels；`--provisional`只输出明确标记的未判断按0诊断文件，不属于正式报告。
-
-要按新标注重新计算已保存运行，执行：
-
-```powershell
-python -B tests/biomass_furan/evaluate.py score tests/biomass_furan/results/<运行ID>
-```
-
-`snapshot/`、`runtime/`和缓存被本目录.gitignore排除；六个核心交付文件、标注状态和测试脚本保留。不要公开发布临时令牌或原始数据库快照。
+`snapshot/`、`runtime/` 和标注工作目录由 `.gitignore` 排除。冻结 snapshot 与 `runtime/model_responses` 具有复现和审计价值，不应作为普通缓存删除。
