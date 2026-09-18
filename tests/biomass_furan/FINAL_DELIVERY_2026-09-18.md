@@ -171,8 +171,6 @@ isolated 基线：180 / 180 = 100.0%。
 
 | 文件 | 内容 |
 |---|---|
-| `TO_AUDIT_SECTION8_2026-09-18.md` | §八 24 条逐条来源核验（三条排除项 + 两处干扰命中说明） |
-| `TO_AUDIT_BORDER3_2026-09-18.md` | 三条边界题材料（题面 / 必需事实 / 原块原文 / 争点逐条作答） |
 | `verdicts_border3_proposed.json` | 三条边界题裁决，状态 `AUDITED_APPROVED` |
 | `verdicts_new75.json` / `verdicts_batch1..8.json` | 本轮 75 条裁决原始记录 |
 | `closeout_semantic.py` | 收尾脚本（dry-run 含 8 项前置断言，apply 含写回与不变量校验） |
