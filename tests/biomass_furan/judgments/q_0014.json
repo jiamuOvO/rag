@@ -1,0 +1,981 @@
+{
+ "query_id": "q_0014",
+ "judgments": [
+  {
+   "doc_id": "chk_0050c21c24b49ad7ed1141fc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述碱/碱土金属(AAEMs)对木质纤维素生物质热解及与煤共热解的催化效应，属热解/热转化领域，非预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_030840fb9f921a56256788f9",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为2018木质纤维素预处理综述(Den et al., 氧化预处理)，与问题同属木质纤维素预处理研究领域，但本块未给出四类划分。"
+  },
+  {
+   "doc_id": "chk_044b76b8773e5628838042eb",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧痕量气体与气溶胶排放的题名/摘要页（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_04b69ec9a4ed4d1d938312db",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)的标题/摘要/引言起始页，与问题同论文，但本块（题名页与摘要）未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_055e13866bbf8198cc092435",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧痕量气体与气溶胶排放（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_09df24f22e9d8d59fb48561f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（参考文献列表），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_0c6f9f0694fcce01fcc2202f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧释放的挥发性有机化合物排放（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_0cdc115190658593ce849e53",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（物理预处理：湿盘磨/微波粉碎），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_0f4f91682f41c6bccd619843",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究可循环磷酸法木质纤维素组分分离及糠醛生产，目标为组分分离/糠醛，非预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_11183a4bfd754d42a9888528",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块为HMF氧化制FDCA论文的参考文献页，属HMF氧化催化，与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_1127879a5f9d4d3eb613a907",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧NMOG排放论文的图表/数据页（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_1244f210b111f6c5fb89f371",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧NMOG排放论文的图表/数据页（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_150384b1552f24de48b853bd",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述2,5-呋喃二甲酸等呋喃单体在生物基聚合物中的进展，属呋喃化学品/高分子材料领域，非木质纤维素预处理。"
+  },
+  {
+   "doc_id": "chk_153f776c59a6cbcf3c3af76c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述2,5-呋喃二甲酸等呋喃单体在生物基聚合物中的进展，属呋喃化学品/高分子材料领域，非木质纤维素预处理。"
+  },
+  {
+   "doc_id": "chk_166867f1d439b2eeaf3de9db",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述2,5-呋喃二甲酸等呋喃单体在生物基聚合物中的进展，属呋喃化学品/高分子材料领域，非木质纤维素预处理。"
+  },
+  {
+   "doc_id": "chk_166de74ad904ad7a1e7fc5c8",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（物理化学/生物预处理交界参考文献），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_16fa0a65507151e67a48af58",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧痕量气体与气溶胶排放（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_1b3289d805b09e0761ea794c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块为HMF氧化制FDCA论文的参考文献页，属HMF氧化催化，与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_1bbe24a3c6e11da36ab1e7f8",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为木质纤维素转化与预处理策略综述（lignin/pretreatment review），与问题同领域，本块未给出本题所问的四类划分。"
+  },
+  {
+   "doc_id": "chk_1ce9a8a9b79ea2c82fa122a0",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为木质纤维素转化与预处理策略综述（lignin/pretreatment review），与问题同领域，本块未给出本题所问的四类划分。"
+  },
+  {
+   "doc_id": "chk_1d81857a678541c814b4f0d8",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为2018木质纤维素预处理综述(Den et al., 氧化预处理题名页)，与问题同属木质纤维素预处理研究领域，但本块未给出四类划分。"
+  },
+  {
+   "doc_id": "chk_1eb56ee6784a2cad103d1ff0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧痕量气体与气溶胶排放（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_1f7f2d8ed92fb01725d2414d",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（化学/生物预处理章节），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_26c8961a718db966e53a38dd",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述碱/碱土金属(AAEMs)对木质纤维素生物质热解及与煤共热解的催化效应，属热解/热转化领域，非预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_2801a4c83c11b615c0b62871",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（结论/参考文献附近），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_2cc1403dfc99cb4fb41d5448",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质露天燃烧释放的非甲烷有机气体排放（大气化学与燃烧科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_2f23e9f1e069675b9576a41b",
+   "relevance": 3,
+   "evidence_quotes": [
+    "The pretreatment techniques currently in use, may be broadly classified as physical, chemical, physicochemical, and biological processes."
+   ],
+   "reason": "引言段明确将现有预处理技术广义划分为 physical、chemical、physicochemical、biological 四类，单独即可回答。"
+  },
+  {
+   "doc_id": "chk_30e2a5a1af444c35760fd0b0",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（参考文献/引言），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_31c973c8e813143fddee05aa",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧痕量气体与气溶胶排放文献（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_327b19c2a064c2f78f70a938",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述2,5-呋喃二甲酸等呋喃单体在生物基聚合物中的进展，属呋喃化学品/高分子材料领域，非木质纤维素预处理。"
+  },
+  {
+   "doc_id": "chk_35697bcd8f0bec228418366e",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（引言/结构章节），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_3593fac8fda6aa8658add2ea",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（参考文献列表），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_361dfa063045ba018aa15142",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述碱/碱土金属(AAEMs)对木质纤维素生物质热解及与煤共热解的催化效应，属热解/热转化领域，非预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_3759f746f6ec8b58fc0285cb",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（参考文献列表），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_3ac881e7321e6eb84283770e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述2,5-呋喃二甲酸等呋喃单体在生物基聚合物中的进展，属呋喃化学品/高分子材料领域，非木质纤维素预处理。"
+  },
+  {
+   "doc_id": "chk_3c6d74127075860540b6eefb",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧NMOG排放论文的参考文献页（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_3dd0738b9c982c7d6a8de563",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为木质纤维素预处理方法综述(Tursi 2019)，但其讨论生物能源统计与经济环境分析，未给出本题所问的四类划分，仅作相关背景。"
+  },
+  {
+   "doc_id": "chk_41f98ed2ab54df4159ff320f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究SnCl4/离子液体催化生物质合成糠醛(furfural)，属糠醛合成，非预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_42e4d418ad7a011e701f72c8",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧痕量气体与气溶胶排放（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_434abc6a706c69512ef09a97",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述碱/碱土金属(AAEMs)对木质纤维素生物质热解及与煤共热解的催化效应，属热解/热转化领域，非预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_43a408575728d37d065b995d",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（参考文献列表），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_445cfd460d3b9c695980ae2c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块为HMF氧化制FDCA论文的实验/图表页，属HMF氧化催化，与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_44eae163f785daa9d20b0320",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（参考文献列表），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_45a69b0e755aa8b4a0a506fb",
+   "relevance": 0,
+   "evidence_quotes": [
+    "JB and BN drafted the portions on physical, chemical and physicochemical pretreatments. RS and SK drafted the portion on biological pretreatments."
+   ],
+   "reason": "作者贡献段明确把本综述的预处理内容划分为 physical、chemical、physicochemical 与 biological 四部分，单独即可给出问题所问的四类。",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 0,
+    "changed": true,
+    "explanation": "必需事实唯一项 = 物理/化学/物理化学/生物四类。四类名称在本块中只作为 AUTHOR CONTRIBUTIONS 段 `drafted` 的宾语出现，表达的是作者分工，不是分类事实陈述；真正的分类句（`may be broadly classified as …`）不在本块。本块实质正文（CONCLUSION 段）经复读亦无任何分类框架。按 v4，grade 1 须能落到五类『具体辅助关系』之一，仅同论文或同领域不能自动成立；『块里还有其他实质结论』本身不足以保 1。本块对该必需事实既无直接支持、也未说明存在具体辅助关系 → 0。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读；句子语义功能判定（署名归属 ≠ 分类陈述）+ v4 grade 1 边界"
+   }
+  },
+  {
+   "doc_id": "chk_4902f10fc9e2a8b738ddbcff",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究5-羟甲基糠醛(HMF)选择性氧化制2,5-呋喃二甲酸(FDCA)的负载型金/银催化剂，化学品与工艺路线（HMF氧化催化）均与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_4a22f6f07c1032c04d02a534",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述碱/碱土金属(AAEMs)对木质纤维素生物质热解及与煤共热解的催化效应，属热解/热转化领域，非预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_4c28ddd040a0392a4ab09b3b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述碱/碱土金属(AAEMs)对木质纤维素生物质热解及与煤共热解的催化效应，属热解/热转化领域，非预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_4d4cbdc732382255e1222382",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为2018木质纤维素预处理综述(Den et al., 氧化预处理)，与问题同属木质纤维素预处理研究领域，但本块未给出四类划分。"
+  },
+  {
+   "doc_id": "chk_4ea7a5a22f1e7e2d5bc4d25a",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（参考文献列表），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_4f0c5ab45bb66b54da15d2a0",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为2018木质纤维素预处理综述(Den et al., 生物/氧化预处理)，与问题同属木质纤维素预处理研究领域，但本块未给出四类划分。"
+  },
+  {
+   "doc_id": "chk_501a64243ff7de9ab0046f3e",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为木质纤维素转化与预处理策略综述（lignin/pretreatment review），与问题同领域，本块未给出本题所问的四类划分。"
+  },
+  {
+   "doc_id": "chk_52b5103d57ef9e83f90d5e7c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为2018木质纤维素预处理综述(Den et al., 氧化预处理)，与问题同属木质纤维素预处理研究领域，但本块未给出四类划分。"
+  },
+  {
+   "doc_id": "chk_534b9d4181a172b644ba414c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述2,5-呋喃二甲酸等呋喃单体在生物基聚合物中的进展，属呋喃化学品/高分子材料领域，非木质纤维素预处理。"
+  },
+  {
+   "doc_id": "chk_5655dfafdf5e2fa423dc6248",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧NMOG排放论文的图表/数据页（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_5ef75b97d4f513699dbb5cfc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述半纤维素水解制备糠醛(furfural)的进展，目标化学品为糠醛，非木质纤维素预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_61710df6c388a05cffed90df",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为2018木质纤维素预处理综述(Den et al., 氧化预处理)，与问题同属木质纤维素预处理研究领域，但本块未给出四类划分。"
+  },
+  {
+   "doc_id": "chk_68bf4bfa6792f262044a1853",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述碱/碱土金属(AAEMs)对木质纤维素生物质热解及与煤共热解的催化效应，属热解/热转化领域，非预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_6aaa9253690a960a4d3663e0",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为木质纤维素转化与预处理策略综述（lignin/pretreatment review），与问题同领域，本块未给出本题所问的四类划分。"
+  },
+  {
+   "doc_id": "chk_6da06f2c12e764e4969aa674",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述木质纤维素转化为乙酰丙酸(levulinic acid)的化学与工艺，目标化学品为乙酰丙酸，非预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_6da8593fd7404db0db73b7fb",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述从木质纤维素生产5-氯甲基糠醛(CMF)及下游集成，目标化学品为CMF，非预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_70789a3ab5ac34857bbee967",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为2018木质纤维素预处理综述(Den et al., 氧化预处理)，与问题同属木质纤维素预处理研究领域，但本块未给出四类划分。"
+  },
+  {
+   "doc_id": "chk_71be8967697eff4772804f41",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为木质纤维素转化与预处理策略综述（lignin/pretreatment review），与问题同领域，本块未给出本题所问的四类划分。"
+  },
+  {
+   "doc_id": "chk_742d02107aff9115e9e87249",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧痕量气体与气溶胶排放的题名/摘要页（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_74a007c47fafaf637bee4507",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧痕量气体与气溶胶排放（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_758c2aa888133f06bd5452e1",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块为HMF氧化制FDCA论文的参考文献/实验页，属HMF氧化催化，与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_76a9afa1ed42f994954185ae",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧痕量气体与气溶胶排放（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_76e1c7468dacd5cd2858d49c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究从真实生物质制备5-羟甲基糠醛(HMF)，目标化学品为HMF，非预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_7764b60e09f53eaa5aa68fc6",
+   "relevance": 3,
+   "evidence_quotes": [
+    "This has led to extensive research in the development of various pretreatment techniques utilizing various physical, chemical, physicochemical, and biological approaches which are specifically tailored toward the source biomaterial and its application."
+   ],
+   "reason": "引言段直接列出预处理技术所采用的 physical、chemical、physicochemical、biological 四类方法，单独即可回答'分为哪四类'。",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 3,
+    "changed": false,
+    "explanation": "2018 综述摘要句逐字给出 physical、chemical、physicochemical、biological 四类方法，直接覆盖全部必需事实，来源即指定综述 → 3，维持原判（与 n=41 同块、不同题）。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "doc_id": "chk_778068f42a04eb3dbb9c11a1",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为木质纤维素转化与预处理策略综述（lignin/pretreatment review），与问题同领域，本块未给出本题所问的四类划分。"
+  },
+  {
+   "doc_id": "chk_77facfa72e40a0d2ff97fbfb",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（参考文献列表），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_78b75a7da7f06a45e170ace8",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块为HMF氧化制FDCA论文的参考文献页，属HMF氧化催化，与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_790c360264fa0cdec5fc7bbe",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块为HMF氧化制FDCA论文的参考文献页，属HMF氧化催化，与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_7aefa136404f2ef5f9a27881",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为2018木质纤维素预处理综述(Den et al., 氧化预处理)，与问题同属木质纤维素预处理研究领域，但本块未给出四类划分。"
+  },
+  {
+   "doc_id": "chk_7c14ffeb7849090d41a7a5e3",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究Ti基MXene催化糠醛(furfural)加氢，属糠醛催化转化，非木质纤维素预处理。"
+  },
+  {
+   "doc_id": "chk_7ccc90b43ddfc0b4da904489",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为2018木质纤维素预处理综述(Den et al., 氧化预处理)，与问题同属木质纤维素预处理研究领域，但本块未给出'物理/化学/物理化学/生物'四类划分。"
+  },
+  {
+   "doc_id": "chk_7e95ba606df8fc74de41ef1c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块为HMF氧化制FDCA论文的实验/结果页，属HMF氧化催化，与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_7fb16eed7ca99f689fbd62fd",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（物理化学预处理章节），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_8181dab5363cc27f8ba36d11",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（参考文献列表），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_8200030099d3c2b65bbabf0a",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为2018木质纤维素预处理综述(Den et al., 氧化预处理)，与问题同属木质纤维素预处理研究领域，但本块未给出四类划分。"
+  },
+  {
+   "doc_id": "chk_836b78575b64975d570ba703",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述2,5-呋喃二甲酸等呋喃单体在生物基聚合物中的进展，属呋喃化学品/高分子材料领域，非木质纤维素预处理。"
+  },
+  {
+   "doc_id": "chk_8586876580501ef25d3e3a0d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述2,5-呋喃二甲酸等呋喃单体在生物基聚合物中的进展，属呋喃化学品/高分子材料领域，非木质纤维素预处理。"
+  },
+  {
+   "doc_id": "chk_86b167183749d175d603d3aa",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究戊糖富集生物质残渣制备呋喃基含氧燃料添加剂，属呋喃燃料，非木质纤维素预处理。"
+  },
+  {
+   "doc_id": "chk_87387d61d8dcbd8b2652ca7e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究葡萄糖/果糖在离子液体中转化为HMF时的腐殖质(humin)形成机理，属HMF生成机理，非木质纤维素预处理。"
+  },
+  {
+   "doc_id": "chk_88158b239003d9a88294d162",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（物理/化学预处理章节），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "query_id": "q_0014",
+   "doc_id": "chk_8c43d6189bfd58b10083cf8d",
+   "relevance": 3,
+   "reason": "States the four pretreatment classes.",
+   "evidence_quotes": [
+    "The pretreatment techniques currently in use,\nmay be broadly classified as physical, chemical, physicochemical,\nand biological processes."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "902d3d94b042daa8aeee4e65d7eaf214a22a68766f8de62550693b5eac44de61"
+  },
+  {
+   "doc_id": "chk_8df4ec2e5e536e334bed299c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（化学/物理化学预处理章节），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_91364c1eb55e404249895598",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述木质纤维素转化为乙酰丙酸(levulinic acid)的化学与工艺，目标化学品为乙酰丙酸，非预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_91e4ab45d4916014aea6fee6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧痕量气体与气溶胶排放（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_968e6457e9da4a3afeb71f82",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧痕量气体与气溶胶排放（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_96993a456400accc4e326aa0",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为木质纤维素转化与预处理策略综述（lignin/pretreatment review），与问题同领域，本块未给出本题所问的四类划分。"
+  },
+  {
+   "doc_id": "chk_9824e8bd83610555996f0872",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为木质纤维素转化与预处理策略综述（lignin/pretreatment review），与问题同领域，本块未给出本题所问的四类划分。"
+  },
+  {
+   "doc_id": "chk_9838ae5c534b4a0094f8d7f0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧NMOG排放论文的参考文献/数据页（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_9a727e2aeeb678129f39e293",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究可循环磷酸法木质纤维素组分分离及糠醛生产，目标为组分分离/糠醛，非预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_9d965a6575bbd687b3b64764",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为木质纤维素转化与预处理策略综述（lignin/pretreatment review），与问题同领域，本块未给出本题所问的四类划分。"
+  },
+  {
+   "doc_id": "chk_9edda021f18117c7eadd8829",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧痕量气体与气溶胶排放（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_a096407718fc82f0dd6f4b1f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧痕量气体与气溶胶排放文献（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_a119a7e1231de02af291cdd9",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为2018木质纤维素预处理综述(Den et al., 氧化预处理），与问题同属木质纤维素预处理研究领域，但本块未给出四类划分。"
+  },
+  {
+   "doc_id": "chk_a4cfb2dac7c22e914f7aa355",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为木质纤维素转化与预处理策略综述（lignin/pretreatment review），与问题同领域，本块未给出本题所问的四类划分。"
+  },
+  {
+   "doc_id": "chk_a75271d69302a4370bb9c42e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述2,5-呋喃二甲酸等呋喃单体在生物基聚合物中的进展，属呋喃化学品/高分子材料领域，非木质纤维素预处理。"
+  },
+  {
+   "doc_id": "chk_a7b4e7413f51520b5850ba43",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块为HMF氧化制FDCA论文的题名/摘要页，属HMF氧化催化，与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_ac2c24514ed24cb29359b85a",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（参考文献列表），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_acbc07592256997a2d95275b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述2,5-呋喃二甲酸等呋喃单体在生物基聚合物中的进展，属呋喃化学品/高分子材料领域，非木质纤维素预处理。"
+  },
+  {
+   "doc_id": "chk_af54d82cad42c835fdb445be",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（引言附近），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_af9b3ca8a051d928ceb5da2a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧痕量气体与气溶胶排放（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_afc26719df296a0c2a78f1fa",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述碱/碱土金属(AAEMs)对木质纤维素生物质热解及与煤共热解的催化效应，属热解/热转化领域，非预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_afeb0524bd6dc5e95590c963",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（物理预处理：微波/挤出），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_b1d48fe71f8d9bfeda0a7a6e",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（参考文献列表），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_b2c9b9444b5d47913fd49303",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块为生物质燃烧NMOG排放论文的题名/作者信息页，属大气科学，与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_b54f42ea06d72bc73b2dd742",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（参考文献列表），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_b6e39dd4701d185ccf6efd3a",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（有机溶剂/低共熔溶剂预处理方法），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_ba36f74efe4f004f748da782",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为2018木质纤维素预处理综述(Den et al., 氧化预处理），与问题同属木质纤维素预处理研究领域，但本块未给出四类划分。"
+  },
+  {
+   "doc_id": "chk_bd1496eaf29f80d28859793c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为木质纤维素转化与预处理策略综述（lignin/pretreatment review），与问题同领域，本块为参考文献列表，未给出四类划分。"
+  },
+  {
+   "doc_id": "chk_bf85ef154a7759fc78a83507",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块为HMF氧化制FDCA论文的参考文献页，属HMF氧化催化，与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_c25aa8d2eb31c188a18bb92f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述碱/碱土金属(AAEMs)对木质纤维素生物质热解及与煤共热解的催化效应，属热解/热转化领域，非预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_c4ea4fdc18fb77c875d58a52",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（结论章附近），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_c8683cad46f206d1c331fd07",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧NMOG排放的数据可用性说明，属大气科学，与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_c948860b08162f6b4e30fbbf",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（引言与结构章节），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_c95c223da262564c4aa0c97a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧痕量气体与气溶胶排放（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_cce91e7768dec2552771aaa9",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块为HMF氧化制FDCA论文的参考文献页，属HMF氧化催化，与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_cd0083f410f85763dbef9e43",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述碱/碱土金属(AAEMs)对木质纤维素生物质热解及与煤共热解的催化效应，属热解/热转化领域，非预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_d2e226cbd69ba5ca7ac5efa2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（生物预处理章节），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_d32e7ef117d91f85b89a0634",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为木质纤维素转化与预处理策略综述（lignin/pretreatment review），与问题同领域，本块未给出本题所问的四类划分。"
+  },
+  {
+   "doc_id": "chk_d62335b30c5ab9ef0397bd00",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧痕量气体与气溶胶排放（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_d632521a909b0c5b3bd6b06b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究藻类残余生物质转化为5-HMF与乙酰丙酸，原料（藻类）与目标化学品均不同，非木质纤维素预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_d6ae27c7c9243138cb2aa76f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究水热预处理结合酸水解联产糠醛与纤维素纳米晶，属糠醛/纳米材料生产，非预处理方法分类综述。"
+  },
+  {
+   "doc_id": "chk_d7642d91eba95513c5112218",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧NMOG排放论文的参考文献页（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_d77c601d3bad521048c81164",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述2,5-呋喃二甲酸等呋喃单体在生物基聚合物中的进展，属呋喃化学品/高分子材料领域，非木质纤维素预处理。"
+  },
+  {
+   "doc_id": "chk_d9783c545716e4916ed84067",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧释放痕量气体与气溶胶排放（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_dd0cb1b6cf7f6b31b33a838d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述碱/碱土金属(AAEMs)对木质纤维素生物质热解及与煤共热解的催化效应，属热解/热转化领域，非预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_dd1e1b357bed87651e23d7f5",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为2018木质纤维素预处理综述(Den et al., 氧化预处理题名/引言页)，与问题同属木质纤维素预处理研究领域，但本块未给出四类划分。"
+  },
+  {
+   "doc_id": "chk_de6ddbb70cf661ab4aa52788",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（参考文献/结论附近），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_e0e18e291841d2484c5dfd78",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为木质纤维素转化与预处理策略综述（lignin/pretreatment review），与问题同领域，本块未给出本题所问的四类划分。"
+  },
+  {
+   "doc_id": "chk_e141aee60b144ed3e8060dd2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为2018木质纤维素预处理综述(Den et al., 氧化预处理题名/引言页)，与问题同属木质纤维素预处理研究领域，但本块未给出四类划分。"
+  },
+  {
+   "doc_id": "chk_e17d995fa1a03a1407775404",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（物理化学预处理：离子液体/低共熔溶剂章节），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_e1c59c6c65849055c0a57cab",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（预处理方法参考文献列表），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_e28681a03b89366bbf25d909",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（物理化学预处理相关参考文献），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_e3ea925076b501b5f6aa96ae",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为木质纤维素预处理方法综述(Tursi 2019)，但其采用不同分类体系（机械/化学/化学-机械/生物），未给出本题所问的四类划分，仅作相关背景。"
+  },
+  {
+   "doc_id": "chk_e5644af48bdb80077ea0bca7",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述2,5-呋喃二甲酸等呋喃单体在生物基聚合物中的进展，属呋喃化学品/高分子材料领域，非木质纤维素预处理。"
+  },
+  {
+   "doc_id": "chk_e5fb12f264910970bc7428e8",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述碱/碱土金属(AAEMs)对木质纤维素生物质热解及与煤共热解的催化效应，属热解/热转化领域，非预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_e7d270d0d136c79142e6a46a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块为HMF氧化制FDCA论文的题名/摘要页，属HMF氧化催化，与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_e8f4b4b9d3146eb47bf70a3f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧痕量气体与气溶胶排放（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_ea89cb70153c81faff337d20",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（生物预处理章节），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_eb7fcd62805857447acb1f1d",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为木质纤维素预处理方法综述(Tursi 2019)，但其采用不同分类体系（机械/化学/化学-机械/生物），未给出本题所问的四类划分，仅作相关背景。"
+  },
+  {
+   "doc_id": "chk_ecde6bf8f71f756bbebb2ebe",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述碱/碱土金属(AAEMs)对木质纤维素生物质热解及与煤共热解的催化效应，属热解/热转化领域，非预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_ee027d204d3800694f29e5cc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述半纤维素水解制备糠醛(furfural)的进展，目标化学品为糠醛，非木质纤维素预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_ee74b55edbfd49945b3d4569",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述2,5-呋喃二甲酸等呋喃单体在生物基聚合物中的进展，属呋喃化学品/高分子材料领域，非木质纤维素预处理。"
+  },
+  {
+   "doc_id": "chk_f0fd8b086a19754590a043d5",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为木质纤维素预处理方法综述(Tursi 2019)，但其采用不同分类体系（机械/化学/化学-机械/生物），未给出本题所问的四类划分，仅作相关背景。"
+  },
+  {
+   "doc_id": "chk_f123eb972f2f7fe4c511ab8b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究戊糖富集生物质残渣制备呋喃基含氧燃料添加剂，属呋喃燃料，非木质纤维素预处理。"
+  },
+  {
+   "doc_id": "chk_f1742ef08be8de10026baf2e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究水热预处理结合酸水解联产糠醛与纤维素纳米晶，属糠醛/纳米材料生产，非预处理方法分类综述。"
+  },
+  {
+   "doc_id": "chk_f5a7c581a30db2396d28d2cc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧NMOG排放论文的数据/图表页（大气科学），与木质纤维素预处理方法分类无关。"
+  },
+  {
+   "doc_id": "chk_f7d79d1924f5ae740ab19d63",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述2,5-呋喃二甲酸等呋喃单体在生物基聚合物中的进展，属呋喃化学品/高分子材料领域，非木质纤维素预处理。"
+  },
+  {
+   "doc_id": "chk_f9d00e05c2cddc5cd351c51f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为2018木质纤维素预处理综述(Den et al., 氧化预处理)，与问题同属木质纤维素预处理研究领域，但本块未给出四类划分。"
+  },
+  {
+   "doc_id": "chk_fa23648c6a4f08657598d314",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究Ti基MXene催化糠醛(furfural)加氢，属糠醛催化转化，非木质纤维素预处理。"
+  },
+  {
+   "doc_id": "chk_fabe76d0771de3fd8c952475",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同为2018木质纤维素预处理综述(Den et al., 氧化预处理)，与问题同属木质纤维素预处理研究领域，但本块未给出四类划分。"
+  },
+  {
+   "doc_id": "chk_fd5cc756120800ef51658058",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块综述半纤维素水解制备糠醛(furfural)的进展，目标化学品为糠醛，非木质纤维素预处理方法分类。"
+  },
+  {
+   "doc_id": "chk_fd706a4d2d3c58b97f979aec",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018预处理综述(Baruah et al.)中的相邻内容（参考文献列表），讨论木质纤维素预处理但未直接给出四类划分结论。"
+  },
+  {
+   "doc_id": "chk_ff959f5ac2a11d336a855f78",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：块研究生物质燃烧NMOG排放论文的图表/数据页（大气科学），与木质纤维素预处理方法分类无关。"
+  }
+ ]
+}

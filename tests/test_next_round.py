@@ -56,6 +56,42 @@ def test_quality_recovery_rejects_short_or_low_confidence_ocr():
     assert PdfParser._acceptable_quality_recovery(original, "word " * 70, 0.95)
 
 
+def test_polluted_block_uses_local_ocr_without_replacing_the_page(monkeypatch):
+    class Page:
+        rect = fitz.Rect(0, 0, 100, 100)
+
+        def get_text(self, kind):
+            assert kind == "blocks"
+            return [(10, 10, 90, 30, "Open circuit poten\x02al", 0, 0)]
+
+    parser = PdfParser()
+    monkeypatch.setattr(parser, "_ocr_clip", lambda page, rect: ("Open circuit potential", 0.99))
+    text, confidence, count, attempted = parser._ocr_polluted_blocks(
+        Page(), "Header\nOpen circuit poten\x02al\nUnchanged conclusion"
+    )
+    assert text == "Header\nOpen circuit potential\nUnchanged conclusion"
+    assert confidence == 0.99 and count == 1 and attempted
+
+
+def test_formula_control_character_is_not_guessed_by_ocr(monkeypatch):
+    class Page:
+        rect = fitz.Rect(0, 0, 100, 100)
+
+        def get_text(self, kind):
+            assert kind == "blocks"
+            return [(10, 10, 90, 30, "G = H \x01 TS", 0, 0)]
+
+    parser = PdfParser()
+
+    def fail_if_called(page, rect):
+        raise AssertionError("formula OCR must not run")
+
+    monkeypatch.setattr(parser, "_ocr_clip", fail_if_called)
+    text, confidence, count, attempted = parser._ocr_polluted_blocks(Page(), "G = H \x01 TS")
+    assert text == "G = H \x01 TS"
+    assert confidence is None and count == 0 and attempted
+
+
 def test_bilingual_retrieval_terms_produce_safe_sentence_offsets():
     text = "Background sentence. Furfural yield reached 30% at 180 °C. Final note."
     result = evidence_highlights(text, ["糠醛", "产率"], ["furfural", "yield"])

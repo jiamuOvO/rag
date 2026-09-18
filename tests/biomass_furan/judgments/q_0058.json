@@ -1,0 +1,405 @@
+{
+ "query_id": "q_0058",
+ "judgments": [
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_0391e49a61623b735675c552",
+   "relevance": 3,
+   "reason": "Directly gives the 80 °C reaction temperature for FA-Al3+ photocatalytic glucose conversion to HMF, the same system as the question.",
+   "evidence_quotes": [
+    "0.01 M Al(NO3)3 ∙9H2O, 8 g L−1 FA,\n0.1 M D-glucose in 2 mL of DMSO, 1.2 W cm−2 of halogen light intensity\n(400–800 nm wavelength), 80 °C reaction temperature, an argon atmosphere of\n1 bar."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "f229a4cc8b7fb3cd7902bbc8895115b1f9a14734d2518a282a008efc0f591ba9"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_063b03a0d0262207439563df",
+   "relevance": 2,
+   "reason": "FA-Al3+ photocatalysis at 80 °C targeting HMF.; HMF yield basis for FA-assisted photocatalysis.",
+   "evidence_quotes": [
+    "0.1 M D-glucose in 2 mL of DMSO, 1.2 W cm−2 of halogen light intensity (400–800 nm wavelength), 80 °C reaction temperature",
+    "afforded excellent HMF yields, 70 and 67%, respectively, at 70 °C for 20 h"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "2dccbba1814670da068dc19563a1a72db2c9f5a3c4ba7374f049022dcf8eab0b"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_175efdde3cc9e55cc4c9e5e2",
+   "relevance": 2,
+   "reason": "Gives furfural yield basis for Pd-PdO/ZnSO4 C6 pyrolysis.",
+   "evidence_quotes": [
+    "with the use of the Pd-PdO/ZnSO4 catalyst, the furfural yield reached ~75%, which is clearly in line with the result for its glucose monomer."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "186edf33c5734923539f30eca63c2411affeed33203f061f80b9c9e7951a5d84"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_176ff87d3da28c8b102c3f43",
+   "relevance": 2,
+   "reason": "Same paper's figure caption confirming 400 °C flash pyrolysis of C6 glucose/allose with furfural yield/selectivity, supporting the temperature and target furfural.",
+   "evidence_quotes": [
+    "Product distribution from the pyrolysis of C5 xylan, C6 allose and C6\nglucose at 400 °C. Panels a and a’ for the selectivity and yield of furfural"
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "f229a4cc8b7fb3cd7902bbc8895115b1f9a14734d2518a282a008efc0f591ba9"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_2457bcbec7234dbe74bc716f",
+   "relevance": 2,
+   "reason": "Pd-PdO/ZnSO4 flash pyrolysis yields furfural, not HMF.",
+   "evidence_quotes": [
+    "boosting the furfural yield to 74.0 mol% for allose (spectra in Fig. S9) and 77.3 mol% for glucose in Fig. 4d"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "2dccbba1814670da068dc19563a1a72db2c9f5a3c4ba7374f049022dcf8eab0b"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_2c26b76bcb96e32b4ebea344",
+   "relevance": 2,
+   "reason": "Confirms target product is furfural in pyrolysis study.",
+   "evidence_quotes": [
+    "Steps 9-10 for the continued dehydration reactions to form the final product furfural."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "2dccbba1814670da068dc19563a1a72db2c9f5a3c4ba7374f049022dcf8eab0b"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_45bcb74bc258f9a5bf61a3ea",
+   "relevance": 2,
+   "reason": "Confirms Pd-PdO/ZnSO4 flash pyrolysis at 400 °C targeting furfural from C6 sugars.",
+   "evidence_quotes": [
+    "a novel, bifunctional and reusable Pd-PdO/ZnSO4 catalyst with an optimum Pd loading of 1.1 mol% was designed to produce furfural from both C5 sugars and C6 sugars by flash pyrolysis at 400 °C."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "186edf33c5734923539f30eca63c2411affeed33203f061f80b9c9e7951a5d84"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_46a1439a03747011258b0dee",
+   "relevance": 1,
+   "reason": "L1b: same paper's method/data basis for the fulvic-acid/Al3+ HMF study, defining the yield basis (mol% HMF from glucose).",
+   "evidence_quotes": [
+    "The HMF yield is defined as follows:\nY HMF = ðmoles of HMF obtained=moles of starting glucose or fructoseÞ × 100%:"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "537ce11c53239d9ff6bb4f7c5b9ba970d133d693cb6bc4adc3b31861d1ddf716"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_51128e533622af7a29364296",
+   "relevance": 3,
+   "reason": "Gives ~60% HMF at 80 °C for fulvic-acid/Al3+ photocatalysis, contrasting target product and yield basis.",
+   "evidence_quotes": [
+    "a maximum HMF yield of 59% was obtained when the FA concentration is 8.0 g L−1 ... the optimal temperature for achieving high photocatalytic conversion yield was 80 °C"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "186edf33c5734923539f30eca63c2411affeed33203f061f80b9c9e7951a5d84"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_53e21392be7f477eb4a192a9",
+   "relevance": 0,
+   "reason": "doc0: same field, CMF/furfural from xylose, not the asked studies; doc2: hydrothermal/CNC review, unrelated to both studies",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "537ce11c53239d9ff6bb4f7c5b9ba970d133d693cb6bc4adc3b31861d1ddf716"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_765cb061e1f7730e719a8e05",
+   "relevance": 3,
+   "reason": "Directly gives the Pd-PdO/ZnSO4 flash-pyrolysis temperature, C6 target furfural, and mol% yield basis.",
+   "evidence_quotes": [
+    "for the production of furfural by flash pyrolysis of lignocelluloses at 400 °C. For both dry and wet C6 cellulose and its monomers, the furfural yields reach 74–82 mol%"
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "fb61f43ed6b0b8a7a7fc619bba2cbd2aa932a0d54abc8bda12a7a711b5015bdc"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_84ae42d88e79a05c3345069f",
+   "relevance": 0,
+   "reason": "doc0: same field, CMF/furfural from xylose, not the asked studies; doc2: hydrothermal/CNC review, unrelated to both studies",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "537ce11c53239d9ff6bb4f7c5b9ba970d133d693cb6bc4adc3b31861d1ddf716"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_8812eb342f37103548b3697f",
+   "relevance": 3,
+   "reason": "Duplicate of the fulvic-acid/Al3+ abstract, directly supporting the 80 °C, HMF, ~60% facts.",
+   "evidence_quotes": [
+    "photocatalytic activity for glucose conversion to HMF in one-pot reaction, in good yield (~60%) and at moderate temperatures (80 °C)"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "fb61f43ed6b0b8a7a7fc619bba2cbd2aa932a0d54abc8bda12a7a711b5015bdc"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_8f8e466dadd349e22ad6b044",
+   "relevance": 0,
+   "reason": "doc5: different paper, furan pyrolysis mechanism, no sugar/HMF/furfural yield",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "f229a4cc8b7fb3cd7902bbc8895115b1f9a14734d2518a282a008efc0f591ba9"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_932af02ade2343540404171d",
+   "relevance": 2,
+   "reason": "Same paper's reaction pathway figure showing 74-82 mol% furfural from C6 sugars by catalytic pyrolysis; supports target product and yield basis, but not the 400 °C temperature.",
+   "evidence_quotes": [
+    "C6 Cellulose/Glucose\nH2O\nH+\nLGA\nO\nHO\nOH\nOH\nO\nO\nO\nO\nLGO\nO\nCHO\nC6 Cellulose/Glucose\nC5 Furfural\nH+\nHCHO\nH2O\n74-82 mol%\nPyrolysis\n(c) C6 sugars - This work"
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "f229a4cc8b7fb3cd7902bbc8895115b1f9a14734d2518a282a008efc0f591ba9"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_96c7951bb3aed603433cac47",
+   "relevance": 2,
+   "reason": "Furfural yield basis in Pd-PdO/ZnSO4 study.",
+   "evidence_quotes": [
+    "the furfural yield was improved from 4.2 mol% for the blank case with no catalyst to 62.4 mol% and 76.6 mol%"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "2dccbba1814670da068dc19563a1a72db2c9f5a3c4ba7374f049022dcf8eab0b"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_abc588b1d718da5c9f0eb950",
+   "relevance": 0,
+   "reason": "doc4: unrelated ozonation/pretreatment and lignin photocatalysis review",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "fb61f43ed6b0b8a7a7fc619bba2cbd2aa932a0d54abc8bda12a7a711b5015bdc"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_b3e2b10ee8b6418d9d565f85",
+   "relevance": 1,
+   "reason": "L1b: same paper's method/data basis, confirming the 400 °C pyrolysis condition for the C6 system.",
+   "evidence_quotes": [
+    "For the pyrolysis of blank cellulose at 400 °C"
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "fb61f43ed6b0b8a7a7fc619bba2cbd2aa932a0d54abc8bda12a7a711b5015bdc"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_bfd31418cf64f991fcdc7441",
+   "relevance": 2,
+   "reason": "L1c: same Pd-PdO/ZnSO4 flash-pyrolysis study reporting mol% furfural yields from C6 sugars, contrastable with the HMF study.",
+   "evidence_quotes": [
+    "the furfural yield was ~40 mol% for C5 xylan and ~20 mol% for the two C6 sugar monomers"
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "537ce11c53239d9ff6bb4f7c5b9ba970d133d693cb6bc4adc3b31861d1ddf716"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_ca594c753451bb22f850f6cd",
+   "relevance": 2,
+   "reason": "Same paper's parametric screening giving 400 °C optimum and furfural yield basis for the Pd-PdO/ZnSO4 system.",
+   "evidence_quotes": [
+    "400 °C is the optimum temperature for the largest\nfurfural yield (~65 mol%), based on the doping of 1.1 mol% Pd on\nZnSO4 and a catalyst to allose mass ratio of four."
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "f229a4cc8b7fb3cd7902bbc8895115b1f9a14734d2518a282a008efc0f591ba9"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_ced15f23f591978f197ea69d",
+   "relevance": 2,
+   "reason": "Provides 74 mol% furfural yield basis for the pyrolysis study.",
+   "evidence_quotes": [
+    "the furfural yield was further improved to around 74 mol% at the catalyst to biomass mass ratio of eight"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "186edf33c5734923539f30eca63c2411affeed33203f061f80b9c9e7951a5d84"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_d84846376b66774369ec92a4",
+   "relevance": 2,
+   "reason": "L1c: independent Pd-PdO/ZnSO4 flash-pyrolysis run reporting mol% furfural yields, contrastable with the HMF study.",
+   "evidence_quotes": [
+    "Upon the use of wet glucose containing 10 wt% moisture, the furfural yield was improved from 4.2 mol% for the blank case with no catalyst to 62.4 mol% and 76.6 mol% for the mass ratio of catalyst to glucose at one and four, respectively."
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "537ce11c53239d9ff6bb4f7c5b9ba970d133d693cb6bc4adc3b31861d1ddf716"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_dc496ed295591c5ec2e957be",
+   "relevance": 3,
+   "reason": "Directly gives the fulvic-acid/Al3+ photocatalysis temperature, HMF target, and ~60% yield.",
+   "evidence_quotes": [
+    "photocatalytic activity for glucose conversion to HMF in one-pot reaction, in good yield (~60%) and at moderate temperatures (80 °C)"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "fb61f43ed6b0b8a7a7fc619bba2cbd2aa932a0d54abc8bda12a7a711b5015bdc"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_e5824c82fc94043cbbd70116",
+   "relevance": 2,
+   "reason": "States target product furfural from C6 flash pyrolysis.",
+   "evidence_quotes": [
+    "we report a novel heterogeneous catalyst, namely, PdPdO/ZnSO4 for the doping of 1.1 mol% Pd, on zinc sulfate (ZnSO4) to produce furfural from the flash pyrolysis of C6 sugars"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "186edf33c5734923539f30eca63c2411affeed33203f061f80b9c9e7951a5d84"
+  },
+  {
+   "query_id": "q_0058",
+   "doc_id": "chk_ee7b3c8ea2f58be1382c1e47",
+   "relevance": 2,
+   "reason": "Flash pyrolysis temperature 400 °C for C6 sugars.",
+   "evidence_quotes": [
+    "Product distribution from the pyrolysis of C5 xylan, C6 allose and C6 glucose at 400 °C"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "2dccbba1814670da068dc19563a1a72db2c9f5a3c4ba7374f049022dcf8eab0b"
+  }
+ ]
+}

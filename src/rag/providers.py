@@ -11,7 +11,7 @@ from abc import ABC, abstractmethod
 import numpy as np
 
 from .config import Settings
-from .errors import RagError
+from .errors import RagError, redact
 from .models import Evidence
 
 
@@ -210,6 +210,13 @@ class OpenAICompatibleEmbeddingProvider(EmbeddingProvider):
             if not np.isfinite(array).all():
                 raise ValueError("embedding response contains non-finite values")
             return array.tolist()
+        except urllib.error.HTTPError as exc:
+            with exc:
+                detail = exc.read(8192).decode("utf-8", "replace")
+            detail = redact(detail.replace(self.key, "[REDACTED]"), 500)
+            raise RagError("EMBEDDING_HTTP_ERROR", "embedding",
+                           f"embedding HTTP {exc.code}: {detail}",
+                           retryable=exc.code in {408, 429, 500, 502, 503, 504}) from exc
         except (urllib.error.URLError, TimeoutError) as exc:
             raise RagError("EMBEDDING_SERVICE_UNAVAILABLE", "embedding",
                            "embedding service unavailable", retryable=True) from exc

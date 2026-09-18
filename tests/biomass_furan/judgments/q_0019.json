@@ -1,0 +1,382 @@
+{
+ "query_id": "q_0019",
+ "judgments": [
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_2aa52a1d53151245ba3fcd5b",
+   "relevance": 3,
+   "reason": "Directly states HMF oxidation to 2,5-FDCA, the key 2,5-PEF monomer.",
+   "evidence_quotes": [
+    "it can be easily converted by oxidation into 2,5-furandicarboxylic acid (2,5-FDCA), the key monomer for the synthesis of poly(ethylene 2,5-furandicarboxylate) (2,5-PEF)"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "a2cbe7416c8be6ab8f59445cde93e9e4baefc5d6e8b1a8915f5e0b6c77fe2557"
+  },
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_312db15c77cd030a420bdfd0",
+   "relevance": 0,
+   "reason": "doc0: same paper, unrelated topic (furanic ester monomers)",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "06e259046e4cff47894c799026988aab1c256f7e7e67cd18c59ea8a28a610233"
+  },
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_34c72bd62732b8d96968ddac",
+   "relevance": 1,
+   "reason": "L1b: same review paper, FDCA/PEF context but no HMF oxidation statement.",
+   "evidence_quotes": [
+    "Atom labelling and structural parameters for 2,4-FDCA and 2,5FDCA compared to TA."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "5b04e1356326c72bf6d0f816169a8cd715bc539ead8712979d9eee8856086bff"
+  },
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_384e911e82c94d5362f21095",
+   "relevance": 1,
+   "reason": "L1d: background explaining HMF oxidation to FDCA, but not the 2024 review's statement.",
+   "evidence_quotes": [
+    "or oxidised to \nhighly functional monomers such as 2,5-furandicarbaldehyde and 2,5-furandicarboxylic acid (FDCA).21,22 FDCA \nis a monomer for production of many polymers"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "2fca935244dc178dd04e77d664c40dac9654f0c19750657e8b53ff0e467770e2"
+  },
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_3d1b98362e296a19d5e019d6",
+   "relevance": 1,
+   "reason": "L1d: background statement that HMF is a precursor to FDCA, without the oxidation details.",
+   "evidence_quotes": [
+    "HMF is a precursor to key biochemicals such as 2,5-furandicarboxylic acid, which is considered an essential building block both for the biochemical industry and as a monomer source for biodegradable polymers"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "06e259046e4cff47894c799026988aab1c256f7e7e67cd18c59ea8a28a610233"
+  },
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_4a0c6f5bc8bb872ddd8a6a36",
+   "relevance": 1,
+   "reason": "L1b: same review's own statement that HMF is transformed into 2,5-FDCA.",
+   "evidence_quotes": [
+    "While considerable research has explored the transformation of HMF into novel monomers for bio-based polymers, particularly spotlighting 2,5-FDCA, this review shifts focus to other HMFderived monomers"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "06e259046e4cff47894c799026988aab1c256f7e7e67cd18c59ea8a28a610233"
+  },
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_752365d1ce8ac65d7ca881e5",
+   "relevance": 1,
+   "reason": "L1d: review background stating HMF transforms into 2,5-FDCA, without the oxidation detail.",
+   "evidence_quotes": [
+    "While considerable research has explored the transformation of HMF\ninto novel monomers for bio-based polymers, particularly spotlighting 2,5-FDCA, this review shifts focus to other HMFderived monomers"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "2fca935244dc178dd04e77d664c40dac9654f0c19750657e8b53ff0e467770e2"
+  },
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_818d835fd1b20eb95b90b67d",
+   "relevance": 2,
+   "reason": "Same paper repeats the HMF oxidation to FDCA for 2,5-PEF.",
+   "evidence_quotes": [
+    "it can be easily converted by oxidation into 2,5-furandicarboxylic acid (2,5-FDCA), the key monomer for the synthesis of poly(ethylene 2,5-furandicarboxylate) (2,5-PEF)"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "a2cbe7416c8be6ab8f59445cde93e9e4baefc5d6e8b1a8915f5e0b6c77fe2557"
+  },
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_867558c7dbce6d47c08806da",
+   "relevance": 1,
+   "reason": "Independent paper confirms HMF oxidation to FDCA for PEF.",
+   "evidence_quotes": [
+    "The oxidation of HMF to FDCA was mainly catalyzed by Pt, Pd, and Au-based catalysts."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "a2cbe7416c8be6ab8f59445cde93e9e4baefc5d6e8b1a8915f5e0b6c77fe2557",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "题目点名 2024 年《Beyond 2,5-furandicarboxylic acid》综述，属硬性来源限定；本块来源 paper_a39f1f9d78514a2f2d7f78be 与之不同。块内确给出 HMF 氧化为 FDCA 并连到 PEF，但按 §八 规则 1，另一篇论文独立陈述相同事实只能判 1。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_9757e01c23afde940d264b95",
+   "relevance": 0,
+   "reason": "doc1: PEF synthesis from MeFDCA/EG, no HMF oxidation",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "3b52dc9c5bce37909790f77596d250c4c6893281221992d5715bd1b947b68744"
+  },
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_9c28629973a5335729f3c79f",
+   "relevance": 0,
+   "reason": "doc4: different paper on Au/Ag oxidation catalysts, no 2,5-PEF synthesis context",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "a2cbe7416c8be6ab8f59445cde93e9e4baefc5d6e8b1a8915f5e0b6c77fe2557"
+  },
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_a7b4e7413f51520b5850ba43",
+   "relevance": 1,
+   "reason": "L1c: independent paper reporting HMF oxidation to FDCA, the diacid monomer for PEF.",
+   "evidence_quotes": [
+    "The sustainable synthesis of two important intermediates relevant for the production of bio-based polymers, 2,5-furandicarboxylic acid (FDCA) and 5-hydroxymethyl-2-furancarboxylic acid (HFCA), via oxidation of 5-(hydroxymethyl)furfural (HMF) was investigated"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "answerability_conflict": false,
+   "raw_response_id": "06e259046e4cff47894c799026988aab1c256f7e7e67cd18c59ea8a28a610233",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块来源为 paper_075d9e2d19ead8d2c43d1945（Green Chem. 2018 选择性氧化论文），非题目点名的 2024 综述。该文独立报告 HMF 氧化制 FDCA，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_b1b81eeabbaeabc5b132a96b",
+   "relevance": 2,
+   "reason": "L1b: same 2024 review, data basis for HMF oxidation/esterification to FDCA derivatives.",
+   "evidence_quotes": [
+    "FDCA mono- and dimethyl esters (FDME) in oxidative esterification of HMF (#5; Table 16)."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "Agent_review_completed",
+   "answerability_conflict": false,
+   "raw_response_id": "2fca935244dc178dd04e77d664c40dac9654f0c19750657e8b53ff0e467770e2",
+   "review_note": "支持氧化路线的一部分、缺 FDCA 单体结论 → 维持 2",
+   "review_verdict": "部分"
+  },
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_cbb6fa778c47d8038fdd00de",
+   "relevance": 0,
+   "reason": "doc3: same paper, covers 2,4-FDCA synthesis, not HMF-to-FDCA oxidation",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "2fca935244dc178dd04e77d664c40dac9654f0c19750657e8b53ff0e467770e2"
+  },
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_cc47e725f63493a672af98c3",
+   "relevance": 1,
+   "reason": "L1c: independent paper reporting comparable HMF-to-FDCA oxidation evidence.",
+   "evidence_quotes": [
+    "The oxidation of HMF to FDCA was mainly \ncatalyzed by Pt, Pd, and Au-based catalysts."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "answerability_conflict": false,
+   "raw_response_id": "2fca935244dc178dd04e77d664c40dac9654f0c19750657e8b53ff0e467770e2",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块来源为 paper_a39f1f9d78514a2f2d7f78be，非指定 2024 综述。独立陈述 HMF 氧化为 FDCA 并连到 PEF，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_d13409ffc6f7edfd7fde9eed",
+   "relevance": 2,
+   "reason": "Review abstract identifies 2,5-FDCA as the HMF-derived monomer context.",
+   "evidence_quotes": [
+    "beyond 2,5-furandicarboxylic acid (2,5-FDCA), little attention has been devoted to key aspects"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "a2cbe7416c8be6ab8f59445cde93e9e4baefc5d6e8b1a8915f5e0b6c77fe2557"
+  },
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_dc496ed295591c5ec2e957be",
+   "relevance": 1,
+   "reason": "L1d: background linking HMF to 2,5-FDCA as monomer, without the oxidation conversion details.",
+   "evidence_quotes": [
+    "HMF is a precursor to key biochemicals such as 2,5-furandicarboxylic acid, which is considered an essential building block both for the biochemical industry and as a monomer source for biodegradable polymers"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "3b52dc9c5bce37909790f77596d250c4c6893281221992d5715bd1b947b68744"
+  },
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_e0784e90820e6e8e05e16416",
+   "relevance": 1,
+   "reason": "L1d: background on HMF conversion to 2,5-disubstituted furans, no explicit oxidation to FDCA.",
+   "evidence_quotes": [
+    "5-HMF can easily be converted to various 2,5-disubstituted furan derivatives as shown in Figure 2b."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "5b04e1356326c72bf6d0f816169a8cd715bc539ead8712979d9eee8856086bff"
+  },
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_e42b6061a2a91bd7951a7b6c",
+   "relevance": 0,
+   "reason": "doc0: bibliography list only; doc3: same paper, 2,4-FDCA synthesis topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "5b04e1356326c72bf6d0f816169a8cd715bc539ead8712979d9eee8856086bff"
+  },
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_ea12060a5eb8ed047561fe44",
+   "relevance": 1,
+   "reason": "L1c: independent paper reporting HMF conversion to FDCA as polymer building block.",
+   "evidence_quotes": [
+    "Aerial transformation of 5-(hydroxymethyl)furfural (HMF) to 2,5-furandicarboxylic acid (FDCA). HMF is typically obtained from the dehydration of lignocellulose; its conversion into FDCA provides an important polymer building block"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "answerability_conflict": false,
+   "raw_response_id": "06e259046e4cff47894c799026988aab1c256f7e7e67cd18c59ea8a28a610233",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块来源为 paper_f0e625aa9a89da78815e3099（Frontiers in Chemistry 2018 绿色氧化综述），非指定 2024 综述。独立陈述 HMF→FDCA 及聚合单体用途，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_eb3f4a70877eb3d36dad7a7b",
+   "relevance": 1,
+   "reason": "L1d: background that HMF can lead to diacids, without naming oxidation to 2,5-FDCA.",
+   "evidence_quotes": [
+    "HMF and its derivatives are particularly attractive for designing polymer architectures, as these bi-functional building blocks can lead to diols, diacids, diamines, etc."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "5b04e1356326c72bf6d0f816169a8cd715bc539ead8712979d9eee8856086bff"
+  },
+  {
+   "query_id": "q_0019",
+   "doc_id": "chk_ee30f396a7dc94f91f97efa7",
+   "relevance": 0,
+   "reason": "doc0: bibliography list only; doc3: same paper, 2,4-FDCA synthesis topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "5b04e1356326c72bf6d0f816169a8cd715bc539ead8712979d9eee8856086bff"
+  }
+ ]
+}

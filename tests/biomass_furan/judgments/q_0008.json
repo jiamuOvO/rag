@@ -1,0 +1,820 @@
+{
+ "query_id": "q_0008",
+ "judgments": [
+  {
+   "doc_id": "chk_02678fb3447ecc340999aceb",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：H2SO4/MIBK 双相转化玉米秸秆戊糖水解液制糠醛（文献综述），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "query_id": "q_0008",
+   "doc_id": "chk_0760bea4664774ad2bd462ba",
+   "relevance": 2,
+   "reason": "Same paper's method/context for the LiBr DES system, no yield numbers.",
+   "evidence_quotes": [
+    "In this work the addition of metal halide salts to the acidic-based DES [Ch]Cl:MA (1:3) + 5 wt.% H2O was investigated as a strategy to increase furfural yield directly from xylans."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "fe6ef28d81d2bccf273ebbee7d9ebcdd5713f1f042d083cbf1579de9da4fb0a3"
+  },
+  {
+   "doc_id": "chk_077f5f075e635728c9c0c581",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：SnCl4/EMIMBr 离子液体中木糖脱水制糠醛，非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_0e6fd8597b3b0a951fb65a97",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同研究领域：生物质衍生生物炭（黑碳）的动态分子结构，与糠醛合成无关。"
+  },
+  {
+   "doc_id": "chk_0fb5de6208b939b22f5388a4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：ChCl/GA/H2O DES–MIBK 双相体系（并研究 HMF 与 DES 相互作用），非本题的 LiBr 碱金属卤化物 DES 研究."
+  },
+  {
+   "doc_id": "chk_122e8a9ffbe8d32b9133e57e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：木质纤维素生物质碱法预处理综述（氨法/酸法），非本题糠醛合成的 LiBr-DES 研究。"
+  },
+  {
+   "doc_id": "chk_12f59e5c3a85b3802d537196",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：5-(氯甲基)糠醛(CMF) 从木质纤维素制备（Figure 17 等），非本题糠醛的 LiBr-DES 研究。"
+  },
+  {
+   "doc_id": "chk_133ca84499df35267465e928",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：木质纤维素生物质碱法预处理综述（NaOH/氨等），非本题糠醛合成的 LiBr-DES 研究。"
+  },
+  {
+   "doc_id": "chk_13f73a9d011906ba174abc62",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：SnCl4/EMIMBr 离子液体中木糖脱水制糠醛（双相体系 Table 2），非本题的 LiBr-DES 碱金属卤化物研究."
+  },
+  {
+   "doc_id": "chk_146ef0a2692f27a972ce10dc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（微波 HCl、杂多酸等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_1759d55f26111cb779e1d610",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：SnCl4/EMIMBr 离子液体中木糖脱水制糠醛（催化剂用量 Figure 2），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_1a55c8728cce5dc368a01e1d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（CrCl3/HCl、离子液体等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_1c6ab83696da977fc3cb5dc2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（Nafion、微介孔磺酸等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_1e3eaec5bd452ddb3b9a4006",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：ChCl/GA/H2O DES–MIBK 双相体系转化桦木锯屑（并研究 HMF），非本题的 LiBr 碱金属卤化物 DES 研究。"
+  },
+  {
+   "doc_id": "chk_2340be417303afa6db1f7cca",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（生物炭、Amberlyst 等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_234d648ac15bd624b36d5d61",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：经典盐酸蒸馏法定量分析木糖生成糠醛（1938 蒸馏步骤/参考文献），非本题 2021 LiBr-DES 研究。"
+  },
+  {
+   "doc_id": "chk_23a0c15f43bbc31ba51d1d39",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：SnCl4/EMIMBr 离子液体中木糖脱水制糠醛（温度 Figure 7/Table 3），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_2554c51157cea048e651e294",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同论文结果讨论段：LiBr 与 NaBr 催化能力及 Figure 4，属于题目研究的相邻结果。"
+  },
+  {
+   "doc_id": "chk_2dea6b500a26dd4908bb4d6e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（黏土、离子交换树脂等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_2e78311dd1ccdf9a5161ed82",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：SnCl4/EMIMBr 离子液体中木糖脱水制糠醛（材料与步骤），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_305f10f1a75a63236a4c181e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：ChCl/GA/H2O DES–MIBK 双相体系（摘要/引言），非本题的 LiBr 碱金属卤化物 DES 研究。"
+  },
+  {
+   "doc_id": "chk_3340aec4dcb7f4689e5882be",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：ChCl/GA/H2O DES–MIBK 双相体系（含水量对 HMF/糠醛影响），非本题的 LiBr 碱金属卤化物 DES 研究。"
+  },
+  {
+   "doc_id": "chk_34018350f5510abb45085aed",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：ChCl/GA/H2O DES–MIBK 双相体系（并研究 HMF 与 DES 相互作用），非本题的 LiBr 碱金属卤化物 DES 研究。"
+  },
+  {
+   "doc_id": "chk_3595be0212dfb2ca6ba7079d",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同论文引言/文献综述，介绍离子液体与 DES（含 GVL、MIBK 等），属于题目研究的背景，与块[52]重叠。"
+  },
+  {
+   "doc_id": "chk_36168cf9a6852f62222d69a1",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（甲酸/甜菜碱、盐 KI/KBr 等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_38156e00e1d48f03001310a0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：H2SO4/MIBK 双相转化玉米秸秆戊糖水解液制糠醛（摘要/引言），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_3966d11a350c894b6c9bab9b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：SnCl4/EMIMBr 离子液体中木糖脱水制糠醛（与文献对比 Table 3），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_396fbbf891060bcb9b5939fc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（金属盐 LiBr/Cr 等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_3abca309821216721c9a9a6d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：FeCl3 催化微波辅助木糖脱水经 RSM 优化（两水平因子设计 Table 1），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "query_id": "q_0008",
+   "doc_id": "chk_3dac63a009a1213ba1abaadb",
+   "relevance": 0,
+   "reason": "doc0: same paper, acknowledgments/references; doc1: same paper, 130C screening not optimized LiBr; doc2: same paper, recovery/reuse yields; doc3: same paper, optimization setup no 92.2/89.5 values; doc4: same paper, recovery and comparison",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "e10c9a966ba26b63e9d693b21c039fd4a1850ddcbf41f3c2e779dae9c8de4dc8"
+  },
+  {
+   "doc_id": "chk_3f69bf6b3a14097bc389e768",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：ChCl/GA/H2O DES–MIBK 双相体系（并研究 HMF），非本题的 LiBr 碱金属卤化物 DES 研究。"
+  },
+  {
+   "doc_id": "chk_4419384458d12e56e17e3a01",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同论文 Figure 1 筛选与机理（Figure 2），属于题目研究的背景/相邻内容。"
+  },
+  {
+   "doc_id": "chk_4a28287d1b89c5548eafb792",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（GVL/H2SO4、微波等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_4a6a3fa05189f43437e769de",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（HCl/MIBK、玉米秸秆等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_4a7ce506aac47c90de848979",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：H2SO4/MIBK 双相转化玉米秸秆戊糖水解液制糠醛（分配系数 Figure 1），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_4d23c61724b8781b5c07f8ed",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：ChCl/GA/H2O DES–MIBK 双相体系（时间/温度影响 Figure 2），非本题的 LiBr 碱金属卤化物 DES 研究。"
+  },
+  {
+   "doc_id": "chk_4f1003898eb083ea75f9672f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：ChCl/GA/H2O DES–MIBK 双相体系（并研究 HMF），非本题的 LiBr 碱金属卤化物 DES 研究。"
+  },
+  {
+   "doc_id": "chk_4f4393d00a3e8fb92661c408",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：FeCl3 催化微波辅助木糖脱水经 RSM 优化（Table 5 结果），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "query_id": "q_0008",
+   "doc_id": "chk_4f86dedd60c3fd056c61dc03",
+   "relevance": 0,
+   "reason": "doc0: same paper, acknowledgments/references; doc1: same paper, 130C screening not optimized LiBr; doc2: same paper, recovery/reuse yields; doc3: same paper, optimization setup no 92.2/89.5 values; doc4: same paper, recovery and comparison",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "e10c9a966ba26b63e9d693b21c039fd4a1850ddcbf41f3c2e779dae9c8de4dc8"
+  },
+  {
+   "doc_id": "chk_54f75b6ae27983536bad5b0f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：SnCl4/EMIMBr 离子液体中木糖脱水制糠醛（参考文献列表），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "query_id": "q_0008",
+   "doc_id": "chk_5539978d73851dcba7b48239",
+   "relevance": 0,
+   "reason": "doc0: same paper, acknowledgments/references; doc1: same paper, 130C screening not optimized LiBr; doc2: same paper, recovery/reuse yields; doc3: same paper, optimization setup no 92.2/89.5 values; doc4: same paper, recovery and comparison",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "e10c9a966ba26b63e9d693b21c039fd4a1850ddcbf41f3c2e779dae9c8de4dc8"
+  },
+  {
+   "doc_id": "chk_566e4ba7fd2e114be1aef258",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同论文方法段：木聚糖水解与 RSM 优化流程，属于题目研究的相邻方法部分。"
+  },
+  {
+   "doc_id": "chk_57a33a6e0c4a7bc9c29181aa",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：经典 12% 盐酸蒸馏法定量分析木糖生成糠醛（1938 分析方法），非本题 2021 LiBr-DES 研究。"
+  },
+  {
+   "doc_id": "chk_5a5d29bee0d758f5ef90deb2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：商业糠醛的性质与用途（历史文献），非本题 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_5b84605e7160a0a7610fa66d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：ChCl/GA/H2O DES–MIBK 双相体系（DES 结构/含水量），非本题的 LiBr 碱金属卤化物 DES 研究。"
+  },
+  {
+   "doc_id": "chk_6aa49b56f23286eccb100a58",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：ChCl/GA/H2O DES–MIBK 双相体系（并研究 HMF 与稳定性），非本题的 LiBr 碱金属卤化物 DES 研究。"
+  },
+  {
+   "doc_id": "chk_6e4ef9ea828121e6dbaccd72",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（马来酸、甲磺酸、KI/KBr 等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_6f25f7af1a297c17eaced5f2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同论文卤化物筛选与脱水机理段（Figure 2 机理），属于题目研究的背景/相邻内容。"
+  },
+  {
+   "doc_id": "chk_703f54f97c4e7ee879d93ae0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品与反应：Au/Ag 催化 HMF 好氧氧化制 FDCA/HFCA，非本题的糠醛生产（LiBr-DES 研究）。"
+  },
+  {
+   "doc_id": "chk_7398f9b56ed82048d6e3aec5",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与工艺：Pd-PdO/ZnSO4 催化 C6 糖/木质纤维素闪速热解制糠醛（参考文献列表），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_74c0501ad848f18ca01b888e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：木质纤维素生物质碱法预处理综述（NaOH/氨等），非本题糠醛合成的 LiBr-DES 研究。"
+  },
+  {
+   "doc_id": "chk_754b18ffbaea380476fcdfc1",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（NaCl、FeCl3/MTHF 等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_766870290e51df24b37278cd",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：ChCl/GA/H2O DES–MIBK 双相体系（TGA 与循环），非本题的 LiBr 碱金属卤化物 DES 研究。"
+  },
+  {
+   "doc_id": "chk_7943e517bfdbc2b671b18f93",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：SnCl4/EMIMBr 离子液体中木糖/木聚糖脱水制糠醛（收率定义与结论），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_7a8de84bce1f50d68e2d232f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同研究领域：生物质燃烧非甲烷有机气体(NMOG)排放（校准），与糠醛合成无关。"
+  },
+  {
+   "doc_id": "chk_7f1601429f560fc510ce6bd5",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（氧化物 Zr/Ti/Nb 等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_80c6f5afc46e29f7ef6620c4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：H2SO4/MIBK 双相转化戊糖水解液制糠醛（优化条件 Figure 4），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_86d0fa326f0392661191cc1c",
+   "relevance": 2,
+   "evidence_quotes": [
+    "The maximum furfural yield obtained experimentally in presence of LiBr under the optimized conditions was 89.5 ± 0.3%"
+   ],
+   "reason": "同论文结论段给出优化 LiBr 条件下实测收率 89.5 ± 0.3%（必要直接证据），但未给出预测值 92.2%，需与块[1]组合才能区分预测与实测。"
+  },
+  {
+   "doc_id": "chk_8781e312c8a17f3f184b7414",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：ChCl/GA/H2O DES–MIBK 双相体系（并研究 HMF 与稳定性），非本题的 LiBr 碱金属卤化物 DES 研究。"
+  },
+  {
+   "doc_id": "chk_8cc5cec9a375be2393d7efb8",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：SnCl4/EMIMBr 离子液体中木聚糖脱水制糠醛（水量影响 Figure 9/10），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_8ec72fde107b3b3733483bf0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：ChCl/GA/H2O DES–MIBK 双相体系（DES 稳定性与循环），非本题的 LiBr 碱金属卤化物 DES 研究。"
+  },
+  {
+   "doc_id": "chk_8f15223194b581244bbaff16",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：ChCl/GA/H2O DES–MIBK 双相体系（DES 氢键结构 NMR），非本题的 LiBr 碱金属卤化物 DES 研究。"
+  },
+  {
+   "doc_id": "chk_921e6350279965caa3dae239",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（CPME、NaCl 等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_93ef2dc8b77094e3733acf49",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（磷酸盐/铌/钽等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_9e7c81fe4b422c2de07889ca",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：经典盐酸蒸馏法定量分析木糖/羟甲基糠醛（1938 方法学），非本题 2021 LiBr-DES 研究。"
+  },
+  {
+   "doc_id": "chk_9e8865841d4619f192e1d8c2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（微波 HCl、Weingarten 等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_9f994e2e49ec3c47a5ae2cda",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：ChCl/GA/H2O DES–MIBK 双相体系（摘要/引言，并研究 HMF），非本题的 LiBr 碱金属卤化物 DES 研究。"
+  },
+  {
+   "doc_id": "chk_a01faddf076e43aed67c3ada",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：FeCl3 催化微波辅助木糖脱水经 RSM 优化，非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_a23045bae263236a6a9c6d3c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同论文引言/文献综述，介绍离子液体与 DES 用于糠醛生产，属于题目研究的背景。"
+  },
+  {
+   "doc_id": "chk_a31155b8bf9d90dce8836014",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：SnCl4/EMIMBr 离子液体中木聚糖脱水制糠醛（Figure 9），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_a6c8ba74e59565fc9abca5bd",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（热水预处理等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_a8d5a7fbe645846b07a62f18",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：经典盐酸蒸馏法定量分析木糖生成糠醛（橡胶塞误差等分析方法），非本题 2021 LiBr-DES 研究。"
+  },
+  {
+   "doc_id": "chk_a9d0b19959ec2fb0857a3f15",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（NaCl/FeCl3、烷基酚等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_aa3091ca16dda33551077fdd",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（葡萄糖影响、离子液体等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_aa3f41a59a69051d33037973",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：ChCl/GA/H2O DES–MIBK 双相体系（并研究 HMF 与 DES 相互作用），非本题的 LiBr 碱金属卤化物 DES 研究。"
+  },
+  {
+   "doc_id": "chk_aadb1f108dc4034b348b7a36",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同论文低温筛选讨论（LiCl 49.9% 等），属于题目研究的相邻实验背景。"
+  },
+  {
+   "doc_id": "chk_aaff83e35ec0748b056b3658",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：FeCl3 催化微波辅助木糖脱水经 RSM 优化（HPLC 定量与结论），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_ab295deb9863e6b92c79c3f2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：经典 12% 盐酸蒸馏法定量分析木糖生成糠醛（1938 摘要），非本题 2021 LiBr-DES 研究。"
+  },
+  {
+   "doc_id": "chk_ab8275707581d1c508a5a1ce",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：H2SO4/MIBK 双相转化戊糖水解液制糠醛（木糖浓度影响 Figure 2），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_ae70470424266e29040b88d8",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：SnCl4/EMIMBr 离子液体中木糖脱水制糠醛（材料与方法），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_b345b55f971d6c63ac0dd078",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（AlCl3、甲酸等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_b57774d3d4688682f7455127",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：ChCl/GA/H2O DES–MIBK 双相体系（并研究 HMF 与 DES 相互作用），非本题的 LiBr 碱金属卤化物 DES 研究。"
+  },
+  {
+   "query_id": "q_0008",
+   "doc_id": "chk_ba38a5eb11a7d2b01f992079",
+   "relevance": 0,
+   "reason": "doc0: same paper, acknowledgments/references; doc1: same paper, 130C screening not optimized LiBr; doc2: same paper, recovery/reuse yields; doc3: same paper, optimization setup no 92.2/89.5 values; doc4: same paper, recovery and comparison",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "e10c9a966ba26b63e9d693b21c039fd4a1850ddcbf41f3c2e779dae9c8de4dc8"
+  },
+  {
+   "query_id": "q_0008",
+   "doc_id": "chk_baa9bfa115cb1a71967530ee",
+   "relevance": 2,
+   "reason": "Same paper's optimization data source (predicted vs experimental values) but numbers are in supplementary tables.",
+   "evidence_quotes": [
+    "The experimental points used in the factorial planning, the model equation, the furfural yield obtained experimentally and the respective calculated values, the correlation coefficients obtained, as well as all the statistical analyses are provided in Tables S2 and S3."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "fe6ef28d81d2bccf273ebbee7d9ebcdd5713f1f042d083cbf1579de9da4fb0a3"
+  },
+  {
+   "query_id": "q_0008",
+   "doc_id": "chk_bb2350573b224a69783b7f13",
+   "relevance": 0,
+   "reason": "doc0: same paper, literature review of third-party work",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "cb607fc2f19bd4be041a77cc4d8fe1988b9c0d1468921b5efa6528860ea01b42"
+  },
+  {
+   "doc_id": "chk_bc22f088e83ba23d087f08d4",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同论文机理讨论段：盐离子（阳离子/阴离子）对木糖溶剂化与脱水的复杂影响，属于题目研究的背景/相邻内容。"
+  },
+  {
+   "doc_id": "chk_bc71169706de8fd1845a953f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：5-羟甲基糠醛(HMF) 从真实生物质制备，非本题糠醛的 LiBr-DES 研究。"
+  },
+  {
+   "doc_id": "chk_becf195b0c2c578f76b9f66b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：5-(氯甲基)糠醛(CMF) 从木质纤维素制备（双相体系背景），非本题糠醛的 LiBr-DES 研究。"
+  },
+  {
+   "doc_id": "chk_bf8f76f2861f9cfa75746a02",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同反应：呋喃醛在金属电极上的电还原/加氢机理（糠醇等），非本题的糠醛生产（LiBr-DES 研究）。"
+  },
+  {
+   "doc_id": "chk_bfd31418cf64f991fcdc7441",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与工艺：Pd-PdO/ZnSO4 催化 C6 糖/木质纤维素闪速热解制糠醛（Figure 4），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_c115fc48e033db7f2ca20d86",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：ChCl/GA/H2O DES–MIBK 双相体系（并研究 HMF 与 DES 相互作用），非本题的 LiBr 碱金属卤化物 DES 研究。"
+  },
+  {
+   "doc_id": "chk_c1a2e291f033734ca2ba63ee",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（FeCl3、Al2(SO4)3、NaCl 等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_c1c69ec04b3141c9e4154bbd",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：5-(氯甲基)糠醛(CMF) 从木质纤维素制备（DoE/统计），非本题糠醛的 LiBr-DES 研究。"
+  },
+  {
+   "doc_id": "chk_c5cf24b6c854add07ffc9812",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同反应：Pt/g-C3N4 催化糠醛加氢制糠醇，非本题的糠醛生产（LiBr-DES 研究）。"
+  },
+  {
+   "doc_id": "chk_c5d400ec3b261cc6e95d63d1",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：FeCl3 催化微波辅助木糖脱水经 RSM 优化（方法学），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_c637afc692e7621538a73442",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：SnCl4/EMIMBr 离子液体中木糖脱水制糠醛（催化剂筛选 Figure 1），非本题的 LiBr-DES 碱金属卤化物研究."
+  },
+  {
+   "doc_id": "chk_c85488d90bdf2185f1eaf61b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：磷酸法木质纤维素分级制备糠醛（NMR/DOE 方法），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_cabe5f7c6e52f78b64e801a9",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：经典盐酸蒸馏法定量分析木糖生成糠醛（1938 目录/引言），非本题 2021 LiBr-DES 研究。"
+  },
+  {
+   "doc_id": "chk_cac3807d9a18c151af2918db",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：SnCl4/EMIMBr 离子液体中木糖脱水制糠醛（Table 1/Figure 4），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_ced15f23f591978f197ea69d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与工艺：Pd-PdO/ZnSO4 催化 C6 糖/木质纤维素闪速热解制糠醛，非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_d2293948284985c5b9722c4e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：H2SO4/MIBK 双相转化玉米秸秆戊糖水解液制糠醛（文献综述），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_d5a0855a9de310453948713b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：SnCl4/EMIMBr 离子液体中木糖脱水制糠醛（双相 Table 2），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_d647a03afce77d8ec8093954",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同论文材料与方法：DES 配制、木聚糖水解与微波程序，属于题目研究的相邻方法段。"
+  },
+  {
+   "doc_id": "chk_db3abd07ab2faed9034c87f6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：ChCl/GA/H2O DES–MIBK 双相体系（时间/温度影响），非本题的 LiBr 碱金属卤化物 DES 研究。"
+  },
+  {
+   "doc_id": "chk_de436d161505414f91c4bb67",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（离子交换树脂等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_de6d867f6158072b73bf5cb8",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同论文引言/筛选背景，说明添加碱金属卤化物提高糠醛收率的动机，属于题目研究的背景段。"
+  },
+  {
+   "query_id": "q_0008",
+   "doc_id": "chk_e1016eacd88751fb5899db1f",
+   "relevance": 0,
+   "reason": "doc0: same paper, acknowledgments/references; doc1: same paper, 130C screening not optimized LiBr; doc2: same paper, recovery/reuse yields; doc3: same paper, optimization setup no 92.2/89.5 values; doc4: same paper, recovery and comparison",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "e10c9a966ba26b63e9d693b21c039fd4a1850ddcbf41f3c2e779dae9c8de4dc8"
+  },
+  {
+   "doc_id": "chk_e59b9573578a2ef6e31f67e2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同论文卤化物筛选与脱水机理段，与块[5]/[15]重叠，属于题目研究的背景/相邻内容。"
+  },
+  {
+   "doc_id": "chk_e5c4b7f2e57957640e11cd4a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：ChCl/GA/H2O DES–MIBK 双相体系（引言与溶剂选择），非本题的 LiBr 碱金属卤化物 DES 研究。"
+  },
+  {
+   "query_id": "q_0008",
+   "doc_id": "chk_e769e00a4aa1cbe71b7a02cf",
+   "relevance": 1,
+   "reason": "Same optimized LiBr system/conditions but reports recycling yields, not the predicted vs measured comparison.",
+   "evidence_quotes": [
+    "Furfural yields attained with different cycles of the DES [Ch]Cl:Malic Acid (1:3) + 5 wt.% H2O with 8.19% LiBr added at 157.3 °C and 1.74 min."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_spotcheck_corrected",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "fe6ef28d81d2bccf273ebbee7d9ebcdd5713f1f042d083cbf1579de9da4fb0a3",
+   "correction_kind": "read_based_spotcheck_correction"
+  },
+  {
+   "doc_id": "chk_e84ff7a78af3eeebed166ec8",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同研究领域：生物质燃烧非甲烷有机气体(NMOG)排放，与糠醛合成无关。"
+  },
+  {
+   "doc_id": "chk_e87648f3f17c42e2168918d0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：商业糠醛的性质与用途（历史文献），非本题 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_e8f74e7ad88727e46f15144f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同主题：呋喃分子本身在微反应器中的热分解/热解机理，非生物质制糠醛。"
+  },
+  {
+   "doc_id": "chk_ea921fedd372abd63edfba9c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：经典盐酸蒸馏法定量分析木糖生成糠醛（1938 收率表 Table 3），非本题 2021 LiBr-DES 研究。"
+  },
+  {
+   "doc_id": "chk_ed3664eab04395be151ede7f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（MIBK、杂多酸、离子液体等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_ed36afbafbb1e03a209cf271",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（综述）覆盖多种糠醛生产路线/催化剂（铌/磷酸盐等），非本题特定的 2021 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_ee4f714d67d858f105a035d3",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：SnCl4/EMIMBr 离子液体中木糖脱水制糠醛（初始木糖负载 Figure 7），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_eec4496762bf30d4c915fc71",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：ChCl/GA/H2O DES–MIBK 双相体系转化葡萄糖/木糖混合物（并研究 HMF），非本题的 LiBr 碱金属卤化物 DES 研究。"
+  },
+  {
+   "doc_id": "chk_f50feed488e888c5a2e130e6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：SnCl4/EMIMBr 离子液体中木糖脱水制糠醛（引言/文献），非本题的 LiBr-DES 碱金属卤化物研究。"
+  },
+  {
+   "doc_id": "chk_faf230c7f5dbc5b4ffb78333",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：5-(氯甲基)糠醛(CMF) 从木质纤维素制备，非本题糠醛的 LiBr-DES 研究。"
+  },
+  {
+   "doc_id": "chk_fbc7a95665f94f660bc1af2c",
+   "relevance": 3,
+   "evidence_quotes": [
+    "the furfural yield predicted is 92.2%",
+    "The maximum furfural yield experimentally determined was 89.5 ± 0.3%"
+   ],
+   "reason": "同一块即给出优化 LiBr-DES 实验的预测收率 92.2% 与实测收率 89.5 ± 0.3%，单独即可完整回答题目。"
+  },
+  {
+   "doc_id": "chk_fd754a50c4f3510f7ef443fc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：集成桉木生物炼制经 Pd/C 副产糠醛/乙酰丙酸，非本题的 LiBr-DES 碱金属卤化物研究。"
+  }
+ ]
+}

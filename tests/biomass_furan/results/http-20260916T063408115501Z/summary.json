@@ -1,0 +1,738 @@
+{
+  "dataset_version": "0.1.0-ai-candidate",
+  "qrels_complete": false,
+  "metric_status": "blocked_incomplete_qrels",
+  "run_complete": true,
+  "stable_hybrid_baseline": false,
+  "successful_formal_requests": 149,
+  "config": {
+    "mode": "production_http",
+    "base_url": "http://127.0.0.1:8000",
+    "top_k": 20,
+    "warmup": 20,
+    "repeats": 3,
+    "concurrency": 1,
+    "timeout_seconds": 120,
+    "seed": 20260916,
+    "hardware": {
+      "platform": "Windows-11-10.0.26200-SP0",
+      "cpu": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+      "logical_cpu_count": 24
+    },
+    "python": "3.12.14",
+    "ready": {
+      "ready": true,
+      "chat_configured": true,
+      "embedding_configured": true,
+      "embedding_index": {
+        "count": 5444,
+        "model_count": 1,
+        "by_model": [
+          {
+            "provider": "openai_compatible",
+            "model": "qwen3-embedding-0.6b",
+            "dimensions": 1024,
+            "count": 5444
+          }
+        ]
+      },
+      "reranker_provider": "disabled"
+    },
+    "corpus_sha256": "ffcadfa99b671be28f849c1cae7bdde095dac1f5c6d4a84db6d2cf6bbfe52018",
+    "queries_sha256": "473b827ce448e6419804f66432b19d8dd38e82d91700dc113654e08f80d9f3cf",
+    "latency_boundary": "HTTP client request to fully parsed response; includes local transport and serialization",
+    "server_timing_limit": "Existing timings.retrieve excludes analysis and some response bookkeeping; diagnostic only.",
+    "production_query_logs_authorized": true,
+    "cold_start": "not_measured_existing_running_service",
+    "cache_policy": "existing service; warmed, no cache flush",
+    "quality_repeat": 1
+  },
+  "formal_requests": 180,
+  "status_counts": {
+    "error": 31,
+    "ok": 149
+  },
+  "timeout_rate": 0.0,
+  "degradation_rate": 0.0,
+  "latency_query_medians": {
+    "count": 60,
+    "mean_ms": 2675.843513333166,
+    "p50_ms": 3223.6690999998245,
+    "p95_ms": 3542.210739999973,
+    "p99_ms": 3599.9325319998024
+  },
+  "latency_all_requests": {
+    "count": 180,
+    "mean_ms": 2559.3955411108254,
+    "p50_ms": 3191.9884999988426,
+    "p95_ms": 3673.673720001716,
+    "p99_ms": 3771.461737999671
+  },
+  "successful_request_latency_diagnostic": {
+    "count": 149,
+    "mean_ms": 2665.8314234897116,
+    "p50_ms": 3334.6116000029724,
+    "p95_ms": 3681.295060001139,
+    "p99_ms": 3792.2341559997594
+  },
+  "reranker_latency_diagnostic": {
+    "count": 0,
+    "mean_ms": null,
+    "p50_ms": null,
+    "p95_ms": null,
+    "p99_ms": null
+  },
+  "non_rerank_estimate_latency_diagnostic": {
+    "count": 0,
+    "mean_ms": null,
+    "p50_ms": null,
+    "p95_ms": null,
+    "p99_ms": null
+  },
+  "server_internal_retrieve_latency_diagnostic": {
+    "count": 149,
+    "mean_ms": 2626.245630872483,
+    "p50_ms": 3281.491,
+    "p95_ms": 3636.5992,
+    "p99_ms": 3754.1647200000007
+  },
+  "overall": {},
+  "normal_hybrid_only": {},
+  "groups": {
+    "split": {},
+    "question_type": {},
+    "difficulty": {},
+    "language": {}
+  },
+  "no_answer": [
+    {
+      "query_id": "q_0012",
+      "nonempty_rate": 1,
+      "returned_counts": [
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "query_id": "q_0048",
+      "nonempty_rate": 0.6666666666666666,
+      "returned_counts": [
+        4,
+        4,
+        0
+      ]
+    },
+    {
+      "query_id": "q_0060",
+      "nonempty_rate": 0.6666666666666666,
+      "returned_counts": [
+        20,
+        20,
+        0
+      ]
+    }
+  ],
+  "per_query": [
+    {
+      "query_id": "q_0001",
+      "repeat_count": 3,
+      "latency_median_ms": 3316.6496000012557,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.10526315789473684
+    },
+    {
+      "query_id": "q_0002",
+      "repeat_count": 3,
+      "latency_median_ms": 1188.2643999997526,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0003",
+      "repeat_count": 3,
+      "latency_median_ms": 3450.844300001336,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.1
+    },
+    {
+      "query_id": "q_0004",
+      "repeat_count": 3,
+      "latency_median_ms": 2053.9453999990656,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0005",
+      "repeat_count": 3,
+      "latency_median_ms": 2044.154700000945,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.07142857142857142
+    },
+    {
+      "query_id": "q_0006",
+      "repeat_count": 3,
+      "latency_median_ms": 3452.77089999945,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.0
+    },
+    {
+      "query_id": "q_0007",
+      "repeat_count": 3,
+      "latency_median_ms": 1306.3407999979972,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0008",
+      "repeat_count": 3,
+      "latency_median_ms": 1274.1036000006716,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0009",
+      "repeat_count": 3,
+      "latency_median_ms": 1215.4016000022239,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.0
+    },
+    {
+      "query_id": "q_0010",
+      "repeat_count": 3,
+      "latency_median_ms": 3456.246199999441,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.1111111111111111
+    },
+    {
+      "query_id": "q_0011",
+      "repeat_count": 3,
+      "latency_median_ms": 2055.338300000585,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.11764705882352941
+    },
+    {
+      "query_id": "q_0012",
+      "repeat_count": 3,
+      "latency_median_ms": 3461.9222999972408,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.0
+    },
+    {
+      "query_id": "q_0013",
+      "repeat_count": 3,
+      "latency_median_ms": 3052.112399996986,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.0
+    },
+    {
+      "query_id": "q_0014",
+      "repeat_count": 3,
+      "latency_median_ms": 1246.3535999995656,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 1.0
+    },
+    {
+      "query_id": "q_0015",
+      "repeat_count": 3,
+      "latency_median_ms": 1217.5767000007909,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.05555555555555555
+    },
+    {
+      "query_id": "q_0016",
+      "repeat_count": 3,
+      "latency_median_ms": 3224.934400001075,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.05263157894736842
+    },
+    {
+      "query_id": "q_0017",
+      "repeat_count": 3,
+      "latency_median_ms": 3336.800299999595,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 1.0
+    },
+    {
+      "query_id": "q_0018",
+      "repeat_count": 3,
+      "latency_median_ms": 2067.8977999996278,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.05263157894736842
+    },
+    {
+      "query_id": "q_0019",
+      "repeat_count": 3,
+      "latency_median_ms": 3593.213200001628,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.11764705882352941
+    },
+    {
+      "query_id": "q_0020",
+      "repeat_count": 3,
+      "latency_median_ms": 3351.2005000011413,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 1.0
+    },
+    {
+      "query_id": "q_0021",
+      "repeat_count": 3,
+      "latency_median_ms": 3539.526399999886,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.05263157894736842
+    },
+    {
+      "query_id": "q_0022",
+      "repeat_count": 3,
+      "latency_median_ms": 1323.8899999996647,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.11764705882352941
+    },
+    {
+      "query_id": "q_0023",
+      "repeat_count": 3,
+      "latency_median_ms": 2041.8767999981355,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.125
+    },
+    {
+      "query_id": "q_0024",
+      "repeat_count": 3,
+      "latency_median_ms": 3360.9283000005234,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.09090909090909091
+    },
+    {
+      "query_id": "q_0025",
+      "repeat_count": 3,
+      "latency_median_ms": 1253.2630000023346,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.0
+    },
+    {
+      "query_id": "q_0026",
+      "repeat_count": 3,
+      "latency_median_ms": 3394.991900000605,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0027",
+      "repeat_count": 3,
+      "latency_median_ms": 3066.7557999986457,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.05555555555555555
+    },
+    {
+      "query_id": "q_0028",
+      "repeat_count": 3,
+      "latency_median_ms": 3300.932099999045,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.05555555555555555
+    },
+    {
+      "query_id": "q_0029",
+      "repeat_count": 3,
+      "latency_median_ms": 3275.9734999999637,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.05555555555555555
+    },
+    {
+      "query_id": "q_0030",
+      "repeat_count": 3,
+      "latency_median_ms": 3409.5742999998038,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.10526315789473684
+    },
+    {
+      "query_id": "q_0031",
+      "repeat_count": 3,
+      "latency_median_ms": 2042.3055999999633,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 1.0
+    },
+    {
+      "query_id": "q_0032",
+      "repeat_count": 3,
+      "latency_median_ms": 1407.22359999927,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0033",
+      "repeat_count": 3,
+      "latency_median_ms": 3269.31870000044,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.0
+    },
+    {
+      "query_id": "q_0034",
+      "repeat_count": 3,
+      "latency_median_ms": 3523.453599998902,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.1
+    },
+    {
+      "query_id": "q_0035",
+      "repeat_count": 3,
+      "latency_median_ms": 2042.0826999979909,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.05263157894736842
+    },
+    {
+      "query_id": "q_0036",
+      "repeat_count": 3,
+      "latency_median_ms": 1227.3743000005197,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.1
+    },
+    {
+      "query_id": "q_0037",
+      "repeat_count": 3,
+      "latency_median_ms": 2454.046399998333,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.1
+    },
+    {
+      "query_id": "q_0038",
+      "repeat_count": 3,
+      "latency_median_ms": 2057.10149999868,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0039",
+      "repeat_count": 3,
+      "latency_median_ms": 3306.279899999936,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.1
+    },
+    {
+      "query_id": "q_0040",
+      "repeat_count": 3,
+      "latency_median_ms": 1242.4257999991823,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 1.0
+    },
+    {
+      "query_id": "q_0041",
+      "repeat_count": 3,
+      "latency_median_ms": 2632.3407999989286,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.06666666666666667
+    },
+    {
+      "query_id": "q_0042",
+      "repeat_count": 3,
+      "latency_median_ms": 3365.9346000022197,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.0625
+    },
+    {
+      "query_id": "q_0043",
+      "repeat_count": 3,
+      "latency_median_ms": 2049.2393000022275,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.08333333333333333
+    },
+    {
+      "query_id": "q_0044",
+      "repeat_count": 3,
+      "latency_median_ms": 3395.234600000549,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.05263157894736842
+    },
+    {
+      "query_id": "q_0045",
+      "repeat_count": 3,
+      "latency_median_ms": 3345.6888000000617,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.13333333333333333
+    },
+    {
+      "query_id": "q_0046",
+      "repeat_count": 3,
+      "latency_median_ms": 3380.012199999328,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 1.0
+    },
+    {
+      "query_id": "q_0047",
+      "repeat_count": 3,
+      "latency_median_ms": 3168.259800000669,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.0
+    },
+    {
+      "query_id": "q_0048",
+      "repeat_count": 3,
+      "latency_median_ms": 3601.788199997827,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.0
+    },
+    {
+      "query_id": "q_0049",
+      "repeat_count": 3,
+      "latency_median_ms": 2031.2133000006725,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0050",
+      "repeat_count": 3,
+      "latency_median_ms": 3374.4447999997647,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.05263157894736842
+    },
+    {
+      "query_id": "q_0051",
+      "repeat_count": 3,
+      "latency_median_ms": 3367.787599996518,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0052",
+      "repeat_count": 3,
+      "latency_median_ms": 3331.5951000004134,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0053",
+      "repeat_count": 3,
+      "latency_median_ms": 3222.403799998574,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0054",
+      "repeat_count": 3,
+      "latency_median_ms": 3337.2732999996515,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0055",
+      "repeat_count": 3,
+      "latency_median_ms": 3347.573900002317,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.05263157894736842
+    },
+    {
+      "query_id": "q_0056",
+      "repeat_count": 3,
+      "latency_median_ms": 3598.643000001175,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0057",
+      "repeat_count": 3,
+      "latency_median_ms": 3440.1930999993056,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0058",
+      "repeat_count": 3,
+      "latency_median_ms": 2548.2993999976316,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0059",
+      "repeat_count": 3,
+      "latency_median_ms": 2053.7334000000556,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0060",
+      "repeat_count": 3,
+      "latency_median_ms": 2053.5565999998653,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": false,
+      "ranking_stable": false,
+      "judged_at_20": 0.0
+    }
+  ]
+}

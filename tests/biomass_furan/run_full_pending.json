@@ -1,0 +1,52 @@
+[
+ {
+  "batch": "q_0018_batch_07",
+  "kind": "format",
+  "reason": "ValueError: Model omitted or invented query IDs"
+ },
+ {
+  "batch": "q_0060_batch_09",
+  "kind": "format",
+  "reason": "ValueError: Model omitted or invented query IDs"
+ },
+ {
+  "batch": "q_0018_batch_08",
+  "kind": "format",
+  "reason": "ValueError: Model omitted or invented query IDs"
+ },
+ {
+  "batch": "q_0021_batch_07",
+  "kind": "format",
+  "reason": "ValueError: Unsupported model evidence quotation"
+ },
+ {
+  "batch": "q_0034_batch_07",
+  "kind": "format",
+  "reason": "ValueError: Model omitted or invented query IDs"
+ },
+ {
+  "batch": "q_0028_batch_07",
+  "kind": "format",
+  "reason": "ValueError: Unsupported model evidence quotation"
+ },
+ {
+  "batch": "q_0035_batch_06",
+  "kind": "format",
+  "reason": "ValueError: Unsupported model evidence quotation"
+ },
+ {
+  "batch": "q_0037_batch_07",
+  "kind": "format",
+  "reason": "ValueError: Missing or invalid pair grades"
+ },
+ {
+  "batch": "q_0039_batch_08",
+  "kind": "format",
+  "reason": "ValueError: Model omitted or invented query IDs"
+ },
+ {
+  "batch": "q_0041_batch_07",
+  "kind": "format",
+  "reason": "ValueError: Model omitted or invented query IDs"
+ }
+]

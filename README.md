@@ -2,10 +2,11 @@
 
 ## 当前状态（2026-09-15）
 
-- 自动化回归为 **59 passed, 6 warnings**；真实 SQLite 为 schema v16，包含 18 篇论文、258 页、929 chunks 和 929 embeddings。
+- 自动化回归为 **61 passed, 6 warnings**；真实 SQLite 为 schema v16，包含 18 篇论文、258 页、929 chunks 和 929 embeddings。
 - 端到端问题集位于 `tests/eval_cases.yaml`，共 8 题；检索金标位于 `tests/retrieval_gold.yaml`，共 5 题，支持 HitRate@K、Recall@K、Precision@K、MRR 和 nDCG@K。
 - 2026-09-15 真实 HTTP 复现确认：本地检索约 0.4 秒、Embedding 31 ms；跨论文比较请求在远端 Chat 返回响应头前等待 180 秒并触发 `CHAT_TIMEOUT`。TCP 连接仅 31 ms，响应体尚未开始读取，问题位于远端 Chat 服务的排队/生成层。
 - Chat 调用现记录 `connect_ms`、`headers_ms`、`body_ms` 和失败时的 `duration_ms`。详细证据与处理建议见 [`docs/Chat生成超时诊断-2026-09-15.md`](./docs/Chat生成超时诊断-2026-09-15.md)。
+- PDF 文本层出现少量错误 glyph 映射时，会对断裂英文单词执行保守的 block 局部 OCR；公式字符不自动猜测。详见 [`docs/PDF文本层污染与局部OCR-2026-09-15.md`](./docs/PDF文本层污染与局部OCR-2026-09-15.md)。
 
 ### 已知问题
 
@@ -438,7 +439,7 @@ python .\scripts\smoke_ocr.py
 python -m rag.cli evaluate
 ```
 
-测试现为 59 项，覆盖稳定 ID、切块来源、BM25/Dense/RRF/reranker、三档深度、三种回答策略、无证据拒答、引用绑定/修复/编号/高亮、可信可视化、PDF 污染 OCR 路由、页面与查询快照、持久任务/中断、管理员认证、作用域隔离、上传校验、重试血缘、一致性备份、正常生成、主要降级路径和 Chat 分阶段计时。OCR smoke 只处理历史扫描件前两页。`evaluate` 运行 8 个真实语料案例并返回每例 request_id；模型未配置时的全绿结果只表示检索检查通过，不表示生成模型验收通过。
+测试现为 61 项，覆盖稳定 ID、切块来源、BM25/Dense/RRF/reranker、三档深度、三种回答策略、无证据拒答、引用绑定/修复/编号/高亮、可信可视化、PDF 污染与局部 OCR 路由、公式保护、页面与查询快照、持久任务/中断、管理员认证、作用域隔离、上传校验、重试血缘、一致性备份、正常生成、主要降级路径和 Chat 分阶段计时。OCR smoke 只处理历史扫描件前两页。`evaluate` 运行 8 个真实语料案例并返回每例 request_id；模型未配置时的全绿结果只表示检索检查通过，不表示生成模型验收通过。
 
 真实数据验收使用 `ingest` 返回的 `counts` 核对 discovered、succeeded、failed、pages、ocr_pages、chunks 和 attachments。
 

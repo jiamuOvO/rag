@@ -1,0 +1,92 @@
+[
+ {
+  "n": 86, "query_id": "q_0013", "doc_id": "chk_e40ff27103a7dff6aa294c49",
+  "old_grade": 3, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "Intermolecular interactions between the three major components of lignocellulosic biomass, which are cellulose, hemicelluloses and lignin, determine biomass recalcitrant structure (Figure 5).",
+  "explanation": "块内确实逐字给出三种主要组分，但块来源为 paper_dc3af146aa40e29afdfa9838，非题目点名的 2018 综述（同一来源=否）。题目点名来源即硬性限定，按规范 §八 规则 1：另一篇论文独立陈述相同事实 → 最高 1 级，不得判 2/3（『别的论文列了三种组分，证明不了指定综述列了那三种』）。旧判 3 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 87, "query_id": "q_0013", "doc_id": "chk_e86a4176f859f6fdd792fe54",
+  "old_grade": 2, "final_grade": 0, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "不支持"}],
+  "actual_evidence": "Donohoe, B.S., Decker, S.R., Tucker, M.P., Himmel, M.E., Vinzant, T.B., 2008. Visualizing lignin coalescence and migration through maize cell walls following thermochemical pretreatment. Biotechnol. Bioeng. 101 (5), 913-925. ｜ dos Santos, A.C., Ximenes, E., Kim, Y., Ladisch, M.R., 2019. Lignin-enzyme interactions...",
+  "explanation": "整块自首至尾都是参考文献条目（Donohoe 2008 / dos Santos 2019 / Dutta 2017 / Fang 2015 / Fushinobu 2014 / Giummarella 2016,2019 / Guerra 2006 / Guo 2014,2019a,2019b / Himmel 2007），没有任何关于三大组分的实质陈述；且块来源 paper_d5bfa1893984e7871d3fd568 亦非指定综述。按规范 §四『块只是参考文献条目 → 0』。旧判 2 与旧理由（理由已自认无法支持作答）自相矛盾 → 改为 0。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 88, "query_id": "q_0013", "doc_id": "chk_e9d4c44e3c2a99de94f93c42",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "From a macromolecular perspective, lignocellulosic materials contain three biopolymers: hemicellulose, cellulose, and lignin.",
+  "explanation": "块来源为 paper_d1a4e8bfc7c58b30dda482f2（2023 CMF 论文），非指定 2018 综述。独立陈述三种生物聚合物，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 89, "query_id": "q_0013", "doc_id": "chk_fa44890380cd28eeddd8114f",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "There are three main natural polymeric constituents composing the lignocellulosic biomass: cellulose, hemicellulose and lignin (see Fig. 1).",
+  "explanation": "块来源为 paper_a23d5abb9f77edeb68352119，非指定 2018 综述。独立列出三种主要天然聚合物，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 90, "query_id": "q_0019", "doc_id": "chk_867558c7dbce6d47c08806da",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "Amongst these monomers, a particular attention has been recently paid to 2,5-FDCA. The oxidation of HMF to FDCA was mainly catalyzed by Pt, Pd, and Au-based catalysts. ... Avantium aims to replace oil-based PET with its furanoic counterpart; polyethylene furanoate (PEF)",
+  "explanation": "题目点名 2024 年《Beyond 2,5-furandicarboxylic acid》综述，属硬性来源限定；本块来源 paper_a39f1f9d78514a2f2d7f78be 与之不同。块内确给出 HMF 氧化为 FDCA 并连到 PEF，但按 §八 规则 1，另一篇论文独立陈述相同事实只能判 1。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 91, "query_id": "q_0019", "doc_id": "chk_a7b4e7413f51520b5850ba43",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "The sustainable synthesis of two important intermediates relevant for the production of bio-based polymers, 2,5-furandicarboxylic acid (FDCA) and 5-hydroxymethyl-2-furancarboxylic acid (HFCA), via oxidation of 5-(hydroxymethyl)furfural (HMF) was investigated using supported gold- and silver-based catalysts in water with air as the oxidant.",
+  "explanation": "块来源为 paper_075d9e2d19ead8d2c43d1945（Green Chem. 2018 选择性氧化论文），非题目点名的 2024 综述。该文独立报告 HMF 氧化制 FDCA，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 92, "query_id": "q_0019", "doc_id": "chk_cc47e725f63493a672af98c3",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "The oxidation of HMF to FDCA was mainly catalyzed by Pt, Pd, and Au-based catalysts. ... Avantium aims to replace oil-based PET with its furanoic counterpart; polyethylene furanoate (PEF)",
+  "explanation": "块来源为 paper_a39f1f9d78514a2f2d7f78be，非指定 2024 综述。独立陈述 HMF 氧化为 FDCA 并连到 PEF，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 93, "query_id": "q_0019", "doc_id": "chk_ea12060a5eb8ed047561fe44",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "a metal-free heterogeneous selective oxidation of HMF to 2,5-furandicarboxylic acid (FDCA) (Figure 5); the process uses aerial oxygen under mild conditions ｜ FIGURE 5 | Aerial transformation of 5-(hydroxymethyl)furfural (HMF) to 2,5-furandicarboxylic acid (FDCA)... its conversion into FDCA provides an important polymer building block for the production of biopolymers (e.g., polyamides and polyesters).",
+  "explanation": "块来源为 paper_f0e625aa9a89da78815e3099（Frontiers in Chemistry 2018 绿色氧化综述），非指定 2024 综述。独立陈述 HMF→FDCA 及聚合单体用途，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 94, "query_id": "q_0027", "doc_id": "chk_50015abd498d99b96ac574fd",
+  "old_grade": 3, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "不支持"}],
+  "actual_evidence": "The highest value of selectivity would be 64.98%, and would be obtained under the lowest conditions of the design, that is, 190 ◦C, [FeCl3] = 0.05 M, and 0.5 min. ... The highest yield value, 53.71%, is obtained at 200 ◦C, [FeCl3] = 0.07 M, and 0.5 min",
+  "explanation": "题目点名 2020 年 Eucalyptus grandis 集成炼制研究；本块来源 paper_65e9cfe7da55d5c5714aeb00 是另一篇 Molecules 2020 FeCl3 响应面优化论文。块内给的是该他文的 FeCl3 浓度/时间/温度最优组合，与所问 Eucalyptus RCF 酚类单体的 240 ℃/4 h/30 atm H2 完全不是同一组事实（三项值一个未出现）。属『不同论文的同类对照实验』= L1c = 1。旧判 3 严重过高（旧理由本身即写明不是 Eucalyptus RCF 条件）。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 95, "query_id": "q_0029", "doc_id": "chk_e769e00a4aa1cbe71b7a02cf",
+  "old_grade": 3, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "不支持"}],
+  "actual_evidence": "Figure 6. Furfural yields attained with different cycles of the DES [Ch]Cl:Malic Acid (1:3) + 5 wt.% H2O with 8.19% LiBr added at 157.3 °C and 1.74 min. ｜ [Ch]Cl was used as the hydrogen bond acceptor (HBA) and malic acid (MA), as hydrogen bond donor (HBD).",
+  "explanation": "题目点名 2021 年 ChCl/GA 水合 DES 微波研究；本块来源 paper_0cc8554d80109d5ddfe91435 是另一篇 [Ch]Cl/苹果酸+LiBr 论文。块内为化学品清单与 DES 配制方法，并给出他文条件 157.3 ℃/1.74 min，所问『糖混合物 160 ℃/10 min、桦木锯屑 170 ℃/10 min』两项均未出现。属不同论文的同类对照实验 = L1c = 1。旧判 3 严重过高（旧理由本身即称其为『不同 DES 体系，作对照』）。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ }
+]

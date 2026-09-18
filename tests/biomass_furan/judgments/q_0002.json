@@ -1,0 +1,809 @@
+{
+ "query_id": "q_0002",
+ "judgments": [
+  {
+   "doc_id": "chk_00457e60a7fe39f143e443a9",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），Table 6 文献对比汇总各体系木糖制糠醛收率，同研究领域。"
+  },
+  {
+   "query_id": "q_0002",
+   "doc_id": "chk_077f5f075e635728c9c0c581",
+   "relevance": 0,
+   "reason": "doc0: same paper, water content not temperature-time; doc1: same paper, catalyst dosage; doc2: same paper, corn stalk substrate; doc3: same paper, xylose loading; doc4: same paper, ionic liquid/solvent screening",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "959639f9b71882d1e34bda73ad0ee6422c97fead697dd3c69ed0acda4d92cf29"
+  },
+  {
+   "doc_id": "chk_07b252e04e6faed35bdbf791",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），因子/中心复合设计 Figure 2 与 Table 3 段，同木糖制糠醛研究领域。"
+  },
+  {
+   "doc_id": "chk_0d845b313cae5a2ed8d54d05",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），Table 7 双相体系汇总，同木糖制糠醛研究领域。"
+  },
+  {
+   "doc_id": "chk_11805269bb842021bf0778ce",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "内容为商品糠醛的理化性质、毒性剂量与工业用途/纯化，非木糖脱水制糠醛的催化研究，与本题主题不同。"
+  },
+  {
+   "doc_id": "chk_12f59e5c3a85b3802d537196",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自以 5-氯甲基糠醛(CMF) 为目标化学品的论文；CMF 半连续萃取与统计学分析段，目标化学品 CMF 与糠醛不同，非木糖脱水制糠醛研究。"
+  },
+  {
+   "doc_id": "chk_13f73a9d011906ba174abc62",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（半纤维素水解综述），微波 HCl 催化木糖/xylan 制糠醛段，同研究领域。"
+  },
+  {
+   "query_id": "q_0002",
+   "doc_id": "chk_146ef0a2692f27a972ce10dc",
+   "relevance": 0,
+   "reason": "doc0: same paper, paired catalysts topic; doc1: same paper, catalyst screening; doc2: same paper, biphasic solvents; doc3: different DES/LiBr system, 150-165C; doc4: same paper, xylan conversion",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "81e247c84103b19eb416cfeca5827dd115eb26003ee8bf1a75f1dcd566e30085"
+  },
+  {
+   "query_id": "q_0002",
+   "doc_id": "chk_1759d55f26111cb779e1d610",
+   "relevance": 0,
+   "reason": "doc0: table lists 130°C only, no 120/140°C times; doc1: xylan conversion, not temperature-time; doc2: catalyst dosage effect; doc3: solvent/biphasic effects; doc4: xylan/water effects, not temperature-time",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "257fde175d0fabdf5feba379936543f602fb108990e9e79b5207dca05addcd12"
+  },
+  {
+   "doc_id": "chk_1803d9bcddd779025bfcf056",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "目标化学品为 5-羟甲基糠醛(HMF) 氧化制 HFCA/FDCA，与木糖脱水制糠醛为不同化学品、不同研究领域。"
+  },
+  {
+   "doc_id": "chk_1a55c8728cce5dc368a01e1d",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（半纤维素水解综述），木糖制糠醛条件 Table 段，同研究领域。"
+  },
+  {
+   "doc_id": "chk_225788b644ea25f4b634ffb6",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（磷酸分馏制糠醛），双相原位萃取糠醛选择性段，同木糖制糠醛研究领域，体系不同。"
+  },
+  {
+   "doc_id": "chk_2340be417303afa6db1f7cca",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（半纤维素水解综述），Amberlyst/碳催化木糖制糠醛段，同研究领域。"
+  },
+  {
+   "query_id": "q_0002",
+   "doc_id": "chk_23a0c15f43bbc31ba51d1d39",
+   "relevance": 0,
+   "reason": "doc0: same paper, water content not temperature-time; doc1: same paper, catalyst dosage; doc2: same paper, corn stalk substrate; doc3: same paper, xylose loading; doc4: same paper, ionic liquid/solvent screening",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "959639f9b71882d1e34bda73ad0ee6422c97fead697dd3c69ed0acda4d92cf29"
+  },
+  {
+   "doc_id": "chk_2554c51157cea048e651e294",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2021 DES 卤化物），LiBr/NaBr 在 130/150°C 对糠醛收率影响段，同木糖制糠醛研究领域，体系不同。"
+  },
+  {
+   "doc_id": "chk_26d8babf0b1a956332b5a24d",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），Table 6 的延续(含本 2019 SnCl4 论文作为对照条目)，同木糖制糠醛文献对比研究领域。"
+  },
+  {
+   "doc_id": "chk_2c833564bdaa8595cdf795db",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（半纤维素水解综述），二氧化硅负载催化剂木糖制糠醛段，同研究领域。"
+  },
+  {
+   "doc_id": "chk_2dea6b500a26dd4908bb4d6e",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（半纤维素水解综述），粘土催化木糖制糠醛及离子交换树脂段，同研究领域（虽提及 5-HMF 但主要论糠醛）。"
+  },
+  {
+   "doc_id": "chk_2e78311dd1ccdf9a5161ed82",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同属 2019 论文 3.2 节实验方法/原料与 HPLC 分析段，属同一研究的相邻内容。"
+  },
+  {
+   "doc_id": "chk_33a6d883153f6b7171cdfe7a",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），Table 6 的延续，同木糖制糠醛文献对比研究领域。"
+  },
+  {
+   "doc_id": "chk_34018350f5510abb45085aed",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（糖混合物 DES/MIBK），HMF-DES 相互作用并提及木糖→糠醛 62%，同木糖制糠醛研究领域。"
+  },
+  {
+   "query_id": "q_0002",
+   "doc_id": "chk_342a968c0d214283cba3bbd9",
+   "relevance": 0,
+   "reason": "doc0: same paper, water content not temperature-time; doc1: same paper, catalyst dosage; doc2: same paper, corn stalk substrate; doc3: same paper, xylose loading; doc4: same paper, ionic liquid/solvent screening",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "959639f9b71882d1e34bda73ad0ee6422c97fead697dd3c69ed0acda4d92cf29"
+  },
+  {
+   "doc_id": "chk_343fc3a232723915eebd8638",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同属 2019 论文机理讨论并引入 2.3 节温度研究（Figure 5 引言），但未含 120/130/140°C 的具体时间数据。"
+  },
+  {
+   "doc_id": "chk_3802f88572be015e0e26a58d",
+   "relevance": 3,
+   "evidence_quotes": [
+    "The maximum furfural yields at 120, 130, and 140 ◦C were 66.5, 71.1, and 70.2%, obtained at 1.5, 1.0, and 0.5 h, respectively."
+   ],
+   "reason": "该块来自 2019 SnCl4/EMIMBr 木糖论文的 2.3 节，单独即给出 120/130/140°C 达到最大糠醛收率所需时间分别为 1.5/1.0/0.5 h，完整回答问题。"
+  },
+  {
+   "query_id": "q_0002",
+   "doc_id": "chk_3966d11a350c894b6c9bab9b",
+   "relevance": 0,
+   "reason": "doc0: FeCl3/microwave study, different catalyst and system; doc1: same paper but HPLC methods and conclusions, no time-temperature series; doc2: same paper, comparison table and temperature effect, no 120/130/140 °C times",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "aaa81639a7f8a2d0b9a6de8b1cb6338e1bbb1a2a86ab4b34732bf87ab4288847"
+  },
+  {
+   "query_id": "q_0002",
+   "doc_id": "chk_3abca309821216721c9a9a6d",
+   "relevance": 0,
+   "reason": "doc0: FeCl3/microwave study, different catalyst and system; doc1: same paper but HPLC methods and conclusions, no time-temperature series; doc2: same paper, comparison table and temperature effect, no 120/130/140 °C times",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "aaa81639a7f8a2d0b9a6de8b1cb6338e1bbb1a2a86ab4b34732bf87ab4288847"
+  },
+  {
+   "doc_id": "chk_40df1599eac1ba18d6eeb9b8",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），参考文献段，同木糖制糠醛研究领域文献。"
+  },
+  {
+   "doc_id": "chk_41f98ed2ab54df4159ff320f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同属 2019 论文的结论/方法总结段（玉米秸秆 54.5% 等），属同一研究的相邻内容。"
+  },
+  {
+   "doc_id": "chk_4419384458d12e56e17e3a01",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2021 DES 卤化物），Figure 1 卤化物盐筛选与机理示意图段，同木聚糖/木糖制糠醛研究领域，体系不同。"
+  },
+  {
+   "doc_id": "chk_4a28287d1b89c5548eafb792",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（半纤维素水解综述），GVL/H2SO4 与微波木糖制糠醛段，同研究领域。"
+  },
+  {
+   "doc_id": "chk_4bf9c07e207731f07720a1fb",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自以 5-氯甲基糠醛(CMF) 为目标化学品的论文；CMF 与糠醛为不同化学品，且体系(80°C 卤代苯/HCl 双相)与本题 SnCl4/EMIMBr 木糖研究完全不同。"
+  },
+  {
+   "doc_id": "chk_50b0b12804ccb37138207b48",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2017 双相戊糖制糠醛），单相对双相糠醛收率影响段，同木糖制糠醛研究领域，体系不同。"
+  },
+  {
+   "doc_id": "chk_53e21392be7f477eb4a192a9",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自以 5-氯甲基糠醛(CMF) 为目标化学品的论文；DAWN 预处理水解物(木糖)制 CMF 的温度筛选段，目标化学品 CMF 与糠醛不同，体系(80°C 氟苯双相)亦不同。"
+  },
+  {
+   "doc_id": "chk_5539978d73851dcba7b48239",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2021 DES 卤化物），Figure 4 与响应面优化(RSM)段，同木糖/木聚糖制糠醛研究领域。"
+  },
+  {
+   "doc_id": "chk_5629d9e513b3dc1b9e8c1591",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），Table 7 分析与材料方法段，同木糖制糠醛研究领域。"
+  },
+  {
+   "doc_id": "chk_566e4ba7fd2e114be1aef258",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2021 DES 卤化物），木聚糖水解/脱水与 RSM 方法段，同木聚糖/木糖制糠醛研究领域，体系不同。"
+  },
+  {
+   "doc_id": "chk_57a33a6e0c4a7bc9c29181aa",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（1938 定量木糖制糠醛），引言关于木糖/阿糖制糠醛收率，同化学品但方法不同。"
+  },
+  {
+   "query_id": "q_0002",
+   "doc_id": "chk_612605aa092e6086ebf91cf0",
+   "relevance": 0,
+   "reason": "Other documents report different catalysts, conditions, or unrelated tables, not the 120-140 °C time comparison.",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "b12e81e15a725b955189aa0a5689b2148d2bcf6b50a0ab7a16d62aef326639ad"
+  },
+  {
+   "doc_id": "chk_61fec0ffa9e553e9cc7bc451",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（磷酸分馏制糠醛），分馏条件筛选引言段，同木糖制糠醛相关领域。"
+  },
+  {
+   "doc_id": "chk_63ed4f5cf0a3f86e588ca348",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（半纤维素水解综述），钼酸盐/CrCl3 催化木糖/xylan 制糠醛段，同研究领域。"
+  },
+  {
+   "doc_id": "chk_69ca6987050a50c9e361201e",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2017 双相戊糖制糠醛），引言关于木糖/半纤维素制糠醛，同研究领域，体系不同。"
+  },
+  {
+   "doc_id": "chk_6e78c19898b31ac47a034920",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），对其它实验设计的讨论，同木糖制糠醛研究领域。"
+  },
+  {
+   "doc_id": "chk_754b18ffbaea380476fcdfc1",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（半纤维素水解综述），NaCl 催化木糖制糠醛段，同研究领域。"
+  },
+  {
+   "query_id": "q_0002",
+   "doc_id": "chk_76e8cf8001bf01288fd488c1",
+   "relevance": 0,
+   "reason": "doc0: table lists 130°C only, no 120/140°C times; doc1: xylan conversion, not temperature-time; doc2: catalyst dosage effect; doc3: solvent/biphasic effects; doc4: xylan/water effects, not temperature-time",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "257fde175d0fabdf5feba379936543f602fb108990e9e79b5207dca05addcd12"
+  },
+  {
+   "query_id": "q_0002",
+   "doc_id": "chk_7943e517bfdbc2b671b18f93",
+   "relevance": 0,
+   "reason": "doc0: FeCl3/microwave study, different catalyst and system; doc1: same paper but HPLC methods and conclusions, no time-temperature series; doc2: same paper, comparison table and temperature effect, no 120/130/140 °C times",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "aaa81639a7f8a2d0b9a6de8b1cb6338e1bbb1a2a86ab4b34732bf87ab4288847"
+  },
+  {
+   "doc_id": "chk_7b9b97db2d63961889b30137",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（磷酸分馏制糠醛），木素 valorization 与 Figure 3 DOE 段，同木糖制糠醛相关领域。"
+  },
+  {
+   "doc_id": "chk_7bf2175634ab687aabd42a8b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），木质素影响段的延续，同木糖制糠醛研究领域。"
+  },
+  {
+   "doc_id": "chk_7e1bd1713eec35944f5bfe2c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），中心复合设计 Table 3 数据段(与[89]同表)，同木糖制糠醛研究领域。"
+  },
+  {
+   "doc_id": "chk_7e95ba606df8fc74de41ef1c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "目标化学品为 5-羟甲基糠醛(HMF) 氧化制 2,5-呋喃二甲酸(FDCA)，与木糖脱水制糠醛为不同化学品、不同研究领域。"
+  },
+  {
+   "doc_id": "chk_8342126cb7cc5ce136a6c3d7",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2017 双相戊糖制糠醛），催化剂稳定性与单相对双相段，同木糖制糠醛研究领域，体系不同。"
+  },
+  {
+   "query_id": "q_0002",
+   "doc_id": "chk_860f2c5ee9be82337457fb80",
+   "relevance": 0,
+   "reason": "doc0: same paper, water content not temperature-time; doc1: same paper, catalyst dosage; doc2: same paper, corn stalk substrate; doc3: same paper, xylose loading; doc4: same paper, ionic liquid/solvent screening",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "959639f9b71882d1e34bda73ad0ee6422c97fead697dd3c69ed0acda4d92cf29"
+  },
+  {
+   "doc_id": "chk_86d0fa326f0392661191cc1c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2021 DES 卤化物），结论段，木聚糖经 DES+LiBr 制糠醛，同研究领域，体系不同。"
+  },
+  {
+   "doc_id": "chk_8b5e454a5689a8ab08b1bb5b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），结论段，同木糖制糠醛研究领域。"
+  },
+  {
+   "query_id": "q_0002",
+   "doc_id": "chk_8cc5cec9a375be2393d7efb8",
+   "relevance": 0,
+   "reason": "doc0: same paper, paired catalysts topic; doc1: same paper, catalyst screening; doc2: same paper, biphasic solvents; doc3: different DES/LiBr system, 150-165C; doc4: same paper, xylan conversion",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "81e247c84103b19eb416cfeca5827dd115eb26003ee8bf1a75f1dcd566e30085"
+  },
+  {
+   "doc_id": "chk_8d7fb4693c4d55640c37f9ff",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），Table 7 双相体系分析与总结段，同木糖制糠醛研究领域。"
+  },
+  {
+   "doc_id": "chk_921e6350279965caa3dae239",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（半纤维素水解综述），CPME/H2SO4 与 NaCl 催化木糖制糠醛段，同研究领域。"
+  },
+  {
+   "doc_id": "chk_93c29e9feb4a6c2cf3537c5b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自以 5-氯甲基糠醛(CMF) 为目标化学品的论文；论述 DAWN 预处理水解物(木糖寡聚)在 80°C 卤/氟苯双相制 CMF 与兼测糠醛，目标化学品 CMF 与糠醛不同，体系亦不同。"
+  },
+  {
+   "doc_id": "chk_989521c00e05c051ee591818",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），木质素对木糖制糠醛影响段，同研究领域。"
+  },
+  {
+   "doc_id": "chk_9e14f3afd20766f692b51f15",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），对 Table 6 的分析段，同木糖制糠醛研究领域。"
+  },
+  {
+   "doc_id": "chk_9e8865841d4619f192e1d8c2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（半纤维素水解综述），水-甲苯双相与海藻酸制糠醛段，同木糖制糠醛研究领域。"
+  },
+  {
+   "doc_id": "chk_9f04ce2bcfbc19847a759b43",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（半纤维素水解综述），NaCl/GVL 对木糖制糠醛影响段，同研究领域。"
+  },
+  {
+   "query_id": "q_0002",
+   "doc_id": "chk_a31155b8bf9d90dce8836014",
+   "relevance": 0,
+   "reason": "doc0: table lists 130°C only, no 120/140°C times; doc1: xylan conversion, not temperature-time; doc2: catalyst dosage effect; doc3: solvent/biphasic effects; doc4: xylan/water effects, not temperature-time",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "257fde175d0fabdf5feba379936543f602fb108990e9e79b5207dca05addcd12"
+  },
+  {
+   "doc_id": "chk_a3f8a07abee3de7fd3035c2f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（半纤维素水解综述），磺化 g-C3N4/粘土催化木糖制糠醛段，同研究领域。"
+  },
+  {
+   "doc_id": "chk_a4be2b0e6154e2a3e03a504d",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同属 2019 论文 Table 1 配对催化剂段相邻段落。"
+  },
+  {
+   "doc_id": "chk_a65458f82c21bedd3963d7b6",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），中心复合设计 Table 3 数据段，同木糖制糠醛研究领域。"
+  },
+  {
+   "doc_id": "chk_a9d0b19959ec2fb0857a3f15",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（半纤维素水解综述），水-甲苯双相与海藻酸制糠醛段，同木糖制糠醛研究领域。"
+  },
+  {
+   "doc_id": "chk_aaff83e35ec0748b056b3658",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），HPLC 方法与结论段，同木糖制糠醛研究领域。"
+  },
+  {
+   "doc_id": "chk_ab295deb9863e6b92c79c3f2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（1938 定量木糖制糠醛），摘要关于木糖经盐酸/NaCl 蒸馏定量制糠醛，同化学品(木糖→糠醛)但方法不同。"
+  },
+  {
+   "doc_id": "chk_ab8275707581d1c508a5a1ce",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2017 双相戊糖制糠醛），糠醛分配系数与木糖溶液段，同木糖制糠醛研究领域，体系不同。"
+  },
+  {
+   "doc_id": "chk_ad7fe530b780c23641cbafe4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "目标产物为糠酸烷基酯(甲基乙酰丙酸酯等 levulinic acid 酯)，属不同化学品与工艺(甲醇解)，非木糖脱水制糠醛。"
+  },
+  {
+   "doc_id": "chk_af1b2e8649d73a92e75f2c61",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），木质素影响与其它实验设计讨论，同木糖制糠醛研究领域。"
+  },
+  {
+   "doc_id": "chk_b2a1bb77f5b8b43b101614e4",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），参考文献段（含本题 2019 SnCl4 论文条目），同研究领域文献。"
+  },
+  {
+   "doc_id": "chk_b345b55f971d6c63ac0dd078",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（半纤维素水解综述），AlCl3/甲酸催化木糖制糠醛与 Table 2 段，同研究领域。"
+  },
+  {
+   "doc_id": "chk_b6dbd7562e2cfb9c0eaccea3",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自以 5-氯甲基糠醛(CMF) 为目标化学品的论文；CMF 半连续萃取与反应器设计段，目标化学品 CMF 与糠醛不同，非木糖脱水制糠醛研究。"
+  },
+  {
+   "query_id": "q_0002",
+   "doc_id": "chk_b7b71e137dbe9fd058a9023a",
+   "relevance": 0,
+   "reason": "Other documents report different catalysts, conditions, or unrelated tables, not the 120-140 °C time comparison.",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "b12e81e15a725b955189aa0a5689b2148d2bcf6b50a0ab7a16d62aef326639ad"
+  },
+  {
+   "doc_id": "chk_ba38a5eb11a7d2b01f992079",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2021 DES 卤化物），Figure 3 卤化物盐筛选(130°C)段，同木糖/木聚糖制糠醛研究领域。"
+  },
+  {
+   "doc_id": "chk_baa9bfa115cb1a71967530ee",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2021 DES 卤化物），响应面 Figure 5 与 ANOVA，同木糖/木聚糖制糠醛研究领域，体系不同。"
+  },
+  {
+   "doc_id": "chk_bb2350573b224a69783b7f13",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2021 DES 卤化物），引言关于木聚糖/木糖经 DES 制糠醛，同研究领域，体系不同。"
+  },
+  {
+   "doc_id": "chk_be84a6d2584e64a370cac2e5",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），对 Table 6 绿色溶剂体系的分析，同木糖制糠醛研究领域。"
+  },
+  {
+   "doc_id": "chk_befc00a855971474f9b4f14d",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2017 双相戊糖制糠醛），糠醛分配系数与木糖溶液段，同木糖制糠醛研究领域，体系不同。"
+  },
+  {
+   "doc_id": "chk_c1a2e291f033734ca2ba63ee",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（半纤维素水解综述），硫酸盐催化木糖/xylan 制糠醛段，同研究领域。"
+  },
+  {
+   "doc_id": "chk_c3236d1018b9abd887eaab2b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（半纤维素水解综述），FeCl3/NaCl 催化木糖/xylan 制糠醛段，同研究领域。"
+  },
+  {
+   "doc_id": "chk_c5d400ec3b261cc6e95d63d1",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），材料方法与 DOE 段，同木糖制糠醛研究领域。"
+  },
+  {
+   "query_id": "q_0002",
+   "doc_id": "chk_c637afc692e7621538a73442",
+   "relevance": 0,
+   "reason": "doc0: same paper, paired catalysts topic; doc1: same paper, catalyst screening; doc2: same paper, biphasic solvents; doc3: different DES/LiBr system, 150-165C; doc4: same paper, xylan conversion",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "81e247c84103b19eb416cfeca5827dd115eb26003ee8bf1a75f1dcd566e30085"
+  },
+  {
+   "doc_id": "chk_c75c331598d13d8972edcec5",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），催化剂概述与 Table 6 引言段，同木糖制糠醛研究领域。"
+  },
+  {
+   "doc_id": "chk_cac3807d9a18c151af2918db",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同属 2019 论文 Table 1 与 2.2 节溶剂效应的相邻段落。"
+  },
+  {
+   "doc_id": "chk_d2293948284985c5b9722c4e",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2017 双相戊糖制糠醛），引言概述木糖/半纤维素/木质纤维素制糠醛，同研究领域，体系不同。"
+  },
+  {
+   "doc_id": "chk_d3cc39d0831da1d7912da50f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），对其它实验设计(水-邻硝基甲苯)的讨论，同木糖制糠醛研究领域。"
+  },
+  {
+   "query_id": "q_0002",
+   "doc_id": "chk_d5a0855a9de310453948713b",
+   "relevance": 0,
+   "reason": "doc0: table lists 130°C only, no 120/140°C times; doc1: xylan conversion, not temperature-time; doc2: catalyst dosage effect; doc3: solvent/biphasic effects; doc4: xylan/water effects, not temperature-time",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "257fde175d0fabdf5feba379936543f602fb108990e9e79b5207dca05addcd12"
+  },
+  {
+   "doc_id": "chk_d669deac9629382e689cfc6a",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（磷酸分馏制糠醛），分馏条件筛选与糠醛收率最优段，同木糖制糠醛研究领域，体系(磷酸)不同。"
+  },
+  {
+   "doc_id": "chk_db3abd07ab2faed9034c87f6",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（糖混合物 DES/MIBK 制糠醛+HMF），同为木糖脱水制糠醛研究领域，但催化剂/溶剂(DES/MIBK)不同。"
+  },
+  {
+   "doc_id": "chk_dcb22ad046bf500d340b9711",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（半纤维素水解综述），GVL 磺化碳催化木糖/玉米秆制糠醛段，同研究领域。"
+  },
+  {
+   "doc_id": "chk_dd971be5919d8a173b4d2956",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "关于 2,5-呋喃二甲酸(FDCA) 及呋喃类聚合物单体的综述，目标化学品 FDCA 与本题木糖脱水制糠醛研究不同。"
+  },
+  {
+   "doc_id": "chk_de436d161505414f91c4bb67",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（半纤维素水解综述），离子交换树脂/离子聚合物催化木糖制糠醛段，同研究领域。"
+  },
+  {
+   "query_id": "q_0002",
+   "doc_id": "chk_de8ed6767b301e54f3952681",
+   "relevance": 0,
+   "reason": "doc0: same paper, paired catalysts topic; doc1: same paper, catalyst screening; doc2: same paper, biphasic solvents; doc3: different DES/LiBr system, 150-165C; doc4: same paper, xylan conversion",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "81e247c84103b19eb416cfeca5827dd115eb26003ee8bf1a75f1dcd566e30085"
+  },
+  {
+   "doc_id": "chk_e29b435199d859f15cb96d89",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2020 微波响应面），因子设计 Table 1 与统计建模段，同木糖制糠醛研究领域。"
+  },
+  {
+   "doc_id": "chk_ea921fedd372abd63edfba9c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（1938 定量木糖制糠醛），Table 3 木糖蒸馏制糠醛收率，同化学品(木糖→糠醛)但方法(盐酸蒸馏)不同。"
+  },
+  {
+   "query_id": "q_0002",
+   "doc_id": "chk_eb28ef77eb4b424fe27b2883",
+   "relevance": 0,
+   "reason": "doc0: table lists 130°C only, no 120/140°C times; doc1: xylan conversion, not temperature-time; doc2: catalyst dosage effect; doc3: solvent/biphasic effects; doc4: xylan/water effects, not temperature-time",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "257fde175d0fabdf5feba379936543f602fb108990e9e79b5207dca05addcd12"
+  },
+  {
+   "query_id": "q_0002",
+   "doc_id": "chk_ee4f714d67d858f105a035d3",
+   "relevance": 0,
+   "reason": "doc0: same paper, water content not temperature-time; doc1: same paper, catalyst dosage; doc2: same paper, corn stalk substrate; doc3: same paper, xylose loading; doc4: same paper, ionic liquid/solvent screening",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "959639f9b71882d1e34bda73ad0ee6422c97fead697dd3c69ed0acda4d92cf29"
+  },
+  {
+   "doc_id": "chk_f0faed8cc3e0dbd7baf7b979",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（半纤维素水解综述），参考文献列表段，同木糖制糠醛研究领域文献。"
+  },
+  {
+   "doc_id": "chk_f50feed488e888c5a2e130e6",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同属 2019 论文 2.1 节引言，讨论离子液体与其它木糖制糠醛研究，属同一研究的相邻内容。"
+  },
+  {
+   "doc_id": "chk_f6c45647d4b187dfeef2282e",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（半纤维素水解综述），木糖脱水动力学/DFT 机理段，同木糖制糠醛研究领域。"
+  },
+  {
+   "doc_id": "chk_f6e6fc404836e8b7d83b5993",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（木质纤维素预处理综述），蒸汽爆破预处理段，与木糖制糠醛为相邻上游领域，但非本题 SnCl4/EMIMBr 研究。"
+  },
+  {
+   "doc_id": "chk_f7fa82331e3c2370b1903e4e",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（2017 双相戊糖制糠醛），戊糖浓水解物糠醛收率段，同木糖制糠醛研究领域，体系不同。"
+  },
+  {
+   "doc_id": "chk_faf230c7f5dbc5b4ffb78333",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自以 5-氯甲基糠醛(CMF) 为目标化学品的论文；论述 CMF 半连续萃取与 DAWN 预处理水解物制 CMF，目标化学品 CMF 与糠醛不同，体系(80°C 卤代苯/HCl)亦不同。"
+  },
+  {
+   "query_id": "q_0002",
+   "doc_id": "chk_fbc7a95665f94f660bc1af2c",
+   "relevance": 0,
+   "reason": "doc0: same paper, paired catalysts topic; doc1: same paper, catalyst screening; doc2: same paper, biphasic solvents; doc3: different DES/LiBr system, 150-165C; doc4: same paper, xylan conversion",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "81e247c84103b19eb416cfeca5827dd115eb26003ee8bf1a75f1dcd566e30085"
+  },
+  {
+   "doc_id": "chk_fd754a50c4f3510f7ef443fc",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "不同论文（桉木综合利用制糠醛+乙酰丙酸），半纤维素制糠醛段属同研究领域，体系不同。"
+  }
+ ]
+}

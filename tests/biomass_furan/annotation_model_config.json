@@ -1,0 +1,23 @@
+{
+ "first_pass": {
+  "thinking": {
+   "type": "disabled"
+  },
+  "max_tokens": 4096
+ },
+ "review": {
+  "thinking": {
+   "type": "disabled"
+  },
+  "max_tokens": 12000
+ },
+ "adjudication": {
+  "thinking": {
+   "type": "enabled"
+  },
+  "reasoning_effort": "low",
+  "max_tokens": 12000
+ },
+ "documentation": "https://api-docs.deepseek.com/guides/thinking_mode",
+ "scope": "Benchmark judgments only; does not change normal RAG chat settings."
+}

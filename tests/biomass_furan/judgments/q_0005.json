@@ -1,0 +1,953 @@
+{
+ "query_id": "q_0005",
+ "judgments": [
+  {
+   "doc_id": "chk_00091f0bcc99d2d4825fb959",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自桉木木质素/碳水化合物全组分生物炼制研究《Total utilization of lignin and carbohydrates in Eucalyptus grandis...》(酚类、乙酰丙酸、糠醛)的参考文献，属不同原料与体系的综合炼制，与 SnCl4/EMIMBr 催化剂用量问题不同。"
+  },
+  {
+   "doc_id": "chk_017a88f8b75cc965b713b25a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的引用，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_03e2aa51adfd8126c87721a1",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》(呋喃单体聚合物)的参考文献，与本题 SnCl4 催化糠醛制备无关。"
+  },
+  {
+   "doc_id": "chk_04a7d60f3d776dd12614fa4f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自碱/碱土金属对生物质热解催化的综述(KCl/NaCl 反应式续)，研究对象是热解，与本题不同。"
+  },
+  {
+   "query_id": "q_0005",
+   "doc_id": "chk_077f5f075e635728c9c0c581",
+   "relevance": 0,
+   "reason": "doc2: same paper, corn stalk substrate and biomass loading, not SnCl4 dosage; doc3: same paper, xylose loading effect, not catalyst dosage; doc4: same paper, ionic liquid/solvent screening, not SnCl4 dosage",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "d6eda3c5b6bb99133a375f850ee86094daabccd47d042e28fa455b026a527d75"
+  },
+  {
+   "doc_id": "chk_083a8867f4c7c5edb66d93c5",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_0879278597a2dfac660d3cf4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的褐碳气溶胶内容，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_08884c0e0baa8e1054095f89",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自《Commercial Furfural》的历史文献参考文献，讨论商品糠醛历史衍生物，与本题催化用量机制无关。"
+  },
+  {
+   "doc_id": "chk_0ce42a4e71a36b3f4ad7b6a2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的 MERET 方法注释，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_0ce544e3ce018b5025002cb0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_0d562834c99f8f680459202b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_0eed7cc703fcf9562d3c108c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_13340addf2d43e7d720d9963",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自碱/碱土金属对生物质热解催化的综述(盐浸渍数据表)，研究对象是热解，与本题不同。"
+  },
+  {
+   "doc_id": "chk_146ef0a2692f27a972ce10dc",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文中双相体系影响的相邻段落(与[10]重复)，属背景。",
+   "review_status": "Agent_review_completed",
+   "review_note": "同体系（EMIMBr/SnCl4）、同底物（木糖），变量为溶剂而非催化剂用量 → 规范 L1a「同体系不同条件」= 1；维持原判",
+   "review_verdict": "不支持"
+  },
+  {
+   "doc_id": "chk_1479f455238d031ad0d0df72",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的 CCN 数据，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_14a96c725c5947bb2ccd72fa",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》(呋喃单体聚合物)的参考文献，与本题 SnCl4 催化糠醛制备无关。"
+  },
+  {
+   "doc_id": "chk_150384b1552f24de48b853bd",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_1759d55f26111cb779e1d610",
+   "relevance": 3,
+   "evidence_quotes": [
+    "As the catalyst dosage further increased, the furfural yield gradually decreased. Excessive catalyst not only accelerated the formation of furfural from xylose but also promoted the side reactions, thus leading to the reduced furfural yield [14]."
+   ],
+   "reason": "该块单独给出本题完整答案：在 SnCl4/EMIMBr 体系中，催化剂(锡盐)用量进一步增加后糠醛收率逐渐下降，过量催化剂在加速糠醛生成的同时促进副反应，从而降低糠醛收率。"
+  },
+  {
+   "doc_id": "chk_18042855d80521705888fa62",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的摘要，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_1b1c2e16dcfd3855f70031e5",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的引用，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_1fd7612f60797785ada851d3",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块研究葡萄糖/果糖在[BMIM]Cl 中转化制 5-羟甲基糠醛(HMF)时的腐黑质形成机理《Mechanistic understanding of humin formation...》，产物为 HMF 且溶剂为[BMIM]Cl，与本题 SnCl4/EMIMBr 制糠醛不同(HMF≠糠醛)。"
+  },
+  {
+   "doc_id": "chk_225a3dd3d505c900b36451a6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自碱/碱土金属对生物质热解催化的综述(盐浸渍对煤热解影响)，研究对象是热解，与本题不同。"
+  },
+  {
+   "doc_id": "chk_2286e8888211457f309af61a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自开放/家用生物质燃烧排放因子研究《Emission factors for open and domestic biomass burning...》的排放因子表，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_23a0c15f43bbc31ba51d1d39",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文中水分影响的相邻段落(与[5]重复)，属背景。"
+  },
+  {
+   "doc_id": "chk_2554c51157cea048e651e294",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一研究领域(木糖制糠醛)但不同体系(DES/卤化物)，讨论副产物(腐黑质)机制，与目标体系相关但不回答锡盐用量问题。"
+  },
+  {
+   "doc_id": "chk_26d8babf0b1a956332b5a24d",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一研究领域(木糖制糠醛)的文献收率对比表(含 SnCl4/EMIMBr 数据点)《Optimization with Response Surface Methodology...》，属相关背景而非本题用量机制的独立答案。"
+  },
+  {
+   "doc_id": "chk_28740ca32bda2bbdff408b97",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的家庭炉灶段落，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_2abf12ab9e60d0b4219f4658",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_2b3fa34f0f88daea52edde80",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块研究生物质燃烧非甲烷有机气体(NMOG)排放《Non-methane organic gas emissions...》，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_2d6e337398d098e0ad40e335",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的引用，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_31c973c8e813143fddee05aa",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的引用，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_33a6d883153f6b7171cdfe7a",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一研究领域(木糖制糠醛)但不同体系(微波)的催化剂形式概述段，属背景。"
+  },
+  {
+   "doc_id": "chk_342a968c0d214283cba3bbd9",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文配对催化剂机制段，提到较高 Sn4+ 促进糠醛聚合副反应，属机制背景(非本题独立答案)。"
+  },
+  {
+   "query_id": "q_0005",
+   "doc_id": "chk_343fc3a232723915eebd8638",
+   "relevance": 0,
+   "reason": "doc0: same paper, xylan conversion not SnCl4 dosage; doc1: same paper, mechanism of bromide/Lewis acid not dosage; doc3: same paper, MgCl2 co-catalyst dosage not excess SnCl4",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "16e5853b63ef9a2aa57ef3a7ecbe013d223e77af0e28556272552dae2cb0a151"
+  },
+  {
+   "doc_id": "chk_37a5d822f051f8d22b03886b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自糠醛加氢制糠醇的 PtSn 金属间化合物催化剂研究《A Ship-in-a-bottle...》，反应为加氢而非脱水，催化剂体系为 PtSn 而非 SnCl4/EMIMBr，主题不同。"
+  },
+  {
+   "doc_id": "chk_3802f88572be015e0e26a58d",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文中反应温度影响的相邻段落，属其他条件背景。",
+   "review_status": "Agent_review_completed",
+   "review_note": "同体系同底物、变量为温度 → L1a = 1；维持原判",
+   "review_verdict": "不支持"
+  },
+  {
+   "doc_id": "chk_38084fd0e05d7b0cccd2ac71",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧痕量气体与气溶胶排放研究《Emission of trace gases...》，属于大气排放领域，与 SnCl4/EMIMBr 催化木糖脱水制糠醛无关。"
+  },
+  {
+   "doc_id": "chk_394911c9c331dca982b92ae6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的引用，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_3966d11a350c894b6c9bab9b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文中与其他体系对比的相邻段落，属背景/对照。"
+  },
+  {
+   "doc_id": "chk_3a00a54eb741175b4a899fa7",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_3a77ec948e492f0b0e3db80e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块研究呋喃甲醛在金属电极上的电催化还原(加氢)机理《Mechanisms of Furfural Reduction on Metal Electrodes...》，反应为电化学加氢，与 SnCl4/EMIMBr 脱水体系不同。"
+  },
+  {
+   "doc_id": "chk_3d315df887172c19a47cb584",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_3d3f07ea7f512eb73563c50f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的数据可用性说明，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_41f98ed2ab54df4159ff320f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文结论段(玉米秸秆糠醛收率等)，为目标体系相邻内容。"
+  },
+  {
+   "doc_id": "chk_4335a91d063634005fa10c41",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自开放/家用生物质燃烧排放因子研究《Emission factors for open and domestic biomass burning...》，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_4419384458d12e56e17e3a01",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一研究领域(木糖制糠醛)但不同体系(DES 卤化物筛选)的相邻内容，属背景。"
+  },
+  {
+   "doc_id": "chk_46c04b549c474d4e4761a3df",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》(呋喃二甲酸等呋喃单体聚合物)的参考文献，与 SnCl4/EMIMBr 催化木糖脱水制糠醛及催化剂用量问题无关。"
+  },
+  {
+   "doc_id": "chk_4bacffc0219dedcc6241048c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块研究 Al3+/腐殖酸光催化糖类转化制 5-羟甲基糠醛(HMF)《Photocatalytic conversion of sugars to 5-hydroxymethylfurfural...》，产物为 HMF 而非糠醛，与本题不同(HMF≠糠醛)。"
+  },
+  {
+   "doc_id": "chk_4c5d506e13075204039b4cbb",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自碱/碱土金属对生物质热解催化的综述(钾对热解文献)，研究对象是热解，与本题不同。"
+  },
+  {
+   "doc_id": "chk_4d4b67eb05ad0e0cf9c2c39d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自《Commercial Furfural: Its Properties and Uses》的文献参考文献，讨论商品糠醛的理化性质/历史文献，与 SnCl4/EMIMBr 催化用量机制无关。"
+  },
+  {
+   "doc_id": "chk_4da9ebc26834c43f841e1c97",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自《Commercial Furfural》的历史文献参考文献，与本题无关。"
+  },
+  {
+   "doc_id": "chk_4ea55849904f7c1a35a3ae9a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自碱/碱土金属对生物质热解催化的综述(盐浸渍结论)，研究对象是热解，与本题不同。"
+  },
+  {
+   "doc_id": "chk_5163a6f83ecc992fb76c540b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自《Commercial Furfural》的历史文献参考文献，讨论商品糠醛历史衍生物，与本题催化用量机制无关。"
+  },
+  {
+   "doc_id": "chk_52fe0c5cae2e89276c7de07b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_54259a94c25b989894d8d408",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的引用，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_5a8ade01ae03178688f02b72",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自糠醛加氢制糠醇的 PtSn 金属间化合物催化剂研究《A Ship-in-a-bottle...》的 DFT 机理段，反应为加氢而非脱水，催化剂体系不同，主题不同。"
+  },
+  {
+   "doc_id": "chk_5a925467de238f2f62328256",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自糠醛加氢制糠醇的 PtSn 金属间化合物催化剂研究《A Ship-in-a-bottle...》的 TEM 表征段，反应为加氢而非脱水，催化剂体系不同，主题不同。"
+  },
+  {
+   "doc_id": "chk_5ff031632cd2b058971840ea",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自糠醛加氢制糠醇的 PtSn 金属间化合物催化剂研究《A Ship-in-a-bottle...》，反应为加氢而非脱水，催化剂体系为 PtSn 而非 SnCl4/EMIMBr，主题不同。"
+  },
+  {
+   "doc_id": "chk_604ee821ba4898b6255a7623",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自碱/碱土金属对生物质热解催化的综述，研究对象是热解，与 SnCl4/EMIMBr 催化脱水制糠醛不同。"
+  },
+  {
+   "doc_id": "chk_612605aa092e6086ebf91cf0",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文中木质纤维素生物质转化对比(Table 4)的相邻段落，属背景/对照。"
+  },
+  {
+   "doc_id": "chk_634d0d0c7a94f4c9f8a20a47",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_63e74870780e68a14d83e380",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块研究 Ti 基 MXene 催化糠醛加氢《Catalytic Activity of Ti-based MXenes for the Hydrogenation of Furfural...》，反应为加氢而非脱水，与 SnCl4/EMIMBr 体系不同。"
+  },
+  {
+   "doc_id": "chk_650a5a1fc6b6921362f8a4d1",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_681c4afca859e59b7b33e4f6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题(呋喃聚合物单体)与本题无关。"
+  },
+  {
+   "doc_id": "chk_6a628e9a163c0f42f1ae0e45",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的引用，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_6b04162c54701f0b52592af7",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质重要性/化学/分类与转化的综述《A review on biomass...》，泛泛而论，未涉及 SnCl4/EMIMBr 催化糠醛制备的具体用量问题。"
+  },
+  {
+   "doc_id": "chk_6b489fc48561b87d86c62c77",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的题名/许可信息，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_6d7825a1470eefbac422527d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的褐碳气溶胶内容，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_71c6b2746adc4417c61fc309",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自《Commercial Furfural》的历史文献参考文献，与本题催化用量机制无关。"
+  },
+  {
+   "doc_id": "chk_72b8e8702ef56a8df8e1a73a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自碱/碱土金属对生物质热解催化的综述，研究对象是热解，与本题不同。"
+  },
+  {
+   "doc_id": "chk_76618fe34d95996dd79233c6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自碱/碱土金属对木质纤维素热解催化的综述《Review on the catalytic effects of AAEMs...》，研究对象是热解过程，与 SnCl4/EMIMBr 催化脱水制糠醛的用量问题不同。"
+  },
+  {
+   "doc_id": "chk_76e8cf8001bf01288fd488c1",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文中水分含量对木糖脱水影响的相邻段落，属其他条件背景。",
+   "review_status": "Agent_review_completed",
+   "review_note": "方向性数据支持事实的一半、机理句缺失 → L1a = 1；维持原判",
+   "review_verdict": "部分"
+  },
+  {
+   "doc_id": "chk_7705b5ff15f9358010592cae",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_790f8b0d8237f7a82f845f35",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自糠醛加氢制糠醇的 PtSn 金属间化合物催化剂研究《A Ship-in-a-bottle...》的 XPS 段，虽提及过量 Sn 但语境是加氢催化剂稳定性，反应与催化剂体系均不同于 SnCl4/EMIMBr 脱水，主题不同。"
+  },
+  {
+   "doc_id": "chk_7943e517bfdbc2b671b18f93",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文分析方法(HPLC)与结论段，属实验背景/相邻内容。"
+  },
+  {
+   "doc_id": "chk_7d08e37bd30efafebc397512",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_7f94c0223389f84105b2372e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块研究木糖生物质制备呋喃基类含氧燃料添加剂《Sustainable production of furan-based oxygenated fuel additives...》的参考文献，产品与焦点不同，与本题无关。"
+  },
+  {
+   "doc_id": "chk_805606cd7cc968b6d9589090",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_82b527892bdcefa56cd47a00",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题(呋喃聚合物单体)与本题无关。"
+  },
+  {
+   "doc_id": "chk_82c3b58c6d356a9f73386d54",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块研究呋喃甲醛在金属电极上的电催化还原(加氢)机理《Mechanisms of Furfural Reduction on Metal Electrodes...》，反应为电化学加氢，与 SnCl4/EMIMBr 脱水体系不同。"
+  },
+  {
+   "doc_id": "chk_85956794c86b1390320c5fcf",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的引用，属大气排放领域，与本题无关。"
+  },
+  {
+   "query_id": "q_0005",
+   "doc_id": "chk_860f2c5ee9be82337457fb80",
+   "relevance": 0,
+   "reason": "doc2: same paper, corn stalk substrate and biomass loading, not SnCl4 dosage; doc3: same paper, xylose loading effect, not catalyst dosage; doc4: same paper, ionic liquid/solvent screening, not SnCl4 dosage",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "d6eda3c5b6bb99133a375f850ee86094daabccd47d042e28fa455b026a527d75"
+  },
+  {
+   "doc_id": "chk_86d0fa326f0392661191cc1c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一研究领域(木糖制糠醛)但不同体系(DES)的结论段，属相关背景。"
+  },
+  {
+   "doc_id": "chk_8ae832e4d642521b0babb206",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一研究领域(木糖微波辅助制糠醛)但不同催化/加热体系，为该领域文献收率表，属相关背景。"
+  },
+  {
+   "doc_id": "chk_8c1a0912c3f07e984feeddb2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块为 HMF 还原胺化制备 BAMF 的数据表(Table 11 续)，研究对象是 5-羟甲基糠醛(HMF)的胺化反应，与本题 SnCl4 体系木糖制糠醛无关(HMF≠糠醛)。"
+  },
+  {
+   "doc_id": "chk_8cc5cec9a375be2393d7efb8",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文中木聚糖转化与加水量影响的相邻段落，属背景。"
+  },
+  {
+   "doc_id": "chk_902176d3b48c39dea12ba0cc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的引用，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_91f8be86e627870a3e0a9794",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_9485b4f09419d8a97d8d582d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_96384c894cafdf12e6eab17d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自糠醛加氢制糠醇的 PtSn 金属间化合物催化剂研究《A Ship-in-a-bottle...》的引言段，反应为加氢而非脱水，催化剂体系为 PtSn 而非 SnCl4/EMIMBr，主题不同。"
+  },
+  {
+   "doc_id": "chk_9abd8aeac6fdd2526437a2aa",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的引用注释，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_9ed5672defdc783ddb63b6ae",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块为 HMF 还原胺化制备 BAMF 的数据表(Table 11)，研究对象是 5-羟甲基糠醛(HMF)的胺化反应，与本题 SnCl4 体系木糖制糠醛无关(HMF≠糠醛)。"
+  },
+  {
+   "doc_id": "chk_9efa9e4ab2005850f0c650fb",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块研究 5-羟甲基糠醛(HMF)选择性加氢制 5-甲基糠醛《Selective hydrogenation of 5-(hydroxymethyl)furfural...》，产物与反应均不同于本题(HMF≠糠醛，且为加氢)。"
+  },
+  {
+   "query_id": "q_0005",
+   "doc_id": "chk_a31155b8bf9d90dce8836014",
+   "relevance": 0,
+   "reason": "doc0: same paper, xylan conversion not SnCl4 dosage; doc1: same paper, mechanism of bromide/Lewis acid not dosage; doc3: same paper, MgCl2 co-catalyst dosage not excess SnCl4",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "16e5853b63ef9a2aa57ef3a7ecbe013d223e77af0e28556272552dae2cb0a151"
+  },
+  {
+   "doc_id": "chk_a37e1b36ef5ff6eab6426f52",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "query_id": "q_0005",
+   "doc_id": "chk_a4be2b0e6154e2a3e03a504d",
+   "relevance": 0,
+   "reason": "doc0: same paper, xylan conversion not SnCl4 dosage; doc1: same paper, mechanism of bromide/Lewis acid not dosage; doc3: same paper, MgCl2 co-catalyst dosage not excess SnCl4",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "16e5853b63ef9a2aa57ef3a7ecbe013d223e77af0e28556272552dae2cb0a151"
+  },
+  {
+   "doc_id": "chk_aadb1f108dc4034b348b7a36",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一研究领域(木糖制糠醛)但不同体系(DES)的低温卤化物效应段，属背景。"
+  },
+  {
+   "doc_id": "chk_ae2f9670c1ebb96deefd96ac",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自开放/家用生物质燃烧排放因子研究《Emission factors for open and domestic biomass burning...》的排放因子表，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_ae70470424266e29040b88d8",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文材料与方法段，属实验背景。"
+  },
+  {
+   "doc_id": "chk_b0477a031f993d1b1a7a33a9",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_b0750e1c4c825273e2f2ca2f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自糠醛加氢制糠醇的 PtSn 金属间化合物催化剂研究《A Ship-in-a-bottle...》的结论段，反应为加氢而非脱水，催化剂体系不同，主题不同。"
+  },
+  {
+   "doc_id": "chk_b2a1bb77f5b8b43b101614e4",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一研究领域(木糖制糠醛)论文《Optimization with Response Surface Methodology...》的参考文献列表，属相邻内容。"
+  },
+  {
+   "doc_id": "chk_b474bce8d985725a42a73f21",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题(呋喃聚合物单体)与本题无关。"
+  },
+  {
+   "doc_id": "chk_b55be9df23f122b527b2c8d3",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_ba38a5eb11a7d2b01f992079",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一研究领域(木糖/木聚糖制糠醛)但不同催化体系(DES 中碱金属卤化物)，为目标体系的相关对照背景。"
+  },
+  {
+   "doc_id": "chk_bc22f088e83ba23d087f08d4",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一研究领域(木糖制糠醛)但不同体系(DES)的卤化物机理段，属背景。"
+  },
+  {
+   "doc_id": "chk_c0fc2c399a807d5cc7d198dd",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块研究环状低聚物开环聚合制备聚乙烯呋喃酸酯(PEF)《Bottle-grade polyethylene furanoate...》，属于聚合物合成，与 SnCl4 催化糠醛制备无关。"
+  },
+  {
+   "doc_id": "chk_c56cce0adefcc3085172426f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一研究领域(木糖制糠醛)论文《Optimization with Response Surface Methodology...》的参考文献列表，属相邻内容。"
+  },
+  {
+   "doc_id": "chk_c637afc692e7621538a73442",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文中金属氯化物催化剂筛选(Figure 1)的相邻段落，属背景。",
+   "review_status": "Agent_review_completed",
+   "review_note": "同体系、催化剂不同，给出同向机理线索 → L1a = 1；维持原判",
+   "review_verdict": "部分"
+  },
+  {
+   "doc_id": "chk_c72c272a5b8a5dd6b62a796d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块研究木糖生物质制备呋喃基类含氧燃料添加剂(如乙酰丙酸酯)《Sustainable production of furan-based oxygenated fuel additives...》，产品与焦点不同，与 SnCl4 催化糠醛脱水无关。"
+  },
+  {
+   "doc_id": "chk_c75c331598d13d8972edcec5",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一研究领域(木糖制糠醛)但不同体系(微波/甲酸等)的催化剂概述段，属背景。"
+  },
+  {
+   "doc_id": "chk_c8b24bcdb0df75aebbb4b341",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_ca0a6ac437e1d20b5450becc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "query_id": "q_0005",
+   "doc_id": "chk_cac3807d9a18c151af2918db",
+   "relevance": 1,
+   "reason": "L1b: same paper's dosage data table showing yield drops at higher SnCl4 dosage, supporting the trend.",
+   "evidence_quotes": [
+    "Table 1. Effect of different dosage of SnCl4 and MgCl2 on the dehydration of xylose into furfural."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "e85f28e9f9319d7cd185b752029ad982ea07e237e35473a6d02de7cff96f57be",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "必需事实唯一项的文字本身含机理子句（『也促进副反应』）。本块只给 SnCl4 用量的收率表，5→8→10 mol% 单调上升（52.4→62.0→71.1），块内既无上升停滞、也无下降数据，更无任何把副反应归因于锡盐用量的句子（块内唯一的 side reactions 表述归因于溶剂 EMIMBF4）。因此该块对该必需事实只构成『同一论文、同一体系的用量数据基准』= L1a/L1b 辅助关系，不构成直接支持。同题已完成复核的 chk_76e8cf8001bf01288fd488c1 已含方向性下降数据（1:20→71.1%、1:40→54.2%）仍因『机理句缺失』判 1，本块证据更弱。→ 2 改 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读；与 q_0005 已完成各条（均 L1a=1）口径对齐"
+   }
+  },
+  {
+   "doc_id": "chk_cbf8df1c3b64a2e545934de1",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_cc36af307d60576236328615",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自碱/碱土金属对生物质热解催化的综述，研究对象是热解，与本题不同。"
+  },
+  {
+   "doc_id": "chk_cd24e18104bd508668a9b406",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块研究 Pd-PdO/ZnSO4 催化糖类闪速热解制糠醛《High production of furfural by flash pyrolysis...》，是不同催化体系与技术路线(热解)，与 SnCl4/EMIMBr 脱水体系不同。"
+  },
+  {
+   "doc_id": "chk_d19eef13656ef5f770ea2acf",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_d32e7ef117d91f85b89a0634",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自木质素在生物质转化中的作用与预处理策略综述《The critical role of lignin...》，主题是木质素，与 SnCl4 催化木糖脱水制糠醛不同。"
+  },
+  {
+   "doc_id": "chk_d426e0b353444ede02671dc0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块为 HMF 还原胺化制备 BAMF 的数据表(Table 11)，研究对象是 5-羟甲基糠醛(HMF)的胺化反应，与本题 SnCl4 体系木糖制糠醛无关(HMF≠糠醛)。"
+  },
+  {
+   "doc_id": "chk_d512dbfd933fa74b6210404c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自糠醛加氢制糠醇的 PtSn 金属间化合物催化剂研究《A Ship-in-a-bottle...》，反应为加氢而非脱水，催化剂体系为 PtSn 而非 SnCl4/EMIMBr，主题不同。"
+  },
+  {
+   "doc_id": "chk_d5a0855a9de310453948713b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文中双相体系与 Br− 催化机理的相邻段落，提供机制背景。"
+  },
+  {
+   "doc_id": "chk_d92b875f02939ab430bf4c05",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的生物燃料用量估计，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_de6d2311eee0ba80587d5cb1",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自糠醛加氢制糠醇的 PtSn 金属间化合物催化剂研究《A Ship-in-a-bottle...》的催化剂失活段，反应为加氢而非脱水，催化剂体系不同，主题不同。"
+  },
+  {
+   "doc_id": "chk_de6d867f6158072b73bf5cb8",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一研究领域(木糖制糠醛)但不同体系(DES 卤化物)的金属卤化物筛选段，属背景。"
+  },
+  {
+   "doc_id": "chk_de8ed6767b301e54f3952681",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文《Efficient Synthesis of Furfural...》中 SnCl4 与金属氯化物配对催化剂及催化剂用量(Figure 2)的相邻段落，属背景，未直接解释锡盐过量降低收率。",
+   "review_status": "Agent_review_completed",
+   "review_note": "L1a = 1；维持原判",
+   "review_verdict": "部分"
+  },
+  {
+   "doc_id": "chk_e14d8684b2780485bb3b4034",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自碱/碱土金属对生物质热解催化的综述(钠/锌/镁氯化物热解添加剂文献)，研究对象是热解，与本题不同。"
+  },
+  {
+   "doc_id": "chk_e2262d32712a18714b40f17f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的 Table 1 排放因子，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_e2cb44b2a26c25a3add38896",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自《Commercial Furfural》的糠醛历史化学(苯胺缩合等)内容，与 SnCl4/EMIMBr 催化剂用量研究无关。"
+  },
+  {
+   "doc_id": "chk_e5c7a1ecfb06cad97464471d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自碱/碱土金属对生物质热解催化的综述(KCl/NaCl 反应式)，研究对象是热解，与本题不同。"
+  },
+  {
+   "doc_id": "chk_e769e00a4aa1cbe71b7a02cf",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一研究领域(木糖制糠醛)但不同体系(DES)的循环与材料段，属背景。"
+  },
+  {
+   "doc_id": "chk_e844b144578a6a376d6379fd",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的排放量统计，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_e86a4176f859f6fdd792fe54",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自木质素在生物质转化中的作用与预处理策略综述《The critical role of lignin...》的参考文献，主题是木质素，与本题不同。"
+  },
+  {
+   "doc_id": "chk_ea03494a7c368604e6480ffb",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的排放因子表，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_eb28ef77eb4b424fe27b2883",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文中木聚糖转化(Figure 9)与 SnCl4 水解机制的相邻段落，提供体系背景。"
+  },
+  {
+   "doc_id": "chk_eba9cc5a0fdb793c30a26f2b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自开放/家用生物质燃烧排放因子研究《Emission factors for open and domestic biomass burning...》的排放因子表，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_ededecc41c568deaebb1de15",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的 OM/OC 比值注释，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_ee478e15f1277db7b77f5281",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的排放因子表，属大气排放领域，与本题无关。"
+  },
+  {
+   "query_id": "q_0005",
+   "doc_id": "chk_ee4f714d67d858f105a035d3",
+   "relevance": 0,
+   "reason": "doc2: same paper, corn stalk substrate and biomass loading, not SnCl4 dosage; doc3: same paper, xylose loading effect, not catalyst dosage; doc4: same paper, ionic liquid/solvent screening, not SnCl4 dosage",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "d6eda3c5b6bb99133a375f850ee86094daabccd47d042e28fa455b026a527d75"
+  },
+  {
+   "doc_id": "chk_f377b5d318285089266d7e42",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文参考文献列表，属论文相邻内容。"
+  },
+  {
+   "doc_id": "chk_f83cf46e4fb1c05a5b919145",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的引用，属大气排放领域，与本题无关。"
+  },
+  {
+   "doc_id": "chk_f925fd05203d04eb5cced26b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_fd17550d2f780db0de305df4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自综述《Beyond 2,5-furandicarboxylic acid》的参考文献，主题与本题无关。"
+  },
+  {
+   "doc_id": "chk_ff16da41d84f48fe9a3ab452",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块来自生物质燃烧排放研究《Emission of trace gases...》的营养素段落，属大气排放领域，与本题无关。"
+  }
+ ]
+}

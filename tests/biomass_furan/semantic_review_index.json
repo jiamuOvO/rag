@@ -1,0 +1,902 @@
+[
+ {
+  "query_id": "q_0005",
+  "doc_id": "chk_146ef0a2692f27a972ce10dc",
+  "group": "needs_rejudge",
+  "old_grade": 1,
+  "protected": false,
+  "n": 1,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0005",
+  "doc_id": "chk_3802f88572be015e0e26a58d",
+  "group": "needs_rejudge",
+  "old_grade": 1,
+  "protected": false,
+  "n": 2,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0005",
+  "doc_id": "chk_76e8cf8001bf01288fd488c1",
+  "group": "needs_rejudge",
+  "old_grade": 1,
+  "protected": false,
+  "n": 3,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0005",
+  "doc_id": "chk_c637afc692e7621538a73442",
+  "group": "needs_rejudge",
+  "old_grade": 1,
+  "protected": false,
+  "n": 4,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0005",
+  "doc_id": "chk_de8ed6767b301e54f3952681",
+  "group": "needs_rejudge",
+  "old_grade": 1,
+  "protected": false,
+  "n": 5,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0011",
+  "doc_id": "chk_c7b7d600a23b05f53dd5778f",
+  "group": "needs_rejudge",
+  "old_grade": 1,
+  "protected": false,
+  "n": 6,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0011",
+  "doc_id": "chk_e66153b2f5b37d57f58e54c1",
+  "group": "needs_rejudge",
+  "old_grade": 1,
+  "protected": false,
+  "n": 7,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0011",
+  "doc_id": "chk_f6334e3e233a5be7e5e4b91b",
+  "group": "needs_rejudge",
+  "old_grade": 1,
+  "protected": false,
+  "n": 8,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_09c78331d97d74a2be099583",
+  "group": "needs_rejudge",
+  "old_grade": 1,
+  "protected": false,
+  "n": 9,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_7ccc90b43ddfc0b4da904489",
+  "group": "needs_rejudge",
+  "old_grade": 1,
+  "protected": false,
+  "n": 10,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_9824e8bd83610555996f0872",
+  "group": "needs_rejudge",
+  "old_grade": 1,
+  "protected": false,
+  "n": 11,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_b1d48fe71f8d9bfeda0a7a6e",
+  "group": "needs_rejudge",
+  "old_grade": 1,
+  "protected": false,
+  "n": 12,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_e13189c5ea576e8e5e4cc2f2",
+  "group": "needs_rejudge",
+  "old_grade": 1,
+  "protected": false,
+  "n": 13,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0011",
+  "doc_id": "chk_1da5492056867f6a66a0b82a",
+  "group": "needs_rejudge",
+  "old_grade": 3,
+  "protected": false,
+  "n": 14,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0011",
+  "doc_id": "chk_eddc849e74ee8a05d3379f29",
+  "group": "needs_rejudge",
+  "old_grade": 3,
+  "protected": false,
+  "n": 15,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0005",
+  "doc_id": "chk_cac3807d9a18c151af2918db",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 16,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0006",
+  "doc_id": "chk_eb28ef77eb4b424fe27b2883",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 17,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0007",
+  "doc_id": "chk_5539978d73851dcba7b48239",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 18,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0007",
+  "doc_id": "chk_566e4ba7fd2e114be1aef258",
+  "group": "semantic_pending",
+  "old_grade": 1,
+  "protected": true,
+  "n": 19,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_8c43d6189bfd58b10083cf8d",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 20,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0019",
+  "doc_id": "chk_b1b81eeabbaeabc5b132a96b",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 21,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0022",
+  "doc_id": "chk_6607e591b51235df3444c92e",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 22,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0024",
+  "doc_id": "chk_4d23c61724b8781b5c07f8ed",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 23,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0026",
+  "doc_id": "chk_3502598feddaf54c42179cfb",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 24,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0027",
+  "doc_id": "chk_9b27a5144a763ff68f58aa16",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 25,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0035",
+  "doc_id": "chk_df3aec9b2824dc7e019e2465",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 26,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0039",
+  "doc_id": "chk_74461aa8106ad59a3e7f3982",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 27,
+  "facts": 3
+ },
+ {
+  "query_id": "q_0041",
+  "doc_id": "chk_33bf357cd18670d0d2ca2b34",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 28,
+  "facts": 3
+ },
+ {
+  "query_id": "q_0041",
+  "doc_id": "chk_d10851fbdfeb17dd8639fcec",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 29,
+  "facts": 3
+ },
+ {
+  "query_id": "q_0044",
+  "doc_id": "chk_4d23c61724b8781b5c07f8ed",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 30,
+  "facts": 2
+ },
+ {
+  "query_id": "q_0044",
+  "doc_id": "chk_b57774d3d4688682f7455127",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 31,
+  "facts": 2
+ },
+ {
+  "query_id": "q_0045",
+  "doc_id": "chk_a6c8ba74e59565fc9abca5bd",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 32,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0004",
+  "doc_id": "chk_cac3807d9a18c151af2918db",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 33,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0007",
+  "doc_id": "chk_4f86dedd60c3fd056c61dc03",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 34,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0010",
+  "doc_id": "chk_27e71a7f418b0bd0a2dfe071",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 35,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0010",
+  "doc_id": "chk_4c284eac482a133d335c7ca7",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 36,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0010",
+  "doc_id": "chk_f6334e3e233a5be7e5e4b91b",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 37,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0011",
+  "doc_id": "chk_80cfb9a0ecf7628f4f48e9d3",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 38,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_5390b5325ecf463c4e9497d7",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 39,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_7764b60e09f53eaa5aa68fc6",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 40,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0014",
+  "doc_id": "chk_45a69b0e755aa8b4a0a506fb",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 41,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0014",
+  "doc_id": "chk_7764b60e09f53eaa5aa68fc6",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 42,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0015",
+  "doc_id": "chk_225788b644ea25f4b634ffb6",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 43,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0015",
+  "doc_id": "chk_61fec0ffa9e553e9cc7bc451",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 44,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0015",
+  "doc_id": "chk_979045fd6bdb126a66d66d75",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 45,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0015",
+  "doc_id": "chk_d669deac9629382e689cfc6a",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 46,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0016",
+  "doc_id": "chk_9b27a5144a763ff68f58aa16",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 47,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0016",
+  "doc_id": "chk_ad5180b277f6e342545badc6",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 48,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0016",
+  "doc_id": "chk_c90f3629e80547c70ed57947",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 49,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0016",
+  "doc_id": "chk_cc6f834d38212f53e2cabe1a",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 50,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0018",
+  "doc_id": "chk_3502598feddaf54c42179cfb",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 51,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0018",
+  "doc_id": "chk_69cf17a7e04566cf89d39367",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 52,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0023",
+  "doc_id": "chk_9a11044c6b0a3219c803c306",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 53,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0023",
+  "doc_id": "chk_c7386b23f1137ddd583d474b",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 54,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0024",
+  "doc_id": "chk_305f10f1a75a63236a4c181e",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 55,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0027",
+  "doc_id": "chk_076b9346fadb8e7dee5524c6",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 56,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0032",
+  "doc_id": "chk_ae427d946654a90bad529088",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 57,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0041",
+  "doc_id": "chk_61fec0ffa9e553e9cc7bc451",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 58,
+  "facts": 3
+ },
+ {
+  "query_id": "q_0041",
+  "doc_id": "chk_6f9e1ddf4e91431e9cfc6c46",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 59,
+  "facts": 3
+ },
+ {
+  "query_id": "q_0042",
+  "doc_id": "chk_3f69bf6b3a14097bc389e768",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": true,
+  "n": 60,
+  "facts": 2
+ },
+ {
+  "query_id": "q_0042",
+  "doc_id": "chk_4d23c61724b8781b5c07f8ed",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": true,
+  "n": 61,
+  "facts": 2
+ },
+ {
+  "query_id": "q_0042",
+  "doc_id": "chk_4f1003898eb083ea75f9672f",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": true,
+  "n": 62,
+  "facts": 2
+ },
+ {
+  "query_id": "q_0042",
+  "doc_id": "chk_8781e312c8a17f3f184b7414",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": true,
+  "n": 63,
+  "facts": 2
+ },
+ {
+  "query_id": "q_0042",
+  "doc_id": "chk_9f994e2e49ec3c47a5ae2cda",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": true,
+  "n": 64,
+  "facts": 2
+ },
+ {
+  "query_id": "q_0043",
+  "doc_id": "chk_6f9e1ddf4e91431e9cfc6c46",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 65,
+  "facts": 3
+ },
+ {
+  "query_id": "q_0047",
+  "doc_id": "chk_6aa49b56f23286eccb100a58",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 66,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0049",
+  "doc_id": "chk_10c3ee898756bb2a39517650",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 67,
+  "facts": 3
+ },
+ {
+  "query_id": "q_0049",
+  "doc_id": "chk_f073e3273982f5a713fc56f3",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 68,
+  "facts": 3
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_0a912b28229092da2e595f18",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 69,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_0fdd02015b6eb7d21ac6f9fd",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 70,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_19dc9d277d79c2e2421ec9bf",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 71,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_1b3adced8f0344654ed5ebfa",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 72,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_2664a01ff75abf215f6dbb9d",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 73,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_3182461b711d1f373bf36ac4",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 74,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_4f283b17046ca64f70a75f0f",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 75,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_5bdc404aaf3aa2d43a2e88b3",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 76,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_837fe3919547666c018f0fcf",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 77,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_949d6e15c39aa1680eb0597e",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 78,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_9e49aa0e6a155dbc4c439cf7",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 79,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_a4cfb2dac7c22e914f7aa355",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 80,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_b4a63245687199605240fc88",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 81,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_bd32559701129098222b039e",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 82,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_d240b88640bce7f3b815a13f",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 83,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_dae54923690abc9482389d41",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 84,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_df24437e6c790326b9602f5f",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 85,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_e40ff27103a7dff6aa294c49",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 86,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_e86a4176f859f6fdd792fe54",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 87,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_e9d4c44e3c2a99de94f93c42",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 88,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_fa44890380cd28eeddd8114f",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 89,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0019",
+  "doc_id": "chk_867558c7dbce6d47c08806da",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 90,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0019",
+  "doc_id": "chk_a7b4e7413f51520b5850ba43",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 91,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0019",
+  "doc_id": "chk_cc47e725f63493a672af98c3",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 92,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0019",
+  "doc_id": "chk_ea12060a5eb8ed047561fe44",
+  "group": "semantic_pending",
+  "old_grade": 2,
+  "protected": false,
+  "n": 93,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0027",
+  "doc_id": "chk_50015abd498d99b96ac574fd",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 94,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0029",
+  "doc_id": "chk_e769e00a4aa1cbe71b7a02cf",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 95,
+  "facts": 1
+ },
+ {
+  "query_id": "q_0044",
+  "doc_id": "chk_eec4496762bf30d4c915fc71",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 96,
+  "facts": 2
+ },
+ {
+  "query_id": "q_0049",
+  "doc_id": "chk_1ed219cb4bb3138cf0b467a4",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 97,
+  "facts": 3
+ },
+ {
+  "query_id": "q_0049",
+  "doc_id": "chk_df78a5c435d9c7f4639ab865",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 98,
+  "facts": 3
+ },
+ {
+  "query_id": "q_0050",
+  "doc_id": "chk_1ed219cb4bb3138cf0b467a4",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 99,
+  "facts": 3
+ },
+ {
+  "query_id": "q_0050",
+  "doc_id": "chk_df78a5c435d9c7f4639ab865",
+  "group": "semantic_pending",
+  "old_grade": 3,
+  "protected": false,
+  "n": 100,
+  "facts": 3
+ }
+]

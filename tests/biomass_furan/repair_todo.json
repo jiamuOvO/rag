@@ -1,0 +1,100 @@
+[
+ {
+  "query_id": "q_0001",
+  "doc_id": "chk_2467240e9bec8a52db54345d",
+  "issue": "id_absent_from_corpus"
+ },
+ {
+  "query_id": "q_0001",
+  "doc_id": "chk_2467240e9bec8a52db54345d",
+  "issue": "doc_id_not_in_pool"
+ },
+ {
+  "query_id": "q_0001",
+  "doc_id": "chk_e5ada7059156bd758d082960",
+  "issue": "pool_doc_never_judged"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_4f283b17046ca64f70a75f0f",
+  "level": 2,
+  "issue": "quote_unresolved",
+  "quote": "fragment biomass components (i.e., lignin, cellulose, and hemicellulose)",
+  "note": "fragment not locatable: 'fragment biomass components (i.e., lignin, cellulose, and he'",
+  "found_in_other_blocks": []
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_8c43d6189bfd58b10083cf8d",
+  "level": 3,
+  "issue": "quote_unresolved",
+  "quote": "Lignocelluloses are composed of cellulose (40–50%), hemicelluloses (25–35%) and lignin (15–20%)",
+  "note": "fragment not locatable: 'Lignocelluloses are composed of cellulose (40–50%), hemicell'",
+  "found_in_other_blocks": []
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_d32e7ef117d91f85b89a0634",
+  "level": 2,
+  "issue": "quote_unresolved",
+  "quote": "Biomass pretreatment results in cellulose-rich solids",
+  "note": "fragment not locatable: 'Biomass pretreatment results in cellulose-rich solids'",
+  "found_in_other_blocks": []
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_d32e7ef117d91f85b89a0634",
+  "level": 2,
+  "issue": "quote_unresolved",
+  "quote": "reduction of hemicellulose and lignin components depending on the applied techniques",
+  "note": "fragment not locatable: 'reduction of hemicellulose and lignin components depending o'",
+  "found_in_other_blocks": []
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_b4a63245687199605240fc88",
+  "level": 3,
+  "issue": "quote_unresolved",
+  "quote": "allows the fractionation of all the three biopolymers (cellulose, hemicellulose, and lignin) in Eucalyptus biomass",
+  "note": "fragment not locatable: 'allows the fractionation of all the three biopolymers (cellu'",
+  "found_in_other_blocks": []
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_8415a4ce30d60e523ec8f26f",
+  "level": 3,
+  "issue": "quote_unresolved",
+  "quote": "biomass contains an ash fraction in addition to the three main biopolymers (namely, cellulose, hemicellulose and lignin)",
+  "note": "fragment not locatable: 'biomass contains an ash fraction in addition to the three ma'",
+  "found_in_other_blocks": []
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_0a912b28229092da2e595f18",
+  "level": 2,
+  "issue": "quote_unresolved",
+  "quote": "The pretreatment-based fractionation of lignocellulose to cellulose-rich fraction, pentose-rich fraction, and lignin fraction is more attractive",
+  "note": "fragment not locatable: 'The pretreatment-based fractionation of lignocellulose to ce'",
+  "found_in_other_blocks": []
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_4d14c5369e8d24183d1c0860",
+  "issue": "duplicate_doc_id",
+  "rows": 2
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_70a2f1a660e15afd9b203b21",
+  "issue": "pool_doc_never_judged"
+ },
+ {
+  "query_id": "q_0016",
+  "doc_id": "chk_df3aec9b2824dc7e019e2465",
+  "level": 2,
+  "issue": "quote_unresolved",
+  "quote": "Table 1 Comparison of the results after the RCF of Eucalyptus under different temperatures Reaction conditions: Eucalyptus (1.0 g), 10 wt% Pd/C catalyst (100 mg), MeOH (40 mL), H2 (30 atm), 4 h",
+  "note": "fragment not locatable: 'Table 1 Comparison of the results after the RCF of Eucalyptu'",
+  "found_in_other_blocks": []
+ }
+]

@@ -1,0 +1,12 @@
+[
+ {
+  "merged_to": "gapfill\\q_0002\\batch_01.json",
+  "records": 5,
+  "agent_corrections": 2
+ },
+ {
+  "merged_to": "gapfill\\q_0060\\batch_01.json",
+  "records": 5,
+  "agent_corrections": 0
+ }
+]

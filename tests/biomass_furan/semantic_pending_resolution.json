@@ -1,0 +1,1651 @@
+{
+ "note": "去重后逐条处置。needs_user 是交给用户的清单，不是自动改级结果。",
+ "pending_raw": 107,
+ "unique_pairs": 104,
+ "counts": {
+  "original_correct": 16,
+  "already_corrected": 6,
+  "needs_user": 82
+ },
+ "detail": {
+  "original_correct": [
+   {
+    "query_id": "q_0005",
+    "doc_id": "chk_cac3807d9a18c151af2918db",
+    "kinds": [
+     "P1_reason_cites_L1_but_grade_high"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_db1a45d39737c05f08fff0fa"
+    ],
+    "block_source": "paper_db1a45d39737c05f08fff0fa",
+    "reason": "L1b: same paper's dosage data table showing yield drops at higher SnCl4 dosage, supporting the trend.",
+    "why": "理由引用 L1 规则但等级为 2/3。同论文/同体系的「数据基础」本身可以是 2 级直接证据，理由措辞松不等于等级错——无其他证据时维持原判"
+   },
+   {
+    "query_id": "q_0006",
+    "doc_id": "chk_eb28ef77eb4b424fe27b2883",
+    "kinds": [
+     "P1_reason_cites_L1_but_grade_high"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_db1a45d39737c05f08fff0fa"
+    ],
+    "block_source": "paper_db1a45d39737c05f08fff0fa",
+    "reason": "L1b: same paper's xylan time-profile figure in EMIMBr/SnCl4, the data basis for the asked 1 h vs 4 h yield trend.",
+    "why": "理由引用 L1 规则但等级为 2/3。同论文/同体系的「数据基础」本身可以是 2 级直接证据，理由措辞松不等于等级错——无其他证据时维持原判"
+   },
+   {
+    "query_id": "q_0007",
+    "doc_id": "chk_5539978d73851dcba7b48239",
+    "kinds": [
+     "P1_reason_cites_L1_but_grade_high"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_0cc8554d80109d5ddfe91435"
+    ],
+    "block_source": "paper_0cc8554d80109d5ddfe91435",
+    "reason": "Same paper's optimization method/data source (L1b); names the three optimized variables but not the optimum values.",
+    "why": "理由引用 L1 规则但等级为 2/3。同论文/同体系的「数据基础」本身可以是 2 级直接证据，理由措辞松不等于等级错——无其他证据时维持原判"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_8c43d6189bfd58b10083cf8d",
+    "kinds": [
+     "P1_reason_cites_L1_but_grade_high"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_2467240e9bec8a52db54345d",
+    "reason": "Same 2018 review states the three components (L1b).",
+    "why": "理由引用 L1 规则但等级为 2/3。同论文/同体系的「数据基础」本身可以是 2 级直接证据，理由措辞松不等于等级错——无其他证据时维持原判"
+   },
+   {
+    "query_id": "q_0019",
+    "doc_id": "chk_b1b81eeabbaeabc5b132a96b",
+    "kinds": [
+     "P1_reason_cites_L1_but_grade_high"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_dc7cbcb44f231c61245467df"
+    ],
+    "block_source": "paper_dc7cbcb44f231c61245467df",
+    "reason": "L1b: same 2024 review, data basis for HMF oxidation/esterification to FDCA derivatives.",
+    "why": "理由引用 L1 规则但等级为 2/3。同论文/同体系的「数据基础」本身可以是 2 级直接证据，理由措辞松不等于等级错——无其他证据时维持原判"
+   },
+   {
+    "query_id": "q_0022",
+    "doc_id": "chk_6607e591b51235df3444c92e",
+    "kinds": [
+     "P1_reason_cites_L1_but_grade_high"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_26e277a1fc448ade34584ae3"
+    ],
+    "block_source": "paper_26e277a1fc448ade34584ae3",
+    "reason": "L1b: same paper's data basis, supplies the conversion criterion but not Mn or color.",
+    "why": "理由引用 L1 规则但等级为 2/3。同论文/同体系的「数据基础」本身可以是 2 级直接证据，理由措辞松不等于等级错——无其他证据时维持原判"
+   },
+   {
+    "query_id": "q_0024",
+    "doc_id": "chk_4d23c61724b8781b5c07f8ed",
+    "kinds": [
+     "P1_reason_cites_L1_but_grade_high"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_107512d3ed43f43f9bd8f45e"
+    ],
+    "block_source": "paper_107512d3ed43f43f9bd8f45e",
+    "reason": "L1b: same paper's data basis explaining acidic DES acts as catalyst; supports f1 partially.",
+    "why": "理由引用 L1 规则但等级为 2/3。同论文/同体系的「数据基础」本身可以是 2 级直接证据，理由措辞松不等于等级错——无其他证据时维持原判"
+   },
+   {
+    "query_id": "q_0026",
+    "doc_id": "chk_3502598feddaf54c42179cfb",
+    "kinds": [
+     "P1_reason_cites_L1_but_grade_high"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_07f06156408855a516ea618b"
+    ],
+    "block_source": "paper_07f06156408855a516ea618b",
+    "reason": "L1b: same paper's procedure describing swelling then fractionation, but no acid concentration or organic-to-aqueous ratio given.",
+    "why": "理由引用 L1 规则但等级为 2/3。同论文/同体系的「数据基础」本身可以是 2 级直接证据，理由措辞松不等于等级错——无其他证据时维持原判"
+   },
+   {
+    "query_id": "q_0027",
+    "doc_id": "chk_9b27a5144a763ff68f58aa16",
+    "kinds": [
+     "P1_reason_cites_L1_but_grade_high"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_81924125a737b5a88e728e25"
+    ],
+    "block_source": "paper_81924125a737b5a88e728e25",
+    "reason": "Same paper, method/data basis for the run at maximum phenolic monomers; supports locating the condition but not the numbers.",
+    "why": "理由引用 L1 规则但等级为 2/3。同论文/同体系的「数据基础」本身可以是 2 级直接证据，理由措辞松不等于等级错——无其他证据时维持原判"
+   },
+   {
+    "query_id": "q_0035",
+    "doc_id": "chk_df3aec9b2824dc7e019e2465",
+    "kinds": [
+     "P1_reason_cites_L1_but_grade_high"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_81924125a737b5a88e728e25"
+    ],
+    "block_source": "paper_81924125a737b5a88e728e25",
+    "reason": "L1b: same paper's method/data source, but reports a different furfural yield, not the optimal co-conversion values.",
+    "why": "理由引用 L1 规则但等级为 2/3。同论文/同体系的「数据基础」本身可以是 2 级直接证据，理由措辞松不等于等级错——无其他证据时维持原判"
+   },
+   {
+    "query_id": "q_0039",
+    "doc_id": "chk_74461aa8106ad59a3e7f3982",
+    "kinds": [
+     "P1_reason_cites_L1_but_grade_high"
+    ],
+    "grade": 2,
+    "facts_total": 3,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_1910bac59c2e4dc660743b72"
+    ],
+    "block_source": "paper_1910bac59c2e4dc660743b72",
+    "reason": "Same paper, same catalyst/water system at 100 °C; supports reaction conditions (L1a/L1b).",
+    "why": "理由引用 L1 规则但等级为 2/3。同论文/同体系的「数据基础」本身可以是 2 级直接证据，理由措辞松不等于等级错——无其他证据时维持原判"
+   },
+   {
+    "query_id": "q_0041",
+    "doc_id": "chk_33bf357cd18670d0d2ca2b34",
+    "kinds": [
+     "P1_reason_cites_L1_but_grade_high"
+    ],
+    "grade": 2,
+    "facts_total": 3,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_07f06156408855a516ea618b",
+     "paper_81924125a737b5a88e728e25"
+    ],
+    "block_source": "paper_81924125a737b5a88e728e25",
+    "reason": "L1b: same paper's method; directly supports Pd/C for lignin depolymerization step.",
+    "why": "理由引用 L1 规则但等级为 2/3。同论文/同体系的「数据基础」本身可以是 2 级直接证据，理由措辞松不等于等级错——无其他证据时维持原判"
+   },
+   {
+    "query_id": "q_0041",
+    "doc_id": "chk_d10851fbdfeb17dd8639fcec",
+    "kinds": [
+     "P1_reason_cites_L1_but_grade_high"
+    ],
+    "grade": 2,
+    "facts_total": 3,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_07f06156408855a516ea618b",
+     "paper_81924125a737b5a88e728e25"
+    ],
+    "block_source": "paper_07f06156408855a516ea618b",
+    "reason": "L1b: same paper's method; supports phosphoric acid recycling.",
+    "why": "理由引用 L1 规则但等级为 2/3。同论文/同体系的「数据基础」本身可以是 2 级直接证据，理由措辞松不等于等级错——无其他证据时维持原判"
+   },
+   {
+    "query_id": "q_0044",
+    "doc_id": "chk_4d23c61724b8781b5c07f8ed",
+    "kinds": [
+     "P1_reason_cites_L1_but_grade_high"
+    ],
+    "grade": 2,
+    "facts_total": 2,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_107512d3ed43f43f9bd8f45e"
+    ],
+    "block_source": "paper_107512d3ed43f43f9bd8f45e",
+    "reason": "Same paper, same ChCl/GA aqueous DES system with sugar mixture; supports DES composition (L1a/L1b).",
+    "why": "理由引用 L1 规则但等级为 2/3。同论文/同体系的「数据基础」本身可以是 2 级直接证据，理由措辞松不等于等级错——无其他证据时维持原判"
+   },
+   {
+    "query_id": "q_0044",
+    "doc_id": "chk_b57774d3d4688682f7455127",
+    "kinds": [
+     "P1_reason_cites_L1_but_grade_high"
+    ],
+    "grade": 2,
+    "facts_total": 2,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_107512d3ed43f43f9bd8f45e"
+    ],
+    "block_source": "paper_107512d3ed43f43f9bd8f45e",
+    "reason": "Same paper, same sugar mix DES/MIBK system; gives 160°C/10 min conditions (L1a/L1b), though DES ratio differs from 1:3:6.",
+    "why": "理由引用 L1 规则但等级为 2/3。同论文/同体系的「数据基础」本身可以是 2 级直接证据，理由措辞松不等于等级错——无其他证据时维持原判"
+   },
+   {
+    "query_id": "q_0045",
+    "doc_id": "chk_a6c8ba74e59565fc9abca5bd",
+    "kinds": [
+     "P1_reason_cites_L1_but_grade_high"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_fb5f556ebb605bbffb218189"
+    ],
+    "block_source": "paper_fb5f556ebb605bbffb218189",
+    "reason": "L1b: same 2018 review's catalyst-free hydrothermal section; supports catalyst-free hydrothermal context but not the supercritical CO2 simultaneous extraction detail.",
+    "why": "理由引用 L1 规则但等级为 2/3。同论文/同体系的「数据基础」本身可以是 2 级直接证据，理由措辞松不等于等级错——无其他证据时维持原判"
+   }
+  ],
+  "already_corrected": [
+   {
+    "query_id": "q_0007",
+    "doc_id": "chk_566e4ba7fd2e114be1aef258",
+    "kinds": [
+     "P1_reason_cites_L1_but_grade_high"
+    ],
+    "grade_now": 1,
+    "correction": "read_based_spotcheck_correction",
+    "rule": "理由自称 L1b（同一论文的优化方法/数据基础）且明说未给出优化值。L1b 按定义是 1 级，等级与理由矛盾"
+   },
+   {
+    "query_id": "q_0042",
+    "doc_id": "chk_3f69bf6b3a14097bc389e768",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade_now": 2,
+    "correction": "read_based_spotcheck_correction",
+    "rule": "题目有 2 项必需事实（一项来自磷酸法论文、一项来自 DES 论文）。已回读该题全部三级块：内容均为 ChCl/GA DES 体系，只支撑第 2 项，必需事实原文命中 1/2。三级要求单独覆盖全部必需事实，只能判 2"
+   },
+   {
+    "query_id": "q_0042",
+    "doc_id": "chk_4d23c61724b8781b5c07f8ed",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade_now": 2,
+    "correction": "read_based_spotcheck_correction",
+    "rule": "题目有 2 项必需事实（一项来自磷酸法论文、一项来自 DES 论文）。已回读该题全部三级块：内容均为 ChCl/GA DES 体系，只支撑第 2 项，必需事实原文命中 1/2。三级要求单独覆盖全部必需事实，只能判 2"
+   },
+   {
+    "query_id": "q_0042",
+    "doc_id": "chk_4f1003898eb083ea75f9672f",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade_now": 2,
+    "correction": "read_based_spotcheck_correction",
+    "rule": "题目有 2 项必需事实（一项来自磷酸法论文、一项来自 DES 论文）。已回读该题全部三级块：内容均为 ChCl/GA DES 体系，只支撑第 2 项，必需事实原文命中 1/2。三级要求单独覆盖全部必需事实，只能判 2"
+   },
+   {
+    "query_id": "q_0042",
+    "doc_id": "chk_8781e312c8a17f3f184b7414",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade_now": 2,
+    "correction": "read_based_spotcheck_correction",
+    "rule": "题目有 2 项必需事实（一项来自磷酸法论文、一项来自 DES 论文）。已回读该题全部三级块：内容均为 ChCl/GA DES 体系，只支撑第 2 项，必需事实原文命中 1/2。三级要求单独覆盖全部必需事实，只能判 2"
+   },
+   {
+    "query_id": "q_0042",
+    "doc_id": "chk_9f994e2e49ec3c47a5ae2cda",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade_now": 2,
+    "correction": "read_based_spotcheck_correction",
+    "rule": "题目有 2 项必需事实（一项来自磷酸法论文、一项来自 DES 论文）。已回读该题全部三级块：内容均为 ChCl/GA DES 体系，只支撑第 2 项，必需事实原文命中 1/2。三级要求单独覆盖全部必需事实，只能判 2"
+   }
+  ],
+  "needs_user": [
+   {
+    "query_id": "q_0001",
+    "doc_id": "chk_146ef0a2692f27a972ce10dc",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_db1a45d39737c05f08fff0fa"
+    ],
+    "block_source": "paper_db1a45d39737c05f08fff0fa",
+    "reason": "溶剂效应图（Figure 4）反应条件，给出木糖200 mg、离子液体（本文即EMIMBr）1000 mg、SnCl4:木糖=1:10。",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0001",
+    "doc_id": "chk_23a0c15f43bbc31ba51d1d39",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_db1a45d39737c05f08fff0fa"
+    ],
+    "block_source": "paper_db1a45d39737c05f08fff0fa",
+    "reason": "图（Figure 7）反应条件，直接给出木糖200 mg、EMIMBr 1000 mg、SnCl4:木糖=1:10。",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0001",
+    "doc_id": "chk_3802f88572be015e0e26a58d",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_db1a45d39737c05f08fff0fa"
+    ],
+    "block_source": "paper_db1a45d39737c05f08fff0fa",
+    "reason": "温度效应图（Figure 5、6）反应条件，直接给出木糖200 mg、EMIMBr 1000 mg、SnCl4:木糖=1:10。",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0001",
+    "doc_id": "chk_3966d11a350c894b6c9bab9b",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_db1a45d39737c05f08fff0fa"
+    ],
+    "block_source": "paper_db1a45d39737c05f08fff0fa",
+    "reason": "初始木糖负载图（Figure 7）反应条件，直接给出木糖200 mg、EMIMBr 1000 mg、SnCl4:木糖=1:10。",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0001",
+    "doc_id": "chk_a4be2b0e6154e2a3e03a504d",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_db1a45d39737c05f08fff0fa"
+    ],
+    "block_source": "paper_db1a45d39737c05f08fff0fa",
+    "reason": "配对催化剂图（Figure 3）图注反应条件，直接给出木糖200 mg、EMIMBr 1000 mg、催化剂:木糖=1:10。",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0001",
+    "doc_id": "chk_d5a0855a9de310453948713b",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_db1a45d39737c05f08fff0fa"
+    ],
+    "block_source": "paper_db1a45d39737c05f08fff0fa",
+    "reason": "溶剂筛选图（Figure 4）反应条件，给出木糖200 mg、离子液体（本文即EMIMBr）1000 mg、SnCl4:木糖=1:10。",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0001",
+    "doc_id": "chk_de8ed6767b301e54f3952681",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_db1a45d39737c05f08fff0fa"
+    ],
+    "block_source": "paper_db1a45d39737c05f08fff0fa",
+    "reason": "同一篇SnCl4/EMIMBr论文中配对催化剂对比图（Figure 3）的反应条件，直接给出木糖200 mg、EMIMBr 1000 mg、催化剂:木糖=1:10三项核心事实。",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0001",
+    "doc_id": "chk_ee4f714d67d858f105a035d3",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_db1a45d39737c05f08fff0fa"
+    ],
+    "block_source": "paper_db1a45d39737c05f08fff0fa",
+    "reason": "初始木糖负载图（Figure 6）反应条件，直接给出木糖200 mg、EMIMBr 1000 mg、SnCl4:木糖=1:10。",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0003",
+    "doc_id": "chk_eb28ef77eb4b424fe27b2883",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_db1a45d39737c05f08fff0fa"
+    ],
+    "block_source": "paper_db1a45d39737c05f08fff0fa",
+    "reason": "Confirms the same xylan/EMIMBr/SnCl4 130 °C system underlying the yields.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0004",
+    "doc_id": "chk_cac3807d9a18c151af2918db",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_db1a45d39737c05f08fff0fa"
+    ],
+    "block_source": "paper_db1a45d39737c05f08fff0fa",
+    "reason": "Table directly gives furfural yields at 5 mol% (52.4%) and 10 mol% (71.1%) SnCl4, and lower yields at 8 mol%, supporting the increase then decrease.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0007",
+    "doc_id": "chk_4f86dedd60c3fd056c61dc03",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_0cc8554d80109d5ddfe91435"
+    ],
+    "block_source": "paper_0cc8554d80109d5ddfe91435",
+    "reason": "Confirms the optimized reaction time of 1.74 min.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0010",
+    "doc_id": "chk_27e71a7f418b0bd0a2dfe071",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_d1a4e8bfc7c58b30dda482f2"
+    ],
+    "block_source": "paper_d1a4e8bfc7c58b30dda482f2",
+    "reason": "同篇 2023 CMF 论文：陈述 CMF 在不混溶有机溶剂双相体系中连续萃取、分离即为简单相分离，直接给出本题分离方法。",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0010",
+    "doc_id": "chk_4c284eac482a133d335c7ca7",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_d1a4e8bfc7c58b30dda482f2"
+    ],
+    "block_source": "paper_d1a4e8bfc7c58b30dda482f2",
+    "reason": "Directly states CMF separation via in situ extraction into an immiscible organic solvent in biphasic systems.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0010",
+    "doc_id": "chk_f6334e3e233a5be7e5e4b91b",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_d1a4e8bfc7c58b30dda482f2"
+    ],
+    "block_source": "paper_d1a4e8bfc7c58b30dda482f2",
+    "reason": "同篇 2023 CMF 论文：陈述 CMF/糠醛在不混溶有机溶剂双相体系中连续萃取，正是本题所问的分离方法。",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0011",
+    "doc_id": "chk_80cfb9a0ecf7628f4f48e9d3",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_d1a4e8bfc7c58b30dda482f2"
+    ],
+    "block_source": "paper_d1a4e8bfc7c58b30dda482f2",
+    "reason": "Defines the original Bergius highly concentrated acid hydrolysis as a single low-temperature (20 °C) HCl saccharification step.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_0a912b28229092da2e595f18",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_972ce08e4e1d4c13a274afd6",
+    "reason": "块将木质纤维素分馏为 'celluloserich fraction, pentose-rich fraction, and lignin fraction' 三部分，含必需的直接证据（戊糖源自半纤维素，见块后文 'C5-sugars (pentoses) derived from hemicelluloses'），需结合他块完整作答，故为2级。",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_0fdd02015b6eb7d21ac6f9fd",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_81924125a737b5a88e728e25",
+    "reason": "States the three biopolymer components of lignocellulosic biomass.",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_19dc9d277d79c2e2421ec9bf",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_a39f1f9d78514a2f2d7f78be",
+    "reason": "可持续平台综述以纤维素、半纤维素、木质素的分离列举三大组分。",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_1b3adced8f0344654ed5ebfa",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_a39f1f9d78514a2f2d7f78be",
+    "reason": "Independent paper states the three main polymers, comparable evidence (L1c).",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_2664a01ff75abf215f6dbb9d",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_fc29dce759c42c9a91aa8868",
+    "reason": "L1c: different paper independently states the three main polymer components of lignocellulosics, matching the asked facts.",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_3182461b711d1f373bf36ac4",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_81924125a737b5a88e728e25",
+    "reason": "Independent paper states the same three main polymer components.",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_4f283b17046ca64f70a75f0f",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_f0e625aa9a89da78815e3099",
+    "reason": "Names the three main lignocellulosic polymer components, though not attributed to the named 2018 review.",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_5390b5325ecf463c4e9497d7",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_2467240e9bec8a52db54345d",
+    "reason": "2018综述给出典型LCB中纤维素、半纤维素、木质素含量百分比范围。",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_5bdc404aaf3aa2d43a2e88b3",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_f0e625aa9a89da78815e3099",
+    "reason": "Directly names the three biopolymer components.",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_7764b60e09f53eaa5aa68fc6",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_2467240e9bec8a52db54345d",
+    "reason": "2018综述明确说明LCB主要由纤维素、半纤维素和木质素三种生物聚合物组成。",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_837fe3919547666c018f0fcf",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_a23d5abb9f77edeb68352119",
+    "reason": "Another paper independently names the three main biopolymer components of lignocellulosic biomass (L1c comparable statement).",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_949d6e15c39aa1680eb0597e",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_f0e625aa9a89da78815e3099",
+    "reason": "同一绿色氧化综述列举木质素、纤维素、半纤维素为生物质来源组分（举例形式）。",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_9e49aa0e6a155dbc4c439cf7",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_a39f1f9d78514a2f2d7f78be",
+    "reason": "Same paper's own summary naming the three major components (L1b).",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_a4cfb2dac7c22e914f7aa355",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_d5bfa1893984e7871d3fd568",
+    "reason": "同一木质素综述列举纤维素富集固形物、半纤维素与木质素组分减少，给出三大组分。",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_b4a63245687199605240fc88",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_81924125a737b5a88e728e25",
+    "reason": "Independent paper names the three biopolymers cellulose, hemicellulose, and lignin.",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_bd32559701129098222b039e",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_dc3af146aa40e29afdfa9838",
+    "reason": "糠醛综述组成表以纤维素、半纤维素、木质素为列标题枚举三大组分（表格形式列出）。",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_d240b88640bce7f3b815a13f",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_f0e625aa9a89da78815e3099",
+    "reason": "同一绿色氧化综述图注列举纤维素、半纤维素、木质素三大组分（以分离过程描述形式）。",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_dae54923690abc9482389d41",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_a39f1f9d78514a2f2d7f78be",
+    "reason": "States lignocellulosic biomass consists of cellulose, hemicellulose, lignin.",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_df24437e6c790326b9602f5f",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_fc29dce759c42c9a91aa8868",
+    "reason": "Another paper lists the same three components.",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_e40ff27103a7dff6aa294c49",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_dc3af146aa40e29afdfa9838",
+    "reason": "糠醛综述明确指出木质纤维素的三大主要组分为纤维素、半纤维素和木质素。",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_e86a4176f859f6fdd792fe54",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_d5bfa1893984e7871d3fd568",
+    "reason": "Bibliography entry only; no statement of the three polymer components, so it cannot support the answer.",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_e9d4c44e3c2a99de94f93c42",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_d1a4e8bfc7c58b30dda482f2",
+    "reason": "States the three biopolymers of lignocellulose.",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0013",
+    "doc_id": "chk_fa44890380cd28eeddd8114f",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_a23d5abb9f77edeb68352119",
+    "reason": "Explicitly lists the three main polymeric constituents.",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0014",
+    "doc_id": "chk_45a69b0e755aa8b4a0a506fb",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_2467240e9bec8a52db54345d",
+    "reason": "作者贡献段明确把本综述的预处理内容划分为 physical、chemical、physicochemical 与 biological 四部分，单独即可给出问题所问的四类。",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0014",
+    "doc_id": "chk_7764b60e09f53eaa5aa68fc6",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_2467240e9bec8a52db54345d"
+    ],
+    "block_source": "paper_2467240e9bec8a52db54345d",
+    "reason": "引言段直接列出预处理技术所采用的 physical、chemical、physicochemical、biological 四类方法，单独即可回答'分为哪四类'。",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0015",
+    "doc_id": "chk_225788b644ea25f4b634ffb6",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_07f06156408855a516ea618b"
+    ],
+    "block_source": "paper_07f06156408855a516ea618b",
+    "reason": "Confirms 2-MTHF as the organic phase of the biphasic system.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0015",
+    "doc_id": "chk_61fec0ffa9e553e9cc7bc451",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_07f06156408855a516ea618b"
+    ],
+    "block_source": "paper_07f06156408855a516ea618b",
+    "reason": "目标论文图1 图注直接写明 'using water and 2-MTHF as solvents'，单独给出两溶剂。",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0015",
+    "doc_id": "chk_979045fd6bdb126a66d66d75",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_07f06156408855a516ea618b"
+    ],
+    "block_source": "paper_07f06156408855a516ea618b",
+    "reason": "目标论文明确分馏步骤将 2-MTHF 作为第二相加入水相（水+磷酸），单独给出双相介质为水相与 2-MTHF。",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0015",
+    "doc_id": "chk_d669deac9629382e689cfc6a",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_07f06156408855a516ea618b"
+    ],
+    "block_source": "paper_07f06156408855a516ea618b",
+    "reason": "Confirms 2-MTHF as the second liquid phase of the biphasic medium.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0016",
+    "doc_id": "chk_9b27a5144a763ff68f58aa16",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_81924125a737b5a88e728e25"
+    ],
+    "block_source": "paper_81924125a737b5a88e728e25",
+    "reason": "Scheme shows Pd/C used in RCF step yielding phenolic monomers.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0016",
+    "doc_id": "chk_ad5180b277f6e342545badc6",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_81924125a737b5a88e728e25"
+    ],
+    "block_source": "paper_81924125a737b5a88e728e25",
+    "reason": "Table 1 conditions confirm Pd/C catalyst for RCF of Eucalyptus.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0016",
+    "doc_id": "chk_c90f3629e80547c70ed57947",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_81924125a737b5a88e728e25"
+    ],
+    "block_source": "paper_81924125a737b5a88e728e25",
+    "reason": "同篇论文结果段，单块即明确给出：Pd/C 催化 β-O-4 断裂与还原步骤，RCF 以 Pd/C 进行并得到酚类单体收率。",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0016",
+    "doc_id": "chk_cc6f834d38212f53e2cabe1a",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_81924125a737b5a88e728e25"
+    ],
+    "block_source": "paper_81924125a737b5a88e728e25",
+    "reason": "Confirms monomeric phenol products from lignin depolymerization.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0018",
+    "doc_id": "chk_3502598feddaf54c42179cfb",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_07f06156408855a516ea618b"
+    ],
+    "block_source": "paper_07f06156408855a516ea618b",
+    "reason": "Directly states four consecutive phosphoric-acid recovery cycles with constant fractionation efficiency.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0018",
+    "doc_id": "chk_69cf17a7e04566cf89d39367",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_07f06156408855a516ea618b"
+    ],
+    "block_source": "paper_07f06156408855a516ea618b",
+    "reason": "Same paper's recycling experiment details confirming four cycles and constant efficiency.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0019",
+    "doc_id": "chk_867558c7dbce6d47c08806da",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_dc7cbcb44f231c61245467df"
+    ],
+    "block_source": "paper_a39f1f9d78514a2f2d7f78be",
+    "reason": "Independent paper confirms HMF oxidation to FDCA for PEF.",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0019",
+    "doc_id": "chk_a7b4e7413f51520b5850ba43",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_dc7cbcb44f231c61245467df"
+    ],
+    "block_source": "paper_075d9e2d19ead8d2c43d1945",
+    "reason": "L1c: independent paper reporting HMF oxidation to FDCA, the diacid monomer for PEF.",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0019",
+    "doc_id": "chk_cc47e725f63493a672af98c3",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_dc7cbcb44f231c61245467df"
+    ],
+    "block_source": "paper_a39f1f9d78514a2f2d7f78be",
+    "reason": "L1c: independent paper reporting comparable HMF-to-FDCA oxidation evidence.",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0019",
+    "doc_id": "chk_ea12060a5eb8ed047561fe44",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 2,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_dc7cbcb44f231c61245467df"
+    ],
+    "block_source": "paper_f0e625aa9a89da78815e3099",
+    "reason": "L1c: independent paper reporting HMF conversion to FDCA as polymer building block.",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0022",
+    "doc_id": "chk_a2cd446f218bdb4129df1ed3",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_26e277a1fc448ade34584ae3"
+    ],
+    "block_source": "paper_26e277a1fc448ade34584ae3",
+    "reason": "Directly states bottle-grade target Mn >30 kg mol−1, conversion >95%, and color-free product.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0022",
+    "doc_id": "chk_fb761c55ac1450f6784d6f7b",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_26e277a1fc448ade34584ae3"
+    ],
+    "block_source": "paper_26e277a1fc448ade34584ae3",
+    "reason": "Directly states all three bottle-grade criteria: conversion >95%, Mn >30 kg/mol, uncoloured.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0023",
+    "doc_id": "chk_9a11044c6b0a3219c803c306",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_26e277a1fc448ade34584ae3"
+    ],
+    "block_source": "paper_26e277a1fc448ade34584ae3",
+    "reason": "Defines ROP as ring-opening polymerisation for PEF.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0023",
+    "doc_id": "chk_c7386b23f1137ddd583d474b",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_26e277a1fc448ade34584ae3"
+    ],
+    "block_source": "paper_26e277a1fc448ade34584ae3",
+    "reason": "Defines ROP and identifies purified cyclic oligomers as direct feedstock.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0024",
+    "doc_id": "chk_305f10f1a75a63236a4c181e",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_107512d3ed43f43f9bd8f45e"
+    ],
+    "block_source": "paper_107512d3ed43f43f9bd8f45e",
+    "reason": "Same paper's abstract, states DES used without additional catalyst, supporting the dual role.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0027",
+    "doc_id": "chk_076b9346fadb8e7dee5524c6",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_81924125a737b5a88e728e25"
+    ],
+    "block_source": "paper_81924125a737b5a88e728e25",
+    "reason": "Same 2020 Eucalyptus grandis integrated biorefinery paper; reports highest phenolic monomer yield (49.8 wt%) under RCF, the condition the question asks about.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0027",
+    "doc_id": "chk_50015abd498d99b96ac574fd",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_81924125a737b5a88e728e25"
+    ],
+    "block_source": "paper_65e9cfe7da55d5c5714aeb00",
+    "reason": "L1c: different paper, comparable optimization run; reports temperature/time for furfural yield, not the Eucalyptus RCF phenolic condition.",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0027",
+    "doc_id": "chk_c90f3629e80547c70ed57947",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_81924125a737b5a88e728e25"
+    ],
+    "block_source": "paper_81924125a737b5a88e728e25",
+    "reason": "Directly reports the maximum phenolic monomer yield (49.8 wt%) under 240 °C, 4 h, H2, matching the asked temperature/time/H2 conditions.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0028",
+    "doc_id": "chk_fd754a50c4f3510f7ef443fc",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_81924125a737b5a88e728e25"
+    ],
+    "block_source": "paper_81924125a737b5a88e728e25",
+    "reason": "Directly states the optimized temperature and residence time for joint carbohydrate conversion in the 2020 Eucalyptus grandis study.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0029",
+    "doc_id": "chk_1e3eaec5bd452ddb3b9a4006",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_107512d3ed43f43f9bd8f45e"
+    ],
+    "block_source": "paper_107512d3ed43f43f9bd8f45e",
+    "reason": "Same paper's birch sawdust section confirms 170°C/10 min optimum for sawdust.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0029",
+    "doc_id": "chk_e769e00a4aa1cbe71b7a02cf",
+    "kinds": [
+     "section8_needs_adjudication"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_107512d3ed43f43f9bd8f45e"
+    ],
+    "block_source": "paper_0cc8554d80109d5ddfe91435",
+    "reason": "Different DES system (malic acid/LiBr), but comparable furfural run conditions for contrast.",
+    "why": "题面确已点名来源，但「该块是否引述/归因于该文献」未能验证——需要读原文裁决，不能按 source_group 差异降级"
+   },
+   {
+    "query_id": "q_0032",
+    "doc_id": "chk_ae427d946654a90bad529088",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_1910bac59c2e4dc660743b72"
+    ],
+    "block_source": "paper_1910bac59c2e4dc660743b72",
+    "reason": "Directly states large surface area, enhanced furfural adsorption, and highly dispersed Pt nanoparticles as causes of improved activity.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0035",
+    "doc_id": "chk_076b9346fadb8e7dee5524c6",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_81924125a737b5a88e728e25"
+    ],
+    "block_source": "paper_81924125a737b5a88e728e25",
+    "reason": "Directly states the furfural and levulinic acid yields under the optimized co-conversion condition.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0035",
+    "doc_id": "chk_aab52ea69a4faea507a0a623",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_81924125a737b5a88e728e25"
+    ],
+    "block_source": "paper_81924125a737b5a88e728e25",
+    "reason": "Directly reports the furfural and levulinic acid yields under the optimal co-conversion condition.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0035",
+    "doc_id": "chk_fd754a50c4f3510f7ef443fc",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_81924125a737b5a88e728e25"
+    ],
+    "block_source": "paper_81924125a737b5a88e728e25",
+    "reason": "Directly reports the optimal co-conversion condition and both furfural and levulinic acid yields for Eucalyptus grandis integrated biorefinery.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0039",
+    "doc_id": "chk_3e0dc46c1ee855297b3d0bd3",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 3,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_1910bac59c2e4dc660743b72"
+    ],
+    "block_source": "paper_1910bac59c2e4dc660743b72",
+    "reason": "Directly gives bulk 5%Pt@CN 60.9% conversion and 5%Pt@TECN >99% conversion/>99% selectivity after 5 h in water at 100 °C, 1.0 MPa H2.",
+    "why": "三级但必需事实原文命中 0/3。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0039",
+    "doc_id": "chk_9326f8e75cf43d68ec9232fb",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 3,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_1910bac59c2e4dc660743b72"
+    ],
+    "block_source": "paper_1910bac59c2e4dc660743b72",
+    "reason": "Directly reports the 5 h, 100 °C, 1 MPa H2 water run over Pt/g-C3N4 nanosheet (TECN) catalyst with >99% conversion and >99% furfuryl alcohol selectivity.",
+    "why": "三级但必需事实原文命中 0/3。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0041",
+    "doc_id": "chk_61fec0ffa9e553e9cc7bc451",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 3,
+    "facts_quote_hits": 1,
+    "named_source": [
+     "paper_07f06156408855a516ea618b",
+     "paper_81924125a737b5a88e728e25"
+    ],
+    "block_source": "paper_07f06156408855a516ea618b",
+    "reason": "Directly states phosphoric acid reuse after phase separation and water evaporation, matching f1.",
+    "why": "三级但必需事实原文命中 1/3。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0041",
+    "doc_id": "chk_6f9e1ddf4e91431e9cfc6c46",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 3,
+    "facts_quote_hits": 2,
+    "named_source": [
+     "paper_07f06156408855a516ea618b",
+     "paper_81924125a737b5a88e728e25"
+    ],
+    "block_source": "paper_81924125a737b5a88e728e25",
+    "reason": "Directly reports Pd/C for lignin depolymerization and FeCl3 for the retained sugar pulp, matching f2 and f3.",
+    "why": "三级但必需事实原文命中 2/3。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0043",
+    "doc_id": "chk_6f9e1ddf4e91431e9cfc6c46",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 3,
+    "facts_quote_hits": 2,
+    "named_source": [
+     "paper_07f06156408855a516ea618b",
+     "paper_81924125a737b5a88e728e25"
+    ],
+    "block_source": "paper_81924125a737b5a88e728e25",
+    "reason": "Directly supports Pd/C lignin-to-phenols and FeCl3 conversion of the sugar pulp to HMF, levulinic acid and furfural (f1, f2).",
+    "why": "三级但必需事实原文命中 2/3。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0044",
+    "doc_id": "chk_eec4496762bf30d4c915fc71",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 2,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_107512d3ed43f43f9bd8f45e"
+    ],
+    "block_source": "paper_107512d3ed43f43f9bd8f45e",
+    "reason": "Directly states ChCl/GA aqueous DES, 160°C, 10 min, MIBK for glucose/xylose mixture; no added catalyst.",
+    "why": "三级但必需事实原文命中 0/2。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0047",
+    "doc_id": "chk_6aa49b56f23286eccb100a58",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 1,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_107512d3ed43f43f9bd8f45e"
+    ],
+    "block_source": "paper_107512d3ed43f43f9bd8f45e",
+    "reason": "Same paper, ChCl/GA DES system; supports the DES-structure context though the water wt% is in the abstract.",
+    "why": "三级但必需事实原文命中 0/1。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0049",
+    "doc_id": "chk_10c3ee898756bb2a39517650",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 3,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_011ca528ac79df213a3fc8ff"
+    ],
+    "block_source": "paper_011ca528ac79df213a3fc8ff",
+    "reason": "Directly supports preferential C–OH adsorption on Nb sites of Pt1/Nb2O5-Ov.",
+    "why": "三级但必需事实原文命中 0/3。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0049",
+    "doc_id": "chk_1ed219cb4bb3138cf0b467a4",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 3,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_011ca528ac79df213a3fc8ff"
+    ],
+    "block_source": "paper_011ca528ac79df213a3fc8ff",
+    "reason": "Confirms Pt activates H2, Nb activates C–OH (f2).; Supports >99% MF selectivity at complete conversion (f3).",
+    "why": "三级但必需事实原文命中 0/3。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0049",
+    "doc_id": "chk_df78a5c435d9c7f4639ab865",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 3,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_011ca528ac79df213a3fc8ff"
+    ],
+    "block_source": "paper_011ca528ac79df213a3fc8ff",
+    "reason": "Directly reports >99% MF selectivity at complete conversion (f3).",
+    "why": "三级但必需事实原文命中 0/3。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0049",
+    "doc_id": "chk_f073e3273982f5a713fc56f3",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 3,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_011ca528ac79df213a3fc8ff"
+    ],
+    "block_source": "paper_011ca528ac79df213a3fc8ff",
+    "reason": "Directly gives preferential C–OH adsorption and Pt/Nb division of labor (Pt splits H2, Nb binds C–OH) for MF selectivity.",
+    "why": "三级但必需事实原文命中 0/3。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0050",
+    "doc_id": "chk_1ed219cb4bb3138cf0b467a4",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 3,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_011ca528ac79df213a3fc8ff"
+    ],
+    "block_source": "paper_011ca528ac79df213a3fc8ff",
+    "reason": "Directly states Pt activates H2 and Nb activates C-OH, and links site functions to MF selectivity.",
+    "why": "三级但必需事实原文命中 0/3。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   },
+   {
+    "query_id": "q_0050",
+    "doc_id": "chk_df78a5c435d9c7f4639ab865",
+    "kinds": [
+     "P4_grade3_partial_fact_quote_hits"
+    ],
+    "grade": 3,
+    "facts_total": 3,
+    "facts_quote_hits": 0,
+    "named_source": [
+     "paper_011ca528ac79df213a3fc8ff"
+    ],
+    "block_source": "paper_011ca528ac79df213a3fc8ff",
+    "reason": "Reports >99% MF selectivity at complete conversion for the SAC.",
+    "why": "三级但必需事实原文命中 0/3。命中不足只是定位信号（事实可换措辞），需读原块判断，不据此降级"
+   }
+  ]
+ }
+}

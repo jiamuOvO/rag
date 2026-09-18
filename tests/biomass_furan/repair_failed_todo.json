@@ -1,0 +1,215 @@
+[
+ {
+  "label": "q_0060_batch_06",
+  "query_id": "q_0060",
+  "blocks": 5,
+  "reason": "perblock:omitted_or_invented_ids",
+  "response_ids": [
+   "ba769d66054a5e9d",
+   "676b153b3661e432",
+   "559751194820ef9d",
+   "da96fed0ae9a3bdf"
+  ]
+ },
+ {
+  "label": "q_0005_batch_03",
+  "query_id": "q_0005",
+  "blocks": 5,
+  "reason": "perblock:other:Unsupported model evidence quotation",
+  "response_ids": [
+   "eb55c337c5db923d",
+   "8616d965eeab0815",
+   "0aba1a06f5302d54"
+  ]
+ },
+ {
+  "label": "q_0011_batch_01",
+  "query_id": "q_0011",
+  "blocks": 5,
+  "reason": "perblock:other:Unsupported model evidence quotation",
+  "response_ids": [
+   "f7dbd51e26830637",
+   "0ceb203be175cf68"
+  ]
+ },
+ {
+  "label": "q_0013_batch_10",
+  "query_id": "q_0013",
+  "blocks": 5,
+  "reason": "perblock:omitted_or_invented_ids",
+  "response_ids": [
+   "c4d13503e92fedd6",
+   "42b001a4f26b3f0d"
+  ]
+ },
+ {
+  "label": "q_0018_batch_03",
+  "query_id": "q_0018",
+  "blocks": 5,
+  "reason": "perblock:omitted_or_invented_ids",
+  "response_ids": [
+   "47f603aaab86e9c0",
+   "d8c95ef3324f378b"
+  ]
+ },
+ {
+  "label": "q_0018_batch_04",
+  "query_id": "q_0018",
+  "blocks": 5,
+  "reason": "perblock:omitted_or_invented_ids",
+  "response_ids": [
+   "f7c9cbc33dedf8f3",
+   "caf0bdb76cff5732"
+  ]
+ },
+ {
+  "label": "q_0021_batch_03",
+  "query_id": "q_0021",
+  "blocks": 5,
+  "reason": "perblock:omitted_or_invented_ids",
+  "response_ids": [
+   "3380232a7d381fae",
+   "9c1d05b374706981"
+  ]
+ },
+ {
+  "label": "q_0022_batch_02",
+  "query_id": "q_0022",
+  "blocks": 5,
+  "reason": "perblock:other:Unsupported model evidence quotation",
+  "response_ids": [
+   "00d08620ba6f0cd6",
+   "5031e818ee7cceb8"
+  ]
+ },
+ {
+  "label": "q_0028_batch_05",
+  "query_id": "q_0028",
+  "blocks": 5,
+  "reason": "perblock:other:Unsupported model evidence quotation",
+  "response_ids": [
+   "54c9aff6f6de29a0",
+   "128b7b8c087dae35"
+  ]
+ },
+ {
+  "label": "q_0034_batch_05",
+  "query_id": "q_0034",
+  "blocks": 5,
+  "reason": "perblock:omitted_or_invented_ids",
+  "response_ids": [
+   "8ce563935fa691b8",
+   "ec954b7d59c3c86b"
+  ]
+ },
+ {
+  "label": "q_0035_batch_03",
+  "query_id": "q_0035",
+  "blocks": 5,
+  "reason": "perblock:other:Unsupported model evidence quotation",
+  "response_ids": [
+   "244df4b1a0be8d71",
+   "ef3f96b047283162"
+  ]
+ },
+ {
+  "label": "q_0037_batch_02",
+  "query_id": "q_0037",
+  "blocks": 5,
+  "reason": "perblock:missing_or_invalid_grades",
+  "response_ids": [
+   "9ce02092f50a6d43",
+   "d3696183c9fac277"
+  ]
+ },
+ {
+  "label": "q_0038_batch_05",
+  "query_id": "q_0038",
+  "blocks": 5,
+  "reason": "perblock:json_not_decodable",
+  "response_ids": [
+   "f10728e0ce0e305a",
+   "235f978550ef6a7e"
+  ]
+ },
+ {
+  "label": "q_0039_batch_07",
+  "query_id": "q_0039",
+  "blocks": 2,
+  "reason": "perblock:omitted_or_invented_ids",
+  "response_ids": [
+   "ee516cc6e0d727ea",
+   "a378525318764105"
+  ]
+ },
+ {
+  "label": "q_0041_batch_02",
+  "query_id": "q_0041",
+  "blocks": 5,
+  "reason": "perblock:omitted_or_invented_ids",
+  "response_ids": [
+   "a4c12858dd16de70",
+   "eb46ac8d1928cfbf"
+  ]
+ },
+ {
+  "label": "q_0042_batch_02",
+  "query_id": "q_0042",
+  "blocks": 5,
+  "reason": "perblock:json_not_decodable",
+  "response_ids": [
+   "eb45fb3b10e2e24c",
+   "8000052f94e08fbd"
+  ]
+ },
+ {
+  "label": "q_0043_batch_04",
+  "query_id": "q_0043",
+  "blocks": 5,
+  "reason": "perblock:other:Unsupported model evidence quotation",
+  "response_ids": [
+   "1a45d258377626cd",
+   "21bc3c35385074a7"
+  ]
+ },
+ {
+  "label": "q_0044_batch_03",
+  "query_id": "q_0044",
+  "blocks": 5,
+  "reason": "perblock:missing_or_invalid_grades",
+  "response_ids": [
+   "2ead66b670842add",
+   "b88083e52ce16734"
+  ]
+ },
+ {
+  "label": "q_0044_batch_04",
+  "query_id": "q_0044",
+  "blocks": 5,
+  "reason": "perblock:missing_evidence_for_nonzero",
+  "response_ids": [
+   "5b10c6d7aad35aff",
+   "7cd4f0a7bf90ef3c"
+  ]
+ },
+ {
+  "label": "q_0045_batch_04",
+  "query_id": "q_0045",
+  "blocks": 5,
+  "reason": "perblock:omitted_or_invented_ids",
+  "response_ids": [
+   "fea03e9b709e9c17",
+   "11787fe549d7e479"
+  ]
+ },
+ {
+  "label": "q_0049_batch_05",
+  "query_id": "q_0049",
+  "blocks": 2,
+  "reason": "perblock:other:Unsupported model evidence quotation",
+  "response_ids": [
+   "fd3feac264af4671",
+   "491defbfbb40a4db"
+  ]
+ }
+]

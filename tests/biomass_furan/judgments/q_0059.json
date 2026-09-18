@@ -1,0 +1,242 @@
+{
+ "query_id": "q_0059",
+ "judgments": [
+  {
+   "query_id": "q_0059",
+   "doc_id": "chk_0391e49a61623b735675c552",
+   "relevance": 3,
+   "reason": "Directly gives the photocatalytic glucose-to-HMF feedstock, Al3+/fulvic acid catalyst, solar light and 80 °C conditions.",
+   "evidence_quotes": [
+    "0.01 M Al(NO3)3 ∙9H2O, 8 g L−1 FA, 0.1 M D-glucose in 2 mL of DMSO, 1.2 W cm−2 of halogen light intensity (400–800 nm wavelength), 80 °C reaction temperature, an argon atmosphere of 1 bar"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "1ffb398bcd1cadf80848ed4925073160a17448e54cb3f8b17db8c8e63d1198f5"
+  },
+  {
+   "query_id": "q_0059",
+   "doc_id": "chk_1e2971b44f0a7fc02acdced8",
+   "relevance": 2,
+   "reason": "Same paper as the single-atom HMF-to-MF study; provides mechanistic/experimental context on Pt1/Nb2O5-Ov hydrogenation, but not the H2/reductant condition numbers.",
+   "evidence_quotes": [
+    "MF was also used as the substrate to check the performance of Pt1/Nb2O5-Ov. MF could not be converted over the Pt1/Nb2O5Ov (Supplementary Table 4), indicating that it is not active for the hydrogenation of C=O, which is the main reason for the high selectivity of MF."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0ab9b98d12d793286ba5b7c5053e655bcabe46c7e6a5163eaa40fa1c92a294ae"
+  },
+  {
+   "query_id": "q_0059",
+   "doc_id": "chk_4e85cadb6c8ea789e2188b2a",
+   "relevance": 0,
+   "reason": "doc0: same paper, acknowledgements/author contributions, unrelated topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "ac8f6a24c0011106809ee57f9fff0ce7211d0365fbcbfa33d8e78a17e011332f"
+  },
+  {
+   "query_id": "q_0059",
+   "doc_id": "chk_86bc4e0d1009b89cf8767515",
+   "relevance": 2,
+   "reason": "L1b: same paper's experimental HMF-to-MF conversion/selectivity data, supporting the hydrogenation step.",
+   "evidence_quotes": [
+    "The conversion of HMF approached 100% at 4 h. Moreover, even the reaction time was prolonged to 6 h, the selectivity of MF was still >99%."
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "1ffb398bcd1cadf80848ed4925073160a17448e54cb3f8b17db8c8e63d1198f5"
+  },
+  {
+   "query_id": "q_0059",
+   "doc_id": "chk_86dc8cb532b70edbb11eecd2",
+   "relevance": 2,
+   "reason": "Directly reports the photocatalytic system: Al3+/fulvic acid, glucose feedstock, HMF product, solar/visible light at 80 °C.",
+   "evidence_quotes": [
+    "In the present study, we found that mixtures of Al3+ and fulvic acid (FA, a class of abundant natural compounds found in soil, peat, and coal) in dimethyl sulfoxide (DMSO) solution, with the proper ratios of FA to Al3+ exhibit significant visible light absorption. The absorption promotes catalytic performance for D-glucose dehydration at 80 °C without additional acids."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0ab9b98d12d793286ba5b7c5053e655bcabe46c7e6a5163eaa40fa1c92a294ae"
+  },
+  {
+   "query_id": "q_0059",
+   "doc_id": "chk_944ef7a010f0d746e3fe8beb",
+   "relevance": 1,
+   "reason": "L1a: same Al3+/polyphenol photocatalytic glucose system, different temperature/light conditions; supports feedstock and light-driven conditions.",
+   "evidence_quotes": [
+    "Reaction conditions: 0.01 M Al(NO3)3 ∙9H2O, 8 mg of additives, 0.1 M D-glucose/DMSO, the reactions proceed under 440 ± 5 nm LED light with a light intensity of 0.45 W cm−2 at 70 °C for 20 h in an argon atmosphere of 1 bar."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "ac8f6a24c0011106809ee57f9fff0ce7211d0365fbcbfa33d8e78a17e011332f"
+  },
+  {
+   "query_id": "q_0059",
+   "doc_id": "chk_97fec08b86924d7c41e8656c",
+   "relevance": 2,
+   "reason": "Same 2023 photocatalytic paper; reports sunlight-driven glucose-to-HMF yield, supporting the light/energy condition and product.",
+   "evidence_quotes": [
+    "An HMF yield of 43% was obtained under these conditions (Table 1, entry 18)."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0ab9b98d12d793286ba5b7c5053e655bcabe46c7e6a5163eaa40fa1c92a294ae"
+  },
+  {
+   "query_id": "q_0059",
+   "doc_id": "chk_a4b508537c897114032882d3",
+   "relevance": 1,
+   "reason": "L1d: explains the H2 activation mechanism in the Pt1/Nb2O5-Ov system without giving the asked reaction conditions.",
+   "evidence_quotes": [
+    "The Pt atom was responsible for the activation of H2 and the Nb sites activated C–OH."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0ab9b98d12d793286ba5b7c5053e655bcabe46c7e6a5163eaa40fa1c92a294ae"
+  },
+  {
+   "query_id": "q_0059",
+   "doc_id": "chk_ca518f4edea642ce661c7f9b",
+   "relevance": 2,
+   "reason": "Directly reports the 2021 Pt1/Nb2O5-Ov system: HMF feedstock, H2 reductant, MF product, with conditions.",
+   "evidence_quotes": [
+    "aReaction conditions: HMF (0.3 mmol), catalyst (20 mg), solvent (THF 2 mL), reaction temperature (160 °C), H2 pressure (4.0 MPa), reaction time (4 h), stirring speed (600 rpm)."
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "ac8f6a24c0011106809ee57f9fff0ce7211d0365fbcbfa33d8e78a17e011332f"
+  },
+  {
+   "query_id": "q_0059",
+   "doc_id": "chk_db7ccbd7968a2b82d5bb3e1a",
+   "relevance": 1,
+   "reason": "L1b: same paper's method/data basis, describes glucose-to-HMF photocatalytic system but lacks the 80°C/60% numbers.",
+   "evidence_quotes": [
+    "The complexes of Al3+ and polyphenols the best catalyst for converting glucose to HMF as they achieved excellent yields at low reaction temperatures without requiring additional acid."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "ac8f6a24c0011106809ee57f9fff0ce7211d0365fbcbfa33d8e78a17e011332f"
+  },
+  {
+   "query_id": "q_0059",
+   "doc_id": "chk_e5803672c0ec495b3a48c07f",
+   "relevance": 2,
+   "reason": "L1b: same paper's catalyst characterization, supports Pt1/Nb2O5-Ov identity but not the HMF-to-MF reaction conditions.",
+   "evidence_quotes": [
+    "The content of Pt in Pt1/Nb2O5-Ov was 0.039 wt%, which was analyzed by inductively coupled plasma (ICP) mass spectrometry."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "1ffb398bcd1cadf80848ed4925073160a17448e54cb3f8b17db8c8e63d1198f5"
+  },
+  {
+   "query_id": "q_0059",
+   "doc_id": "chk_e5df285a82ade082a60c09d9",
+   "relevance": 1,
+   "reason": "L1b: same paper, method/data source for Pt1/Nb2O5-Ov hydrogenation, but substrate scope rather than the HMF-to-MF H2 condition.",
+   "evidence_quotes": [
+    "The selectivity of different substrates with OH and CHO over Pt1/Nb2O5-Ov were investigated and the results are given in Supplementary Table 5."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0ab9b98d12d793286ba5b7c5053e655bcabe46c7e6a5163eaa40fa1c92a294ae"
+  },
+  {
+   "query_id": "q_0059",
+   "doc_id": "chk_e99a090e45357de917d22420",
+   "relevance": 2,
+   "reason": "Directly states HMF-to-MF hydrogenation over Pt1/Nb2O5-Ov with H2 activation, the second half of the tandem question.",
+   "evidence_quotes": [
+    "they could efficiently catalyze selective hydrogenation of HMF to MF with >99% selectivity at complete conversion. The density function theory (DFT) calculations and experimental results indicated that the unusual feature of the catalysts for the reaction resulted from the excellent cooperation of the Pt and Nb sites. The Pt sites were responsible for the activation of H2"
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "1ffb398bcd1cadf80848ed4925073160a17448e54cb3f8b17db8c8e63d1198f5"
+  },
+  {
+   "query_id": "q_0059",
+   "doc_id": "chk_f073e3273982f5a713fc56f3",
+   "relevance": 2,
+   "reason": "L1b: same paper's mechanistic data basis for HMF hydrogenation with H2 over Pt1/Nb2O5-Ov.",
+   "evidence_quotes": [
+    "the C–OH of HMF adsorbed on Nb sites, and then H2 adsorbed on Pt was readily split into two H species."
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "1ffb398bcd1cadf80848ed4925073160a17448e54cb3f8b17db8c8e63d1198f5"
+  },
+  {
+   "query_id": "q_0059",
+   "doc_id": "chk_ff9e8673acdd08bbb5789e00",
+   "relevance": 1,
+   "reason": "L1b: same paper's performance data basis for the Al3+/FA photocatalytic glucose-to-HMF system.",
+   "evidence_quotes": [
+    "HMF yields and reaction temperatures of glucose conversion achieved with FA(polyphenol)-Al3+ photocatalysts and thermal catalysts reported in the literature."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "ac8f6a24c0011106809ee57f9fff0ce7211d0365fbcbfa33d8e78a17e011332f"
+  }
+ ]
+}

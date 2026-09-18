@@ -1,0 +1,346 @@
+{
+ "query_id": "q_0041",
+ "judgments": [
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_076b9346fadb8e7dee5524c6",
+   "relevance": 2,
+   "reason": "Directly reports the Eucalyptus two-step catalysts: Pd/C for lignin depolymerization (RCF) and FeCl3 for the carbohydrate pulp, supporting f2 and f3; does not cover the phosphoric acid catalyst recycling (f1).",
+   "evidence_quotes": [
+    "A mass balance of the RCF combined with FeCl3 catalysis\nA process mass balance of the combination of RCF with \nFeCl3 catalysis was described based on 1.0 g of dried \nEucalyptus (Fig. 7). Under optimized conditions, lignin \ncomponent (ca. 269 mg) in biomass matrix can be depolymerized into monomers (134 mg), dimers and oligomers through RCF process, which could be solubilized in \nmethanol. Under such a condition, the leftover solid \nresidue, contained cellulose (343 mg), hemicellulose \n(133 mg) and Pd/C catalyst. Upon the treatment of FeCl3, \nthe leftover carbohydrate pulp yielded furfural (74 mg) \nand levulinic acid (252 mg) in an integrated version."
+   ],
+   "fact_ids": [
+    "f2",
+    "f3"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "235a156b47fe2783994323c374b356de13be73210877ac012cfeac7c5da88e7c"
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_1041eb27a0e8140b023b5f68",
+   "relevance": 0,
+   "reason": "doc0,1,2,3: bibliography reference lists only, no experimental content",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "235a156b47fe2783994323c374b356de13be73210877ac012cfeac7c5da88e7c"
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_1ac4e0f95717f6390272b17e",
+   "relevance": 0,
+   "reason": "doc0: bibliography entry only; doc1: same paper but no phosphoric acid; doc2: unrelated electrosynthesis review; doc3: unrelated levulinate review; doc4: different HMF process, no phosphoric acid",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0511f95723fe35703e209a451ed0ef285efba1090262d1eae4b38c8cd7c4d051"
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_1ec552727ae59cc68862b78b",
+   "relevance": 0,
+   "reason": "doc0,1,2,3: bibliography reference lists only, no experimental content",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "235a156b47fe2783994323c374b356de13be73210877ac012cfeac7c5da88e7c"
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_239ee83543f5d89977f53bcd",
+   "relevance": 0,
+   "reason": "doc0,1,2,3: bibliography reference lists only, no experimental content",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "235a156b47fe2783994323c374b356de13be73210877ac012cfeac7c5da88e7c"
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_33bf357cd18670d0d2ca2b34",
+   "relevance": 2,
+   "reason": "L1b: same paper's method; directly supports Pd/C for lignin depolymerization step.",
+   "evidence_quotes": [
+    "A proposed pathway to the major products included the cleavage of C–O bonds in β-O-4 linkages leading to monolignols and subsequent reduction of C=C bonds, and both steps would be catalyzed by Pd/C."
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "Agent_review_completed",
+   "answerability_conflict": false,
+   "raw_response_id": "389b62a2a1166b7e7c378f64fa141692ba56ef6a28532ac6380136e1e83b597b",
+   "review_note": "3 项必需事实中直接支持 1 项 → 维持 2",
+   "review_verdict": "部分"
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_4d64d1d6550a1bfb892b117e",
+   "relevance": 0,
+   "reason": "doc2: bibliography list on levulinate esters; doc3,4: reference lists, unrelated polymer topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_61fec0ffa9e553e9cc7bc451",
+   "relevance": 2,
+   "reason": "Directly states phosphoric acid reuse after phase separation and water evaporation, matching f1.",
+   "evidence_quotes": [
+    "After phase separation and water evaporation, the phosphoric acid can\nbe reused."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 2,
+    "changed": true,
+    "explanation": "该题是跨两篇文献的比较题（题目点名的两个来源分别为磷酸法论文与 Eucalyptus 论文）。本块全部内容来自 paper_07f06156408855a516ea618b，只覆盖必需事实 1（相分离与水蒸发后磷酸回用）；必需事实 2、3 属另一篇论文，块内不存在。3 项中命中 1 项 → 2。旧判 3 过高（跨文献题单篇块不可能覆盖全部必需事实）。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_66a6546be5c3b453a89369bc",
+   "relevance": 0,
+   "reason": "doc0: bibliography entry only; doc1: same paper but no phosphoric acid; doc2: unrelated electrosynthesis review; doc3: unrelated levulinate review; doc4: different HMF process, no phosphoric acid",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0511f95723fe35703e209a451ed0ef285efba1090262d1eae4b38c8cd7c4d051"
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_6d32ba028fd957e30f54513f",
+   "relevance": 0,
+   "reason": "doc2: bibliography list on levulinate esters; doc3,4: reference lists, unrelated polymer topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_6f9e1ddf4e91431e9cfc6c46",
+   "relevance": 2,
+   "reason": "Directly reports Pd/C for lignin depolymerization and FeCl3 for the retained sugar pulp, matching f2 and f3.",
+   "evidence_quotes": [
+    "Lignin was depolymerized into well-defined monomeric phenols in the first step using a Pd/C catalyst. ... High retention of cellulose and hemicellulose pulp was also obtained, which was treated with FeCl3 catalyst"
+   ],
+   "fact_ids": [
+    "f2",
+    "f3"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 2,
+    "changed": true,
+    "explanation": "本块为 paper_81924125a737b5a88e728e25 的标题与摘要，逐字覆盖必需事实 2（Pd/C 解聚木质素）与必需事实 3（FeCl3 处理保留糖浆料得 HMF/乙酰丙酸/糠醛）；必需事实 1 属另一篇磷酸法论文，块内不存在。3 项命中 2 项 → 2。旧判 3 过高。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_70ed1f72e9e8fd9a335099ec",
+   "relevance": 0,
+   "reason": "doc0: bibliography entry only; doc1: same paper but no phosphoric acid; doc2: unrelated electrosynthesis review; doc3: unrelated levulinate review; doc4: different HMF process, no phosphoric acid",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0511f95723fe35703e209a451ed0ef285efba1090262d1eae4b38c8cd7c4d051"
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_989eb01a650b8259e180308b",
+   "relevance": 0,
+   "reason": "doc2: bibliography list on levulinate esters; doc3,4: reference lists, unrelated polymer topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_9b27a5144a763ff68f58aa16",
+   "relevance": 0,
+   "reason": "doc0: bibliography entry only; doc1: same paper but no phosphoric acid; doc2: unrelated electrosynthesis review; doc3: unrelated levulinate review; doc4: different HMF process, no phosphoric acid",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0511f95723fe35703e209a451ed0ef285efba1090262d1eae4b38c8cd7c4d051"
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_aab52ea69a4faea507a0a623",
+   "relevance": 2,
+   "reason": "Direct evidence for FeCl3 treatment of carbohydrate pulp (f3); also names Pd/C catalyst.",
+   "evidence_quotes": [
+    "Then, FeCl3 was used to convert the cellulose and hemicellulose in carbohydrate pulp to 5-HMF, LA and furfural simultaneously."
+   ],
+   "fact_ids": [
+    "f3"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "e103e94df969a1a7c8f4fffbe3eadbd9a37f25bfc1daa80bcf04a013924f950f"
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_b4a63245687199605240fc88",
+   "relevance": 1,
+   "reason": "L1b: same paper's method overview; names FeCl3 second step but not Pd/C first step.",
+   "evidence_quotes": [
+    "A two-step process (reductive catalytic fractionation followed by FeCl3 catalysis) allows the fractiona‐\ntion of all the three biopolymers (cellulose, hemicellulose, and lignin) in Eucalyptus biomass"
+   ],
+   "fact_ids": [
+    "f3"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "389b62a2a1166b7e7c378f64fa141692ba56ef6a28532ac6380136e1e83b597b"
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_c6e48a1b2386231815fcfc74",
+   "relevance": 0,
+   "reason": "doc0: bibliography only; doc1: different paper, Cu catalyst, no phosphoric acid or FeCl3",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "389b62a2a1166b7e7c378f64fa141692ba56ef6a28532ac6380136e1e83b597b"
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_d10851fbdfeb17dd8639fcec",
+   "relevance": 2,
+   "reason": "L1b: same paper's method; supports phosphoric acid recycling.",
+   "evidence_quotes": [
+    "Importantly, the integrated concept enables the straightforward recycling of phosphoric acid, water, and solvent, thus adding promising features for its future practical implementation."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "Agent_review_completed",
+   "answerability_conflict": false,
+   "raw_response_id": "389b62a2a1166b7e7c378f64fa141692ba56ef6a28532ac6380136e1e83b597b",
+   "review_note": "仅一项部分有据 → 维持 2",
+   "review_verdict": "部分"
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_da90ccd992bba409a603c7da",
+   "relevance": 0,
+   "reason": "doc0: bibliography entry only; doc1: same paper but no phosphoric acid; doc2: unrelated electrosynthesis review; doc3: unrelated levulinate review; doc4: different HMF process, no phosphoric acid",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0511f95723fe35703e209a451ed0ef285efba1090262d1eae4b38c8cd7c4d051"
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_db6913662069098f6ee74d67",
+   "relevance": 0,
+   "reason": "doc0,1,2,3: bibliography reference lists only, no experimental content",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "235a156b47fe2783994323c374b356de13be73210877ac012cfeac7c5da88e7c"
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_e49d2fbc252819a326e878a5",
+   "relevance": 0,
+   "reason": "doc0: bibliography only; doc1: different paper, Cu catalyst, no phosphoric acid or FeCl3",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "389b62a2a1166b7e7c378f64fa141692ba56ef6a28532ac6380136e1e83b597b"
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_fce8c696e1dde260b93bd71e",
+   "relevance": 2,
+   "reason": "Direct evidence for Pd/C lignin depolymerization (f2) and FeCl3 sugar conversion (f3).",
+   "evidence_quotes": [
+    "we used Pd/C as a catalyst to treat Eucalyptus sawdust, thus resulting in 4-propanol guaiacol/syringol with high yield from depolymerization of lignin component. High retention of cellulose and hemicellulose pulp was also obtained, which on the treatment with cheaply available FeCl3 catalyst led to the formation of 5-HMF, LA and furfural simultaneously."
+   ],
+   "fact_ids": [
+    "f2",
+    "f3"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "e103e94df969a1a7c8f4fffbe3eadbd9a37f25bfc1daa80bcf04a013924f950f"
+  }
+ ]
+}

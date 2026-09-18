@@ -1,0 +1,367 @@
+{
+ "query_id": "q_0056",
+ "judgments": [
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_019125982e7f8d8b8b03c632",
+   "relevance": 0,
+   "reason": "doc0,3,4: same paper but no catechol/pyrogallol yields; doc1: eucalyptus furfural/LA study; doc2: DES/MIBK HMF study",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "476ea46230333ad3df2a11919eda807657d23402f2d1b89fe2be9fbb886744e7"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_0391e49a61623b735675c552",
+   "relevance": 0,
+   "reason": "doc0,3,4: same paper but no catechol/pyrogallol yields; doc1: eucalyptus furfural/LA study; doc2: DES/MIBK HMF study",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "476ea46230333ad3df2a11919eda807657d23402f2d1b89fe2be9fbb886744e7"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_063b03a0d0262207439563df",
+   "relevance": 3,
+   "reason": "Directly gives catechol 70% and pyrogallol 67% HMF yields at 70 °C.",
+   "evidence_quotes": [
+    "using either catechol or pyrogallol as the sole ligand under LED light irradiation at 440 nm wavelength with an intensity of 0.45 W cm−2 afforded excellent HMF yields, 70 and 67%, respectively, at 70 °C for 20 h"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "61e12032006bdb21d4689a3804c4bc83365f38d9664dcbda89cc53bb83a57aaf"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_0fb5de6208b939b22f5388a4",
+   "relevance": 0,
+   "reason": "doc0,3,4: same paper but no catechol/pyrogallol yields; doc1: eucalyptus furfural/LA study; doc2: DES/MIBK HMF study",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "476ea46230333ad3df2a11919eda807657d23402f2d1b89fe2be9fbb886744e7"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_1933244d338b30fa17b18246",
+   "relevance": 0,
+   "reason": "doc0: InOOH electrocatalysis, different catalyst/system; doc2: DES/MIBK HMF extraction, no Al3+ photocatalysis; doc4: biomass HMF review, no Al3+/catechol/pyrogallol",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d0991db33888c1ec3e06220f3bcc70b0a066781f6ccc0943a12b4b01d84cbd68"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_51128e533622af7a29364296",
+   "relevance": 0,
+   "reason": "doc0: HMF acetalization with polyalcohols, unrelated topic; doc1: same paper, FA optimization not catechol/pyrogallol yields",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "61e12032006bdb21d4689a3804c4bc83365f38d9664dcbda89cc53bb83a57aaf"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_69d85f9cd1060b3af65ec334",
+   "relevance": 0,
+   "reason": "doc0: fructose/sucrose yields, Al salts; doc1: coordination mechanism; doc2: photoluminescence spectra; doc3: ligand/temperature effects, no 70°C catechol/pyrogallol yields; doc4: wavelength/AQY study",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "ff43e7e68f894cf111d60d76a9847d50c490079bc4b49666152d9495c42c1797"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_69ee48c4ce2679a747ca5293",
+   "relevance": 1,
+   "reason": "L1b: same paper's Al3+ photocatalytic HMF system, but fulvic acid ligand and no catechol/pyrogallol yields.",
+   "evidence_quotes": [
+    "Pilot studies indicate that visible-light irradiation of a solution of aluminium nitrate, FA and glucose in dimethyl sulfoxide (DMSO) solvent significantly increases HMF yield compared with a dark reaction"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d0991db33888c1ec3e06220f3bcc70b0a066781f6ccc0943a12b4b01d84cbd68"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_6aeaa009c6b732ae3744c603",
+   "relevance": 0,
+   "reason": "doc0: HMF acetalization with polyalcohols, unrelated topic; doc1: same paper, FA optimization not catechol/pyrogallol yields",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "61e12032006bdb21d4689a3804c4bc83365f38d9664dcbda89cc53bb83a57aaf"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_7926c51ae814e615fce09168",
+   "relevance": 0,
+   "reason": "doc2: other paper on food-waste HMF, no Al3+/catechol/pyrogallol yields",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "42fd1af48a1507d72e6321e1644c54ad236c8d356aa4615751de62e320523a87"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_86dc8cb532b70edbb11eecd2",
+   "relevance": 0,
+   "reason": "doc0,3,4: same paper but no catechol/pyrogallol yields; doc1: eucalyptus furfural/LA study; doc2: DES/MIBK HMF study",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "476ea46230333ad3df2a11919eda807657d23402f2d1b89fe2be9fbb886744e7"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_8812eb342f37103548b3697f",
+   "relevance": 3,
+   "reason": "Same abstract passage states both yields at 70 °C.",
+   "evidence_quotes": [
+    "When using representative components of fulvic acid, catechol and pyrogallol as ligands, 70 and 67% HMF yields are achieved, respectively, at 70 °C."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "42fd1af48a1507d72e6321e1644c54ad236c8d356aa4615751de62e320523a87"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_93f028be4a19292978b0cd79",
+   "relevance": 1,
+   "reason": "L1a: same system, different variable (polyphenol dosage), no yields.",
+   "evidence_quotes": [
+    "The concentrations of polyphenols are 4 and 8 g L−1 for pyrogallol and catechol, respectively."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "42fd1af48a1507d72e6321e1644c54ad236c8d356aa4615751de62e320523a87"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_944ef7a010f0d746e3fe8beb",
+   "relevance": 0,
+   "reason": "doc0: fructose/sucrose yields, Al salts; doc1: coordination mechanism; doc2: photoluminescence spectra; doc3: ligand/temperature effects, no 70°C catechol/pyrogallol yields; doc4: wavelength/AQY study",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "ff43e7e68f894cf111d60d76a9847d50c490079bc4b49666152d9495c42c1797"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_97fec08b86924d7c41e8656c",
+   "relevance": 3,
+   "reason": "Directly reports catechol 70% and pyrogallol 67% HMF yields at 70 °C with Al3+ photocatalysis.",
+   "evidence_quotes": [
+    "Notably, using either catechol or pyrogallol as the sole ligand under LED light irradiation at 440 nm wavelength with an intensity of 0.45 W cm−2 afforded excellent HMF yields, 70 and 67%, respectively, at 70 °C for 20 h."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d0991db33888c1ec3e06220f3bcc70b0a066781f6ccc0943a12b4b01d84cbd68"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_aa3f41a59a69051d33037973",
+   "relevance": 0,
+   "reason": "doc0: InOOH electrocatalysis, different catalyst/system; doc2: DES/MIBK HMF extraction, no Al3+ photocatalysis; doc4: biomass HMF review, no Al3+/catechol/pyrogallol",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d0991db33888c1ec3e06220f3bcc70b0a066781f6ccc0943a12b4b01d84cbd68"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_ae61964162fcfbcc43cb1f21",
+   "relevance": 2,
+   "reason": "Figure 3b conditions confirm catechol/pyrogallol Al3+ system at 70 °C, supporting the yields.",
+   "evidence_quotes": [
+    "Pyrogallol-Al3+ Catechol-Al3+ ... Light, 70 ഒ ... 0.01 M Al(NO3)3 ∙9H2O, 4−16 g L−1 catechol or pyrogallol, 0.1 mmol of D-glucose in 1 mL of DMSO, 0.9 W cm−2 of light intensity (400–800 nm wavelength), 70 °C reaction temperature"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "61e12032006bdb21d4689a3804c4bc83365f38d9664dcbda89cc53bb83a57aaf"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_bc71169706de8fd1845a953f",
+   "relevance": 0,
+   "reason": "doc0: InOOH electrocatalysis, different catalyst/system; doc2: DES/MIBK HMF extraction, no Al3+ photocatalysis; doc4: biomass HMF review, no Al3+/catechol/pyrogallol",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d0991db33888c1ec3e06220f3bcc70b0a066781f6ccc0943a12b4b01d84cbd68"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_d5de1e798f7cec0ccf726404",
+   "relevance": 1,
+   "reason": "L1b: same paper's analytics/procedures, no ligand yield numbers.",
+   "evidence_quotes": [
+    "The main product was identified by 1H NMR spectroscopy (Supplementary Fig. 1) as HMF"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "42fd1af48a1507d72e6321e1644c54ad236c8d356aa4615751de62e320523a87"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_db7ccbd7968a2b82d5bb3e1a",
+   "relevance": 0,
+   "reason": "doc0: fructose/sucrose yields, Al salts; doc1: coordination mechanism; doc2: photoluminescence spectra; doc3: ligand/temperature effects, no 70°C catechol/pyrogallol yields; doc4: wavelength/AQY study",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "ff43e7e68f894cf111d60d76a9847d50c490079bc4b49666152d9495c42c1797"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_dc496ed295591c5ec2e957be",
+   "relevance": 3,
+   "reason": "Abstract directly states both ligand yields at 70 °C.",
+   "evidence_quotes": [
+    "When using representative components of fulvic acid, catechol and pyrogallol as ligands, 70 and 67% HMF yields are achieved, respectively, at 70 °C."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "42fd1af48a1507d72e6321e1644c54ad236c8d356aa4615751de62e320523a87"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_e39a69e4f959cd738e2a4e44",
+   "relevance": 0,
+   "reason": "doc0: fructose/sucrose yields, Al salts; doc1: coordination mechanism; doc2: photoluminescence spectra; doc3: ligand/temperature effects, no 70°C catechol/pyrogallol yields; doc4: wavelength/AQY study",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "ff43e7e68f894cf111d60d76a9847d50c490079bc4b49666152d9495c42c1797"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_ed21e9c56a122abb83a77d81",
+   "relevance": 0,
+   "reason": "doc0: HMF acetalization with polyalcohols, unrelated topic; doc1: same paper, FA optimization not catechol/pyrogallol yields",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "61e12032006bdb21d4689a3804c4bc83365f38d9664dcbda89cc53bb83a57aaf"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_fd754a50c4f3510f7ef443fc",
+   "relevance": 0,
+   "reason": "doc0,3,4: same paper but no catechol/pyrogallol yields; doc1: eucalyptus furfural/LA study; doc2: DES/MIBK HMF study",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "476ea46230333ad3df2a11919eda807657d23402f2d1b89fe2be9fbb886744e7"
+  },
+  {
+   "query_id": "q_0056",
+   "doc_id": "chk_ff9e8673acdd08bbb5789e00",
+   "relevance": 0,
+   "reason": "doc0: fructose/sucrose yields, Al salts; doc1: coordination mechanism; doc2: photoluminescence spectra; doc3: ligand/temperature effects, no 70°C catechol/pyrogallol yields; doc4: wavelength/AQY study",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "ff43e7e68f894cf111d60d76a9847d50c490079bc4b49666152d9495c42c1797"
+  }
+ ]
+}

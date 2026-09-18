@@ -239,6 +239,10 @@ ALTER TABLE query_runs ADD COLUMN citation_validation TEXT;
     (16, """
 ALTER TABLE query_runs ADD COLUMN generation_meta_json TEXT NOT NULL DEFAULT '{}';
 """),
+    (17, """
+ALTER TABLE pages ADD COLUMN retrievable INTEGER NOT NULL DEFAULT 1;
+UPDATE pages SET retrievable=CASE WHEN status='completed' THEN 1 ELSE 0 END;
+"""),
 ]
 
 
@@ -255,6 +259,18 @@ class Store:
                 if version not in applied:
                     conn.executescript(sql)
                     conn.execute("INSERT INTO schema_migrations(version,applied_at) VALUES(?,?)", (version, now()))
+            if 17 not in applied:
+                self._repair_page_retrievability(conn)
+
+    @staticmethod
+    def _repair_page_retrievability(conn: sqlite3.Connection) -> None:
+        """One-time repair for pages indexed before quality failures were persisted."""
+        rows = conn.execute("SELECT page_id,status,text FROM pages").fetchall()
+        conn.executemany(
+            "UPDATE pages SET retrievable=? WHERE page_id=?",
+            [(int(row["status"] == "completed" and not text_quality_issues(row["text"])), row["page_id"])
+             for row in rows],
+        )
 
     @contextmanager
     def connect(self) -> Iterator[sqlite3.Connection]:
@@ -520,11 +536,12 @@ class Store:
             if pages:
                 conn.executemany(
                     """INSERT INTO pages(page_id,paper_id,page_number,text,extraction_method,
-                       ocr_confidence,status,error_code,error_message,parser_version,created_at)
-                       VALUES(?,?,?,?,?,?,?,?,?,?,?)""",
+                       ocr_confidence,status,error_code,error_message,parser_version,created_at,retrievable)
+                        VALUES(?,?,?,?,?,?,?,?,?,?,?,?)""",
                     [(f"page_{paper['paper_id'][6:]}_{p.number:05d}", paper["paper_id"], p.number,
-                      p.text, p.extraction_method, p.ocr_confidence, p.status, p.error_code,
-                      p.error_message, p.parser_version, now()) for p in pages],
+                       p.text, p.extraction_method, p.ocr_confidence, p.status, p.error_code,
+                       p.error_message, p.parser_version, now(),
+                       int(p.status == "completed" and not text_quality_issues(p.text))) for p in pages],
                 )
             if embeddings is not None:
                 import numpy as np
@@ -1249,9 +1266,14 @@ class Store:
         sql = f"""SELECT c.*,d.document_id,d.collection_id,d.scope_type,d.conversation_id,d.expires_at
                   {embedding_columns} FROM collection_documents d
                   JOIN chunks c ON c.paper_id=d.paper_id {embedding_join}
-                  WHERE d.tenant_id=? AND d.status='ready'
-                  AND (d.expires_at IS NULL OR d.expires_at>?) AND ({' OR '.join(clauses)})
-                  {embedding_filter} {paper_filter} ORDER BY c.paper_id,c.ordinal"""
+                   WHERE d.tenant_id=? AND d.status IN ('ready','partial_failed')
+                   AND (d.expires_at IS NULL OR d.expires_at>?) AND ({' OR '.join(clauses)})
+                   AND NOT EXISTS (SELECT 1 FROM pages p WHERE p.paper_id=c.paper_id
+                                   AND p.page_number BETWEEN c.page_start AND c.page_end
+                                   AND p.retrievable=0)
+                   AND (SELECT COUNT(*) FROM pages p WHERE p.paper_id=c.paper_id
+                        AND p.page_number BETWEEN c.page_start AND c.page_end)=c.page_end-c.page_start+1
+                   {embedding_filter} {paper_filter} ORDER BY c.paper_id,c.ordinal"""
         # expires_at is deliberately checked in SQL on every query.
         params.insert(1, now())
         with self.connect() as conn:

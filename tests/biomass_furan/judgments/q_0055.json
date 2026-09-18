@@ -1,0 +1,310 @@
+{
+ "query_id": "q_0055",
+ "judgments": [
+  {
+   "query_id": "q_0055",
+   "doc_id": "chk_0358d2f4512fe7562915e5d6",
+   "relevance": 2,
+   "reason": "Direct evidence that Pd/ZnSO4 cleaves formaldehyde side group and the C1 fragment is steam reformed to gases; must combine with other chunks for PdO/Pd0 roles.",
+   "evidence_quotes": [
+    "Clearly, the combination of Pd and ZnSO4 is capable of dehydrating as well as selectively cleaving the side group formaldehyde (HCHO) rather than over-cracking the entire C6 sugar molecule. Moreover, the fragmented side group mostly transformed into permanent gases via decomposition and steam reforming, as evidenced by the formation of around 0.8 mol (CO + CO2) /mol-C6 sugar"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "669833658fad45f1bb041a9a24a1c3554122d4f027d9e87350aab914e2c583f3"
+  },
+  {
+   "query_id": "q_0055",
+   "doc_id": "chk_2457bcbec7234dbe74bc716f",
+   "relevance": 2,
+   "reason": "Same catalyst converting C6 sugars to furfural, establishing the system's performance.",
+   "evidence_quotes": [
+    "the use of the Pd-PdO/ZnSO4 is more pronounced, boosting the furfural yield to 74.0 mol% for allose (spectra in Fig. S9) and 77.3 mol% for glucose"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "916161310e59b2a5e7f7e5308bf4f9f77a505bceb17c2d271890f4f950bf2928"
+  },
+  {
+   "query_id": "q_0055",
+   "doc_id": "chk_2c26b76bcb96e32b4ebea344",
+   "relevance": 2,
+   "reason": "Reaction pathway: Grob fragmentation releases formaldehyde, which is steam-reformed in situ; steps 9-10 dehydration to furfural.",
+   "evidence_quotes": [
+    "Step 8 for the Grob fragmentation reaction to release the formaldehyde molecule. Step 8’ for the in-situ steam reforming of formaldehyde molecule, and Steps 9-10 for the continued dehydration reactions to form the final product furfural."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "916161310e59b2a5e7f7e5308bf4f9f77a505bceb17c2d271890f4f950bf2928"
+  },
+  {
+   "query_id": "q_0055",
+   "doc_id": "chk_45bcb74bc258f9a5bf61a3ea",
+   "relevance": 2,
+   "reason": "Directly states PdO site for Grob fragmentation, formaldehyde steam reforming to syngas, and Pd0 role in last dehydration step.",
+   "evidence_quotes": [
+    "Grob fragmentation occurred at the C-6 position of glucose and mostly on the PdO (101) active site. The cleaved free formaldehyde molecules also underwent secondary reactions such as in-situ steam reforming to turn into green syn-gas. Regarding the ZnSO4 support, it functioned as the active site for all the dehydration reactions as well as probably isomerization reactions. Additionally, metallic Pd0 could be active in promoting the last dehydration step."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "949fb1b3211e216d713d95d4c68efc8f3dc58d0c7a439f62a63311e81e0c2d40"
+  },
+  {
+   "query_id": "q_0055",
+   "doc_id": "chk_52bf40e55648cb991d0ea902",
+   "relevance": 2,
+   "reason": "Confirms core-shell Pd0 core/PdO shell structure of the catalyst.",
+   "evidence_quotes": [
+    "the two Pd-bearing species are spatially distributed as a core-shell structure, with metallic Pd0 as the core and PdO as the shell with a thickness of approximately 3 nm."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "999063a5892c9660a33bb5fc5c8df61ce0972b1b89679ba615fee9aa344d97b4"
+  },
+  {
+   "query_id": "q_0055",
+   "doc_id": "chk_5707c7574398fd8e128a3d9c",
+   "relevance": 2,
+   "reason": "Summarizes PdO Grob fragmentation, formaldehyde steam reforming, and Pd0 last dehydration.",
+   "evidence_quotes": [
+    "Grob fragmentation occurred at the C-6 position of glucose and mostly on the PdO (101) active site. The cleaved free formaldehyde molecules also underwent secondary reactions such as in-situ steam reforming to turn into green syn-gas. ... metallic Pd0 could be active in promoting the last dehydration step."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "999063a5892c9660a33bb5fc5c8df61ce0972b1b89679ba615fee9aa344d97b4"
+  },
+  {
+   "query_id": "q_0055",
+   "doc_id": "chk_765cb061e1f7730e719a8e05",
+   "relevance": 3,
+   "reason": "Directly states PdO role, Pd0 role, and formaldehyde conversion to syngas.",
+   "evidence_quotes": [
+    "The PdO layer is active for the Grob fragmentation of formaldehyde (HCHO) from glucose, which is subsequently in-situ steam reformed into syngas (i.e. H2 and CO), whereas the Pd0 core is active in promoting the last dehydration step for the formation of furfural."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "999063a5892c9660a33bb5fc5c8df61ce0972b1b89679ba615fee9aa344d97b4"
+  },
+  {
+   "query_id": "q_0055",
+   "doc_id": "chk_7f97da34ec5bc180ad75c39a",
+   "relevance": 2,
+   "reason": "Provides the reaction pathway context for C6 sugar to furfural.",
+   "evidence_quotes": [
+    "the overall reaction pathway for the conversion of C6 sugar to furfural is proposed in Fig. 7"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "999063a5892c9660a33bb5fc5c8df61ce0972b1b89679ba615fee9aa344d97b4"
+  },
+  {
+   "query_id": "q_0055",
+   "doc_id": "chk_86317b932dbf45f853b8bbd3",
+   "relevance": 2,
+   "reason": "Same catalyst system converting C6 intermediates to furfural, supporting the overall mechanism context.",
+   "evidence_quotes": [
+    "with the addition of the Pd-PdO/ZnSO4 catalyst, the overall conversion of wet LGA was almost complete, and the selectivity of furfural reached ~61%"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "916161310e59b2a5e7f7e5308bf4f9f77a505bceb17c2d271890f4f950bf2928"
+  },
+  {
+   "query_id": "q_0055",
+   "doc_id": "chk_932af02ade2343540404171d",
+   "relevance": 1,
+   "reason": "L1b: same paper's catalyst characterization/data basis, background on PdO detection, no mechanism numbers.",
+   "evidence_quotes": [
+    "The detection of PdO by XRD is infeasible since its principal peaks (002) and (011) overlap with the (220) and (121) peaks"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "669833658fad45f1bb041a9a24a1c3554122d4f027d9e87350aab914e2c583f3"
+  },
+  {
+   "query_id": "q_0055",
+   "doc_id": "chk_94947b6fa3dfaecd9da2ab4d",
+   "relevance": 3,
+   "reason": "Directly assigns PdO to Grob fragmentation (formaldehyde release) and Pd0 to the final dehydration forming furfural.",
+   "evidence_quotes": [
+    "For the subsequent Grob fragmentation in step 8, the PdO surface should be the most active site, as it presents the lowest energy change of −1.29 eV... Regarding step 10 for the last dehydration reaction to form furfural, metallic Pd0 is apparently the most active, with the lowest energy change of −2.34 eV."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "916161310e59b2a5e7f7e5308bf4f9f77a505bceb17c2d271890f4f950bf2928"
+  },
+  {
+   "query_id": "q_0055",
+   "doc_id": "chk_a9f5821522da086b203682b8",
+   "relevance": 2,
+   "reason": "Supports Pd role in removing formaldehyde side group, part of the mechanism.",
+   "evidence_quotes": [
+    "The doping of less Pd, in particular around 0.4 mol% is insufficient for the removal of the formaldehyde side group"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "949fb1b3211e216d713d95d4c68efc8f3dc58d0c7a439f62a63311e81e0c2d40"
+  },
+  {
+   "query_id": "q_0055",
+   "doc_id": "chk_b7de1501b0a941df8d8a6d38",
+   "relevance": 3,
+   "reason": "Explains formation of Pd0 core/PdO shell via oxygen scavenging, supporting the mechanism.",
+   "evidence_quotes": [
+    "a portion of the lattice oxygen in PdO was scavenged by the unsaturated S and/or Zn on the ZnSO4 surface during the heat treatment in Ar."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "999063a5892c9660a33bb5fc5c8df61ce0972b1b89679ba615fee9aa344d97b4"
+  },
+  {
+   "query_id": "q_0055",
+   "doc_id": "chk_bfd31418cf64f991fcdc7441",
+   "relevance": 2,
+   "reason": "Background on PdO behavior in C6 glucose conversion.",
+   "evidence_quotes": [
+    "The use of pure PdO catalyst in Fig. 4b led to a decrease in the yield of furfural, in particular in the case of C6 glucose. This should be related to its strong catalytic effect with the abundance of strong acid sites"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "949fb1b3211e216d713d95d4c68efc8f3dc58d0c7a439f62a63311e81e0c2d40"
+  },
+  {
+   "query_id": "q_0055",
+   "doc_id": "chk_ca594c753451bb22f850f6cd",
+   "relevance": 1,
+   "reason": "L1b: same paper's parametric data on formaldehyde removal, background context only.",
+   "evidence_quotes": [
+    "The doping of less Pd, in particular around 0.4 mol% is insufficient for the removal of the formaldehyde side group"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "669833658fad45f1bb041a9a24a1c3554122d4f027d9e87350aab914e2c583f3"
+  },
+  {
+   "query_id": "q_0055",
+   "doc_id": "chk_ced15f23f591978f197ea69d",
+   "relevance": 2,
+   "reason": "Auxiliary context on C6 sugar conversion and gas products.",
+   "evidence_quotes": [
+    "for both C6 sugar monomers, around 0.1–0.2 mol/mol-sugar was produced for CO and CO2 each, indicative of a small extent of the decomposition of C6 sugars upon thermal shock."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "949fb1b3211e216d713d95d4c68efc8f3dc58d0c7a439f62a63311e81e0c2d40"
+  },
+  {
+   "query_id": "q_0055",
+   "doc_id": "chk_da8fcc71f49e2b1136ff4b67",
+   "relevance": 2,
+   "reason": "Direct evidence identifying the removed C1 fragment as C-6 of glucose; combined with other chunks supports the mechanism.",
+   "evidence_quotes": [
+    "the carbon at the C-6 position was removed from the glucose ring, while those at the other five positions remained intact and transferred to the furfural molecule"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "669833658fad45f1bb041a9a24a1c3554122d4f027d9e87350aab914e2c583f3"
+  },
+  {
+   "query_id": "q_0055",
+   "doc_id": "chk_dbb7000ecd4f6d2c1e065e65",
+   "relevance": 1,
+   "reason": "L1b: same paper's characterization establishing Pd0 core/PdO shell structure, auxiliary to mechanism.",
+   "evidence_quotes": [
+    "the two Pd-bearing species are spatially distributed as a core-shell structure, with metallic Pd0 as the core and PdO as the shell with a thickness of approximately 3 nm"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "669833658fad45f1bb041a9a24a1c3554122d4f027d9e87350aab914e2c583f3"
+  },
+  {
+   "query_id": "q_0055",
+   "doc_id": "chk_ee7b3c8ea2f58be1382c1e47",
+   "relevance": 2,
+   "reason": "Supports C-6 formaldehyde release from glucose on the catalyst.",
+   "evidence_quotes": [
+    "13C-6-labeled glucose is the only feedstock that promoted the peak intensity of m/z = 31 to a considerable extent, particularly in the presence of the Pd-PdO/ZnSO4 catalyst."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "949fb1b3211e216d713d95d4c68efc8f3dc58d0c7a439f62a63311e81e0c2d40"
+  }
+ ]
+}

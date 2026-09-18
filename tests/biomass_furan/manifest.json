@@ -1,0 +1,62 @@
+{
+  "dataset_version": "0.1.0-ai-candidate",
+  "frozen_at": "2026-09-16T03:19:09.903755+00:00",
+  "scope": {
+    "tenant_id": "default",
+    "subject": "anonymous",
+    "include_official": true
+  },
+  "physical_counts": {
+    "papers": 51,
+    "pages": 929,
+    "chunks": 5444,
+    "embeddings": 5444
+  },
+  "retrievable_sources": 48,
+  "retrievable_chunks": 5066,
+  "snapshot_sha256": "94994aab8206ab080b203db7f6e5dbe7038cfa3e3872fe33fe6075217dd0db82",
+  "corpus_sha256": "f6ad15d0e0656e414dc66807c0d00fc98cc59b1d0b3756f0d09dae8d554e9aa4",
+  "chunker_versions": {
+    "structure-v1": 2396,
+    "structure-v2": 2670
+  },
+  "embedding_indexes": [
+    {
+      "provider": "openai_compatible",
+      "model": "qwen3-embedding-0.6b",
+      "dimensions": 1024,
+      "count": 5444
+    }
+  ],
+  "human_review": "not_completed",
+  "source_code_sha256": {
+    "src\\rag\\__init__.py": "c8547bee3aba60e6ad776a75352a8299c093f7a74d611baf9811d3503ff198c4",
+    "src\\rag\\api.py": "977c5ff3917625f1e6bf1e016e627f2c4ca760a06dc53bd3afbcbf0221299786",
+    "src\\rag\\chunker.py": "5b0c91034f2e9ad53d52f20dca44f81c78a2ddd3de2ff66237c43d8f7d7d7030",
+    "src\\rag\\cli.py": "c7c128567cb429bdad166108f7cfcbb6bf0605d270134143fd8bee4e38c13a4d",
+    "src\\rag\\config.py": "345bd62a5dbb317ad1181b42d5d3aecf8cd20cace4bd0fb80385f383b72a9788",
+    "src\\rag\\conversation.py": "24021939f4212df0f2f7ebe07a8a8ab54b3c0097de0060348a6cd9df2584cfb9",
+    "src\\rag\\errors.py": "29874dfc9101cb88a7c813df4283296e8942213c981ca50f3101a862127d0d75",
+    "src\\rag\\evaluation.py": "f6a2e73d3fbb59c07508881135f4d6baeb03b7edd2097cc3743c093167f19745",
+    "src\\rag\\extraction.py": "5598539d8a9f458378b980102564fd06268f597ed3219ef0048c05e8fef4ac21",
+    "src\\rag\\models.py": "521a81581b54673ee3dc7486091980e5ef143ed41ef44642bed2ad1c60f71d1e",
+    "src\\rag\\observability.py": "0d6fa62d9e4da90729f06d2b1c3b8970fbb8eba525950fe31c7ba9c90bcae96a",
+    "src\\rag\\parser.py": "d34ba23f89f5b66c6162c6f10745a1fbc0fd3f1fed3c3fea6e414a9919471752",
+    "src\\rag\\pipeline.py": "0874331efe352ff0d3085100bce60128f2536a9e06f838129a3fca5bc88348cd",
+    "src\\rag\\providers.py": "40c18a3a98ed6aa6a21c65182e9813820c0d8073dc49d46440ffdf3359842784",
+    "src\\rag\\reranker.py": "c85be9a50bdd2f166af7b7ba0e3eb8e01136701e797a27e2cf213f93733e1003",
+    "src\\rag\\retriever.py": "68075001f7f4ce4f588359f1eb657e438a4a4a867bb29fdf2632bac6cc1b0979",
+    "src\\rag\\security.py": "e11755cc05352bd119c459dea59aa1a2130b906fa3bc1c7e1125326684ee88fb",
+    "src\\rag\\store.py": "2417b85c231f519fb0854214956930d1a9e6d8f49b0ae5b3da86a0d784a6ef8e",
+    "src\\rag\\tasks.py": "5dd788a26d2d4491f7f5f061807459d822bd4734bd9bc73ca03fd5f359e59dc5",
+    "src\\rag\\text.py": "9b52465ae48a78431b86ed27a00e483695ed986b94b6a91c8a77005416f8d21e",
+    "src\\rag\\visualizations.py": "0c54958d3d0d929315bebc268e2ec2ab98ee071e33f6c237117851b4c7eb798c"
+  },
+  "metadata_revision": {
+    "revision": 1,
+    "at": "2026-09-16T06:39:34.750473+00:00",
+    "previous_corpus_sha256": "ffcadfa99b671be28f849c1cae7bdde095dac1f5c6d4a84db6d2cf6bbfe52018",
+    "reason": "Correct PDF title metadata against frozen page text before first release.",
+    "ids_and_text_unchanged": true
+  }
+}

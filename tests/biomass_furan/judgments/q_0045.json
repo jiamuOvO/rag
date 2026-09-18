@@ -1,0 +1,380 @@
+{
+ "query_id": "q_0045",
+ "judgments": [
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_15c1e5dcdec680fe82198d76",
+   "relevance": 0,
+   "reason": "doc0: 2020 CNC paper, hydrothermal pretreatment before acid hydrolysis; no scCO2 extraction or 2018 review",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "04587d5a96c0b2435a8b0c43b8a0862440ce0617c6c5982cdb06da57feeb9fc1"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_1ce9a8a9b79ea2c82fa122a0",
+   "relevance": 0,
+   "reason": "doc0: biomass overview, no furfural extraction; doc1: glycopolymer synthesis, unrelated; doc2: pretreatment/SSF, no furfural; doc3: lignin pretreatment, no furfural extraction; doc4: hydrothermal furfural but no scCO2 extraction",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "42b1acf0a56e6d1e9dfc7c1e38292f7bc68b9ff065fc44d813bfe3954989781f"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_34d6ee476720e0409eced4d6",
+   "relevance": 0,
+   "reason": "doc0: biomass overview, no furfural extraction; doc1: glycopolymer synthesis, unrelated; doc2: pretreatment/SSF, no furfural; doc3: lignin pretreatment, no furfural extraction; doc4: hydrothermal furfural but no scCO2 extraction",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "42b1acf0a56e6d1e9dfc7c1e38292f7bc68b9ff065fc44d813bfe3954989781f"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_3e028900b59f4839685a65fe",
+   "relevance": 0,
+   "reason": "doc0: same field, different hydrothermal CNC study; doc1: HMF/BHMF review, unrelated; doc3: biomass burning emissions; doc4: lignin references list",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "06921d6f42d336601b2d0587fd7362d8832024dfa60dca3f2328386eaf586955"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_402bc45f160ad28a50932696",
+   "relevance": 1,
+   "reason": "Bibliography entry in the 2018 review naming the catalyst-free hydrothermal pentose-to-furfural route with simultaneous sc-CO2 extraction.",
+   "evidence_quotes": [
+    "Gairola, K., and Smirnova, I. (2012). Hydrothermal pentose to furfural conversion and simultaneous extraction with sc-CO2-kinetics and application to biomass hydrolysates. Bioresour. Technol. 123, 592–598."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "966f3f416c9affdf259e690c76003833d85b39c90e73ef3b3cb1d65ab729d236"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_4846cacf05ebed23ee13e64c",
+   "relevance": 3,
+   "reason": "Same paper, repeats the catalyst-free hydrothermal scCO2 extraction route, directly supporting the fact.",
+   "evidence_quotes": [
+    "Hydrothermal conversion of D-xylose and hemicelluloses to furfural by simultaneously furfural extraction with supercritical CO2 (sc-CO2) in catalyst-free conditions has been studied (Gairola and Smirnova, 2012)."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0a35a70964fa6c8c86c050b9570bf2fb2b62f801c7991ee7fbb78545c960c619"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_4eb9b3171a58e7815e9bfa9a",
+   "relevance": 0,
+   "reason": "doc0: bibliography entry only, no experimental detail; doc3: Fenton pretreatment, unrelated to furfural extraction; doc4: title/abstract only, no route detail",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "966f3f416c9affdf259e690c76003833d85b39c90e73ef3b3cb1d65ab729d236"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_52753142bb95f2c173a84e2a",
+   "relevance": 3,
+   "reason": "Directly states the catalyst-free hydrothermal route with simultaneous scCO2 furfural extraction in the 2018 review.",
+   "evidence_quotes": [
+    "Hydrothermal conversion of D-xylose and hemicelluloses to furfural by simultaneously furfural extraction with supercritical CO2 (sc-CO2) in catalyst-free conditions has been studied (Gairola and Smirnova, 2012)."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0a35a70964fa6c8c86c050b9570bf2fb2b62f801c7991ee7fbb78545c960c619"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_7687569c7a08cd21e32a42bf",
+   "relevance": 1,
+   "reason": "L1b: same 2018 review, but this section covers catalyzed dehydration, not the catalyst-free CO2-extraction route.",
+   "evidence_quotes": [
+    "SYNTHESIS OF FURFURAL FROM\nSUGARS AND POLYSACCHARIDES USING\nHOMOGENEOUS CATALYSTS\nDehydration of D-xylose and derivatives was studied in presence\nof either mineral acids (H2SO4, HCl, H3PO4), organic acid\n(formic, methanesulfonic acid, maleic acid, succinic acid) or\nmetal salts [FeCl3, AlCl3, CrCl2, CrCl3, CuCl2, NaHSO4,\nKAl(SO4)2, Al2(SO4)3] in water or in aqueous biphasic systems (ABS) using conventional thermal activation or microwave\ntechnology."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "36d47a99d95bee892cadd721b9c894cb70bda30ec369329e0df2006415f361c3"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_76a9afa1ed42f994954185ae",
+   "relevance": 0,
+   "reason": "doc0: same field, different hydrothermal CNC study; doc1: HMF/BHMF review, unrelated; doc3: biomass burning emissions; doc4: lignin references list",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "06921d6f42d336601b2d0587fd7362d8832024dfa60dca3f2328386eaf586955"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_7dd55ef0b7a12157d892a980",
+   "relevance": 0,
+   "reason": "doc0: same field, different hydrothermal CNC study; doc1: HMF/BHMF review, unrelated; doc3: biomass burning emissions; doc4: lignin references list",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "06921d6f42d336601b2d0587fd7362d8832024dfa60dca3f2328386eaf586955"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_7efcd3c46242f418828f4da1",
+   "relevance": 0,
+   "reason": "doc0: same field, CNC topic unrelated; doc1: EG polymers, unrelated; doc2: bibliography list only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "36d47a99d95bee892cadd721b9c894cb70bda30ec369329e0df2006415f361c3"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_9361405943a06f0252f8f5f2",
+   "relevance": 0,
+   "reason": "doc0: same field, different hydrothermal CNC study; doc1: HMF/BHMF review, unrelated; doc3: biomass burning emissions; doc4: lignin references list",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "06921d6f42d336601b2d0587fd7362d8832024dfa60dca3f2328386eaf586955"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_9aea6d5bdbfc31a909e36fbf",
+   "relevance": 0,
+   "reason": "doc0: bibliography entry only, no experimental detail; doc3: Fenton pretreatment, unrelated to furfural extraction; doc4: title/abstract only, no route detail",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "966f3f416c9affdf259e690c76003833d85b39c90e73ef3b3cb1d65ab729d236"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_a05b8563e46f0bc4b9179c25",
+   "relevance": 0,
+   "reason": "doc0: same field, CNC topic unrelated; doc1: EG polymers, unrelated; doc2: bibliography list only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "36d47a99d95bee892cadd721b9c894cb70bda30ec369329e0df2006415f361c3"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_a1bda41258bb155ff6329a9d",
+   "relevance": 0,
+   "reason": "doc0: same field, CNC topic unrelated; doc1: EG polymers, unrelated; doc2: bibliography list only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "36d47a99d95bee892cadd721b9c894cb70bda30ec369329e0df2006415f361c3"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_a6c8ba74e59565fc9abca5bd",
+   "relevance": 2,
+   "reason": "L1b: same 2018 review's catalyst-free hydrothermal section; supports catalyst-free hydrothermal context but not the supercritical CO2 simultaneous extraction detail.",
+   "evidence_quotes": [
+    "Dehydration Using Hot Water Pretreatment\nProduction furfural assisted by hot water pretreatment does\nnot use in principle acid catalysts (no voluntary addition)."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "36d47a99d95bee892cadd721b9c894cb70bda30ec369329e0df2006415f361c3",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 2,
+    "changed": false,
+    "explanation": "该块来自题目点名的 2018 hemicellulose-to-furfural 综述（Frontiers in Chemistry, Delbecq et al.）。块内确实给出『无外加酸/无催化剂条件下热水（高温水）转化 D-木糖并同时向有机相萃取糠醛』这一半（乙酸乙酯萃取，200 ℃/3 h、75%），但全文不含 sc-CO2（超临界 CO2）萃取这一关键限定。部分覆盖 → 2，维持原判。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_ac2c24514ed24cb29359b85a",
+   "relevance": 0,
+   "reason": "doc2: hydrothermal CNC/furfural co-production, no scCO2 extraction; doc3: AAEM pyrolysis review, unrelated; doc4: bibliography reference list only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0a35a70964fa6c8c86c050b9570bf2fb2b62f801c7991ee7fbb78545c960c619"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_c19dfeee6b55ad27c1eb1323",
+   "relevance": 0,
+   "reason": "doc0: biomass overview, no furfural extraction; doc1: glycopolymer synthesis, unrelated; doc2: pretreatment/SSF, no furfural; doc3: lignin pretreatment, no furfural extraction; doc4: hydrothermal furfural but no scCO2 extraction",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "42b1acf0a56e6d1e9dfc7c1e38292f7bc68b9ff065fc44d813bfe3954989781f"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_d29a47becd4325a4c727f8bd",
+   "relevance": 0,
+   "reason": "doc0: bibliography entry only, no experimental detail; doc3: Fenton pretreatment, unrelated to furfural extraction; doc4: title/abstract only, no route detail",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "966f3f416c9affdf259e690c76003833d85b39c90e73ef3b3cb1d65ab729d236"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_d6ae27c7c9243138cb2aa76f",
+   "relevance": 0,
+   "reason": "doc0: biomass overview, no furfural extraction; doc1: glycopolymer synthesis, unrelated; doc2: pretreatment/SSF, no furfural; doc3: lignin pretreatment, no furfural extraction; doc4: hydrothermal furfural but no scCO2 extraction",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "42b1acf0a56e6d1e9dfc7c1e38292f7bc68b9ff065fc44d813bfe3954989781f"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_ee027d204d3800694f29e5cc",
+   "relevance": 0,
+   "reason": "doc0: bibliography entry only, no experimental detail; doc3: Fenton pretreatment, unrelated to furfural extraction; doc4: title/abstract only, no route detail",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "966f3f416c9affdf259e690c76003833d85b39c90e73ef3b3cb1d65ab729d236"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_eeb38aeb9a2dc70be1830e99",
+   "relevance": 0,
+   "reason": "doc2: hydrothermal CNC/furfural co-production, no scCO2 extraction; doc3: AAEM pyrolysis review, unrelated; doc4: bibliography reference list only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0a35a70964fa6c8c86c050b9570bf2fb2b62f801c7991ee7fbb78545c960c619"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_f1742ef08be8de10026baf2e",
+   "relevance": 0,
+   "reason": "doc2: hydrothermal CNC/furfural co-production, no scCO2 extraction; doc3: AAEM pyrolysis review, unrelated; doc4: bibliography reference list only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0a35a70964fa6c8c86c050b9570bf2fb2b62f801c7991ee7fbb78545c960c619"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_fabe76d0771de3fd8c952475",
+   "relevance": 0,
+   "reason": "doc0: biomass overview, no furfural extraction; doc1: glycopolymer synthesis, unrelated; doc2: pretreatment/SSF, no furfural; doc3: lignin pretreatment, no furfural extraction; doc4: hydrothermal furfural but no scCO2 extraction",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "42b1acf0a56e6d1e9dfc7c1e38292f7bc68b9ff065fc44d813bfe3954989781f"
+  },
+  {
+   "query_id": "q_0045",
+   "doc_id": "chk_fd9eb6976bb0f124fd7808eb",
+   "relevance": 1,
+   "reason": "L1d: describes simultaneous-extraction hydrothermal conversion background, but for HMF from maple wood, not catalyst-free supercritical CO2 furfural from xylose.",
+   "evidence_quotes": [
+    "A single step batch system based on the simultaneous organic solvent extraction was investigated for the transformation of maple wood to HMF [51]."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "06921d6f42d336601b2d0587fd7362d8832024dfa60dca3f2328386eaf586955"
+  }
+ ]
+}

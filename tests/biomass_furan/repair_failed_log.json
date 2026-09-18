@@ -1,0 +1,72 @@
+{
+ "rules_version": "v2",
+ "mode": "apply",
+ "repaired": 8,
+ "rejudge": 21,
+ "changes": [
+  {
+   "label": "q_0022_batch_01",
+   "encoding": "perblock",
+   "note": "as_saved",
+   "response_id": "f1dbe6774b3769f13da4cadf2e8d812de126c592f8563c09ee0ec0e0c43e6ffe",
+   "quote_changes": [],
+   "unrepaired_quotes_left": []
+  },
+  {
+   "label": "q_0023_batch_01",
+   "encoding": "perblock",
+   "note": "as_saved",
+   "response_id": "70173365c5ee58ef674c9ceb596352e379c15871615e0c90b6b6afdeeff208bc",
+   "quote_changes": [],
+   "unrepaired_quotes_left": []
+  },
+  {
+   "label": "q_0039_batch_01",
+   "encoding": "perblock",
+   "note": "as_saved",
+   "response_id": "a3931abb30d1ca6e5f62c9441206671140cefafffb09ec53b0eb8793c414331d",
+   "quote_changes": [],
+   "unrepaired_quotes_left": []
+  },
+  {
+   "label": "q_0041_batch_01",
+   "encoding": "perblock",
+   "note": "as_saved",
+   "response_id": "df890a3c1782f10af2e49a23bc831cbbe8b3ab64b9a2e3c243185127ba3972ed",
+   "quote_changes": [],
+   "unrepaired_quotes_left": []
+  },
+  {
+   "label": "q_0043_batch_01",
+   "encoding": "perblock",
+   "note": "as_saved",
+   "response_id": "eda079efe61a064bc610fc2a78899d35542adfced80c887c79c408f68f0b85d5",
+   "quote_changes": [],
+   "unrepaired_quotes_left": []
+  },
+  {
+   "label": "q_0044_batch_01",
+   "encoding": "perblock",
+   "note": "as_saved",
+   "response_id": "febb6c8bf63f6b55105513b255fd888be51f9075e933805dd8b4c73157edc515",
+   "quote_changes": [],
+   "unrepaired_quotes_left": []
+  },
+  {
+   "label": "q_0049_batch_04",
+   "encoding": "perblock",
+   "note": "as_saved",
+   "response_id": "1c3c8c445055d9bc93dc36f125e001e8c519b81245918e296979c82568b48119",
+   "quote_changes": [],
+   "unrepaired_quotes_left": []
+  },
+  {
+   "label": "q_0050_batch_01",
+   "encoding": "perblock",
+   "note": "as_saved",
+   "response_id": "8f6c9e5c9e3a1a91f0cc052e772e0b179b10d61aad6cb56d8d75cb172e04328f",
+   "quote_changes": [],
+   "unrepaired_quotes_left": []
+  }
+ ]
+}

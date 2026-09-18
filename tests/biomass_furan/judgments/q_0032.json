@@ -1,0 +1,364 @@
+{
+ "query_id": "q_0032",
+ "judgments": [
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_0add36bde3d8d23e7501bd97",
+   "relevance": 3,
+   "reason": "Directly states the three reasons for good performance.",
+   "evidence_quotes": [
+    "The large specific surface area, uniform dispersion of Pt nanoparticles and the stronger furfural adsorption ability of nanosheets contributed to the considerable catalytic performance."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "fcacbbee01233422d4bc409ec4c271f62ccc99deaa4b66fa1b87bf7440723f59"
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_0e5f9015e0fc1bae83ce0567",
+   "relevance": 2,
+   "reason": "Explains large surface area, Pt dispersion, and stronger furfural adsorption.",
+   "evidence_quotes": [
+    "The reason for the well dispersion of Pt nanoparticles on the surfaces of TECN is partly attributed to the large specific surface area. The nanosheet structures would also be beneficial to enhance the adsorption ability of the substrates on the surface of the catalyst, which was further supported by furfural adsorption measurement."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "fcacbbee01233422d4bc409ec4c271f62ccc99deaa4b66fa1b87bf7440723f59"
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_14eb0ebd35748800ff1ebd97",
+   "relevance": 2,
+   "reason": "Same paper's experimental method for the hydrogenation study.",
+   "evidence_quotes": [
+    "The reduction of furfural with H2 was chosen as a model reaction to evaluate the activity of the Pt catalysts."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "fcacbbee01233422d4bc409ec4c271f62ccc99deaa4b66fa1b87bf7440723f59"
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_37a5d822f051f8d22b03886b",
+   "relevance": 0,
+   "reason": "doc2: different paper, PtSn@mSiO2 gas-phase system, not nanosheet Pt",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "23c3f165104ea1561a9d586d096cc35707964767e2950da1364add7129eb1eb4"
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_39cb022b578f1757e4830bf0",
+   "relevance": 2,
+   "reason": "Same paper's introduction providing surface area and uniform Pt dispersion rationale; combine with doc2 for adsorption evidence.",
+   "evidence_quotes": [
+    "Compared with bulk g-C3N4, ultrafine g-C3N4 nanosheets had a large surface area, which facilitated the uniform dispersion of noble metal nanoparticles and good mass transfer effect."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "36855e975a91aca22e309e50218c94cd5828c539e10b5e9bf1287a37673f5fcc"
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_3e0dc46c1ee855297b3d0bd3",
+   "relevance": 1,
+   "reason": "L1b: same paper's data basis (furfural adsorption measurement) relevant to stronger adsorption claim, but no numbers or explanation.",
+   "evidence_quotes": [
+    "Figure 11. The amount of furfural absorbed on bulk g-C3N4 and TECN."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "23c3f165104ea1561a9d586d096cc35707964767e2950da1364add7129eb1eb4"
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_59b0884caccff0d5a8d1e75c",
+   "relevance": 1,
+   "reason": "L1b: same paper's comparison of supports, auxiliary context on support effect without the specific reasons.",
+   "evidence_quotes": [
+    "The results implied that the nature of the support had a noticeable impact in the catalytic activity of Pt catalysts for furfural hydrogenation."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "23c3f165104ea1561a9d586d096cc35707964767e2950da1364add7129eb1eb4"
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_5a8ade01ae03178688f02b72",
+   "relevance": 0,
+   "reason": "doc1,2,4: same paper, PtSn intermetallic not nanosheet Pt; doc3: different paper, Pd/hydronium not Pt nanosheet",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "e14d9b46e26aaebed481d07d8042fa86752b2fb76b690504e6a7b43cd360e9ff"
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_5ff031632cd2b058971840ea",
+   "relevance": 0,
+   "reason": "doc1,2,4: same paper, PtSn intermetallic not nanosheet Pt; doc3: different paper, Pd/hydronium not Pt nanosheet",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "e14d9b46e26aaebed481d07d8042fa86752b2fb76b690504e6a7b43cd360e9ff"
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_624c04ed560a36234a800b2f",
+   "relevance": 1,
+   "reason": "Explains g-C3N4 nanosheet support gives high dispersion of small Pt nanoparticles, supporting the asked performance rationale.",
+   "evidence_quotes": [
+    "graphitic carbon nitride (g-C3N4) with graphite-like layered structure was the most promising catalyst supports for metal nanocatalysts, because of its advantages such as high chemical and thermal stability, unique electrical, and functional properties19–22. The nitrogen richness and locally conjugated structure endowed carbon nitride with anchoring small-size metal nanoparticles with high dispersion."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "e14d9b46e26aaebed481d07d8042fa86752b2fb76b690504e6a7b43cd360e9ff"
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_62f09376f8ce0b8d71db5797",
+   "relevance": 0,
+   "reason": "doc1,2,4: same paper, PtSn intermetallic not nanosheet Pt; doc3: different paper, Pd/hydronium not Pt nanosheet",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "e14d9b46e26aaebed481d07d8042fa86752b2fb76b690504e6a7b43cd360e9ff"
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_74461aa8106ad59a3e7f3982",
+   "relevance": 1,
+   "reason": "L1b: same paper's method/data source describing catalyst effectiveness and stability, background to the performance question.",
+   "evidence_quotes": [
+    "the carbon nitride nanosheets supported Pt nanoparticles were water tolerant, effective and stable catalysts for hydrogenation of furfural in water."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d3d9c54aabc18fa2fdb929bc7395cf698fe919fd0b9e0caaf30d12b1fcc9d982"
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_7ea48b0a59a5688289e96826",
+   "relevance": 1,
+   "reason": "L1d: background on Pt nanoparticle catalysis, no performance numbers or reasons for nanosheet support.",
+   "evidence_quotes": [
+    "Noble metal nanoparticles have been demonstrated to be effective catalysts in the hydrogenation reaction13,14, which have been applied extensively in industry. Among the various noble metal nanoparticles, Pt-catalyzed hydrogenation reactions were widely used owing to the unique electrical and chemical properties of Pt catalysts14."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "23c3f165104ea1561a9d586d096cc35707964767e2950da1364add7129eb1eb4"
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_86d0eecaed56b884bdba46b2",
+   "relevance": 2,
+   "reason": "Same paper's experimental result linking nanosheet support surface area to improved activity; must combine with doc2 for dispersion/adsorption facts.",
+   "evidence_quotes": [
+    "As the surface area is a key factor for catalysis, when g-C3N4 nanosheets was used as the support for loading Pt nanoparticles, significant improvement of activity with complete conversion and high selectivity of furfuryl alcohol of >99% could be achieved in 5 h"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "36855e975a91aca22e309e50218c94cd5828c539e10b5e9bf1287a37673f5fcc"
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_9326f8e75cf43d68ec9232fb",
+   "relevance": 2,
+   "reason": "Same paper's activity data in water, supporting the performance context.",
+   "evidence_quotes": [
+    "the activity of Pt@TECN was closed related with the solvent, and water was the most suitable solvent for the hydrogenation of furfural in the system."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "fcacbbee01233422d4bc409ec4c271f62ccc99deaa4b66fa1b87bf7440723f59"
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_98e2c89d694d5fe1ad176766",
+   "relevance": 0,
+   "reason": "doc1,2,4: same paper, PtSn intermetallic not nanosheet Pt; doc3: different paper, Pd/hydronium not Pt nanosheet",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "e14d9b46e26aaebed481d07d8042fa86752b2fb76b690504e6a7b43cd360e9ff"
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_ae427d946654a90bad529088",
+   "relevance": 3,
+   "reason": "Directly states large surface area, enhanced furfural adsorption, and highly dispersed Pt nanoparticles as causes of improved activity.",
+   "evidence_quotes": [
+    "As 2D layered nanomaterials offered large specific surface area and small sheet thickness of about 3 nm, the diffusion of reactant and product could be accelerated in the nanosheets. Thus, once furfuryl alcohols were formed on the surface of catalyst, they would leave quickly and then be replaced by new reactant molecules. The good dispersibility of nanosheets in water favored for the hydrogenation reaction in water. Moreover, the 2D layered nanostructure would provide abundant reactive sites for adsorbing reactant molecules and enhance the adsorption ability of furfural substrates, which was demonstrated by furfural adsorption experiments. The nanostructure also facilitated the highly dispersion of Pt nanoparticles on its surface. These properties all co-contributed to the significant improvement of catalytic activity of the carbon nitride nanosheets supported Pt nanoparticles."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "36855e975a91aca22e309e50218c94cd5828c539e10b5e9bf1287a37673f5fcc",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 3,
+    "changed": false,
+    "explanation": "必需事实三项齐备且各有原文对应：large specific surface area（2D 层状纳米材料提供大比表面积）、uniform dispersion of Pt nanoparticles（the nanostructure also facilitated the highly dispersion of Pt nanoparticles）、stronger furfural adsorption（enhance the adsorption ability of furfural substrates，并有吸附实验佐证）。块来源即题目点名的 2016 水相糠醛加氢论文 → 3，维持原判。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_b0750e1c4c825273e2f2ca2f",
+   "relevance": 0,
+   "reason": "doc1: different paper, PtSn intermetallic, not nanosheet support",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d3d9c54aabc18fa2fdb929bc7395cf698fe919fd0b9e0caaf30d12b1fcc9d982"
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_c5cf24b6c854add07ffc9812",
+   "relevance": 2,
+   "reason": "Same paper's comparative data showing support nature (nanosheets) enhances Pt activity, direct evidence for the performance claim.",
+   "evidence_quotes": [
+    "Pt@TECN exhibited higher activity than Pt@C (50.6% yield of furfural alcohol within 1 h) under identical conditions. The results implied that the nature of the support had a \nnoticeable impact in the catalytic activity of Pt catalysts for furfural hydrogenation."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d3d9c54aabc18fa2fdb929bc7395cf698fe919fd0b9e0caaf30d12b1fcc9d982"
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_dc64698ea1bca06a22e862a2",
+   "relevance": 2,
+   "reason": "Directly attributes improved activity to high surface area of g-C3N4 nanosheet support, supporting the asked reason.",
+   "evidence_quotes": [
+    "As the surface area is a key factor for catalysis, when g-C3N4 nanosheets was used as the support for loading Pt nanoparticles, significant improvement of activity with complete conversion and high selectivity of furfuryl alcohol of >99% could be achieved in 5 h (Entry 7, Table 1)."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "23c3f165104ea1561a9d586d096cc35707964767e2950da1364add7129eb1eb4"
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_df26cc066ab9023cbbdc409a",
+   "relevance": 0,
+   "reason": "doc0: same paper, PtSn@mSiO2 not nanosheet; doc1: different paper, Pd/hydronium study",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "36855e975a91aca22e309e50218c94cd5828c539e10b5e9bf1287a37673f5fcc"
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_ed19b93311ec596ead1a4909",
+   "relevance": 0,
+   "reason": "doc0: same paper, PtSn@mSiO2 not nanosheet; doc1: different paper, Pd/hydronium study",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "36855e975a91aca22e309e50218c94cd5828c539e10b5e9bf1287a37673f5fcc"
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_f4974affabe1c28fb9399f89",
+   "relevance": 2,
+   "reason": "Conclusions restate surface area, Pt dispersion, and adsorption reasons.",
+   "evidence_quotes": [
+    "The nanosheets had a large surface area and small sheet thickness of ~3 nm, which made small-size Pt nanoparticles well distributed on the surface of the carbon nitride. The rich functional groups such as NH2, NH groups on the surface of carbon nitride nanosheets also led to a very stable and uniform dispersion of Pt nanoparticles. What is more, the nanosheets would provide abundant reactive sites for adsorbing reactant molecules"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "fcacbbee01233422d4bc409ec4c271f62ccc99deaa4b66fa1b87bf7440723f59"
+  }
+ ]
+}

@@ -1,0 +1,434 @@
+{
+ "query_id": "q_0027",
+ "judgments": [
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_04fbc5df97bb56596f144e33",
+   "relevance": 0,
+   "reason": "doc0: furfural from other biomass, no phenolics; doc1: xylose to furfural, no Eucalyptus phenolics; doc2: bibliography entries only, unrelated topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "f7239d0c026dfb6aa8c2c59d09e5346339619f1f7fc6f0d14492008ed875026e"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_076b9346fadb8e7dee5524c6",
+   "relevance": 1,
+   "reason": "Same 2020 Eucalyptus grandis integrated biorefinery paper; reports highest phenolic monomer yield (49.8 wt%) under RCF, the condition the question asks about.",
+   "evidence_quotes": [
+    "Results showed that high monomers yield of 49.8 wt% close to the theoretical maximum was obtained during RCF process"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "f7239d0c026dfb6aa8c2c59d09e5346339619f1f7fc6f0d14492008ed875026e",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "必需事实是三个条件值（240 ℃、4 h、30 atm H2）。通读全块：只出现第二段（FeCl3 处理糖浆料）的条件 170 ℃/120 min 与 190 ℃/100 min，以及最高酚类单体收率 49.8 wt% 这一结果值；RCF 步骤的温度、时间、氢压三项一个都没有出现（只以『Under optimized conditions』带过）。三项全缺 → 不满足 2/3 级；但同论文、同 RCF 步骤、给出对应的最高收率与物料平衡 → L1b『同论文的方法或数据来源』= 1。旧判 3 过高。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_07b252e04e6faed35bdbf791",
+   "relevance": 0,
+   "reason": "doc1,2: xylose/furfural microwave study, no lignin phenolics; doc3: furfural review, no phenolic monomers; doc4: butyl levulinate from biomass, no reductive fractionation",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0486f0271e8e7a2388ed0a59bdb279fcff53e339ef0e6261fa7dab232d38f018"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_14a7c0df6d1ee837e0359f6b",
+   "relevance": 0,
+   "reason": "doc1,2,3: xylose/furfural microwave study, different system; doc0: same paper, unrelated furfural topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "c5d9171d0b6cbc5c76e06b22aae02ac40c3ec35aa7fa7644dc741a5af032f1b8"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_33bf357cd18670d0d2ca2b34",
+   "relevance": 2,
+   "reason": "Same paper's RCF optimization data: 240 °C, 4 h, H2; MeOH gives highest 49.8 wt% phenolics, but pressure value not stated here.",
+   "evidence_quotes": [
+    "Several solvents were screened in the RCF of Eucalyptus sawdust in presence of Pd/C under 240 °C, 4 h and H2 atmosphere (Additional file 1: Table S3, entries 1–4). Ethanol, isopropanol and water gave 42.4, 40.0 and 35.0 wt% yields of monomeric phenols, which were lower than that in MeOH (49.8 wt%)."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "50f70891af45df451352db5e6699c558c5b31d391fcedbcca1686a712319e709"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_36168cf9a6852f62222d69a1",
+   "relevance": 0,
+   "reason": "doc1,2: xylose/furfural microwave study, no lignin phenolics; doc3: furfural review, no phenolic monomers; doc4: butyl levulinate from biomass, no reductive fractionation",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0486f0271e8e7a2388ed0a59bdb279fcff53e339ef0e6261fa7dab232d38f018"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_396fbbf891060bcb9b5939fc",
+   "relevance": 0,
+   "reason": "doc0,1: xylose/furfural RSM paper, no phenolics; doc2: review of furfural from hemicellulose, unrelated",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "97524ad262c4f0894498fd5e4dcb11f65ace2beb6ec2d07dd85d44d5e90f37d3"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_50015abd498d99b96ac574fd",
+   "relevance": 1,
+   "reason": "L1c: different paper, comparable optimization run; reports temperature/time for furfural yield, not the Eucalyptus RCF phenolic condition.",
+   "evidence_quotes": [
+    "The highest yield value, 53.71%, is obtained at 200 ◦C, [FeCl3] = 0.07 M, and 0.5 min"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "answerability_conflict": false,
+   "raw_response_id": "50f70891af45df451352db5e6699c558c5b31d391fcedbcca1686a712319e709",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "题目点名 2020 年 Eucalyptus grandis 集成炼制研究；本块来源 paper_65e9cfe7da55d5c5714aeb00 是另一篇 Molecules 2020 FeCl3 响应面优化论文。块内给的是该他文的 FeCl3 浓度/时间/温度最优组合，与所问 Eucalyptus RCF 酚类单体的 240 ℃/4 h/30 atm H2 完全不是同一组事实（三项值一个未出现）。属『不同论文的同类对照实验』= L1c = 1。旧判 3 严重过高（旧理由本身即写明不是 Eucalyptus RCF 条件）。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_66a6546be5c3b453a89369bc",
+   "relevance": 0,
+   "reason": "doc0: furfural from other biomass, no phenolics; doc1: xylose to furfural, no Eucalyptus phenolics; doc2: bibliography entries only, unrelated topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "f7239d0c026dfb6aa8c2c59d09e5346339619f1f7fc6f0d14492008ed875026e"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_6e78c19898b31ac47a034920",
+   "relevance": 0,
+   "reason": "doc1,2,3: xylose/furfural microwave study, different system; doc0: same paper, unrelated furfural topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "c5d9171d0b6cbc5c76e06b22aae02ac40c3ec35aa7fa7644dc741a5af032f1b8"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_6f9e1ddf4e91431e9cfc6c46",
+   "relevance": 3,
+   "reason": "Directly states the temperature, time, and H2 pressure for maximum phenolic monomer yield in Eucalyptus grandis integrated biorefinery.",
+   "evidence_quotes": [
+    "The maximum phenolic monomers yield of 49.8 wt% was achieved at 240 °C for 4 h under 30 atm H2."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0486f0271e8e7a2388ed0a59bdb279fcff53e339ef0e6261fa7dab232d38f018"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_8d9f10a9f16d910aec63151f",
+   "relevance": 0,
+   "reason": "doc2: different paper, xylose/FeCl3 microwave study, no Eucalyptus lignin hydrogenolysis",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "d27e244f9911e3b61e8231f4484f03e15cb3025cc3269ebf781dea0c9d59ab6f"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_8df4ec2e5e536e334bed299c",
+   "relevance": 0,
+   "reason": "doc0: furfural from other biomass, no phenolics; doc1: xylose to furfural, no Eucalyptus phenolics; doc2: bibliography entries only, unrelated topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "f7239d0c026dfb6aa8c2c59d09e5346339619f1f7fc6f0d14492008ed875026e"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_9a3457fea16bb954184bbb85",
+   "relevance": 0,
+   "reason": "doc1,2,3: xylose/furfural microwave study, different system; doc0: same paper, unrelated furfural topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "c5d9171d0b6cbc5c76e06b22aae02ac40c3ec35aa7fa7644dc741a5af032f1b8"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_9b27a5144a763ff68f58aa16",
+   "relevance": 2,
+   "reason": "Same paper, method/data basis for the run at maximum phenolic monomers; supports locating the condition but not the numbers.",
+   "evidence_quotes": [
+    "The chemical composition of leftover carbohydrate pulp, obtained at the maximum phenolic monomers concurrently, was analyzed by NREL procedure."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "Agent_review_completed",
+   "answerability_conflict": false,
+   "raw_response_id": "97524ad262c4f0894498fd5e4dcb11f65ace2beb6ec2d07dd85d44d5e90f37d3",
+   "review_note": "240 ℃ 与 4 h 有据、氢压缺失 → 维持 2",
+   "review_verdict": "部分"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_a25e2f00d4aaf85f916a763e",
+   "relevance": 0,
+   "reason": "doc0,1: xylose/furfural RSM paper, no phenolics; doc2: review of furfural from hemicellulose, unrelated",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "97524ad262c4f0894498fd5e4dcb11f65ace2beb6ec2d07dd85d44d5e90f37d3"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_aab52ea69a4faea507a0a623",
+   "relevance": 2,
+   "reason": "Same paper's results and methods: confirms highest phenolic monomer yield 49.8 wt% under RCF; supports the condition context.",
+   "evidence_quotes": [
+    "Results showed that high monomers yield of 49.8 wt% close to the theoretical maximum was obtained during RCF process"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "50f70891af45df451352db5e6699c558c5b31d391fcedbcca1686a712319e709"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_aaff83e35ec0748b056b3658",
+   "relevance": 0,
+   "reason": "doc1,2: xylose/furfural microwave study, no lignin phenolics; doc3: furfural review, no phenolic monomers; doc4: butyl levulinate from biomass, no reductive fractionation",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0486f0271e8e7a2388ed0a59bdb279fcff53e339ef0e6261fa7dab232d38f018"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_af1b2e8649d73a92e75f2c61",
+   "relevance": 0,
+   "reason": "doc0: furfural from other biomass, no phenolics; doc1: xylose to furfural, no Eucalyptus phenolics; doc2: bibliography entries only, unrelated topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "f7239d0c026dfb6aa8c2c59d09e5346339619f1f7fc6f0d14492008ed875026e"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_b4a63245687199605240fc88",
+   "relevance": 0,
+   "reason": "doc0: same paper, conclusions only, no conditions; doc1: same paper, bibliography references",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "50f70891af45df451352db5e6699c558c5b31d391fcedbcca1686a712319e709"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_c90f3629e80547c70ed57947",
+   "relevance": 3,
+   "reason": "Directly reports the maximum phenolic monomer yield (49.8 wt%) under 240 °C, 4 h, H2, matching the asked temperature/time/H2 conditions.",
+   "evidence_quotes": [
+    "Several solvents were screened in the RCF of Eucalyptus sawdust in presence of Pd/C under 240 °C, 4 h and H2 atmosphere (Additional file 1: Table S3, entries 1–4). Ethanol, isopropanol and water gave 42.4, 40.0 and 35.0 wt% yields of monomeric phenols, which were lower than that in MeOH (49.8 wt%)."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "c5d9171d0b6cbc5c76e06b22aae02ac40c3ec35aa7fa7644dc741a5af032f1b8"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_cc6f834d38212f53e2cabe1a",
+   "relevance": 2,
+   "reason": "Same paper (Eucalyptus grandis integrated biorefinery) reporting the maximum phenolic monomer yield condition; supplies temperature but not time/H2 pressure.",
+   "evidence_quotes": [
+    "Increased total phenolic monomer yields were observed with the rise of reaction temperature in a range of 200–240 °C, thus reaching maximum yield of 49.8 wt%."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "97524ad262c4f0894498fd5e4dcb11f65ace2beb6ec2d07dd85d44d5e90f37d3"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_df3aec9b2824dc7e019e2465",
+   "relevance": 2,
+   "reason": "Same paper's GC run at 240 °C, 4 h; table row 4 (240 °C) shows highest monomer yields, matching the asked conditions.",
+   "evidence_quotes": [
+    "hydrogenolysis of Eucalyptus sawdust at 240 °C for 4 h"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "d27e244f9911e3b61e8231f4484f03e15cb3025cc3269ebf781dea0c9d59ab6f"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_e29b435199d859f15cb96d89",
+   "relevance": 0,
+   "reason": "doc0,1: xylose/furfural RSM paper, no phenolics; doc2: review of furfural from hemicellulose, unrelated",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "97524ad262c4f0894498fd5e4dcb11f65ace2beb6ec2d07dd85d44d5e90f37d3"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_e820d94c959ca330c769c54c",
+   "relevance": 0,
+   "reason": "doc0: same paper, conclusions only, no conditions; doc1: same paper, bibliography references",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "50f70891af45df451352db5e6699c558c5b31d391fcedbcca1686a712319e709"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_f1ccac9556e6c68bb7e642c7",
+   "relevance": 0,
+   "reason": "doc1,2: xylose/furfural microwave study, no lignin phenolics; doc3: furfural review, no phenolic monomers; doc4: butyl levulinate from biomass, no reductive fractionation",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0486f0271e8e7a2388ed0a59bdb279fcff53e339ef0e6261fa7dab232d38f018"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_fce8c696e1dde260b93bd71e",
+   "relevance": 1,
+   "reason": "States the same system's H2 pressure (30 atm) and 4 h time; must be combined with doc0's 240 °C for the full answer.",
+   "evidence_quotes": [
+    "The RCF reaction of Eucalyptus sawdust (40–60 mesh) was carried out in a batch reactor with Pd/C (10 wt% dosage) under H2 (30 atm) in methanol. A range of temperatures were screened for 4 h."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "d27e244f9911e3b61e8231f4484f03e15cb3025cc3269ebf781dea0c9d59ab6f"
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_fd754a50c4f3510f7ef443fc",
+   "relevance": 1,
+   "reason": "L1b: same paper's method/data basis for the integrated biorefinery, but only auxiliary conditions, not the asked phenolics yield conditions.",
+   "evidence_quotes": [
+    "General conditions: carbohydrate pulp (0.15 g), metal halide catalysts in biphasic solvent (0.1 M, 12 mL), 170 °C for 120 min"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "c5d9171d0b6cbc5c76e06b22aae02ac40c3ec35aa7fa7644dc741a5af032f1b8"
+  }
+ ]
+}

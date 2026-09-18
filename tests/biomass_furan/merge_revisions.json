@@ -1,0 +1,178 @@
+[
+ {
+  "query_id": "q_0012",
+  "doc_id": "chk_12f59e5c3a85b3802d537196",
+  "old": {
+   "relevance": 1,
+   "reason": "同一篇2023年CMF集成工艺论文（p13-14）：图17与统计DOE分析。属方法学，无2025实际运行数据。",
+   "source": "existing"
+  },
+  "new": {
+   "relevance": 0,
+   "reason": "doc0: commercial plant announcement, no cost/downtime data; doc1: DoE yield statistics, unrelated; doc2: lab yield/temperature data, unrelated; doc3: lab methods/analytics, unrelated; doc4: abstract/i",
+   "source": "exhaustive-chemistry-qrels-v2-compact",
+   "raw_response_id": "d6f2d2af2b00c030904f6ea59921b140b2051265a7a08b2370f17ad26165485c"
+  },
+  "recheck_item": true
+ },
+ {
+  "query_id": "q_0012",
+  "doc_id": "chk_4bf9c07e207731f07720a1fb",
+  "old": {
+   "relevance": 1,
+   "reason": "同一篇2023年CMF集成工艺论文（p11-12）：图14与糠醛温度筛选。属实验，无实际运行数据。",
+   "source": "existing"
+  },
+  "new": {
+   "relevance": 0,
+   "reason": "doc0: commercial plant announcement, no cost/downtime data; doc1: DoE yield statistics, unrelated; doc2: lab yield/temperature data, unrelated; doc3: lab methods/analytics, unrelated; doc4: abstract/i",
+   "source": "exhaustive-chemistry-qrels-v2-compact",
+   "raw_response_id": "d6f2d2af2b00c030904f6ea59921b140b2051265a7a08b2370f17ad26165485c"
+  },
+  "recheck_item": true
+ },
+ {
+  "query_id": "q_0012",
+  "doc_id": "chk_4c284eac482a133d335c7ca7",
+  "old": {
+   "relevance": 1,
+   "reason": "同一篇2023年CMF集成工艺论文（p8）：双相体系沿革与Origin Materials商业装置概述。属背景，未含所问成本/停机。",
+   "source": "existing"
+  },
+  "new": {
+   "relevance": 0,
+   "reason": "doc0: commercial plant announcement, no cost/downtime data; doc1: DoE yield statistics, unrelated; doc2: lab yield/temperature data, unrelated; doc3: lab methods/analytics, unrelated; doc4: abstract/i",
+   "source": "exhaustive-chemistry-qrels-v2-compact",
+   "raw_response_id": "d6f2d2af2b00c030904f6ea59921b140b2051265a7a08b2370f17ad26165485c"
+  },
+  "recheck_item": true
+ },
+ {
+  "query_id": "q_0012",
+  "doc_id": "chk_536a1a39e5c2ce52180c8753",
+  "old": {
+   "relevance": 1,
+   "reason": "同一篇2023年CMF集成工艺论文（p3-4）：表征方法(IC/HPLC/GC/NMR)。属方法，无成本/停机。",
+   "source": "existing"
+  },
+  "new": {
+   "relevance": 0,
+   "reason": "doc0: commercial plant announcement, no cost/downtime data; doc1: DoE yield statistics, unrelated; doc2: lab yield/temperature data, unrelated; doc3: lab methods/analytics, unrelated; doc4: abstract/i",
+   "source": "exhaustive-chemistry-qrels-v2-compact",
+   "raw_response_id": "d6f2d2af2b00c030904f6ea59921b140b2051265a7a08b2370f17ad26165485c"
+  },
+  "recheck_item": true
+ },
+ {
+  "query_id": "q_0012",
+  "doc_id": "chk_53e21392be7f477eb4a192a9",
+  "old": {
+   "relevance": 1,
+   "reason": "同一篇2023年CMF集成工艺论文（p10-11）：温度筛选(DAWN主/预水解液)。属实验，无实际运行数据。",
+   "source": "existing"
+  },
+  "new": {
+   "relevance": 0,
+   "reason": "doc0: CMF chemistry background, no cost/downtime data; doc1: yield optimization, no cost/downtime; doc2: solvent screening yields, no cost/downtime; doc3: reaction parameter background, no cost/downti",
+   "source": "exhaustive-chemistry-qrels-v2-compact",
+   "raw_response_id": "e250d72ca7af4ac14cc24a524abb8bc938f8704e8a3f04f870a736ffadf107a7"
+  },
+  "recheck_item": true
+ },
+ {
+  "query_id": "q_0012",
+  "doc_id": "chk_699a5e553d3cc4a39e9abd11",
+  "old": {
+   "relevance": 1,
+   "reason": "同一篇2023年CMF集成工艺论文（p14-15）：预测分析器对CMF收率影响及最佳条件。属工艺优化相邻内容，未给所问2025全年实际运行CMF吨成本与逐月停机记录。",
+   "source": "existing"
+  },
+  "new": {
+   "relevance": 0,
+   "reason": "doc0: CMF chemistry background, no cost/downtime data; doc1: yield optimization, no cost/downtime; doc2: solvent screening yields, no cost/downtime; doc3: reaction parameter background, no cost/downti",
+   "source": "exhaustive-chemistry-qrels-v2-compact",
+   "raw_response_id": "e250d72ca7af4ac14cc24a524abb8bc938f8704e8a3f04f870a736ffadf107a7"
+  },
+  "recheck_item": true
+ },
+ {
+  "query_id": "q_0012",
+  "doc_id": "chk_80cfb9a0ecf7628f4f48e9d3",
+  "old": {
+   "relevance": 1,
+   "reason": "同一篇2023年CMF集成工艺论文（p1）：摘要与引言。无2025实际运行数据。",
+   "source": "existing"
+  },
+  "new": {
+   "relevance": 0,
+   "reason": "doc0: commercial plant announcement, no cost/downtime data; doc1: DoE yield statistics, unrelated; doc2: lab yield/temperature data, unrelated; doc3: lab methods/analytics, unrelated; doc4: abstract/i",
+   "source": "exhaustive-chemistry-qrels-v2-compact",
+   "raw_response_id": "d6f2d2af2b00c030904f6ea59921b140b2051265a7a08b2370f17ad26165485c"
+  },
+  "recheck_item": true
+ },
+ {
+  "query_id": "q_0012",
+  "doc_id": "chk_a5b37d7f87977c7c9105ad34",
+  "old": {
+   "relevance": 1,
+   "reason": "同一篇2023年CMF集成工艺论文（p2-3）：CMF/HMF化学与工艺整合示意。属背景，无2025实际数据。",
+   "source": "existing"
+  },
+  "new": {
+   "relevance": 0,
+   "reason": "doc0: CMF chemistry background, no cost/downtime data; doc1: yield optimization, no cost/downtime; doc2: solvent screening yields, no cost/downtime; doc3: reaction parameter background, no cost/downti",
+   "source": "exhaustive-chemistry-qrels-v2-compact",
+   "raw_response_id": "e250d72ca7af4ac14cc24a524abb8bc938f8704e8a3f04f870a736ffadf107a7"
+  },
+  "recheck_item": true
+ },
+ {
+  "query_id": "q_0012",
+  "doc_id": "chk_ba9e5efc47058347fcc22d5a",
+  "old": {
+   "relevance": 1,
+   "reason": "同一篇2023年CMF集成工艺论文（p9-10）：表2溶剂Hansen参数与CMF收率筛选。无成本/停机。",
+   "source": "existing"
+  },
+  "new": {
+   "relevance": 0,
+   "reason": "doc0: CMF chemistry background, no cost/downtime data; doc1: yield optimization, no cost/downtime; doc2: solvent screening yields, no cost/downtime; doc3: reaction parameter background, no cost/downti",
+   "source": "exhaustive-chemistry-qrels-v2-compact",
+   "raw_response_id": "e250d72ca7af4ac14cc24a524abb8bc938f8704e8a3f04f870a736ffadf107a7"
+  },
+  "recheck_item": true
+ },
+ {
+  "query_id": "q_0012",
+  "doc_id": "chk_c126b5e76878bcd31b557746",
+  "old": {
+   "relevance": 1,
+   "reason": "同一篇2023年CMF集成工艺论文（p8）：介绍Origin Materials 2023年6月Sarnia商业CMF装置及两步工艺。仅描述装置/工艺，未给2025实际吨成本与停机记录。",
+   "source": "existing"
+  },
+  "new": {
+   "relevance": 0,
+   "reason": "doc0: 2023 paper describes plant startup/process, no 2025 cost or downtime data",
+   "source": "exhaustive-chemistry-qrels-v2-compact",
+   "raw_response_id": "2af3763e2211bef63bef7b18c2e6aaeca3b0bf7f589c50d3a960708ddbb2059d"
+  },
+  "recheck_item": true
+ },
+ {
+  "query_id": "q_0012",
+  "doc_id": "chk_df8e5c677fc02931a29f1e1b",
+  "old": {
+   "relevance": 1,
+   "reason": "同一篇2023年CMF集成工艺论文（p8-9）：双相体系原理与反应参数分析(中试产物流)。未给成本/停机。",
+   "source": "existing"
+  },
+  "new": {
+   "relevance": 0,
+   "reason": "doc0: CMF chemistry background, no cost/downtime data; doc1: yield optimization, no cost/downtime; doc2: solvent screening yields, no cost/downtime; doc3: reaction parameter background, no cost/downti",
+   "source": "exhaustive-chemistry-qrels-v2-compact",
+   "raw_response_id": "e250d72ca7af4ac14cc24a524abb8bc938f8704e8a3f04f870a736ffadf107a7"
+  },
+  "recheck_item": true
+ }
+]

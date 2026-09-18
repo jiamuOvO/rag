@@ -1,0 +1,226 @@
+{
+ "query_id": "q_0053",
+ "judgments": [
+  {
+   "query_id": "q_0053",
+   "doc_id": "chk_175efdde3cc9e55cc4c9e5e2",
+   "relevance": 0,
+   "reason": "doc0: same field, different catalyst/system, no formula; doc1: same paper, unrelated topic; doc2: 1922 bibliography references only; doc4: same paper, unrelated topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "f22b3361ff10bd0ba6ebc6eea5bd90a290546133284bd129e901127e2e266ffe"
+  },
+  {
+   "query_id": "q_0053",
+   "doc_id": "chk_2457bcbec7234dbe74bc716f",
+   "relevance": 0,
+   "reason": "doc0: same paper, yields not formula; doc1: same paper, yields not formula; doc2: same paper, isotope labeling; doc3: same paper, synthesis/procedure; doc4: same paper, yields not formula",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "9b1564d0edba3f6886d6c2a279e4fff9508dbc15d934229715a1e0cb16aac3d4"
+  },
+  {
+   "query_id": "q_0053",
+   "doc_id": "chk_2c26b76bcb96e32b4ebea344",
+   "relevance": 0,
+   "reason": "doc0: same paper, yields not formula; doc1: same paper, yields not formula; doc2: same paper, isotope labeling; doc3: same paper, synthesis/procedure; doc4: same paper, yields not formula",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "9b1564d0edba3f6886d6c2a279e4fff9508dbc15d934229715a1e0cb16aac3d4"
+  },
+  {
+   "query_id": "q_0053",
+   "doc_id": "chk_49d43640f44f8cb24c4bb74a",
+   "relevance": 0,
+   "reason": "doc0: same field, different catalyst/system, no formula; doc1: same paper, unrelated topic; doc2: 1922 bibliography references only; doc4: same paper, unrelated topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "f22b3361ff10bd0ba6ebc6eea5bd90a290546133284bd129e901127e2e266ffe"
+  },
+  {
+   "query_id": "q_0053",
+   "doc_id": "chk_5b9e246e84dd78610b35db03",
+   "relevance": 0,
+   "reason": "doc0: same field, different catalyst/system, no formula; doc1: same paper, unrelated topic; doc2: 1922 bibliography references only; doc4: same paper, unrelated topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "f22b3361ff10bd0ba6ebc6eea5bd90a290546133284bd129e901127e2e266ffe"
+  },
+  {
+   "query_id": "q_0053",
+   "doc_id": "chk_706fe00bd0a08e07a7129b6b",
+   "relevance": 2,
+   "reason": "States furfural formula C5H4O2 in the same 2023 paper.",
+   "evidence_quotes": [
+    "Furfural (C5H4O2) is an important platform chemical that is traditionally derived from the pentosans"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "21328c903fdbc7505271d6052458281b096e5b2a0d88b3c3d1c22f21183271b6"
+  },
+  {
+   "query_id": "q_0053",
+   "doc_id": "chk_765cb061e1f7730e719a8e05",
+   "relevance": 2,
+   "reason": "Directly gives furfural molecular formula C5H4O2 in the 2023 Pd-PdO/ZnSO4 paper.",
+   "evidence_quotes": [
+    "Furfural (C5H4O2) is an important platform chemical for the synthesis of nextgeneration bio-fuels."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "21328c903fdbc7505271d6052458281b096e5b2a0d88b3c3d1c22f21183271b6"
+  },
+  {
+   "query_id": "q_0053",
+   "doc_id": "chk_7f97da34ec5bc180ad75c39a",
+   "relevance": 2,
+   "reason": "Same paper's pathway discussion; auxiliary context, no formula given.",
+   "evidence_quotes": [
+    "the overall reaction pathway for the conversion of C6 sugar to furfural is proposed in Fig. 7"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "21328c903fdbc7505271d6052458281b096e5b2a0d88b3c3d1c22f21183271b6"
+  },
+  {
+   "query_id": "q_0053",
+   "doc_id": "chk_8cf72a170dae488699a5740b",
+   "relevance": 0,
+   "reason": "doc3: 1922 paper on furfural structure/properties, no molecular formula C5H4O2 for the 2023 paper",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "21328c903fdbc7505271d6052458281b096e5b2a0d88b3c3d1c22f21183271b6"
+  },
+  {
+   "query_id": "q_0053",
+   "doc_id": "chk_b3e2b10ee8b6418d9d565f85",
+   "relevance": 2,
+   "reason": "Same paper's reaction pathway section; supports context but does not itself state the formula.",
+   "evidence_quotes": [
+    "Reaction pathways of C6 sugars to furfural"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "21328c903fdbc7505271d6052458281b096e5b2a0d88b3c3d1c22f21183271b6"
+  },
+  {
+   "query_id": "q_0053",
+   "doc_id": "chk_bfd31418cf64f991fcdc7441",
+   "relevance": 0,
+   "reason": "doc0: same paper, yields not formula; doc1: same paper, yields not formula; doc2: same paper, isotope labeling; doc3: same paper, synthesis/procedure; doc4: same paper, yields not formula",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "9b1564d0edba3f6886d6c2a279e4fff9508dbc15d934229715a1e0cb16aac3d4"
+  },
+  {
+   "query_id": "q_0053",
+   "doc_id": "chk_ca594c753451bb22f850f6cd",
+   "relevance": 0,
+   "reason": "doc0: same field, different catalyst/system, no formula; doc1: same paper, unrelated topic; doc2: 1922 bibliography references only; doc4: same paper, unrelated topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "f22b3361ff10bd0ba6ebc6eea5bd90a290546133284bd129e901127e2e266ffe"
+  },
+  {
+   "query_id": "q_0053",
+   "doc_id": "chk_d84846376b66774369ec92a4",
+   "relevance": 0,
+   "reason": "doc0: same paper, yields not formula; doc1: same paper, yields not formula; doc2: same paper, isotope labeling; doc3: same paper, synthesis/procedure; doc4: same paper, yields not formula",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "9b1564d0edba3f6886d6c2a279e4fff9508dbc15d934229715a1e0cb16aac3d4"
+  },
+  {
+   "query_id": "q_0053",
+   "doc_id": "chk_ecaca7afe06398bad1e2491a",
+   "relevance": 2,
+   "reason": "Independent literature review explicitly states furfural's molecular formula C5H4O2, matching the asked fact (L1c comparable independent statement).",
+   "evidence_quotes": [
+    "This heterocyclic and aromatic aldehyde, whose molecular formula is C5H4O2, is also known as 2-furancarboxyaldehyde, furaldehyde, 2-furanaldehyde, fural and furfuraldehyde"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "f22b3361ff10bd0ba6ebc6eea5bd90a290546133284bd129e901127e2e266ffe"
+  },
+  {
+   "query_id": "q_0053",
+   "doc_id": "chk_ee7b3c8ea2f58be1382c1e47",
+   "relevance": 0,
+   "reason": "doc0: same paper, yields not formula; doc1: same paper, yields not formula; doc2: same paper, isotope labeling; doc3: same paper, synthesis/procedure; doc4: same paper, yields not formula",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "9b1564d0edba3f6886d6c2a279e4fff9508dbc15d934229715a1e0cb16aac3d4"
+  }
+ ]
+}

@@ -1,0 +1,342 @@
+{
+ "query_id": "q_0022",
+ "judgments": [
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_11805269bb842021bf0778ce",
+   "relevance": 0,
+   "reason": "doc2: 1922 furfural discoloration, unrelated substance; doc3: biomass burning emission factors, unrelated field",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "c884e4a132c3658cc7f774f525e5f23f47120fb7b90f463718a28931f29e99a3"
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_15e0eea1dcafcd8fc9da9202",
+   "relevance": 0,
+   "reason": "doc2: 1922 furfural discoloration, unrelated substance; doc3: biomass burning emission factors, unrelated field",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "c884e4a132c3658cc7f774f525e5f23f47120fb7b90f463718a28931f29e99a3"
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_1ce0860fa81b542e2bb81911",
+   "relevance": 1,
+   "reason": "L1b: same paper's analytics methods for conversion and Mn, but no bottle-grade criteria values.",
+   "evidence_quotes": [
+    "Conversion (X) and absolute molecular weights of PET and PEF (as number average, Mn, and weight average, Mw, respectively) were determined by size exclusion chromatography coupled with multi-angle laser light scattering (SEC-MALS)."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "c884e4a132c3658cc7f774f525e5f23f47120fb7b90f463718a28931f29e99a3"
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_1d652b068d7b102804a6c245",
+   "relevance": 1,
+   "reason": "L1d: background on bottle-grade molecular weight, no numeric criteria.",
+   "evidence_quotes": [
+    "molecular weight reduction below bottlegrade levels, as also reported for non-stabilised PET polyester, was observed during compression moulding"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d6e76517eb3981c6ec067a2c364333e8bf2f580d449d5d39a65aa97531326f82"
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_225effd7fc471e48de2f6833",
+   "relevance": 2,
+   "reason": "Figure 3 labels give Mn and conversion bottle-grade targets; must combine with colour criterion.",
+   "evidence_quotes": [
+    "Bottle-grade Mn > 30 kg mol–1 ... Conversion X > 95%"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_4f3c11541083dfa9ed597bc1",
+   "relevance": 0,
+   "reason": "doc1,3,4: biomass burning paper, unrelated field",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "299d2356a953bec9b28176c6fb959b5befe13613f84c73abd17ba8116eb14157"
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_6607e591b51235df3444c92e",
+   "relevance": 2,
+   "reason": "L1b: same paper's data basis, supplies the conversion criterion but not Mn or color.",
+   "evidence_quotes": [
+    "cyOEF conversions below 95% are unacceptable for bottle-grade PEF"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "Agent_review_completed",
+   "answerability_conflict": false,
+   "raw_response_id": "299d2356a953bec9b28176c6fb959b5befe13613f84c73abd17ba8116eb14157",
+   "review_note": "三项判据中仅转化率一项有据 → 维持 2",
+   "review_verdict": "部分"
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_6a892952eacd8b3774ce0f2b",
+   "relevance": 2,
+   "reason": "States conversion, Mn and uncoloured bottle-grade criteria; combine with other chunks.",
+   "evidence_quotes": [
+    "ROP delivers bottle-grade (>95% conversion, Mn > 30 kg mol−1, uncoloured) PEF within less than 30 min"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_8ed3d9603cf613139bfb9285",
+   "relevance": 0,
+   "reason": "doc1,3,4: biomass burning paper, unrelated field",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "299d2356a953bec9b28176c6fb959b5befe13613f84c73abd17ba8116eb14157"
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_9757e01c23afde940d264b95",
+   "relevance": 2,
+   "reason": "Mentions bottle-grade PEF and Mn > 30 kg mol–1 in Fig. 1.",
+   "evidence_quotes": [
+    "high molecular weight bottle-grade PEF"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "10771a7356d4fb8f6455223653726ab700489b43086d9b80309a272a10b9599e"
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_9a11044c6b0a3219c803c306",
+   "relevance": 1,
+   "reason": "L1d background on PEF/PET motivation, no bottle-grade numbers.",
+   "evidence_quotes": [
+    "Polyethylene furanoate (PEF; Fig. 1a) represents a promising 100% renewables-based alternative to its fossil-based counterpart polyethylene terephthalate (PET; Fig. 1a)"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_a2cd446f218bdb4129df1ed3",
+   "relevance": 3,
+   "reason": "Directly states bottle-grade target Mn >30 kg mol−1, conversion >95%, and color-free product.",
+   "evidence_quotes": [
+    "ROP using 0.1% (squares), 0.2% (diamonds) and 0.3% (triangles) cyclic stannoxane with 33% tetraglyme at 260 °C, resulting in full ( >96%) cyOEF conversions to high molecular weights exceeding the bottle-grade target of 30 kg mol−1 within <20 min. e PEF from different routes: a high molecular weight product without undesired discolouration"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "c884e4a132c3658cc7f774f525e5f23f47120fb7b90f463718a28931f29e99a3"
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_c5ee9a13264c5b09493cb394",
+   "relevance": 2,
+   "reason": "Gives conversion >95% and bottle-grade molecular weight/colour criteria.",
+   "evidence_quotes": [
+    "bring the reaction to completion (conversion >95%) within less than 30 min. Such rapid ROP then allows for tuning the PEF product towards bottle-grade molecular weight and colour."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "10771a7356d4fb8f6455223653726ab700489b43086d9b80309a272a10b9599e"
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_c7386b23f1137ddd583d474b",
+   "relevance": 3,
+   "reason": "Directly states the bottle-grade criteria: Mn >30 kg/mol, conversion >95%, colour-free.",
+   "evidence_quotes": [
+    "the production of polymer grades required for the so-called green bottle (Mn > 30 kg mol−1, conversion > 95%, colour-free products)."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_cef99cb9104aa5e7ec2ee0c5",
+   "relevance": 0,
+   "reason": "doc1,3,4: biomass burning paper, unrelated field",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "299d2356a953bec9b28176c6fb959b5befe13613f84c73abd17ba8116eb14157"
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_d6b999f6dc0e9e0c89f1cbd1",
+   "relevance": 1,
+   "reason": "L1a: same system, conversion condition context but not the bottle-grade criteria.",
+   "evidence_quotes": [
+    "pure cyOEF added to a reactive PEF\nmelt (conversion >90%) containing 0.1% initiator is converted to\npolymer within 20 min at 280 °C"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d6e76517eb3981c6ec067a2c364333e8bf2f580d449d5d39a65aa97531326f82"
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_daf4ded6d32e7a3bea257069",
+   "relevance": 2,
+   "reason": "Directly states the conversion criterion for bottle-grade PEF.",
+   "evidence_quotes": [
+    "In general, cyOEF conversions below 95% are unacceptable for bottle-grade PEF"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d6e76517eb3981c6ec067a2c364333e8bf2f580d449d5d39a65aa97531326f82"
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_dd7dabb4ca1b2cc379d3fd10",
+   "relevance": 2,
+   "reason": "States Mn > 30 kg mol-1 for bottle-grade PEF in Fig. 1.",
+   "evidence_quotes": [
+    "ROP) within less than 30 min with appropriate plasticisation and initiator to high molecular weight bottle-grade PEF"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d6e76517eb3981c6ec067a2c364333e8bf2f580d449d5d39a65aa97531326f82"
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_e07ce161e660960084efc4ce",
+   "relevance": 3,
+   "reason": "L1b: analytics basis for measuring conversion and Mn.",
+   "evidence_quotes": [
+    "Conversion (X) and\nabsolute molecular weights of PET and PEF (as number average, Mn, and weight\naverage, Mw, respectively) were determined by size exclusion chromatography"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d6e76517eb3981c6ec067a2c364333e8bf2f580d449d5d39a65aa97531326f82"
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_ecf62317b509e2a2040b7375",
+   "relevance": 1,
+   "reason": "L1b: same paper, discusses discolouration/color behavior of cyOEF but not the bottle-grade Mn/conversion/color criteria.",
+   "evidence_quotes": [
+    "The material retains its white crystalline appearance until actual melting occurs above 350 °C, and exhibits strong discolouration shortly after"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "c884e4a132c3658cc7f774f525e5f23f47120fb7b90f463718a28931f29e99a3"
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_fb761c55ac1450f6784d6f7b",
+   "relevance": 3,
+   "reason": "Directly states all three bottle-grade criteria: conversion >95%, Mn >30 kg/mol, uncoloured.",
+   "evidence_quotes": [
+    "ROP delivers bottle-grade (>95% conversion, Mn > 30 kg mol−1, uncoloured) PEF within less than 30 min"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "299d2356a953bec9b28176c6fb959b5befe13613f84c73abd17ba8116eb14157"
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_fcafe2465c1c9252a4a15ad2",
+   "relevance": 3,
+   "reason": "Abstract directly gives the three bottle-grade criteria.",
+   "evidence_quotes": [
+    "This concept yields polymer grades required for bottle applications (Mn > 30 kg mol−1, conversion > 95%, colour-free products)"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  }
+ ]
+}

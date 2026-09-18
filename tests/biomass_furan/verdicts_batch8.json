@@ -1,0 +1,47 @@
+[
+ {
+  "n": 96, "query_id": "q_0044", "doc_id": "chk_eec4496762bf30d4c915fc71",
+  "old_grade": 3, "final_grade": 3, "changed": false,
+  "fact_checks": [{"fact": 1, "verdict": "支持"}, {"fact": 2, "verdict": "支持"}],
+  "actual_evidence": "160°C reaction temperature and ChCl/GA/H2O (1:3:6) DES were used in all reactions. When HMF/furfural was used as a feedstock, reaction time was limited to 2 minutes, otherwise, it was set at 10 minutes. MIBK was used as extracting solvent unless otherwise stated. ｜ Table 1 ... 4 ZnCl2 as catalyst, glucose/xylose as feedstock 10 51",
+  "explanation": "两项必需事实齐备：DES 组成为 ChCl/GA/H2O (1:3:6) 且写明『used in all reactions』；微波条件为 160 ℃、10 min（非 HMF/糠醛原料时统一 10 min，即糖混合物条件）。『不外加催化剂』由 Table 1 的实验设计可确认——全部条目中只有 entry 4 单独标注『ZnCl2 as catalyst』，其余（含 entry 3 glucose/xylose as feedstock）均为无外加催化剂基线。块来源即指定论文 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 97, "query_id": "q_0049", "doc_id": "chk_1ed219cb4bb3138cf0b467a4",
+  "old_grade": 3, "final_grade": 2, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "不支持"}, {"fact": 2, "verdict": "支持"}, {"fact": 3, "verdict": "部分支持"}],
+  "actual_evidence": "the Pt1/ Nb2O5-Ov cooperated very well to promote the selective hydrogenation of HMF to MF. The Pt atom was responsible for the activation of H2 and the Nb sites activated C–OH. ｜ Both Pd1/Nb2O5-Ov and Au1/Nb2O5-Ov showed >99% selectivity of MF",
+  "explanation": "必需事实 2 逐字命中（Pt 活化 H2、Nb 活化 C–OH）；必需事实 3 只到『SAC 的 MF 选择性 >99%』这一半，块内未出现『at complete conversion』的条件限定；必需事实 1（C=O 加氢在动力学与热力学上优于 C–OH）在本块完全不出现。3 项命中 1 完整 + 1 部分 → 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 98, "query_id": "q_0049", "doc_id": "chk_df78a5c435d9c7f4639ab865",
+  "old_grade": 3, "final_grade": 2, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "不支持"}, {"fact": 2, "verdict": "不支持"}, {"fact": 3, "verdict": "支持"}],
+  "actual_evidence": "Pt1/Nb2O5-Ov could efficiently catalyze the selective hydrogenation of HMF to MF with >99% selectivity at complete conversion of HMF in 4 h. The turnover frequency of producing MF could reach 1875 h−1 ｜ The quantum chemical calculations demonstrated that HMF could be hydrogenated to produce MF and DMF with Gibbs free energy (ΔG) of −1.37 and −2.93 eV",
+  "explanation": "必需事实 3 完整命中（>99% 选择性、complete conversion、4 h）。必需事实 2（Pt/Nb 分工）在本块不出现；必需事实 1（C=O 与 C–OH 的动力学/热力学比较）也不出现——块内 ΔG 计算针对的是 HMF→MF 与 HMF→DMF，而非 C=O 与 C–OH 之争。3 项命中 1 项 → 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 99, "query_id": "q_0050", "doc_id": "chk_1ed219cb4bb3138cf0b467a4",
+  "old_grade": 3, "final_grade": 2, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "不支持"}, {"fact": 2, "verdict": "支持"}, {"fact": 3, "verdict": "部分支持"}],
+  "actual_evidence": "The Pt atom was responsible for the activation of H2 and the Nb sites activated C–OH. ｜ Both Pd1/Nb2O5-Ov and Au1/Nb2O5-Ov showed >99% selectivity of MF... showing that the nature of the metal species in the SACs only affected the activity but not the selectivity",
+  "explanation": "与 n=97 同块（同一 doc_id 服务于 q_0049/q_0050）：命中必需事实 2；必需事实 3 只到 >99% 选择性、缺 complete conversion；必需事实 1 不出现 → 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 100, "query_id": "q_0050", "doc_id": "chk_df78a5c435d9c7f4639ab865",
+  "old_grade": 3, "final_grade": 2, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "不支持"}, {"fact": 2, "verdict": "不支持"}, {"fact": 3, "verdict": "支持"}],
+  "actual_evidence": "Pt1/Nb2O5-Ov could efficiently catalyze the selective hydrogenation of HMF to MF with >99% selectivity at complete conversion of HMF in 4 h. ... the selectivities to MF are always >99% (Table 1, entry 3–6). ... the selectivity of MF was independent of the conversion of HMF and could reach >99% of all the reaction times.",
+  "explanation": "与 n=98 同块：必需事实 3 完整命中（SAC 完全转化时 MF 选择性 >99%，且在 4 h/变换温度氢压下稳定）；必需事实 1 与 2 在本块不出现 → 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ }
+]

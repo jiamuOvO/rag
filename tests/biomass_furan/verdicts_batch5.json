@@ -1,0 +1,92 @@
+[
+ {
+  "n": 66, "query_id": "q_0047", "doc_id": "chk_6aa49b56f23286eccb100a58",
+  "old_grade": 3, "final_grade": 2, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "部分支持"}],
+  "actual_evidence": "Table 2. Mixed full factorial experimental design for birch sawdust conversion. Temperature [°C] Time [min] Water [equiv.] HMF yield [%] Furfural yield [%] 150 10 0.5 0 6.2 ... 170 10 10 2.9 37.5 ... 170 30 10 3.9 34.6 ｜ Dynamic TGA revealed that the DES lost its liquid state rapidly at temperatures above 215°C",
+  "explanation": "必需事实为『32.9 wt%，对应 10 当量』。块内 Table 2 以 Water [equiv.] 列给出 10 当量这一设计因子（并在 170 ℃/10 min/10 equiv. 下给出 37.5% 最高糠醛收率），但全块没有出现 32.9 wt% 这一质量百分比；节标题为 DES 稳定性与复用。数值二分之一命中 → 2。旧判 3 过高（旧理由本身也承认水 wt% 在摘要而不在本块）。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 67, "query_id": "q_0049", "doc_id": "chk_10c3ee898756bb2a39517650",
+  "old_grade": 3, "final_grade": 2, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "不支持"}, {"fact": 2, "verdict": "部分支持"}, {"fact": 3, "verdict": "不支持"}],
+  "actual_evidence": "The adsorption energy of HMF by C–OH adsorption mode on Nb2 site of Pt1/Nb2O5-Ov surfaces was −1.14 eV, which is much higher than the adsorption energy of HMF by C=O adsorption mode (−0.78 eV). ... we also calculated the H2 adsorption on Pt1/Nb2O5-Ov surfaces (Supplementary Fig. 10). The adsorption energy is exothermic 0.51 eV, which is weaker than HMF adsorption.",
+  "explanation": "必需事实 1（C=O 加氢在动力学与热力学上均优于 C–OH）与必需事实 3（完全转化时 MF 选择性 >99%）在本块均不出现；只有必需事实 2 的位点分工有一半落在块内——Nb2 位点对 C–OH 的吸附能（−1.14 eV）高于 C=O（−0.78 eV），以及 H2 在 Pt1/Nb2O5-Ov 表面的吸附能（放热 0.51 eV）。3 项命中不足 1 项完整 → 2。旧判 3 过高（旧理由本身也只提 C–OH 优先吸附一项）。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 68, "query_id": "q_0049", "doc_id": "chk_f073e3273982f5a713fc56f3",
+  "old_grade": 3, "final_grade": 2, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "不支持"}, {"fact": 2, "verdict": "支持"}, {"fact": 3, "verdict": "不支持"}],
+  "actual_evidence": "The reaction pathway over Pt1/ Nb2O5-Ov for the selective hydrogenation of HMF was also calculated by DFT (Fig. 6). First, the C–OH of HMF adsorbed on Nb sites, and then H2 adsorbed on Pt was readily split into two H species. ... The Pt–H species attacked the C site of C–OH in HMF accompanied by the breakage of C–O, leading to the formation of MF and -OH adsorbed on the Nb site.",
+  "explanation": "必需事实 2（Pt 活化 H2、Nb 位点活化 C–OH）在块内被完整支持：DFT 路径明确『C–OH 吸附在 Nb 位点，H2 在 Pt 上解离』。必需事实 1（C=O 加氢在动力学/热力学上更有利）与必需事实 3（完全转化时 MF 选择性 >99%）在本块不出现。3 项命中 1 项 → 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 69, "query_id": "q_0013", "doc_id": "chk_0a912b28229092da2e595f18",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "The pretreatment-based fractionation of lignocellulose to celluloserich fraction, pentose-rich fraction, and lignin fraction is more attrac tive from the view of biorefining. ｜ C5-sugars (pentoses) derived from hemicelluloses are typically not feasible for industrial fermentation processes",
+  "explanation": "题目点名 2018 年《Recent Trends in the Pretreatment...》综述，属硬性来源限定；本块来源为 paper_972ce08e4e1d4c13a274afd6（同一来源=否）。块内以『cellulose 富集相 / 戊糖富集相 / 木质素相』及其后文『C5-sugars derived from hemicelluloses』间接对应三种组分，属另一篇论文独立陈述相同概念。按规范 §八 规则 1，此情形最高判 1，不得判 2（否则完全没找到指定文献也会命中 HitRate/MRR）。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 70, "query_id": "q_0013", "doc_id": "chk_0fdd02015b6eb7d21ac6f9fd",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "Lignocellulosic biomass, which is composed of lignin, cellulose, and hemicellulose, represents the prevalent sustainable hydrocarbon resource for impactful conversion into our future chemicals and fuels [1–3].",
+  "explanation": "块来源为 paper_81924125a737b5a88e728e25（Eucalyptus 论文），非题目点名的 2018 综述。该块独立陈述了同样的三种组分，按规范 §八 规则 1：另一篇论文独立陈述相同事实 → 1 级，不得判 2。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 71, "query_id": "q_0013", "doc_id": "chk_19dc9d277d79c2e2421ec9bf",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "The second route includes the cell wall polymers themselves in which cellulose, hemicellulosic polysaccharides and lignin are isolated, processed, and converted to end products. ｜ the challenge for lignocellulosic biomass remains in the efficient separation of celllulose, hemicellulose and lignin from each other",
+  "explanation": "块来源为 paper_a39f1f9d78514a2f2d7f78be（可持续平台综述），非指定 2018 综述。该块独立列出纤维素/半纤维素/木质素三种组分，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 72, "query_id": "q_0013", "doc_id": "chk_1b3adced8f0344654ed5ebfa",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "2. Structure and Sources of Lignocellulosic Biomass. Lignocellulosic biomass is mainly composed of three polymers; cellulose, hemicellulose and lignin together with small amounts of other components, like acetyl groups, minerals and phenolic substituents",
+  "explanation": "块来源为 paper_a39f1f9d78514a2f2d7f78be（非指定 2018 综述），句式与必需事实高度相似（three polymers; cellulose, hemicellulose and lignin）。仍是另一篇论文独立陈述相同事实，按 §八 规则 1 最高 1 级（旧理由自称 L1c 也印证它只是他文同类对照）。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 73, "query_id": "q_0013", "doc_id": "chk_2664a01ff75abf215f6dbb9d",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "Lignocellulosics are a type of biomass, and mainly consist of: cellulose, hemicellulose, and lignin.",
+  "explanation": "块来源为 paper_fc29dce759c42c9a91aa8868（非指定 2018 综述）。该块独立陈述三种主要聚合物，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 74, "query_id": "q_0013", "doc_id": "chk_3182461b711d1f373bf36ac4",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "Lignocellulosic biomass, which is composed of lignin, cellulose, and hemicellulose, represents the prevalent sustainable hydrocarbon resource for impactful conversion into our future chemicals and fuels [1–3].",
+  "explanation": "块来源为 paper_81924125a737b5a88e728e25（Eucalyptus 论文），非指定 2018 综述。独立陈述同样三种组分，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 75, "query_id": "q_0013", "doc_id": "chk_4f283b17046ca64f70a75f0f",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "primarily due to high cost of production encompassing biomass pretreatment steps to biomass components (i.e., lignin, cellulose, and hemicellulose)",
+  "explanation": "块来源为 paper_f0e625aa9a89da78815e3099（Frontiers in Chemistry 2018 另一篇 Den et al.），非指定 2018 综述。独立点到三种组分，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ }
+]

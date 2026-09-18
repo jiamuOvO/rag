@@ -1,0 +1,47 @@
+[
+ {
+  "n": 16,
+  "query_id": "q_0005",
+  "doc_id": "chk_cac3807d9a18c151af2918db",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "status": "AUDITED_APPROVED",
+  "audit_note": "审计批准 2→1（2026-09-18）",
+  "fact_checks": [{"fact": 1, "verdict": "不支持"}],
+  "actual_evidence": "Table 1. Effect of different dosage of SnCl4 and MgCl2 on the dehydration of xylose into furfural. Entry SnCl4 (mol%) MgCl2 (mol%) Furfural Yield (%) 1 10 0 71.1 2 8 2 69.8 3 8 0 62.0 4 5 5 68.8 5 5 0 52.4 6 0 10 4.5 Reaction conditions: 200 mg xylose, 1000 mg of EMIMBr; 130 ◦C; 1 h. ｜ Besides, the formation of massive brown residues in EMIMBF4 indicated the severe occurrence of side reactions.",
+  "explanation": "必需事实唯一项的文字本身含机理子句（『也促进副反应』）。本块只给 SnCl4 用量的收率表，5→8→10 mol% 单调上升（52.4→62.0→71.1），块内既无上升停滞、也无下降数据，更无任何把副反应归因于锡盐用量的句子（块内唯一的 side reactions 表述归因于溶剂 EMIMBF4）。因此该块对该必需事实只构成『同一论文、同一体系的用量数据基准』= L1a/L1b 辅助关系，不构成直接支持。同题已完成复核的 chk_76e8cf8001bf01288fd488c1 已含方向性下降数据（1:20→71.1%、1:40→54.2%）仍因『机理句缺失』判 1，本块证据更弱。→ 2 改 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读；与 q_0005 已完成各条（均 L1a=1）口径对齐"
+ },
+ {
+  "n": 41,
+  "query_id": "q_0014",
+  "doc_id": "chk_45a69b0e755aa8b4a0a506fb",
+  "old_grade": 3,
+  "final_grade": 0,
+  "changed": true,
+  "status": "AUDITED_APPROVED",
+  "audit_note": "审计裁定 3→0（2026-09-18）：不保留 grade 1。grade 1 要求存在『具体辅助关系』，仅同领域或同论文不能自动成立；块内另有实质结论也不足以保 1。",
+  "fact_checks": [{"fact": 1, "verdict": "不支持"}],
+  "actual_evidence": "AUTHOR CONTRIBUTIONS JB and BN drafted the portions on physical, chemical and physicochemical pretreatments. RS and SK drafted the portion on biological pretreatments. RD and DB edited the portions on chemical and physicochemical pretreatments. EK planned the outlay of the review, supervised the development of topics and edited the final manuscript. ACKNOWLEDGMENTS EK, JB, SK, and RS wish to acknowledge DBT, Government of India, for the Twinning Research Grant (Grant No. BT/PR16008/NER/95/47/2015).",
+  "explanation": "必需事实唯一项 = 物理/化学/物理化学/生物四类。四类名称在本块中只作为 AUTHOR CONTRIBUTIONS 段 `drafted` 的宾语出现，表达的是作者分工，不是分类事实陈述；真正的分类句（`may be broadly classified as …`）不在本块。本块实质正文（CONCLUSION 段）经复读亦无任何分类框架。按 v4，grade 1 须能落到五类『具体辅助关系』之一，仅同论文或同领域不能自动成立；『块里还有其他实质结论』本身不足以保 1。本块对该必需事实既无直接支持、也未说明存在具体辅助关系 → 0。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读；句子语义功能判定（署名归属 ≠ 分类陈述）+ v4 grade 1 边界"
+ },
+ {
+  "n": 96,
+  "query_id": "q_0044",
+  "doc_id": "chk_eec4496762bf30d4c915fc71",
+  "old_grade": 3,
+  "final_grade": 2,
+  "changed": true,
+  "status": "AUDITED_APPROVED",
+  "audit_note": "审计批准 3→2（2026-09-18）",
+  "fact_checks": [{"fact": 1, "verdict": "部分支持"}, {"fact": 2, "verdict": "支持"}],
+  "actual_evidence": "Table 1. HMF and furfural yields using various feedstocks and extraction conditions. Entry Conditions HMF yield [%] Furfural yield [%] 1 Glucose as feedstock 10 – 2 Xylose as feedstock – 62 3 Glucose/xylose as feedstock 9 49 4 ZnCl2 as catalyst, glucose/xylose as feedstock 10 51 5 Fructose/xylose as feedstock 17 49 ... ｜ 160°C reaction temperature and ChCl/GA/H2O (1:3:6) DES were used in all reactions. When HMF/furfural was used as a feedstock, reaction time was limited to 2 minutes, otherwise, it was set at 10 minutes. MIBK was used as extracting solvent unless otherwise stated.",
+  "explanation": "必需事实 2（160 ℃ / 10 min）由表注明确给出。必需事实 1 含两半：DES 组成为 ChCl/GA/H2O (1:3:6) 明确；『不外加催化剂』在本块中无任何显式条件句，只能由『entry 3 条件文字未列催化剂』的缺失 + 『entry 4 是全表唯一标注 as catalyst 的变体行』的对照关系推得。按本项目纪律缺失与对照只能定位、不能充当支持依据 → 事实 1 只算部分覆盖，事实 2 覆盖 → 只能 2。与同题 n=31（同缺『不外加催化剂』）判 2 口径一致。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读；与同题 n=31 口径对齐"
+ }
+]

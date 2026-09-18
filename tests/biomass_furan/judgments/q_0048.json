@@ -1,0 +1,35 @@
+{
+ "query_id": "q_0048",
+ "judgments": [
+  {
+   "doc_id": "chk_17900f9b2ebd34f211652a6c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块为该论文的参考文献条目（文献25–30）及致谢、作者贡献、补充信息说明，未涉及食品接触迁移测试、2025年中国市场上市或任何迁移原始数据，与本题无关。"
+  },
+  {
+   "doc_id": "chk_6a892952eacd8b3774ce0f2b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块讨论ROP动力学、环状锡氧烷引发剂用量、分子量及瓶级PEF合成与热降解/变色，未报告任何食品接触迁移测试或2025年中国市场的迁移原始数据，与本题无关。"
+  },
+  {
+   "doc_id": "chk_9a11044c6b0a3219c803c306",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块为论文引言，介绍PEF作为可再生材料替代PET的背景及开环聚合（ROP）动机，未涉及食品接触迁移测试、2025年中国市场上市或迁移数据，与本题无关。"
+  },
+  {
+   "doc_id": "chk_d30fe0e1b5e20c9b44099a85",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块为该论文的参考文献列表（文献1–14），属无实质内容的文献条目，与食品接触迁移测试问题无关。"
+  },
+  {
+   "doc_id": "chk_dd7dabb4ca1b2cc379d3fd10",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块为图1的PEF/PET结构示意图及环状低聚物（cyOEF）环尺寸分布的描述文字，内容围绕合成路线与环张力，未提及食品接触迁移测试、2025年中国市场或迁移原始数据，与本题无关。"
+  }
+ ]
+}

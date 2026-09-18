@@ -1,0 +1,92 @@
+[
+ {
+  "query_id": "q_0005",
+  "doc_id": "chk_146ef0a2692f27a972ce10dc",
+  "grade": 1,
+  "class": "review_l1"
+ },
+ {
+  "query_id": "q_0005",
+  "doc_id": "chk_3802f88572be015e0e26a58d",
+  "grade": 1,
+  "class": "review_l1"
+ },
+ {
+  "query_id": "q_0005",
+  "doc_id": "chk_76e8cf8001bf01288fd488c1",
+  "grade": 1,
+  "class": "review_l1"
+ },
+ {
+  "query_id": "q_0005",
+  "doc_id": "chk_c637afc692e7621538a73442",
+  "grade": 1,
+  "class": "review_l1"
+ },
+ {
+  "query_id": "q_0005",
+  "doc_id": "chk_de8ed6767b301e54f3952681",
+  "grade": 1,
+  "class": "review_l1"
+ },
+ {
+  "query_id": "q_0011",
+  "doc_id": "chk_c7b7d600a23b05f53dd5778f",
+  "grade": 1,
+  "class": "review_l1"
+ },
+ {
+  "query_id": "q_0011",
+  "doc_id": "chk_e66153b2f5b37d57f58e54c1",
+  "grade": 1,
+  "class": "review_l1"
+ },
+ {
+  "query_id": "q_0011",
+  "doc_id": "chk_f6334e3e233a5be7e5e4b91b",
+  "grade": 1,
+  "class": "review_l1"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_09c78331d97d74a2be099583",
+  "grade": 1,
+  "class": "review_l1"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_7ccc90b43ddfc0b4da904489",
+  "grade": 1,
+  "class": "review_l1"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_9824e8bd83610555996f0872",
+  "grade": 1,
+  "class": "review_l1"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_b1d48fe71f8d9bfeda0a7a6e",
+  "grade": 1,
+  "class": "review_l1"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_e13189c5ea576e8e5e4cc2f2",
+  "grade": 1,
+  "class": "review_l1"
+ },
+ {
+  "query_id": "q_0011",
+  "doc_id": "chk_1da5492056867f6a66a0b82a",
+  "grade": 3,
+  "class": "review_l23"
+ },
+ {
+  "query_id": "q_0011",
+  "doc_id": "chk_eddc849e74ee8a05d3379f29",
+  "grade": 3,
+  "class": "review_l23"
+ }
+]

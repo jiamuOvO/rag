@@ -1,0 +1,289 @@
+{
+ "query_id": "q_0024",
+ "judgments": [
+  {
+   "query_id": "q_0024",
+   "doc_id": "chk_01750ad0d20e4542372b9450",
+   "relevance": 3,
+   "reason": "Same paper's introduction, directly supports the dual solvent/catalyst role via carboxylic acid HBD.",
+   "evidence_quotes": [
+    "Applying only DES in a conversion reaction relies on the carboxylic acid acting as an HBD, which gives the DES acidic characteristics, and therefore, the DES itself can act as both the solvent and the catalyst."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0cb3cde3a16220d3c081aa9db21a54475af62438f4897feb598bf7b7570f7bcb"
+  },
+  {
+   "query_id": "q_0024",
+   "doc_id": "chk_0fb5de6208b939b22f5388a4",
+   "relevance": 0,
+   "reason": "doc0: same paper, extraction optimization topic; doc2: same paper, HMF-DES interaction topic; doc3: other paper, halide salt additives; doc4: same paper, biomass fractionation/reusability topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "22a0651f121295bc04b2283f1dd551fc108e9203558bb04f9c1230cd5e1bfb26"
+  },
+  {
+   "query_id": "q_0024",
+   "doc_id": "chk_1e3eaec5bd452ddb3b9a4006",
+   "relevance": 0,
+   "reason": "doc4: same paper, birch sawdust conversion, unrelated to DES dual role",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0cb3cde3a16220d3c081aa9db21a54475af62438f4897feb598bf7b7570f7bcb"
+  },
+  {
+   "query_id": "q_0024",
+   "doc_id": "chk_305f10f1a75a63236a4c181e",
+   "relevance": 2,
+   "reason": "Same paper's abstract, states DES used without additional catalyst, supporting the dual role.",
+   "evidence_quotes": [
+    "Choline chloride (ChCl) / glycolic acid (GA) deep eutectic solvent (DES) media with high water content but without any additional catalyst are introduced in furfural and 5hydroxymethylfurfural (HMF) production."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0cb3cde3a16220d3c081aa9db21a54475af62438f4897feb598bf7b7570f7bcb",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 2,
+    "changed": true,
+    "explanation": "必需事实的核心是机理链条：羧酸作为氢键供体（HBD）→ 赋予 DES 酸性 → 因此 DES 本身兼具溶剂与催化剂。该块为该文摘要，只给出『without any additional catalyst』与在无外加催化剂介质中取得 62% 收率，属该结论的可观测侧证；全块未出现 HBD、羧酸供质子或『溶剂兼催化剂』的表述。部分覆盖 → 2。旧判 3 过高。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0024",
+   "doc_id": "chk_3dac63a009a1213ba1abaadb",
+   "relevance": 0,
+   "reason": "doc0: same paper, different DES (ChCl/GA) and no solvent-catalyst rationale; doc1,2,3: same paper, DES prep/recovery, no rationale; doc4: other paper's literature review",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "4fc6972bbab5c73fa9a2c75ca1b8cc3aaac364d5c3136e91d88473388c43b945"
+  },
+  {
+   "query_id": "q_0024",
+   "doc_id": "chk_3f69bf6b3a14097bc389e768",
+   "relevance": 0,
+   "reason": "doc0,1: same paper, TGA stability topic; doc2: same paper, recycling/conclusion; doc3: different paper, metal halide additives",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "d33fd4c3b099e266d6c0f7f899a0cd73f97d0ae706c94b25c5fb25e2e1629eb9"
+  },
+  {
+   "query_id": "q_0024",
+   "doc_id": "chk_4d23c61724b8781b5c07f8ed",
+   "relevance": 2,
+   "reason": "L1b: same paper's data basis explaining acidic DES acts as catalyst; supports f1 partially.",
+   "evidence_quotes": [
+    "Glycolic acid in water was a more effective catalyst than ChCl for furfural production (yield increased to 22%), but the HMF yield did not improve. This result confirmed the hypothesis that the acidic character of reaction media is essential for the dehydration reaction"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "Agent_review_completed",
+   "answerability_conflict": false,
+   "raw_response_id": "22a0651f121295bc04b2283f1dd551fc108e9203558bb04f9c1230cd5e1bfb26",
+   "review_note": "支持机理的一半、缺 HBD→双角色结论 → 维持 2",
+   "review_verdict": "部分"
+  },
+  {
+   "query_id": "q_0024",
+   "doc_id": "chk_4f1003898eb083ea75f9672f",
+   "relevance": 0,
+   "reason": "doc0: same paper, different DES (ChCl/GA) and no solvent-catalyst rationale; doc1,2,3: same paper, DES prep/recovery, no rationale; doc4: other paper's literature review",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "4fc6972bbab5c73fa9a2c75ca1b8cc3aaac364d5c3136e91d88473388c43b945"
+  },
+  {
+   "query_id": "q_0024",
+   "doc_id": "chk_4f86dedd60c3fd056c61dc03",
+   "relevance": 0,
+   "reason": "doc0: same paper, different DES (ChCl/GA) and no solvent-catalyst rationale; doc1,2,3: same paper, DES prep/recovery, no rationale; doc4: other paper's literature review",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "4fc6972bbab5c73fa9a2c75ca1b8cc3aaac364d5c3136e91d88473388c43b945"
+  },
+  {
+   "query_id": "q_0024",
+   "doc_id": "chk_6aa49b56f23286eccb100a58",
+   "relevance": 0,
+   "reason": "doc0,1: same paper, TGA stability topic; doc2: same paper, recycling/conclusion; doc3: different paper, metal halide additives",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "d33fd4c3b099e266d6c0f7f899a0cd73f97d0ae706c94b25c5fb25e2e1629eb9"
+  },
+  {
+   "query_id": "q_0024",
+   "doc_id": "chk_802511788cfba434ee41d9d2",
+   "relevance": 0,
+   "reason": "doc0,1: same paper, TGA stability topic; doc2: same paper, recycling/conclusion; doc3: different paper, metal halide additives",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "d33fd4c3b099e266d6c0f7f899a0cd73f97d0ae706c94b25c5fb25e2e1629eb9"
+  },
+  {
+   "query_id": "q_0024",
+   "doc_id": "chk_8781e312c8a17f3f184b7414",
+   "relevance": 0,
+   "reason": "doc0: same paper, extraction optimization topic; doc2: same paper, HMF-DES interaction topic; doc3: other paper, halide salt additives; doc4: same paper, biomass fractionation/reusability topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "22a0651f121295bc04b2283f1dd551fc108e9203558bb04f9c1230cd5e1bfb26"
+  },
+  {
+   "query_id": "q_0024",
+   "doc_id": "chk_9f994e2e49ec3c47a5ae2cda",
+   "relevance": 3,
+   "reason": "Directly states carboxylic acid HBD gives DES acidity, so DES acts as both solvent and catalyst.",
+   "evidence_quotes": [
+    "Applying only DES in a conversion reaction relies on the carboxylic acid acting as an HBD, which gives the DES acidic characteristics, and therefore, the DES itself can act as both the solvent and the catalyst."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0cb3cde3a16220d3c081aa9db21a54475af62438f4897feb598bf7b7570f7bcb"
+  },
+  {
+   "query_id": "q_0024",
+   "doc_id": "chk_ba38a5eb11a7d2b01f992079",
+   "relevance": 0,
+   "reason": "doc0: same paper, extraction optimization topic; doc2: same paper, HMF-DES interaction topic; doc3: other paper, halide salt additives; doc4: same paper, biomass fractionation/reusability topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "22a0651f121295bc04b2283f1dd551fc108e9203558bb04f9c1230cd5e1bfb26"
+  },
+  {
+   "query_id": "q_0024",
+   "doc_id": "chk_bb2350573b224a69783b7f13",
+   "relevance": 0,
+   "reason": "doc0: same paper, different DES (ChCl/GA) and no solvent-catalyst rationale; doc1,2,3: same paper, DES prep/recovery, no rationale; doc4: other paper's literature review",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "4fc6972bbab5c73fa9a2c75ca1b8cc3aaac364d5c3136e91d88473388c43b945"
+  },
+  {
+   "query_id": "q_0024",
+   "doc_id": "chk_d647a03afce77d8ec8093954",
+   "relevance": 0,
+   "reason": "doc0: same paper, different DES (ChCl/GA) and no solvent-catalyst rationale; doc1,2,3: same paper, DES prep/recovery, no rationale; doc4: other paper's literature review",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "4fc6972bbab5c73fa9a2c75ca1b8cc3aaac364d5c3136e91d88473388c43b945"
+  },
+  {
+   "query_id": "q_0024",
+   "doc_id": "chk_de6d867f6158072b73bf5cb8",
+   "relevance": 0,
+   "reason": "doc0,1: same paper, TGA stability topic; doc2: same paper, recycling/conclusion; doc3: different paper, metal halide additives",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "d33fd4c3b099e266d6c0f7f899a0cd73f97d0ae706c94b25c5fb25e2e1629eb9"
+  },
+  {
+   "query_id": "q_0024",
+   "doc_id": "chk_e769e00a4aa1cbe71b7a02cf",
+   "relevance": 1,
+   "reason": "L1d: explains carboxylic acid as HBD in DES, background on the mechanism without the asked statement.",
+   "evidence_quotes": [
+    "[Ch]Cl was used as the hydrogen bond acceptor (HBA) and malic acid (MA), as hydrogen bond donor (HBD)."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0cb3cde3a16220d3c081aa9db21a54475af62438f4897feb598bf7b7570f7bcb"
+  },
+  {
+   "query_id": "q_0024",
+   "doc_id": "chk_eec4496762bf30d4c915fc71",
+   "relevance": 0,
+   "reason": "doc0: same paper, extraction optimization topic; doc2: same paper, HMF-DES interaction topic; doc3: other paper, halide salt additives; doc4: same paper, biomass fractionation/reusability topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "22a0651f121295bc04b2283f1dd551fc108e9203558bb04f9c1230cd5e1bfb26"
+  }
+ ]
+}

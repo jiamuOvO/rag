@@ -1,0 +1,23 @@
+{
+ "query_id": "q_0046",
+ "judgments": [
+  {
+   "query_id": "q_0046",
+   "doc_id": "chk_61fec0ffa9e553e9cc7bc451",
+   "relevance": 3,
+   "reason": "Directly states that after phase separation, water must be evaporated before the phosphoric acid can be reused.",
+   "evidence_quotes": [
+    "After phase separation and water evaporation, the phosphoric acid can be reused."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "3b0609a01b74776b2f6207de4305aeadf2f6d8fe03e966b2637b7c1621754645"
+  }
+ ]
+}

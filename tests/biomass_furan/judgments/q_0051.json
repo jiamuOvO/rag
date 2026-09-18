@@ -1,0 +1,85 @@
+{
+ "query_id": "q_0051",
+ "judgments": [
+  {
+   "query_id": "q_0051",
+   "doc_id": "chk_13deb44987f4d098b0753176",
+   "relevance": 3,
+   "reason": "Directly states single-atom system, >99% MF selectivity at complete conversion, and Pt/Nb site roles.",
+   "evidence_quotes": [
+    "single atomic metal sites were supported on oxygen defective Nb2O5 (Nb2O5Ov). Very interestingly, it was discovered that they could efficiently catalyze selective hydrogenation of HMF to MF with >99%\nselectivity at complete conversion. ... The Pt sites were\nresponsible for the activation of H2 and the Nb sites near Pt sites\nselectively activated the C–OH group in HMF"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "85921d2fca69b2e2e01407654ef47eefd2cf8e2b59051774d45722e0912bb486"
+  },
+  {
+   "query_id": "q_0051",
+   "doc_id": "chk_1e2971b44f0a7fc02acdced8",
+   "relevance": 2,
+   "reason": "Experimental evidence for selective C–OH activation and high MF selectivity.",
+   "evidence_quotes": [
+    "C–OH in HMF is\nselectively activated over Pt1/Nb2O5-Ov. ... MF could not be converted over the Pt1/Nb2O5Ov ... indicating that it is not active for the\nhydrogenation of C=O, which is the main reason for the high\nselectivity of MF."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "85921d2fca69b2e2e01407654ef47eefd2cf8e2b59051774d45722e0912bb486"
+  },
+  {
+   "query_id": "q_0051",
+   "doc_id": "chk_212f072413616a242ffb333e",
+   "relevance": 2,
+   "reason": "Supports single-atom (no nanoparticle) nature of the catalyst.",
+   "evidence_quotes": [
+    "no Pt clusters or particles were observed on the surface\nof the used catalysts"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "85921d2fca69b2e2e01407654ef47eefd2cf8e2b59051774d45722e0912bb486"
+  },
+  {
+   "query_id": "q_0051",
+   "doc_id": "chk_2757014d17432387f6878143",
+   "relevance": 2,
+   "reason": "Background on HMF-to-MF with H2 and difficulty of C–OH hydrogenation.",
+   "evidence_quotes": [
+    "the selective hydrogenation of the C–OH group in HMF to 5-methylfurfural (MF) has not\nbeen realized using H2 as the reducing agent"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "85921d2fca69b2e2e01407654ef47eefd2cf8e2b59051774d45722e0912bb486"
+  },
+  {
+   "query_id": "q_0051",
+   "doc_id": "chk_ca518f4edea642ce661c7f9b",
+   "relevance": 2,
+   "reason": "Table 1 shows complete HMF conversion with >99% MF selectivity over single-atomic Pt1/Nb2O5-Ov under H2.",
+   "evidence_quotes": [
+    "Pt1/Nb2O5-Ov\n>99\n>99\n–\nNo\n–\n1875"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "85921d2fca69b2e2e01407654ef47eefd2cf8e2b59051774d45722e0912bb486"
+  }
+ ]
+}

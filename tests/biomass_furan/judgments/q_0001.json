@@ -1,0 +1,861 @@
+{
+ "query_id": "q_0001",
+ "judgments": [
+  {
+   "doc_id": "chk_021f95e271c18660b27b1e06",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述参考文献（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_0358d2f4512fe7562915e5d6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为Pd-PdO/ZnSO4闪速热解C6糖制糠醛，不同催化体系与技术路线（热解而非脱水）。"
+  },
+  {
+   "doc_id": "chk_077f5f075e635728c9c0c581",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇SnCl4/EMIMBr论文中离子液体溶剂筛选实验，讨论不同IL对糠醛收率影响，未给木糖/EMIMBr具体质量。"
+  },
+  {
+   "doc_id": "chk_0d845b313cae5a2ed8d54d05",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "微波辅助木糖制糠醛论文（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_120959fe5b983fc8e96029d3",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述参考文献（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_146ef0a2692f27a972ce10dc",
+   "relevance": 3,
+   "evidence_quotes": [
+    "200 mg of xylose was dissolved in 1000 mg of ionic liquid; molar ratio of SnCl4:xylose = 1:10"
+   ],
+   "reason": "溶剂效应图（Figure 4）反应条件，给出木糖200 mg、离子液体（本文即EMIMBr）1000 mg、SnCl4:木糖=1:10。"
+  },
+  {
+   "doc_id": "chk_1759d55f26111cb779e1d610",
+   "relevance": 3,
+   "evidence_quotes": [
+    "200 mg of xylose was dissolved in 1000 mg of EMIMBr; molar ratio of catalyst:xylose = 1:10"
+   ],
+   "reason": "催化剂用量图（Figure 1、2）反应条件，直接给出木糖200 mg、EMIMBr 1000 mg、催化剂:木糖=1:10。"
+  },
+  {
+   "doc_id": "chk_18042855d80521705888fa62",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为生物质燃烧痕量气体与气溶胶排放，完全不同的研究领域。"
+  },
+  {
+   "doc_id": "chk_1a55c8728cce5dc368a01e1d",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述中CrCl3表（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_225788b644ea25f4b634ffb6",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "磷酸分级分离木质纤维素联产糠醛研究（同化学品同原料）。"
+  },
+  {
+   "doc_id": "chk_23a0c15f43bbc31ba51d1d39",
+   "relevance": 3,
+   "evidence_quotes": [
+    "200 mg of xylose was dissolved in 1000 mg of EMIMBr; molar ratio of SnCl4:xylose = 1:10"
+   ],
+   "reason": "图（Figure 7）反应条件，直接给出木糖200 mg、EMIMBr 1000 mg、SnCl4:木糖=1:10。"
+  },
+  {
+   "doc_id": "chk_2554c51157cea048e651e294",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES中木糖制糠醛研究（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_25f6103bf1c7f4c915db3b0a",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES中木糖制糠醛研究参考文献（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_26d8babf0b1a956332b5a24d",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "微波辅助木糖制糠醛论文（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_2713a17ac84042d412cae067",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为C6糖闪速热解制糠醛（参考文献），不同技术路线。"
+  },
+  {
+   "doc_id": "chk_28a2c19f1681cef96636ccc2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇SnCl4/EMIMBr论文的参考文献段落。"
+  },
+  {
+   "doc_id": "chk_29086f2b93cb4cbfe6092a53",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇SnCl4/EMIMBr论文引言段落，未给具体反应条件数值。"
+  },
+  {
+   "doc_id": "chk_2d8461f5a49e2fe551494e3f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为己二酸（levulinic acid）生产，不同化学品，与木糖/EMIMBr制糠醛无关。"
+  },
+  {
+   "doc_id": "chk_2e78311dd1ccdf9a5161ed82",
+   "relevance": 2,
+   "evidence_quotes": [
+    "using 10 mol% catalyst (with respect to monosaccharide), a certain amount of substrate, and 1000 mg of ionic liquid"
+   ],
+   "reason": "方法段给出EMIMBr 1000 mg与催化剂10 mol%（即1:10），但木糖用量表述为'a certain amount of substrate'未明确200 mg，需与其他块组合。"
+  },
+  {
+   "doc_id": "chk_2f496621a230273d77c042c5",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为非食用木质生物质在sc-MeOH中转化为有机液体，不同工艺与产物。"
+  },
+  {
+   "doc_id": "chk_305f10f1a75a63236a4c181e",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES/MIBK中糖混合物产糠醛（及HMF）研究摘要（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_305f631340e33783cedd29cd",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述参考文献（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_306922c20dcd6feaa1f6b07b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为HMF选择性氧化制FDCA/羟甲基糠甲酸，不同化学品（HMF）。"
+  },
+  {
+   "doc_id": "chk_31be7e43457379d762308871",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为AAEMs对生物质热解的催化作用，不同工艺路线。"
+  },
+  {
+   "doc_id": "chk_32f5d46be8bbf3370a7dd262",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为生物质电化学合成FDCA（来自HMF），不同化学品。"
+  },
+  {
+   "doc_id": "chk_33a6d883153f6b7171cdfe7a",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "微波辅助木糖制糠醛综述表，且引用了本文[15]，同研究领域。"
+  },
+  {
+   "doc_id": "chk_34018350f5510abb45085aed",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES/MIBK体系中木糖与糖混合物同时产糠醛与HMF，糠醛为主要产物之一（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_34273176418adcf840b1824b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为2,5-呋喃二甲酸（FDCA）及呋喃单体，不同化学品。"
+  },
+  {
+   "doc_id": "chk_342a968c0d214283cba3bbd9",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇SnCl4/EMIMBr论文中SnCl4/MgCl2用量实验段落，讨论催化剂负载（mol%），未给出木糖与EMIMBr的具体质量。"
+  },
+  {
+   "doc_id": "chk_343fc3a232723915eebd8638",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇SnCl4/EMIMBr论文中反应机理（溴离子催化）讨论段，未给具体用量。"
+  },
+  {
+   "doc_id": "chk_3531dd49305f02c95329daf4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为木质纤维素转化制己二酸，不同化学品。"
+  },
+  {
+   "doc_id": "chk_37a27b5957acf32e76d755d7",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "糠醛及其应用综述（同化学品主题，属同一研究领域）。"
+  },
+  {
+   "doc_id": "chk_3802f88572be015e0e26a58d",
+   "relevance": 3,
+   "evidence_quotes": [
+    "200 mg of xylose was dissolved in 1000 mg of EMIMBr; molar ratio of SnCl4:xylose = 1:10"
+   ],
+   "reason": "温度效应图（Figure 5、6）反应条件，直接给出木糖200 mg、EMIMBr 1000 mg、SnCl4:木糖=1:10。"
+  },
+  {
+   "doc_id": "chk_3966d11a350c894b6c9bab9b",
+   "relevance": 3,
+   "evidence_quotes": [
+    "200 mg of xylose was dissolved in 1000 mg of EMIMBr; molar ratio of SnCl4:xylose = 1:10"
+   ],
+   "reason": "初始木糖负载图（Figure 7）反应条件，直接给出木糖200 mg、EMIMBr 1000 mg、SnCl4:木糖=1:10。"
+  },
+  {
+   "doc_id": "chk_396fbbf891060bcb9b5939fc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为HMF选择性氧化，不同化学品。"
+  },
+  {
+   "doc_id": "chk_3f69bf6b3a14097bc389e768",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES/MIBK中糖混合物产糠醛结论段（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_402bc45f160ad28a50932696",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述参考文献（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_40df1599eac1ba18d6eeb9b8",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "微波辅助木糖制糠醛论文参考文献（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_41f98ed2ab54df4159ff320f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇SnCl4/EMIMBr论文中玉米秸秆转化与HPLC方法段落，未给出木糖/EMIMBr质量与摩尔比。"
+  },
+  {
+   "doc_id": "chk_421d978d5796d9bc888368e4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为木质生物质在sc-MeOH中转化为有机液体，不同工艺与产物。"
+  },
+  {
+   "doc_id": "chk_43fe5cdb3800d6d9d5836f00",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇SnCl4/EMIMBr论文的参考文献段落。"
+  },
+  {
+   "doc_id": "chk_4419384458d12e56e17e3a01",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES中木糖制糠醛研究（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_48dc1c69de9fd481b195d221",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为光催化糖转化制HMF（参考文献），不同化学品。"
+  },
+  {
+   "doc_id": "chk_491ef9b9b9dd1387c397b901",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为HMF选择性加氢制5-甲基糠醛，不同化学品（HMF）。"
+  },
+  {
+   "doc_id": "chk_4cc7f3e2f051f186fa65c25a",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "微波辅助木糖制糠醛论文引言（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_4e0fa54e8c42189089c68ba8",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述参考文献（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_4e85cadb6c8ea789e2188b2a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为光催化糖转化制HMF（致谢段），不同化学品。"
+  },
+  {
+   "doc_id": "chk_4f1003898eb083ea75f9672f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES/MIBK中糖混合物产糠醛（及HMF）研究，糠醛为产物（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_507c625ae3a8d4d7205a1294",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "木质纤维素制糠醛文献综述（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_536a1a39e5c2ce52180c8753",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为木质纤维素制5-氯甲基糠醛（CMF），不同化学品。"
+  },
+  {
+   "doc_id": "chk_54f75b6ae27983536bad5b0f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块仅为参考文献条目列表（如'García-Sancho, C.; ...'、'Chang, G.Y.; ...'等引文），无任何关于木糖/EMIMBr用量或催化剂:木糖摩尔比的实质内容，与问题所问无关。规范第四节明确：块只是参考文献条目、致谢、期刊页眉属无实质内容，判0级（原判定1级维持错误，予以降级）。"
+  },
+  {
+   "doc_id": "chk_5828ac8d479803e37fc7cc7d",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "水热预处理联产糠醛与纤维素纳米晶（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_5890cee9c5ba704b995092b0",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇SnCl4/EMIMBr论文的参考文献段落。"
+  },
+  {
+   "doc_id": "chk_5c2c23f51048b41b861de97f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为戊糖生物质制烷基乙酰丙酸酯（乙酰丙酸衍生物），不同化学品。"
+  },
+  {
+   "doc_id": "chk_5f18476dd6997d4ad53f1bff",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为木质纤维素转化制己二酸及HMF，不同化学品。"
+  },
+  {
+   "doc_id": "chk_604ee821ba4898b6255a7623",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为碱/碱土金属对生物质热解（pyrolysis）的催化作用，不同工艺路线（热解而非脱水制糠醛）。"
+  },
+  {
+   "doc_id": "chk_605c05e291296366d0017ede",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述参考文献（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_60ce6f5ce7e7317f6454195e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为木质生物质在sc-MeOH中催化转化为有机液体（木质素解聚产芳香醇），不同工艺与产物。"
+  },
+  {
+   "doc_id": "chk_612605aa092e6086ebf91cf0",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇SnCl4/EMIMBr论文中与其他体系/玉米秸秆的对比段落，未给木糖/EMIMBr质量与摩尔比。"
+  },
+  {
+   "doc_id": "chk_6d4d71586ece559fc069b548",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述中固体酸/GVL段（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_74325fc7c228188342bcbe22",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为AAEMs对生物质/煤共热解的催化作用，不同工艺路线。"
+  },
+  {
+   "doc_id": "chk_754b18ffbaea380476fcdfc1",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_76618fe34d95996dd79233c6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为AAEMs对生物质热解的催化作用，不同工艺路线。"
+  },
+  {
+   "doc_id": "chk_76e8cf8001bf01288fd488c1",
+   "relevance": 2,
+   "evidence_quotes": [
+    "1000 mg of (EMIMBr + H2O); molar ratio of SnCl4:xylose = 1:10"
+   ],
+   "reason": "含水量效应图（Figure 8）条件给出EMIMBr 1000 mg与催化剂:木糖=1:10，但本块未明确木糖200 mg，需与其他块组合才能完整回答。"
+  },
+  {
+   "doc_id": "chk_77be0b16ac08b8fbd6826b20",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "双相体系中戊糖（木糖）制糠醛研究（同化学品同原料）。"
+  },
+  {
+   "doc_id": "chk_7926c51ae814e615fce09168",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为HMF生产，不同化学品。"
+  },
+  {
+   "doc_id": "chk_7943e517bfdbc2b671b18f93",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇SnCl4/EMIMBr论文中HPLC分析方法与结论段落，未给木糖/EMIMBr具体质量。"
+  },
+  {
+   "doc_id": "chk_7af8d99455516ec32196a11d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为木质纤维素转化制己二酸，不同化学品。"
+  },
+  {
+   "doc_id": "chk_7bf2175634ab687aabd42a8b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "微波辅助木糖制糠醛论文中木质素影响段（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_7d7a441dc1f25dcf51ee22a1",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "双相体系戊糖制糠醛研究（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_80201d8a755c50381f489096",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为AAEMs（KCl/CaCl2）对木质素热解，不同工艺路线。"
+  },
+  {
+   "doc_id": "chk_8342126cb7cc5ce136a6c3d7",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "双相体系中戊糖制糠醛研究（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_83d359bd4fa365d5b162dd05",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇SnCl4/EMIMBr论文的参考文献段落。"
+  },
+  {
+   "doc_id": "chk_840f7f391a7c68039e8251d2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为2,5-呋喃二甲酸（FDCA），不同化学品。"
+  },
+  {
+   "doc_id": "chk_85d61400fff9370613d757de",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为AAEMs对生物质热解的催化作用，不同工艺路线。"
+  },
+  {
+   "doc_id": "chk_8609ad7f2731ed8e9e5c4490",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为戊糖生物质制呋喃类含氧燃料添加剂（乙酰丙酸衍生物），不同化学品。"
+  },
+  {
+   "doc_id": "chk_860f2c5ee9be82337457fb80",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇SnCl4/EMIMBr论文中玉米秸秆（50 mg）转化实验，原料不同且未给木糖200 mg与1:10摩尔比。"
+  },
+  {
+   "doc_id": "chk_86d0fa326f0392661191cc1c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES中木糖制糠醛结论段落（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_86dc8cb532b70edbb11eecd2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为光催化糖转化制HMF，不同化学品。"
+  },
+  {
+   "doc_id": "chk_894badaf71fbc8c94416827c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述参考文献（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_8ae832e4d642521b0babb206",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "另一篇微波辅助木糖脱水制糠醛研究（同化学品糠醛、同C5原料），不同催化体系，属同一研究领域。"
+  },
+  {
+   "doc_id": "chk_8b24628a1d7001d6022ebc69",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为5-羟甲基糠醛（HMF）生产，不同化学品。"
+  },
+  {
+   "doc_id": "chk_8cc5cec9a375be2393d7efb8",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇SnCl4/EMIMBr论文中木聚糖（xylan）转化实验，原料非木糖。"
+  },
+  {
+   "doc_id": "chk_8d7fb4693c4d55640c37f9ff",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "微波辅助木糖脱水制糠醛综述/数据（同化学品同原料），不同催化体系。"
+  },
+  {
+   "doc_id": "chk_92bdba52e6c2dd201c7efec7",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "微波辅助木糖制糠醛论文参考文献（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_93295b4a9403b07317e13bb4",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述中硅酸盐催化剂段（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_943b7a4df490b6418cf56c2d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为光催化糖转化制HMF，不同化学品（HMF）。"
+  },
+  {
+   "doc_id": "chk_94c7a381557ae52c49ebaf1b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述中MgF2催化剂段（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_989521c00e05c051ee591818",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "微波辅助木糖制糠醛论文中木质素影响段（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_9a3c0a06b0b73b8cd9ca40f2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述中硅酸盐段（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_9aa75adf64fb6b636c661b49",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为戊糖生物质制呋喃类含氧燃料添加剂（烷基乙酰丙酸酯），不同化学品（乙酰丙酸衍生物）。"
+  },
+  {
+   "doc_id": "chk_9ece375829e570a7bdced2bc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为HMF生产，不同化学品。"
+  },
+  {
+   "doc_id": "chk_9efa9e4ab2005850f0c650fb",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为HMF选择性加氢制5-甲基糠醛，不同化学品（HMF）。"
+  },
+  {
+   "doc_id": "chk_9fdaa3712627d2d2ecba0d46",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为木质素在木质纤维素转化中的作用及预处理策略，不同研究对象。"
+  },
+  {
+   "doc_id": "chk_a1bda41258bb155ff6329a9d",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES中木糖制糠醛研究（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_a28faccdf87c6b01586d8926",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为2,5-呋喃二甲酸/呋喃单体（含HMF），不同化学品。"
+  },
+  {
+   "doc_id": "chk_a31155b8bf9d90dce8836014",
+   "relevance": 2,
+   "evidence_quotes": [
+    "1000 mg of (EMIMBr + H2O); molar ratio of SnCl4:xylose = 1:10; 130 ◦C; 1 h."
+   ],
+   "reason": "块内直接给出EMIMBr用量(1000 mg)与SnCl4:xylose摩尔比1:10，覆盖必需事实中的2项，但缺木糖200 mg这一项，需结合他块才能完整回答，依规范判2级。注：本块即题目指定来源论文，第八节「另一篇论文降1级」规则不触发。"
+  },
+  {
+   "doc_id": "chk_a4be2b0e6154e2a3e03a504d",
+   "relevance": 3,
+   "evidence_quotes": [
+    "200 mg xylose, 1000 mg of EMIMBr; molar ratio of catalyst:xylose = 1:10"
+   ],
+   "reason": "配对催化剂图（Figure 3）图注反应条件，直接给出木糖200 mg、EMIMBr 1000 mg、催化剂:木糖=1:10。"
+  },
+  {
+   "doc_id": "chk_a84f6e81dd1ad953c3c6a748",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述中金属盐段（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_aadb1f108dc4034b348b7a36",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES中木糖制糠醛研究（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_aaff83e35ec0748b056b3658",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "微波辅助木糖制糠醛论文HPLC方法与结论（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_ab8275707581d1c508a5a1ce",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "双相体系戊糖制糠醛研究（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_ad7fe530b780c23641cbafe4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为呋喃类含氧燃料添加剂（烷基乙酰丙酸酯），不同化学品。"
+  },
+  {
+   "doc_id": "chk_ae70470424266e29040b88d8",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "仅为同一论文3.1节的试剂采购清单（供应商、纯度），未给出任何反应质量或摩尔比，对该具体问题的木糖/EMIMBr用量与摩尔比无辅助价值，判0级。"
+  },
+  {
+   "doc_id": "chk_b2a1bb77f5b8b43b101614e4",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "微波辅助木糖制糠醛论文的参考文献段落（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_b43dc72c23d3158ce4b74837",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为呋喃类含氧燃料添加剂（烷基乙酰丙酸酯），不同化学品。"
+  },
+  {
+   "doc_id": "chk_ba38a5eb11a7d2b01f992079",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES中木糖制糠醛研究（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_bc22f088e83ba23d087f08d4",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES中木糖制糠醛研究（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_bcbdcb5fb1b11ced89c094c6",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "微波辅助木糖制糠醛论文参考文献（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_c1a2e291f033734ca2ba63ee",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述（同化学品同原料，属同一研究领域）。"
+  },
+  {
+   "doc_id": "chk_c23f74c169d2d00986944181",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为AAEMs对生物质/煤共热解途径，不同工艺路线。"
+  },
+  {
+   "doc_id": "chk_c3243c990b4a1edbec237981",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为AAEMs对生物质热解的催化作用（活化能），不同工艺路线。"
+  },
+  {
+   "doc_id": "chk_c56cce0adefcc3085172426f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "微波辅助木糖制糠醛论文（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_c637afc692e7621538a73442",
+   "relevance": 3,
+   "evidence_quotes": [
+    "200 mg of xylose was dissolved in 1000 mg of EMIMBr; molar ratio of catalyst:xylose = 1:10"
+   ],
+   "reason": "金属氯化物对比图（Figure 1）反应条件，直接给出木糖200 mg、EMIMBr 1000 mg、催化剂:木糖=1:10。"
+  },
+  {
+   "doc_id": "chk_c72c272a5b8a5dd6b62a796d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为呋喃类含氧燃料添加剂（烷基乙酰丙酸酯），不同化学品。"
+  },
+  {
+   "doc_id": "chk_c75c331598d13d8972edcec5",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "微波辅助木糖制糠醛论文，对比绿色溶剂中木糖制糠醛（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_cac3807d9a18c151af2918db",
+   "relevance": 2,
+   "evidence_quotes": [
+    "200 mg xylose, 1000 mg of EMIMBr; 130 ◦C; 1 h"
+   ],
+   "reason": "Table 1反应条件给出木糖200 mg与EMIMBr 1000 mg，但本块未给出催化剂:木糖1:10摩尔比，需与其他块组合。"
+  },
+  {
+   "doc_id": "chk_cce88edb57c7072f68d882f3",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为木质生物质在sc-MeOH中转化为有机液体（UCSB工艺），不同工艺与产物。"
+  },
+  {
+   "doc_id": "chk_cd24e18104bd508668a9b406",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为C6糖闪速热解制糠醛（Pd-PdO/ZnSO4），不同技术路线。"
+  },
+  {
+   "doc_id": "chk_d0d10ccda6e8d641d52553e2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES中木糖制糠醛研究参考文献（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_d5a0855a9de310453948713b",
+   "relevance": 3,
+   "evidence_quotes": [
+    "200 mg of xylose was dissolved in 1000 mg of ionic liquid; molar ratio of SnCl4:xylose = 1:10"
+   ],
+   "reason": "溶剂筛选图（Figure 4）反应条件，给出木糖200 mg、离子液体（本文即EMIMBr）1000 mg、SnCl4:木糖=1:10。"
+  },
+  {
+   "doc_id": "chk_d81a6bfe526c3130bea72d67",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为木质生物质在sc-MeOH中催化转化为有机液体，不同工艺与产物。"
+  },
+  {
+   "doc_id": "chk_d844eeb610efca160704d248",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为HMF生产，不同化学品。"
+  },
+  {
+   "doc_id": "chk_dda28cd81152d496245a8e9c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述参考文献（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_de6d867f6158072b73bf5cb8",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES中木糖制糠醛研究引言（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_de8ed6767b301e54f3952681",
+   "relevance": 3,
+   "evidence_quotes": [
+    "200 mg xylose, 1000 mg of EMIMBr; molar ratio of catalyst:xylose = 1:10"
+   ],
+   "reason": "同一篇SnCl4/EMIMBr论文中配对催化剂对比图（Figure 3）的反应条件，直接给出木糖200 mg、EMIMBr 1000 mg、催化剂:木糖=1:10三项核心事实。"
+  },
+  {
+   "doc_id": "chk_df3aec9b2824dc7e019e2465",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "桉木中戊糖（半纤维素）经FeCl3制糠醛研究（同化学品同原料）。"
+  },
+  {
+   "doc_id": "chk_dfc93c1b3daa020a341d50a2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇SnCl4/EMIMBr论文的参考文献段落。"
+  },
+  {
+   "doc_id": "chk_e2ef6a9d33d0b60309df5ea4",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述参考文献/更正说明（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_e39a69e4f959cd738e2a4e44",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为光催化糖转化制HMF，不同化学品。"
+  },
+  {
+   "doc_id": "chk_e5ada7059156bd758d082960",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块为木质纤维素预处理综述的表格与 DESs 段落，研究对象为玉米秸秆、小麦秸秆、甘蔗渣等生物质的酸/碱/金属盐预处理以释放葡萄糖/纤维素，与本题所问的2019年SnCl4/EMIMBr催化木糖转化体系的原料、工艺路线、目标产物均不同，未涉及木糖200 mg、EMIMBr 1000 mg、催化剂:木糖摩尔比1:10等任何必需事实，也无同类对照实验或机理背景，对回答本题无辅助价值。"
+  },
+  {
+   "doc_id": "chk_e769e00a4aa1cbe71b7a02cf",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "低共熔溶剂（DES）中木糖制糠醛研究，同化学品同原料，不同溶剂体系，属同一研究领域。"
+  },
+  {
+   "doc_id": "chk_eb28ef77eb4b424fe27b2883",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇SnCl4/EMIMBr论文中木聚糖（xylan）转化实验，原料为木聚糖而非木糖，属相邻实验。"
+  },
+  {
+   "doc_id": "chk_ede7894ddddfbba4261d1945",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "水热预处理联产糠醛与纤维素纳米晶研究，糠醛来自木糖/木聚糖（同研究领域）。"
+  },
+  {
+   "doc_id": "chk_ee0bbe0ff8eb3bf78459577b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题为光催化糖转化制HMF（催化剂性能表），不同化学品。"
+  },
+  {
+   "doc_id": "chk_ee4f714d67d858f105a035d3",
+   "relevance": 3,
+   "evidence_quotes": [
+    "200 mg of xylose was dissolved in 1000 mg of EMIMBr; molar ratio of SnCl4:xylose = 1:10"
+   ],
+   "reason": "初始木糖负载图（Figure 6）反应条件，直接给出木糖200 mg、EMIMBr 1000 mg、SnCl4:木糖=1:10。"
+  },
+  {
+   "doc_id": "chk_f377b5d318285089266d7e42",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇SnCl4/EMIMBr论文的参考文献段落。"
+  },
+  {
+   "doc_id": "chk_f50feed488e888c5a2e130e6",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇SnCl4/EMIMBr论文引言段落，综述其他体系，未给本文具体用量。"
+  }
+ ]
+}

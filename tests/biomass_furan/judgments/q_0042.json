@@ -1,0 +1,454 @@
+{
+ "query_id": "q_0042",
+ "judgments": [
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_00091f0bcc99d2d4825fb959",
+   "relevance": 0,
+   "reason": "doc0: biomass burning emissions, unrelated field; doc1,2: Eucalyptus Pd/C-FeCl3 biorefinery, different system; doc2: reference list only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "72cf3f720eebc226d44fdd54aed078350e58c5cbb1513770a991ed4354b8f576"
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_0760bea4664774ad2bd462ba",
+   "relevance": 0,
+   "reason": "doc0: FDMC oxidative esterification, unrelated; doc1: reference list only; doc2: furfural recovery/analytics, unrelated",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "987a0ba6bc062120bf29fb8fd666967063f412c1ae485d45104c37a6a0147847"
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_305f10f1a75a63236a4c181e",
+   "relevance": 2,
+   "reason": "Directly states ChCl/GA DES aqueous system requires no additional catalyst.",
+   "evidence_quotes": [
+    "Choline chloride (ChCl) / glycolic acid (GA) deep eutectic solvent (DES) media with high water content but without any additional catalyst are introduced in furfural and 5hydroxymethylfurfural (HMF) production."
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "90763aeb48848ebbef70f64d549de96f8e673fa6e45b91a7d19798f843620073"
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_3f69bf6b3a14097bc389e768",
+   "relevance": 2,
+   "reason": "Directly states the ChCl/GA DES/MIBK sugar study requires no additional catalyst, answering the catalyst-strategy comparison.",
+   "evidence_quotes": [
+    "Glucose/xylose mixtures were converted to furfural and HMF in the ChCl/GA/H2O DES/MIBK system without any additional catalyst."
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_spotcheck_corrected",
+   "answerability_conflict": false,
+   "raw_response_id": "e59ff804c58b2c4a482ce6316410269c8c125466399da325e93affc23c6c0197",
+   "correction_kind": "read_based_spotcheck_correction",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 2,
+    "changed": false,
+    "explanation": "跨文献比较题。本块为 ChCl/GA 论文的结论段，逐字覆盖必需事实 2（水相 ChCl/GA DES/MIBK 体系、无外加催化剂），必需事实 1（磷酸法水/2-MTHF 可回收磷酸）属另一篇论文 → 2。与既有受保护修正（before 3 → after 2）一致，维持，不回滚。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_4a6a3fa05189f43437e769de",
+   "relevance": 0,
+   "reason": "doc0: hydrothermal furfural/CNC, different system; doc2: pyrolysis reference list, unrelated; doc3: review of third-party acid/MIBK work",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "e59ff804c58b2c4a482ce6316410269c8c125466399da325e93affc23c6c0197"
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_4d23c61724b8781b5c07f8ed",
+   "relevance": 2,
+   "reason": "Directly reports the aqueous ChCl/GA DES/MIBK sugar system without additional catalyst, supporting f2.",
+   "evidence_quotes": [
+    "When a DES was formed from ChCl, GA, and a small quantity of water, the highest yields were achieved: 30% for furfural and 4% for HMF."
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_spotcheck_corrected",
+   "answerability_conflict": false,
+   "raw_response_id": "0d52f1867e266bff1e9b5ee1df7bdbe4c9bb0e1400d1943246ff651d09b363ef",
+   "correction_kind": "read_based_spotcheck_correction",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 2,
+    "changed": false,
+    "explanation": "本块覆盖必需事实 2 的体系侧：确认为水相 ChCl/GA/H2O（1:3:0.5）DES + MIBK 萃取相 + 糖混合物原料的体系，并以乙酸/ChCl 对照说明酸性介质是关键；但『不外加催化剂』的明确表述不在块内。必需事实 1 属另一篇论文。仅部分命中 1 项 → 2。属受保护修正（before 3 → after 2），维持，不回滚。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_4f1003898eb083ea75f9672f",
+   "relevance": 2,
+   "reason": "Confirms the ChCl/GA/H2O DES/MIBK sugar study operates without an additional catalyst, supporting f2.",
+   "evidence_quotes": [
+    "To the best of our knowledge, ChCl/GA/H2O DES has not been utilized either in sugar or in native biomass conversion to furfural or HMF without an additional catalyst."
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_spotcheck_corrected",
+   "answerability_conflict": false,
+   "raw_response_id": "0d52f1867e266bff1e9b5ee1df7bdbe4c9bb0e1400d1943246ff651d09b363ef",
+   "correction_kind": "read_based_spotcheck_correction",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 2,
+    "changed": false,
+    "explanation": "本块明确写出『ChCl/GA/H2O DES ... without an additional catalyst』并交代 32.9 wt.% 高含水量，覆盖必需事实 2；必需事实 1 属另一篇论文 → 2。受保护修正（before 3 → after 2）维持，不回滚。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_61fec0ffa9e553e9cc7bc451",
+   "relevance": 2,
+   "reason": "Directly states the phosphoric-acid study's water/2-MTHF solvent strategy and recyclable phosphoric acid (f1).",
+   "evidence_quotes": [
+    "The process consists of a swelling step of dried lignocellulosic biomass at 80°C, followed by a biphasic fractionation step, using water and 2-MTHF as solvents. After phase separation, the sugar containing hydrolyzate is used for another biphasic reaction step to produce and extract furfural. After phase separation and water evaporation, the phosphoric acid can be reused."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "987a0ba6bc062120bf29fb8fd666967063f412c1ae485d45104c37a6a0147847"
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_69cf17a7e04566cf89d39367",
+   "relevance": 2,
+   "reason": "Supports recyclability of phosphoric acid/2-MTHF solvent strategy in the phosphoric-acid study.",
+   "evidence_quotes": [
+    "the efficiency of the fractionation (extracted lignin and residual pulp yields) is constant with each run"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "90763aeb48848ebbef70f64d549de96f8e673fa6e45b91a7d19798f843620073"
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_6aa49b56f23286eccb100a58",
+   "relevance": 1,
+   "reason": "L1b: same paper's method/data source, DES stability/reuse context, no catalyst or phosphoric-acid comparison.",
+   "evidence_quotes": [
+    "The stability and reusability of ChCl/GA (1:3) DES were investigated using thermogravimetric analysis (TGA), 1H NMR spectroscopy, and recycling tests."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "72cf3f720eebc226d44fdd54aed078350e58c5cbb1513770a991ed4354b8f576"
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_6d4d71586ece559fc069b548",
+   "relevance": 0,
+   "reason": "doc0,1: 2018 furfural review; neither covers the 2021 phosphoric-acid or ChCl/GA DES studies",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "cc12f573880c2880539a9fcfc01af14e2d1076d74088a6468ed7c514e79beed3"
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_6f9e1ddf4e91431e9cfc6c46",
+   "relevance": 0,
+   "reason": "doc0: biomass burning emissions, unrelated field; doc1,2: Eucalyptus Pd/C-FeCl3 biorefinery, different system; doc2: reference list only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "72cf3f720eebc226d44fdd54aed078350e58c5cbb1513770a991ed4354b8f576"
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_7398f9b56ed82048d6e3aec5",
+   "relevance": 0,
+   "reason": "doc0: hydrothermal furfural/CNC, different system; doc2: pyrolysis reference list, unrelated; doc3: review of third-party acid/MIBK work",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "e59ff804c58b2c4a482ce6316410269c8c125466399da325e93affc23c6c0197"
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_7dd55ef0b7a12157d892a980",
+   "relevance": 0,
+   "reason": "doc0: hydrothermal furfural/CNC, different system; doc2: pyrolysis reference list, unrelated; doc3: review of third-party acid/MIBK work",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "e59ff804c58b2c4a482ce6316410269c8c125466399da325e93affc23c6c0197"
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_7e3320c3ad73bbf359dec07d",
+   "relevance": 2,
+   "reason": "Confirms phosphoric-acid study's water/2-MTHF solvent and recyclable acid catalyst strategy.",
+   "evidence_quotes": [
+    "in a biphasic solvent system (water/2-methyltetrahydrofuran) using phosphoric acid as recyclable catalyst"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "90763aeb48848ebbef70f64d549de96f8e673fa6e45b91a7d19798f843620073"
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_8342126cb7cc5ce136a6c3d7",
+   "relevance": 0,
+   "reason": "doc1: 2023 photocatalytic Al3+/FA DMSO study, different system; doc4: 2017 Purolite/H2SO4 biphasic furfural, different paper and system",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0d52f1867e266bff1e9b5ee1df7bdbe4c9bb0e1400d1943246ff651d09b363ef"
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_86dc8cb532b70edbb11eecd2",
+   "relevance": 0,
+   "reason": "doc1: 2023 photocatalytic Al3+/FA DMSO study, different system; doc4: 2017 Purolite/H2SO4 biphasic furfural, different paper and system",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0d52f1867e266bff1e9b5ee1df7bdbe4c9bb0e1400d1943246ff651d09b363ef"
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_8781e312c8a17f3f184b7414",
+   "relevance": 2,
+   "reason": "States the ChCl/GA DES/MIBK study requires no additional catalyst, supporting f2.",
+   "evidence_quotes": [
+    "There are few studies using DESs as reaction media without any additional catalyst for converting lignocellulosic biomass to HMF or furfural."
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_spotcheck_corrected",
+   "answerability_conflict": false,
+   "raw_response_id": "0d52f1867e266bff1e9b5ee1df7bdbe4c9bb0e1400d1943246ff651d09b363ef",
+   "correction_kind": "read_based_spotcheck_correction",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 2,
+    "changed": false,
+    "explanation": "本块多次明确 DES 介质『without any additional catalyst』，覆盖必需事实 2；必需事实 1 属另一篇论文 → 2。受保护修正（before 3 → after 2）维持，不回滚。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_8a6243268e0833e96b9362d4",
+   "relevance": 0,
+   "reason": "doc0: biomass burning emissions, unrelated field; doc1,2: Eucalyptus Pd/C-FeCl3 biorefinery, different system; doc2: reference list only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "72cf3f720eebc226d44fdd54aed078350e58c5cbb1513770a991ed4354b8f576"
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_988cf29ee26f953249d99967",
+   "relevance": 0,
+   "reason": "doc0: FDMC oxidative esterification, unrelated; doc1: reference list only; doc2: furfural recovery/analytics, unrelated",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "987a0ba6bc062120bf29fb8fd666967063f412c1ae485d45104c37a6a0147847"
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_9f994e2e49ec3c47a5ae2cda",
+   "relevance": 2,
+   "reason": "Explains DES acts as both solvent and catalyst, supporting no additional catalyst needed.",
+   "evidence_quotes": [
+    "Applying only DES in a conversion reaction relies on the carboxylic acid acting as an HBD, which gives the DES acidic characteristics, and therefore, the DES itself can act as both the solvent and the catalyst."
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_spotcheck_corrected",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "90763aeb48848ebbef70f64d549de96f8e673fa6e45b91a7d19798f843620073",
+   "correction_kind": "read_based_spotcheck_correction",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 2,
+    "changed": false,
+    "explanation": "本块为该论文标题页/摘要与引言，覆盖必需事实 2（含水 ChCl/GA DES、无外加催化剂），并给出 HBD→酸性→溶剂兼催化剂的机理句；必需事实 1 属另一篇论文 → 2。受保护修正（before 3 → after 2）维持，不回滚。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_a1bda41258bb155ff6329a9d",
+   "relevance": 0,
+   "reason": "doc0: FDMC oxidative esterification, unrelated; doc1: reference list only; doc2: furfural recovery/analytics, unrelated",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "987a0ba6bc062120bf29fb8fd666967063f412c1ae485d45104c37a6a0147847"
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_d10851fbdfeb17dd8639fcec",
+   "relevance": 2,
+   "reason": "Describes the phosphoric-acid fractionation study's catalyst/solvent strategy (same catalyst-solvent system, recyclable acid), needed for the comparison.",
+   "evidence_quotes": [
+    "In this work, a holistic concept is put forth, evaluating the use of phosphoric acid for lignocellulose pretreatment and pentose dehydration in a biphasic system. By using the same catalystsolvent system for both reaction steps, downstream processing might be simplified"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "e59ff804c58b2c4a482ce6316410269c8c125466399da325e93affc23c6c0197"
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_e5c4b7f2e57957640e11cd4a",
+   "relevance": 1,
+   "reason": "L1b: same paper's method/data source, describes ChCl/GA DES solvent choice but no catalyst comparison.",
+   "evidence_quotes": [
+    "These features make ChCl/MA DES non-ideal for industrial use and ChCl/GA a more tempting option to investigate."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "72cf3f720eebc226d44fdd54aed078350e58c5cbb1513770a991ed4354b8f576"
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_ed3664eab04395be151ede7f",
+   "relevance": 0,
+   "reason": "doc0,1: 2018 furfural review; neither covers the 2021 phosphoric-acid or ChCl/GA DES studies",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "cc12f573880c2880539a9fcfc01af14e2d1076d74088a6468ed7c514e79beed3"
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_eec4496762bf30d4c915fc71",
+   "relevance": 2,
+   "reason": "States the ChCl/GA DES aqueous system used without any added catalyst, supporting f2.",
+   "evidence_quotes": [
+    "160°C reaction temperature and ChCl/GA/H2O (1:3:6) DES were used in all reactions."
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "987a0ba6bc062120bf29fb8fd666967063f412c1ae485d45104c37a6a0147847"
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_f6334e3e233a5be7e5e4b91b",
+   "relevance": 0,
+   "reason": "doc3: different paper, HCl/CMF process, no DES or phosphoric acid comparison",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "90763aeb48848ebbef70f64d549de96f8e673fa6e45b91a7d19798f843620073"
+  }
+ ]
+}

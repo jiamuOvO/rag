@@ -1,0 +1,975 @@
+{
+ "query_id": "q_0009",
+ "judgments": [
+  {
+   "doc_id": "chk_00457e60a7fe39f143e443a9",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自微波辅助木糖制糠醛的响应面优化研究，使用H2SO4-FeCl3等不同催化剂，未涉及碱金属卤化物阳离子机制。"
+  },
+  {
+   "doc_id": "chk_034388f89df808a1cc25fb27",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，讨论KCl对芳烃断键，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_050e03631fe015dea99a4853",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自糠醛及其应用与衍生物综述，主题（应用/衍生物）与被问的碱金属卤化物阳离子C—O断键机制不同。"
+  },
+  {
+   "query_id": "q_0009",
+   "doc_id": "chk_0760bea4664774ad2bd462ba",
+   "relevance": 0,
+   "reason": "doc0: recovery/quantification methods; doc1: bibliography list; doc2: yield screening, no C-O mechanism; doc3: cation effects on yield, no bond-length mechanism; doc4: screening rationale, no C-O explanation",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0a5a2533e7ca67352c8633fa68902631a3199b7fc4c3e00fddaebda7ad7deb19"
+  },
+  {
+   "doc_id": "chk_0add36bde3d8d23e7501bd97",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自Pt/g-C3N4催化糠醛加氢制糠醇的论文（摘要），工艺路线（加氢）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_1041eb27a0e8140b023b5f68",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_11b34fc55bbc6bbaecb97a47",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，讨论MgO/CaO催化作用，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_1a55c8728cce5dc368a01e1d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自半纤维素水解制糠醛综述，讨论CrCl3/NaCl等催化剂与收率表，未涉及碱金属卤化物阳离子C—O断键机制，催化体系不同。"
+  },
+  {
+   "doc_id": "chk_1e3eaec5bd452ddb3b9a4006",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自ChCl/GA DES/MIBK体系制糠醛与HMF的论文（桦木锯屑转化），不研究碱金属卤化物阳离子C—O断键机制，催化体系不同。"
+  },
+  {
+   "doc_id": "chk_2044d39f2471125ec486ccfb",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，讨论Ca离子促进焦/呋喃生成，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_239ee83543f5d89977f53bcd",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_2457bcbec7234dbe74bc716f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自Pd-PdO/ZnSO4催化闪速热解制糠醛论文（ZnSO4筛选/Figure 4），不同催化体系与工艺路线。"
+  },
+  {
+   "query_id": "q_0009",
+   "doc_id": "chk_2554c51157cea048e651e294",
+   "relevance": 0,
+   "reason": "doc0: recovery/quantification methods; doc1: bibliography list; doc2: yield screening, no C-O mechanism; doc3: cation effects on yield, no bond-length mechanism; doc4: screening rationale, no C-O explanation",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0a5a2533e7ca67352c8633fa68902631a3199b7fc4c3e00fddaebda7ad7deb19"
+  },
+  {
+   "doc_id": "chk_25f6103bf1c7f4c915db3b0a",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同论文参考文献（页11），属相邻内容，无机制证据。"
+  },
+  {
+   "doc_id": "chk_26f7a36cb33958fd2db6a163",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，讨论金属与炭基质反应，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_2713a17ac84042d412cae067",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自Pd-PdO/ZnSO4催化闪速热解制糠醛论文参考文献，不同催化体系与工艺路线。"
+  },
+  {
+   "doc_id": "chk_2abf12ab9e60d0b4219f4658",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_2b9a8f819b5f2ee8a4950901",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Commercial Furfural: Its Properties and Uses》历史文献摘要，与被问机制属不同研究领域。"
+  },
+  {
+   "doc_id": "chk_2d7aaf109f0f0081fae5ad61",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_3097b76a86f213744e7239c6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，讨论金属盐诱导聚合物键断裂，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_3692b24fc41326eb1cd0c997",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Commercial Furfural: Its Properties and Uses》，讨论糠醛衍生物有机化学与历史应用文献，与被问的碱金属卤化物阳离子C—O断键机制属不同研究领域。"
+  },
+  {
+   "doc_id": "chk_37792aa0f318d2bc81b7c97f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Commercial Furfural: Its Properties and Uses》历史文献（糠醛与苯胺反应），与被问机制属不同研究领域。"
+  },
+  {
+   "doc_id": "chk_3e028900b59f4839685a65fe",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述（Cannizzaro反应、BHMF等），化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_3f69bf6b3a14097bc389e768",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自ChCl/GA DES/MIBK体系制糠醛与HMF的论文（结论段），不研究碱金属卤化物阳离子C—O断键机制，催化体系不同。"
+  },
+  {
+   "doc_id": "chk_43fe5cdb3800d6d9d5836f00",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自SnCl4离子液体催化制糠醛的论文（参考文献），催化剂体系（Lewis酸/离子液体）与被问的碱金属卤化物机制不同。"
+  },
+  {
+   "doc_id": "chk_4419384458d12e56e17e3a01",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同论文 Figure 1 筛选与 Figure 2 机理示意图图注，提及金属阳离子M+但未给出C—O键长/断键能量机制的文字证据。"
+  },
+  {
+   "doc_id": "chk_44e6191a7ed1ede0119f0386",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，讨论碱金属对焦收率影响，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_45531ebe625d598ebf7a82b3",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，讨论金属盐抑制LG生成，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_45822fe356791e7a1f14bae3",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，讨论碱性钠抑制糠醛生成，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_46afa6e2d17534629415a50a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述，聚焦HMF/呋喃单体等聚合单体制备与评估，化学品（HMF等）与被问的糠醛生成阳离子机制不同。"
+  },
+  {
+   "doc_id": "chk_49865d6ee8c11c8ecc579566",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_4b1cc34f21b968e86267af2e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自生物质电化学合成（葡萄糖电氧化C—C断键制甲酸）的论文，化学品与工艺（电化学氧化）均与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_4c4742c0cf0777d24879c231",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自生物质电化学合成（葡萄糖电氧化C—C断键制甲酸）的论文，化学品与工艺（电化学氧化）均与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_4cc88996e1a0dc7674c80f40",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_4db5ee1eb8a3ec90d73d0043",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述参考文献，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_4dd18aaeaed2ad7f8cf6520e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，讨论KCl对CO影响，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_4e85cadb6c8ea789e2188b2a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自糖类光催化转化制5-羟甲基糠醛（HMF）的论文，化学品（HMF）与光催化工艺均与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_4f86dedd60c3fd056c61dc03",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同论文回收复用与结果段（收率85.9%等），未含阳离子断键机制。"
+  },
+  {
+   "doc_id": "chk_507e5092f07606e8f162a909",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自半纤维素水解制糠醛综述，讨论SO42-/SiO2-Al2O3等固体酸催化剂，未涉及碱金属卤化物阳离子C—O断键机制，催化体系不同。"
+  },
+  {
+   "doc_id": "chk_50fe57637d905026d4475626",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，讨论金属阳离子电正性与焦生成活性，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_52207579c83e256bb2b59b41",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，讨论钙基催化剂抑制醛/醇，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_52fe0c5cae2e89276c7de07b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_54f75b6ae27983536bad5b0f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自SnCl4离子液体催化制糠醛的论文，催化剂体系（Lewis酸/离子液体）与被问的碱金属卤化物机制不同。"
+  },
+  {
+   "doc_id": "chk_5539978d73851dcba7b48239",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同论文 Figure 4 与响应面优化段，讨论LiBr/NaBr收率，无阳离子断键机制。"
+  },
+  {
+   "doc_id": "chk_5b58d940128faf2f99440580",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自木质纤维素制糠醛的文献综述，宏观概述多种工艺，未涉及碱金属卤化物阳离子C—O断键机制。"
+  },
+  {
+   "doc_id": "chk_5b84605e7160a0a7610fa66d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自ChCl/GA DES/MIBK体系制糠醛与HMF的论文（DES结构/含水量），不研究碱金属卤化物阳离子机制，催化体系不同。"
+  },
+  {
+   "doc_id": "chk_61862b5fdc6254a941cf7ebf",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自生物质燃烧排放与大气化学的论文，研究领域（大气化学）与被问的糠醛催化生成机制完全不同。"
+  },
+  {
+   "doc_id": "chk_63ed4f5cf0a3f86e588ca348",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自半纤维素水解制糠醛综述，讨论Cu(II)/NaCl/CrCl3等催化剂与收率，未涉及碱金属卤化物阳离子C—O断键机制，催化体系不同。"
+  },
+  {
+   "doc_id": "chk_647773cf5c3694c2d7fabd49",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Commercial Furfural: Its Properties and Uses》历史文献摘要，与被问机制属不同研究领域。"
+  },
+  {
+   "doc_id": "chk_677c08789a4f852c88ab21c7",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自Pd-PdO/ZnSO4催化闪速热解制糠醛论文参考文献，不同催化体系与工艺路线。"
+  },
+  {
+   "doc_id": "chk_6aa49b56f23286eccb100a58",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自ChCl/GA DES/MIBK体系制糠醛与HMF的论文（稳定性/循环），不研究碱金属卤化物阳离子C—O断键机制，催化体系不同。"
+  },
+  {
+   "doc_id": "chk_6d32ba028fd957e30f54513f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_6de95336ab291af860d17360",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Commercial Furfural: Its Properties and Uses》历史文献摘要，与被问机制属不同研究领域。"
+  },
+  {
+   "doc_id": "chk_6f03c344fb08302f28c6f79e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Commercial Furfural: Its Properties and Uses》历史文献摘要，与被问机制属不同研究领域。"
+  },
+  {
+   "doc_id": "chk_6f25f7af1a297c17eaced5f2",
+   "relevance": 3,
+   "evidence_quotes": [
+    "In the proposed mechanism, the metal cation is responsible for increasing the C–O–H and C–O–C bond lengths, through the interaction with the hydroxyl groups, and lowering the energy necessary to break such C–O bonds."
+   ],
+   "reason": "该块直接给出机制：金属阳离子通过与羟基作用增加C—O—H和C—O—C键长、降低断裂C—O键所需能量，单独即可完整回答题目。"
+  },
+  {
+   "doc_id": "chk_70ed1f72e9e8fd9a335099ec",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_72210fd01e2d9b9ad627f420",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，讨论KCl对CO/CH4影响，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_72a32a4551589e3fbc54694d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自戊糖生物质制呋喃燃料添加剂（糠醛→2-甲基呋喃加氢）的论文，工艺路线（加氢）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_731c8cbec7a0c717be469661",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述参考文献，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_7398f9b56ed82048d6e3aec5",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文与催化体系：Pd-PdO/ZnSO4催化闪速热解制糠醛，与被问的2021碱金属卤化物促进糠醛生成的阳离子C—O断键机制属不同催化体系与工艺路线。"
+  },
+  {
+   "doc_id": "chk_753f4affe2d2d946e5193fe0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_7579fca57f2101c20024345d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Commercial Furfural: Its Properties and Uses》历史文献摘要，与被问机制属不同研究领域。"
+  },
+  {
+   "doc_id": "chk_7615f90cb410184547ce432f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_76618fe34d95996dd79233c6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，讨论金属阳离子对纤维素表面键的断裂，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_7986e01f235161d2b6bb4ab5",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Commercial Furfural: Its Properties and Uses》历史文献摘要，与被问机制属不同研究领域。"
+  },
+  {
+   "doc_id": "chk_7ab7c407d07ae9dc65a723ca",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，比较四种AAEM添加剂，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_7d8d34c520bd4f6c3b53b933",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自Au/Ag催化5-羟甲基糠醛（HMF）好氧氧化制FDCA的论文，化学品（HMF）与被问的糠醛生成机制不同。"
+  },
+  {
+   "doc_id": "chk_840f7f391a7c68039e8251d2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_84db9539d657f2c463b2fe5c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自生物质电化学合成（葡萄糖电氧化/HMF电氧化）的论文，化学品与工艺（电化学氧化）均与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_8615ec71ddc0ab601c88932f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_86d0eecaed56b884bdba46b2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自Pt/g-C3N4催化糠醛加氢制糠醇的论文，工艺路线（加氢）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_86d0fa326f0392661191cc1c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同论文结论段，总结盐提升收率（LiBr 89.5±0.3%），无具体阳离子C—O键机制。"
+  },
+  {
+   "doc_id": "chk_88b04b12b047d1f58a84dfd2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_88d26822bc8d03e95a888e0d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自Ti基MXene催化糠醛加氢的论文（氢解/THFA路径），工艺路线（加氢）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_894badaf71fbc8c94416827c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自半纤维素水解制糠醛综述参考文献，讨论多种催化剂，未涉及碱金属卤化物阳离子C—O断键机制，催化体系不同。"
+  },
+  {
+   "doc_id": "chk_8b65003d3dbb3b2414f44247",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，列出各金属盐作用路径，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_8f15223194b581244bbaff16",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自ChCl/GA DES/MIBK体系制糠醛与HMF的论文（2021），虽涉及糠醛生成但不研究碱金属卤化物阳离子C—O断键机制，催化体系不同。"
+  },
+  {
+   "doc_id": "chk_8f1a7c1784a668cfc0dcab0f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自戊糖生物质制呋喃燃料添加剂（糠醛→2-甲基呋喃加氢）的论文，工艺路线（加氢）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_905916fd2cae9f3a6971bf1e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Commercial Furfural: Its Properties and Uses》历史文献摘要，与被问机制属不同研究领域。"
+  },
+  {
+   "doc_id": "chk_932af02ade2343540404171d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自Pd-PdO/ZnSO4催化闪速热解制糠醛论文（反应路径Figure 1），不同催化体系与工艺路线。"
+  },
+  {
+   "doc_id": "chk_943b7a4df490b6418cf56c2d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自糖类光催化转化制5-羟甲基糠醛（HMF）的论文，化学品（HMF）与光催化工艺均与被问的糠醛生成阳离子机制不同。"
+  },
+  {
+   "doc_id": "chk_94832d68d7c46da9eecf63e3",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自Pd-PdO/ZnSO4催化闪速热解制糠醛论文（反应路径Figure 1/方法），不同催化体系与工艺路线。"
+  },
+  {
+   "doc_id": "chk_9ae6003c97583d01b536fc55",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_9c8decf866f88f679099747e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自呋喃微反应器热解的论文，属燃烧/热解机理研究，与被问的糠醛生成阳离子机制无关。"
+  },
+  {
+   "doc_id": "chk_9dd8bdd482efaacd3d33500c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述参考文献，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_a08cc3e0a58c74b8b7b2b8f3",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自糠醛在金属电极上还原（电催化加氢）的论文（摘要/机制），工艺路线（电催化加氢）与被问机制不同。"
+  },
+  {
+   "query_id": "q_0009",
+   "doc_id": "chk_a1bda41258bb155ff6329a9d",
+   "relevance": 0,
+   "reason": "doc2: same paper, optimization/statistics unrelated to cation mechanism; doc3: bibliography list only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "dca71f110afc159c2a4e718198244c3b9c96f2fe13d97282ca19dfc724de19f7"
+  },
+  {
+   "doc_id": "chk_a3fcc87db9d25f553bb47b72",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自Ti基MXene催化糠醛加氢的论文，工艺路线（加氢）与被问的碱金属卤化物脱水机制不同。"
+  },
+  {
+   "doc_id": "chk_a4b848d97bd2555166f137fd",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自糠醛在金属电极上还原（电催化加氢）的论文（Figure 2），工艺路线与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_a50b6f86afb0ed01e66f015e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自Pd-PdO/ZnSO4催化闪速热解制糠醛论文参考文献，不同催化体系与工艺路线。"
+  },
+  {
+   "doc_id": "chk_a628f23983d80c556a8bab78",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，研究热解过程中金属对键断裂的作用，工艺路线（热解）与被问的碱金属卤化物水相糠醛生成机制不同。"
+  },
+  {
+   "doc_id": "chk_a847899fb5e02a932c3383c5",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Commercial Furfural: Its Properties and Uses》历史文献摘要，与被问的阳离子C—O断键机制属不同研究领域。"
+  },
+  {
+   "doc_id": "chk_a89f082131a3565a1231f32d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自糠醛在金属电极上还原（电催化加氢）的论文，工艺路线（电催化加氢）与被问的碱金属卤化物水相脱水机制不同。"
+  },
+  {
+   "doc_id": "chk_aa1dc469381d853d29a36574",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问的糠醛生成阳离子机制不同。"
+  },
+  {
+   "doc_id": "chk_aa3638fdf650f523dd0bedfb",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自HMF选择性加氢制5-甲基糠醛的论文，化学品（HMF）与被问的糠醛生成阳离子机制不同。"
+  },
+  {
+   "doc_id": "chk_aadb1f108dc4034b348b7a36",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同论文低温筛选讨论（LiCl 49.9%等）与阴离子效应，讨论阳离子氢键酸性，未含所问断键机制。"
+  },
+  {
+   "doc_id": "chk_abe81474285ddc4d5c729367",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_ad0da6de9ceb33a4de203e4c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自糖类光催化转化制5-羟甲基糠醛（HMF）的论文，化学品（HMF）与光催化工艺均与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_ada6b5f3b55a44659f18bb71",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述参考文献，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_ae83ba3ffbaba0b73be9a3b6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自生物质电化学合成（葡萄糖电氧化C—C断键）的论文，化学品与工艺（电化学氧化）均与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_b2f779e5cf5548226de871e2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_b32ccca059816845df8282e3",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自生物质电化学合成（葡萄糖电氧化制甲酸）的论文，化学品与工艺（电化学氧化）均与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_b85b07e620fb61d294d721d7",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自封装金属间纳米颗粒催化糠醛加氢的论文，工艺路线（加氢）与被问机制不同。"
+  },
+  {
+   "query_id": "q_0009",
+   "doc_id": "chk_ba38a5eb11a7d2b01f992079",
+   "relevance": 0,
+   "reason": "doc0: recovery/quantification methods; doc1: bibliography list; doc2: yield screening, no C-O mechanism; doc3: cation effects on yield, no bond-length mechanism; doc4: screening rationale, no C-O explanation",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0a5a2533e7ca67352c8633fa68902631a3199b7fc4c3e00fddaebda7ad7deb19"
+  },
+  {
+   "query_id": "q_0009",
+   "doc_id": "chk_baa9bfa115cb1a71967530ee",
+   "relevance": 0,
+   "reason": "doc2: same paper, optimization/statistics unrelated to cation mechanism; doc3: bibliography list only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "dca71f110afc159c2a4e718198244c3b9c96f2fe13d97282ca19dfc724de19f7"
+  },
+  {
+   "doc_id": "chk_bb2350573b224a69783b7f13",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同论文引言/文献综述，介绍DES与碱金属卤化物提升糠醛收率的背景，未含所问机制。"
+  },
+  {
+   "doc_id": "chk_bc22f088e83ba23d087f08d4",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同论文机制讨论段，解释阳离子kosmotropic性质稳定碳正离子、卤素阴离子作用，但未直接给出'增加C—O—H/C—O—C键长、降低断键能量'的核心表述。"
+  },
+  {
+   "doc_id": "chk_be60c155839fe0ac68c5993d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自Pd催化糠醛加氢中水合氢离子影响的论文，工艺路线（加氢）与被问的碱金属卤化物脱水机制不同。"
+  },
+  {
+   "doc_id": "chk_be9cc9e8bee9935e214a621b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自Pd催化糠醛加氢中水合氢离子影响的论文，工艺路线（加氢）与被问的碱金属卤化物脱水机制不同。"
+  },
+  {
+   "doc_id": "chk_bf8f76f2861f9cfa75746a02",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自糠醛在金属电极上还原（电催化加氢）的论文（Scheme 2机制），工艺路线与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_bfd2e66d164a9856d3069d40",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_c115fc48e033db7f2ca20d86",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自ChCl/GA DES/MIBK体系制糠醛与HMF的论文，不研究碱金属卤化物阳离子C—O断键机制，催化体系不同。"
+  },
+  {
+   "doc_id": "chk_c2b7d466891e9ccccbc91dfe",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，讨论AAEMs与炭基质反应，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_c3236d1018b9abd887eaab2b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自半纤维素水解制糠醛综述，讨论FeCl3/NaCl、CrCl3等不同催化剂，未涉及碱金属卤化物阳离子C—O断键机制，催化体系不同。"
+  },
+  {
+   "doc_id": "chk_c4130608b2e6b95c0a3ad802",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，聚焦HMF/呋喃单体，化学品（HMF等）与被问的糠醛生成阳离子机制不同。"
+  },
+  {
+   "doc_id": "chk_c598a40c20f9629f2eac497c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，讨论CaCl2与炭基质自由基反应，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_c8652337ded7408c50ff1232",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述参考文献，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_c875c108758369c4f0777e4b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，研究热解中金属催化作用，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_ca08fb7b5ca3c12333f12829",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自糠醛在金属电极上还原（电催化加氢）的论文（Figure 2/3），工艺路线与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_ca518f4edea642ce661c7f9b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自HMF选择性加氢制5-甲基糠醛的论文（循环/Table 1），化学品（HMF）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_ca81c73c48288d808eadd375",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_cbf8df1c3b64a2e545934de1",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_cd24e18104bd508668a9b406",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自Pd-PdO/ZnSO4催化闪速热解制糠醛论文参考文献，不同催化体系与工艺路线。"
+  },
+  {
+   "doc_id": "chk_cd553d2fc344c58186d4b71d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，讨论金属氯化物对煤结构断键，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_ce75d04abcab67e329b9a1ec",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，讨论KCl对CH4影响，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_ceceef68cd3b7ea92085baa6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Commercial Furfural: Its Properties and Uses》糠醛与胺/酮缩合衍生物化学，与被问的阳离子C—O断键机制属不同研究领域。"
+  },
+  {
+   "doc_id": "chk_d0bed2946d29a751b8a4a19f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，讨论CaO催化二次反应，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "query_id": "q_0009",
+   "doc_id": "chk_d0d10ccda6e8d641d52553e2",
+   "relevance": 0,
+   "reason": "doc0: recovery/quantification methods; doc1: bibliography list; doc2: yield screening, no C-O mechanism; doc3: cation effects on yield, no bond-length mechanism; doc4: screening rationale, no C-O explanation",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0a5a2533e7ca67352c8633fa68902631a3199b7fc4c3e00fddaebda7ad7deb19"
+  },
+  {
+   "doc_id": "chk_d58ea5fd2f54fbeefefdc731",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自Ti基MXene催化糠醛加氢的论文（能量循环/氢解路径），工艺路线（加氢）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_d67d0b0558e0fb1de84877e4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_db6913662069098f6ee74d67",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_dc64698ea1bca06a22e862a2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自Pt/g-C3N4催化糠醛加氢制糠醇的论文（模型反应），工艺路线（加氢）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_dcb64dc4950f98bb8d419b0a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自Pd催化糠醛加氢中水合氢离子影响的论文（引言/Fig.1），工艺路线（加氢）与被问机制不同。"
+  },
+  {
+   "query_id": "q_0009",
+   "doc_id": "chk_de6d867f6158072b73bf5cb8",
+   "relevance": 0,
+   "reason": "doc0: recovery/quantification methods; doc1: bibliography list; doc2: yield screening, no C-O mechanism; doc3: cation effects on yield, no bond-length mechanism; doc4: screening rationale, no C-O explanation",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0a5a2533e7ca67352c8633fa68902631a3199b7fc4c3e00fddaebda7ad7deb19"
+  },
+  {
+   "doc_id": "chk_df39c9e44b59ec153a19f270",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述参考文献，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_e0a35831f2c1d05ee94bd22c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述参考文献，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_e2cb44b2a26c25a3add38896",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Commercial Furfural: Its Properties and Uses》糠醛与胺缩合制染料等衍生物化学，与被问机制属不同研究领域。"
+  },
+  {
+   "doc_id": "chk_e34da9b8843c359de20ff898",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，讨论CaO催化作用，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_e59b9573578a2ef6e31f67e2",
+   "relevance": 3,
+   "evidence_quotes": [
+    "In the proposed mechanism, the metal cation is responsible for increasing the C–O–H and C–O–C bond lengths, through the interaction with the hydroxyl groups, and lowering the energy necessary to break such C–O bonds."
+   ],
+   "reason": "该块直接给出机制：金属阳离子通过与羟基作用增加C—O—H和C—O—C键长、降低断裂C—O键所需能量，单独即可完整回答题目。"
+  },
+  {
+   "doc_id": "chk_e5c4b7f2e57957640e11cd4a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自ChCl/GA DES/MIBK体系制糠醛与HMF的论文（页1），不研究碱金属卤化物阳离子C—O断键机制，催化体系不同。"
+  },
+  {
+   "doc_id": "chk_e769e00a4aa1cbe71b7a02cf",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同论文材料与方法：化学品、DES配制及循环（Figure 6），属题目研究的相邻方法段。"
+  },
+  {
+   "doc_id": "chk_eec4496762bf30d4c915fc71",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自ChCl/GA DES/MIBK体系制糠醛与HMF的论文（HMF提取优化），不研究碱金属卤化物阳离子C—O断键机制，催化体系不同。"
+  },
+  {
+   "doc_id": "chk_f056bcf29b2823db34c1d520",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自生物质电化学合成（葡萄糖电氧化制甲酸）的论文，化学品与工艺（电化学氧化）均与被问的糠醛生成阳离子机制不同。"
+  },
+  {
+   "doc_id": "chk_f0ecee047ae13186bbc6c7f3",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述（摘要/关键词），工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_f1bc414e2e891b7b0ed30d3b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自半纤维素水解制糠醛综述参考文献，讨论多种催化剂，未涉及碱金属卤化物阳离子C—O断键机制，催化体系不同。"
+  },
+  {
+   "doc_id": "chk_f48d04f7e57e6283841833e9",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自Ti基MXene催化糠醛加氢的论文（结论/计算），工艺路线（加氢）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_f8468b2d448d2eac6dbda275",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同论文参考文献（页12），属相邻内容，无机制证据。"
+  },
+  {
+   "doc_id": "chk_f8a3e88adfe790774f65a946",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自碱/碱土金属（AAEMs）对生物质热解影响的综述，讨论HCl预处理去除金属，工艺路线（热解）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_f973bb4241a5f45a7f761414",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_fa23648c6a4f08657598d314",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自Ti基MXene催化糠醛加氢的论文（计算细节/References），工艺路线（加氢）与被问机制不同。"
+  },
+  {
+   "doc_id": "chk_fb16270bda4da02f3902d888",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Commercial Furfural: Its Properties and Uses》历史文献，讨论糠醛与卤化物反应等，与被问机制属不同研究领域。"
+  },
+  {
+   "doc_id": "chk_fb4705712daf8b0253bf0e21",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自《Beyond 2,5-furandicarboxylic acid》综述参考文献，化学品（HMF等）与被问机制不同。"
+  }
+ ]
+}

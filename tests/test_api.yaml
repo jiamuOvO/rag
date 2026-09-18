@@ -1,0 +1,17 @@
+chat:
+  provider: openai_compatible
+  # Fill with the chat/generation service /v1 root URL.
+  base_url: 'https://api.deepseek.com'
+  model: 'deepseek-flash'
+  # NOTE: timeout_seconds is dead - nothing reads settings.chat_timeout_seconds. The two keys
+  # below are what providers._request() actually honours.
+  # read_timeout_seconds MUST equal total_timeout_seconds. Each attempt gets
+  # read = min(read_timeout, total - elapsed), so with read<total the budget is SPLIT across the
+  # 2 attempts: at 120/180 the first attempt burned 120s and the retry only had 60s left, meaning
+  # a response needing 140s failed even though the 180s budget was sufficient.
+  # Measured history: 60/75 -> failures at 75.3-76.4s (4 of 8 cases); 120/180 -> failures now at
+  # exactly 180.0s. Equal values give one attempt the whole budget, which is never worse.
+  timeout_seconds: 120
+  read_timeout_seconds: 180
+  total_timeout_seconds: 180
+  api_key_env: TEST_API_KEY

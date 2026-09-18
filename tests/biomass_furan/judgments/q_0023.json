@@ -1,0 +1,273 @@
+{
+ "query_id": "q_0023",
+ "judgments": [
+  {
+   "query_id": "q_0023",
+   "doc_id": "chk_17900f9b2ebd34f211652a6c",
+   "relevance": 0,
+   "reason": "doc2: same paper, bibliography/acknowledgements, unrelated topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0023",
+   "doc_id": "chk_1d652b068d7b102804a6c245",
+   "relevance": 2,
+   "reason": "Refers to PEF synthesis via ROP from cyclic oligomers.",
+   "evidence_quotes": [
+    "These aspects confirm the synthesis of PEF via ROP as an excellent candidate towards the so-called green bottle."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "ec4b0cd1daee1eb8a3b2f37929a7e57760184b4389791441bd81b874c83fc00c"
+  },
+  {
+   "query_id": "q_0023",
+   "doc_id": "chk_225effd7fc471e48de2f6833",
+   "relevance": 2,
+   "reason": "States ROP = ring-opening polymerisation and raw material cyOEF cyclic oligomers.",
+   "evidence_quotes": [
+    "Bottle-grade synthesis of PEF via ROP from cyclic oligomers. a Size exclusion chromatography (SEC) trace, showing that neat ring-opening polymerisation of 99% cyOEF without additional catalyst at 280 °C leads to relatively fast conversion of C3 and larger cycles to PEF"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "ec4b0cd1daee1eb8a3b2f37929a7e57760184b4389791441bd81b874c83fc00c"
+  },
+  {
+   "query_id": "q_0023",
+   "doc_id": "chk_6607e591b51235df3444c92e",
+   "relevance": 1,
+   "reason": "Shows cyOEF as the polymerised raw material for ROP.",
+   "evidence_quotes": [
+    "The attempt to polymerise the typically obtained cyOEF (62% C2, 2%\nC3, 27% C4, 5% C5, 4% C7) below the degradation temperature\nof PEF at 280 °C only leads to very slow ROP"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "9f76bbb141fa9bb29f2a0c0cb653d7b868cd4a8a3e8966e0bf8b407858b145ff"
+  },
+  {
+   "query_id": "q_0023",
+   "doc_id": "chk_6a892952eacd8b3774ce0f2b",
+   "relevance": 2,
+   "reason": "Confirms ROP of cyOEF cyclic oligomer feedstock.",
+   "evidence_quotes": [
+    "ROP using 0.1% (squares), 0.2% (diamonds) and 0.3% (triangles) cyclic stannoxane with 33% tetraglyme at 260 °C, resulting in full ( >96%) cyOEF conversions"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "ec4b0cd1daee1eb8a3b2f37929a7e57760184b4389791441bd81b874c83fc00c"
+  },
+  {
+   "query_id": "q_0023",
+   "doc_id": "chk_9757e01c23afde940d264b95",
+   "relevance": 3,
+   "reason": "States ROP route and that purified cyOEF are the polymerised feedstock.",
+   "evidence_quotes": [
+    "The synthesis path from the biobased monomers2 furandicarboxylic acid dimethylester (MeFDCA) and ethylene glycol (EG) to PEF via ROP is outlined in Fig. 1. The cyclic PEF oligomers (cyOEF) can be prepared efficiently by depolymerisation18,19 of low molecular weight linear PEF oligomers (linOEF)"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0023",
+   "doc_id": "chk_9a11044c6b0a3219c803c306",
+   "relevance": 3,
+   "reason": "Defines ROP as ring-opening polymerisation for PEF.",
+   "evidence_quotes": [
+    "we exploit ring-opening polymerisation (ROP)15 as a faster synthetic route for PEF"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 3,
+    "changed": false,
+    "explanation": "两项齐备：ROP 被明确展开为 ring-opening polymerisation（开环聚合），且交代其直接原料是预先形成的 macrocyclic oligomers（环状低聚物），图 1 语境为 PEF。块来源即题目点名的 2018 环状低聚物制 PEF 论文 → 3，维持原判。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0023",
+   "doc_id": "chk_a2cd446f218bdb4129df1ed3",
+   "relevance": 2,
+   "reason": "States ROP = ring-opening polymerisation and cyOEF raw material.",
+   "evidence_quotes": [
+    "Bottle-grade synthesis of PEF via ROP from cyclic oligomers. a Size exclusion chromatography (SEC) trace, showing that neat ring-opening polymerisation of 99% cyOEF without additional catalyst at 280 °C leads to relatively fast conversion of C3 and larger cycles to PEF"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "ec4b0cd1daee1eb8a3b2f37929a7e57760184b4389791441bd81b874c83fc00c"
+  },
+  {
+   "query_id": "q_0023",
+   "doc_id": "chk_c5ee9a13264c5b09493cb394",
+   "relevance": 2,
+   "reason": "Identifies cyOEF (cyclic oligomers) as the direct reagent converted to polymer via ROP, supporting the asked facts.",
+   "evidence_quotes": [
+    "pure cyOEF added to a reactive PEF melt (conversion >90%) containing 0.1% initiator is converted to polymer within 20 min at 280 °C"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "5d497e4c3fa85e9ff24b1ec130ef54f95ddf010621c8ce2f57f538b0f05e4910"
+  },
+  {
+   "query_id": "q_0023",
+   "doc_id": "chk_c7386b23f1137ddd583d474b",
+   "relevance": 3,
+   "reason": "Defines ROP and identifies purified cyclic oligomers as direct feedstock.",
+   "evidence_quotes": [
+    "we exploit ring-opening polymerisation (ROP)15 as a faster synthetic route for PEF ... Here we show that purified cyclic oligomers can be polymerised successfully within minutes"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 3,
+    "changed": false,
+    "explanation": "两项齐备且更完整：ROP=开环聚合、直接原料为 purified cyclic oligomers（明确写出 cyOEF 与 99% 纯化）→ 3，维持原判。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0023",
+   "doc_id": "chk_d355b4dd88ccd2beef2ffa54",
+   "relevance": 2,
+   "reason": "Auxiliary methods context mentioning ROP-based PEF.",
+   "evidence_quotes": [
+    "Gas permeability analysis of ROP-based PEF and reference PET films was\nperformed at 23 °C and 50% relative humidity"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "9f76bbb141fa9bb29f2a0c0cb653d7b868cd4a8a3e8966e0bf8b407858b145ff"
+  },
+  {
+   "query_id": "q_0023",
+   "doc_id": "chk_daf4ded6d32e7a3bea257069",
+   "relevance": 2,
+   "reason": "Defines cyOEF as the cyclic oligomer raw material for ROP.",
+   "evidence_quotes": [
+    "The attempt to polymerise the typically obtained cyOEF (62% C2, 2% C3, 27% C4, 5% C5, 4% C7) below the degradation temperature of PEF at 280 °C only leads to very slow ROP"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "ec4b0cd1daee1eb8a3b2f37929a7e57760184b4389791441bd81b874c83fc00c"
+  },
+  {
+   "query_id": "q_0023",
+   "doc_id": "chk_dd7dabb4ca1b2cc379d3fd10",
+   "relevance": 3,
+   "reason": "Directly defines ROP as ring-opening polymerisation and names purified cyOEF as the feedstock.",
+   "evidence_quotes": [
+    "Purified cyOEF can then be polymerised via catalytic ring-opening polymerisation (ROP) within less than 30 min"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0023",
+   "doc_id": "chk_fb1be701b649475628ca0823",
+   "relevance": 2,
+   "reason": "Confirms ROP route for PEF synthesis in this paper.",
+   "evidence_quotes": [
+    "These aspects confirm the synthesis of PEF via ROP as an\nexcellent candidate towards the so-called green bottle."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "9f76bbb141fa9bb29f2a0c0cb653d7b868cd4a8a3e8966e0bf8b407858b145ff"
+  },
+  {
+   "query_id": "q_0023",
+   "doc_id": "chk_fb761c55ac1450f6784d6f7b",
+   "relevance": 1,
+   "reason": "Auxiliary context on ROP product; no definition or raw material.",
+   "evidence_quotes": [
+    "ROP delivers bottle-grade (>95% conversion, Mn > 30 kg\nmol−1, uncoloured) PEF within less than 30 min"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "9f76bbb141fa9bb29f2a0c0cb653d7b868cd4a8a3e8966e0bf8b407858b145ff"
+  },
+  {
+   "query_id": "q_0023",
+   "doc_id": "chk_fcafe2465c1c9252a4a15ad2",
+   "relevance": 1,
+   "reason": "Defines ROP as ring-opening polymerisation and names cyclic PEF oligomers as feedstock.",
+   "evidence_quotes": [
+    "Here we show the successful rapid synthesis of bottle-grade PEF\nvia ring-opening polymerisation (ROP) from cyclic PEF oligomers within minutes"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "9f76bbb141fa9bb29f2a0c0cb653d7b868cd4a8a3e8966e0bf8b407858b145ff"
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+[
+ {
+  "n": 36, "query_id": "q_0010", "doc_id": "chk_4c284eac482a133d335c7ca7",
+  "old_grade": 3, "final_grade": 3, "changed": false,
+  "fact_checks": [{"fact": 1, "verdict": "支持"}],
+  "actual_evidence": "The continuous extraction and protection of these furanics in an immiscible organic solvent drastically reduce the amount of side reactions between the furanics and the acid present in the aqueous phase. ｜ Later, the excess of HCl present in the acidic sugar solution after hydrolysis is enough to produce CMF in high yields using halogenated organic solvents (e.g., chlorobenzene) in biphasic reactors.",
+  "explanation": "必需事实（不混溶有机溶剂原位/连续萃取 CMF）被直接陈述：块内先给出双相体系中不混溶有机溶剂连续萃取的原理，随后又逐字描述本文（Avantium）自身工艺——用卤代有机溶剂在双相反应器中由酸性糖液高产率制取 CMF。块来源即题目点名的 2023 CMF 论文 → 覆盖单一必需事实 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 37, "query_id": "q_0010", "doc_id": "chk_f6334e3e233a5be7e5e4b91b",
+  "old_grade": 3, "final_grade": 3, "changed": false,
+  "fact_checks": [{"fact": 1, "verdict": "支持"}],
+  "actual_evidence": "in this study, the acid−sugar solutions from saccharification were heated directly to convert the sugars into furanics without any prior purification... These furanic compounds are obtained using a biphasic system composed of the saccharide acidic solution and a nonmiscible organic solvent, in which the CMF and furfural were continuously extracted... By doing so, the separation of furanics in the organic solvent from the acid becomes a simple phase separation.",
+  "explanation": "同一篇 2023 CMF 论文的重叠块，逐字给出『不混溶有机溶剂 + 连续萃取 CMF + 简单相分离』，必需事实完整覆盖 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 38, "query_id": "q_0011", "doc_id": "chk_80cfb9a0ecf7628f4f48e9d3",
+  "old_grade": 3, "final_grade": 2, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "部分支持"}],
+  "actual_evidence": "Lignocellulosic biomass is the most available carbon source, and a first requirement for its valorization is the complete saccharification of its sugar-bearing components. HCl-based technologies can achieve this at 20 °C and ambient pressure. These principles were disclosed in the 1920s... Avantium Chemicals B.V. developed a modern version of this “Bergius” highly concentrated acid hydrolysis, in which the saccharides in HCl are transformed into furanics without any prior purification",
+  "explanation": "必需事实含三项：fuming HCl、low temperature、one single step。块内覆盖两项——『highly concentrated acid hydrolysis』『HCl-based』≈浓盐酸，『20 °C and ambient pressure』= 低温；但全文没有任何『one single step / 单步水解』的表述（只提到『first requirement is the complete saccharification』）。缺一项 → 最高 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 39, "query_id": "q_0013", "doc_id": "chk_5390b5325ecf463c4e9497d7",
+  "old_grade": 3, "final_grade": 3, "changed": false,
+  "fact_checks": [{"fact": 1, "verdict": "支持"}],
+  "actual_evidence": "In general, the cellulose, hemicellulose and lignin contents in a typical LCB fall within the range of 30–60, 20–40, and 15–25%, respectively. ... Cellulose is a main structural and integral part of LCB... Hemicellulose is a second major component of LCB... Lignin forms a protecting boundary by covalently linking to the cellulose and hemicellulose",
+  "explanation": "必需事实三项（纤维素、半纤维素、木质素）在块内逐字出现并各有一段实质描述（含 30–60/20–40/15–25% 组成范围），块来源为题目点名的 2018 综述本身 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 40, "query_id": "q_0013", "doc_id": "chk_7764b60e09f53eaa5aa68fc6",
+  "old_grade": 3, "final_grade": 3, "changed": false,
+  "fact_checks": [{"fact": 1, "verdict": "支持"}],
+  "actual_evidence": "The majority of LCB is composed of biological polymers such as cellulose, hemicellulose, and lignin, which are strongly associated with each other by covalent and hydrogen bonds thus forming a highly recalcitrant structure.",
+  "explanation": "该块为 2018 综述的标题页与摘要，摘要句逐字列出 cellulose、hemicellulose、lignin 三种生物聚合物，覆盖全部必需事实，来源即指定综述 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 41, "query_id": "q_0014", "doc_id": "chk_45a69b0e755aa8b4a0a506fb",
+  "old_grade": 3, "final_grade": 3, "changed": false,
+  "fact_checks": [{"fact": 1, "verdict": "支持"}],
+  "actual_evidence": "AUTHOR CONTRIBUTIONS JB and BN drafted the portions on physical, chemical and physicochemical pretreatments. RS and SK drafted the portion on biological pretreatments.",
+  "explanation": "必需事实是四类预处理方法。块尾的作者贡献声明把本综述的预处理内容明确划为 physical、chemical、physicochemical、biological 四部分，四类名称齐备；块前半的 CONCLUSION 亦为综述对预处理方法的实质总结（成本、脱木质素、反应机理瓶颈），话题与问题一致。四项齐备 → 3，维持原判（记录：四类名的载体是该综述自述其章节构成，非纯书目/致谢类无实质内容块）。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 42, "query_id": "q_0014", "doc_id": "chk_7764b60e09f53eaa5aa68fc6",
+  "old_grade": 3, "final_grade": 3, "changed": false,
+  "fact_checks": [{"fact": 1, "verdict": "支持"}],
+  "actual_evidence": "This has led to extensive research in the development of various pretreatment techniques utilizing various physical, chemical, physicochemical, and biological approaches which are specifically tailored toward the source biomaterial and its application.",
+  "explanation": "2018 综述摘要句逐字给出 physical、chemical、physicochemical、biological 四类方法，直接覆盖全部必需事实，来源即指定综述 → 3，维持原判（与 n=41 同块、不同题）。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 43, "query_id": "q_0015", "doc_id": "chk_225788b644ea25f4b634ffb6",
+  "old_grade": 3, "final_grade": 2, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "部分支持"}],
+  "actual_evidence": "The hydrolysate of the biphasic fractionation step was used at identical conditions with and without 2-MTHF as a second liquid phase. The in situ extraction of furfural into 2-MTHF at low xylose conversion (9%; at 168°C, 10 min) led to a selectivity of >80%... it enables a straightforward downstream processing, as furfural can be isolated by evaporation of 2-MTHF",
+  "explanation": "必需事实要求点明两种溶剂（water 与 2-MTHF）。该块反复出现 2-MTHF（第二液相、萃取相、可蒸发回收），但全块通篇未出现 water 一词，另一相只以 the hydrolysate / 水相含义隐含表达。两种溶剂只明确命名一种 → 部分覆盖 → 2。旧判 3 过高（旧理由本身也只说确认了 2-MTHF 一相）。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 44, "query_id": "q_0015", "doc_id": "chk_61fec0ffa9e553e9cc7bc451",
+  "old_grade": 3, "final_grade": 3, "changed": false,
+  "fact_checks": [{"fact": 1, "verdict": "支持"}],
+  "actual_evidence": "Figure 1. Biomass fractionation and integrated furfural production using phosphoric acid as catalyst. The process consists of a swelling step of dried lignocellulosic biomass at 80°C, followed by a biphasic fractionation step, using water and 2-MTHF as solvents.",
+  "explanation": "图 1 图注逐字写出『using water and 2-MTHF as solvents』，两种溶剂齐备，来源即题目点名的 2021 磷酸法论文 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 45, "query_id": "q_0015", "doc_id": "chk_979045fd6bdb126a66d66d75",
+  "old_grade": 3, "final_grade": 3, "changed": false,
+  "fact_checks": [{"fact": 1, "verdict": "支持"}],
+  "actual_evidence": "In the fractionation step, the acid is diluted with water to 8 wt%. 2-MTHF (equal volume to the aqueous phase) is added as a second phase, resulting in a biomass loading of 100 gL 1 referring to the aqueous phase. ｜ After removing the organic phase and the solid pulp, new 2MTHF (equal volume to the aqueous phase) is added to the hydrolysate",
+  "explanation": "块内同时明确命名 water（酸被水稀释至 8 wt%）与 2-MTHF（以等体积作第二相加入），两种溶剂齐备，来源即指定论文 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ }
+]

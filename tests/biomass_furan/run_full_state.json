@@ -1,0 +1,282 @@
+{
+ "encoding_mode": "fallback",
+ "started": "14:44:03",
+ "batches_planned": 20,
+ "batches_done": 0,
+ "batches_failed": 10,
+ "requests": 21,
+ "requests_ok": 0,
+ "requests_format_reject": 21,
+ "requests_transport_error": 0,
+ "requests_encoding_switch": 11,
+ "usage_unknown_requests": 0,
+ "usage_unknown_batches": [],
+ "prompt_tokens": 85669,
+ "completion_tokens": 3527,
+ "total_tokens": 89196,
+ "format_fail_batches": 10,
+ "network_fail_batches": 0,
+ "consecutive_format_fail": 10,
+ "consecutive_network_fail": 0,
+ "requests_by_batch": {
+  "q_0060_batch_09": 2,
+  "q_0018_batch_07": 2,
+  "q_0018_batch_08": 2,
+  "q_0021_batch_07": 2,
+  "q_0028_batch_07": 2,
+  "q_0034_batch_07": 2,
+  "q_0035_batch_06": 2,
+  "q_0037_batch_07": 2,
+  "q_0039_batch_08": 2,
+  "q_0041_batch_07": 2,
+  "q_0043_batch_06": 1
+ },
+ "failures": [
+  {
+   "batch": "q_0018_batch_07",
+   "encoding": "compact",
+   "error": "ValueError",
+   "message": "Compact row has missing/invalid document grades",
+   "http_code": null,
+   "response_id": "0ba6682f8d11d799",
+   "elapsed_s": 1.1
+  },
+  {
+   "batch": "q_0060_batch_09",
+   "encoding": "compact",
+   "error": "ValueError",
+   "message": "Compact row has missing/invalid document grades",
+   "http_code": null,
+   "response_id": "67d2d0b5cf87f8dd",
+   "elapsed_s": 1.2
+  },
+  {
+   "batch": "q_0018_batch_07",
+   "encoding": "perblock",
+   "error": "ValueError",
+   "message": "Model omitted or invented query IDs",
+   "http_code": null,
+   "response_id": "4a6db289604e3846",
+   "elapsed_s": 1.0
+  },
+  {
+   "batch": "q_0060_batch_09",
+   "encoding": "perblock",
+   "error": "ValueError",
+   "message": "Model omitted or invented query IDs",
+   "http_code": null,
+   "response_id": "9ac6cdec943733b0",
+   "elapsed_s": 1.4
+  },
+  {
+   "batch": "q_0018_batch_08",
+   "encoding": "compact",
+   "error": "ValueError",
+   "message": "Compact response omitted query rows",
+   "http_code": null,
+   "response_id": "efe6fb1fd49590ea",
+   "elapsed_s": 0.9
+  },
+  {
+   "batch": "q_0021_batch_07",
+   "encoding": "compact",
+   "error": "ValueError",
+   "message": "Compact row has missing/invalid document grades",
+   "http_code": null,
+   "response_id": "d22bb3e310c6c6fe",
+   "elapsed_s": 0.9
+  },
+  {
+   "batch": "q_0018_batch_08",
+   "encoding": "perblock",
+   "error": "ValueError",
+   "message": "Model omitted or invented query IDs",
+   "http_code": null,
+   "response_id": "1164330e363062dd",
+   "elapsed_s": 1.0
+  },
+  {
+   "batch": "q_0021_batch_07",
+   "encoding": "perblock",
+   "error": "ValueError",
+   "message": "Unsupported model evidence quotation",
+   "http_code": null,
+   "response_id": "f526a1712e6f7b7f",
+   "elapsed_s": 1.6
+  },
+  {
+   "batch": "q_0034_batch_07",
+   "encoding": "compact",
+   "error": "ValueError",
+   "message": "Compact proof conflicts with grade matrix",
+   "http_code": null,
+   "response_id": "256aeaab7a41d50b",
+   "elapsed_s": 1.5
+  },
+  {
+   "batch": "q_0028_batch_07",
+   "encoding": "compact",
+   "error": "ValueError",
+   "message": "Compact proof conflicts with grade matrix",
+   "http_code": null,
+   "response_id": "ff3a75e56407199c",
+   "elapsed_s": 1.7
+  },
+  {
+   "batch": "q_0034_batch_07",
+   "encoding": "perblock",
+   "error": "ValueError",
+   "message": "Model omitted or invented query IDs",
+   "http_code": null,
+   "response_id": "6108c819b082a819",
+   "elapsed_s": 1.2
+  },
+  {
+   "batch": "q_0028_batch_07",
+   "encoding": "perblock",
+   "error": "ValueError",
+   "message": "Unsupported model evidence quotation",
+   "http_code": null,
+   "response_id": "2ecf50446f6658ad",
+   "elapsed_s": 1.6
+  },
+  {
+   "batch": "q_0035_batch_06",
+   "encoding": "compact",
+   "error": "ValueError",
+   "message": "Compact row has missing/invalid document grades",
+   "http_code": null,
+   "response_id": "53a44d0cc63ff015",
+   "elapsed_s": 1.2
+  },
+  {
+   "batch": "q_0037_batch_07",
+   "encoding": "compact",
+   "error": "ValueError",
+   "message": "Compact row has missing/invalid document grades",
+   "http_code": null,
+   "response_id": "bc09263a0506d56f",
+   "elapsed_s": 1.9
+  },
+  {
+   "batch": "q_0035_batch_06",
+   "encoding": "perblock",
+   "error": "ValueError",
+   "message": "Unsupported model evidence quotation",
+   "http_code": null,
+   "response_id": "72d4159406a57f6c",
+   "elapsed_s": 1.7
+  },
+  {
+   "batch": "q_0039_batch_08",
+   "encoding": "compact",
+   "error": "ValueError",
+   "message": "Compact response omitted query rows",
+   "http_code": null,
+   "response_id": "6a40f01a66de388b",
+   "elapsed_s": 1.0
+  },
+  {
+   "batch": "q_0037_batch_07",
+   "encoding": "perblock",
+   "error": "ValueError",
+   "message": "Missing or invalid pair grades",
+   "http_code": null,
+   "response_id": "f14ea14d533e33b5",
+   "elapsed_s": 2.1
+  },
+  {
+   "batch": "q_0039_batch_08",
+   "encoding": "perblock",
+   "error": "ValueError",
+   "message": "Model omitted or invented query IDs",
+   "http_code": null,
+   "response_id": "a7890ccb403dcf5a",
+   "elapsed_s": 1.1
+  },
+  {
+   "batch": "q_0041_batch_07",
+   "encoding": "compact",
+   "error": "ValueError",
+   "message": "Compact proof quotation not found in original text",
+   "http_code": null,
+   "response_id": "017f44a88e84569f",
+   "elapsed_s": 1.7
+  },
+  {
+   "batch": "q_0041_batch_07",
+   "encoding": "perblock",
+   "error": "ValueError",
+   "message": "Model omitted or invented query IDs",
+   "http_code": null,
+   "response_id": "2b8058ad3184db98",
+   "elapsed_s": 0.7
+  },
+  {
+   "batch": "q_0043_batch_06",
+   "encoding": "compact",
+   "error": "ValueError",
+   "message": "Compact response omitted query rows",
+   "http_code": null,
+   "response_id": "64e209294c5a49eb",
+   "elapsed_s": 2.9
+  }
+ ],
+ "pending": [
+  {
+   "batch": "q_0018_batch_07",
+   "kind": "format",
+   "reason": "ValueError: Model omitted or invented query IDs"
+  },
+  {
+   "batch": "q_0060_batch_09",
+   "kind": "format",
+   "reason": "ValueError: Model omitted or invented query IDs"
+  },
+  {
+   "batch": "q_0018_batch_08",
+   "kind": "format",
+   "reason": "ValueError: Model omitted or invented query IDs"
+  },
+  {
+   "batch": "q_0021_batch_07",
+   "kind": "format",
+   "reason": "ValueError: Unsupported model evidence quotation"
+  },
+  {
+   "batch": "q_0034_batch_07",
+   "kind": "format",
+   "reason": "ValueError: Model omitted or invented query IDs"
+  },
+  {
+   "batch": "q_0028_batch_07",
+   "kind": "format",
+   "reason": "ValueError: Unsupported model evidence quotation"
+  },
+  {
+   "batch": "q_0035_batch_06",
+   "kind": "format",
+   "reason": "ValueError: Unsupported model evidence quotation"
+  },
+  {
+   "batch": "q_0037_batch_07",
+   "kind": "format",
+   "reason": "ValueError: Missing or invalid pair grades"
+  },
+  {
+   "batch": "q_0039_batch_08",
+   "kind": "format",
+   "reason": "ValueError: Model omitted or invented query IDs"
+  },
+  {
+   "batch": "q_0041_batch_07",
+   "kind": "format",
+   "reason": "ValueError: Model omitted or invented query IDs"
+  }
+ ],
+ "stop_reason": "连续 10 批 fallback 后仍不合格 @ q_0041_batch_07（本轮格式失败 10 批）",
+ "elapsed_min": 0.3,
+ "remaining_batches": 49,
+ "remaining_records": 225,
+ "total_validated_batches": 254
+}

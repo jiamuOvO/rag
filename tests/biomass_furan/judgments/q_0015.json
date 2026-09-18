@@ -1,0 +1,950 @@
+{
+ "query_id": "q_0015",
+ "judgments": [
+  {
+   "doc_id": "chk_00091f0bcc99d2d4825fb959",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "桉木综合炼制参考文献页，相关文献。"
+  },
+  {
+   "doc_id": "chk_0038cd906b1bd01d55be7ec6",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "糠醛及其衍生物应用综述，同属糠醛化学（相关）。"
+  },
+  {
+   "doc_id": "chk_01750ad0d20e4542372b9450",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES/MIBK 制糠醛与 HMF 引言段，同属糠醛生产领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_024155b8a35a50661819e59a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "碱金属催化生物质热解综述参考文献页，不同研究领域（热解）。"
+  },
+  {
+   "doc_id": "chk_02678fb3447ecc340999aceb",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "双相体系糠醛分配/生产综述段，同属糠醛双相领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_0388d7e947e5ddcd6df7a0ca",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "FDCA 绿色指标综述，化学品 HMF/FDCA 不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_04672fb6b5744e83c140feca",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "乙酰丙酸生产综述（HMF/果糖），化学品不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_04fbc5df97bb56596f144e33",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "木质纤维素糠醛综述，同属糠醛领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_0687e81a2a795b7f5d64c26b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "HMF→FDCA 电合成机理图，化学品 HMF 不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_06c98d82705285fd7f0a7b3e",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "木质素在生物质转化中作用综述（参考文献），相关领域。"
+  },
+  {
+   "doc_id": "chk_0760bea4664774ad2bd462ba",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES 糠醛生产回收/定量段，相关文献。"
+  },
+  {
+   "query_id": "q_0015",
+   "doc_id": "chk_076b9346fadb8e7dee5524c6",
+   "relevance": 0,
+   "reason": "doc0,3: same paper, ionic-liquid furfural study, not 2021 phosphoric-acid fractionation; doc1,4: eucalyptus FeCl3 biorefinery, different system; doc2: DES furfural review, different system",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "048450a43dda656bd9b4a81f13fa226a53c0ed59193879056557dd43077183b6"
+  },
+  {
+   "query_id": "q_0015",
+   "doc_id": "chk_077f5f075e635728c9c0c581",
+   "relevance": 0,
+   "reason": "doc0,3: same paper, ionic-liquid furfural study, not 2021 phosphoric-acid fractionation; doc1,4: eucalyptus FeCl3 biorefinery, different system; doc2: DES furfural review, different system",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "048450a43dda656bd9b4a81f13fa226a53c0ed59193879056557dd43077183b6"
+  },
+  {
+   "doc_id": "chk_07fa0b697ab9f8995031d9e1",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "HMF/FDCA 电合成，化学品 HMF 不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_09b5d8c989710b94a1f325be",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "CMF 工艺中卤代溶剂环境影响的段落，化学品 CMF 不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_0ba8edcebae896a3df98e219",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "MIBK/甲苯双相糠醛研究实验段，同属糠醛双相领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_0d845b313cae5a2ed8d54d05",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "微波木糖制糠醛（含 H2O-2MTHF 文献汇总表），相关综述表。"
+  },
+  {
+   "doc_id": "chk_0f4f91682f41c6bccd619843",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文引言（与[43]重复），OrganoCat 用 2-MTHF 的背景。"
+  },
+  {
+   "doc_id": "chk_0f628001cd799973ed030f65",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "CMF（5-氯甲基糠醛）下游整合论文，化学品 CMF 不同于本题的糠醛，且为不同研究。"
+  },
+  {
+   "doc_id": "chk_11a7746b9c40e87634cbddee",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "碱金属催化生物质热解综述段落，不同研究领域（热解）。"
+  },
+  {
+   "doc_id": "chk_134568c3838cf792ebefca6a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "碱金属催化生物质热解综述参考文献页，不同研究领域（热解）。"
+  },
+  {
+   "query_id": "q_0015",
+   "doc_id": "chk_142153a4ec5fc96934c82bce",
+   "relevance": 0,
+   "reason": "doc0,3: same paper, ionic-liquid furfural study, not 2021 phosphoric-acid fractionation; doc1,4: eucalyptus FeCl3 biorefinery, different system; doc2: DES furfural review, different system",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "048450a43dda656bd9b4a81f13fa226a53c0ed59193879056557dd43077183b6"
+  },
+  {
+   "query_id": "q_0015",
+   "doc_id": "chk_146ef0a2692f27a972ce10dc",
+   "relevance": 0,
+   "reason": "doc0,3: same paper, ionic-liquid furfural study, not 2021 phosphoric-acid fractionation; doc1,4: eucalyptus FeCl3 biorefinery, different system; doc2: DES furfural review, different system",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "048450a43dda656bd9b4a81f13fa226a53c0ed59193879056557dd43077183b6"
+  },
+  {
+   "doc_id": "chk_1bf4f7ff134bd927ad8e9dd7",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "生物质燃烧排放综述，不同研究领域。"
+  },
+  {
+   "doc_id": "chk_1c6ab83696da977fc3cb5dc2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述（水-环己烷等），同属糠醛双相领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_1ceb2340f07c9241635347c0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "乙酰丙酸（levulinic acid）转化综述，化学品不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_20938fd5c4b54e591d13f93c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "木质生物质制有机液体（HMF 还原），化学品 HMF 不同于本题的糠醛。"
+  },
+  {
+   "query_id": "q_0015",
+   "doc_id": "chk_225788b644ea25f4b634ffb6",
+   "relevance": 2,
+   "reason": "Confirms 2-MTHF as the organic phase of the biphasic system.",
+   "evidence_quotes": [
+    "The hydrolysate of the biphasic fractionation step was used at identical conditions with and without 2-MTHF as a second liquid phase."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "081979acb50b1750b97c2fd61b984070f2bfeaad32bcb8b2205f1c3560e7d845",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 2,
+    "changed": true,
+    "explanation": "必需事实要求点明两种溶剂（water 与 2-MTHF）。该块反复出现 2-MTHF（第二液相、萃取相、可蒸发回收），但全块通篇未出现 water 一词，另一相只以 the hydrolysate / 水相含义隐含表达。两种溶剂只明确命名一种 → 部分覆盖 → 2。旧判 3 过高（旧理由本身也只说确认了 2-MTHF 一相）。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "doc_id": "chk_2340be417303afa6db1f7cca",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述（水-THF/MTHF），同属糠醛双相领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_246d83685263cdb13bc940e2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "生物质燃烧排放综述，不同研究领域。"
+  },
+  {
+   "doc_id": "chk_2554c51157cea048e651e294",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES 糠醛生产盐筛选段，相关文献。"
+  },
+  {
+   "query_id": "q_0015",
+   "doc_id": "chk_255b308059f556b50a654870",
+   "relevance": 0,
+   "reason": "doc0: 2017 MIBK/toluene/cyclohexanol study, not 2021 phosphoric acid; doc1: 2021 DES paper, no phosphoric acid fractionation; doc2: 2016 review, no 2021 phosphoric acid study; doc3: 2021 DES paper, no phosphoric acid fractionation; doc4: 2020 microwave xylose paper, no phosphoric acid fractionation",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "53b279baf6448bda9625e4ab521a71d2780f46b6551ecfe3893cab49a8c4f31a"
+  },
+  {
+   "doc_id": "chk_25f6103bf1c7f4c915db3b0a",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES 糠醛生产参考文献页，相关文献。"
+  },
+  {
+   "doc_id": "chk_27e71a7f418b0bd0a2dfe071",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "DAWN 技术制 CMF/糠醛，化学品 CMF 不同于本题的糠醛且为不同研究。"
+  },
+  {
+   "doc_id": "chk_29086f2b93cb4cbfe6092a53",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "SnCl4/EMIMBr 糠醛研究引言段，相关糠醛双相文献。"
+  },
+  {
+   "doc_id": "chk_2a60a6f688ac395f29fdb7b6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "HMF→FDCA 电合成，化学品 HMF 不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_2abde22e47001ab10ab60fde",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "生物质燃烧垃圾排放因子，不同研究领域。"
+  },
+  {
+   "doc_id": "chk_2c36ef56b789135dc181cf4e",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "木质纤维素预处理综述（超声），相关领域（预处理）但非本题介质。"
+  },
+  {
+   "doc_id": "chk_2c833564bdaa8595cdf795db",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述（水-CPME），同属糠醛双相领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_336ca5fa1446dafb2afa5e0c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "FDCA/HMF 绿色指标综述，化学品不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_341da86180eac1e25051963a",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述（水-CPME），同属糠醛双相领域的相关文献。"
+  },
+  {
+   "query_id": "q_0015",
+   "doc_id": "chk_3595be0212dfb2ca6ba7079d",
+   "relevance": 0,
+   "reason": "doc0: 2017 MIBK/toluene/cyclohexanol study, not 2021 phosphoric acid; doc1: 2021 DES paper, no phosphoric acid fractionation; doc2: 2016 review, no 2021 phosphoric acid study; doc3: 2021 DES paper, no phosphoric acid fractionation; doc4: 2020 microwave xylose paper, no phosphoric acid fractionation",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "53b279baf6448bda9625e4ab521a71d2780f46b6551ecfe3893cab49a8c4f31a"
+  },
+  {
+   "doc_id": "chk_36168cf9a6852f62222d69a1",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述（水-MTHF 双相），同属糠醛双相领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_3966d11a350c894b6c9bab9b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "SnCl4/EMIMBr 糠醛研究对比段，相关糠醛双相文献。"
+  },
+  {
+   "doc_id": "chk_396fbbf891060bcb9b5939fc",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述（水-MTHF 等），同属糠醛双相领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_39dcffc75ea1f3d8764271df",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "HMF 生产（2-丁醇双相），化学品 HMF 不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_3f69bf6b3a14097bc389e768",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES/MIBK 制糠醛与 HMF 研究，同属糠醛生产领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_46a1439a03747011258b0dee",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "HMF 光催化转化方法段，化学品 HMF 不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_4a6a3fa05189f43437e769de",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述（水-MIBK），同属糠醛双相领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_4a7ce506aac47c90de848979",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "MIBK/甲苯双相糠醛研究（分配系数）段，同属糠醛双相领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_4c284eac482a133d335c7ca7",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "CMF 双相体系历史（氯苯等），化学品 CMF 不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_4f1003898eb083ea75f9672f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES/MIBK 制糠醛与 HMF 引言段，同属糠醛生产领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_50b0b12804ccb37138207b48",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "MIBK/甲苯双相糠醛单/双相对比研究，同属糠醛双相领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_5b0e1ae1881be3cbd9dfff99",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "CMF/糠醛合成（氯苯等有机相），化学品 CMF 不同于本题的糠醛。"
+  },
+  {
+   "query_id": "q_0015",
+   "doc_id": "chk_60f1bca3fd3dea720c4cb95b",
+   "relevance": 0,
+   "reason": "doc0: 2017 MIBK/toluene/cyclohexanol study, not 2021 phosphoric acid; doc1: 2021 DES paper, no phosphoric acid fractionation; doc2: 2016 review, no 2021 phosphoric acid study; doc3: 2021 DES paper, no phosphoric acid fractionation; doc4: 2020 microwave xylose paper, no phosphoric acid fractionation",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "53b279baf6448bda9625e4ab521a71d2780f46b6551ecfe3893cab49a8c4f31a"
+  },
+  {
+   "doc_id": "chk_61fec0ffa9e553e9cc7bc451",
+   "relevance": 3,
+   "evidence_quotes": [
+    "The process consists of a swelling step ... followed by a biphasic fractionation step, using water and 2-MTHF as solvents."
+   ],
+   "reason": "目标论文图1 图注直接写明 'using water and 2-MTHF as solvents'，单独给出两溶剂。",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 3,
+    "changed": false,
+    "explanation": "图 1 图注逐字写出『using water and 2-MTHF as solvents』，两种溶剂齐备，来源即题目点名的 2021 磷酸法论文 → 3，维持原判。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "doc_id": "chk_63306fd464af74af70ffb8d7",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "HMF 光催化转化，化学品 HMF 不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_66a6546be5c3b453a89369bc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "HMF（5-羟甲基糠醛）生产综述，化学品 HMF 不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_69ca6987050a50c9e361201e",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "MIBK/甲苯双相糠醛研究引言段，同属糠醛双相领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_69cf17a7e04566cf89d39367",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文回收实验段（提及 2-MTHF 与磷酸回收），相邻结果但未定义介质对。"
+  },
+  {
+   "doc_id": "chk_6a2d18db04768706a8bc334f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "碱金属催化生物质热解综述参考文献页，不同研究领域（热解）。"
+  },
+  {
+   "doc_id": "chk_6edd0e35a2d6103623e0003c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "CMF 溶剂筛选表（氯苯等），化学品 CMF 不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_754b18ffbaea380476fcdfc1",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述（MTHF 等），同属糠醛双相领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_7789e568d430bf89b278e794",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "CMF 工艺中卤代溶剂环境影响的段落，化学品 CMF 不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_7aed238b4b149d7a55e4a580",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "Ti-MXene 催化糠醛加氢研究，同属糠醛化学但为加氢、非分馏介质。"
+  },
+  {
+   "doc_id": "chk_7af141132e8e0940b1a99d94",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "碱金属催化生物质热解综述参考文献页，不同研究领域（热解）。"
+  },
+  {
+   "query_id": "q_0015",
+   "doc_id": "chk_7b9b97db2d63961889b30137",
+   "relevance": 0,
+   "reason": "doc0,2: other paper, DES furfural review; doc3: same paper, lignin/cellulose topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "70f8aa12176704d2e36c9015bd25606a4017cf0ea4666f9f968b5890ae70d90d"
+  },
+  {
+   "doc_id": "chk_7e3320c3ad73bbf359dec07d",
+   "relevance": 3,
+   "evidence_quotes": [
+    "This paper explored the disentanglement of lignocellulose ... in a biphasic solvent system (water/2-methyltetrahydrofuran) using phosphoric acid as recyclable catalyst."
+   ],
+   "reason": "目标论文摘要，直接写明双相溶剂体系为 water/2-methyltetrahydrofuran，单独即可回答问题。"
+  },
+  {
+   "doc_id": "chk_80c6f5afc46e29f7ef6620c4",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "MIBK/甲苯双相糠醛研究结果段，同属糠醛双相领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_8781e312c8a17f3f184b7414",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES/MIBK 制糠醛与 HMF 稳定性段，同属糠醛生产领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_8b5e454a5689a8ab08b1bb5b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "微波木糖制糠醛结论/参考文献，同属糠醛双相领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_8f0c4f0f0224956bccc3685a",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "MIBK/甲苯双相糠醛研究分析段，同属糠醛双相领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_8fe714768a7a2b70dfcce70c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "乙酰丙酸生产综述（DMSO/果糖），化学品不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_921e6350279965caa3dae239",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述（FeCl3/MTHF），同属糠醛双相领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_930653d6f25b6c1e937f7ffb",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "木质纤维素糠醛综述（2-MTHF 评价），同属糠醛领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_94fcb8092e6597fbca645f8c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "木质纤维素氧化预处理综述（提及磷酸），相关领域（预处理）但非本题介质。"
+  },
+  {
+   "doc_id": "chk_966dc23351a6ccef7ed88576",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "生物质燃烧排放综述，不同研究领域。"
+  },
+  {
+   "doc_id": "chk_979045fd6bdb126a66d66d75",
+   "relevance": 3,
+   "evidence_quotes": [
+    "2-MTHF (equal volume to the aqueous phase) is added as a second phase, resulting in a biomass loading of 100 gL 1 referring to the aqueous phase."
+   ],
+   "reason": "目标论文明确分馏步骤将 2-MTHF 作为第二相加入水相（水+磷酸），单独给出双相介质为水相与 2-MTHF。",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 3,
+    "changed": false,
+    "explanation": "块内同时明确命名 water（酸被水稀释至 8 wt%）与 2-MTHF（以等体积作第二相加入），两种溶剂齐备，来源即指定论文 → 3，维持原判。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "doc_id": "chk_98e2c89d694d5fe1ad176766",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "Pd 催化糠醛加氢研究，同属糠醛化学但为加氢下游、非分馏介质。"
+  },
+  {
+   "doc_id": "chk_9a727e2aeeb678129f39e293",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文引言，描述 OrganoCat 用 2-MTHF 的相关工艺，为背景而非本题自身介质。"
+  },
+  {
+   "doc_id": "chk_9b27a5144a763ff68f58aa16",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "桉木综合炼制（碳水化合物转化），相关糠醛/平台化学品研究。"
+  },
+  {
+   "doc_id": "chk_9e8865841d4619f192e1d8c2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述（水-MIBK），同属糠醛双相领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_9ece375829e570a7bdced2bc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "HMF 生产（离子液体/葡萄糖），化学品 HMF 不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_9f994e2e49ec3c47a5ae2cda",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES/MIBK 制糠醛与 HMF 标题/引言段，同属糠醛生产领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_9fdaa3712627d2d2ecba0d46",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "木质素在生物质转化中作用综述，相关领域（木质素分馏/预处理）。"
+  },
+  {
+   "doc_id": "chk_a1bda41258bb155ff6329a9d",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES 糠醛生产参考文献页，相关文献。"
+  },
+  {
+   "query_id": "q_0015",
+   "doc_id": "chk_a23045bae263236a6a9c6d3c",
+   "relevance": 0,
+   "reason": "doc0: 2017 MIBK/toluene/cyclohexanol study, not 2021 phosphoric acid; doc1: 2021 DES paper, no phosphoric acid fractionation; doc2: 2016 review, no 2021 phosphoric acid study; doc3: 2021 DES paper, no phosphoric acid fractionation; doc4: 2020 microwave xylose paper, no phosphoric acid fractionation",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "53b279baf6448bda9625e4ab521a71d2780f46b6551ecfe3893cab49a8c4f31a"
+  },
+  {
+   "doc_id": "chk_a9d0b19959ec2fb0857a3f15",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述，同属糠醛领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_ab28988e3bfb5f1185e7b965",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述参考文献页，相关文献。"
+  },
+  {
+   "doc_id": "chk_ac03ad74e6eac4ea2f2b1c77",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "FDCA 综述参考文献页，化学品 HMF/FDCA 不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_ac48729eb4db7465a651b0be",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "生物质燃烧开放/家庭排放因子，不同研究领域。"
+  },
+  {
+   "doc_id": "chk_b4a63245687199605240fc88",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "桉木综合炼制结论段，相关糠醛/平台化学品研究。"
+  },
+  {
+   "doc_id": "chk_b92be052bb6a6208cdb65cba",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "生物质燃烧排放因子方法，不同研究领域。"
+  },
+  {
+   "doc_id": "chk_b9d131e25fa4a4637aa3bfd5",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "桉木综合炼制（MeTHF/NaCl 双相），同属糠醛生产领域但为不同研究。"
+  },
+  {
+   "doc_id": "chk_ba01af9ffa82c6750e852f27",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "CMF 工艺卤代溶剂段落，化学品 CMF 不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_ba14326627b22b8d02fee873",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "生物质燃烧非甲烷有机物排放，不同研究领域。"
+  },
+  {
+   "query_id": "q_0015",
+   "doc_id": "chk_bb2350573b224a69783b7f13",
+   "relevance": 0,
+   "reason": "doc0,3: same paper, ionic-liquid furfural study, not 2021 phosphoric-acid fractionation; doc1,4: eucalyptus FeCl3 biorefinery, different system; doc2: DES furfural review, different system",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "048450a43dda656bd9b4a81f13fa226a53c0ed59193879056557dd43077183b6"
+  },
+  {
+   "query_id": "q_0015",
+   "doc_id": "chk_befc00a855971474f9b4f14d",
+   "relevance": 0,
+   "reason": "doc0: 2017 MIBK/toluene/cyclohexanol study, not 2021 phosphoric acid; doc1: 2021 DES paper, no phosphoric acid fractionation; doc2: 2016 review, no 2021 phosphoric acid study; doc3: 2021 DES paper, no phosphoric acid fractionation; doc4: 2020 microwave xylose paper, no phosphoric acid fractionation",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "53b279baf6448bda9625e4ab521a71d2780f46b6551ecfe3893cab49a8c4f31a"
+  },
+  {
+   "doc_id": "chk_c0dda1913e93376e3350d849",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "乙酰丙酸转化综述（含氟溶剂），化学品不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_c115fc48e033db7f2ca20d86",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES/MIBK 制糠醛与 HMF 结果段，同属糠醛生产领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_c126b5e76878bcd31b557746",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "CMF 形成机理（DCM/氯苯），化学品 CMF 不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_c126e3adec1a00c530364dde",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "HMF→FDCA 电合成机理，化学品 HMF 不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_c3236d1018b9abd887eaab2b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述（FeCl3/MTHF 等），同属糠醛双相领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_c33f8d0ef45473c729100244",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文关键词/参考文献页，无介质声明。"
+  },
+  {
+   "doc_id": "chk_c637afc692e7621538a73442",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "SnCl4/EMIMBr 糠醛研究结果段，相关糠醛双相文献。"
+  },
+  {
+   "doc_id": "chk_c85488d90bdf2185f1eaf61b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文方法/分析段（NMR、磷酸分布使用 2-MTHF），为背景方法，未定义介质对。"
+  },
+  {
+   "doc_id": "chk_cac3807d9a18c151af2918db",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "SnCl4/EMIMBr 糠醛研究溶剂效应段，相关糠醛双相文献。"
+  },
+  {
+   "query_id": "q_0015",
+   "doc_id": "chk_d0d10ccda6e8d641d52553e2",
+   "relevance": 0,
+   "reason": "doc0,2: other paper, DES furfural review; doc3: same paper, lignin/cellulose topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "70f8aa12176704d2e36c9015bd25606a4017cf0ea4666f9f968b5890ae70d90d"
+  },
+  {
+   "doc_id": "chk_d10851fbdfeb17dd8639fcec",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文引言，介绍磷酸分馏双相概念但未给出本题具体的 water/2-MTHF 介质对。"
+  },
+  {
+   "doc_id": "chk_d2293948284985c5b9722c4e",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "MIBK/甲苯双相糠醛研究引言段，同属糠醛双相领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_d58ea5fd2f54fbeefefdc731",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "Ti-MXene 催化糠醛加氢机理段，同属糠醛化学但为加氢、非分馏介质。"
+  },
+  {
+   "doc_id": "chk_d5dbbf45399a4a363187077c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "碱金属催化生物质热解综述参考文献页，不同研究领域（热解）。"
+  },
+  {
+   "doc_id": "chk_d632521a909b0c5b3bd6b06b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "藻类生物质制 HMF/乙酰丙酸，化学品 HMF 不同于本题的糠醛。"
+  },
+  {
+   "query_id": "q_0015",
+   "doc_id": "chk_d669deac9629382e689cfc6a",
+   "relevance": 2,
+   "reason": "Confirms 2-MTHF as the second liquid phase of the biphasic medium.",
+   "evidence_quotes": [
+    "with and without 2-MTHF as a second liquid phase"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "081979acb50b1750b97c2fd61b984070f2bfeaad32bcb8b2205f1c3560e7d845",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 2,
+    "changed": true,
+    "explanation": "与 n=43 同题同类：块内多次出现 2-MTHF（第二液相），但全块未出现 water 一词，另一相仅以 the hydrolysate 隐含表达。必需事实要求点名两种溶剂，实际只明确一种 → 2。旧判 3 过高。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "doc_id": "chk_de6d867f6158072b73bf5cb8",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES 糠醛生产金属卤化物筛选段，相关文献。"
+  },
+  {
+   "doc_id": "chk_df26cc066ab9023cbbdc409a",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "Pd 催化糠醛水相加氢研究，同属糠醛化学但为加氢、非分馏介质。"
+  },
+  {
+   "doc_id": "chk_df3aec9b2824dc7e019e2465",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "桉木综合炼制（溶剂筛选 FeCl3/NaCl），相关糠醛/平台化学品研究。"
+  },
+  {
+   "doc_id": "chk_df8e5c677fc02931a29f1e1b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "CMF/HMF 萃取段落，化学品 CMF/HMF 不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_e01045b3e11d46190f9dbdc8",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "碱金属催化生物质热解综述参考文献页，不同研究领域（热解）。"
+  },
+  {
+   "doc_id": "chk_e1016eacd88751fb5899db1f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES 糠醛生产补充材料/参考文献，相关文献。"
+  },
+  {
+   "doc_id": "chk_e54aa9d5ccb265f1de0e57d7",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "目标论文结果段（2-MTHF 蒸发回收糠醛），相邻结果未定义介质对。"
+  },
+  {
+   "query_id": "q_0015",
+   "doc_id": "chk_e5740ed8cf74c4dce8666f02",
+   "relevance": 0,
+   "reason": "doc0,2: other paper, DES furfural review; doc3: same paper, lignin/cellulose topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "70f8aa12176704d2e36c9015bd25606a4017cf0ea4666f9f968b5890ae70d90d"
+  },
+  {
+   "doc_id": "chk_ead450b5c630139953e7bf24",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "生物质燃烧气溶胶/痕量气体排放综述，不同研究领域。"
+  },
+  {
+   "doc_id": "chk_ed3664eab04395be151ede7f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "半纤维素水解制糠醛综述（水-MIBK 等），同属糠醛双相领域的相关文献。"
+  },
+  {
+   "doc_id": "chk_f235911783c5c61568f28524",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "FDCA/呋喃单体综述（HMF 衍生），化学品不同于本题的糠醛。"
+  },
+  {
+   "doc_id": "chk_f377b5d318285089266d7e42",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "SnCl4/EMIMBr 糠醛研究参考文献页，相关糠醛双相文献。"
+  },
+  {
+   "doc_id": "chk_f50feed488e888c5a2e130e6",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "SnCl4/EMIMBr 糠醛研究引言段，相关糠醛双相文献。"
+  },
+  {
+   "doc_id": "chk_f6334e3e233a5be7e5e4b91b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "DAWN 技术制 CMF/糠醛，化学品 CMF 不同于本题的糠醛且为不同研究。"
+  },
+  {
+   "doc_id": "chk_f6f87edd657bc2051bbfab67",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "碱金属催化生物质热解综述，不同研究领域（热解）。"
+  },
+  {
+   "doc_id": "chk_f8468b2d448d2eac6dbda275",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "DES 糠醛生产参考文献页，相关文献。"
+  },
+  {
+   "doc_id": "chk_fbf77659e3366d9799b0da01",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "木质纤维素预处理综述，相关领域（分馏/预处理）但非本题介质。"
+  }
+ ]
+}

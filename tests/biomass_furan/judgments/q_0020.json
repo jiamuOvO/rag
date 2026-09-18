@@ -1,0 +1,39 @@
+{
+ "query_id": "q_0020",
+ "judgments": [
+  {
+   "query_id": "q_0020",
+   "doc_id": "chk_5390b5325ecf463c4e9497d7",
+   "relevance": 3,
+   "reason": "Same paper's structure section directly states the monomer (D-glucose) and linkage (β-(1,4)-glycosidic) defining cellulose.",
+   "evidence_quotes": [
+    "Cellulose is a main structural and integral part of LCB which is a linear polysaccharide and consists of Dglucose subunits linked by β-(1,4)-glycosidic bonds (Kumar et al., 2017)."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "b55976b85d069d555e006a5778ce29f268b5cd14ce398c900893c3a82900cec6"
+  },
+  {
+   "query_id": "q_0020",
+   "doc_id": "chk_5df905ea50c0c8b3f5c8b61d",
+   "relevance": 3,
+   "reason": "Directly defines cellulose as linear polysaccharide of D-glucose subunits linked by β-(1,4)-glycosidic bonds, matching the requested monomer and linkage facts.",
+   "evidence_quotes": [
+    "Cellulose is a main structural and integral part of LCB which is a linear polysaccharide and consists of Dglucose subunits linked by β-(1,4)-glycosidic bonds (Kumar et al., 2017)."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "b55976b85d069d555e006a5778ce29f268b5cd14ce398c900893c3a82900cec6"
+  }
+ ]
+}

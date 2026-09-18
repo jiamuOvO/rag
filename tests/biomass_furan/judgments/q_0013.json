@@ -1,0 +1,1507 @@
+{
+ "query_id": "q_0013",
+ "judgments": [
+  {
+   "doc_id": "chk_0050c21c24b49ad7ed1141fc",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一AAEM热解综述参考文献条目，无组分信息。"
+  },
+  {
+   "doc_id": "chk_01354b5cb74df5fe443bd3cc",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一生物炭论文讨论植物生物质衍生黑碳分子结构，未在本块枚举三大组分名称（仅图注提及）。"
+  },
+  {
+   "doc_id": "chk_04b69ec9a4ed4d1d938312db",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇2018综述引言段，讨论LCB水解产生还原糖，未列出三大聚合物组分。"
+  },
+  {
+   "doc_id": "chk_09c78331d97d74a2be099583",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "同一木质素综述参考文献段，无组分信息。",
+   "review_status": "Agent_review_completed",
+   "review_note": "规范第四节：仅书目条目不构成实质内容 → 0；旧判 1 级错误",
+   "review_verdict": "不支持"
+  },
+  {
+   "doc_id": "chk_09df24f22e9d8d59fb48561f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一2018综述参考文献段，无组分信息。"
+  },
+  {
+   "doc_id": "chk_0a912b28229092da2e595f18",
+   "relevance": 1,
+   "evidence_quotes": [
+    "The pretreatment-based fractionation of lignocellulose to celluloserich fraction, pentose-rich fraction, and lignin fraction is more attrac tive"
+   ],
+   "reason": "块将木质纤维素分馏为 'celluloserich fraction, pentose-rich fraction, and lignin fraction' 三部分，含必需的直接证据（戊糖源自半纤维素，见块后文 'C5-sugars (pentoses) derived from hemicelluloses'），需结合他块完整作答，故为2级。",
+   "review_status": "AI_semantic_review_incomplete",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "题目点名 2018 年《Recent Trends in the Pretreatment...》综述，属硬性来源限定；本块来源为 paper_972ce08e4e1d4c13a274afd6（同一来源=否）。块内以『cellulose 富集相 / 戊糖富集相 / 木质素相』及其后文『C5-sugars derived from hemicelluloses』间接对应三种组分，属另一篇论文独立陈述相同概念。按规范 §八 规则 1，此情形最高判 1，不得判 2（否则完全没找到指定文献也会命中 HitRate/MRR）。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_0aa7a0226141bba93d0e88c4",
+   "relevance": 1,
+   "reason": "L1b: same paper as the target review but covers supercritical CO2 pretreatment, not the polymer list.",
+   "evidence_quotes": [
+    "Under high pressure the CO2 molecules penetrate into the biomass and shattered the higher level of structures comprising hemicellulose and lignin."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "ea79aa49b1344f25f95e8cbc20f83e9798c8462bd937630809c4a5d17635dbe8"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_0cdc115190658593ce849e53",
+   "relevance": 0,
+   "reason": "doc0: different paper, oxidative pretreatment focus; doc1: bibliography entries only; doc2: organosolv/DES pretreatment, no polymer components; doc3: milling/microwave pretreatment, no components; doc4: microwave pretreatment details, no components",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "83de6bdb5419bbcf42943128b44328a6d6aace3a33f9257275b3b113c07d88e1"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_0fdd02015b6eb7d21ac6f9fd",
+   "relevance": 1,
+   "reason": "States the three biopolymer components of lignocellulosic biomass.",
+   "evidence_quotes": [
+    "Lignocellulosic biomass, which is composed of lignin, cellulose, and hemicellulose, represents the prevalent sustainable hydrocarbon resource"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "answerability_conflict": false,
+   "raw_response_id": "c62296caa73aeb865ee9cc7269f327f09be8ea6a1c9e7e96a925a6b2a6bea711",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块来源为 paper_81924125a737b5a88e728e25（Eucalyptus 论文），非题目点名的 2018 综述。该块独立陈述了同样的三种组分，按规范 §八 规则 1：另一篇论文独立陈述相同事实 → 1 级，不得判 2。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "doc_id": "chk_105cfc57e2ac889240fc0e99",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一木质素综述参考文献段，无组分信息。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_117a50a8e8188b27891c9506",
+   "relevance": 0,
+   "reason": "doc3: same paper, Fenton pretreatment topic; doc4: different paper, furfural production review",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0d03c22ddeae6a98b3b882484f49bd32e086b629e66e757faed9def447a950d8"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_122e8a9ffbe8d32b9133e57e",
+   "relevance": 0,
+   "reason": "doc0: lignin conversion review, no polymer components list; doc1: Fenton pretreatment study, no components list; doc2,4: bibliography entries only; doc3: alkali pretreatment details, no components list",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "055cad20dae3de23693c4dee212aa6838cd5f0308df0a855fecdb4746b64e403"
+  },
+  {
+   "doc_id": "chk_14f1af90c746f399832ca57c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一可持续平台综述引言，概述木质纤维素结构与来源及降解为组分，但未在本块枚举三大组分名称。"
+  },
+  {
+   "doc_id": "chk_166de74ad904ad7a1e7fc5c8",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一2018综述参考文献段，无组分信息。"
+  },
+  {
+   "doc_id": "chk_19dc9d277d79c2e2421ec9bf",
+   "relevance": 1,
+   "evidence_quotes": [
+    "the efficient separation of celllulose, hemicellulose and lignin from each other"
+   ],
+   "reason": "可持续平台综述以纤维素、半纤维素、木质素的分离列举三大组分。",
+   "review_status": "AI_semantic_review_incomplete",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块来源为 paper_a39f1f9d78514a2f2d7f78be（可持续平台综述），非指定 2018 综述。该块独立列出纤维素/半纤维素/木质素三种组分，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "doc_id": "chk_1a2f94b4b272068f5c009827",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一AAEM热解综述实验条件表，未列出木质纤维素三大聚合物组分。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_1b3adced8f0344654ed5ebfa",
+   "relevance": 1,
+   "reason": "Independent paper states the three main polymers, comparable evidence (L1c).",
+   "evidence_quotes": [
+    "Lignocellulosic biomass is mainly composed of three polymers; \ncellulose, hemicellulose and lignin together with small amounts \nof other components"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "answerability_conflict": false,
+   "raw_response_id": "88ecf3b6abdda891a866ef827291581885c276fb68a8437f8d8d77b70d2d99cc",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块来源为 paper_a39f1f9d78514a2f2d7f78be（非指定 2018 综述），句式与必需事实高度相似（three polymers; cellulose, hemicellulose and lignin）。仍是另一篇论文独立陈述相同事实，按 §八 规则 1 最高 1 级（旧理由自称 L1c 也印证它只是他文同类对照）。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "doc_id": "chk_1bbe24a3c6e11da36ab1e7f8",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一木质素综述CELF预处理段，讨论木质素脱除与糖产率，未列出三大组分全貌。"
+  },
+  {
+   "doc_id": "chk_1d81857a678541c814b4f0d8",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一绿色氧化综述题名/摘要页（重复），无组分信息。"
+  },
+  {
+   "doc_id": "chk_1f7f2d8ed92fb01725d2414d",
+   "relevance": 2,
+   "evidence_quotes": [
+    "Fungi are the best suited for such applications as they are capable of degrading cellulose, hemicelluloses, and lignin"
+   ],
+   "reason": "同一2018综述生物预处理段列举真菌可降解纤维素、半纤维素和木质素三大组分。"
+  },
+  {
+   "doc_id": "chk_2027375f5494ea714c9ecbc2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一AAEM热解综述参考文献条目，无组分信息。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_2664a01ff75abf215f6dbb9d",
+   "relevance": 1,
+   "reason": "L1c: different paper independently states the three main polymer components of lignocellulosics, matching the asked facts.",
+   "evidence_quotes": [
+    "Lignocellulosics are a type of biomass, and mainly consist \nof: cellulose, hemicellulose, and lignin."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "answerability_conflict": false,
+   "raw_response_id": "1e869f516685ce4fcfa8e3ae9dc07d9989ad62756bac75fae2552769551d8bf5",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块来源为 paper_fc29dce759c42c9a91aa8868（非指定 2018 综述）。该块独立陈述三种主要聚合物，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "doc_id": "chk_2801a4c83c11b615c0b62871",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一2018综述参考文献/版权段，无组分信息。"
+  },
+  {
+   "doc_id": "chk_2e78d732561f903661d6ceb1",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一AAEM热解综述概述木质纤维素与煤特性，未列出三大组分。"
+  },
+  {
+   "doc_id": "chk_2eb226d756c6be25e0922f0f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一绿色氧化综述氧化催化段，讨论半纤维素/纤维素转化，未完整列出三大组分。"
+  },
+  {
+   "doc_id": "chk_2f23e9f1e069675b9576a41b",
+   "relevance": 3,
+   "evidence_quotes": [
+    "LCB is mainly composed of three polymers: cellulose (C6H10O5)n, hemicellulose (C5H8O4)m, and lignin [C9H10O3(OCH3)0.9−1.7]x"
+   ],
+   "reason": "2018综述'结构与组分'段最明确给出LCB主要由纤维素、半纤维素、木质素三种聚合物组成。"
+  },
+  {
+   "doc_id": "chk_309349511ef18b2311afba5a",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一可持续平台综述生物炼制公司与平台化学品段，未列出三大组分。"
+  },
+  {
+   "doc_id": "chk_30e2a5a1af444c35760fd0b0",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一2018综述参考文献/致谢段，无组分信息。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_3182461b711d1f373bf36ac4",
+   "relevance": 1,
+   "reason": "Independent paper states the same three main polymer components.",
+   "evidence_quotes": [
+    "Lignocellulosic biomass, which is composed of lignin, cellulose, and hemicellulose"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "9f9c6ca3ad3dde46f842b196879f08db3cdad0b62629018ae686071ccd6c0e78",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块来源为 paper_81924125a737b5a88e728e25（Eucalyptus 论文），非指定 2018 综述。独立陈述同样三种组分，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_334d8deb43b2743a81ae024f",
+   "relevance": 0,
+   "reason": "doc0: different paper, oxidative pretreatment focus; doc1: bibliography entries only; doc2: organosolv/DES pretreatment, no polymer components; doc3: milling/microwave pretreatment, no components; doc4: microwave pretreatment details, no components",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "83de6bdb5419bbcf42943128b44328a6d6aace3a33f9257275b3b113c07d88e1"
+  },
+  {
+   "doc_id": "chk_339dfa8d33fcb9acb76cfb66",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一绿色氧化综述生命周期评价段，未列出三大组分。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_35697bcd8f0bec228418366e",
+   "relevance": 1,
+   "reason": "L1b: same 2018 review paper, mentions the three components as varying composition, auxiliary context.",
+   "evidence_quotes": [
+    "the composition of cellulose,\nhemicellulose and lignin vary"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "1e869f516685ce4fcfa8e3ae9dc07d9989ad62756bac75fae2552769551d8bf5"
+  },
+  {
+   "doc_id": "chk_3593fac8fda6aa8658add2ea",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一2018综述参考文献段，无组分信息。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_36c8c0bfb5ae6aec55e7d81c",
+   "relevance": 1,
+   "reason": "Names cellulose, hemicellulose, and lignin as the lignocellulose polymer components.",
+   "evidence_quotes": [
+    "Lignocellulose exists as microfibrils in plant cell walls and is comprised of cellulose surrounded by the less crystalline polymers hemicellulose and lignin."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0d03c22ddeae6a98b3b882484f49bd32e086b629e66e757faed9def447a950d8"
+  },
+  {
+   "doc_id": "chk_3752b7f6b766544b320e6665",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块出自生物质燃烧排放论文（paper_598a714a8ddb6a434683a20c）的参考文献条目，研究字段为燃烧排放/气溶胶，与木质纤维素聚合物组分主题不同（仅引文题名提及，非本块证据）。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_3d2a5f23a3c910b8212f3b85",
+   "relevance": 0,
+   "reason": "doc0: different paper, oxidative pretreatment focus; doc1: bibliography entries only; doc2: organosolv/DES pretreatment, no polymer components; doc3: milling/microwave pretreatment, no components; doc4: microwave pretreatment details, no components",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "83de6bdb5419bbcf42943128b44328a6d6aace3a33f9257275b3b113c07d88e1"
+  },
+  {
+   "doc_id": "chk_44514ab5149e61e08a899098",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一绿色氧化综述木质素热解/微波段，未列出三大组分。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_45a69b0e755aa8b4a0a506fb",
+   "relevance": 1,
+   "reason": "L1b: same 2018 review paper, conclusion mentions cellulose/hemicellulose/lignin matrix but not as the listed three main components.",
+   "evidence_quotes": [
+    "The high crystallinity of cellulose and its sheathing by\nhemicellulose-lignin matrix furnish the resilient structure of\nLCB."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "1e869f516685ce4fcfa8e3ae9dc07d9989ad62756bac75fae2552769551d8bf5"
+  },
+  {
+   "doc_id": "chk_4787c645235980604192481b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一可持续平台综述引言，概述木质纤维素价值，未列出三大组分。"
+  },
+  {
+   "doc_id": "chk_48b293418a751661dea10bc3",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一AAEM热解综述结论概述，未列出三大组分。"
+  },
+  {
+   "doc_id": "chk_4d14c5369e8d24183d1c0860",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块仅为一条参考文献条目（DOI+引文），不含任何关于木质纤维素组分的内容，按v2规范参考文献条目属0级。与原判1级不同：同论文并非1级的充分条件，本条无实质内容，故判0级。"
+  },
+  {
+   "doc_id": "chk_4d4cbdc732382255e1222382",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一绿色氧化综述参考文献段，无组分信息。"
+  },
+  {
+   "doc_id": "chk_4f0c5ab45bb66b54da15d2a0",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一绿色氧化综述生物预处理段，未列出三大聚合物组分。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_4f283b17046ca64f70a75f0f",
+   "relevance": 1,
+   "reason": "Names the three main lignocellulosic polymer components, though not attributed to the named 2018 review.",
+   "evidence_quotes": [
+    "biomass pretreatment steps to biomass components (i.e., lignin, cellulose, and hemicellulose)"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "answerability_conflict": false,
+   "raw_response_id": "c62296caa73aeb865ee9cc7269f327f09be8ea6a1c9e7e96a925a6b2a6bea711",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块来源为 paper_f0e625aa9a89da78815e3099（Frontiers in Chemistry 2018 另一篇 Den et al.），非指定 2018 综述。独立点到三种组分，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_501a64243ff7de9ab0046f3e",
+   "relevance": 0,
+   "reason": "doc5: different paper, covers lignin pretreatment effects, not polymer components",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "88ecf3b6abdda891a866ef827291581885c276fb68a8437f8d8d77b70d2d99cc"
+  },
+  {
+   "doc_id": "chk_52b5103d57ef9e83f90d5e7c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一绿色氧化综述参考文献段，无组分信息。"
+  },
+  {
+   "doc_id": "chk_5390b5325ecf463c4e9497d7",
+   "relevance": 3,
+   "evidence_quotes": [
+    "In general, the cellulose, hemicellulose and lignin contents in a typical LCB fall within the range of 30–60, 20–40, and 15–25%, respectively"
+   ],
+   "reason": "2018综述给出典型LCB中纤维素、半纤维素、木质素含量百分比范围。",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 3,
+    "changed": false,
+    "explanation": "必需事实三项（纤维素、半纤维素、木质素）在块内逐字出现并各有一段实质描述（含 30–60/20–40/15–25% 组成范围），块来源为题目点名的 2018 综述本身 → 3，维持原判。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_54ec4c4bd6b85b9cf0b08d7a",
+   "relevance": 1,
+   "reason": "L1c: another paper independently states the same three polymer components.",
+   "evidence_quotes": [
+    "lignocellulosic materials contain three biopolymers: hemicellulose, cellulose, and lignin"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "1f3454eb02da729cd8d022a7f608e1ac81de61339b05f08c39bea493f8205267"
+  },
+  {
+   "doc_id": "chk_5650cd3b09dbaef9a3916c08",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一AAEM热解综述参考文献条目，无组分信息。"
+  },
+  {
+   "doc_id": "chk_574d288a57f3af631f39a603",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一生物质综述参考文献段，无组分信息。"
+  },
+  {
+   "doc_id": "chk_5a38d5301d8603e57d6dfa32",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一呋喃/纳米纤维素综述参考文献段，无组分信息。"
+  },
+  {
+   "doc_id": "chk_5a5e557cbbb8a31a011227b6",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一可持续平台综述PHA生产段，讨论木质纤维素单糖，未列出三大组分。"
+  },
+  {
+   "doc_id": "chk_5bc118999869dab31bd8c5ce",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一绿色氧化综述有机溶剂/湿氧化段，提及'三大组分'但未在本块枚举名称。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_5bdc404aaf3aa2d43a2e88b3",
+   "relevance": 1,
+   "reason": "Directly names the three biopolymer components.",
+   "evidence_quotes": [
+    "Lignocellulosic biomass generally comprises three types of\nbiopolymers, namely cellulose, hemicellulose, and lignin."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "23ca6c32346161308032fc47ff01dcdcc94755bdfef83b2fabe5fc0d80a01915",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块来源为 paper_f0e625aa9a89da78815e3099（Frontiers in Chemistry 2018 Den et al.），非题目点名的 2018 综述。该块独立列出同样三种生物聚合物，按规范 §八 规则 1（另一篇论文独立陈述相同事实）最高 1 级，不得判 2。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "doc_id": "chk_5df905ea50c0c8b3f5c8b61d",
+   "relevance": 3,
+   "evidence_quotes": [
+    "LCB is mainly composed of three polymers: cellulose (C6H10O5)n, hemicellulose (C5H8O4)m, and lignin [C9H10O3(OCH3)0.9−1.7]x"
+   ],
+   "reason": "2018综述'结构与组分'段最明确给出LCB主要由纤维素、半纤维素、木质素三种聚合物组成。"
+  },
+  {
+   "doc_id": "chk_5fc51df488acc5767521e413",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一木质素综述结论段，讨论木质素与碳水化合物组分价值，未列出三大组分名称。"
+  },
+  {
+   "doc_id": "chk_61710df6c388a05cffed90df",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一绿色氧化综述参考文献段，无组分信息。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_6943ceb4f16d6e1915f4cfca",
+   "relevance": 0,
+   "reason": "doc0,1,3: different paper (lignin review), no polymer-component list; doc3: reference list only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "f4dafd5a0bc1078b493c526d43a610d3e05b807b9272e99f32f6f7848a6e29a5"
+  },
+  {
+   "doc_id": "chk_6c683701e86fdd7a2e917ffe",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一AAEM热解综述参考文献条目，无组分信息。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_70a204c9e510710a07ad3f3b",
+   "relevance": 1,
+   "reason": "L1d: background on lignocellulose components, no explicit list of the three polymers.",
+   "evidence_quotes": [
+    "In general, pretreatment removes or redistributes plant cell wall components, disrupts the carbohydrate-lignin matrix, and ultimately increases the cellulose accessibility to enzymes."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "ea79aa49b1344f25f95e8cbc20f83e9798c8462bd937630809c4a5d17635dbe8"
+  },
+  {
+   "doc_id": "chk_70a2f1a660e15afd9b203b21",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块是生物质燃烧排放（烟气、温室气体）相关的参考文献条目，研究对象与'木质纤维素三大聚合物组分'完全不同，无辅助价值。"
+  },
+  {
+   "doc_id": "chk_731c8cbec7a0c717be469661",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一AAEM热解综述参考文献条目，无组分信息。"
+  },
+  {
+   "doc_id": "chk_7764b60e09f53eaa5aa68fc6",
+   "relevance": 3,
+   "evidence_quotes": [
+    "The majority of LCB is composed of biological polymers such as cellulose, hemicellulose, and lignin"
+   ],
+   "reason": "2018综述明确说明LCB主要由纤维素、半纤维素和木质素三种生物聚合物组成。",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 3,
+    "changed": false,
+    "explanation": "该块为 2018 综述的标题页与摘要，摘要句逐字列出 cellulose、hemicellulose、lignin 三种生物聚合物，覆盖全部必需事实，来源即指定综述 → 3，维持原判。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "doc_id": "chk_77facfa72e40a0d2ff97fbfb",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一2018综述参考文献段，无组分信息。"
+  },
+  {
+   "doc_id": "chk_7aefa136404f2ef5f9a27881",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一绿色氧化综述参考文献段，无组分信息。"
+  },
+  {
+   "doc_id": "chk_7ccc90b43ddfc0b4da904489",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "同一绿色氧化综述刊头/题名页，无组分信息。",
+   "review_status": "Agent_review_completed",
+   "review_note": "规范第四节：刊头/题名页属无实质内容 → 0；旧判 1 级错误",
+   "review_verdict": "不支持"
+  },
+  {
+   "doc_id": "chk_7fb16eed7ca99f689fbd62fd",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一2018综述参考文献段，无组分信息。"
+  },
+  {
+   "doc_id": "chk_8181dab5363cc27f8ba36d11",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一2018综述参考文献段，无组分信息。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_837fe3919547666c018f0fcf",
+   "relevance": 1,
+   "reason": "Another paper independently names the three main biopolymer components of lignocellulosic biomass (L1c comparable statement).",
+   "evidence_quotes": [
+    "Apart from the three main biopolymer components, \nnamely, cellulose, hemicellulose and lignin, lignocellulosic biomass also \ncontains traces of extractive and mineral ash."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "d905c744eb7f9c777a0db71677c6cf59bbc64f5c19fd012c3bee55331b74364b",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块来源为 paper_a23d5abb9f77edeb68352119，非指定 2018 综述。独立陈述三种主要生物聚合物，按 §八 规则 1 最高 1 级（旧理由自称 L1c 同类对照，亦印证）。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_8415a4ce30d60e523ec8f26f",
+   "relevance": 1,
+   "reason": "L1d: names the three main biopolymers as background, not the 2018 review's list.",
+   "evidence_quotes": [
+    "biomass contains an ash fraction in \naddition to the three main biopolymers (namely, cellulose, hemicellu\n\n\nlose and lignin)"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "1f3454eb02da729cd8d022a7f608e1ac81de61339b05f08c39bea493f8205267"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_8841d26c4d31fd9adad2be67",
+   "relevance": 1,
+   "reason": "Explicitly lists the three main biopolymer components of lignocellulose.",
+   "evidence_quotes": [
+    "lignocellulosic materials contain three biopolymers: hemicellulose, cellulose, and lignin."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0d03c22ddeae6a98b3b882484f49bd32e086b629e66e757faed9def447a950d8"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_8c43d6189bfd58b10083cf8d",
+   "relevance": 3,
+   "reason": "Same 2018 review states the three components (L1b).",
+   "evidence_quotes": [
+    "Lignocelluloses are composed of\ncellulose (40–50%), hemicelluloses (25–35%) and lignin (15–\n20%)"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "88ecf3b6abdda891a866ef827291581885c276fb68a8437f8d8d77b70d2d99cc",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 3,
+    "changed": true,
+    "explanation": "必答的是『三种主要聚合物组分』= 纤维素/半纤维素/木质素。该块逐字给出 cellulose、hemicelluloses、lignin 三项（并附 40–50%/25–35%/15–20% 组成占比），单独覆盖全部必需事实；且块来源 paper_2467240e9bec8a52db54345d 正是题目点名的 2018 综述本身，满足硬性来源限定。旧判 2 为漏判（旧理由自称 L1b，等级与理由同样矛盾）→ 升为 3。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "doc_id": "chk_8df4ec2e5e536e334bed299c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一2018综述参考文献段，无组分信息。"
+  },
+  {
+   "doc_id": "chk_907d45632bfbfb6f8b638d36",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一绿色氧化综述引言/关键词段，未列出三大组分。"
+  },
+  {
+   "doc_id": "chk_949d6e15c39aa1680eb0597e",
+   "relevance": 1,
+   "evidence_quotes": [
+    "generation of valuable chemicals from biomass-derived components (e.g., lignin, cellulose, and hemicellulose)"
+   ],
+   "reason": "同一绿色氧化综述列举木质素、纤维素、半纤维素为生物质来源组分（举例形式）。",
+   "review_status": "AI_semantic_review_incomplete",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块来源为 paper_f0e625aa9a89da78815e3099，非指定 2018 综述。以举例形式列出三种组分，属另一篇论文独立陈述相同概念，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "doc_id": "chk_9600c7335508f50b92045c12",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一AAEM热解综述纤维素热解段，仅提及纤维素与半纤维素，未完整列出三大组分。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_96993a456400accc4e326aa0",
+   "relevance": 0,
+   "reason": "doc1: same paper, supercritical CO2 pretreatment topic; doc3: same paper, lignin analytics topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "1f3454eb02da729cd8d022a7f608e1ac81de61339b05f08c39bea493f8205267"
+  },
+  {
+   "doc_id": "chk_9824e8bd83610555996f0872",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "同一木质素综述参考文献段，无组分信息。",
+   "review_status": "Agent_review_completed",
+   "review_note": "书目条目 → 0；旧判 1 级错误",
+   "review_verdict": "不支持"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_9d965a6575bbd687b3b64764",
+   "relevance": 0,
+   "reason": "doc0,1,3: different paper (lignin review), no polymer-component list; doc3: reference list only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "f4dafd5a0bc1078b493c526d43a610d3e05b807b9272e99f32f6f7848a6e29a5"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_9e49aa0e6a155dbc4c439cf7",
+   "relevance": 1,
+   "reason": "Same paper's own summary naming the three major components (L1b).",
+   "evidence_quotes": [
+    "One of the most important goals is to \nfractionate lignocellulose into its three major components; \ncellulose, hemicelluloses and lignin."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "answerability_conflict": false,
+   "raw_response_id": "88ecf3b6abdda891a866ef827291581885c276fb68a8437f8d8d77b70d2d99cc",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块来源为 paper_a39f1f9d78514a2f2d7f78be，非指定 2018 综述。独立给出三种主要组分，按 §八 规则 1 最高 1 级（旧理由自称 L1b，但该文并非本题指定来源，故只能按他文对照处理）。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "doc_id": "chk_9f3a49171a889f8970fcac50",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一AAEM热解综述参考文献条目，无组分信息。"
+  },
+  {
+   "doc_id": "chk_9fdaa3712627d2d2ecba0d46",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一木质素综述溶剂分馏段，未在本块枚举三大组分名称。"
+  },
+  {
+   "doc_id": "chk_a0bd8b623a93c66f65714d2f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一可持续平台综述乳酸酸平台段，讨论木质纤维素酶解，未列出三大组分。"
+  },
+  {
+   "doc_id": "chk_a1bda41258bb155ff6329a9d",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一呋喃/DES综述参考文献段，无组分信息。"
+  },
+  {
+   "doc_id": "chk_a26cc061cbe00e20812e3efe",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一AAEM热解综述文献概述段，未列出三大组分。"
+  },
+  {
+   "doc_id": "chk_a4cfb2dac7c22e914f7aa355",
+   "relevance": 1,
+   "evidence_quotes": [
+    "Biomass pretreatment results in cellulose-rich solids, frequently devoid of extractives/ash, and reduction of hemicellulose and lignin components depending on the applied techniques"
+   ],
+   "reason": "同一木质素综述列举纤维素富集固形物、半纤维素与木质素组分减少，给出三大组分。",
+   "review_status": "AI_semantic_review_incomplete",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块来源为 paper_d5bfa1893984e7871d3fd568（木质素靶向预处理综述），非指定 2018 综述。块内以预处理结果形式点到 cellulose / hemicellulose / lignin 三组分，属他文独立陈述，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "doc_id": "chk_a6077f524608d4496fada50b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一木质素综述参考文献段，无组分信息。"
+  },
+  {
+   "doc_id": "chk_a9ff557f0dc4d1f2aedadec4",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一AAEM热解综述参考文献条目，无组分信息。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_ac2c24514ed24cb29359b85a",
+   "relevance": 0,
+   "reason": "doc0: lignin conversion review, no polymer components list; doc1: Fenton pretreatment study, no components list; doc2,4: bibliography entries only; doc3: alkali pretreatment details, no components list",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "055cad20dae3de23693c4dee212aa6838cd5f0308df0a855fecdb4746b64e403"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_ad2ced08c4c298f3bbb8cfac",
+   "relevance": 1,
+   "reason": "L1c: different paper independently lists cellulose, hemicellulose, lignin as biomass fractions, comparable background.",
+   "evidence_quotes": [
+    "It consists of carbohydrate fractions such as \ncellulose and hemicelluloses and non-carbohydrate fractions like lignin, protein, and other \nextractives."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "1e869f516685ce4fcfa8e3ae9dc07d9989ad62756bac75fae2552769551d8bf5"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_af54d82cad42c835fdb445be",
+   "relevance": 0,
+   "reason": "doc0: different paper, oxidative pretreatment focus; doc1: bibliography entries only; doc2: organosolv/DES pretreatment, no polymer components; doc3: milling/microwave pretreatment, no components; doc4: microwave pretreatment details, no components",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "83de6bdb5419bbcf42943128b44328a6d6aace3a33f9257275b3b113c07d88e1"
+  },
+  {
+   "doc_id": "chk_afdca744f9780336616d6a1d",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一乙酰丙酸论文参考文献段，无组分信息。"
+  },
+  {
+   "doc_id": "chk_b1d48fe71f8d9bfeda0a7a6e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "同一2018综述参考文献段，无组分信息。",
+   "review_status": "Agent_review_completed",
+   "review_note": "书目条目 → 0；旧判 1 级错误",
+   "review_verdict": "不支持"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_b4a63245687199605240fc88",
+   "relevance": 1,
+   "reason": "Independent paper names the three biopolymers cellulose, hemicellulose, and lignin.",
+   "evidence_quotes": [
+    "fractiona‐\ntion of all the three biopolymers (cellulose, hemicellulose, and lignin) in Eucalyptus biomass"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "d905c744eb7f9c777a0db71677c6cf59bbc64f5c19fd012c3bee55331b74364b",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块来源为 paper_81924125a737b5a88e728e25（Eucalyptus 论文），非指定 2018 综述；块主体为结论句尾 + CC 许可声明与作者单位（书目性元数据），仅结论一句点到三种生物聚合物。仍属他文独立陈述相同事实 → 按 §八 规则 1 判 1（不给 0，因确有该项组分的实质陈述）。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_b698269bcc6a90eb8dc63964",
+   "relevance": 1,
+   "reason": "L1d: mentions cellulose, hemicellulose, lignin as components but not as the review's listed three polymers.",
+   "evidence_quotes": [
+    "Agricultural residues typically contain even less lignin (10–20% lignin, 20–30% hemicellulose, and 40–50% cellulose), and are thus more suitable as biomass feedstocks."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "ea79aa49b1344f25f95e8cbc20f83e9798c8462bd937630809c4a5d17635dbe8"
+  },
+  {
+   "doc_id": "chk_b6e39dd4701d185ccf6efd3a",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一2018综述有机溶剂预处理结果表，列纤维素/葡萄糖得率，未列出三大聚合物组分。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_ba36f74efe4f004f748da782",
+   "relevance": 0,
+   "reason": "doc3: same paper, Fenton pretreatment topic; doc4: different paper, furfural production review",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0d03c22ddeae6a98b3b882484f49bd32e086b629e66e757faed9def447a950d8"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_bcb2da7e0e59216943ed589d",
+   "relevance": 0,
+   "reason": "doc0,1,3: different paper (lignin review), no polymer-component list; doc3: reference list only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "f4dafd5a0bc1078b493c526d43a610d3e05b807b9272e99f32f6f7848a6e29a5"
+  },
+  {
+   "doc_id": "chk_bd1496eaf29f80d28859793c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一木质素综述参考文献段，无组分信息。"
+  },
+  {
+   "doc_id": "chk_bd32559701129098222b039e",
+   "relevance": 1,
+   "evidence_quotes": [
+    "Cellulose is the natural polymer of greatest natural occurrence in the world",
+    "% Cellulose % Hemicelluloses % Lignin"
+   ],
+   "reason": "糠醛综述组成表以纤维素、半纤维素、木质素为列标题枚举三大组分（表格形式列出）。",
+   "review_status": "AI_semantic_review_incomplete",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块来源为 paper_dc3af146aa40e29afdfa9838，非指定 2018 综述。Table 1 以 %Cellulose/%Hemicelluloses/%Lignin 三列枚举组分，属他文独立陈述相同事实，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "doc_id": "chk_c0e6d16dda9ee779634a4adf",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一AAEM热解综述提及'上述三种生物聚合物'但未在本块枚举名称，无直接证据。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_c11610ae5efd246c1af2ee83",
+   "relevance": 0,
+   "reason": "doc1: same paper, supercritical CO2 pretreatment topic; doc3: same paper, lignin analytics topic",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "1f3454eb02da729cd8d022a7f608e1ac81de61339b05f08c39bea493f8205267"
+  },
+  {
+   "doc_id": "chk_c503286d2147479ecf90c334",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一2018综述生物预处理条件表，未列出三大聚合物组分。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_c948860b08162f6b4e30fbbf",
+   "relevance": 1,
+   "reason": "L1b: same 2018 review paper, composition table names cellulose, hemicellulose, lignin as components.",
+   "evidence_quotes": [
+    "TABLE 1 | Composition of various lignocellulosic biomass.\n\nLignocellulosic materials\nCellulose (%)\nHemicellulose (%)\nLignin (%)"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "1e869f516685ce4fcfa8e3ae9dc07d9989ad62756bac75fae2552769551d8bf5"
+  },
+  {
+   "doc_id": "chk_c95c223da262564c4aa0c97a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块出自生物质燃烧排放/气溶胶论文（paper_598a714a8ddb6a434683a20c），讨论污染物排放对健康风险，研究字段为大气排放，与木质纤维素聚合物组分主题不同。"
+  },
+  {
+   "doc_id": "chk_cd0083f410f85763dbef9e43",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一AAEM热解综述引言，概述木质纤维素与煤特性，未列出三大组分。"
+  },
+  {
+   "doc_id": "chk_cf1964a1ec9159468cd9ccd8",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一2018综述参考文献段，无组分信息。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_d0d6cf44b2d7fa43fc606302",
+   "relevance": 1,
+   "reason": "L1c: independent comparable statement of the three major constituents.",
+   "evidence_quotes": [
+    "Lignocellulosic biomass is composed of three major constituents: cellulose, hemicelluloses and lignin"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "1f3454eb02da729cd8d022a7f608e1ac81de61339b05f08c39bea493f8205267"
+  },
+  {
+   "doc_id": "chk_d0ee871e2f0a6d9a6fa0f057",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一桉木生物炼制论文参考文献段，无组分信息。"
+  },
+  {
+   "doc_id": "chk_d240b88640bce7f3b815a13f",
+   "relevance": 1,
+   "evidence_quotes": [
+    "Pretreatment of these biomass depolymerizes the complex lignin and cellulosic structures and separate lignin from cellulose and hemicellulose via hydrolysis"
+   ],
+   "reason": "同一绿色氧化综述图注列举纤维素、半纤维素、木质素三大组分（以分离过程描述形式）。",
+   "review_status": "AI_semantic_review_incomplete",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块来源为 paper_f0e625aa9a89da78815e3099，非指定 2018 综述。图注与分析段两次并列 lignin / cellulose / hemicellulose，属他文独立陈述，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "doc_id": "chk_d2e226cbd69ba5ca7ac5efa2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一2018综述白腐菌生物预处理段，讨论木质素与纤维素降解，未列出三大组分全貌。"
+  },
+  {
+   "doc_id": "chk_d32e7ef117d91f85b89a0634",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块讨论DES脱木质素与木质素萃取效率，仅提及lignin与cellulose溶解度，从未列举木质纤维素的三大聚合物组分，也不解释'三大组分是什么'的机理，对本题无辅助价值。原判2级所引 'Biomass pretreatment results in cellulose-rich solids' 并不存在于本块，故降级为0级。"
+  },
+  {
+   "doc_id": "chk_d5733712957e1d7db3d84e49",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一AAEM热解综述参考文献条目，无组分信息。"
+  },
+  {
+   "doc_id": "chk_d5dbbf45399a4a363187077c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一AAEM热解综述参考文献条目，无组分信息。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_dae54923690abc9482389d41",
+   "relevance": 1,
+   "reason": "States lignocellulosic biomass consists of cellulose, hemicellulose, lignin.",
+   "evidence_quotes": [
+    "Generally, lignocellulosic \nbiomass consists of 35–50% cellulose, 20–35% hemicellulose, \nand 10–25% lignin."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "9f9c6ca3ad3dde46f842b196879f08db3cdad0b62629018ae686071ccd6c0e78",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块来源为 paper_a39f1f9d78514a2f2d7f78be，非指定 2018 综述。两处并列三种组分（含质量占比），仍为他文独立陈述相同事实，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "doc_id": "chk_dd1e1b357bed87651e23d7f5",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一绿色氧化综述题名/摘要页，无组分信息。"
+  },
+  {
+   "doc_id": "chk_de6ddbb70cf661ab4aa52788",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一2018综述参考文献段，无组分信息。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_df24437e6c790326b9602f5f",
+   "relevance": 1,
+   "reason": "Another paper lists the same three components.",
+   "evidence_quotes": [
+    "Lignocellulosics are a type of biomass, and mainly consist \nof: cellulose, hemicellulose, and lignin."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "9f9c6ca3ad3dde46f842b196879f08db3cdad0b62629018ae686071ccd6c0e78",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块来源为 paper_fc29dce759c42c9a91aa8868，非指定 2018 综述。正文与 Table 1 均给三种组分，属他文独立陈述，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "doc_id": "chk_dfcda13497ddb9a860396fcf",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一2018综述研磨预处理段，未列出三大组分。"
+  },
+  {
+   "doc_id": "chk_e0e18e291841d2484c5dfd78",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一木质素综述GVL预处理段，讨论半纤维素/纤维素转化，未完整列出三大组分。"
+  },
+  {
+   "doc_id": "chk_e13189c5ea576e8e5e4cc2f2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "同一2018综述参考文献段，无组分信息。",
+   "review_status": "Agent_review_completed",
+   "review_note": "规范第四节：仅书目条目不构成实质内容 → 0；旧判 1 级错误",
+   "review_verdict": "不支持"
+  },
+  {
+   "doc_id": "chk_e141aee60b144ed3e8060dd2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一绿色氧化综述题名/摘要页（重复），无组分信息。"
+  },
+  {
+   "doc_id": "chk_e17d995fa1a03a1407775404",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一2018综述有机酸预处理段，无组分信息。"
+  },
+  {
+   "doc_id": "chk_e28681a03b89366bbf25d909",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一2018综述参考文献段，无组分信息。"
+  },
+  {
+   "doc_id": "chk_e40ff27103a7dff6aa294c49",
+   "relevance": 1,
+   "evidence_quotes": [
+    "the three major components of lignocellulosic biomass, which are cellulose, hemicelluloses and lignin"
+   ],
+   "reason": "糠醛综述明确指出木质纤维素的三大主要组分为纤维素、半纤维素和木质素。",
+   "review_status": "AI_semantic_review_incomplete",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块内确实逐字给出三种主要组分，但块来源为 paper_dc3af146aa40e29afdfa9838，非题目点名的 2018 综述（同一来源=否）。题目点名来源即硬性限定，按规范 §八 规则 1：另一篇论文独立陈述相同事实 → 最高 1 级，不得判 2/3（『别的论文列了三种组分，证明不了指定综述列了那三种』）。旧判 3 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_e86a4176f859f6fdd792fe54",
+   "relevance": 0,
+   "reason": "Bibliography entry only; no statement of the three polymer components, so it cannot support the answer.",
+   "evidence_quotes": [
+    "Giummarella, N., Zhang, L., Henriksson, G., Lawoko, M., 2016. Structural features of mildly \nfractionated lignin carbohydrate complexes (LCC) from spruce."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "d905c744eb7f9c777a0db71677c6cf59bbc64f5c19fd012c3bee55331b74364b",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 0,
+    "changed": true,
+    "explanation": "整块自首至尾都是参考文献条目（Donohoe 2008 / dos Santos 2019 / Dutta 2017 / Fang 2015 / Fushinobu 2014 / Giummarella 2016,2019 / Guerra 2006 / Guo 2014,2019a,2019b / Himmel 2007），没有任何关于三大组分的实质陈述；且块来源 paper_d5bfa1893984e7871d3fd568 亦非指定综述。按规范 §四『块只是参考文献条目 → 0』。旧判 2 与旧理由（理由已自认无法支持作答）自相矛盾 → 改为 0。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_e9d4c44e3c2a99de94f93c42",
+   "relevance": 1,
+   "reason": "States the three biopolymers of lignocellulose.",
+   "evidence_quotes": [
+    "lignocellulosic materials contain three biopolymers: hemicellulose, cellulose, and lignin"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "23ca6c32346161308032fc47ff01dcdcc94755bdfef83b2fabe5fc0d80a01915",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块来源为 paper_d1a4e8bfc7c58b30dda482f2（2023 CMF 论文），非指定 2018 综述。独立陈述三种生物聚合物，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_e9e91c61f7837a4f71ca6620",
+   "relevance": 1,
+   "reason": "L1d: names the three components in a pretreatment context, not as the review's listed polymers.",
+   "evidence_quotes": [
+    "Various pretreatment options were reported to fractionate, solubilize, hydrolyze, and separate cellulose, hemicellulose, and lignin components."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "ea79aa49b1344f25f95e8cbc20f83e9798c8462bd937630809c4a5d17635dbe8"
+  },
+  {
+   "doc_id": "chk_ea2504b342f118744a8f0575",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "该块出自生物质燃烧非甲烷有机气体排放论文（paper_14cccefc7706a12ec4946b02）的参考文献，研究字段为燃烧排放，与木质纤维素聚合物组分主题不同。"
+  },
+  {
+   "doc_id": "chk_ea89cb70153c81faff337d20",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一2018综述参考文献段，无组分信息。"
+  },
+  {
+   "doc_id": "chk_eb7fcd62805857447acb1f1d",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一生物质综述参考文献段，无组分信息。"
+  },
+  {
+   "doc_id": "chk_ec796deeb73e695c90ad2b79",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一AAEM热解综述参考文献条目，无组分信息。"
+  },
+  {
+   "doc_id": "chk_ee0111a2b306622de511afd3",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一AAEM热解综述参考文献条目，无组分信息。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_f660239ac51f4511c89c1c6b",
+   "relevance": 0,
+   "reason": "doc0: lignin conversion review, no polymer components list; doc1: Fenton pretreatment study, no components list; doc2,4: bibliography entries only; doc3: alkali pretreatment details, no components list",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "055cad20dae3de23693c4dee212aa6838cd5f0308df0a855fecdb4746b64e403"
+  },
+  {
+   "doc_id": "chk_f6e6fc404836e8b7d83b5993",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一2018综述蒸汽爆破预处理段，无组分信息。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_f9d00e05c2cddc5cd351c51f",
+   "relevance": 0,
+   "reason": "doc0: lignin conversion review, no polymer components list; doc1: Fenton pretreatment study, no components list; doc2,4: bibliography entries only; doc3: alkali pretreatment details, no components list",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "055cad20dae3de23693c4dee212aa6838cd5f0308df0a855fecdb4746b64e403"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_fa44890380cd28eeddd8114f",
+   "relevance": 1,
+   "reason": "Explicitly lists the three main polymeric constituents.",
+   "evidence_quotes": [
+    "There are three main natural polymeric constituents composing the \nlignocellulosic biomass: cellulose, hemicellulose and lignin"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "23ca6c32346161308032fc47ff01dcdcc94755bdfef83b2fabe5fc0d80a01915",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "块来源为 paper_a23d5abb9f77edeb68352119，非指定 2018 综述。独立列出三种主要天然聚合物，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+   }
+  },
+  {
+   "doc_id": "chk_fbd7407f07da7848578ba0c2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一AAEM热解综述参考文献条目，无组分信息。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_fbf77659e3366d9799b0da01",
+   "relevance": 0,
+   "reason": "doc0: different paper, oxidative pretreatment focus; doc1: bibliography entries only; doc2: organosolv/DES pretreatment, no polymer components; doc3: milling/microwave pretreatment, no components; doc4: microwave pretreatment details, no components",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "83de6bdb5419bbcf42943128b44328a6d6aace3a33f9257275b3b113c07d88e1"
+  },
+  {
+   "doc_id": "chk_fc19d79ede24ceb7686f4a95",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一AAEM热解综述参考文献条目，无组分信息。"
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_fd706a4d2d3c58b97f979aec",
+   "relevance": 0,
+   "reason": "doc0: lignin conversion review, no polymer components list; doc1: Fenton pretreatment study, no components list; doc2,4: bibliography entries only; doc3: alkali pretreatment details, no components list",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "055cad20dae3de23693c4dee212aa6838cd5f0308df0a855fecdb4746b64e403"
+  }
+ ]
+}

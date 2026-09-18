@@ -1,0 +1,15 @@
+{
+  "authorization": "用户后续要求以完整测评优先，并允许tests以外必要写入；用户要求通过启动服务接口复用模型凭据。",
+  "purpose": "默认关闭、仅loopback、令牌授权、固定语料ID的测评桥；不修改检索逻辑。",
+  "files": {
+    "scripts\\start.ps1": {
+      "before_sha256": "44a3b18aed06730df07c57054eed44b6a76f30c80a69cad24b4d6c3d95d7da33",
+      "after_sha256": "ef0ec93fdb5411f103fc5f4005964a129b7955f71ad69a7c1d377ef3a6a2cd97"
+    },
+    "src\\rag\\api.py": {
+      "before_sha256": "977c5ff3917625f1e6bf1e016e627f2c4ca760a06dc53bd3afbcbf0221299786",
+      "after_sha256": "329884ec5a0b6b4db86f902dcde35d76fb1b28d3b1d50567260712e2e738cdf4"
+    }
+  },
+  "production_database": "仅正常查询日志写入，不变更文献、切块或向量"
+}

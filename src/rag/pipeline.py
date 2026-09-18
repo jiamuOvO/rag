@@ -96,7 +96,7 @@ class Pipeline:
         started = time.perf_counter()
         if run_id:
             versions = {"discover": "discovery-v1", "parse": "pymupdf-rapidocr-v1",
-                        "chunk": "structure-v1", "index": "sqlite-index-v2"}
+                        "chunk": "structure-v2", "index": "sqlite-index-v2"}
             self.store.start_stage(run_id, stage, paper_id=context.get("paper_id"),
                                    component_version=str(context.get("model") or versions.get(stage, "v1")))
         try:

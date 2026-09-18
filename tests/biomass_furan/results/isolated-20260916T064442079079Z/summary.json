@@ -1,0 +1,720 @@
+{
+  "dataset_version": "0.1.0-ai-candidate",
+  "qrels_complete": false,
+  "metric_status": "blocked_incomplete_qrels",
+  "run_complete": true,
+  "stable_hybrid_baseline": false,
+  "successful_formal_requests": 180,
+  "config": {
+    "mode": "isolated_bm25",
+    "embedding_model": "qwen3-embedding-0.6b",
+    "embedding_provider": "disabled",
+    "reranker": "disabled",
+    "top_k": 20,
+    "warmup": 20,
+    "repeats": 3,
+    "concurrency": 1,
+    "timeout_seconds": 120,
+    "seed": 20260916,
+    "snapshot_sha256": "94994aab8206ab080b203db7f6e5dbe7038cfa3e3872fe33fe6075217dd0db82",
+    "corpus_sha256": "f6ad15d0e0656e414dc66807c0d00fc98cc59b1d0b3756f0d09dae8d554e9aa4",
+    "queries_sha256": "473b827ce448e6419804f66432b19d8dd38e82d91700dc113654e08f80d9f3cf",
+    "hardware": {
+      "platform": "Windows-11-10.0.26200-SP0",
+      "cpu": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+      "logical_cpu_count": 24
+    },
+    "latency_boundary": "Pipeline.retrieve entry to full return, excluding process transport and metric calculation",
+    "non_rerank_latency": "Same-call total minus measured reranker duration; estimate, not a separate no-reranker run.",
+    "cache_policy": "20 warmup requests, no artificial cache",
+    "quality_repeat": 1,
+    "cold_start": "Worker initialization separate; not included in warm latency"
+  },
+  "formal_requests": 180,
+  "status_counts": {
+    "ok": 180
+  },
+  "timeout_rate": 0.0,
+  "degradation_rate": 1.0,
+  "latency_query_medians": {
+    "count": 60,
+    "mean_ms": 919.6622183334208,
+    "p50_ms": 919.0523499983101,
+    "p95_ms": 949.2011800004548,
+    "p99_ms": 967.8037129987932
+  },
+  "latency_all_requests": {
+    "count": 180,
+    "mean_ms": 926.714702777887,
+    "p50_ms": 918.8552499999787,
+    "p95_ms": 974.566060000143,
+    "p99_ms": 1166.8338549986947
+  },
+  "successful_request_latency_diagnostic": {
+    "count": 180,
+    "mean_ms": 926.714702777887,
+    "p50_ms": 918.8552499999787,
+    "p95_ms": 974.566060000143,
+    "p99_ms": 1166.8338549986947
+  },
+  "reranker_latency_diagnostic": {
+    "count": 180,
+    "mean_ms": 0.0,
+    "p50_ms": 0.0,
+    "p95_ms": 0.0,
+    "p99_ms": 0.0
+  },
+  "non_rerank_estimate_latency_diagnostic": {
+    "count": 180,
+    "mean_ms": 926.714702777887,
+    "p50_ms": 918.8552499999787,
+    "p95_ms": 974.566060000143,
+    "p99_ms": 1166.8338549986947
+  },
+  "server_internal_retrieve_latency_diagnostic": {
+    "count": 0,
+    "mean_ms": null,
+    "p50_ms": null,
+    "p95_ms": null,
+    "p99_ms": null
+  },
+  "overall": {},
+  "normal_hybrid_only": {},
+  "groups": {
+    "split": {},
+    "question_type": {},
+    "difficulty": {},
+    "language": {}
+  },
+  "no_answer": [
+    {
+      "query_id": "q_0012",
+      "nonempty_rate": 1,
+      "returned_counts": [
+        9,
+        9,
+        9
+      ]
+    },
+    {
+      "query_id": "q_0048",
+      "nonempty_rate": 1,
+      "returned_counts": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "query_id": "q_0060",
+      "nonempty_rate": 1,
+      "returned_counts": [
+        20,
+        20,
+        20
+      ]
+    }
+  ],
+  "per_query": [
+    {
+      "query_id": "q_0001",
+      "repeat_count": 3,
+      "latency_median_ms": 907.820600001287,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.10526315789473684
+    },
+    {
+      "query_id": "q_0002",
+      "repeat_count": 3,
+      "latency_median_ms": 936.2693000002764,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0003",
+      "repeat_count": 3,
+      "latency_median_ms": 918.033199999627,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.1
+    },
+    {
+      "query_id": "q_0004",
+      "repeat_count": 3,
+      "latency_median_ms": 926.1958999995841,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0005",
+      "repeat_count": 3,
+      "latency_median_ms": 925.1380999994581,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05263157894736842
+    },
+    {
+      "query_id": "q_0006",
+      "repeat_count": 3,
+      "latency_median_ms": 957.6237000001129,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.08333333333333333
+    },
+    {
+      "query_id": "q_0007",
+      "repeat_count": 3,
+      "latency_median_ms": 924.9992000004568,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05263157894736842
+    },
+    {
+      "query_id": "q_0008",
+      "repeat_count": 3,
+      "latency_median_ms": 906.4529999996012,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0009",
+      "repeat_count": 3,
+      "latency_median_ms": 913.2437000007485,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.0
+    },
+    {
+      "query_id": "q_0010",
+      "repeat_count": 3,
+      "latency_median_ms": 913.8082999998005,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.1111111111111111
+    },
+    {
+      "query_id": "q_0011",
+      "repeat_count": 3,
+      "latency_median_ms": 899.7166000008292,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.1111111111111111
+    },
+    {
+      "query_id": "q_0012",
+      "repeat_count": 3,
+      "latency_median_ms": 912.9944000014802,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.0
+    },
+    {
+      "query_id": "q_0013",
+      "repeat_count": 3,
+      "latency_median_ms": 915.014300000621,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.0
+    },
+    {
+      "query_id": "q_0014",
+      "repeat_count": 3,
+      "latency_median_ms": 920.880000001489,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 1.0
+    },
+    {
+      "query_id": "q_0015",
+      "repeat_count": 3,
+      "latency_median_ms": 912.9565000002913,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.0
+    },
+    {
+      "query_id": "q_0016",
+      "repeat_count": 3,
+      "latency_median_ms": 910.2340000026743,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05263157894736842
+    },
+    {
+      "query_id": "q_0017",
+      "repeat_count": 3,
+      "latency_median_ms": 902.6555999989796,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 1.0
+    },
+    {
+      "query_id": "q_0018",
+      "repeat_count": 3,
+      "latency_median_ms": 893.3609000014258,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0019",
+      "repeat_count": 3,
+      "latency_median_ms": 929.9055000010412,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.1111111111111111
+    },
+    {
+      "query_id": "q_0020",
+      "repeat_count": 3,
+      "latency_median_ms": 898.3420000004116,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 1.0
+    },
+    {
+      "query_id": "q_0021",
+      "repeat_count": 3,
+      "latency_median_ms": 919.3885000022419,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.058823529411764705
+    },
+    {
+      "query_id": "q_0022",
+      "repeat_count": 3,
+      "latency_median_ms": 899.9948999990011,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.10526315789473684
+    },
+    {
+      "query_id": "q_0023",
+      "repeat_count": 3,
+      "latency_median_ms": 922.7810999982466,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.13333333333333333
+    },
+    {
+      "query_id": "q_0024",
+      "repeat_count": 3,
+      "latency_median_ms": 912.8067000019655,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.07142857142857142
+    },
+    {
+      "query_id": "q_0025",
+      "repeat_count": 3,
+      "latency_median_ms": 901.8646000004082,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.0
+    },
+    {
+      "query_id": "q_0026",
+      "repeat_count": 3,
+      "latency_median_ms": 897.9327999986708,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0027",
+      "repeat_count": 3,
+      "latency_median_ms": 923.5975000010512,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05263157894736842
+    },
+    {
+      "query_id": "q_0028",
+      "repeat_count": 3,
+      "latency_median_ms": 931.6928000007465,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0029",
+      "repeat_count": 3,
+      "latency_median_ms": 908.9917000019341,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.0
+    },
+    {
+      "query_id": "q_0030",
+      "repeat_count": 3,
+      "latency_median_ms": 939.602599999489,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.1
+    },
+    {
+      "query_id": "q_0031",
+      "repeat_count": 3,
+      "latency_median_ms": 894.0984000000753,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 1.0
+    },
+    {
+      "query_id": "q_0032",
+      "repeat_count": 3,
+      "latency_median_ms": 910.5311999992409,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0033",
+      "repeat_count": 3,
+      "latency_median_ms": 917.8305999994336,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.0
+    },
+    {
+      "query_id": "q_0034",
+      "repeat_count": 3,
+      "latency_median_ms": 925.5851999987499,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.10526315789473684
+    },
+    {
+      "query_id": "q_0035",
+      "repeat_count": 3,
+      "latency_median_ms": 918.9039999982924,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05263157894736842
+    },
+    {
+      "query_id": "q_0036",
+      "repeat_count": 3,
+      "latency_median_ms": 891.8582000005699,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0037",
+      "repeat_count": 3,
+      "latency_median_ms": 915.2603000002273,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.1
+    },
+    {
+      "query_id": "q_0038",
+      "repeat_count": 3,
+      "latency_median_ms": 924.6251000004122,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0039",
+      "repeat_count": 3,
+      "latency_median_ms": 929.2958000005456,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0040",
+      "repeat_count": 3,
+      "latency_median_ms": 922.2367000002123,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 1.0
+    },
+    {
+      "query_id": "q_0041",
+      "repeat_count": 3,
+      "latency_median_ms": 919.2006999983278,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05263157894736842
+    },
+    {
+      "query_id": "q_0042",
+      "repeat_count": 3,
+      "latency_median_ms": 938.7922000023536,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05263157894736842
+    },
+    {
+      "query_id": "q_0043",
+      "repeat_count": 3,
+      "latency_median_ms": 905.375999998796,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05555555555555555
+    },
+    {
+      "query_id": "q_0044",
+      "repeat_count": 3,
+      "latency_median_ms": 923.4845999999379,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0045",
+      "repeat_count": 3,
+      "latency_median_ms": 922.664599998825,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.10526315789473684
+    },
+    {
+      "query_id": "q_0046",
+      "repeat_count": 3,
+      "latency_median_ms": 903.2087000014144,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 1.0
+    },
+    {
+      "query_id": "q_0047",
+      "repeat_count": 3,
+      "latency_median_ms": 901.6154999990249,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.0
+    },
+    {
+      "query_id": "q_0048",
+      "repeat_count": 3,
+      "latency_median_ms": 913.6275000018941,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.0
+    },
+    {
+      "query_id": "q_0049",
+      "repeat_count": 3,
+      "latency_median_ms": 922.0781999974861,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0050",
+      "repeat_count": 3,
+      "latency_median_ms": 910.5964999980642,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0051",
+      "repeat_count": 3,
+      "latency_median_ms": 923.857499998121,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0052",
+      "repeat_count": 3,
+      "latency_median_ms": 922.1358000031614,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0053",
+      "repeat_count": 3,
+      "latency_median_ms": 904.0789000027871,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05263157894736842
+    },
+    {
+      "query_id": "q_0054",
+      "repeat_count": 3,
+      "latency_median_ms": 948.8710000005085,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0055",
+      "repeat_count": 3,
+      "latency_median_ms": 955.4745999994338,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05555555555555555
+    },
+    {
+      "query_id": "q_0056",
+      "repeat_count": 3,
+      "latency_median_ms": 931.5287999997963,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0057",
+      "repeat_count": 3,
+      "latency_median_ms": 940.5409999999392,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0058",
+      "repeat_count": 3,
+      "latency_median_ms": 928.2930999979726,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.0
+    },
+    {
+      "query_id": "q_0059",
+      "repeat_count": 3,
+      "latency_median_ms": 982.4529999968945,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    },
+    {
+      "query_id": "q_0060",
+      "repeat_count": 3,
+      "latency_median_ms": 947.3313999988022,
+      "quality_run_repeat": 1,
+      "status": "ok",
+      "degraded": true,
+      "ranking_stable": true,
+      "judged_at_20": 0.05
+    }
+  ]
+}

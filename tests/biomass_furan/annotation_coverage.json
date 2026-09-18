@@ -1,0 +1,11 @@
+{
+  "expected_pairs": 303960,
+  "judged_pairs": 351,
+  "unjudged_pairs": 303609,
+  "coverage": 0.001154757204895381,
+  "complete_first_pass": false,
+  "unresolved_conflicts": 0,
+  "human_review": "not_completed",
+  "AI_second_pass": "pending",
+  "qrels_policy": "Only explicit judgments. Omitted pairs are UNJUDGED, never implicit zero."
+}

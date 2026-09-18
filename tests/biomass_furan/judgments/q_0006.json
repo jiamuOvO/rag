@@ -1,0 +1,997 @@
+{
+ "query_id": "q_0006",
+ "judgments": [
+  {
+   "doc_id": "chk_004872a39e68d62197beecad",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体（呋喃二醇、DHMFA 等）的合成综述，化学品为 HMF 衍生物，与本题糠醛无关。"
+  },
+  {
+   "doc_id": "chk_017a88f8b75cc965b713b25a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质燃烧气溶胶文献引用，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_02678fb3447ecc340999aceb",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究戊糖-rich 玉米秸秆水解液在 MIBK/甲苯双相体系(H2SO4)中制糠醛，同为戊糖/木糖→糠醛，但体系不同，未含本题时间曲线。"
+  },
+  {
+   "doc_id": "chk_077f5f075e635728c9c0c581",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇 2019 SnCl4/EMIMBr 论文的相邻内容（不同离子液体对木糖脱水的影响，Fig 4），但不含木聚糖时间曲线。"
+  },
+  {
+   "doc_id": "chk_0879278597a2dfac660d3cf4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质燃烧棕碳(BrC)光学吸收文献引用，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_09870818003888eb45bbed02",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：负载型金/银催化剂选择性氧化 HMF 制 FDCA/HFCA，化学品为 HMF 而非糠醛。"
+  },
+  {
+   "doc_id": "chk_0ce42a4e71a36b3f4ad7b6a2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质燃烧气溶胶 CO2 背景浓度文献引用，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_0d562834c99f8f680459202b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体聚合物论文的文献引用列表，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_0d845b313cae5a2ed8d54d05",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "微波辅助木糖脱水制糠醛（绿色溶剂双相体系 Table 7），同为木糖→糠醛，但体系不同，未含本题时间曲线。"
+  },
+  {
+   "doc_id": "chk_0eed7cc703fcf9562d3c108c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体聚合物论文的文献引用列表，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_0fb5de6208b939b22f5388a4",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象为木糖/葡萄糖混合物及桦木屑在 ChCl/GA DES/MIBK 中制糠醛与 HMF，同属木糖→糠醛，但体系不同，未含本题时间曲线。"
+  },
+  {
+   "query_id": "q_0006",
+   "doc_id": "chk_146ef0a2692f27a972ce10dc",
+   "relevance": 0,
+   "reason": "doc3: xylose biphasic solvent study, no xylan time course; doc4: xylose catalyst screening, no xylan time course; doc5: literature comparison table, no xylan time course",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "9f7c7eb066d852326c78c09c613df7baf2238618e8d2aa50710b461ca104a429"
+  },
+  {
+   "doc_id": "chk_1479ccae3c6c085f7245baa3",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "综述半纤维素/木聚糖/木糖脱水制糠醛的进展（磷酸钽催化剂），同一研究对象，但未含本题体系时间曲线。"
+  },
+  {
+   "doc_id": "chk_14a96c725c5947bb2ccd72fa",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体聚合物论文的文献引用列表，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_150384b1552f24de48b853bd",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体聚合物论文的文献引用列表，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_1759d55f26111cb779e1d610",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇 2019 SnCl4/EMIMBr 论文的相邻内容（Fig 1 催化剂、Fig 2 催化剂用量影响），但不含木聚糖时间曲线。"
+  },
+  {
+   "doc_id": "chk_18042855d80521705888fa62",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质燃烧痕量气体与气溶胶排放研究，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_1c6ab83696da977fc3cb5dc2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "综述半纤维素/木聚糖/木糖脱水制糠醛的进展（Nafion 等/xylan 55%），同一研究对象，但未含本题体系时间曲线。"
+  },
+  {
+   "doc_id": "chk_1ce9a8a9b79ea2c82fa122a0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：木质素在木质纤维素转化中的作用及预处理策略综述，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_2340be417303afa6db1f7cca",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "综述半纤维素/木聚糖/木糖脱水制糠醛的进展（Amberlyst 等），同一研究对象，但未含本题体系时间曲线。"
+  },
+  {
+   "doc_id": "chk_2554c51157cea048e651e294",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象同为木聚糖→糠醛，但属 2021 DES+卤盐体系（LiBr/NaBr 筛选），与本题体系不同，未含特指时间曲线。"
+  },
+  {
+   "doc_id": "chk_28740ca32bda2bbdff408b97",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质燃烧气溶胶家庭炉灶研究引用，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_29086f2b93cb4cbfe6092a53",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇 2019 SnCl4/EMIMBr 论文的相邻内容（引言：木聚糖水解背景），但不含木聚糖时间曲线。"
+  },
+  {
+   "doc_id": "chk_2d6e337398d098e0ad40e335",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质燃烧气溶胶实验室模拟文献引用，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_2e78311dd1ccdf9a5161ed82",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇 2019 SnCl4/EMIMBr 论文的相邻内容（实验部分：材料、HPLC 分析方法），但不含木聚糖时间曲线。"
+  },
+  {
+   "doc_id": "chk_305f10f1a75a63236a4c181e",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象为木糖/葡萄糖混合物及桦木屑在 ChCl/GA DES/MIBK 中制糠醛与 HMF，同属木糖→糠醛，但体系不同，未含本题时间曲线。"
+  },
+  {
+   "doc_id": "chk_306922c20dcd6feaa1f6b07b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：负载型金/银催化剂选择性氧化 HMF 制 FDCA/HFCA，化学品为 HMF 而非糠醛。"
+  },
+  {
+   "doc_id": "chk_31c973c8e813143fddee05aa",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质燃烧气溶胶 FIREX 文献引用，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "query_id": "q_0006",
+   "doc_id": "chk_342a968c0d214283cba3bbd9",
+   "relevance": 0,
+   "reason": "doc0,2,4: same paper, xylose/temperature/dosage topics; doc1: same paper, corn stalk substrate",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "848fd46ff03c3e81f171d6024e9171ba1c3b38972633a0046afb9f75a7ff2420"
+  },
+  {
+   "doc_id": "chk_3531dd49305f02c95329daf4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：木质纤维素转化为乙酰丙酸，化学品为乙酰丙酸而非糠醛。"
+  },
+  {
+   "query_id": "q_0006",
+   "doc_id": "chk_3802f88572be015e0e26a58d",
+   "relevance": 0,
+   "reason": "doc0,2,4: same paper, xylose/temperature/dosage topics; doc1: same paper, corn stalk substrate",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "848fd46ff03c3e81f171d6024e9171ba1c3b38972633a0046afb9f75a7ff2420"
+  },
+  {
+   "doc_id": "chk_38156e00e1d48f03001310a0",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究戊糖-rich 玉米秸秆水解液在双相体系(H2SO4/MIBK)中制糠醛，同为戊糖/木糖→糠醛，但体系不同，未含本题时间曲线。"
+  },
+  {
+   "query_id": "q_0006",
+   "doc_id": "chk_3966d11a350c894b6c9bab9b",
+   "relevance": 0,
+   "reason": "doc0: same paper but xylose/EMIMBr comparison, no xylan 4 h yield",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "9ec73e245cf6e54b2839cd6d0138c49e0d7e8906689f8bda7bb5b1b605a8679d"
+  },
+  {
+   "doc_id": "chk_3a00a54eb741175b4a899fa7",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体聚合物论文的文献引用列表，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_3d315df887172c19a47cb584",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体聚合物论文的文献引用列表，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_3d3f07ea7f512eb73563c50f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质燃烧气溶胶数据可用性说明，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_3d48d72dc0410a9497865639",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：木质素在木质纤维素转化中的作用及预处理综述的文献列表，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_3dac63a009a1213ba1abaadb",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象同为木聚糖→糠醛，但属 2021 DES+卤盐体系（回收循环 Fig 6），与本题体系不同，未含特指时间曲线。"
+  },
+  {
+   "doc_id": "chk_3f69bf6b3a14097bc389e768",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象为木糖/葡萄糖混合物及桦木屑在 ChCl/GA DES/MIBK 中制糠醛与 HMF，同属木糖→糠醛，但体系不同，未含本题时间曲线。"
+  },
+  {
+   "doc_id": "chk_41f98ed2ab54df4159ff320f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇 2019 SnCl4/EMIMBr 论文的相邻内容（结论/作者贡献/基金），但不含木聚糖时间曲线。"
+  },
+  {
+   "doc_id": "chk_43c8bea86a3ddbf99488e0d6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质概述的文献引用列表，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_4419384458d12e56e17e3a01",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象同为木聚糖→糠醛，但属 2021 DES+卤盐体系（卤盐筛选 Fig 1/2、机理），与本题体系不同，未含特指时间曲线。"
+  },
+  {
+   "doc_id": "chk_445cfd460d3b9c695980ae2c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：负载型金/银催化剂选择性氧化 HMF 制 FDCA/HFCA，化学品为 HMF 而非糠醛。"
+  },
+  {
+   "doc_id": "chk_46c04b549c474d4e4761a3df",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体聚合物论文的文献引用列表，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_49af49c9452445653d68cc61",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质概述中热解过程描述，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_4a14bf60c32c524237f08321",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体（OBMF-H 等）用于生物基聚合物的综述，化学品为 HMF 衍生物，与本题糠醛无关。"
+  },
+  {
+   "doc_id": "chk_4a7ce506aac47c90de848979",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究戊糖-rich 水解液在双相体系中的糠醛产率与分配，同为戊糖/木糖→糠醛，但体系不同，未含本题时间曲线。"
+  },
+  {
+   "doc_id": "chk_4b1a73c63b858b0da2b6e220",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究戊糖-rich 玉米秸秆水解液在双相体系(H2SO4/MIBK)中制糠醛，同为戊糖/木糖→糠醛，但体系不同，未含本题时间曲线。"
+  },
+  {
+   "doc_id": "chk_4bf9c07e207731f07720a1fb",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：木质纤维素制 5-氯甲基糠醛（CMF）及其下游集成，化学品为 CMF 而非糠醛。"
+  },
+  {
+   "doc_id": "chk_4c284eac482a133d335c7ca7",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：木质纤维素制 5-氯甲基糠醛（CMF）及其双相体系，化学品为 CMF 而非糠醛。"
+  },
+  {
+   "doc_id": "chk_4f4393d00a3e8fb92661c408",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "微波辅助木糖脱水制糠醛的响应面优化（Table 5），同为木糖→糠醛，但体系不同，未含本题时间曲线。"
+  },
+  {
+   "doc_id": "chk_4f86dedd60c3fd056c61dc03",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象同为木聚糖→糠醛，但属 2021 DES+卤盐体系（回收/再利用、纯度表征），与本题体系不同，未含特指时间曲线。"
+  },
+  {
+   "doc_id": "chk_4fe218a522d1bcd3416398b4",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究戊糖-rich 玉米秸秆水解液在 MIBK/甲苯双相体系(H2SO4)中制糠醛，同为戊糖/木糖→糠醛，但体系不同，未含本题时间曲线。"
+  },
+  {
+   "doc_id": "chk_50b0b12804ccb37138207b48",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究戊糖-rich 水解液在双相体系（无溶剂/树脂）中的糠醛产率，同为戊糖/木糖→糠醛，但体系不同，未含本题时间曲线。"
+  },
+  {
+   "doc_id": "chk_54259a94c25b989894d8d408",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质燃烧气溶胶黑碳测量文献引用，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_54f75b6ae27983536bad5b0f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇 2019 SnCl4/EMIMBr 论文的相邻内容（参考文献列表），但未含木聚糖时间曲线。"
+  },
+  {
+   "doc_id": "chk_5539978d73851dcba7b48239",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象同为木聚糖→糠醛，但属 2021 DES+卤盐体系（RSM 优化），与本题体系不同，未含特指时间曲线。"
+  },
+  {
+   "doc_id": "chk_57a33a6e0c4a7bc9c29181aa",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象为木糖→糠醛的定量测定（溴酸盐法），同属木糖→糠醛，但为分析化学老文献，未含本题时间曲线。"
+  },
+  {
+   "query_id": "q_0006",
+   "doc_id": "chk_612605aa092e6086ebf91cf0",
+   "relevance": 0,
+   "reason": "doc3: xylose biphasic solvent study, no xylan time course; doc4: xylose catalyst screening, no xylan time course; doc5: literature comparison table, no xylan time course",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "9f7c7eb066d852326c78c09c613df7baf2238618e8d2aa50710b461ca104a429"
+  },
+  {
+   "doc_id": "chk_647773cf5c3694c2d7fabd49",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：商用糠醛的历史/性质与早期德文化学文献引用，与本题 2019 年 SnCl4/EMIMBr 体系木聚糖产糠醛的时间曲线无关。"
+  },
+  {
+   "doc_id": "chk_6a628e9a163c0f42f1ae0e45",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质燃烧气溶胶文献引用，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_6b04162c54701f0b52592af7",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质概述的结论与未来展望（生物质能源），与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_6b489fc48561b87d86c62c77",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质燃烧气溶胶论文首页/机构信息，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_6d4d71586ece559fc069b548",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "综述半纤维素/木聚糖/木糖脱水制糠醛的进展（固体酸/GVL/MOF 等），同一研究对象，但未含本题体系时间曲线。"
+  },
+  {
+   "doc_id": "chk_6d7825a1470eefbac422527d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质燃烧棕碳(BrC)排放文献引用，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_6f25f7af1a297c17eaced5f2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象同为木聚糖→糠醛，但属 2021 DES+卤盐体系（卤盐筛选与机理），与本题体系不同，未含特指时间曲线。"
+  },
+  {
+   "doc_id": "chk_6f6d68a5a45839c004c2b57b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "综述半纤维素/木聚糖/木糖脱水制糠醛的进展（沸石/ZSM-5），同一研究对象，但未含本题体系时间曲线。"
+  },
+  {
+   "doc_id": "chk_727e6b43976fc0249e25072e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：商用糠醛的历史德文化学文献引用，与本题 2019 年 SnCl4/EMIMBr 体系木聚糖产糠醛的时间曲线无关。"
+  },
+  {
+   "doc_id": "chk_754b18ffbaea380476fcdfc1",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "综述半纤维素/木聚糖/木糖脱水制糠醛的进展，同一研究对象，但未含本题 SnCl4/EMIMBr 体系下木聚糖 1 h/4 h 时间曲线。"
+  },
+  {
+   "doc_id": "chk_76e8cf8001bf01288fd488c1",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇 2019 SnCl4/EMIMBr 论文的相邻内容（Table 3 与其他体系对比、木糖水含量影响 Fig 8），但不含木聚糖时间曲线。"
+  },
+  {
+   "doc_id": "chk_7943e517bfdbc2b671b18f93",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇 2019 SnCl4/EMIMBr 论文的相邻内容（HPLC 方法与结论），但不含木聚糖时间曲线。"
+  },
+  {
+   "doc_id": "chk_7af8d99455516ec32196a11d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：木质纤维素转化为乙酰丙酸，化学品为乙酰丙酸而非糠醛。"
+  },
+  {
+   "doc_id": "chk_7c2da6281ea773c3e5690c8a",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "综述半纤维素/木聚糖/木糖脱水制糠醛的进展（CHA 型沸石/Sn-beta），同一研究对象，但未含本题体系时间曲线。"
+  },
+  {
+   "doc_id": "chk_7d08e37bd30efafebc397512",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体聚合物论文的文献引用列表，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_7e95ba606df8fc74de41ef1c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：负载型金/银催化剂选择性氧化 HMF 制 FDCA/HFCA，化学品为 HMF 而非糠醛。"
+  },
+  {
+   "doc_id": "chk_7ef0cc547f306c6251e6e5ed",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "综述半纤维素/木聚糖/木糖脱水制糠醛的进展（磺化催化剂/xylan），同一研究对象，但未含本题体系时间曲线。"
+  },
+  {
+   "doc_id": "chk_7f94c0223389f84105b2372e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：戊糖生物质制呋喃基类含氧燃料添加剂的文献列表，与本题糠醛无关。"
+  },
+  {
+   "doc_id": "chk_805606cd7cc968b6d9589090",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体聚合物论文的文献引用列表，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_80c6f5afc46e29f7ef6620c4",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究戊糖-rich 玉米秸秆水解液在双相体系中的糠醛产率，同为戊糖/木糖→糠醛，但体系不同，未含本题时间曲线。"
+  },
+  {
+   "doc_id": "chk_81f471e4b99332ac2fa76c4c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质概述中的发酵/产甲烷内容，与本题木聚糖催化产糠醛的时间曲线无关。"
+  },
+  {
+   "doc_id": "chk_8224f04faefc92df16d1e83f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：商用糠醛的历史德文化学文献引用，与本题 2019 年 SnCl4/EMIMBr 体系木聚糖产糠醛的时间曲线无关。"
+  },
+  {
+   "doc_id": "chk_82b527892bdcefa56cd47a00",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体聚合物论文的文献引用列表，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "query_id": "q_0006",
+   "doc_id": "chk_860f2c5ee9be82337457fb80",
+   "relevance": 0,
+   "reason": "doc0,2,4: same paper, xylose/temperature/dosage topics; doc1: same paper, corn stalk substrate",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "848fd46ff03c3e81f171d6024e9171ba1c3b38972633a0046afb9f75a7ff2420"
+  },
+  {
+   "doc_id": "chk_86b167183749d175d603d3aa",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：戊糖生物质制呋喃基类含氧燃料添加剂的文献列表，与本题糠醛无关。"
+  },
+  {
+   "doc_id": "chk_86d0fa326f0392661191cc1c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象同为木聚糖→糠醛，但属 2021 DES+碱金属卤盐体系（微波），与本题 2019 SnCl4/EMIMBr 体系不同，未含特指时间曲线。"
+  },
+  {
+   "doc_id": "chk_89ab2c0704519da97b95c0c2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "水热预处理联产糠醛与纤维素纳米晶的研究，同属生物质→糠醛，但未含本题 SnCl4/EMIMBr 体系与时间曲线。"
+  },
+  {
+   "doc_id": "chk_8b24628a1d7001d6022ebc69",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：真实生物质制 5-羟甲基糠醛（HMF），化学品为 HMF 而非糠醛。"
+  },
+  {
+   "doc_id": "chk_8b5e454a5689a8ab08b1bb5b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "微波辅助木糖脱水制糠醛的响应面优化，同为木糖→糠醛，但体系（FeCl3/甲酸/邻硝基甲苯等）不同，未含本题时间曲线。"
+  },
+  {
+   "doc_id": "chk_8cc5cec9a375be2393d7efb8",
+   "relevance": 3,
+   "evidence_quotes": [
+    "As shown in Figure 9, the furfural yield was 41.7% after 30 min reaction. The maximum furfural yield of 50.1% was obtained at 1 h. When the reaction time was prolonged to 4 h, the furfural yield declined to 33.0%."
+   ],
+   "reason": "该块直接给出木聚糖在 EMIMBr/SnCl4 体系下 1 h 达 50.1%、延长至 4 h 降至 33.0% 的完整时间曲线，单独即可回答问题。"
+  },
+  {
+   "doc_id": "chk_8f55674ebe7e70e4832558e8",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体（BAMF/CMF 等）用于生物基聚合物的综述，化学品为 HMF 衍生物，与本题糠醛无关。"
+  },
+  {
+   "doc_id": "chk_902176d3b48c39dea12ba0cc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质燃烧气溶胶文献引用，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_91f8be86e627870a3e0a9794",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体聚合物论文的文献引用列表，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_93295b4a9403b07317e13bb4",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "综述半纤维素/木聚糖/木糖脱水制糠醛的进展（硅酸盐催化剂），同一研究对象，但未含本题体系时间曲线。"
+  },
+  {
+   "doc_id": "chk_9a3c0a06b0b73b8cd9ca40f2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "综述半纤维素/木聚糖/木糖脱水制糠醛的进展（硅酸盐催化剂），同一研究对象，但未含本题体系时间曲线。"
+  },
+  {
+   "doc_id": "chk_9abd8aeac6fdd2526437a2aa",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质燃烧排放因子汇编，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_9e7c81fe4b422c2de07889ca",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象为木糖→糠醛的定量测定（溴酸盐法），同属木糖→糠醛，但为分析化学老文献，未含本题时间曲线。"
+  },
+  {
+   "doc_id": "chk_9ece375829e570a7bdced2bc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：真实生物质制 5-羟甲基糠醛（HMF），化学品为 HMF 而非糠醛。"
+  },
+  {
+   "doc_id": "chk_9f3a49171a889f8970fcac50",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：碱/碱土金属(AAEMs)对木质纤维素生物质热解的催化作用综述，与本题木聚糖在 SnCl4/EMIMBr 体系产糠醛的时间曲线无关。"
+  },
+  {
+   "doc_id": "chk_9fdaa3712627d2d2ecba0d46",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：木质素在木质纤维素转化中的作用及 DES 预处理综述，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_a31155b8bf9d90dce8836014",
+   "relevance": 3,
+   "evidence_quotes": [
+    "As shown in Figure 9, the furfural yield was 41.7% after 30 min reaction. The maximum furfural yield of 50.1% was obtained at 1 h. When the reaction time was prolonged to 4 h, the furfural yield declined to 33.0%."
+   ],
+   "reason": "该块直接给出木聚糖在 EMIMBr/SnCl4 体系下 1 h 达 50.1%、延长至 4 h 降至 33.0% 的完整时间曲线，单独即可回答问题。"
+  },
+  {
+   "doc_id": "chk_a37e1b36ef5ff6eab6426f52",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体聚合物论文的文献引用列表，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_a4be2b0e6154e2a3e03a504d",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇 2019 SnCl4/EMIMBr 论文的相邻内容（Fig 3 配对催化剂、Table 1 SnCl4/MgCl2），但不含木聚糖时间曲线。"
+  },
+  {
+   "doc_id": "chk_a84f6e81dd1ad953c3c6a748",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：负载型金/银催化剂选择性氧化 5-羟甲基糠醛（HMF）制 FDCA/HFCA，化学品为 HMF 而非糠醛。"
+  },
+  {
+   "doc_id": "chk_aadb1f108dc4034b348b7a36",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象同为木聚糖→糠醛，但属 2021 DES+卤盐体系（低温卤盐筛选），与本题体系不同，未含特指时间曲线。"
+  },
+  {
+   "doc_id": "chk_af1b2e8649d73a92e75f2c61",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "微波辅助木糖脱水制糠醛的响应面优化，同为木糖→糠醛，但体系不同，未含本题时间曲线。"
+  },
+  {
+   "doc_id": "chk_afbc3dcae72db962c4be8e09",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体（FDCA、BHMF 等）用于生物基聚合物的综述，化学品为 HMF 衍生物，与本题糠醛无关。"
+  },
+  {
+   "doc_id": "chk_b0477a031f993d1b1a7a33a9",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体聚合物论文的文献引用列表，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_b1082008cd4574c2ea73d755",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：负载型金/银催化剂选择性氧化 HMF 制 FDCA/HFCA，化学品为 HMF 而非糠醛。"
+  },
+  {
+   "doc_id": "chk_b474bce8d985725a42a73f21",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体聚合物的文献引用列表，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_b55be9df23f122b527b2c8d3",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体聚合物论文的文献引用列表，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_b7b71e137dbe9fd058a9023a",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究戊糖-rich 水解液在双相体系中的糠醛产率（反应时间/温度影响），同为戊糖/木糖→糠醛，但体系不同，未含本题时间曲线。"
+  },
+  {
+   "doc_id": "chk_ba38a5eb11a7d2b01f992079",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象同为木聚糖→糠醛，但属 2021 DES+卤盐体系（低温 LiCl/LiBr 筛选），与本题体系不同，未含特指时间曲线。"
+  },
+  {
+   "doc_id": "chk_baa9bfa115cb1a71967530ee",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象同为木聚糖→糠醛，但属 2021 DES+卤盐体系（RSM 响应面），与本题体系不同，未含特指时间曲线。"
+  },
+  {
+   "doc_id": "chk_bb2350573b224a69783b7f13",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象同为木聚糖→糠醛，但属 2021 DES+卤盐体系（引言/背景、xylan 75% 收率），与本题体系不同，未含特指时间曲线。"
+  },
+  {
+   "doc_id": "chk_be64aec3ad0d55b2758489f6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体（BHMF 等）用于生物基聚合物的综述，化学品为 HMF 衍生物，与本题糠醛无关。"
+  },
+  {
+   "doc_id": "chk_c115fc48e033db7f2ca20d86",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象为木糖/葡萄糖混合物及桦木屑在 ChCl/GA DES/MIBK 中制糠醛与 HMF，同属木糖→糠醛，但体系不同，未含本题时间曲线。"
+  },
+  {
+   "doc_id": "chk_c1a2e291f033734ca2ba63ee",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "综述半纤维素/木聚糖/木糖脱水制糠醛的进展（NaCl/硫酸盐等），同一研究对象，但未含本题体系时间曲线。"
+  },
+  {
+   "doc_id": "chk_c319941b68139ebac2a28cfb",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：商用糠醛的历史德文化学文献引用，与本题 2019 年 SnCl4/EMIMBr 体系木聚糖产糠醛的时间曲线无关。"
+  },
+  {
+   "query_id": "q_0006",
+   "doc_id": "chk_c637afc692e7621538a73442",
+   "relevance": 0,
+   "reason": "doc3: xylose biphasic solvent study, no xylan time course; doc4: xylose catalyst screening, no xylan time course; doc5: literature comparison table, no xylan time course",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "9f7c7eb066d852326c78c09c613df7baf2238618e8d2aa50710b461ca104a429"
+  },
+  {
+   "doc_id": "chk_c72c272a5b8a5dd6b62a796d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：戊糖生物质制呋喃基类含氧燃料添加剂（2-甲基呋喃、乙酰丙酸甲酯等）的文献列表，与本题糠醛无关。"
+  },
+  {
+   "doc_id": "chk_c85488d90bdf2185f1eaf61b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "磷酸分馏联产糠醛的研究（1H NMR 定量、DOE），同属木糖/木质纤维素→糠醛，但体系不同，未含本题时间曲线。"
+  },
+  {
+   "doc_id": "chk_c8b24bcdb0df75aebbb4b341",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体聚合物论文的文献引用列表，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_ca0a6ac437e1d20b5450becc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体聚合物论文的文献引用列表（空内容），与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_cac3807d9a18c151af2918db",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇 2019 SnCl4/EMIMBr 论文的相邻内容（Table 1 SnCl4/MgCl2 用量及 Fig 4 离子液体筛选），但不含木聚糖时间曲线。"
+  },
+  {
+   "doc_id": "chk_d19eef13656ef5f770ea2acf",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体聚合物论文的文献引用列表，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_d32e7ef117d91f85b89a0634",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：木质素在木质纤维素转化中的作用及 DES 预处理综述，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_d3cc39d0831da1d7912da50f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "微波辅助木糖脱水制糠醛的响应面优化，同为木糖→糠醛，但体系不同，未含本题时间曲线。"
+  },
+  {
+   "doc_id": "chk_d5a0855a9de310453948713b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇 2019 SnCl4/EMIMBr 论文的相邻内容（Fig 4、Table 2 双相体系对木糖脱水的影响），但不含木聚糖时间曲线。"
+  },
+  {
+   "doc_id": "chk_d92b875f02939ab430bf4c05",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质燃烧国内 biofuel 排放估计，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_de436d161505414f91c4bb67",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "综述半纤维素/木聚糖/木糖脱水制糠醛的进展（离子交换树脂/氮吹），同一研究对象，但未含本题体系时间曲线。"
+  },
+  {
+   "doc_id": "chk_de6d867f6158072b73bf5cb8",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象同为木聚糖→糠醛，但属 2021 DES+卤盐体系（引言/背景），与本题体系不同，未含特指时间曲线。"
+  },
+  {
+   "doc_id": "chk_de8ed6767b301e54f3952681",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇 2019 SnCl4/EMIMBr 论文的相邻内容（SnCl4 与其他氯化物配对催化剂），但不含木聚糖时间曲线。"
+  },
+  {
+   "doc_id": "chk_e1016eacd88751fb5899db1f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象同为木聚糖→糠醛，但属 2021 DES+卤盐论文的补充材料/方法，与本题体系不同，未含特指时间曲线。"
+  },
+  {
+   "doc_id": "chk_e15e80e22a6d4c9e42b7aad2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "综述半纤维素/木聚糖/木糖脱水制糠醛的进展，同一研究对象，但未含本题 SnCl4/EMIMBr 体系下木聚糖 1 h/4 h 时间曲线。"
+  },
+  {
+   "doc_id": "chk_e39a69e4f959cd738e2a4e44",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：光催化糖转化为 5-羟甲基糠醛（HMF），化学品为 HMF 而非糠醛。"
+  },
+  {
+   "doc_id": "chk_e59b9573578a2ef6e31f67e2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象同为木聚糖→糠醛，但属 2021 DES+卤盐体系（卤盐筛选与机理），与本题体系不同，未含特指时间曲线。"
+  },
+  {
+   "doc_id": "chk_e769e00a4aa1cbe71b7a02cf",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象同为木聚糖→糠醛，但属 2021 DES+卤盐体系（回收循环、材料方法），与本题体系不同，未含特指时间曲线。"
+  },
+  {
+   "doc_id": "chk_e844b144578a6a376d6379fd",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质燃烧排放因子汇总表，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "query_id": "q_0006",
+   "doc_id": "chk_eb28ef77eb4b424fe27b2883",
+   "relevance": 1,
+   "reason": "L1b: same paper's xylan time-profile figure in EMIMBr/SnCl4, the data basis for the asked 1 h vs 4 h yield trend.",
+   "evidence_quotes": [
+    "Figure 9. Time profile for the conversion of xylan to furfural in the EMIMBr/SnCl4 system. Reaction conditions: xylan 200 mg (1.5 mmol, based on monosaccharide units); 1000 mg of EMIMBr; molar ratio of SnCl4:monosaccharide = 1: 10; 130 ◦C; 1 h."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "848fd46ff03c3e81f171d6024e9171ba1c3b38972633a0046afb9f75a7ff2420",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "通读全块：只有 Figure 9 的图注（木聚糖时间曲线）与 Figure 10 图注、以及加盐酸助催化剂的讨论（54.6% vs 54.5%）。必需事实的 50.1%（1 h）与 33.0%（4 h）两个数值在块内完全不出现，时间-收率趋势本身也未以文字给出。图注虽指向该趋势的数据来源，但不构成对必需事实的直接支持。块与题目同论文、同体系（EMIMBr/SnCl4）、同原料（xylan），只是条件（含水量、是否加酸）不同 → 归 L1a『同体系不同条件』= 1。旧判 2 过高，且旧理由自称 L1b（1 级类目）与所标 2 级自相矛盾。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "doc_id": "chk_eb4f6bb323f30e764139c04d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：真实生物质制 5-羟甲基糠醛（HMF），化学品为 HMF 而非糠醛。"
+  },
+  {
+   "doc_id": "chk_ed3664eab04395be151ede7f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "综述半纤维素/木聚糖/木糖脱水制糠醛的进展（杂多酸/双相体系），同一研究对象，但未含本题体系时间曲线。"
+  },
+  {
+   "doc_id": "chk_ededecc41c568deaebb1de15",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质燃烧气溶胶的 OM/OC 比值文献引用，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "query_id": "q_0006",
+   "doc_id": "chk_ee4f714d67d858f105a035d3",
+   "relevance": 0,
+   "reason": "doc0,2,4: same paper, xylose/temperature/dosage topics; doc1: same paper, corn stalk substrate",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "848fd46ff03c3e81f171d6024e9171ba1c3b38972633a0046afb9f75a7ff2420"
+  },
+  {
+   "doc_id": "chk_eec4496762bf30d4c915fc71",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象为木糖/葡萄糖混合物及桦木屑在 ChCl/GA DES/MIBK 中制糠醛与 HMF，同属木糖→糠醛，但体系不同，未含本题时间曲线。"
+  },
+  {
+   "doc_id": "chk_f2236acdbe504cf9fe959d28",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：负载型金/银催化剂选择性氧化 HMF 制 FDCA/HFCA，化学品为 HMF 而非糠醛。"
+  },
+  {
+   "doc_id": "chk_f6f89e16f6a5908b981cb4d6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：负载型金/银催化剂选择性氧化 HMF 制 FDCA/HFCA，化学品为 HMF 而非糠醛。"
+  },
+  {
+   "doc_id": "chk_f7fa82331e3c2370b1903e4e",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究戊糖-rich 水解液在双相体系中的糠醛产率（时间/浓度影响），同为戊糖/木糖→糠醛，但体系不同，未含本题时间曲线。"
+  },
+  {
+   "doc_id": "chk_f83cf46e4fb1c05a5b919145",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质燃烧 biofuel 排放文献引用，与本题木聚糖产糠醛无关。"
+  },
+  {
+   "doc_id": "chk_f983f75eb4a6b90fcd52c1fe",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：呋喃单体（Furoin 等）合成综述，化学品为 HMF 衍生物，与本题糠醛无关。"
+  },
+  {
+   "doc_id": "chk_faf230c7f5dbc5b4ffb78333",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：木质纤维素制 5-氯甲基糠醛（CMF）及其双相/半连续体系，化学品为 CMF 而非糠醛。"
+  },
+  {
+   "doc_id": "chk_fbc7a95665f94f660bc1af2c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "研究对象同为木聚糖→糠醛，但属 2021 DES+卤盐体系（LiBr 优化），与本题体系不同，未含特指时间曲线。"
+  },
+  {
+   "doc_id": "chk_ff16da41d84f48fe9a3ab452",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "主题不同：生物质燃烧气溶胶论文首页，与本题木聚糖产糠醛无关。"
+  }
+ ]
+}

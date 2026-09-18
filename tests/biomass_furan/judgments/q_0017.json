@@ -1,0 +1,41 @@
+{
+ "query_id": "q_0017",
+ "judgments": [
+  {
+   "query_id": "q_0017",
+   "doc_id": "chk_305f10f1a75a63236a4c181e",
+   "relevance": 3,
+   "reason": "Directly states the DES is choline chloride with glycolic acid (GA).",
+   "evidence_quotes": [
+    "Choline chloride (ChCl) / glycolic acid (GA) deep eutectic\nsolvent (DES) media with high water content but without any\nadditional\ncatalyst\nare\nintroduced\nin\nfurfural\nand\n5hydroxymethylfurfural (HMF) production."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "972fcb48dd0ae7c142d393d96de517b467fc4dde6adffeb64e98bcf31dbacd6f"
+  },
+  {
+   "query_id": "q_0017",
+   "doc_id": "chk_9f994e2e49ec3c47a5ae2cda",
+   "relevance": 3,
+   "reason": "Same paper's abstract explicitly names glycolic acid as the acid component.",
+   "evidence_quotes": [
+    "Choline chloride (ChCl) / glycolic acid (GA) deep eutectic\nsolvent (DES) media with high water content but without any\nadditional\ncatalyst\nare\nintroduced\nin\nfurfural\nand\n5hydroxymethylfurfural (HMF) production."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "972fcb48dd0ae7c142d393d96de517b467fc4dde6adffeb64e98bcf31dbacd6f"
+  }
+ ]
+}

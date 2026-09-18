@@ -1,0 +1,289 @@
+{
+ "query_id": "q_0035",
+ "judgments": [
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_076b9346fadb8e7dee5524c6",
+   "relevance": 3,
+   "reason": "Directly states the furfural and levulinic acid yields under the optimized co-conversion condition.",
+   "evidence_quotes": [
+    "The furfural \nand LA yields reached 55.9% and 73.6%, respectively, \nwhen the reaction condition was established as 190 °C \nand 100 min."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "a1e2b2e329646a3b956593658a06272382606f2a6c7b1eb0e204a8f75850b264"
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_07b252e04e6faed35bdbf791",
+   "relevance": 0,
+   "reason": "doc2: bibliography only, no experimental data; doc4: different paper, xylose/FeCl3 microwave, no levulinic acid; doc5: different paper, xylose furfural optimization only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "a9f5f5ff5bbdb5ae69c5bee7afd6d6f7c85b50c1fc7f99b712bc151296366e58"
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_1ac4e0f95717f6390272b17e",
+   "relevance": 0,
+   "reason": "doc0: bibliography list, unrelated; doc2: other paper's reference list; doc3: other paper, corn stover furfural only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "a1e2b2e329646a3b956593658a06272382606f2a6c7b1eb0e204a8f75850b264"
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_1dcfb81fc8beb7016efcbcec",
+   "relevance": 0,
+   "reason": "doc2: bibliography only, no experimental data; doc4: different paper, xylose/FeCl3 microwave, no levulinic acid; doc5: different paper, xylose furfural optimization only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "a9f5f5ff5bbdb5ae69c5bee7afd6d6f7c85b50c1fc7f99b712bc151296366e58"
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_36168cf9a6852f62222d69a1",
+   "relevance": 0,
+   "reason": "doc0,2,4: other papers' furfural reviews, no Eucalyptus grandis co-conversion; doc1: Eucalyptus nitens butanol, different system",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "af090e6f9c4e9aab113cb6d116c94d44e94cf2b7eab772c4bfdb2eadafdfacd5"
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_38156e00e1d48f03001310a0",
+   "relevance": 0,
+   "reason": "doc0: bibliography list, unrelated; doc2: other paper's reference list; doc3: other paper, corn stover furfural only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "a1e2b2e329646a3b956593658a06272382606f2a6c7b1eb0e204a8f75850b264"
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_4b1a73c63b858b0da2b6e220",
+   "relevance": 0,
+   "reason": "doc0: bibliography list only; doc2: other paper, corn stover furfural, no LA; doc3: other paper's review of third-party work",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "7210a5dad7b4888156ac521cc5f2a9f12f52009a40fdd4de08570a3701eb2ce6"
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_5c2c23f51048b41b861de97f",
+   "relevance": 0,
+   "reason": "doc2: bibliography only, no experimental data; doc4: different paper, xylose/FeCl3 microwave, no levulinic acid; doc5: different paper, xylose furfural optimization only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "a9f5f5ff5bbdb5ae69c5bee7afd6d6f7c85b50c1fc7f99b712bc151296366e58"
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_6e78c19898b31ac47a034920",
+   "relevance": 0,
+   "reason": "doc0,2,4: other papers' furfural reviews, no Eucalyptus grandis co-conversion; doc1: Eucalyptus nitens butanol, different system",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "af090e6f9c4e9aab113cb6d116c94d44e94cf2b7eab772c4bfdb2eadafdfacd5"
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_6f9e1ddf4e91431e9cfc6c46",
+   "relevance": 3,
+   "reason": "Abstract directly states the optimal co-conversion condition and both yields.",
+   "evidence_quotes": [
+    "The optimal reaction condition for the co-conversion of hemicellulose and cellulose was established as 190 °C and 100 min, from which furfural and levulinic acid were obtained in 55.9% and 73.6% yields, respectively."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "a9f5f5ff5bbdb5ae69c5bee7afd6d6f7c85b50c1fc7f99b712bc151296366e58"
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_aab52ea69a4faea507a0a623",
+   "relevance": 3,
+   "reason": "Directly reports the furfural and levulinic acid yields under the optimal co-conversion condition.",
+   "evidence_quotes": [
+    "The furfural \nand LA yields reached 55.9% and 73.6%, respectively, \nwhen the reaction condition was established as 190 °C \nand 100 min."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "7210a5dad7b4888156ac521cc5f2a9f12f52009a40fdd4de08570a3701eb2ce6"
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_b4a63245687199605240fc88",
+   "relevance": 1,
+   "reason": "L1b: same paper's abstract describing the method, no yield numbers.",
+   "evidence_quotes": [
+    "A two-step process (reductive catalytic fractionation followed by FeCl3 catalysis) allows the fractiona‐\ntion of all the three biopolymers (cellulose, hemicellulose, and lignin) in Eucalyptus biomass"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "a1e2b2e329646a3b956593658a06272382606f2a6c7b1eb0e204a8f75850b264"
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_c75c331598d13d8972edcec5",
+   "relevance": 0,
+   "reason": "doc0,2,4: other papers' furfural reviews, no Eucalyptus grandis co-conversion; doc1: Eucalyptus nitens butanol, different system",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "af090e6f9c4e9aab113cb6d116c94d44e94cf2b7eab772c4bfdb2eadafdfacd5"
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_df3aec9b2824dc7e019e2465",
+   "relevance": 1,
+   "reason": "L1b: same paper's method/data source, but reports a different furfural yield, not the optimal co-conversion values.",
+   "evidence_quotes": [
+    "FeCl3 was superior to other metal chlorides, which gave furfural in 59.9% yield."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "Agent_review_completed",
+   "answerability_conflict": false,
+   "raw_response_id": "a9f5f5ff5bbdb5ae69c5bee7afd6d6f7c85b50c1fc7f99b712bc151296366e58",
+   "review_note": "所问数值缺失；同论文同一转化步骤的数据基础 → L1b = 1；旧判 2 级过高",
+   "review_verdict": "不支持"
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_e820d94c959ca330c769c54c",
+   "relevance": 0,
+   "reason": "doc0: bibliography list only; doc2: other paper, corn stover furfural, no LA; doc3: other paper's review of third-party work",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "7210a5dad7b4888156ac521cc5f2a9f12f52009a40fdd4de08570a3701eb2ce6"
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_ecf7095b4dda7bd7153f74d1",
+   "relevance": 0,
+   "reason": "doc0: bibliography list, unrelated; doc2: other paper's reference list; doc3: other paper, corn stover furfural only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "a1e2b2e329646a3b956593658a06272382606f2a6c7b1eb0e204a8f75850b264"
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_f1ccac9556e6c68bb7e642c7",
+   "relevance": 0,
+   "reason": "doc0,2,4: other papers' furfural reviews, no Eucalyptus grandis co-conversion; doc1: Eucalyptus nitens butanol, different system",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "af090e6f9c4e9aab113cb6d116c94d44e94cf2b7eab772c4bfdb2eadafdfacd5"
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_f51e24d3d48999cd07432194",
+   "relevance": 0,
+   "reason": "doc0: bibliography list only; doc2: other paper, corn stover furfural, no LA; doc3: other paper's review of third-party work",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "7210a5dad7b4888156ac521cc5f2a9f12f52009a40fdd4de08570a3701eb2ce6"
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_fce8c696e1dde260b93bd71e",
+   "relevance": 1,
+   "reason": "L1b: same paper's method/data basis describing the FeCl3 carbohydrate conversion step, without the asked numbers.",
+   "evidence_quotes": [
+    "High retention of cellulose and hemicellulose pulp was also obtained, which \non the treatment with cheaply available FeCl3 catalyst \nled to the formation of 5-HMF, LA and furfural simultaneously."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "7210a5dad7b4888156ac521cc5f2a9f12f52009a40fdd4de08570a3701eb2ce6"
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_fd754a50c4f3510f7ef443fc",
+   "relevance": 3,
+   "reason": "Directly reports the optimal co-conversion condition and both furfural and levulinic acid yields for Eucalyptus grandis integrated biorefinery.",
+   "evidence_quotes": [
+    "the optimal reaction condition for the co-conversion hemicellulose and cellulose was established as 190 °C and 100 min, from which furfural and levulinic acid were obtained in 55.9% and 73.6% yield, respectively."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "af090e6f9c4e9aab113cb6d116c94d44e94cf2b7eab772c4bfdb2eadafdfacd5"
+  }
+ ]
+}

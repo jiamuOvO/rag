@@ -4,7 +4,8 @@ param(
     [string]$HostAddress = "127.0.0.1",
     [ValidateRange(1, 65535)][int]$Port = 8000,
     [switch]$UseSameApiKey,
-    [switch]$SkipModelCheck
+    [switch]$SkipModelCheck,
+    [switch]$Benchmark
 )
 
 $ErrorActionPreference = "Stop"
@@ -107,4 +108,27 @@ if (-not $SkipModelCheck) {
 }
 
 Write-Host "Model endpoint check passed. Starting http://${HostAddress}:$Port/"
-& python -m rag.cli serve --host $HostAddress --port $Port
+if ($Benchmark) {
+    if ($HostAddress -notin @('127.0.0.1', 'localhost', '::1')) {
+        throw 'Benchmark mode must listen on loopback only.'
+    }
+    $BenchmarkRuntime = Join-Path $ProjectDir 'tests\biomass_furan\runtime'
+    New-Item -ItemType Directory -Path $BenchmarkRuntime -Force | Out-Null
+    $BenchmarkTokenFile = Join-Path $BenchmarkRuntime 'bridge_token.txt'
+    $env:RAG_BENCHMARK_TOKEN = [Guid]::NewGuid().ToString('N') + [Guid]::NewGuid().ToString('N')
+    [IO.File]::WriteAllText($BenchmarkTokenFile, $env:RAG_BENCHMARK_TOKEN)
+    $env:PYTHONDONTWRITEBYTECODE = '1'
+    Write-Host 'Local frozen-dataset annotation bridge enabled. Model API keys remain inside this process.'
+}
+else {
+    Remove-Item Env:RAG_BENCHMARK_TOKEN -ErrorAction SilentlyContinue
+}
+try {
+    & python -m rag.cli serve --host $HostAddress --port $Port
+}
+finally {
+    if ($Benchmark) {
+        Remove-Item Env:RAG_BENCHMARK_TOKEN -ErrorAction SilentlyContinue
+        Remove-Item -LiteralPath $BenchmarkTokenFile -Force -ErrorAction SilentlyContinue
+    }
+}

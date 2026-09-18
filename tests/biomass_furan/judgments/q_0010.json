@@ -1,0 +1,912 @@
+{
+ "query_id": "q_0010",
+ "judgments": [
+  {
+   "doc_id": "chk_02226504640a9b57691de93a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_03e2aa51adfd8126c87721a1",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_083a8867f4c7c5edb66d93c5",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_0921979bfaac014c06710156",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇 2023 CMF 论文：反应参数统计显著性分析，相邻内容。"
+  },
+  {
+   "query_id": "q_0010",
+   "doc_id": "chk_09b5d8c989710b94a1f325be",
+   "relevance": 2,
+   "reason": "Same paper's solvent-selection discussion confirming the organic solvent extracts CMF; supports the separation method.",
+   "evidence_quotes": [
+    "The role of the organic solvent is to selectively extract and protect the CMF and furfural formed during the dehydration of saccharides."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "4aca6de859cc8e09bae10c593f3cfe06086a0dcad7ebdbc4c4d72a2778d31956"
+  },
+  {
+   "doc_id": "chk_0bb76253911f093702c027b7",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_0c1b20297373d40dcfa21dc0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Molecules 2018），研究 HMF 从真实生物质的制备，化学品为 5-羟甲基糠醛，与本题 CMF 分离属不同化学品。"
+  },
+  {
+   "query_id": "q_0010",
+   "doc_id": "chk_0f628001cd799973ed030f65",
+   "relevance": 2,
+   "reason": "Same paper's method description of the biphasic immiscible-solvent extraction; supports but does not alone give the full separation rationale.",
+   "evidence_quotes": [
+    "the hydrolysate product stream (aqueous acidic saccharide solution) was placed in a sealed reactor with an organic immiscible solvent to form a biphasic system. This allows for the direct and continuous production of furfural and CMF"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "4aca6de859cc8e09bae10c593f3cfe06086a0dcad7ebdbc4c4d72a2778d31956"
+  },
+  {
+   "doc_id": "chk_0fb5de6208b939b22f5388a4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（ChemistryOpen 2021），研究 DES/MIBK 双相体系制糠醛与 HMF，化学品为糠醛/HMF，非 CMF。"
+  },
+  {
+   "doc_id": "chk_11662de455fbc00eecb0573c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文，研究 HMF 加氢制 MF，仅将 CMF 作卤化中间体提及，主题非 CMF 分离。"
+  },
+  {
+   "query_id": "q_0010",
+   "doc_id": "chk_12f59e5c3a85b3802d537196",
+   "relevance": 0,
+   "reason": "doc0: same paper, analytics/procedures only; doc1: same paper, parameter profiling not separation method; doc3: same paper, temperature screening of DAWN hydrolysate; doc4: same paper, statistical analysis and semicontinuous removal",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "7974913700b5481e9fcc2fa09b0302b0604f569a32b299c2b8c3fde7028ce6fd"
+  },
+  {
+   "doc_id": "chk_14a496bed280a9c11fbf331c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_1bc36aefc4af1fa80a0c37c3",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2011 综述），研究乙酰丙酸及 HMF 制备，与本题 CMF 分离属不同化学品/研究主题。"
+  },
+  {
+   "doc_id": "chk_1e6b960b2811bd8d422f83c0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Nat Commun 2023），研究 HMF 电氧化制 FDCA，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_1e8e7e6939758e9fd0f780b1",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Molecules 2018），研究 HMF 从真实生物质的制备，化学品为 5-羟甲基糠醛，与本题 CMF 分离属不同化学品。"
+  },
+  {
+   "doc_id": "chk_1ec552727ae59cc68862b78b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_1fbbd1cbf251b1b28d0055c9",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇 2023 CMF 论文：预测工况复现与洗涤步骤（96.7% 收率），相邻工艺内容。"
+  },
+  {
+   "doc_id": "chk_234d9e399fa315fc6988ee05",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Molecules 2018），研究 HMF 从真实生物质的制备，化学品为 5-羟甲基糠醛，与本题 CMF 分离属不同化学品。"
+  },
+  {
+   "doc_id": "chk_239ee83543f5d89977f53bcd",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_2757014d17432387f6878143",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文，研究 HMF 加氢制 MF，仅将 CMF 作卤化中间体提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_27e71a7f418b0bd0a2dfe071",
+   "relevance": 3,
+   "evidence_quotes": [
+    "These furanic compounds are obtained using a biphasic system composed of the saccharide acidic solution and a nonmiscible organic solvent, in which the CMF and furfural were continuously extracted, limiting the contact time of these furanics with the strong acid present in the aqueous phase. By doing so, the separation of furanics in the organic solvent from the acid becomes a simple phase separation."
+   ],
+   "reason": "同篇 2023 CMF 论文：陈述 CMF 在不混溶有机溶剂双相体系中连续萃取、分离即为简单相分离，直接给出本题分离方法。",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 3,
+    "changed": false,
+    "explanation": "必需事实『用不混溶有机溶剂原位萃取 CMF』被逐字覆盖（biphasic system + nonmiscible organic solvent + CMF continuously extracted），并交代了分离即为简单相分离、有机溶剂可蒸发回用。块来源 paper_d1a4e8bfc7c58b30dda482f2 即题目点名的 2023 CMF 论文，满足硬性来源限定 → 3，维持原判。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "doc_id": "chk_29c7e6f2522d745a3203e0df",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_2abf12ab9e60d0b4219f4658",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_2b7b4fb921f6412af5f9f0a0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_2d8461f5a49e2fe551494e3f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2011 综述），研究乙酰丙酸及 HMF 制备，与本题 CMF 分离属不同化学品/研究主题。"
+  },
+  {
+   "doc_id": "chk_305f10f1a75a63236a4c181e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（ChemistryOpen 2021），研究 DES/MIBK 双相体系制糠醛与 HMF，化学品为糠醛/HMF，非 CMF。"
+  },
+  {
+   "doc_id": "chk_336ca5fa1446dafb2afa5e0c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_34018350f5510abb45085aed",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（ChemistryOpen 2021），研究 DES/MIBK 双相体系制糠醛与 HMF，化学品为糠醛/HMF，非 CMF。"
+  },
+  {
+   "doc_id": "chk_3531dd49305f02c95329daf4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2011 综述），研究乙酰丙酸及 HMF 制备，与本题 CMF 分离属不同化学品/研究主题。"
+  },
+  {
+   "doc_id": "chk_3e028900b59f4839685a65fe",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_3f69bf6b3a14097bc389e768",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（ChemistryOpen 2021），研究 DES/MIBK 双相体系制糠醛与 HMF，化学品为糠醛/HMF，非 CMF。"
+  },
+  {
+   "doc_id": "chk_440311d205a14141bdcc54eb",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇 2023 CMF 论文：搅拌/溶剂极性对 CMF 萃取的统计分析，相邻内容。"
+  },
+  {
+   "doc_id": "chk_4595e6c4d81adb9bfbfa4249",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_48f6e7a295e028e3057fbc94",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2011 综述），研究乙酰丙酸及 HMF 制备，与本题 CMF 分离属不同化学品/研究主题。"
+  },
+  {
+   "doc_id": "chk_4be28099a18822fc9bb8f7f6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_4bf9c07e207731f07720a1fb",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇 2023 CMF 论文：糠醛温度筛选，相邻内容（共产物）。"
+  },
+  {
+   "query_id": "q_0010",
+   "doc_id": "chk_4c284eac482a133d335c7ca7",
+   "relevance": 3,
+   "reason": "Directly states CMF separation via in situ extraction into an immiscible organic solvent in biphasic systems.",
+   "evidence_quotes": [
+    "The continuous extraction and protection of these furanics in an immiscible organic solvent drastically reduce the amount of side reactions between the furanics and the acid present in the aqueous phase."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0f7b7a2523ceacbdd6a577aea5d6c3e823e5267a81e29f455a6b6390eeb50943",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 3,
+    "changed": false,
+    "explanation": "必需事实（不混溶有机溶剂原位/连续萃取 CMF）被直接陈述：块内先给出双相体系中不混溶有机溶剂连续萃取的原理，随后又逐字描述本文（Avantium）自身工艺——用卤代有机溶剂在双相反应器中由酸性糖液高产率制取 CMF。块来源即题目点名的 2023 CMF 论文 → 覆盖单一必需事实 → 3，维持原判。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "doc_id": "chk_4d23c61724b8781b5c07f8ed",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（ChemistryOpen 2021），研究 DES/MIBK 双相体系制糠醛与 HMF，化学品为糠醛/HMF，非 CMF。"
+  },
+  {
+   "doc_id": "chk_4e80a6f12f3f76a7f88f2249",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇 2023 CMF 论文：HCl 再浓缩（双压蒸馏）与流程，相邻内容。"
+  },
+  {
+   "doc_id": "chk_4f1003898eb083ea75f9672f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（ChemistryOpen 2021），研究 DES/MIBK 双相体系制糠醛与 HMF，化学品为糠醛/HMF，非 CMF。"
+  },
+  {
+   "doc_id": "chk_5110bc9a0a1054694083b1d3",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇 2023 CMF 论文：反应参数交互作用与预测收率，相邻内容。"
+  },
+  {
+   "doc_id": "chk_5172710f96f1a0d6087cbb44",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇 2023 CMF 论文：半连续与连续流反应器，相邻工艺内容。"
+  },
+  {
+   "doc_id": "chk_528b3c52b19dce51bac27dc2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇 2023 CMF 论文：材料与反应器方法，相邻内容。"
+  },
+  {
+   "query_id": "q_0010",
+   "doc_id": "chk_536a1a39e5c2ce52180c8753",
+   "relevance": 0,
+   "reason": "doc0: same paper, analytics/procedures only; doc1: same paper, parameter profiling not separation method; doc3: same paper, temperature screening of DAWN hydrolysate; doc4: same paper, statistical analysis and semicontinuous removal",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "7974913700b5481e9fcc2fa09b0302b0604f569a32b299c2b8c3fde7028ce6fd"
+  },
+  {
+   "query_id": "q_0010",
+   "doc_id": "chk_53e21392be7f477eb4a192a9",
+   "relevance": 0,
+   "reason": "doc0: same paper, analytics/procedures only; doc1: same paper, parameter profiling not separation method; doc3: same paper, temperature screening of DAWN hydrolysate; doc4: same paper, statistical analysis and semicontinuous removal",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "7974913700b5481e9fcc2fa09b0302b0604f569a32b299c2b8c3fde7028ce6fd"
+  },
+  {
+   "doc_id": "chk_54f75b6ae27983536bad5b0f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文，研究 SnCl4/离子液体催化生物质制糠醛，不同化学品与技术路线，非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_5b0e1ae1881be3cbd9dfff99",
+   "relevance": 2,
+   "evidence_quotes": [
+    "Synthesis of CMF from Main Hydrolysate. In a typical procedure, 1 mL of main hydrolysate and 3 mL of the organic solvent of choice (chlorobenzene, fluorobenzene, bromobenzene, anisole, 2chloroanisole, 1,2-dichloroethane, o-difluorobenzene, toluene, 2phenyldodecane, or dodecane) were introduced in a single Ace glass high-pressure rated tube.",
+    "The reaction was carried out at 80 °C for 3 h under magnetic stirring. After completion, the reactor was cooled to room temperature. The organic phase was then collected, and the remaining aqueous phase was washed with an additional 3 mL of the organic solvent of choice for 1 h under magnetic stirring at room temperature. The organic layer was isolated, and the washing step was repeated twice."
+   ],
+   "reason": "同篇 2023 CMF 论文：CMF 合成典型操作（水解液+不混溶有机溶剂双相、反应后收集有机相），展示原位萃取分离，作为直接证据需与他块组合。"
+  },
+  {
+   "doc_id": "chk_5e3c0995a1535e59d567ea2e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_5f18476dd6997d4ad53f1bff",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2011 综述），研究乙酰丙酸及 HMF 制备，与本题 CMF 分离属不同化学品/研究主题。"
+  },
+  {
+   "doc_id": "chk_63824540a63454f6fa4a1750",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_63e4a872c9d195367460f1fe",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇 2023 CMF 论文：试剂与材料，相邻方法内容。"
+  },
+  {
+   "doc_id": "chk_653e5ce6e8fd82db0eef5e8e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Molecules 2018），研究 HMF 从真实生物质的制备，化学品为 5-羟甲基糠醛，与本题 CMF 分离属不同化学品。"
+  },
+  {
+   "doc_id": "chk_681c4afca859e59b7b33e4f6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "query_id": "q_0010",
+   "doc_id": "chk_699a5e553d3cc4a39e9abd11",
+   "relevance": 0,
+   "reason": "doc0: same paper, analytics/procedures only; doc1: same paper, parameter profiling not separation method; doc3: same paper, temperature screening of DAWN hydrolysate; doc4: same paper, statistical analysis and semicontinuous removal",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "7974913700b5481e9fcc2fa09b0302b0604f569a32b299c2b8c3fde7028ce6fd"
+  },
+  {
+   "doc_id": "chk_6a692c54c3c8b10d47b48299",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Molecules 2018），研究 HMF 从真实生物质的制备，化学品为 5-羟甲基糠醛，与本题 CMF 分离属不同化学品。"
+  },
+  {
+   "doc_id": "chk_6b8ecb76dc5a7a929ffb91d5",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_6da8593fd7404db0db73b7fb",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇 2023 CMF 论文：YUKON 直接转化背景，分离方法在后续章节详述，本段未给分离事实。"
+  },
+  {
+   "doc_id": "chk_6edd0e35a2d6103623e0003c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇 2023 CMF 论文：溶剂选择（Hansen 参数）与萃取作用，相邻内容。"
+  },
+  {
+   "doc_id": "chk_6f1b1012b38d85073b09553e",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇 2023 CMF 论文：引言与关键词，背景内容。"
+  },
+  {
+   "doc_id": "chk_722fb86e2293ae346af849ce",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2011 综述），研究乙酰丙酸及 HMF 制备，与本题 CMF 分离属不同化学品/研究主题。"
+  },
+  {
+   "doc_id": "chk_769a5552cfa15096e77dd9c0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_7705b5ff15f9358010592cae",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_7789e568d430bf89b278e794",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇 2023 CMF 论文：环境评价与卤代溶剂选择性，相邻内容。"
+  },
+  {
+   "doc_id": "chk_7af8d99455516ec32196a11d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2011 综述），研究乙酰丙酸及 HMF 制备，与本题 CMF 分离属不同化学品/研究主题。"
+  },
+  {
+   "query_id": "q_0010",
+   "doc_id": "chk_80cfb9a0ecf7628f4f48e9d3",
+   "relevance": 2,
+   "reason": "Abstract confirms in situ extraction with immiscible organic solvents for CMF separation.",
+   "evidence_quotes": [
+    "CMF is extracted in situ using immiscible organic solvents, allowing for an easy product separation."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "6805d34a8caddee612e084ed9d9564244f7d4fbc5b9e34e48a76f4b765440bd5"
+  },
+  {
+   "doc_id": "chk_82b527892bdcefa56cd47a00",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_836f92f05d88140a7e52aadf",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Molecules 2018），研究 HMF 从真实生物质的制备，化学品为 5-羟甲基糠醛，与本题 CMF 分离属不同化学品。"
+  },
+  {
+   "doc_id": "chk_850603b810150504ed9a2b14",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_86d0fa326f0392661191cc1c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Molecules 2021），研究 DES 中木糖/木聚糖制糠醛，化学品为糠醛，非 CMF。"
+  },
+  {
+   "doc_id": "chk_86dc8cb532b70edbb11eecd2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Nat Commun 2023），研究光催化葡萄糖制 HMF，化学品为 HMF，与本题 CMF 分离不同。"
+  },
+  {
+   "doc_id": "chk_8812eb342f37103548b3697f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Nat Commun 2023），研究光催化葡萄糖制 HMF，化学品为 HMF，与本题 CMF 分离不同。"
+  },
+  {
+   "doc_id": "chk_8841d26c4d31fd9adad2be67",
+   "relevance": 2,
+   "evidence_quotes": [
+    "Synthesis of CMF from Main Hydrolysate. In a typical procedure, 1 mL of main hydrolysate and 3 mL of the organic solvent of choice (chlorobenzene, fluorobenzene, bromobenzene, anisole, 2chloroanisole, 1,2-dichloroethane, o-difluorobenzene, toluene, 2phenyldodecane, or dodecane) were introduced in a single Ace glass high-pressure rated tube.",
+    "The reaction was carried out at 80 °C for 3 h under magnetic stirring. After completion, the reactor was cooled to room temperature. The organic phase was then collected, and the remaining aqueous phase was washed"
+   ],
+   "reason": "同篇 2023 CMF 论文：CMF 合成典型操作（水解液+不混溶有机溶剂双相、反应后收集有机相），展示原位萃取分离，作为直接证据需与他块组合。"
+  },
+  {
+   "doc_id": "chk_8ae832e4d642521b0babb206",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文，研究木糖微波辅助转化制糠醛，化学品为糠醛，非 CMF。"
+  },
+  {
+   "doc_id": "chk_8b24628a1d7001d6022ebc69",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Molecules 2018），研究 HMF 从真实生物质的制备，化学品为 5-羟甲基糠醛，与本题 CMF 分离属不同化学品。"
+  },
+  {
+   "doc_id": "chk_8c1a0912c3f07e984feeddb2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_8f3d43e17075d720ecb75d88",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_8f55674ebe7e70e4832558e8",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_8fe714768a7a2b70dfcce70c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2011 综述），研究乙酰丙酸及 HMF 制备，与本题 CMF 分离属不同化学品/研究主题。"
+  },
+  {
+   "doc_id": "chk_921e6350279965caa3dae239",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（综述），研究半纤维素水解制糠醛，化学品为糠醛，非 CMF。"
+  },
+  {
+   "doc_id": "chk_93c29e9feb4a6c2cf3537c5b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇 2023 CMF 论文：溶剂筛选续（卤代溶剂萃取 CMF），相邻内容。"
+  },
+  {
+   "doc_id": "chk_9eac72ce45999084fea71267",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Molecules 2018），研究 HMF 从真实生物质的制备，化学品为 5-羟甲基糠醛，与本题 CMF 分离属不同化学品。"
+  },
+  {
+   "doc_id": "chk_9ece375829e570a7bdced2bc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Molecules 2018），研究 HMF 从真实生物质的制备，化学品为 5-羟甲基糠醛，与本题 CMF 分离属不同化学品。"
+  },
+  {
+   "doc_id": "chk_9ed5672defdc783ddb63b6ae",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_a3e531cace274d187ae0bba4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_a45ad0e53097f3f66d2379da",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "query_id": "q_0010",
+   "doc_id": "chk_a5b37d7f87977c7c9105ad34",
+   "relevance": 2,
+   "reason": "States in situ extraction of CMF into immiscible organic solvent from saccharide-HCl solution.",
+   "evidence_quotes": [
+    "The CMF extraction into an immiscible organic solvent occurs in situ using biphasic reaction media, which contains the saccharide−HCl solution and the immiscible solvent."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "6805d34a8caddee612e084ed9d9564244f7d4fbc5b9e34e48a76f4b765440bd5"
+  },
+  {
+   "doc_id": "chk_a6b9854c03cbaaebd19907d5",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_a87c633a0b128ca1cdabfc8c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_aa3f41a59a69051d33037973",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（ChemistryOpen 2021），研究 DES/MIBK 双相体系制糠醛与 HMF，化学品为糠醛/HMF，非 CMF。"
+  },
+  {
+   "doc_id": "chk_acbc07592256997a2d95275b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_b6316b7ca8c3d8bb12f16d30",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Molecules 2018），研究 HMF 从真实生物质的制备，化学品为 5-羟甲基糠醛，与本题 CMF 分离属不同化学品。"
+  },
+  {
+   "doc_id": "chk_b6aacb825e4a4869fec3fb20",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_b6dbd7562e2cfb9c0eaccea3",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇 2023 CMF 论文：半连续萃取反应器设计与收率，相邻工艺内容。"
+  },
+  {
+   "doc_id": "chk_ba01af9ffa82c6750e852f27",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇 2023 CMF 论文：结论中工艺集成概述，相邻内容。"
+  },
+  {
+   "query_id": "q_0010",
+   "doc_id": "chk_ba9e5efc47058347fcc22d5a",
+   "relevance": 2,
+   "reason": "Organic phase separation after biphasic conversion of hydrolysate to CMF.",
+   "evidence_quotes": [
+    "These screening reactions were carried out in batch at 80 °C and for 3 h based on previous recommendations from Mascal et al.26,28,59,61 After completion, the reactors were brought to room temperature, and the organic phase was separated for analysis."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "6805d34a8caddee612e084ed9d9564244f7d4fbc5b9e34e48a76f4b765440bd5"
+  },
+  {
+   "doc_id": "chk_bb52b7dc8518331f5aa2a84d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Nat Commun 2023），研究 HMF 电氧化制 FDCA，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_becf195b0c2c578f76b9f66b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇 2023 CMF 论文：双相体系背景与历史，未给本研究分离的直接表述。"
+  },
+  {
+   "doc_id": "chk_c126b5e76878bcd31b557746",
+   "relevance": 2,
+   "evidence_quotes": [
+    "Later, the excess of HCl present in the acidic sugar solution after hydrolysis is enough to produce CMF in high yields using halogenated organic solvents (e.g., chlorobenzene) in biphasic reactors.",
+    "Overall, CMF yields benefit from biphasic systems in which the organic layer can efficiently extract both CMF and HMF."
+   ],
+   "reason": "同篇 2023 CMF 论文：直接给出本研究的 CMF 分离途径为卤代有机溶剂的双相反应器萃取，需与 [4]/[9] 等组合形成完整表述。"
+  },
+  {
+   "doc_id": "chk_c1c69ec04b3141c9e4154bbd",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇 2023 CMF 论文：实验设计（DoE）与统计模型，相邻方法内容。"
+  },
+  {
+   "doc_id": "chk_c5d50be1dad31c6cf407e567",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Nat Commun 2023），研究 Pd-PdO 闪速热解制糠醛，不同催化体系与技术路线，非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_c6e36c89613a88e682e0fc57",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2011 综述），研究乙酰丙酸及 HMF 制备，与本题 CMF 分离属不同化学品/研究主题。"
+  },
+  {
+   "doc_id": "chk_c7ae16148f297c0323c4cd87",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2011 综述），研究乙酰丙酸及 HMF 制备，与本题 CMF 分离属不同化学品/研究主题。"
+  },
+  {
+   "doc_id": "chk_c7b7d600a23b05f53dd5778f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇 2023 CMF 论文：环境影响与原料，相邻内容。"
+  },
+  {
+   "doc_id": "chk_cb4c75078439186c947fefc4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2011 综述），研究乙酰丙酸及 HMF 制备，与本题 CMF 分离属不同化学品/研究主题。"
+  },
+  {
+   "doc_id": "chk_cd5826546f6bc65e4a04996f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_cec9ddb3ac0a44d2c19d3a90",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_d0679e32217a186d855584e8",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2011 综述），研究乙酰丙酸及 HMF 制备，与本题 CMF 分离属不同化学品/研究主题。"
+  },
+  {
+   "doc_id": "chk_d5de1e798f7cec0ccf726404",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Nat Commun 2023），研究光催化葡萄糖制 HMF，化学品为 HMF，与本题 CMF 分离不同。"
+  },
+  {
+   "doc_id": "chk_d844eeb610efca160704d248",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Molecules 2018），研究 HMF 从真实生物质的制备，化学品为 5-羟甲基糠醛，与本题 CMF 分离属不同化学品。"
+  },
+  {
+   "doc_id": "chk_d876de1ee7c6a9c0e67b4370",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_dbc1a0418f2e1559c575949a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Molecules 2018），研究 HMF 从真实生物质的制备，化学品为 5-羟甲基糠醛，与本题 CMF 分离属不同化学品。"
+  },
+  {
+   "doc_id": "chk_dc496ed295591c5ec2e957be",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Nat Commun 2023），研究光催化葡萄糖制 HMF，化学品为 HMF，与本题 CMF 分离不同。"
+  },
+  {
+   "doc_id": "chk_de6d867f6158072b73bf5cb8",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Molecules 2021），研究 DES 中木糖/木聚糖制糠醛，化学品为糠醛，非 CMF。"
+  },
+  {
+   "doc_id": "chk_df8e5c677fc02931a29f1e1b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇 2023 CMF 论文：反应参数分析，提及双相体系但为背景/通用描述，未给本题分离事实。"
+  },
+  {
+   "doc_id": "chk_e28f6f46e6fb8de602a31917",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Nat Commun 2023），研究光催化葡萄糖制 HMF，化学品为 HMF，与本题 CMF 分离不同。"
+  },
+  {
+   "doc_id": "chk_e39a69e4f959cd738e2a4e44",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Nat Commun 2023），研究光催化葡萄糖制 HMF，化学品为 HMF，与本题 CMF 分离不同。"
+  },
+  {
+   "doc_id": "chk_e769e00a4aa1cbe71b7a02cf",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Molecules 2021），研究 DES 中木糖/木聚糖制糠醛，化学品为糠醛，非 CMF。"
+  },
+  {
+   "doc_id": "chk_e9d75fa295d4aa04c826b686",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Molecules 2018），研究 HMF 从真实生物质的制备，化学品为 5-羟甲基糠醛，与本题 CMF 分离属不同化学品。"
+  },
+  {
+   "doc_id": "chk_eb4f6bb323f30e764139c04d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Molecules 2018），研究 HMF 从真实生物质的制备，化学品为 5-羟甲基糠醛，与本题 CMF 分离属不同化学品。"
+  },
+  {
+   "doc_id": "chk_ecf871ff741b6fb42da924a7",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_eeae59b54bc36791d75e7d04",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2011 综述），研究乙酰丙酸及 HMF 制备，与本题 CMF 分离属不同化学品/研究主题。"
+  },
+  {
+   "doc_id": "chk_ef83f9a38d7ec40c887ea0a9",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_f6334e3e233a5be7e5e4b91b",
+   "relevance": 3,
+   "evidence_quotes": [
+    "These furanic compounds are obtained using a biphasic system composed of the saccharide acidic solution and a nonmiscible organic solvent, in which the CMF and furfural were continuously extracted, limiting the contact time of these furanics with the strong acid present in the aqueous phase."
+   ],
+   "reason": "同篇 2023 CMF 论文：陈述 CMF/糠醛在不混溶有机溶剂双相体系中连续萃取，正是本题所问的分离方法。",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 3,
+    "changed": false,
+    "explanation": "同一篇 2023 CMF 论文的重叠块，逐字给出『不混溶有机溶剂 + 连续萃取 CMF + 简单相分离』，必需事实完整覆盖 → 3，维持原判。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "doc_id": "chk_f8468b2d448d2eac6dbda275",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Molecules 2021），研究 DES 中木糖/木聚糖制糠醛，化学品为糠醛，非 CMF。"
+  },
+  {
+   "doc_id": "chk_faf230c7f5dbc5b4ffb78333",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇 2023 CMF 论文：温度筛选与 CMF/糠醛收率曲线，相邻实验内容。"
+  },
+  {
+   "doc_id": "chk_fc58badba5bcf388c56fd560",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_fd17550d2f780db0de305df4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_fe16a3ee4b5d98a625768525",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（Nat Commun 2023），研究 HMF 电氧化制 FDCA，主题非 CMF 分离。"
+  },
+  {
+   "doc_id": "chk_fe777727713079a4111f8b65",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "来自不同论文（2024 综述），研究糠喃单体（FDCA/BHMF 等）聚合应用，CMF 仅作胺化原料提及，主题非 CMF 分离。"
+  }
+ ]
+}

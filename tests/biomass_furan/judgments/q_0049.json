@@ -1,0 +1,350 @@
+{
+ "query_id": "q_0049",
+ "judgments": [
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_01a6bca8563f302db9585444",
+   "relevance": 0,
+   "reason": "doc2: same paper, literature review of other routes; doc3: same paper, synthesis procedure only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_10c3ee898756bb2a39517650",
+   "relevance": 2,
+   "reason": "Directly supports preferential C–OH adsorption on Nb sites of Pt1/Nb2O5-Ov.",
+   "evidence_quotes": [
+    "The results show that the adsorption energy of HMF by C–OH adsorption mode is higher than the adsorption energy of HMF by C=O adsorption mode on the same sites of Nb2O5 or Pt1/Nb2O5-Ov surfaces, suggesting the preferential adsorption of C–OH. The adsorption energy of HMF by C–OH adsorption mode on Nb2 site of Pt1/Nb2O5-Ov surfaces was −1.14 eV, which is much higher than the adsorption energy of HMF by C=O adsorption mode (−0.78 eV)."
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 2,
+    "changed": true,
+    "explanation": "必需事实 1（C=O 加氢在动力学与热力学上均优于 C–OH）与必需事实 3（完全转化时 MF 选择性 >99%）在本块均不出现；只有必需事实 2 的位点分工有一半落在块内——Nb2 位点对 C–OH 的吸附能（−1.14 eV）高于 C=O（−0.78 eV），以及 H2 在 Pt1/Nb2O5-Ov 表面的吸附能（放热 0.51 eV）。3 项命中不足 1 项完整 → 2。旧判 3 过高（旧理由本身也只提 C–OH 优先吸附一项）。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_11662de455fbc00eecb0573c",
+   "relevance": 0,
+   "reason": "doc2: same paper, literature review of other routes; doc3: same paper, synthesis procedure only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_13deb44987f4d098b0753176",
+   "relevance": 0,
+   "reason": "doc0: other paper's table, no Pt1/Nb2O5-Ov or bond-selectivity mechanism; doc1: same paper, kinetics/recycle data only; doc2: same paper, SAC background and other catalysts; doc3: same paper, stability/DFT adsorption setup; doc4: same paper, C-OH adsorption evidence but no C=O vs C-OH thermodynamic claim",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "a5188b3aab8224a74c209f68a6eb037cce339f48c83761e5ecf618535131b798"
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_1e2971b44f0a7fc02acdced8",
+   "relevance": 0,
+   "reason": "doc0: other paper's table, no Pt1/Nb2O5-Ov or bond-selectivity mechanism; doc1: same paper, kinetics/recycle data only; doc2: same paper, SAC background and other catalysts; doc3: same paper, stability/DFT adsorption setup; doc4: same paper, C-OH adsorption evidence but no C=O vs C-OH thermodynamic claim",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "a5188b3aab8224a74c209f68a6eb037cce339f48c83761e5ecf618535131b798"
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_1ed219cb4bb3138cf0b467a4",
+   "relevance": 2,
+   "reason": "Confirms Pt activates H2, Nb activates C–OH (f2).; Supports >99% MF selectivity at complete conversion (f3).",
+   "evidence_quotes": [
+    "The Pt atom was responsible for the activation of H2 and the Nb sites activated C–OH.",
+    "Both Pd1/Nb2O5-Ov and Au1/Nb2O5-Ov showed >99% selectivity of MF"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "e38cabc70a04e60c248a1786bfa86e0813618ca88112bd87f6d3678624452de4",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 2,
+    "changed": true,
+    "explanation": "必需事实 2 逐字命中（Pt 活化 H2、Nb 活化 C–OH）；必需事实 3 只到『SAC 的 MF 选择性 >99%』这一半，块内未出现『at complete conversion』的条件限定；必需事实 1（C=O 加氢在动力学与热力学上优于 C–OH）在本块完全不出现。3 项命中 1 完整 + 1 部分 → 2。旧判 3 过高。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_212f072413616a242ffb333e",
+   "relevance": 0,
+   "reason": "doc0: other paper's table, no Pt1/Nb2O5-Ov or bond-selectivity mechanism; doc1: same paper, kinetics/recycle data only; doc2: same paper, SAC background and other catalysts; doc3: same paper, stability/DFT adsorption setup; doc4: same paper, C-OH adsorption evidence but no C=O vs C-OH thermodynamic claim",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "a5188b3aab8224a74c209f68a6eb037cce339f48c83761e5ecf618535131b798"
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_458fda574db654e6641f0bf0",
+   "relevance": 2,
+   "reason": "Directly states Pt activates H2, Nb activates C–OH, and C=O is not activated, explaining selectivity.",
+   "evidence_quotes": [
+    "The Pt atom sites can only activate the H2, and the Nb sites solely activate C–OH in the reaction, while none of the Nb and Pt sites can activate the C=O group. Thus, the selectivity of MF is exceptionally high."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "79caa614c5b45fc54b26a0ee053cffd90fef0babb9f65eece03b1c59e5fe889b"
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_540dfd21e1a3418e4a5fdcd0",
+   "relevance": 0,
+   "reason": "doc0: other paper's table, no Pt1/Nb2O5-Ov or bond-selectivity mechanism; doc1: same paper, kinetics/recycle data only; doc2: same paper, SAC background and other catalysts; doc3: same paper, stability/DFT adsorption setup; doc4: same paper, C-OH adsorption evidence but no C=O vs C-OH thermodynamic claim",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "a5188b3aab8224a74c209f68a6eb037cce339f48c83761e5ecf618535131b798"
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_86bc4e0d1009b89cf8767515",
+   "relevance": 2,
+   "reason": "Same paper, reports the >99% MF selectivity at full conversion, supporting f3 but not the bond/mechanism facts.",
+   "evidence_quotes": [
+    "It was found that the selectivity of MF was independent of the conversion of HMF and could reach >99% of all the reaction times. The conversion of HMF approached 100% at 4 h. Moreover, even the reaction time was prolonged to 6 h, the selectivity of MF was still >99%."
+   ],
+   "fact_ids": [
+    "f3"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_8eb4ba328fad8f30e5705b2f",
+   "relevance": 0,
+   "reason": "doc4: different paper, furfural from xylose, no HMF-to-MF or Pt/Nb sites",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "e38cabc70a04e60c248a1786bfa86e0813618ca88112bd87f6d3678624452de4"
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_a4b508537c897114032882d3",
+   "relevance": 2,
+   "reason": "Explicit division of labor between Pt and Nb sites for target selectivity.",
+   "evidence_quotes": [
+    "The Pt atom was responsible for the activation of H2 and the Nb sites activated C–OH."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "79caa614c5b45fc54b26a0ee053cffd90fef0babb9f65eece03b1c59e5fe889b"
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_bb0bf9064a5ad067cf25ae4b",
+   "relevance": 3,
+   "reason": "States C=O is more easily reduced than C–OH (f1).; Gives Pt/Nb site division of labor (f2).; Reports >99% MF selectivity at complete conversion (f3).",
+   "evidence_quotes": [
+    "hydrogenation of C=O bond in HMF is more favourable than C–OH both kinetically and thermodynamically",
+    "The Pt atoms are responsible for the activation of H2 and the Nb sites activate C-OH in the reaction.",
+    "with MF selectivity of >99% at complete conversion"
+   ],
+   "fact_ids": [
+    "f1",
+    "f2",
+    "f3"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "e38cabc70a04e60c248a1786bfa86e0813618ca88112bd87f6d3678624452de4"
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_c189cd855d6d974fa4f8ee42",
+   "relevance": 3,
+   "reason": "States C=O is more easily reduced than C–OH (f1).; Gives Pt/Nb site division of labor (f2).; Reports >99% MF selectivity at complete conversion (f3).",
+   "evidence_quotes": [
+    "hydrogenation of C=O bond in HMF is more favourable than C–OH both kinetically and thermodynamically",
+    "The Pt atoms are responsible for the activation of H2 and the Nb sites activate C-OH in the reaction.",
+    "with MF selectivity of >99% at complete conversion"
+   ],
+   "fact_ids": [
+    "f1",
+    "f2",
+    "f3"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "e38cabc70a04e60c248a1786bfa86e0813618ca88112bd87f6d3678624452de4"
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_ca518f4edea642ce661c7f9b",
+   "relevance": 0,
+   "reason": "doc0: other paper's table, no Pt1/Nb2O5-Ov or bond-selectivity mechanism; doc1: same paper, kinetics/recycle data only; doc2: same paper, SAC background and other catalysts; doc3: same paper, stability/DFT adsorption setup; doc4: same paper, C-OH adsorption evidence but no C=O vs C-OH thermodynamic claim",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "a5188b3aab8224a74c209f68a6eb037cce339f48c83761e5ecf618535131b798"
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_df78a5c435d9c7f4639ab865",
+   "relevance": 2,
+   "reason": "Directly reports >99% MF selectivity at complete conversion (f3).",
+   "evidence_quotes": [
+    "Pt1/Nb2O5-Ov could efficiently catalyze the selective hydrogenation of HMF to MF with >99% selectivity at complete conversion of HMF in 4 h."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "e38cabc70a04e60c248a1786bfa86e0813618ca88112bd87f6d3678624452de4",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 2,
+    "changed": true,
+    "explanation": "必需事实 3 完整命中（>99% 选择性、complete conversion、4 h）。必需事实 2（Pt/Nb 分工）在本块不出现；必需事实 1（C=O 与 C–OH 的动力学/热力学比较）也不出现——块内 ΔG 计算针对的是 HMF→MF 与 HMF→DMF，而非 C=O 与 C–OH 之争。3 项命中 1 项 → 2。旧判 3 过高。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_e5803672c0ec495b3a48c07f",
+   "relevance": 2,
+   "reason": "Characterizes Pt1/Nb2O5-Ov single-atom catalyst used in the question's system.",
+   "evidence_quotes": [
+    "These results imply that there is a strong electron interaction between Nb2O5-Ov and Pt, and the electron transfers from Pt to the Nb2O5-Ov support."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "79caa614c5b45fc54b26a0ee053cffd90fef0babb9f65eece03b1c59e5fe889b"
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_e5df285a82ade082a60c09d9",
+   "relevance": 2,
+   "reason": "Shows C–OH hydrogenolysis occurs while C=O hydrogenation does not, supporting which bond is preferentially reduced.",
+   "evidence_quotes": [
+    "was active for the hydrogenolysis of the furfuryl alcohol to 2methylfuran while inactive for the hydrogenation of furfural to furfuryl alcohol"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "79caa614c5b45fc54b26a0ee053cffd90fef0babb9f65eece03b1c59e5fe889b"
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_e99a090e45357de917d22420",
+   "relevance": 2,
+   "reason": "States Pt/Nb cooperation and C–OH activation yielding high MF selectivity.",
+   "evidence_quotes": [
+    "The Pt sites were responsible for the activation of H2 and the Nb sites near Pt sites selectively activated the C–OH group in HMF, and thus very high selectivity was achieved."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "79caa614c5b45fc54b26a0ee053cffd90fef0babb9f65eece03b1c59e5fe889b"
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_f073e3273982f5a713fc56f3",
+   "relevance": 2,
+   "reason": "Directly gives preferential C–OH adsorption and Pt/Nb division of labor (Pt splits H2, Nb binds C–OH) for MF selectivity.",
+   "evidence_quotes": [
+    "The results show that the adsorption energy of HMF by C–OH adsorption mode is higher than the adsorption energy of HMF by C=O adsorption mode on the same sites of Nb2O5 or Pt1/Nb2O5-Ov surfaces, suggesting the preferential adsorption of C–OH. ... First, the C–OH of HMF adsorbed on Nb sites, and then H2 adsorbed on Pt was readily split into two H species. ... The Pt–H species attacked the C site of C–OH in HMF accompanied by the breakage of C–O, leading to the formation of MF and -OH adsorbed on the Nb site."
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 2,
+    "changed": true,
+    "explanation": "必需事实 2（Pt 活化 H2、Nb 位点活化 C–OH）在块内被完整支持：DFT 路径明确『C–OH 吸附在 Nb 位点，H2 在 Pt 上解离』。必需事实 1（C=O 加氢在动力学/热力学上更有利）与必需事实 3（完全转化时 MF 选择性 >99%）在本块不出现。3 项命中 1 项 → 2。旧判 3 过高。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  }
+ ]
+}

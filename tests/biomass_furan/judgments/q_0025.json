@@ -1,0 +1,93 @@
+{
+ "query_id": "q_0025",
+ "judgments": [
+  {
+   "query_id": "q_0025",
+   "doc_id": "chk_1e3eaec5bd452ddb3b9a4006",
+   "relevance": 0,
+   "reason": "doc1: DES furfural optimization, different system; doc2: bibliography on fuel additives; doc3,4: DES/MIBK sugar conversion, different system",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0cc828ac8fdcc4a685ed1af5accbd10ef88a4b7db42e408a7e46df5dff7b7337"
+  },
+  {
+   "query_id": "q_0025",
+   "doc_id": "chk_6aa49b56f23286eccb100a58",
+   "relevance": 0,
+   "reason": "doc0: furfural/HMF DES paper, no phosphoric acid swelling step",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "bdd2ca8b85e0a435d80b2e87f57bb0a2068b05c35b308d592c880a740a96c781"
+  },
+  {
+   "query_id": "q_0025",
+   "doc_id": "chk_802511788cfba434ee41d9d2",
+   "relevance": 0,
+   "reason": "doc1: DES furfural optimization, different system; doc2: bibliography on fuel additives; doc3,4: DES/MIBK sugar conversion, different system",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0cc828ac8fdcc4a685ed1af5accbd10ef88a4b7db42e408a7e46df5dff7b7337"
+  },
+  {
+   "query_id": "q_0025",
+   "doc_id": "chk_9572ddcf26ca5754abbda184",
+   "relevance": 0,
+   "reason": "doc1: DES furfural optimization, different system; doc2: bibliography on fuel additives; doc3,4: DES/MIBK sugar conversion, different system",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0cc828ac8fdcc4a685ed1af5accbd10ef88a4b7db42e408a7e46df5dff7b7337"
+  },
+  {
+   "query_id": "q_0025",
+   "doc_id": "chk_979045fd6bdb126a66d66d75",
+   "relevance": 3,
+   "reason": "Directly states the swelling step acid concentration, temperature, and time.",
+   "evidence_quotes": [
+    "the lignocellulose is mixed with phosphoric acid (52 wt%) and heated to 80°C for 1 h"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0cc828ac8fdcc4a685ed1af5accbd10ef88a4b7db42e408a7e46df5dff7b7337"
+  },
+  {
+   "query_id": "q_0025",
+   "doc_id": "chk_baa9bfa115cb1a71967530ee",
+   "relevance": 0,
+   "reason": "doc1: DES furfural optimization, different system; doc2: bibliography on fuel additives; doc3,4: DES/MIBK sugar conversion, different system",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "0cc828ac8fdcc4a685ed1af5accbd10ef88a4b7db42e408a7e46df5dff7b7337"
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+  "checked_at": "2026-09-16T08:31:32.322348+00:00",
+  "dataset_version": "0.1.0-ai-candidate",
+  "structural_validation_passed": true,
+  "checks": {
+    "unique_doc_ids": true,
+    "unique_query_ids": true,
+    "corpus_manifest_hash": true,
+    "snapshot_hash": true,
+    "frozen_source_count": true,
+    "text_hashes": true,
+    "source_title_evidence": true,
+    "qrels_foreign_keys": true,
+    "query_count": true,
+    "languages": true,
+    "difficulties": true,
+    "splits": true,
+    "types": true,
+    "fact_quotes_verbatim": true,
+    "answerable_seed_evidence": true,
+    "seed_quotes_verbatim": true,
+    "known_positive_source_leakage": true,
+    "legacy_tuning_sources_dev_only": true,
+    "known_no_answer_conflicts": true,
+    "complete_pair_status_ledger": true,
+    "judged_ledger_matches_qrels": true,
+    "unjudged_not_zero": true,
+    "protected_files_unchanged_except_authorized_bridge": true
+  },
+  "errors": [],
+  "warnings": [
+    "全量语义标注尚未完成；缺失qrels为UNJUDGED，不可视为0；正式质量指标不可发布。",
+    "尚未完成具备化学背景人员的人工复核。",
+    "同模型复核不等于双人独立标注；不报告人工Cohen kappa。",
+    "多数题目明确指定研究来源；不能据此代表开放领域自然问题的全部难度。",
+    "同义改写与来源分组已按种子证据处理，最终跨来源检查仍依赖全量标注。"
+  ],
+  "counts": {
+    "sources": 48,
+    "chunks": 5066,
+    "queries": 60,
+    "expected_pairs": 303960,
+    "judged_pairs": 351,
+    "unjudged_pairs": 303609,
+    "normalized_duplicate_groups": 0
+  },
+  "distributions": {
+    "question_type": {
+      "condition": 9,
+      "data": 6,
+      "mechanism": 9,
+      "paraphrase": 3,
+      "fact": 9,
+      "definition": 6,
+      "no_answer": 3,
+      "comparison": 6,
+      "multi_document": 6,
+      "constraint": 3
+    },
+    "difficulty": {
+      "easy": 18,
+      "medium": 30,
+      "hard": 12
+    },
+    "language": {
+      "zh": 42,
+      "en": 18
+    },
+    "split": {
+      "dev": 12,
+      "test": 36,
+      "challenge": 12
+    }
+  },
+  "semantic_annotation_complete": false,
+  "AI_review": {
+    "status": "not_started"
+  },
+  "unresolved_seed_model_conflicts": 0,
+  "human_review": {
+    "status": "not_completed",
+    "reviewer_count": 0,
+    "kappa": null
+  },
+  "release_ready": false,
+  "original_human_acceptance_standard_met": false,
+  "source_split_leakage": {},
+  "no_answer_conflicts": [],
+  "outside_protected_files_changed": [
+    "src\\rag\\api.py",
+    "scripts\\start.ps1"
+  ],
+  "unexpected_protected_file_changes": [],
+  "authorized_scope_exceptions": {
+    "authorization": "用户后续要求以完整测评优先，并允许tests以外必要写入；用户要求通过启动服务接口复用模型凭据。",
+    "purpose": "默认关闭、仅loopback、令牌授权、固定语料ID的测评桥；不修改检索逻辑。",
+    "files": {
+      "scripts\\start.ps1": {
+        "before_sha256": "44a3b18aed06730df07c57054eed44b6a76f30c80a69cad24b4d6c3d95d7da33",
+        "after_sha256": "ef0ec93fdb5411f103fc5f4005964a129b7955f71ad69a7c1d377ef3a6a2cd97"
+      },
+      "src\\rag\\api.py": {
+        "before_sha256": "977c5ff3917625f1e6bf1e016e627f2c4ca760a06dc53bd3afbcbf0221299786",
+        "after_sha256": "329884ec5a0b6b4db86f902dcde35d76fb1b28d3b1d50567260712e2e738cdf4"
+      }
+    },
+    "production_database": "仅正常查询日志写入，不变更文献、切块或向量"
+  },
+  "production_writes": "Only normal retrieval request logs permitted by subsequent user authorization.",
+  "retrieval_runs": [
+    {
+      "path": "results\\http-20260916T063408115501Z\\summary.json",
+      "run_complete": true,
+      "metric_status": "blocked_incomplete_qrels",
+      "formal_requests": 180
+    },
+    {
+      "path": "results\\isolated-20260916T064442079079Z\\summary.json",
+      "run_complete": true,
+      "metric_status": "blocked_incomplete_qrels",
+      "formal_requests": 180
+    }
+  ]
+}

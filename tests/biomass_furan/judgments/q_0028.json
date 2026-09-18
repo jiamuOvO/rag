@@ -1,0 +1,328 @@
+{
+ "query_id": "q_0028",
+ "judgments": [
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_07b252e04e6faed35bdbf791",
+   "relevance": 0,
+   "reason": "doc0: xylose/furfural microwave study, not Eucalyptus grandis; doc1: birch sawdust DES study, different feedstock/system; doc2: bibliography entries only, no experimental data; doc3: reference list on levulinates, unrelated; doc4: furfural review, different feedstock/conditions",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "9a06e27dedd22a083eb4a6411e80d535acb630038895e64a2640bec9afb44449"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_117a50a8e8188b27891c9506",
+   "relevance": 0,
+   "reason": "doc1: other paper, alkaline pretreatment of rice straw/bagasse; doc2: bibliography list only; doc3: same paper, different condition (lignin hydrogenolysis 240°C); doc4: other paper, general biorefinery/furfural background",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "bc3306af3d8e394397cdb3390c7775cf6066db0934bb8bd3e618474d03a4856a"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_1e3eaec5bd452ddb3b9a4006",
+   "relevance": 0,
+   "reason": "doc0: xylose/furfural microwave study, not Eucalyptus grandis; doc1: birch sawdust DES study, different feedstock/system; doc2: bibliography entries only, no experimental data; doc3: reference list on levulinates, unrelated; doc4: furfural review, different feedstock/conditions",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "9a06e27dedd22a083eb4a6411e80d535acb630038895e64a2640bec9afb44449"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_3182461b711d1f373bf36ac4",
+   "relevance": 0,
+   "reason": "doc1: same paper, lignin RCF topic; doc3,5: other paper, beech wood phosphoric acid; doc4: other paper, fractionation screening",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "3d9c9bc208c2ad4a5b455333bee96250562aa6750735bfa51628673c497f2407"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_4f4393d00a3e8fb92661c408",
+   "relevance": 0,
+   "reason": "doc0: title-only front matter, no data; doc1: other paper, zeolite xylose dehydration; doc2: other paper, microwave FeCl3 xylose",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d87118dedf9984d3cb1b5a0be9c83a5794056f1f4439f787db784c3c0bed3a1f"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_50015abd498d99b96ac574fd",
+   "relevance": 0,
+   "reason": "doc0: different paper, xylose/FeCl3 microwave study; doc2: same paper, bibliography only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "2b3772024e969c96574c770dadc684571c47c4f1a0f3df44a044f641bfb646a4"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_61fec0ffa9e553e9cc7bc451",
+   "relevance": 0,
+   "reason": "doc1: same paper, lignin RCF topic; doc3,5: other paper, beech wood phosphoric acid; doc4: other paper, fractionation screening",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "3d9c9bc208c2ad4a5b455333bee96250562aa6750735bfa51628673c497f2407"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_6f9e1ddf4e91431e9cfc6c46",
+   "relevance": 2,
+   "reason": "Directly states the optimized temperature and residence time for joint carbohydrate conversion in the 2020 Eucalyptus grandis study.",
+   "evidence_quotes": [
+    "The optimal reaction condition for the co-conversion of hemicellulose and cellulose was established as 190 °C and 100 min, from which furfural and levulinic acid were obtained in 55.9% and 73.6% yields, respectively."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "bc3306af3d8e394397cdb3390c7775cf6066db0934bb8bd3e618474d03a4856a"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_77facfa72e40a0d2ff97fbfb",
+   "relevance": 0,
+   "reason": "doc0: xylose/furfural microwave study, not Eucalyptus grandis; doc1: birch sawdust DES study, different feedstock/system; doc2: bibliography entries only, no experimental data; doc3: reference list on levulinates, unrelated; doc4: furfural review, different feedstock/conditions",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "9a06e27dedd22a083eb4a6411e80d535acb630038895e64a2640bec9afb44449"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_7f94c0223389f84105b2372e",
+   "relevance": 0,
+   "reason": "doc0: xylose/furfural microwave study, not Eucalyptus grandis; doc1: birch sawdust DES study, different feedstock/system; doc2: bibliography entries only, no experimental data; doc3: reference list on levulinates, unrelated; doc4: furfural review, different feedstock/conditions",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "9a06e27dedd22a083eb4a6411e80d535acb630038895e64a2640bec9afb44449"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_9572ddcf26ca5754abbda184",
+   "relevance": 0,
+   "reason": "doc1: other paper, alkaline pretreatment of rice straw/bagasse; doc2: bibliography list only; doc3: same paper, different condition (lignin hydrogenolysis 240°C); doc4: other paper, general biorefinery/furfural background",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "bc3306af3d8e394397cdb3390c7775cf6066db0934bb8bd3e618474d03a4856a"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_9b27a5144a763ff68f58aa16",
+   "relevance": 1,
+   "reason": "L1b: same paper's carbohydrate conversion section, but no temperature/residence time numbers.",
+   "evidence_quotes": [
+    "Conversion of the solid carbohydrate residue to 5‐HMF, LA and furfural"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d87118dedf9984d3cb1b5a0be9c83a5794056f1f4439f787db784c3c0bed3a1f"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_a4ea38ee15eed1393f309c59",
+   "relevance": 0,
+   "reason": "doc0: xylose/furfural microwave study, not Eucalyptus grandis; doc1: birch sawdust DES study, different feedstock/system; doc2: bibliography entries only, no experimental data; doc3: reference list on levulinates, unrelated; doc4: furfural review, different feedstock/conditions",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "9a06e27dedd22a083eb4a6411e80d535acb630038895e64a2640bec9afb44449"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_ad5180b277f6e342545badc6",
+   "relevance": 1,
+   "reason": "L1a: same Eucalyptus carbohydrate pulp system, different temperature/time (170 °C, 120 min) than asked optimum.",
+   "evidence_quotes": [
+    "A series of metal chloride catalysts, such as FeCl3, AlCl3, CuCl2·2H2O, CrCl3 and ZrCl4, were screened at 170 °C for 120 min"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d87118dedf9984d3cb1b5a0be9c83a5794056f1f4439f787db784c3c0bed3a1f"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_bb314185594eca777b1ff6c4",
+   "relevance": 0,
+   "reason": "doc0: different paper, xylose/FeCl3 microwave study; doc2: same paper, bibliography only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "2b3772024e969c96574c770dadc684571c47c4f1a0f3df44a044f641bfb646a4"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_c90f3629e80547c70ed57947",
+   "relevance": 0,
+   "reason": "doc1: same paper, lignin RCF topic; doc3,5: other paper, beech wood phosphoric acid; doc4: other paper, fractionation screening",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "3d9c9bc208c2ad4a5b455333bee96250562aa6750735bfa51628673c497f2407"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_d669deac9629382e689cfc6a",
+   "relevance": 0,
+   "reason": "doc1: same paper, lignin RCF topic; doc3,5: other paper, beech wood phosphoric acid; doc4: other paper, fractionation screening",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "3d9c9bc208c2ad4a5b455333bee96250562aa6750735bfa51628673c497f2407"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_d99ec4ae21f437212eaa519a",
+   "relevance": 0,
+   "reason": "doc0: title-only front matter, no data; doc1: other paper, zeolite xylose dehydration; doc2: other paper, microwave FeCl3 xylose",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d87118dedf9984d3cb1b5a0be9c83a5794056f1f4439f787db784c3c0bed3a1f"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_df3aec9b2824dc7e019e2465",
+   "relevance": 0,
+   "reason": "doc1: other paper, alkaline pretreatment of rice straw/bagasse; doc2: bibliography list only; doc3: same paper, different condition (lignin hydrogenolysis 240°C); doc4: other paper, general biorefinery/furfural background",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "bc3306af3d8e394397cdb3390c7775cf6066db0934bb8bd3e618474d03a4856a"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_f1c4be72269d0de09f9adc11",
+   "relevance": 0,
+   "reason": "doc0: title-only front matter, no data; doc1: other paper, zeolite xylose dehydration; doc2: other paper, microwave FeCl3 xylose",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d87118dedf9984d3cb1b5a0be9c83a5794056f1f4439f787db784c3c0bed3a1f"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_fce8c696e1dde260b93bd71e",
+   "relevance": 1,
+   "reason": "L1b: same paper's method/data source for the integrated Eucalyptus biorefinery, but no temperature/residence-time numbers.",
+   "evidence_quotes": [
+    "In this paper, we used Pd/C as a catalyst to treat Eucalyptus sawdust, thus resulting in 4-propanol guaiacol/syringol with high yield from depolymerization of lignin component. High retention of cellulose and hemicellulose pulp was also obtained, which on the treatment with cheaply available FeCl3 catalyst led to the formation of 5-HMF, LA and furfural simultaneously."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "2b3772024e969c96574c770dadc684571c47c4f1a0f3df44a044f641bfb646a4"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_fd754a50c4f3510f7ef443fc",
+   "relevance": 3,
+   "reason": "Directly states the optimized temperature and residence time for joint carbohydrate conversion in the 2020 Eucalyptus grandis study.",
+   "evidence_quotes": [
+    "Based on \nthe above experiment results, the optimal reaction condition for the co-conversion hemicellulose and cellulose was established as 190 °C and 100 min, from which \nfurfural and levulinic acid were obtained in 55.9% and 73.6% yield, respectively."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "3d9c9bc208c2ad4a5b455333bee96250562aa6750735bfa51628673c497f2407"
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_ff376bb25159d0ba450e44bb",
+   "relevance": 0,
+   "reason": "doc1: other paper, alkaline pretreatment of rice straw/bagasse; doc2: bibliography list only; doc3: same paper, different condition (lignin hydrogenolysis 240°C); doc4: other paper, general biorefinery/furfural background",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "bc3306af3d8e394397cdb3390c7775cf6066db0934bb8bd3e618474d03a4856a"
+  }
+ ]
+}

@@ -1,0 +1,755 @@
+[
+ {
+  "query_id": "q_0004",
+  "doc_id": null,
+  "kind": "read_based_anchor_not_unique",
+  "note": "按「xylose loading not SnCl4 dosage」定位到 0 条（期望 1 条），需人工指定"
+ },
+ {
+  "query_id": "q_0007",
+  "doc_id": null,
+  "kind": "read_based_anchor_not_unique",
+  "note": "按「does not state the optimized values」定位到 0 条（期望 1 条），需人工指定"
+ },
+ {
+  "query_id": "q_0008",
+  "doc_id": null,
+  "kind": "read_based_anchor_not_unique",
+  "note": "按「recycling yields, not the predicted」定位到 0 条（期望 1 条），需人工指定"
+ },
+ {
+  "query_id": "q_0005",
+  "doc_id": "chk_cac3807d9a18c151af2918db",
+  "grade": 2,
+  "doc_source": "paper_db1a45d39737c05f08fff0fa",
+  "named_source": [
+   "paper_db1a45d39737c05f08fff0fa"
+  ],
+  "reason": "L1b: same paper's dosage data table showing yield drops at higher SnCl4 dosage, supporting the trend.",
+  "already_corrected": false,
+  "kind": "P1_reason_cites_L1_but_grade_high",
+  "note": "1 级规则与 2/3 级并存，需回读原块判断是「理由误写」还是「等级误判」；不自动改"
+ },
+ {
+  "query_id": "q_0006",
+  "doc_id": "chk_eb28ef77eb4b424fe27b2883",
+  "grade": 2,
+  "doc_source": "paper_db1a45d39737c05f08fff0fa",
+  "named_source": [
+   "paper_db1a45d39737c05f08fff0fa"
+  ],
+  "reason": "L1b: same paper's xylan time-profile figure in EMIMBr/SnCl4, the data basis for the asked 1 h vs 4 h yield trend.",
+  "already_corrected": false,
+  "kind": "P1_reason_cites_L1_but_grade_high",
+  "note": "1 级规则与 2/3 级并存，需回读原块判断是「理由误写」还是「等级误判」；不自动改"
+ },
+ {
+  "query_id": "q_0007",
+  "doc_id": "chk_5539978d73851dcba7b48239",
+  "grade": 2,
+  "doc_source": "paper_0cc8554d80109d5ddfe91435",
+  "named_source": [
+   "paper_0cc8554d80109d5ddfe91435"
+  ],
+  "reason": "Same paper's optimization method/data source (L1b); names the three optimized variables but not the optimum values.",
+  "already_corrected": false,
+  "kind": "P1_reason_cites_L1_but_grade_high",
+  "note": "1 级规则与 2/3 级并存，需回读原块判断是「理由误写」还是「等级误判」；不自动改"
+ },
+ {
+  "query_id": "q_0007",
+  "doc_id": "chk_566e4ba7fd2e114be1aef258",
+  "grade": 2,
+  "doc_source": "paper_0cc8554d80109d5ddfe91435",
+  "named_source": [
+   "paper_0cc8554d80109d5ddfe91435"
+  ],
+  "reason": "L1b: describes the RSM optimization method/data basis of the same paper, but does not state the optimized values.",
+  "already_corrected": false,
+  "kind": "P1_reason_cites_L1_but_grade_high",
+  "note": "1 级规则与 2/3 级并存，需回读原块判断是「理由误写」还是「等级误判」；不自动改"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_8c43d6189bfd58b10083cf8d",
+  "grade": 2,
+  "doc_source": "paper_2467240e9bec8a52db54345d",
+  "named_source": [
+   "paper_2467240e9bec8a52db54345d"
+  ],
+  "reason": "Same 2018 review states the three components (L1b).",
+  "already_corrected": false,
+  "kind": "P1_reason_cites_L1_but_grade_high",
+  "note": "1 级规则与 2/3 级并存，需回读原块判断是「理由误写」还是「等级误判」；不自动改"
+ },
+ {
+  "query_id": "q_0019",
+  "doc_id": "chk_b1b81eeabbaeabc5b132a96b",
+  "grade": 2,
+  "doc_source": "paper_dc7cbcb44f231c61245467df",
+  "named_source": [
+   "paper_dc7cbcb44f231c61245467df"
+  ],
+  "reason": "L1b: same 2024 review, data basis for HMF oxidation/esterification to FDCA derivatives.",
+  "already_corrected": false,
+  "kind": "P1_reason_cites_L1_but_grade_high",
+  "note": "1 级规则与 2/3 级并存，需回读原块判断是「理由误写」还是「等级误判」；不自动改"
+ },
+ {
+  "query_id": "q_0022",
+  "doc_id": "chk_6607e591b51235df3444c92e",
+  "grade": 2,
+  "doc_source": "paper_26e277a1fc448ade34584ae3",
+  "named_source": [
+   "paper_26e277a1fc448ade34584ae3"
+  ],
+  "reason": "L1b: same paper's data basis, supplies the conversion criterion but not Mn or color.",
+  "already_corrected": false,
+  "kind": "P1_reason_cites_L1_but_grade_high",
+  "note": "1 级规则与 2/3 级并存，需回读原块判断是「理由误写」还是「等级误判」；不自动改"
+ },
+ {
+  "query_id": "q_0024",
+  "doc_id": "chk_4d23c61724b8781b5c07f8ed",
+  "grade": 2,
+  "doc_source": "paper_107512d3ed43f43f9bd8f45e",
+  "named_source": [
+   "paper_107512d3ed43f43f9bd8f45e"
+  ],
+  "reason": "L1b: same paper's data basis explaining acidic DES acts as catalyst; supports f1 partially.",
+  "already_corrected": false,
+  "kind": "P1_reason_cites_L1_but_grade_high",
+  "note": "1 级规则与 2/3 级并存，需回读原块判断是「理由误写」还是「等级误判」；不自动改"
+ },
+ {
+  "query_id": "q_0026",
+  "doc_id": "chk_3502598feddaf54c42179cfb",
+  "grade": 2,
+  "doc_source": "paper_07f06156408855a516ea618b",
+  "named_source": [
+   "paper_07f06156408855a516ea618b"
+  ],
+  "reason": "L1b: same paper's procedure describing swelling then fractionation, but no acid concentration or organic-to-aqueous ratio given.",
+  "already_corrected": false,
+  "kind": "P1_reason_cites_L1_but_grade_high",
+  "note": "1 级规则与 2/3 级并存，需回读原块判断是「理由误写」还是「等级误判」；不自动改"
+ },
+ {
+  "query_id": "q_0027",
+  "doc_id": "chk_9b27a5144a763ff68f58aa16",
+  "grade": 2,
+  "doc_source": "paper_81924125a737b5a88e728e25",
+  "named_source": [
+   "paper_81924125a737b5a88e728e25"
+  ],
+  "reason": "Same paper, method/data basis for the run at maximum phenolic monomers; supports locating the condition but not the numbers.",
+  "already_corrected": false,
+  "kind": "P1_reason_cites_L1_but_grade_high",
+  "note": "1 级规则与 2/3 级并存，需回读原块判断是「理由误写」还是「等级误判」；不自动改"
+ },
+ {
+  "query_id": "q_0035",
+  "doc_id": "chk_df3aec9b2824dc7e019e2465",
+  "grade": 2,
+  "doc_source": "paper_81924125a737b5a88e728e25",
+  "named_source": [
+   "paper_81924125a737b5a88e728e25"
+  ],
+  "reason": "L1b: same paper's method/data source, but reports a different furfural yield, not the optimal co-conversion values.",
+  "already_corrected": false,
+  "kind": "P1_reason_cites_L1_but_grade_high",
+  "note": "1 级规则与 2/3 级并存，需回读原块判断是「理由误写」还是「等级误判」；不自动改"
+ },
+ {
+  "query_id": "q_0039",
+  "doc_id": "chk_74461aa8106ad59a3e7f3982",
+  "grade": 2,
+  "doc_source": "paper_1910bac59c2e4dc660743b72",
+  "named_source": [
+   "paper_1910bac59c2e4dc660743b72"
+  ],
+  "reason": "Same paper, same catalyst/water system at 100 °C; supports reaction conditions (L1a/L1b).",
+  "already_corrected": false,
+  "kind": "P1_reason_cites_L1_but_grade_high",
+  "note": "1 级规则与 2/3 级并存，需回读原块判断是「理由误写」还是「等级误判」；不自动改"
+ },
+ {
+  "query_id": "q_0041",
+  "doc_id": "chk_33bf357cd18670d0d2ca2b34",
+  "grade": 2,
+  "doc_source": "paper_81924125a737b5a88e728e25",
+  "named_source": [
+   "paper_07f06156408855a516ea618b",
+   "paper_81924125a737b5a88e728e25"
+  ],
+  "reason": "L1b: same paper's method; directly supports Pd/C for lignin depolymerization step.",
+  "already_corrected": false,
+  "kind": "P1_reason_cites_L1_but_grade_high",
+  "note": "1 级规则与 2/3 级并存，需回读原块判断是「理由误写」还是「等级误判」；不自动改"
+ },
+ {
+  "query_id": "q_0041",
+  "doc_id": "chk_d10851fbdfeb17dd8639fcec",
+  "grade": 2,
+  "doc_source": "paper_07f06156408855a516ea618b",
+  "named_source": [
+   "paper_07f06156408855a516ea618b",
+   "paper_81924125a737b5a88e728e25"
+  ],
+  "reason": "L1b: same paper's method; supports phosphoric acid recycling.",
+  "already_corrected": false,
+  "kind": "P1_reason_cites_L1_but_grade_high",
+  "note": "1 级规则与 2/3 级并存，需回读原块判断是「理由误写」还是「等级误判」；不自动改"
+ },
+ {
+  "query_id": "q_0044",
+  "doc_id": "chk_4d23c61724b8781b5c07f8ed",
+  "grade": 2,
+  "doc_source": "paper_107512d3ed43f43f9bd8f45e",
+  "named_source": [
+   "paper_107512d3ed43f43f9bd8f45e"
+  ],
+  "reason": "Same paper, same ChCl/GA aqueous DES system with sugar mixture; supports DES composition (L1a/L1b).",
+  "already_corrected": false,
+  "kind": "P1_reason_cites_L1_but_grade_high",
+  "note": "1 级规则与 2/3 级并存，需回读原块判断是「理由误写」还是「等级误判」；不自动改"
+ },
+ {
+  "query_id": "q_0044",
+  "doc_id": "chk_b57774d3d4688682f7455127",
+  "grade": 2,
+  "doc_source": "paper_107512d3ed43f43f9bd8f45e",
+  "named_source": [
+   "paper_107512d3ed43f43f9bd8f45e"
+  ],
+  "reason": "Same paper, same sugar mix DES/MIBK system; gives 160°C/10 min conditions (L1a/L1b), though DES ratio differs from 1:3:6.",
+  "already_corrected": false,
+  "kind": "P1_reason_cites_L1_but_grade_high",
+  "note": "1 级规则与 2/3 级并存，需回读原块判断是「理由误写」还是「等级误判」；不自动改"
+ },
+ {
+  "query_id": "q_0045",
+  "doc_id": "chk_a6c8ba74e59565fc9abca5bd",
+  "grade": 2,
+  "doc_source": "paper_fb5f556ebb605bbffb218189",
+  "named_source": [
+   "paper_fb5f556ebb605bbffb218189"
+  ],
+  "reason": "L1b: same 2018 review's catalyst-free hydrothermal section; supports catalyst-free hydrothermal context but not the supercritical CO2 simultaneous extraction detail.",
+  "already_corrected": false,
+  "kind": "P1_reason_cites_L1_but_grade_high",
+  "note": "1 级规则与 2/3 级并存，需回读原块判断是「理由误写」还是「等级误判」；不自动改"
+ },
+ {
+  "query_id": "q_0004",
+  "doc_id": "chk_cac3807d9a18c151af2918db",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_no_anchor_supported",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0007",
+  "doc_id": "chk_4f86dedd60c3fd056c61dc03",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_no_anchor_supported",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0010",
+  "doc_id": "chk_27e71a7f418b0bd0a2dfe071",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0010",
+  "doc_id": "chk_4c284eac482a133d335c7ca7",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0010",
+  "doc_id": "chk_f6334e3e233a5be7e5e4b91b",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0011",
+  "doc_id": "chk_80cfb9a0ecf7628f4f48e9d3",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_5390b5325ecf463c4e9497d7",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_7764b60e09f53eaa5aa68fc6",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0014",
+  "doc_id": "chk_45a69b0e755aa8b4a0a506fb",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0014",
+  "doc_id": "chk_7764b60e09f53eaa5aa68fc6",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0015",
+  "doc_id": "chk_225788b644ea25f4b634ffb6",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0015",
+  "doc_id": "chk_61fec0ffa9e553e9cc7bc451",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0015",
+  "doc_id": "chk_979045fd6bdb126a66d66d75",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0015",
+  "doc_id": "chk_d669deac9629382e689cfc6a",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0016",
+  "doc_id": "chk_9b27a5144a763ff68f58aa16",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0016",
+  "doc_id": "chk_ad5180b277f6e342545badc6",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0016",
+  "doc_id": "chk_c90f3629e80547c70ed57947",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0016",
+  "doc_id": "chk_cc6f834d38212f53e2cabe1a",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0018",
+  "doc_id": "chk_3502598feddaf54c42179cfb",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0018",
+  "doc_id": "chk_69cf17a7e04566cf89d39367",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0023",
+  "doc_id": "chk_9a11044c6b0a3219c803c306",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0023",
+  "doc_id": "chk_c7386b23f1137ddd583d474b",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0024",
+  "doc_id": "chk_305f10f1a75a63236a4c181e",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0027",
+  "doc_id": "chk_076b9346fadb8e7dee5524c6",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_no_anchor_supported",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0032",
+  "doc_id": "chk_ae427d946654a90bad529088",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0041",
+  "doc_id": "chk_61fec0ffa9e553e9cc7bc451",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 3
+ },
+ {
+  "query_id": "q_0041",
+  "doc_id": "chk_6f9e1ddf4e91431e9cfc6c46",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 3
+ },
+ {
+  "query_id": "q_0042",
+  "doc_id": "chk_3f69bf6b3a14097bc389e768",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 2
+ },
+ {
+  "query_id": "q_0042",
+  "doc_id": "chk_4d23c61724b8781b5c07f8ed",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 2
+ },
+ {
+  "query_id": "q_0042",
+  "doc_id": "chk_4f1003898eb083ea75f9672f",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 2
+ },
+ {
+  "query_id": "q_0042",
+  "doc_id": "chk_8781e312c8a17f3f184b7414",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 2
+ },
+ {
+  "query_id": "q_0042",
+  "doc_id": "chk_9f994e2e49ec3c47a5ae2cda",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 2
+ },
+ {
+  "query_id": "q_0043",
+  "doc_id": "chk_6f9e1ddf4e91431e9cfc6c46",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 3
+ },
+ {
+  "query_id": "q_0047",
+  "doc_id": "chk_6aa49b56f23286eccb100a58",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_no_anchor_supported",
+  "facts_supported": 0,
+  "facts_total": 1
+ },
+ {
+  "query_id": "q_0049",
+  "doc_id": "chk_10c3ee898756bb2a39517650",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 3
+ },
+ {
+  "query_id": "q_0049",
+  "doc_id": "chk_f073e3273982f5a713fc56f3",
+  "kind": "P4_left_to_user",
+  "outcome": "handover_undetermined_anchors",
+  "facts_supported": 0,
+  "facts_total": 3
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_0a912b28229092da2e595f18",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_attributed_no_direct_support",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_0fdd02015b6eb7d21ac6f9fd",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_19dc9d277d79c2e2421ec9bf",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_1b3adced8f0344654ed5ebfa",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_2664a01ff75abf215f6dbb9d",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_3182461b711d1f373bf36ac4",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_4f283b17046ca64f70a75f0f",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_5bdc404aaf3aa2d43a2e88b3",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_837fe3919547666c018f0fcf",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_949d6e15c39aa1680eb0597e",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_9e49aa0e6a155dbc4c439cf7",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_attributed_no_direct_support",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_a4cfb2dac7c22e914f7aa355",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_b4a63245687199605240fc88",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_bd32559701129098222b039e",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_d240b88640bce7f3b815a13f",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_dae54923690abc9482389d41",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_attributed_no_direct_support",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_df24437e6c790326b9602f5f",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_e40ff27103a7dff6aa294c49",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_e86a4176f859f6fdd792fe54",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_e9d4c44e3c2a99de94f93c42",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0013",
+  "doc_id": "chk_fa44890380cd28eeddd8114f",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0019",
+  "doc_id": "chk_867558c7dbce6d47c08806da",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0019",
+  "doc_id": "chk_a7b4e7413f51520b5850ba43",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0019",
+  "doc_id": "chk_cc47e725f63493a672af98c3",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0019",
+  "doc_id": "chk_ea12060a5eb8ed047561fe44",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0027",
+  "doc_id": "chk_50015abd498d99b96ac574fd",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0029",
+  "doc_id": "chk_e769e00a4aa1cbe71b7a02cf",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "section8_independent_statement_cap",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0044",
+  "doc_id": "chk_eec4496762bf30d4c915fc71",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "p4_grade3_partial_fact_support",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0049",
+  "doc_id": "chk_1ed219cb4bb3138cf0b467a4",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "p4_grade3_partial_fact_support",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0049",
+  "doc_id": "chk_df78a5c435d9c7f4639ab865",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "p4_grade3_partial_fact_support",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0050",
+  "doc_id": "chk_1ed219cb4bb3138cf0b467a4",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "p4_grade3_partial_fact_support",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ },
+ {
+  "query_id": "q_0050",
+  "doc_id": "chk_df78a5c435d9c7f4639ab865",
+  "kind": "semantic_review_incomplete",
+  "rule_used": "p4_grade3_partial_fact_support",
+  "note": "该结论仅由匹配规则（标题短语/作者年份/引用编号/数值锚点）生成，未完成对事实句的阅读确认；等级已还原，标为未完成语义复核"
+ }
+]

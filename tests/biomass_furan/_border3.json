@@ -1,0 +1,151 @@
+[
+ {
+  "n": 16,
+  "query_id": "q_0005",
+  "doc_id": "chk_cac3807d9a18c151af2918db",
+  "question": "为什么2019年SnCl4/EMIMBr实验中的锡盐用量不能一味增加？",
+  "question_type": "mechanism",
+  "difficulty": "medium",
+  "split": "dev",
+  "answerable": true,
+  "language": "zh",
+  "required_facts": [
+   "过量催化剂在加速糠醛生成的同时也促进副反应，降低糠醛收率。"
+  ],
+  "fact_evidence": [
+   {
+    "fact_id": "f1",
+    "fact": "过量催化剂在加速糠醛生成的同时也促进副反应，降低糠醛收率。",
+    "doc_id": "chk_1759d55f26111cb779e1d610",
+    "source_id": "paper_db1a45d39737c05f08fff0fa",
+    "quote": "When the catalyst dosage increased from 5 mol% to 10 mol%, the furfural yield increased from 52.4% to 71.1%. As the catalyst dosage further increased, the furfural yield gradually decreased. Excessive catalyst not only accelerated the formation of furfural from xylose but also promoted the side reactions, thus leading to the reduced furfural yield"
+   }
+  ],
+  "reference_answer": "过量催化剂在加速糠醛生成的同时也促进副反应，降低糠醛收率。",
+  "source_group": [
+   [
+    "paper_db1a45d39737c05f08fff0fa",
+    "Efficient Synthesis of Furfural from Biomass Using SnCl4 as Catalyst in Ionic Liquid",
+    "10.3390/molecules24030594"
+   ]
+  ],
+  "block_source_id": "paper_db1a45d39737c05f08fff0fa",
+  "block_title": "Efficient Synthesis of Furfural from Biomass Using SnCl4 as Catalyst in Ionic Liquid",
+  "block_source_meta": {
+   "source_id": "paper_db1a45d39737c05f08fff0fa",
+   "source_hash": "db1a45d39737c05f08fff0fa814f012c17e95faa2cb7671e42dca36a1163ceb0",
+   "original_filename": "2019_furfural_from_biomass_SnCl4_PMC6384620.pdf",
+   "title": "Efficient Synthesis of Furfural from Biomass Using SnCl4 as Catalyst in Ionic Liquid",
+   "title_origin": "snapshot_page_title_checked",
+   "source_type": "journal_article",
+   "status": "ready",
+   "page_count": 18,
+   "title_evidence_page": 1,
+   "doi": "10.3390/molecules24030594",
+   "metadata_review_status": "title_checked_optional_fields_partial"
+  },
+  "block_text": "Table 1. Effect of different dosage of SnCl4 and MgCl2 on the dehydration of xylose into furfural. Entry SnCl4 (mol%) MgCl2 (mol%) Furfural Yield (%) 1 10 0 71.1 2 8 2 69.8 3 8 0 62.0 4 5 5 68.8 5 5 0 52.4 6 0 10 4.5 Reaction conditions: 200 mg xylose, 1000 mg of EMIMBr; 130 ◦C; 1 h. 2.2. Effect of Solvents on the Dehydration of Xylose into Furfural Figure 4 shows the effect of ionic liquids on the dehydration of xylose into furfural using SnCl4. As shown in Figure 4, EMIMBr and 1-butyl-3-methylimidazolium bromide (BMIMBr) resulted in higher furfural yields than other ionic liquids. The furfural yield (56.5%) obtained with BMIMBr was slightly lower than that obtained with EMIMBr. When ionic liquid 1,3-dimethylimidazolium iodide (DMIMI) was used as reaction medium, a furfural yield of 46.7% was obtained. The furfural yields from EMIMCl (30.0%) and BMIMCl (33.8%) were much lower than from EMIMBr and BMIMBr. This observation suggested that Br– containing ionic liquids are more efficient than Cl−containing ionic liquids for the conversion of xylose into furfural catalyzed by SnCl4, which may be attributed to the differences in size charge density, and electronegativity of Br−and Cl−[52]. When 1-ethyl-3-methylimidazolium tetrafluoroborate (EMIMBF4) was used as reaction medium, the furfural yield was only 15.1%. The low yield from EMIMBF4 could be due to their poor ability to dissolve sugar [53]. Besides, the formation of massive brown residues in EMIMBF4 indicated the severe occurrence of side reactions."
+ },
+ {
+  "n": 41,
+  "query_id": "q_0014",
+  "doc_id": "chk_45a69b0e755aa8b4a0a506fb",
+  "question": "2018年预处理综述将现有木质纤维素预处理方法分为哪四类？",
+  "question_type": "fact",
+  "difficulty": "easy",
+  "split": "test",
+  "answerable": true,
+  "language": "zh",
+  "required_facts": [
+   "物理、化学、物理化学和生物方法。"
+  ],
+  "fact_evidence": [
+   {
+    "fact_id": "f1",
+    "fact": "物理、化学、物理化学和生物方法。",
+    "doc_id": "chk_8c43d6189bfd58b10083cf8d",
+    "source_id": "paper_2467240e9bec8a52db54345d",
+    "quote": "The pretreatment techniques currently in use, may be broadly classified as physical, chemical, physicochemical, and biological processes."
+   }
+  ],
+  "reference_answer": "物理、化学、物理化学和生物方法。",
+  "source_group": [
+   [
+    "paper_2467240e9bec8a52db54345d",
+    "Recent Trends in the Pretreatment of Lignocellulosic Biomass for Value-Added Products",
+    "10.3389/fenrg.2018.00141"
+   ]
+  ],
+  "block_source_id": "paper_2467240e9bec8a52db54345d",
+  "block_title": "Recent Trends in the Pretreatment of Lignocellulosic Biomass for Value-Added Products",
+  "block_source_meta": {
+   "source_id": "paper_2467240e9bec8a52db54345d",
+   "source_hash": "2467240e9bec8a52db54345d76b87105816f0288a3cd134e4d1d969b763c388e",
+   "original_filename": "2018_recent_trends_in_the_pretreatment_of_lignocellulosic.pdf",
+   "title": "Recent Trends in the Pretreatment of Lignocellulosic Biomass for Value-Added Products",
+   "title_origin": "snapshot_page_title_checked",
+   "source_type": "journal_article",
+   "status": "ready",
+   "page_count": 19,
+   "title_evidence_page": 1,
+   "doi": "10.3389/fenrg.2018.00141",
+   "metadata_review_status": "title_checked_optional_fields_partial"
+  },
+  "block_text": "Baruah et al. Pretreatments Trends of Lignocelluloses redox mediators. It is used in textile, bleaching, paper and pulp industries, production of biofuels, bioremediation of xenobiotic compounds, degradation of endocrine disrupting chemicals (Ravichandran and Sridhar, 2016). CONCLUSION The high crystallinity of cellulose and its sheathing by hemicellulose-lignin matrix furnish the resilient structure of LCB. Therefore, pretreatment is an extremely important step for conversion of LCB to sugars and further processing for industrially important bioproducts and biofuels. Extensive investigations have been carried out on the effects of different pretreatment methods on lignocellulosic composition and sugar yield. Analysis of various methods brings us to the conclusion that each method has its pros and cons. Therefore, assessing these methods straight through the test data is not accurate. Until now, a cost-effective and environmentally benign pretreatment method that can completely delignify biomass is yet to be established. Moreover, the reaction mechanisms of the different pretreatment technologies have not been explored in details to improve the existing methods and optimize the process conditions. In addition, the LCB properties and features greatly influence in choosing the correct pretreatment method. Hence, the challenges to pretreat biomass with high efficiency comprise of cost-effectivity, energy-effectivity, environmental sustainability, which are the existing bottlenecks for its integration as feedstocks in biorefinery approaches. On the basis of this review, we can propose that an improved chemical production and industrial lignocellulose applications can be achieved by the development of an economically feasible, extremely productive and ecofriendly pretreatment method based on the evaluation standard. AUTHOR CONTRIBUTIONS JB and BN drafted the portions on physical, chemical and physicochemical pretreatments. RS and SK drafted the portion on biological pretreatments. RD and DB edited the portions on chemical and physicochemical pretreatments. EK planned the outlay of the review, supervised the development of topics and edited the final manuscript. ACKNOWLEDGMENTS EK, JB, SK, and RS wish to acknowledge DBT, Government of India, for the Twinning Research Grant (Grant No. BT/PR16008/NER/95/47/2015)."
+ },
+ {
+  "n": 96,
+  "query_id": "q_0044",
+  "doc_id": "chk_eec4496762bf30d4c915fc71",
+  "question": "限定不外加催化剂且处理葡萄糖/木糖混合物：2021年DES/MIBK研究采用什么DES组成及微波反应条件？",
+  "question_type": "constraint",
+  "difficulty": "medium",
+  "split": "test",
+  "answerable": true,
+  "language": "zh",
+  "required_facts": [
+   "采用ChCl/GA含水DES，不外加催化剂。",
+   "糖混合物的最佳微波条件为160℃、10 min。"
+  ],
+  "fact_evidence": [
+   {
+    "fact_id": "f1",
+    "fact": "采用ChCl/GA含水DES，不外加催化剂。",
+    "doc_id": "chk_305f10f1a75a63236a4c181e",
+    "source_id": "paper_107512d3ed43f43f9bd8f45e",
+    "quote": "Choline chloride (ChCl) / glycolic acid (GA) deep eutectic solvent (DES) media with high water content but without any additional catalyst are introduced"
+   },
+   {
+    "fact_id": "f2",
+    "fact": "糖混合物的最佳微波条件为160℃、10 min。",
+    "doc_id": "chk_305f10f1a75a63236a4c181e",
+    "source_id": "paper_107512d3ed43f43f9bd8f45e",
+    "quote": "The optimal reaction conditions were 160°C and 10 minutes for the sugar mixture and 170°C and 10 minutes for birch sawdust in a microwave reactor."
+   }
+  ],
+  "reference_answer": "采用ChCl/GA含水DES，不外加催化剂。 糖混合物的最佳微波条件为160℃、10 min。",
+  "source_group": [
+   [
+    "paper_107512d3ed43f43f9bd8f45e",
+    "Furfural and 5-Hydroxymethylfurfural Production from Sugar Mixture Using Deep Eutectic Solvent/MIBK System",
+    "10.1002/open.202100163"
+   ]
+  ],
+  "block_source_id": "paper_107512d3ed43f43f9bd8f45e",
+  "block_title": "Furfural and 5-Hydroxymethylfurfural Production from Sugar Mixture Using Deep Eutectic Solvent/MIBK System",
+  "block_source_meta": {
+   "source_id": "paper_107512d3ed43f43f9bd8f45e",
+   "source_hash": "107512d3ed43f43f9bd8f45e00b9e59f8f008a32887b33451500cc05d8152d02",
+   "original_filename": "2021_furfural_HMF_from_sugar_mixture_DES_PMC8495682.pdf",
+   "title": "Furfural and 5-Hydroxymethylfurfural Production from Sugar Mixture Using Deep Eutectic Solvent/MIBK System",
+   "title_origin": "snapshot_page_title_checked",
+   "source_type": "journal_article",
+   "status": "ready",
+   "page_count": 9,
+   "title_evidence_page": 1,
+   "doi": "10.1002/open.202100163",
+   "metadata_review_status": "title_checked_optional_fields_partial"
+  },
+  "block_text": "Since it was found that the HMF yield could be improved by additional extraction, the extraction procedure was optimized further. First, a reaction with HMF as feedstock was repeated, using ethyl acetate as extracting solvent. As a result, the HMF yield in the organic phase was better than using just MIBK by 5%, leading to a 50% yield (Table 1, entry 8). This is consistent with the HMF extraction test by Gomes et al., which revealed that EtOAc was 6% better at extracting solvent than MIBK.[26] When using ethyl acetate, 29% of HMF was not detected either from the organic phase or from DES, which is an approximately similar order of magnitude to the missing 21% in the MIBK reaction. Since the ethyl acetate increased the HMF yield only slightly and the furfural extraction to EtOAc was worse than to MIBK, lowering the yield from 98 to 91% (Table 1, entry 9), MIBK was kept as an extracting solvent. However, the extraction procedure was modified. Using longer extraction time, an increased number of extractions, and a larger MIBK volume, the HMF yield increased from 45 to 67% (Table 1, entry 10). Using an adjusted experimental setup (10 equiv. water and optimized extraction), 14% HMF yield and 62% furfural yield was achieved from the glucose/xylose mixture. Table 1. HMF and furfural yields using various feedstocks and extraction conditions. Entry Conditions HMF yield [%] Furfural yield [%] 1 Glucose as feedstock 10 – 2 Xylose as feedstock – 62 3 Glucose/xylose as feedstock 9 49 4 ZnCl2 as catalyst, glucose/xylose as feedstock 10 51 5 Fructose/xylose as feedstock 17 49 6 HMF as feedstock (+additional extraction) 45 (+11) – 7 Furfural as feedstock – 98 8 HMF as feedstock, EtOAc extraction 50 – 9 Furfural as feedstock, EtOAc extraction 91 10 HMF as feedstock, optimized extraction 67 160°C reaction temperature and ChCl/GA/H2O (1:3:6) DES were used in all reactions. When HMF/furfural was used as a feedstock, reaction time was limited to 2 minutes, otherwise, it was set at 10 minutes. MIBK was used as extracting solvent unless otherwise stated. ChemistryOpen Full Papers doi.org/10.1002/open.202100163 1008 ChemistryOpen 2021, 10, 1004–1012 www.chemistryopen.org © 2021 The Authors. Published by Wiley-VCH GmbH"
+ }
+]

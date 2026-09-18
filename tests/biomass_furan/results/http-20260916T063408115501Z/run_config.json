@@ -1,0 +1,42 @@
+{
+  "mode": "production_http",
+  "base_url": "http://127.0.0.1:8000",
+  "top_k": 20,
+  "warmup": 20,
+  "repeats": 3,
+  "concurrency": 1,
+  "timeout_seconds": 120,
+  "seed": 20260916,
+  "hardware": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cpu": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "logical_cpu_count": 24
+  },
+  "python": "3.12.14",
+  "ready": {
+    "ready": true,
+    "chat_configured": true,
+    "embedding_configured": true,
+    "embedding_index": {
+      "count": 5444,
+      "model_count": 1,
+      "by_model": [
+        {
+          "provider": "openai_compatible",
+          "model": "qwen3-embedding-0.6b",
+          "dimensions": 1024,
+          "count": 5444
+        }
+      ]
+    },
+    "reranker_provider": "disabled"
+  },
+  "corpus_sha256": "ffcadfa99b671be28f849c1cae7bdde095dac1f5c6d4a84db6d2cf6bbfe52018",
+  "queries_sha256": "473b827ce448e6419804f66432b19d8dd38e82d91700dc113654e08f80d9f3cf",
+  "latency_boundary": "HTTP client request to fully parsed response; includes local transport and serialization",
+  "server_timing_limit": "Existing timings.retrieve excludes analysis and some response bookkeeping; diagnostic only.",
+  "production_query_logs_authorized": true,
+  "cold_start": "not_measured_existing_running_service",
+  "cache_policy": "existing service; warmed, no cache flush",
+  "quality_repeat": 1
+}

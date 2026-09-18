@@ -1,12 +1,14 @@
 from __future__ import annotations
 
+from difflib import SequenceMatcher
 from dataclasses import dataclass
 from pathlib import Path
+import re
 from typing import Callable
 
 from .errors import RagError
 from .models import Page
-from .text import normalize_text, text_quality_issues
+from .text import CONTROL_OR_ENCODING_RE, normalize_text, text_quality_issues
 
 
 @dataclass
@@ -47,6 +49,9 @@ class PdfParser:
 
     def _ocr_page(self, page) -> tuple[str, float | None]:
         pix = page.get_pixmap(dpi=200, alpha=False)
+        return self._ocr_pixmap(pix)
+
+    def _ocr_pixmap(self, pix) -> tuple[str, float | None]:
         result, _ = self._engine()(pix.tobytes("png"))
         if not result:
             return "", None
@@ -57,6 +62,9 @@ class PdfParser:
                 scores.append(float(item[2]))
         confidence = sum(scores) / len(scores) if scores else None
         return normalize_text("\n".join(lines)), confidence
+
+    def _ocr_clip(self, page, rect) -> tuple[str, float | None]:
+        return self._ocr_pixmap(page.get_pixmap(dpi=250, alpha=False, clip=rect))
 
     @staticmethod
     def _acceptable_quality_recovery(original: str, recovered: str,
@@ -69,6 +77,43 @@ class PdfParser:
         original_words = len(original.split())
         recovered_words = len(recovered.split())
         return recovered_words >= max(20, int(original_words * 0.60))
+
+    @staticmethod
+    def _acceptable_local_recovery(original: str, recovered: str,
+                                   confidence: float | None) -> bool:
+        if not recovered or text_quality_issues(recovered) or confidence is None or confidence < 0.85:
+            return False
+        original_words, recovered_words = len(original.split()), len(recovered.split())
+        if recovered_words < max(1, int(original_words * 0.60)):
+            return False
+        comparable = lambda value: re.sub(r"[^a-z0-9]+", "", value.casefold())
+        return SequenceMatcher(None, comparable(original), comparable(recovered)).ratio() >= 0.55
+
+    def _ocr_polluted_blocks(self, page, original: str) -> tuple[str, float | None, int, bool]:
+        """Repair corrupted prose blocks; preserve formula glyphs unless their meaning is certain."""
+        text, scores, accepted, attempted = original, [], 0, False
+        for block in page.get_text("blocks"):
+            if len(block) >= 7 and block[6] != 0:
+                continue
+            raw = normalize_text(str(block[4]))
+            if not CONTROL_OR_ENCODING_RE.search(raw):
+                continue
+            attempted = True
+            # A control glyph between letters is commonly a broken ligature (e.g. poten<02>al).
+            # Formula glyphs may mean minus, multiply, arrows, or brackets depending on the font;
+            # OCR must not guess those scientific operators.
+            if not re.search(r"(?<=[A-Za-z])[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f](?=[A-Za-z])", raw):
+                continue
+            rect = page.rect & __import__("fitz").Rect(block[:4])
+            rect += (-4, -4, 4, 4)
+            rect &= page.rect
+            recovered, confidence = self._ocr_clip(page, rect)
+            if (raw in text and
+                    self._acceptable_local_recovery(raw, recovered, confidence)):
+                text = text.replace(raw, recovered, 1)
+                scores.append(float(confidence))
+                accepted += 1
+        return text, (sum(scores) / len(scores) if scores else None), accepted, attempted
 
     def parse(
         self,
@@ -126,15 +171,22 @@ class PdfParser:
                     try:
                         if on_ocr_start:
                             on_ocr_start(index + 1)
-                        recovered, recovered_confidence = self._ocr_page(page)
-                        accepted = self._acceptable_quality_recovery(
-                            text, recovered, recovered_confidence
-                        )
+                        recovered, recovered_confidence, recovered_blocks, attempted_local = \
+                            self._ocr_polluted_blocks(page, text)
+                        accepted = recovered_blocks > 0
+                        if not attempted_local:
+                            recovered, recovered_confidence = self._ocr_page(page)
+                            accepted = self._acceptable_quality_recovery(
+                                text, recovered, recovered_confidence
+                            )
                         if on_ocr:
-                            on_ocr(index + 1, accepted, recovered_confidence)
+                            on_ocr(index + 1, accepted and not text_quality_issues(recovered),
+                                   recovered_confidence)
                         if accepted:
                             text, confidence = recovered, recovered_confidence
-                            method, quality = "ocr_quality_recovery", []
+                            method = ("ocr_local_quality_recovery" if attempted_local
+                                      else "ocr_quality_recovery")
+                            quality = text_quality_issues(text)
                             ocr_count += 1
                     except Exception as exc:
                         page_message = f"OCR quality recovery failed: {str(exc)[:400]}"

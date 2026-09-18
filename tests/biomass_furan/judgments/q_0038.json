@@ -1,0 +1,409 @@
+{
+ "query_id": "q_0038",
+ "judgments": [
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_07e04d27485e0b54c75e2fee",
+   "relevance": 1,
+   "reason": "L1b: same paper's background on lignocellulosic composition, no difficulty explanation.",
+   "evidence_quotes": [
+    "Lignocellulosics are a major type of biomass consisting mainly of cellulose (38–50%), hemicellulose (23–32%) and lignin (15–25%) [40]."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "ea7209c40564b39914ecb6e33aeb8ae6798b5442a58bd7da676b782ed2d45ab9"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_0c1b20297373d40dcfa21dc0",
+   "relevance": 1,
+   "reason": "L1b: same review paper, discusses biomass components' interaction, but reports no interference rather than difficulty.",
+   "evidence_quotes": [
+    "The authors demonstrated that other biomass components (lignin and protein) did not interfere in the process, as yields of HMF based on the cellulose content of the biomass were comparable to those from purified cellulose."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "7c457173028ba3b18bb7dc82898396eeb3b713a7c2805bbf3028e821e4709e09"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_1e8e7e6939758e9fd0f780b1",
+   "relevance": 1,
+   "reason": "L1b: same review paper, real biomass conversion examples, but no explanation of why real feedstocks are harder than model sugars.",
+   "evidence_quotes": [
+    "The high yields of HMF from the grape berries is due both to the high amounts of soluble sugars and to the weak coordination of the ILs with the sugars, which facilitates the rapid formation of a complex between the sugars and metal chlorides."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "7c457173028ba3b18bb7dc82898396eeb3b713a7c2805bbf3028e821e4709e09"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_1eb1817027b8303b84b90f23",
+   "relevance": 1,
+   "reason": "L1b: same review paper, real food-waste conversion, auxiliary context on real-feedstock complexity.",
+   "evidence_quotes": [
+    "There was a synergistic effect of Brønsted and Lewis acid centers that allowed the hydrolysis of glycosidic bonds, fructose dehydration and glucose isomerization, as well as dehydration to HMF and the undesired polymerization to humins"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "7c457173028ba3b18bb7dc82898396eeb3b713a7c2805bbf3028e821e4709e09"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_234d9e399fa315fc6988ee05",
+   "relevance": 0,
+   "reason": "doc0,1,2,3,4: same paper but experimental yield reports, not explanation of real-feedstock recalcitrance",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "651bccbd3165cef514125a4c1514db4ff3f85bd3796563316026219272680491"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_2bd6bee0f8e82fbcee689964",
+   "relevance": 0,
+   "reason": "doc0,1,2,3,4: same paper but experimental yield reports, not explanation of real-feedstock recalcitrance",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "651bccbd3165cef514125a4c1514db4ff3f85bd3796563316026219272680491"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_306922c20dcd6feaa1f6b07b",
+   "relevance": 0,
+   "reason": "doc0,1: same paper, HMF oxidation not real-biomass conversion difficulty",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "450c1f9ed2fb0897df58fb86ea4290d48882067e0d571f828b95cbd4e0e68594"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_319a446559cce3a93844c98b",
+   "relevance": 0,
+   "reason": "doc0: different paper, HMF oxidation not real-biomass conversion difficulty",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "7c457173028ba3b18bb7dc82898396eeb3b713a7c2805bbf3028e821e4709e09"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_39dcffc75ea1f3d8764271df",
+   "relevance": 0,
+   "reason": "doc0,1,2,3,4: same paper but experimental yield reports, not explanation of real-feedstock recalcitrance",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "651bccbd3165cef514125a4c1514db4ff3f85bd3796563316026219272680491"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_3a040a75ccc6b90c2b8da3c9",
+   "relevance": 1,
+   "reason": "Explains real biomass recalcitrance/pretreatment difficulty versus simpler model sugars, supporting why real feedstocks are harder to convert.",
+   "evidence_quotes": [
+    "In contrast to lignocellulose biorefineries, which require strict thermomechanical and chemical pretreatments, FW biorefineries utilize a biomass rich in starch and protein."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "12162071c7380933f35f5b2696a66bbeebf6e38e6f1aa08587ff59c51847c57e"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_3d1b98362e296a19d5e019d6",
+   "relevance": 1,
+   "reason": "L1d: background on conversion challenges, no real-feedstock interaction numbers",
+   "evidence_quotes": [
+    "Challenges in this reactionprocess arise in the efficient conversion of sugars to HMF at an industrial scale"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "76f595a9f512da0cebad0bfa07280262e65ec0b1900621733a4381d64880dc2a"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_4b8602523106c29e88b03e83",
+   "relevance": 3,
+   "reason": "Directly states real biomass is harder than model carbohydrates due to cellulose/hemicellulose/lignin interactions.",
+   "evidence_quotes": [
+    "However, for scientists the conversion of biomass is much more challenging than model carbohydrates because the decomposition behavior of the feedstock depends on the interactions between the cellulose, hemicellulose, and lignin."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "ea7209c40564b39914ecb6e33aeb8ae6798b5442a58bd7da676b782ed2d45ab9"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_5403a9b2025560941631ddff",
+   "relevance": 0,
+   "reason": "doc2: bibliography list only; doc3,4: same paper, other feedstocks/experiments",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "ea7209c40564b39914ecb6e33aeb8ae6798b5442a58bd7da676b782ed2d45ab9"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_653e5ce6e8fd82db0eef5e8e",
+   "relevance": 0,
+   "reason": "doc2: bibliography list only; doc3,4: same paper, other feedstocks/experiments",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "ea7209c40564b39914ecb6e33aeb8ae6798b5442a58bd7da676b782ed2d45ab9"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_6607cfb0635f2d8d0a0ecba7",
+   "relevance": 0,
+   "reason": "doc0: same paper, different biomass examples; doc1: same paper, pretreatment examples",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "12162071c7380933f35f5b2696a66bbeebf6e38e6f1aa08587ff59c51847c57e"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_79064fb64ae29508d88996fe",
+   "relevance": 1,
+   "reason": "L1b: same review paper's concluding remarks on raw biomass recalcitrance, background only.",
+   "evidence_quotes": [
+    "In general, it is more common to pre-treat the biomass to make it more suitable for hydrolysis by increasing cellulose accessibility via removal of the lignin and hemicellulose [74] while the use of untreated raw biomass for HMF synthesis is limited."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "7c457173028ba3b18bb7dc82898396eeb3b713a7c2805bbf3028e821e4709e09"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_7926c51ae814e615fce09168",
+   "relevance": 0,
+   "reason": "doc2: bibliography list only; doc3,4: same paper, other feedstocks/experiments",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "ea7209c40564b39914ecb6e33aeb8ae6798b5442a58bd7da676b782ed2d45ab9"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_7e95ba606df8fc74de41ef1c",
+   "relevance": 0,
+   "reason": "doc0,2: same paper, HMF oxidation not real biomass; doc1: background on sugar conversion, no real-feedstock difficulty",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "76f595a9f512da0cebad0bfa07280262e65ec0b1900621733a4381d64880dc2a"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_836f92f05d88140a7e52aadf",
+   "relevance": 0,
+   "reason": "doc0,1,2,3,4: same paper but experimental yield reports, not explanation of real-feedstock recalcitrance",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "651bccbd3165cef514125a4c1514db4ff3f85bd3796563316026219272680491"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_8b24628a1d7001d6022ebc69",
+   "relevance": 1,
+   "reason": "L1b: same review, real lignocellulosic feedstock conversion background only.",
+   "evidence_quotes": [
+    "Different lignocellulosic biomasses, such as filter paper, reed and straw, were converted to HMF with sulfonic acid ionic liquids and metal salt co-catalysts"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "450c1f9ed2fb0897df58fb86ea4290d48882067e0d571f828b95cbd4e0e68594"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_9ece375829e570a7bdced2bc",
+   "relevance": 2,
+   "reason": "L1c: comparable real-biomass run showing depolymerization barrier absent for soluble-sugar feedstock",
+   "evidence_quotes": [
+    "Grape berries are an interesting biomass because their sugars, mainly fructose and glucose, are quickly converted to HMF without a depolymerization process."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "76f595a9f512da0cebad0bfa07280262e65ec0b1900621733a4381d64880dc2a"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_a73d2eabe39e43645faf23f8",
+   "relevance": 1,
+   "reason": "L1b: same review paper, states scope on raw biomass but no explanation of difficulty vs model sugars.",
+   "evidence_quotes": [
+    "We have focused our review on the use of raw biomass."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "450c1f9ed2fb0897df58fb86ea4290d48882067e0d571f828b95cbd4e0e68594"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_b6316b7ca8c3d8bb12f16d30",
+   "relevance": 0,
+   "reason": "doc0,1,2,3,4: same paper but experimental yield reports, not explanation of real-feedstock recalcitrance",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "651bccbd3165cef514125a4c1514db4ff3f85bd3796563316026219272680491"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_b71bfb27e177866fbbe987aa",
+   "relevance": 0,
+   "reason": "doc0,2: same paper, HMF oxidation not real biomass; doc1: background on sugar conversion, no real-feedstock difficulty",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "76f595a9f512da0cebad0bfa07280262e65ec0b1900621733a4381d64880dc2a"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_e7d270d0d136c79142e6a46a",
+   "relevance": 0,
+   "reason": "doc0,1: same paper, HMF oxidation not real-biomass conversion difficulty",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "450c1f9ed2fb0897df58fb86ea4290d48882067e0d571f828b95cbd4e0e68594"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_eb4f6bb323f30e764139c04d",
+   "relevance": 1,
+   "reason": "L1b: same review, real biomass conversion context but no interaction-based difficulty explanation.",
+   "evidence_quotes": [
+    "The authors concluded that the higher conversion rate of corn stalk in this reaction system is due to the synergistic effect of the isopropanol/AMIMCl solvent and the Biochar-Mg-Sn catalyst."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "450c1f9ed2fb0897df58fb86ea4290d48882067e0d571f828b95cbd4e0e68594"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_fbb5810c4e7b7d35992dab98",
+   "relevance": 0,
+   "reason": "doc0: same paper, different biomass examples; doc1: same paper, pretreatment examples",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "12162071c7380933f35f5b2696a66bbeebf6e38e6f1aa08587ff59c51847c57e"
+  },
+  {
+   "query_id": "q_0038",
+   "doc_id": "chk_fd9eb6976bb0f124fd7808eb",
+   "relevance": 2,
+   "reason": "L1c: comparable real-biomass run; recalcitrance of lignocellulosic feedstock",
+   "evidence_quotes": [
+    "Raw maple wood is considered as an example of highly recalcitrant lignocellulosic biomass."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "76f595a9f512da0cebad0bfa07280262e65ec0b1900621733a4381d64880dc2a"
+  }
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "rules_version": "v2",
+ "mode": "apply",
+ "auto_repaired": 5,
+ "changes": [
+  {
+   "query_id": "q_0001",
+   "doc_id": "chk_cac3807d9a18c151af2918db",
+   "level": 2,
+   "rule": "R1_glyph_restore",
+   "rules_version": "v2",
+   "before": "200 mg xylose, 1000 mg of EMIMBr; 130 °C; 1 h",
+   "after": "200 mg xylose, 1000 mg of EMIMBr; 130 ◦C; 1 h"
+  },
+  {
+   "query_id": "q_0003",
+   "doc_id": "chk_eb28ef77eb4b424fe27b2883",
+   "level": 2,
+   "rule": "R1_glyph_restore",
+   "rules_version": "v2",
+   "before": "Figure 9. Time profile for the conversion of xylan to furfural in the EMIMBr/SnCl4 system. Reaction conditions: xylan 200 mg (1.5 mmol, based on monosaccharide units); 1000 mg of EMIMBr; molar ratio of SnCl4:monosaccharide = 1: 10; 130 °C; 1 h.",
+   "after": "Figure 9. Time profile for the conversion of xylan to furfural in the EMIMBr/SnCl4 system. Reaction\nconditions: xylan 200 mg (1.5 mmol, based on monosaccharide units); 1000 mg of EMIMBr; molar ratio\nof SnCl4:monosaccharide = 1: 10; 130 ◦C; 1 h."
+  },
+  {
+   "query_id": "q_0003",
+   "doc_id": "chk_8cc5cec9a375be2393d7efb8",
+   "level": 3,
+   "rule": "R1_glyph_restore",
+   "rules_version": "v2",
+   "before": "We attempted to convert xylan into xylose in the EMIMBr/SnCl4 system at 130 °C. As shown in Figure 9, the furfural yield was 41.7% after 30 min reaction. The maximum furfural yield of 50.1% was obtained at 1 h.",
+   "after": "We attempted to convert xylan into xylose in the EMIMBr/SnCl4 system at 130 ◦C. As shown in\nFigure 9, the furfural yield was 41.7% after 30 min reaction. The maximum furfural yield of 50.1% was\nobtained at 1 h."
+  },
+  {
+   "query_id": "q_0003",
+   "doc_id": "chk_a31155b8bf9d90dce8836014",
+   "level": 3,
+   "rule": "R1_glyph_restore",
+   "rules_version": "v2",
+   "before": "We attempted to convert xylan into xylose in the EMIMBr/SnCl4 system at 130 °C. As shown in Figure 9, the furfural yield was 41.7% after 30 min reaction. The maximum furfural yield of 50.1% was obtained at 1 h.",
+   "after": "We attempted to convert xylan into xylose in the EMIMBr/SnCl4 system at 130 ◦C. As shown in\nFigure 9, the furfural yield was 41.7% after 30 min reaction. The maximum furfural yield of 50.1% was\nobtained at 1 h."
+  },
+  {
+   "query_id": "q_0007",
+   "doc_id": "chk_fbc7a95665f94f660bc1af2c",
+   "level": 3,
+   "rule": "R1_glyph_restore",
+   "rules_version": "v2",
+   "before": "the optimal values determined for the three parameters are: 1.74 min of reaction time, 157.3 °C and 8.19 wt.% of LiBr",
+   "after": "the optimal values determined for the\nthree parameters are: 1.74 min of reaction time, 157.3 ◦C and 8.19 wt.% of LiBr"
+  }
+ ]
+}

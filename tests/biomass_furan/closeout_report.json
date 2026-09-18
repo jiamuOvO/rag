@@ -1,0 +1,19 @@
+{
+ "backup": "closeout_backup_20260918T154420",
+ "verdicts_applied": 75,
+ "verdicts_changed": 51,
+ "master_qrels_rows": 2996,
+ "frozen_qrels_rows": 1194,
+ "frozen_outside_scope": 0,
+ "states": {
+  "valid": 1194,
+  "exhausted_unresolved": 118
+ },
+ "grade_distribution": {
+  "0": 663,
+  "1": 196,
+  "2": 200,
+  "3": 135
+ },
+ "judged_coverage": 0.9100609756097561
+}

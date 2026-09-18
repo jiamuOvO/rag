@@ -4,6 +4,7 @@ import threading
 import time
 from pathlib import Path
 
+from .errors import error_info
 from .pipeline import Pipeline
 
 
@@ -36,6 +37,7 @@ class IngestionWorker:
             self._thread.join(timeout=5)
 
     def _loop(self) -> None:
+        claim_backoff = 0.1
         while not self._stop.is_set():
             if time.monotonic() - self._last_cleanup >= 60:
                 try:
@@ -47,19 +49,40 @@ class IngestionWorker:
                                            error_code="TEMP_CLEANUP_FAILED",
                                            exception_type=type(exc).__name__)
                 self._last_cleanup = time.monotonic()
-            job = self.pipeline.store.claim_ingestion_job()
+            try:
+                job = self.pipeline.store.claim_ingestion_job()
+                claim_backoff = 0.1
+            except Exception as exc:
+                self.pipeline.log.emit("ingestion_claim_failed", stage="task",
+                                       error_code="INGESTION_CLAIM_FAILED",
+                                       exception_type=type(exc).__name__)
+                self._wake.wait(timeout=claim_backoff)
+                self._wake.clear()
+                claim_backoff = min(claim_backoff * 2, 5.0)
+                continue
             if not job:
                 self._wake.wait(timeout=1)
                 self._wake.clear()
                 continue
-            self.pipeline.ingest(
-                file=Path(job["file_path"]) if job["file_path"] else None,
-                force=bool(job["force"]), run_id=job["run_id"], request_id=job["request_id"],
-                document_scope={
-                    "document_id": job["document_id"], "collection_id": job["collection_id"],
-                    "tenant_id": job["tenant_id"], "owner_id": job["owner_id"],
-                    "scope_type": job["scope_type"], "conversation_id": job["conversation_id"],
-                    "expires_at": job["expires_at"],
-                } if job.get("collection_id") else None,
-            )
+            try:
+                self.pipeline.ingest(
+                    file=Path(job["file_path"]) if job["file_path"] else None,
+                    force=bool(job["force"]), run_id=job["run_id"], request_id=job["request_id"],
+                    document_scope={
+                        "document_id": job["document_id"], "collection_id": job["collection_id"],
+                        "tenant_id": job["tenant_id"], "owner_id": job["owner_id"],
+                        "scope_type": job["scope_type"], "conversation_id": job["conversation_id"],
+                        "expires_at": job["expires_at"],
+                    } if job.get("collection_id") else None,
+                )
+            except Exception as exc:
+                info = error_info(exc, "task", self.pipeline.settings.debug).to_dict()
+                self.pipeline.store.update_run(job["run_id"], status="failed", stage="task",
+                                               error=info, finished=True)
+                self.pipeline.store.update_run_document(
+                    job["run_id"], Path(job["file_path"] or "ingestion").name,
+                    paper_id=None, status="failed", stage="task", error=info,
+                )
+                self.pipeline.log.emit("ingestion_job_failed", run_id=job["run_id"],
+                                       request_id=job["request_id"], **info)
             time.sleep(0)

@@ -1,0 +1,65 @@
+{
+ "query_id": "q_0047",
+ "judgments": [
+  {
+   "query_id": "q_0047",
+   "doc_id": "chk_305f10f1a75a63236a4c181e",
+   "relevance": 3,
+   "reason": "Directly states the water amount (32.9 wt%, 10 equiv) that improves conversion without rupturing the DES.",
+   "evidence_quotes": [
+    "10 equivalent quantities of water (32.9 wt.%) were revealed to be beneficial for conversions without rupturing the DES structure."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "4b36430be767632c20cee8e80832bf56a129fc180259198fe2f47e24b5cb10e5"
+  },
+  {
+   "query_id": "q_0047",
+   "doc_id": "chk_6aa49b56f23286eccb100a58",
+   "relevance": 2,
+   "reason": "Same paper, ChCl/GA DES system; supports the DES-structure context though the water wt% is in the abstract.",
+   "evidence_quotes": [
+    "The stability and reusability of ChCl/GA (1:3) DES were investigated"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "4b36430be767632c20cee8e80832bf56a129fc180259198fe2f47e24b5cb10e5",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 2,
+    "changed": true,
+    "explanation": "必需事实为『32.9 wt%，对应 10 当量』。块内 Table 2 以 Water [equiv.] 列给出 10 当量这一设计因子（并在 170 ℃/10 min/10 equiv. 下给出 37.5% 最高糠醛收率），但全块没有出现 32.9 wt% 这一质量百分比；节标题为 DES 稳定性与复用。数值二分之一命中 → 2。旧判 3 过高（旧理由本身也承认水 wt% 在摘要而不在本块）。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0047",
+   "doc_id": "chk_9f994e2e49ec3c47a5ae2cda",
+   "relevance": 3,
+   "reason": "Same paper's abstract states the water amount (32.9 wt%, 10 equiv) improving conversion without rupturing DES.",
+   "evidence_quotes": [
+    "10 equivalent quantities of water (32.9 wt.%) were revealed to be beneficial for conversions without rupturing the DES structure."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "4b36430be767632c20cee8e80832bf56a129fc180259198fe2f47e24b5cb10e5"
+  }
+ ]
+}

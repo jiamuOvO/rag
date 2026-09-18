@@ -1,0 +1,238 @@
+{
+ "rules_version": "v2",
+ "changes": [
+  {
+   "query_id": "q_0001",
+   "action": "remove",
+   "doc_id": "chk_2467240e9bec8a52db54345d",
+   "rules_version": "v2",
+   "before": [
+    {
+     "doc_id": "chk_2467240e9bec8a52db54345d",
+     "relevance": 1,
+     "evidence_quotes": [],
+     "reason": "木质纤维素预处理综述，属生物质转化上游相邻内容（同一研究领域）。"
+    }
+   ],
+   "after": null
+  },
+  {
+   "query_id": "q_0001",
+   "action": "append",
+   "doc_id": "chk_e5ada7059156bd758d082960",
+   "rules_version": "v2",
+   "before": [],
+   "after": {
+    "doc_id": "chk_e5ada7059156bd758d082960",
+    "relevance": 0,
+    "evidence_quotes": [],
+    "reason": "该块为木质纤维素预处理综述的表格与 DESs 段落，研究对象为玉米秸秆、小麦秸秆、甘蔗渣等生物质的酸/碱/金属盐预处理以释放葡萄糖/纤维素，与本题所问的2019年SnCl4/EMIMBr催化木糖转化体系的原料、工艺路线、目标产物均不同，未涉及木糖200 mg、EMIMBr 1000 mg、催化剂:木糖摩尔比1:10等任何必需事实，也无同类对照实验或机理背景，对回答本题无辅助价值。"
+   }
+  },
+  {
+   "query_id": "q_0013",
+   "action": "replace",
+   "doc_id": "chk_4f283b17046ca64f70a75f0f",
+   "rules_version": "v2",
+   "before": [
+    {
+     "doc_id": "chk_4f283b17046ca64f70a75f0f",
+     "relevance": 2,
+     "evidence_quotes": [
+      "fragment biomass components (i.e., lignin, cellulose, and hemicellulose)"
+     ],
+     "reason": "同一绿色氧化综述引言将木质素、纤维素、半纤维素列举为生物质组分（括号说明形式）。"
+    }
+   ],
+   "after": {
+    "doc_id": "chk_4f283b17046ca64f70a75f0f",
+    "relevance": 3,
+    "evidence_quotes": [
+     "biomass components (i.e., lignin, cellulose, and hemicellulose)"
+    ],
+    "reason": "块以 'biomass components (i.e., lignin, cellulose, and hemicellulose)' 直接列举出生物质的三大组分，单独即给出问题所需的全部必需事实（纤维素、半纤维素、木质素）。与原判2级不同：本块已逐条明确给出三种组分，故升级为3级。"
+   }
+  },
+  {
+   "query_id": "q_0013",
+   "action": "replace",
+   "doc_id": "chk_8c43d6189bfd58b10083cf8d",
+   "rules_version": "v2",
+   "before": [
+    {
+     "doc_id": "chk_8c43d6189bfd58b10083cf8d",
+     "relevance": 3,
+     "evidence_quotes": [
+      "Lignocelluloses are composed of cellulose (40–50%), hemicelluloses (25–35%) and lignin (15–20%)"
+     ],
+     "reason": "2018综述给出木质纤维素由纤维素、半纤维素、木质素组成及具体百分比。"
+    }
+   ],
+   "after": {
+    "doc_id": "chk_8c43d6189bfd58b10083cf8d",
+    "relevance": 3,
+    "evidence_quotes": [
+     "Lignocelluloses are composed of cellulose (40–50%), hemicelluloses (25–35%) and lignin (15– 20%)"
+    ],
+    "reason": "本块出自问题所指的2018年《Recent Trends》综述，明确写出 'Lignocelluloses are composed of cellulose (40–50%), hemicelluloses (25–35%) and lignin (15– 20%)'，单独给出全部必需事实及占比。"
+   }
+  },
+  {
+   "query_id": "q_0013",
+   "action": "replace",
+   "doc_id": "chk_d32e7ef117d91f85b89a0634",
+   "rules_version": "v2",
+   "before": [
+    {
+     "doc_id": "chk_d32e7ef117d91f85b89a0634",
+     "relevance": 2,
+     "evidence_quotes": [
+      "Biomass pretreatment results in cellulose-rich solids",
+      "reduction of hemicellulose and lignin components depending on the applied techniques"
+     ],
+     "reason": "同一木质素综述列举纤维素富集固形物、半纤维素与木质素组分减少，给出三大组分。"
+    }
+   ],
+   "after": {
+    "doc_id": "chk_d32e7ef117d91f85b89a0634",
+    "relevance": 0,
+    "evidence_quotes": [],
+    "reason": "块讨论DES脱木质素与木质素萃取效率，仅提及lignin与cellulose溶解度，从未列举木质纤维素的三大聚合物组分，也不解释'三大组分是什么'的机理，对本题无辅助价值。原判2级所引 'Biomass pretreatment results in cellulose-rich solids' 并不存在于本块，故降级为0级。"
+   }
+  },
+  {
+   "query_id": "q_0013",
+   "action": "replace",
+   "doc_id": "chk_b4a63245687199605240fc88",
+   "rules_version": "v2",
+   "before": [
+    {
+     "doc_id": "chk_b4a63245687199605240fc88",
+     "relevance": 3,
+     "evidence_quotes": [
+      "allows the fractionation of all the three biopolymers (cellulose, hemicellulose, and lignin) in Eucalyptus biomass"
+     ],
+     "reason": "桉木生物炼制论文明确指出可将桉木中全部三种生物聚合物（纤维素、半纤维素、木质素）分馏。"
+    }
+   ],
+   "after": {
+    "doc_id": "chk_b4a63245687199605240fc88",
+    "relevance": 3,
+    "evidence_quotes": [
+     "allows the fractiona‐ tion of all the three biopolymers (cellulose, hemicellulose, and lignin) in Eucalyptus biomass"
+    ],
+    "reason": "块在结论中说明该两步工艺 'allows the fractiona‐ tion of all the three biopolymers (cellulose, hemicellulose, and lignin) in Eucalyptus biomass'，明确列出三大生物聚合物，单独即可回答所需事实。"
+   }
+  },
+  {
+   "query_id": "q_0013",
+   "action": "replace",
+   "doc_id": "chk_8415a4ce30d60e523ec8f26f",
+   "rules_version": "v2",
+   "before": [
+    {
+     "doc_id": "chk_8415a4ce30d60e523ec8f26f",
+     "relevance": 3,
+     "evidence_quotes": [
+      "biomass contains an ash fraction in addition to the three main biopolymers (namely, cellulose, hemicellulose and lignin)"
+     ],
+     "reason": "AAEM热解综述明确指出木质纤维素的三大主要生物聚合物组分为纤维素、半纤维素和木质素。"
+    }
+   ],
+   "after": {
+    "doc_id": "chk_8415a4ce30d60e523ec8f26f",
+    "relevance": 3,
+    "evidence_quotes": [
+     "biomass contains an ash fraction in addition to the three main biopolymers (namely, cellulose, hemicellu lose and lignin)"
+    ],
+    "reason": "块写明 'biomass contains an ash fraction in addition to the three main biopolymers (namely, cellulose, hemicellu lose and lignin)'，直接列举出三大主要生物聚合物，单独即可给出全部必需事实。"
+   }
+  },
+  {
+   "query_id": "q_0013",
+   "action": "replace",
+   "doc_id": "chk_0a912b28229092da2e595f18",
+   "rules_version": "v2",
+   "before": [
+    {
+     "doc_id": "chk_0a912b28229092da2e595f18",
+     "relevance": 2,
+     "evidence_quotes": [
+      "The pretreatment-based fractionation of lignocellulose to cellulose-rich fraction, pentose-rich fraction, and lignin fraction is more attractive"
+     ],
+     "reason": "呋喃燃料添加剂论文列举纤维素富集、戊糖富集（半纤维素）、木质素三大分馏组分。"
+    }
+   ],
+   "after": {
+    "doc_id": "chk_0a912b28229092da2e595f18",
+    "relevance": 2,
+    "evidence_quotes": [
+     "The pretreatment-based fractionation of lignocellulose to celluloserich fraction, pentose-rich fraction, and lignin fraction is more attrac tive"
+    ],
+    "reason": "块将木质纤维素分馏为 'celluloserich fraction, pentose-rich fraction, and lignin fraction' 三部分，含必需的直接证据（戊糖源自半纤维素，见块后文 'C5-sugars (pentoses) derived from hemicelluloses'），需结合他块完整作答，故为2级。"
+   }
+  },
+  {
+   "query_id": "q_0013",
+   "action": "replace",
+   "doc_id": "chk_4d14c5369e8d24183d1c0860",
+   "rules_version": "v2",
+   "before": [
+    {
+     "doc_id": "chk_4d14c5369e8d24183d1c0860",
+     "relevance": 1,
+     "evidence_quotes": [],
+     "reason": "同一AAEM热解综述参考文献条目，无组分信息。"
+    },
+    {
+     "doc_id": "chk_4d14c5369e8d24183d1c0860",
+     "relevance": 0,
+     "evidence_quotes": [],
+     "reason": "该块出自生物质燃烧排放/气溶胶论文（paper_598a714a8ddb6a434683a20c），研究字段为大气污染物排放，与木质纤维素聚合物组分这一主题不同。"
+    }
+   ],
+   "after": {
+    "doc_id": "chk_4d14c5369e8d24183d1c0860",
+    "relevance": 0,
+    "evidence_quotes": [],
+    "reason": "块仅为一条参考文献条目（DOI+引文），不含任何关于木质纤维素组分的内容，按v2规范参考文献条目属0级。与原判1级不同：同论文并非1级的充分条件，本条无实质内容，故判0级。"
+   }
+  },
+  {
+   "query_id": "q_0013",
+   "action": "append",
+   "doc_id": "chk_70a2f1a660e15afd9b203b21",
+   "rules_version": "v2",
+   "before": [],
+   "after": {
+    "doc_id": "chk_70a2f1a660e15afd9b203b21",
+    "relevance": 0,
+    "evidence_quotes": [],
+    "reason": "块是生物质燃烧排放（烟气、温室气体）相关的参考文献条目，研究对象与'木质纤维素三大聚合物组分'完全不同，无辅助价值。"
+   }
+  },
+  {
+   "query_id": "q_0016",
+   "action": "replace",
+   "doc_id": "chk_df3aec9b2824dc7e019e2465",
+   "rules_version": "v2",
+   "before": [
+    {
+     "doc_id": "chk_df3aec9b2824dc7e019e2465",
+     "relevance": 2,
+     "evidence_quotes": [
+      "Fig. 2 Gas chromatogram (a) and molecular weight distribution (b) of lignin oil generated from hydrogenolysis of Eucalyptus sawdust at 240 °C for 4 h",
+      "Table 1 Comparison of the results after the RCF of Eucalyptus under different temperatures Reaction conditions: Eucalyptus (1.0 g), 10 wt% Pd/C catalyst (100 mg), MeOH (40 mL), H2 (30 atm), 4 h"
+     ],
+     "reason": "同篇论文含 RCF 木质素油 GC 数据与 Table 1（RCF 条件及酚类单体收率），提供木质素→酚类单体的直接证据，但块内未单独点明催化剂结论句，需组合。"
+    }
+   ],
+   "after": {
+    "doc_id": "chk_df3aec9b2824dc7e019e2465",
+    "relevance": 1,
+    "evidence_quotes": [],
+    "reason": "属于 v2 规范 5 类辅助价值中的【同论文的方法或数据来源】：该块出自问题所指的同一篇 2020 Eucalyptus grandis 论文，含 Fig.2 木质素油 GC 与分子量分布及酚类单体/二聚体数据，提供了该论文木质素解聚产物（单体酚类）的分析数据与口径，对回答'monomeric phenols 这一类产物'有辅助说明价值。但块内从未出现催化剂 Pd/C，也无'depolymerize lignin into monomeric phenols'的必需事实句（原判定所引仅为图注，未陈述催化剂或结论），不能单独或组合支撑必需事实，故降为 1 级而非 2 级。"
+   }
+  }
+ ]
+}

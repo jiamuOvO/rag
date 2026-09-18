@@ -1,0 +1,95 @@
+{
+ "query_id": "q_0033",
+ "judgments": [
+  {
+   "query_id": "q_0033",
+   "doc_id": "chk_17900f9b2ebd34f211652a6c",
+   "relevance": 0,
+   "reason": "doc1: same paper, references/acknowledgements only; doc3: same paper, literature-review reference list",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "ae601f87489a8ebc4133d1ed6b5cac15024e5b09efaf635e38fc9af40e5c8296"
+  },
+  {
+   "query_id": "q_0033",
+   "doc_id": "chk_6a892952eacd8b3774ce0f2b",
+   "relevance": 2,
+   "reason": "Shows the paper's strategy of using a removable inert liquid plasticiser (tetraglyme) to enable ROP of cyclic oligomers, addressing the melting/degradation problem.",
+   "evidence_quotes": [
+    "0.1% cyclic stannoxane added together with 33% (mass per mass cyOEF) tetraglyme as liquid inert plasticiser (red circles). The plasticiser alone without initiator (grey circles) increases kinetics to a smaller extent."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "6ede27937a8735fa54212e565bb68b0c7059c39c8834ff2aa9b65dfcaf240531"
+  },
+  {
+   "query_id": "q_0033",
+   "doc_id": "chk_9a11044c6b0a3219c803c306",
+   "relevance": 1,
+   "reason": "L1d: background on PEF thermal instability, no numbers or plasticiser solution.",
+   "evidence_quotes": [
+    "PEF appears less stable to thermal impact which makes the production of a marketable polymer through such intensive process very challenging"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "ae601f87489a8ebc4133d1ed6b5cac15024e5b09efaf635e38fc9af40e5c8296"
+  },
+  {
+   "query_id": "q_0033",
+   "doc_id": "chk_d30fe0e1b5e20c9b44099a85",
+   "relevance": 0,
+   "reason": "doc1: same paper, references/acknowledgements only; doc3: same paper, literature-review reference list",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "ae601f87489a8ebc4133d1ed6b5cac15024e5b09efaf635e38fc9af40e5c8296"
+  },
+  {
+   "query_id": "q_0033",
+   "doc_id": "chk_dd7dabb4ca1b2cc379d3fd10",
+   "relevance": 1,
+   "reason": "L1b: same paper's scheme mentions plasticisation but lacks the melting/degradation numbers.",
+   "evidence_quotes": [
+    "Purified cyOEF can then be polymerised via catalytic ring-opening polymerisation (ROP) within less than 30 min with appropriate plasticisation and initiator to high molecular weight bottle-grade PEF."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "ae601f87489a8ebc4133d1ed6b5cac15024e5b09efaf635e38fc9af40e5c8296"
+  },
+  {
+   "query_id": "q_0033",
+   "doc_id": "chk_fcafe2465c1c9252a4a15ad2",
+   "relevance": 3,
+   "reason": "Abstract directly states both the melting/degradation conflict and the plasticiser-based solution.",
+   "evidence_quotes": [
+    "The melting point of such mixture of cyclic oligomers lies around 370 °C, well above the degradation temperature of PEF (~329 °C). This challenge can be overcome, exploiting the self-plasticising effect of the forming polymer itself (which melts around 220 °C) by initiation in the presence of a high boiling, yet removable, and inert liquid plasticiser."
+   ],
+   "fact_ids": [
+    "f1",
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "ae601f87489a8ebc4133d1ed6b5cac15024e5b09efaf635e38fc9af40e5c8296"
+  }
+ ]
+}

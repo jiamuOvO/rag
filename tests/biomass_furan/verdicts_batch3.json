@@ -1,0 +1,92 @@
+[
+ {
+  "n": 46, "query_id": "q_0015", "doc_id": "chk_d669deac9629382e689cfc6a",
+  "old_grade": 3, "final_grade": 2, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "部分支持"}],
+  "actual_evidence": "To produce furfural with high selectivity and yield, the screening (Figure 3) showed an optimum at a temperature around 175°C and a reaction time of approximately 1 h... The hydrolysate of the biphasic fractionation step was used at identical conditions with and without 2-MTHF as a second liquid phase.",
+  "explanation": "与 n=43 同题同类：块内多次出现 2-MTHF（第二液相），但全块未出现 water 一词，另一相仅以 the hydrolysate 隐含表达。必需事实要求点名两种溶剂，实际只明确一种 → 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 47, "query_id": "q_0016", "doc_id": "chk_9b27a5144a763ff68f58aa16",
+  "old_grade": 3, "final_grade": 3, "changed": false,
+  "fact_checks": [{"fact": 1, "verdict": "支持"}],
+  "actual_evidence": "Screening of the solid residue with a 300-mesh sieve can recover 91% of Pd/C, which was then subjected to simple washing and was used directly in the following cycle. As shown in Fig. 4, the yields of phenolic monomers were still retained at 35.1 wt% in the fourth run... Fig. 1 Schematic representation of the reductive catalytic fractionation (RCF) of Eucalyptus",
+  "explanation": "必需事实两项齐备：催化剂 Pd/C（含 91% 回收、循环复用）与产物类别 phenolic monomers（35.1 wt%、4-propanol guaiacol/syringol）。块来源即题目点名的 2020 Eucalyptus grandis 集成生物炼制论文 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 48, "query_id": "q_0016", "doc_id": "chk_ad5180b277f6e342545badc6",
+  "old_grade": 3, "final_grade": 3, "changed": false,
+  "fact_checks": [{"fact": 1, "verdict": "支持"}],
+  "actual_evidence": "Table 1 Comparison of the results after the RCF of Eucalyptus under different temperatures Reaction conditions: Eucalyptus (1.0 g), 10 wt% Pd/C catalyst (100 mg), MeOH (40 mL), H2 (30 atm), 4 h ｜ Phenolic monomers yield (wt%)a Sugar retention (wt%)b",
+  "explanation": "块内 Table 1 表头与条件行同时给出『10 wt% Pd/C catalyst』与『Phenolic monomers yield』，两项必需事实齐备且属同一 RCF（第一段木质素处理）步骤 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 49, "query_id": "q_0016", "doc_id": "chk_c90f3629e80547c70ed57947",
+  "old_grade": 3, "final_grade": 3, "changed": false,
+  "fact_checks": [{"fact": 1, "verdict": "支持"}],
+  "actual_evidence": "The soluble fraction contained monomeric, dimeric and oligomeric phenols derived from depolymerization of lignin... A proposed pathway to the major products included the cleavage of C–O bonds in β-O-4 linkages leading to monolignols and subsequent reduction of C=C bonds, and both steps would be catalyzed by Pd/C. The RCF reaction at 200 °C for 8 h and 250 °C for 2 h with Pd/C catalyst was also performed",
+  "explanation": "块内直接写明 Pd/C 催化木质素解聚为酚类单体（monomeric phenols derived from depolymerization of lignin + both steps catalyzed by Pd/C），两项齐备 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 50, "query_id": "q_0016", "doc_id": "chk_cc6f834d38212f53e2cabe1a",
+  "old_grade": 3, "final_grade": 2, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "部分支持"}],
+  "actual_evidence": "The soluble fraction contained monomeric, dimeric and oligomeric phenols derived from depolymerization of lignin, as well as polyols derived from partial hydrolysis of (hemi)cellulose... In the monomers, 4-propanol guaiacol (12.9 wt%) and 4-propanol syringol (31.9 wt%) were identified as the two major phenolic products with 90% selectivity",
+  "explanation": "逐字通读该块：只交代酚类单体（monomeric phenols、4-propanol guaiacol/syringol）一项，全块未出现 Pd/C 或任何催化剂名称（旧理由自称『Confirms monomeric phenol products』，本身也只覆盖一项）。两项必需事实缺一 → 最高 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 51, "query_id": "q_0018", "doc_id": "chk_3502598feddaf54c42179cfb",
+  "old_grade": 3, "final_grade": 3, "changed": false,
+  "fact_checks": [{"fact": 1, "verdict": "支持"}],
+  "actual_evidence": "This procedure was repeated during four consecutive cycles to assess the resulting extractives and the overall performance. Remarkably, the efficiency of the fractionation (extracted lignin and residual pulp yields) is constant with each run... the excellent recyclability depicts a promising holistic approach that showed a stable performance of the catalyst and solvent during the four cycles.",
+  "explanation": "必需事实『四个连续循环』被逐字给出，并明确『效率保持稳定』（the efficiency of the fractionation is constant with each run），来源即指定论文 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 52, "query_id": "q_0018", "doc_id": "chk_69cf17a7e04566cf89d39367",
+  "old_grade": 3, "final_grade": 3, "changed": false,
+  "fact_checks": [{"fact": 1, "verdict": "支持"}],
+  "actual_evidence": "This procedure was repeated during four consecutive cycles to assess the resulting extractives and the overall performance. Remarkably, the efficiency of the fractionation (extracted lignin and residual pulp yields) is constant with each run, as well as the hydrolysis of the cellulose enriched pulp (Figure 6a).",
+  "explanation": "同一论文的重叠块，同样逐字给出 four consecutive cycles 与效率恒定 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 53, "query_id": "q_0023", "doc_id": "chk_9a11044c6b0a3219c803c306",
+  "old_grade": 3, "final_grade": 3, "changed": false,
+  "fact_checks": [{"fact": 1, "verdict": "支持"}],
+  "actual_evidence": "we exploit ring-opening polymerisation (ROP)15 as a faster synthetic route for PEF... In this process, the esterification by-products are removed prior to the actual polymerisation by forming macrocyclic oligomers in a diluted non-viscous environment. Since those macrocycles have no end-groups and low ring strain, ROP does not require any by-product removal",
+  "explanation": "两项齐备：ROP 被明确展开为 ring-opening polymerisation（开环聚合），且交代其直接原料是预先形成的 macrocyclic oligomers（环状低聚物），图 1 语境为 PEF。块来源即题目点名的 2018 环状低聚物制 PEF 论文 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 54, "query_id": "q_0023", "doc_id": "chk_c7386b23f1137ddd583d474b",
+  "old_grade": 3, "final_grade": 3, "changed": false,
+  "fact_checks": [{"fact": 1, "verdict": "支持"}],
+  "actual_evidence": "Here we show that purified cyclic oligomers can be polymerised successfully within minutes... The cyclic PEF oligomers (cyOEF) can be prepared efficiently by depolymerisation18,19 of low molecular weight linear PEF oligomers (linOEF)... if needed further purified from residual linOEF to 99% purity via silica gel adsorption.",
+  "explanation": "两项齐备且更完整：ROP=开环聚合、直接原料为 purified cyclic oligomers（明确写出 cyOEF 与 99% 纯化）→ 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 55, "query_id": "q_0024", "doc_id": "chk_305f10f1a75a63236a4c181e",
+  "old_grade": 3, "final_grade": 2, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "部分支持"}],
+  "actual_evidence": "Choline chloride (ChCl) / glycolic acid (GA) deep eutectic solvent (DES) media with high water content but without any additional catalyst are introduced in furfural and 5hydroxymethylfurfural (HMF) production. ｜ High furfural yields were achieved, namely 62% from the sugar mixture",
+  "explanation": "必需事实的核心是机理链条：羧酸作为氢键供体（HBD）→ 赋予 DES 酸性 → 因此 DES 本身兼具溶剂与催化剂。该块为该文摘要，只给出『without any additional catalyst』与在无外加催化剂介质中取得 62% 收率，属该结论的可观测侧证；全块未出现 HBD、羧酸供质子或『溶剂兼催化剂』的表述。部分覆盖 → 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ }
+]

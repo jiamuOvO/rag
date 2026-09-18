@@ -1,0 +1,1399 @@
+{
+ "note": "事实—证据对照；引文未命中只用于定位，不作为降级依据。数值+单位是判据锚点。",
+ "targets": 60,
+ "counts": {
+  "keeps_grade3_all_facts_supported": 19,
+  "handover_no_anchor_supported": 4,
+  "handover_undetermined_anchors": 32,
+  "capped_to_2_partial_support": 5
+ },
+ "detail": [
+  {
+   "query_id": "q_0001",
+   "doc_id": "chk_146ef0a2692f27a972ce10dc",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 1,
+   "facts_undetermined": 0,
+   "outcome": "keeps_grade3_all_facts_supported",
+   "per_fact": [
+    {
+     "fact": "木糖200 mg、EMIMBr 1000 mg，催化剂:木糖摩尔比1:10。",
+     "hard_anchor": "Reaction conditions: 200 mg of xylose was dissolved in 1000 mg of EMIMBr; molar ratio of catalyst:xylose = 1:10; 130 ◦C;",
+     "anchors": [
+      "1000 mg",
+      "1:10",
+      "200 mg"
+     ],
+     "block_evidence": "200 mg of xylose was dissolved in 1000 mg of ionic liquid;",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0001",
+   "doc_id": "chk_23a0c15f43bbc31ba51d1d39",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 1,
+   "facts_undetermined": 0,
+   "outcome": "keeps_grade3_all_facts_supported",
+   "per_fact": [
+    {
+     "fact": "木糖200 mg、EMIMBr 1000 mg，催化剂:木糖摩尔比1:10。",
+     "hard_anchor": "Reaction conditions: 200 mg of xylose was dissolved in 1000 mg of EMIMBr; molar ratio of catalyst:xylose = 1:10; 130 ◦C;",
+     "anchors": [
+      "1000 mg",
+      "1:10",
+      "200 mg"
+     ],
+     "block_evidence": "200 mg of xylose was dissolved in 1000 mg of EMIMBr;",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0001",
+   "doc_id": "chk_3802f88572be015e0e26a58d",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 1,
+   "facts_undetermined": 0,
+   "outcome": "keeps_grade3_all_facts_supported",
+   "per_fact": [
+    {
+     "fact": "木糖200 mg、EMIMBr 1000 mg，催化剂:木糖摩尔比1:10。",
+     "hard_anchor": "Reaction conditions: 200 mg of xylose was dissolved in 1000 mg of EMIMBr; molar ratio of catalyst:xylose = 1:10; 130 ◦C;",
+     "anchors": [
+      "1000 mg",
+      "1:10",
+      "200 mg"
+     ],
+     "block_evidence": "200 mg of xylose was dissolved in 1000 mg of EMIMBr;",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0001",
+   "doc_id": "chk_3966d11a350c894b6c9bab9b",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 1,
+   "facts_undetermined": 0,
+   "outcome": "keeps_grade3_all_facts_supported",
+   "per_fact": [
+    {
+     "fact": "木糖200 mg、EMIMBr 1000 mg，催化剂:木糖摩尔比1:10。",
+     "hard_anchor": "Reaction conditions: 200 mg of xylose was dissolved in 1000 mg of EMIMBr; molar ratio of catalyst:xylose = 1:10; 130 ◦C;",
+     "anchors": [
+      "1000 mg",
+      "1:10",
+      "200 mg"
+     ],
+     "block_evidence": "200 mg of xylose was dissolved in 1000 mg of EMIMBr;",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0001",
+   "doc_id": "chk_a4be2b0e6154e2a3e03a504d",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 1,
+   "facts_undetermined": 0,
+   "outcome": "keeps_grade3_all_facts_supported",
+   "per_fact": [
+    {
+     "fact": "木糖200 mg、EMIMBr 1000 mg，催化剂:木糖摩尔比1:10。",
+     "hard_anchor": "Reaction conditions: 200 mg of xylose was dissolved in 1000 mg of EMIMBr; molar ratio of catalyst:xylose = 1:10; 130 ◦C;",
+     "anchors": [
+      "1000 mg",
+      "1:10",
+      "200 mg"
+     ],
+     "block_evidence": "200 mg xylose, 1000 mg of EMIMBr;",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0001",
+   "doc_id": "chk_d5a0855a9de310453948713b",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 1,
+   "facts_undetermined": 0,
+   "outcome": "keeps_grade3_all_facts_supported",
+   "per_fact": [
+    {
+     "fact": "木糖200 mg、EMIMBr 1000 mg，催化剂:木糖摩尔比1:10。",
+     "hard_anchor": "Reaction conditions: 200 mg of xylose was dissolved in 1000 mg of EMIMBr; molar ratio of catalyst:xylose = 1:10; 130 ◦C;",
+     "anchors": [
+      "1000 mg",
+      "1:10",
+      "200 mg"
+     ],
+     "block_evidence": "200 mg of xylose was dissolved in 1000 mg of ionic liquid;",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0001",
+   "doc_id": "chk_de8ed6767b301e54f3952681",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 1,
+   "facts_undetermined": 0,
+   "outcome": "keeps_grade3_all_facts_supported",
+   "per_fact": [
+    {
+     "fact": "木糖200 mg、EMIMBr 1000 mg，催化剂:木糖摩尔比1:10。",
+     "hard_anchor": "Reaction conditions: 200 mg of xylose was dissolved in 1000 mg of EMIMBr; molar ratio of catalyst:xylose = 1:10; 130 ◦C;",
+     "anchors": [
+      "1000 mg",
+      "1:10",
+      "200 mg"
+     ],
+     "block_evidence": "200 mg of xylose was dissolved in 1000 mg of EMIMBr;",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0001",
+   "doc_id": "chk_ee4f714d67d858f105a035d3",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 1,
+   "facts_undetermined": 0,
+   "outcome": "keeps_grade3_all_facts_supported",
+   "per_fact": [
+    {
+     "fact": "木糖200 mg、EMIMBr 1000 mg，催化剂:木糖摩尔比1:10。",
+     "hard_anchor": "Reaction conditions: 200 mg of xylose was dissolved in 1000 mg of EMIMBr; molar ratio of catalyst:xylose = 1:10; 130 ◦C;",
+     "anchors": [
+      "1000 mg",
+      "1:10",
+      "200 mg"
+     ],
+     "block_evidence": "200 mg of xylose was dissolved in 1000 mg of EMIMBr;",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0003",
+   "doc_id": "chk_eb28ef77eb4b424fe27b2883",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 1,
+   "facts_undetermined": 0,
+   "outcome": "keeps_grade3_all_facts_supported",
+   "per_fact": [
+    {
+     "fact": "30 min时为41.7%；1 h达到最高50.1%。",
+     "hard_anchor": "We attempted to convert xylan into xylose in the EMIMBr/SnCl4 system at 130 ◦C. As shown in Figure 9, the furfural yield",
+     "anchors": [
+      "1 h",
+      "30 min",
+      "41.7%",
+      "50.1%"
+     ],
+     "block_evidence": "1 h.",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0004",
+   "doc_id": "chk_cac3807d9a18c151af2918db",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 0,
+   "outcome": "handover_no_anchor_supported",
+   "per_fact": [
+    {
+     "fact": "收率由52.4%提高到71.1%，继续增加用量反而下降。",
+     "hard_anchor": "When the catalyst dosage increased from 5 mol% to 10 mol%, the furfural yield increased from 52.4% to 71.1%. As the cata",
+     "anchors": [
+      "52.4%",
+      "71.1%"
+     ],
+     "block_evidence": null,
+     "verdict": "not_supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0007",
+   "doc_id": "chk_4f86dedd60c3fd056c61dc03",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 0,
+   "outcome": "handover_no_anchor_supported",
+   "per_fact": [
+    {
+     "fact": "157.3℃、1.74 min、LiBr 8.19 wt.%。",
+     "hard_anchor": "the optimal values determined for the three parameters are: 1.74 min of reaction time, 157.3 ◦C and 8.19 wt.% of LiBr. F",
+     "anchors": [
+      "1.74 min",
+      "157.3",
+      "8.19 wt.%"
+     ],
+     "block_evidence": null,
+     "verdict": "not_supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0010",
+   "doc_id": "chk_27e71a7f418b0bd0a2dfe071",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "用不混溶有机溶剂原位萃取CMF。",
+     "hard_anchor": "CMF is extracted in situ using immiscible organic solvents, allowing for an easy product separation.",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0010",
+   "doc_id": "chk_4c284eac482a133d335c7ca7",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "用不混溶有机溶剂原位萃取CMF。",
+     "hard_anchor": "CMF is extracted in situ using immiscible organic solvents, allowing for an easy product separation.",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0010",
+   "doc_id": "chk_f6334e3e233a5be7e5e4b91b",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "用不混溶有机溶剂原位萃取CMF。",
+     "hard_anchor": "CMF is extracted in situ using immiscible organic solvents, allowing for an easy product separation.",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0011",
+   "doc_id": "chk_80cfb9a0ecf7628f4f48e9d3",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "A single low-temperature biomass hydrolysis step using fuming hydrochloric acid.",
+     "hard_anchor": "The Bergius−Rheinau, or Bergius− Willstätter−Zechmeister process, is the hydrolysis of biomass by the action of fuming h",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_5390b5325ecf463c4e9497d7",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "纤维素、半纤维素和木质素。",
+     "hard_anchor": "LCB is mainly composed of three polymers: cellulose (C6H10O5)n, hemicellulose (C5H8O4)m, and lignin [C9H10O3(OCH3)0.9−1.",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0013",
+   "doc_id": "chk_7764b60e09f53eaa5aa68fc6",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "纤维素、半纤维素和木质素。",
+     "hard_anchor": "LCB is mainly composed of three polymers: cellulose (C6H10O5)n, hemicellulose (C5H8O4)m, and lignin [C9H10O3(OCH3)0.9−1.",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0014",
+   "doc_id": "chk_45a69b0e755aa8b4a0a506fb",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "物理、化学、物理化学和生物方法。",
+     "hard_anchor": "The pretreatment techniques currently in use, may be broadly classified as physical, chemical, physicochemical, and biol",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0014",
+   "doc_id": "chk_7764b60e09f53eaa5aa68fc6",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "物理、化学、物理化学和生物方法。",
+     "hard_anchor": "The pretreatment techniques currently in use, may be broadly classified as physical, chemical, physicochemical, and biol",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0015",
+   "doc_id": "chk_225788b644ea25f4b634ffb6",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "Water and 2-methyltetrahydrofuran.",
+     "hard_anchor": "This paper explored the disentanglement of lignocellulose into hemicellulose-derived sugars, cellulose, and lignin in a ",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0015",
+   "doc_id": "chk_61fec0ffa9e553e9cc7bc451",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "Water and 2-methyltetrahydrofuran.",
+     "hard_anchor": "This paper explored the disentanglement of lignocellulose into hemicellulose-derived sugars, cellulose, and lignin in a ",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0015",
+   "doc_id": "chk_979045fd6bdb126a66d66d75",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "Water and 2-methyltetrahydrofuran.",
+     "hard_anchor": "This paper explored the disentanglement of lignocellulose into hemicellulose-derived sugars, cellulose, and lignin in a ",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0015",
+   "doc_id": "chk_d669deac9629382e689cfc6a",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "Water and 2-methyltetrahydrofuran.",
+     "hard_anchor": "This paper explored the disentanglement of lignocellulose into hemicellulose-derived sugars, cellulose, and lignin in a ",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0016",
+   "doc_id": "chk_9b27a5144a763ff68f58aa16",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "Pd/C was used to depolymerize lignin into monomeric phenols.",
+     "hard_anchor": "Lignin was depolymerized into well-defined monomeric phenols in the first step using a Pd/C catalyst.",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0016",
+   "doc_id": "chk_ad5180b277f6e342545badc6",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "Pd/C was used to depolymerize lignin into monomeric phenols.",
+     "hard_anchor": "Lignin was depolymerized into well-defined monomeric phenols in the first step using a Pd/C catalyst.",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0016",
+   "doc_id": "chk_c90f3629e80547c70ed57947",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "Pd/C was used to depolymerize lignin into monomeric phenols.",
+     "hard_anchor": "Lignin was depolymerized into well-defined monomeric phenols in the first step using a Pd/C catalyst.",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0016",
+   "doc_id": "chk_cc6f834d38212f53e2cabe1a",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "Pd/C was used to depolymerize lignin into monomeric phenols.",
+     "hard_anchor": "Lignin was depolymerized into well-defined monomeric phenols in the first step using a Pd/C catalyst.",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0018",
+   "doc_id": "chk_3502598feddaf54c42179cfb",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "Four consecutive cycles.",
+     "hard_anchor": "a downstream and recycling strategy enabled recovery of phosphoric acid without loss of process efficiency over four con",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0018",
+   "doc_id": "chk_69cf17a7e04566cf89d39367",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "Four consecutive cycles.",
+     "hard_anchor": "a downstream and recycling strategy enabled recovery of phosphoric acid without loss of process efficiency over four con",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_a2cd446f218bdb4129df1ed3",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 1,
+   "facts_undetermined": 0,
+   "outcome": "keeps_grade3_all_facts_supported",
+   "per_fact": [
+    {
+     "fact": "Mn >30 kg/mol, conversion >95%, and color-free products.",
+     "hard_anchor": "Mn > 30 kg mol−1, conversion > 95%, colour-free products",
+     "anchors": [
+      "30 kg",
+      "95%"
+     ],
+     "block_evidence": "ROP at 260 °C results in a a c e d b 1.4 1.0 0.8 0.6 0.4 0.2 0.0 1.0 50 40 30 20 10 0 0.8 0.6 0.4 0.2 O O O O O O O R O O O OR n n O O O O O 0.0 Normalised UV signal (–) Absolute Mn (kg mol–1) Conversion (–) Conversion (–) Conversion (–) 1.2 1.0 0.8 0.6 0.4 0.",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0022",
+   "doc_id": "chk_fb761c55ac1450f6784d6f7b",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 1,
+   "facts_undetermined": 0,
+   "outcome": "keeps_grade3_all_facts_supported",
+   "per_fact": [
+    {
+     "fact": "Mn >30 kg/mol, conversion >95%, and color-free products.",
+     "hard_anchor": "Mn > 30 kg mol−1, conversion > 95%, colour-free products",
+     "anchors": [
+      "30 kg",
+      "95%"
+     ],
+     "block_evidence": "3c, d and Table 1, ROP delivers bottle-grade (>95% conversion, Mn > 30 kg mol−1, uncoloured) PEF within less than 30 min, by which the usually observed degradation and discolouration can be avoided.",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0023",
+   "doc_id": "chk_9a11044c6b0a3219c803c306",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "ROP为开环聚合，直接原料是纯化的环状PEF低聚物cyOEF。",
+     "hard_anchor": "Purified cyOEF can then be polymerised via catalytic ring-opening polymerisation (ROP) within less than 30 min with appr",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0023",
+   "doc_id": "chk_c7386b23f1137ddd583d474b",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "ROP为开环聚合，直接原料是纯化的环状PEF低聚物cyOEF。",
+     "hard_anchor": "Purified cyOEF can then be polymerised via catalytic ring-opening polymerisation (ROP) within less than 30 min with appr",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0024",
+   "doc_id": "chk_305f10f1a75a63236a4c181e",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "羧酸作为氢键供体赋予DES酸性，因此DES本身兼具溶剂和催化剂作用。",
+     "hard_anchor": "Applying only DES in a conversion reaction relies on the carboxylic acid acting as an HBD, which gives the DES acidic ch",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_076b9346fadb8e7dee5524c6",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 0,
+   "outcome": "handover_no_anchor_supported",
+   "per_fact": [
+    {
+     "fact": "240℃、4 h、30 atm H2。",
+     "hard_anchor": "The maximum phenolic monomers yield of 49.8 wt% was achieved at 240 °C for 4 h under 30 atm H2.",
+     "anchors": [
+      "240",
+      "30 atm",
+      "4 h"
+     ],
+     "block_evidence": null,
+     "verdict": "not_supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0027",
+   "doc_id": "chk_c90f3629e80547c70ed57947",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 1,
+   "facts_undetermined": 0,
+   "outcome": "keeps_grade3_all_facts_supported",
+   "per_fact": [
+    {
+     "fact": "240℃、4 h、30 atm H2。",
+     "hard_anchor": "The maximum phenolic monomers yield of 49.8 wt% was achieved at 240 °C for 4 h under 30 atm H2.",
+     "anchors": [
+      "240",
+      "30 atm",
+      "4 h"
+     ],
+     "block_evidence": "Increased total phenolic monomer yields were observed with the rise of reaction temperature in a range of 200–240 °C, thus reaching maximum yield of 49.8 wt%.",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0028",
+   "doc_id": "chk_fd754a50c4f3510f7ef443fc",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 1,
+   "facts_undetermined": 0,
+   "outcome": "keeps_grade3_all_facts_supported",
+   "per_fact": [
+    {
+     "fact": "190 °C and 100 min.",
+     "hard_anchor": "The optimal reaction condition for the co-conversion of hemicellulose and cellulose was established as 190 °C and 100 mi",
+     "anchors": [
+      "100 min",
+      "190 °c"
+     ],
+     "block_evidence": "At higher temperatures (180 °C, 190 °C and 200 °C), the maximum yield of furfural (ca.",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_1e3eaec5bd452ddb3b9a4006",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 1,
+   "facts_undetermined": 0,
+   "outcome": "keeps_grade3_all_facts_supported",
+   "per_fact": [
+    {
+     "fact": "糖混合物160℃、10 min；桦木锯屑170℃、10 min。",
+     "hard_anchor": "The optimal reaction conditions were 160°C and 10 minutes for the sugar mixture and 170°C and 10 minutes for birch sawdu",
+     "anchors": [
+      "10 min",
+      "160",
+      "170"
+     ],
+     "block_evidence": "Factors and their levels were chosen based on previous experiments with sugars, and comprised time (10 to 30 min), temperature (150 to 170°C), and quantity of water in DES (0.5, 4 or 10 equiv.).",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0032",
+   "doc_id": "chk_ae427d946654a90bad529088",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 1,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "Large specific surface area, uniformly dispersed Pt nanoparticles and stronger furfural adsorption.",
+     "hard_anchor": "The large specific surface area, uniform dispersion of Pt nanoparticles and the stronger furfural adsorption ability of ",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_076b9346fadb8e7dee5524c6",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 1,
+   "facts_undetermined": 0,
+   "outcome": "keeps_grade3_all_facts_supported",
+   "per_fact": [
+    {
+     "fact": "糠醛55.9%，乙酰丙酸73.6%。",
+     "hard_anchor": "The optimal reaction condition for the co-conversion of hemicellulose and cellulose was established as 190 °C and 100 mi",
+     "anchors": [
+      "55.9%",
+      "73.6%"
+     ],
+     "block_evidence": "The furfural and LA yields reached 55.9% and 73.6%, respectively, when the reaction condition was established as 190 °C and 100 min.",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_aab52ea69a4faea507a0a623",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 1,
+   "facts_undetermined": 0,
+   "outcome": "keeps_grade3_all_facts_supported",
+   "per_fact": [
+    {
+     "fact": "糠醛55.9%，乙酰丙酸73.6%。",
+     "hard_anchor": "The optimal reaction condition for the co-conversion of hemicellulose and cellulose was established as 190 °C and 100 mi",
+     "anchors": [
+      "55.9%",
+      "73.6%"
+     ],
+     "block_evidence": "The furfural and LA yields reached 55.9% and 73.6%, respectively, when the reaction condition was established as 190 °C and 100 min.",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0035",
+   "doc_id": "chk_fd754a50c4f3510f7ef443fc",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 1,
+   "facts_undetermined": 0,
+   "outcome": "keeps_grade3_all_facts_supported",
+   "per_fact": [
+    {
+     "fact": "糠醛55.9%，乙酰丙酸73.6%。",
+     "hard_anchor": "The optimal reaction condition for the co-conversion of hemicellulose and cellulose was established as 190 °C and 100 mi",
+     "anchors": [
+      "55.9%",
+      "73.6%"
+     ],
+     "block_evidence": "Based on the above experiment results, the optimal reaction condition for the co-conversion hemicellulose and cellulose was established as 190 °C and 100 min, from which furfural and levulinic acid were obtained in 55.9% and 73.6% yield, respectively.",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_3e0dc46c1ee855297b3d0bd3",
+   "grade_now": 3,
+   "facts_total": 3,
+   "facts_supported": 3,
+   "facts_undetermined": 0,
+   "outcome": "keeps_grade3_all_facts_supported",
+   "per_fact": [
+    {
+     "fact": "Bulk-supported 5%Pt gave 60.2% furfuryl-alcohol yield after 5 h.",
+     "hard_anchor": "When 5%Pt@g-C3N4 was used as the catalyst, furfuryl alcohol was found to be the main product with 60.2% yield based on f",
+     "anchors": [
+      "5 h",
+      "5%",
+      "60.2%"
+     ],
+     "block_evidence": "Typical SEM images of (A) bulk g-C3N4, (B,C) 5%Pt@TECN sample and the corresponding elemental mapping images of (D) carbon, (E) nitrogen and (F) platinum.",
+     "verdict": "supported"
+    },
+    {
+     "fact": "Nanosheet support achieved complete conversion and >99% furfuryl-alcohol selectivity in 5 h.",
+     "hard_anchor": "when g-C3N4 nanosheets was used as the support for loading Pt nanoparticles, significant improvement of activity with co",
+     "anchors": [
+      "5 h",
+      "99%"
+     ],
+     "block_evidence": "Furfural hydrogenation over Pt catalysts after 5 h reaction in water at 100 °Ca.",
+     "verdict": "supported"
+    },
+    {
+     "fact": "The reaction was conducted at 100 °C under 1 MPa H2 in water.",
+     "hard_anchor": "The reaction was firstly conducted at 100 °C under 1 MPa H2 in water.",
+     "anchors": [
+      "1 m",
+      "100 °c"
+     ],
+     "block_evidence": "Furfural hydrogenation over Pt catalysts after 5 h reaction in water at 100 °Ca.",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_9326f8e75cf43d68ec9232fb",
+   "grade_now": 3,
+   "facts_total": 3,
+   "facts_supported": 3,
+   "facts_undetermined": 0,
+   "outcome": "keeps_grade3_all_facts_supported",
+   "per_fact": [
+    {
+     "fact": "Bulk-supported 5%Pt gave 60.2% furfuryl-alcohol yield after 5 h.",
+     "hard_anchor": "When 5%Pt@g-C3N4 was used as the catalyst, furfuryl alcohol was found to be the main product with 60.2% yield based on f",
+     "anchors": [
+      "5 h",
+      "5%",
+      "60.2%"
+     ],
+     "block_evidence": "Evolution of reactant and product concentrations at 100 °C with reaction time over 5%Pt@ TECN.",
+     "verdict": "supported"
+    },
+    {
+     "fact": "Nanosheet support achieved complete conversion and >99% furfuryl-alcohol selectivity in 5 h.",
+     "hard_anchor": "when g-C3N4 nanosheets was used as the support for loading Pt nanoparticles, significant improvement of activity with co",
+     "anchors": [
+      "5 h",
+      "99%"
+     ],
+     "block_evidence": "Effect of solvent on furfural hydrogenation over 5%Pt@TECN after 5 h reaction at 100 °Ca.",
+     "verdict": "supported"
+    },
+    {
+     "fact": "The reaction was conducted at 100 °C under 1 MPa H2 in water.",
+     "hard_anchor": "The reaction was firstly conducted at 100 °C under 1 MPa H2 in water.",
+     "anchors": [
+      "1 m",
+      "100 °c"
+     ],
+     "block_evidence": "Evolution of reactant and product concentrations at 100 °C with reaction time over 5%Pt@ TECN.",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_61fec0ffa9e553e9cc7bc451",
+   "grade_now": 3,
+   "facts_total": 3,
+   "facts_supported": 0,
+   "facts_undetermined": 3,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "磷酸在相分离及水蒸发后回用。",
+     "hard_anchor": "After phase separation and water evaporation, the phosphoric acid can be reused.",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "Eucalyptus研究第一步用Pd/C解聚木质素。",
+     "hard_anchor": "Lignin was depolymerized into well-defined monomeric phenols in the first step using a Pd/C catalyst.",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "保留糖类的浆料随后用FeCl3处理。",
+     "hard_anchor": "High retention of cellulose and hemicellulose pulp was also obtained, which was treated with FeCl3 catalyst to attain 5-",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0041",
+   "doc_id": "chk_6f9e1ddf4e91431e9cfc6c46",
+   "grade_now": 3,
+   "facts_total": 3,
+   "facts_supported": 0,
+   "facts_undetermined": 3,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "磷酸在相分离及水蒸发后回用。",
+     "hard_anchor": "After phase separation and water evaporation, the phosphoric acid can be reused.",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "Eucalyptus研究第一步用Pd/C解聚木质素。",
+     "hard_anchor": "Lignin was depolymerized into well-defined monomeric phenols in the first step using a Pd/C catalyst.",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "保留糖类的浆料随后用FeCl3处理。",
+     "hard_anchor": "High retention of cellulose and hemicellulose pulp was also obtained, which was treated with FeCl3 catalyst to attain 5-",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_3f69bf6b3a14097bc389e768",
+   "grade_now": 2,
+   "facts_total": 2,
+   "facts_supported": 0,
+   "facts_undetermined": 2,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "The phosphoric-acid study uses water/2-MTHF with recyclable phosphoric acid.",
+     "hard_anchor": "This paper explored the disentanglement of lignocellulose into hemicellulose-derived sugars, cellulose, and lignin in a ",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "The other study uses aqueous ChCl/GA DES without an additional catalyst.",
+     "hard_anchor": "Choline chloride (ChCl) / glycolic acid (GA) deep eutectic solvent (DES) media with high water content but without any a",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_4d23c61724b8781b5c07f8ed",
+   "grade_now": 2,
+   "facts_total": 2,
+   "facts_supported": 0,
+   "facts_undetermined": 2,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "The phosphoric-acid study uses water/2-MTHF with recyclable phosphoric acid.",
+     "hard_anchor": "This paper explored the disentanglement of lignocellulose into hemicellulose-derived sugars, cellulose, and lignin in a ",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "The other study uses aqueous ChCl/GA DES without an additional catalyst.",
+     "hard_anchor": "Choline chloride (ChCl) / glycolic acid (GA) deep eutectic solvent (DES) media with high water content but without any a",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_4f1003898eb083ea75f9672f",
+   "grade_now": 2,
+   "facts_total": 2,
+   "facts_supported": 0,
+   "facts_undetermined": 2,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "The phosphoric-acid study uses water/2-MTHF with recyclable phosphoric acid.",
+     "hard_anchor": "This paper explored the disentanglement of lignocellulose into hemicellulose-derived sugars, cellulose, and lignin in a ",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "The other study uses aqueous ChCl/GA DES without an additional catalyst.",
+     "hard_anchor": "Choline chloride (ChCl) / glycolic acid (GA) deep eutectic solvent (DES) media with high water content but without any a",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_8781e312c8a17f3f184b7414",
+   "grade_now": 2,
+   "facts_total": 2,
+   "facts_supported": 0,
+   "facts_undetermined": 2,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "The phosphoric-acid study uses water/2-MTHF with recyclable phosphoric acid.",
+     "hard_anchor": "This paper explored the disentanglement of lignocellulose into hemicellulose-derived sugars, cellulose, and lignin in a ",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "The other study uses aqueous ChCl/GA DES without an additional catalyst.",
+     "hard_anchor": "Choline chloride (ChCl) / glycolic acid (GA) deep eutectic solvent (DES) media with high water content but without any a",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0042",
+   "doc_id": "chk_9f994e2e49ec3c47a5ae2cda",
+   "grade_now": 2,
+   "facts_total": 2,
+   "facts_supported": 0,
+   "facts_undetermined": 2,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "The phosphoric-acid study uses water/2-MTHF with recyclable phosphoric acid.",
+     "hard_anchor": "This paper explored the disentanglement of lignocellulose into hemicellulose-derived sugars, cellulose, and lignin in a ",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "The other study uses aqueous ChCl/GA DES without an additional catalyst.",
+     "hard_anchor": "Choline chloride (ChCl) / glycolic acid (GA) deep eutectic solvent (DES) media with high water content but without any a",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0043",
+   "doc_id": "chk_6f9e1ddf4e91431e9cfc6c46",
+   "grade_now": 3,
+   "facts_total": 3,
+   "facts_supported": 0,
+   "facts_undetermined": 3,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "Eucalyptus先用Pd/C把木质素转成单体酚。",
+     "hard_anchor": "Lignin was depolymerized into well-defined monomeric phenols in the first step using a Pd/C catalyst.",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "其糖类浆料再用FeCl3获得HMF、乙酰丙酸和糠醛。",
+     "hard_anchor": "High retention of cellulose and hemicellulose pulp was also obtained, which was treated with FeCl3 catalyst to attain 5-",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "磷酸流程在水/2-MTHF中分出木质素、纤维素及半纤维素糖。",
+     "hard_anchor": "This paper explored the disentanglement of lignocellulose into hemicellulose-derived sugars, cellulose, and lignin in a ",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0044",
+   "doc_id": "chk_eec4496762bf30d4c915fc71",
+   "grade_now": 3,
+   "facts_total": 2,
+   "facts_supported": 1,
+   "facts_undetermined": 1,
+   "outcome": "capped_to_2_partial_support",
+   "per_fact": [
+    {
+     "fact": "采用ChCl/GA含水DES，不外加催化剂。",
+     "hard_anchor": "Choline chloride (ChCl) / glycolic acid (GA) deep eutectic solvent (DES) media with high water content but without any a",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "糖混合物的最佳微波条件为160℃、10 min。",
+     "hard_anchor": "The optimal reaction conditions were 160°C and 10 minutes for the sugar mixture and 170°C and 10 minutes for birch sawdu",
+     "anchors": [
+      "10 min",
+      "160"
+     ],
+     "block_evidence": "Entry Conditions HMF yield [%] Furfural yield [%] 1 Glucose as feedstock 10 – 2 Xylose as feedstock – 62 3 Glucose/xylose as feedstock 9 49 4 ZnCl2 as catalyst, glucose/xylose as feedstock 10 51 5 Fructose/xylose as feedstock 17 49 6 HMF as feedstock (+additio",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0047",
+   "doc_id": "chk_6aa49b56f23286eccb100a58",
+   "grade_now": 3,
+   "facts_total": 1,
+   "facts_supported": 0,
+   "facts_undetermined": 0,
+   "outcome": "handover_no_anchor_supported",
+   "per_fact": [
+    {
+     "fact": "水为32.9 wt%，对应10当量。",
+     "hard_anchor": "10 equivalent quantities of water (32.9 wt.%) were revealed to be beneficial for conversions without rupturing the DES s",
+     "anchors": [
+      "32.9 wt%"
+     ],
+     "block_evidence": null,
+     "verdict": "not_supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_10c3ee898756bb2a39517650",
+   "grade_now": 3,
+   "facts_total": 3,
+   "facts_supported": 0,
+   "facts_undetermined": 2,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "通常C=O加氢在动力学和热力学上都比C—OH更有利。",
+     "hard_anchor": "hydrogenation of C=O bond in HMF is more favourable than C–OH both kinetically and thermodynamically",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "Pt活化H2，Nb位点活化C—OH。",
+     "hard_anchor": "The Pt atoms are responsible for the activation of H2 and the Nb sites activate C-OH in the reaction.",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "单原子催化剂在完全转化时MF选择性超过99%。",
+     "hard_anchor": "the SACs can efficiently catalyze the hydrogenation of HMF to MF using H2 as the reducing agent with MF selectivity of >",
+     "anchors": [
+      "99%"
+     ],
+     "block_evidence": null,
+     "verdict": "not_supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_1ed219cb4bb3138cf0b467a4",
+   "grade_now": 3,
+   "facts_total": 3,
+   "facts_supported": 1,
+   "facts_undetermined": 2,
+   "outcome": "capped_to_2_partial_support",
+   "per_fact": [
+    {
+     "fact": "通常C=O加氢在动力学和热力学上都比C—OH更有利。",
+     "hard_anchor": "hydrogenation of C=O bond in HMF is more favourable than C–OH both kinetically and thermodynamically",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "Pt活化H2，Nb位点活化C—OH。",
+     "hard_anchor": "The Pt atoms are responsible for the activation of H2 and the Nb sites activate C-OH in the reaction.",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "单原子催化剂在完全转化时MF选择性超过99%。",
+     "hard_anchor": "the SACs can efficiently catalyze the hydrogenation of HMF to MF using H2 as the reducing agent with MF selectivity of >",
+     "anchors": [
+      "99%"
+     ],
+     "block_evidence": "Both Pd1/Nb2O5-Ov and Au1/Nb2O5-Ov showed >99% selectivity of MF, although the activity of Au1/Nb2O5-Ov was lower, showing that the nature of the metal species in the SACs only affected the activity but not the selectivity, which further supports the argument ",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_df78a5c435d9c7f4639ab865",
+   "grade_now": 3,
+   "facts_total": 3,
+   "facts_supported": 1,
+   "facts_undetermined": 2,
+   "outcome": "capped_to_2_partial_support",
+   "per_fact": [
+    {
+     "fact": "通常C=O加氢在动力学和热力学上都比C—OH更有利。",
+     "hard_anchor": "hydrogenation of C=O bond in HMF is more favourable than C–OH both kinetically and thermodynamically",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "Pt活化H2，Nb位点活化C—OH。",
+     "hard_anchor": "The Pt atoms are responsible for the activation of H2 and the Nb sites activate C-OH in the reaction.",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "单原子催化剂在完全转化时MF选择性超过99%。",
+     "hard_anchor": "the SACs can efficiently catalyze the hydrogenation of HMF to MF using H2 as the reducing agent with MF selectivity of >",
+     "anchors": [
+      "99%"
+     ],
+     "block_evidence": "Very interestingly, Pt1/Nb2O5-Ov could efficiently catalyze the selective hydrogenation of HMF to MF with >99% selectivity at complete conversion of HMF in 4 h.",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0049",
+   "doc_id": "chk_f073e3273982f5a713fc56f3",
+   "grade_now": 3,
+   "facts_total": 3,
+   "facts_supported": 0,
+   "facts_undetermined": 2,
+   "outcome": "handover_undetermined_anchors",
+   "per_fact": [
+    {
+     "fact": "通常C=O加氢在动力学和热力学上都比C—OH更有利。",
+     "hard_anchor": "hydrogenation of C=O bond in HMF is more favourable than C–OH both kinetically and thermodynamically",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "Pt活化H2，Nb位点活化C—OH。",
+     "hard_anchor": "The Pt atoms are responsible for the activation of H2 and the Nb sites activate C-OH in the reaction.",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "单原子催化剂在完全转化时MF选择性超过99%。",
+     "hard_anchor": "the SACs can efficiently catalyze the hydrogenation of HMF to MF using H2 as the reducing agent with MF selectivity of >",
+     "anchors": [
+      "99%"
+     ],
+     "block_evidence": null,
+     "verdict": "not_supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_1ed219cb4bb3138cf0b467a4",
+   "grade_now": 3,
+   "facts_total": 3,
+   "facts_supported": 1,
+   "facts_undetermined": 2,
+   "outcome": "capped_to_2_partial_support",
+   "per_fact": [
+    {
+     "fact": "C=O hydrogenation is kinetically and thermodynamically favored over C–OH.",
+     "hard_anchor": "hydrogenation of C=O bond in HMF is more favourable than C–OH both kinetically and thermodynamically",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "Pt activates H2 and Nb activates C-OH.",
+     "hard_anchor": "The Pt atoms are responsible for the activation of H2 and the Nb sites activate C-OH in the reaction.",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "MF selectivity exceeds 99% at complete conversion for the SACs.",
+     "hard_anchor": "the SACs can efficiently catalyze the hydrogenation of HMF to MF using H2 as the reducing agent with MF selectivity of >",
+     "anchors": [
+      "99%"
+     ],
+     "block_evidence": "Both Pd1/Nb2O5-Ov and Au1/Nb2O5-Ov showed >99% selectivity of MF, although the activity of Au1/Nb2O5-Ov was lower, showing that the nature of the metal species in the SACs only affected the activity but not the selectivity, which further supports the argument ",
+     "verdict": "supported"
+    }
+   ]
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_df78a5c435d9c7f4639ab865",
+   "grade_now": 3,
+   "facts_total": 3,
+   "facts_supported": 1,
+   "facts_undetermined": 2,
+   "outcome": "capped_to_2_partial_support",
+   "per_fact": [
+    {
+     "fact": "C=O hydrogenation is kinetically and thermodynamically favored over C–OH.",
+     "hard_anchor": "hydrogenation of C=O bond in HMF is more favourable than C–OH both kinetically and thermodynamically",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "Pt activates H2 and Nb activates C-OH.",
+     "hard_anchor": "The Pt atoms are responsible for the activation of H2 and the Nb sites activate C-OH in the reaction.",
+     "anchors": [],
+     "block_evidence": null,
+     "verdict": "undetermined"
+    },
+    {
+     "fact": "MF selectivity exceeds 99% at complete conversion for the SACs.",
+     "hard_anchor": "the SACs can efficiently catalyze the hydrogenation of HMF to MF using H2 as the reducing agent with MF selectivity of >",
+     "anchors": [
+      "99%"
+     ],
+     "block_evidence": "Very interestingly, Pt1/Nb2O5-Ov could efficiently catalyze the selective hydrogenation of HMF to MF with >99% selectivity at complete conversion of HMF in 4 h.",
+     "verdict": "supported"
+    }
+   ]
+  }
+ ]
+}

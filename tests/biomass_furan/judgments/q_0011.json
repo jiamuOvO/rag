@@ -1,0 +1,946 @@
+{
+ "query_id": "q_0011",
+ "judgments": [
+  {
+   "doc_id": "chk_0358d2f4512fe7562915e5d6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《High production of furfural by flash pyrolysis of C6 sugars and lignocellulose by Pd-PdO/ZnSO4 catalyst》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_076b9346fadb8e7dee5524c6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Total utilization of lignin and carbohydrates in Eucalyptus grandis: an integrated biorefinery strategy towards phenolics, levulinic acid, and furfural》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_0921979bfaac014c06710156",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。"
+  },
+  {
+   "doc_id": "chk_09b5d8c989710b94a1f325be",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。"
+  },
+  {
+   "doc_id": "chk_0c1b20297373d40dcfa21dc0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《5-Hydroxymethylfurfural (HMF) Production from Real Biomasses》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_0f628001cd799973ed030f65",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。"
+  },
+  {
+   "doc_id": "chk_1042dbc83fae42fd4425e469",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Recent Trends in the Pretreatment of Lignocellulosic Biomass for Value-Added Products》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_11662de455fbc00eecb0573c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Selective hydrogenation of 5-(hydroxymethyl)furfural to 5-methylfurfural over single atomic metals anchored on Nb2O5》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "query_id": "q_0011",
+   "doc_id": "chk_12f59e5c3a85b3802d537196",
+   "relevance": 0,
+   "reason": "doc0: CMF yield optimization, unrelated to Bergius definition; doc1: CMF/furfural side reactions, unrelated; doc2: CMF history/Origin Materials, no Bergius definition; doc3: statistical DoE analysis, unrelated",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "3d98f21112e37455e27419e6db9908de5ac42687a15de20f05f11e874c0ae2c2"
+  },
+  {
+   "doc_id": "chk_146e2c0bcee0547bdab8307f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Literature Review on Furfural Production from Lignocellulosic Biomass》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_15593dd9ba13455b2d02f6e9",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Emission of trace gases and aerosols from biomass burning – an updated assessment》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_15e0eea1dcafcd8fc9da9202",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Emission factors for open and domestic biomass burning for use in atmospheric models》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_1a6f0d4d8d28ae3c145feaa9",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Sustainable production of furan-based oxygenated fuel additives from pentose-rich biomass residues》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_1da5492056867f6a66a0b82a",
+   "relevance": 3,
+   "evidence_quotes": [
+    "The Bergius−Rheinau, or Bergius− Willstätter−Zechmeister process, is the hydrolysis of biomass by the action of fuming hydrochloric acid at a low temperature in one single step."
+   ],
+   "reason": "本块直接给出 Bergius–Rheinau（即 Bergius–Willstätter–Zechmeister）工艺的原文定义：以发烟盐酸在低温下通过单步水解生物质，单独即可回答本题所问的工艺定义。",
+   "review_status": "Agent_review_completed",
+   "review_note": "逐字给出必需事实（发烟盐酸/低温/单步水解），且为指定来源同一篇论文 → 维持 3",
+   "review_verdict": "支持"
+  },
+  {
+   "doc_id": "chk_1e3eaec5bd452ddb3b9a4006",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Furfural and 5-Hydroxymethylfurfural Production from Sugar Mixture Using Deep Eutectic Solvent/MIBK System》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_1e6b960b2811bd8d422f83c0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Scalable electrosynthesis of commodity chemicals from biomass by suppressing non-Faradaic transformations》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_1e8e7e6939758e9fd0f780b1",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《5-Hydroxymethylfurfural (HMF) Production from Real Biomasses》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_1eb1817027b8303b84b90f23",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《5-Hydroxymethylfurfural (HMF) Production from Real Biomasses》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_1f7f2d8ed92fb01725d2414d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Recent Trends in the Pretreatment of Lignocellulosic Biomass for Value-Added Products》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_1fbbd1cbf251b1b28d0055c9",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。"
+  },
+  {
+   "doc_id": "chk_234d9e399fa315fc6988ee05",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《5-Hydroxymethylfurfural (HMF) Production from Real Biomasses》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_2757014d17432387f6878143",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Selective hydrogenation of 5-(hydroxymethyl)furfural to 5-methylfurfural over single atomic metals anchored on Nb2O5》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "query_id": "q_0011",
+   "doc_id": "chk_27e71a7f418b0bd0a2dfe071",
+   "relevance": 0,
+   "reason": "doc0: solvent screening table, unrelated to Bergius-Rheinau; doc1: DAWN process integration, no Bergius-Rheinau definition; doc2: temperature/yield study, unrelated; doc3: analytical methods, unrelated; doc4: biphasic history, no Bergius-Rheinau definition",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "a84ef4cc772a47d0776e1bbfb24586f8ff71a89dedf76e51bc5d7623595c41fb"
+  },
+  {
+   "doc_id": "chk_27ff816436d48a469b3ac294",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《The role of oxygen-vacancy in bifunctional indium oxyhydroxide catalysts for electrochemical coupling of biomass valorization with CO2 conversion》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_2bd6bee0f8e82fbcee689964",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《5-Hydroxymethylfurfural (HMF) Production from Real Biomasses》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_305f10f1a75a63236a4c181e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Furfural and 5-Hydroxymethylfurfural Production from Sugar Mixture Using Deep Eutectic Solvent/MIBK System》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_318ff892c0ecfc8adbd4ab64",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《5-Hydroxymethylfurfural (HMF) Production from Real Biomasses》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_336ca5fa1446dafb2afa5e0c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Beyond 2,5-furandicarboxylic acid: status quo, environmental assessment, and blind spots of furanic monomers for bio-based polymers》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_39dcffc75ea1f3d8764271df",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《5-Hydroxymethylfurfural (HMF) Production from Real Biomasses》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_3ee34c2bee0cc1347e9bd4ad",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Review on the catalytic effects of alkali and alkaline earth metals (AAEMs) including sodium, potassium, calcium and magnesium on the pyrolysis of lignocellulosic biomass and on the co-pyrolysis of coal with biomass》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_3f69bf6b3a14097bc389e768",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Furfural and 5-Hydroxymethylfurfural Production from Sugar Mixture Using Deep Eutectic Solvent/MIBK System》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_41f98ed2ab54df4159ff320f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Efficient Synthesis of Furfural from Biomass Using SnCl4 as Catalyst in Ionic Liquid》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_440311d205a14141bdcc54eb",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。"
+  },
+  {
+   "doc_id": "chk_45a69b0e755aa8b4a0a506fb",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Recent Trends in the Pretreatment of Lignocellulosic Biomass for Value-Added Products》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "query_id": "q_0011",
+   "doc_id": "chk_4bf9c07e207731f07720a1fb",
+   "relevance": 0,
+   "reason": "doc0: solvent screening table, unrelated to Bergius-Rheinau; doc1: DAWN process integration, no Bergius-Rheinau definition; doc2: temperature/yield study, unrelated; doc3: analytical methods, unrelated; doc4: biphasic history, no Bergius-Rheinau definition",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "a84ef4cc772a47d0776e1bbfb24586f8ff71a89dedf76e51bc5d7623595c41fb"
+  },
+  {
+   "query_id": "q_0011",
+   "doc_id": "chk_4c284eac482a133d335c7ca7",
+   "relevance": 0,
+   "reason": "doc0: CMF yield optimization, unrelated to Bergius definition; doc1: CMF/furfural side reactions, unrelated; doc2: CMF history/Origin Materials, no Bergius definition; doc3: statistical DoE analysis, unrelated",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "3d98f21112e37455e27419e6db9908de5ac42687a15de20f05f11e874c0ae2c2"
+  },
+  {
+   "doc_id": "chk_4e80a6f12f3f76a7f88f2249",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。"
+  },
+  {
+   "doc_id": "chk_4ea7a5a22f1e7e2d5bc4d25a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Recent Trends in the Pretreatment of Lignocellulosic Biomass for Value-Added Products》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_4eb9b3171a58e7815e9bfa9a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Lignocellulosic Biomass Transformations via Greener Oxidative Pretreatment Processes: Access to Energy and Value-Added Chemicals》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_4f0c5ab45bb66b54da15d2a0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Lignocellulosic Biomass Transformations via Greener Oxidative Pretreatment Processes: Access to Energy and Value-Added Chemicals》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_4f1003898eb083ea75f9672f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Furfural and 5-Hydroxymethylfurfural Production from Sugar Mixture Using Deep Eutectic Solvent/MIBK System》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_4f6f23e8f54bc9043e8456ce",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Emission factors for open and domestic biomass burning for use in atmospheric models》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_5110bc9a0a1054694083b1d3",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。"
+  },
+  {
+   "doc_id": "chk_51128e533622af7a29364296",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Photocatalytic conversion of sugars to 5-hydroxymethylfurfural using aluminium(III) and fulvic acid》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_5172710f96f1a0d6087cbb44",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。"
+  },
+  {
+   "doc_id": "chk_528b3c52b19dce51bac27dc2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。"
+  },
+  {
+   "query_id": "q_0011",
+   "doc_id": "chk_536a1a39e5c2ce52180c8753",
+   "relevance": 0,
+   "reason": "doc0: solvent screening table, unrelated to Bergius-Rheinau; doc1: DAWN process integration, no Bergius-Rheinau definition; doc2: temperature/yield study, unrelated; doc3: analytical methods, unrelated; doc4: biphasic history, no Bergius-Rheinau definition",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "a84ef4cc772a47d0776e1bbfb24586f8ff71a89dedf76e51bc5d7623595c41fb"
+  },
+  {
+   "doc_id": "chk_53e21392be7f477eb4a192a9",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。"
+  },
+  {
+   "doc_id": "chk_5b0e1ae1881be3cbd9dfff99",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。"
+  },
+  {
+   "doc_id": "chk_63e4a872c9d195367460f1fe",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。"
+  },
+  {
+   "doc_id": "chk_653e5ce6e8fd82db0eef5e8e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《5-Hydroxymethylfurfural (HMF) Production from Real Biomasses》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_66a6546be5c3b453a89369bc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《5-Hydroxymethylfurfural (HMF) Production from Real Biomasses》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_6943ceb4f16d6e1915f4cfca",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《The critical role of lignin in lignocellulosic biomass conversion and recent pretreatment strategies: A comprehensive review》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "query_id": "q_0011",
+   "doc_id": "chk_699a5e553d3cc4a39e9abd11",
+   "relevance": 0,
+   "reason": "doc0: CMF yield optimization, unrelated to Bergius definition; doc1: CMF/furfural side reactions, unrelated; doc2: CMF history/Origin Materials, no Bergius definition; doc3: statistical DoE analysis, unrelated",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "3d98f21112e37455e27419e6db9908de5ac42687a15de20f05f11e874c0ae2c2"
+  },
+  {
+   "doc_id": "chk_6a692c54c3c8b10d47b48299",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《5-Hydroxymethylfurfural (HMF) Production from Real Biomasses》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_6b8ecb76dc5a7a929ffb91d5",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Beyond 2,5-furandicarboxylic acid: status quo, environmental assessment, and blind spots of furanic monomers for bio-based polymers》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_6bdb88ff4e1b109457a6c81b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Sustainable production of furan-based oxygenated fuel additives from pentose-rich biomass residues》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "query_id": "q_0011",
+   "doc_id": "chk_6da8593fd7404db0db73b7fb",
+   "relevance": 0,
+   "reason": "doc0: same paper, solvent/lignin topics; doc1: same paper, intro/background; doc2: same paper, Origin/Avantium processes; doc3: same paper, DAWN/YUKON process; doc4: same paper, HMF/CMF mechanism",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "5ef69240832309bb4d0a3c496d7feca07f1a841d5ceab58ac17b2b97acb3e1aa"
+  },
+  {
+   "doc_id": "chk_6edd0e35a2d6103623e0003c",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。"
+  },
+  {
+   "query_id": "q_0011",
+   "doc_id": "chk_6f1b1012b38d85073b09553e",
+   "relevance": 0,
+   "reason": "doc0: same paper, solvent/lignin topics; doc1: same paper, intro/background; doc2: same paper, Origin/Avantium processes; doc3: same paper, DAWN/YUKON process; doc4: same paper, HMF/CMF mechanism",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "5ef69240832309bb4d0a3c496d7feca07f1a841d5ceab58ac17b2b97acb3e1aa"
+  },
+  {
+   "doc_id": "chk_7697cb438868dd27d59dc2e8",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Estimation and comparison of bio-oil components from different pyrolysis conditions》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_76e1c7468dacd5cd2858d49c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《5-Hydroxymethylfurfural (HMF) Production from Real Biomasses》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_7789e568d430bf89b278e794",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。"
+  },
+  {
+   "doc_id": "chk_7926c51ae814e615fce09168",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《5-Hydroxymethylfurfural (HMF) Production from Real Biomasses》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_7af8d99455516ec32196a11d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《The conversion of lignocellulosics to levulinic acid》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_7bc3eebdb8a9a039ef26fb32",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Emission of trace gases and aerosols from biomass burning – an updated assessment》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_7d219ac5a0e7f5405c8302c6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Lignocellulosic Biomass: A Sustainable Platform for Production of Bio-Based Chemicals and Polymers》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_7e3320c3ad73bbf359dec07d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Lignocellulose Fractionation Using Recyclable Phosphoric Acid: Lignin, Cellulose, and Furfural Production》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_7fb2664adfa7d653fd806c3f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Beyond 2,5-furandicarboxylic acid: status quo, environmental assessment, and blind spots of furanic monomers for bio-based polymers》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "query_id": "q_0011",
+   "doc_id": "chk_80cfb9a0ecf7628f4f48e9d3",
+   "relevance": 2,
+   "reason": "Defines the original Bergius highly concentrated acid hydrolysis as a single low-temperature (20 °C) HCl saccharification step.",
+   "evidence_quotes": [
+    "HCl-based technologies can achieve this at 20 °C and ambient pressure. These principles were disclosed in the 1920s, but the inability to economically separate sugars from acids impeded its commercialization. Avantium Chemicals B.V. developed a modern version of this “Bergius” highly concentrated acid hydrolysis, in which the saccharides in HCl are transformed into furanics without any prior purification"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "3d98f21112e37455e27419e6db9908de5ac42687a15de20f05f11e874c0ae2c2",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 2,
+    "changed": true,
+    "explanation": "必需事实含三项：fuming HCl、low temperature、one single step。块内覆盖两项——『highly concentrated acid hydrolysis』『HCl-based』≈浓盐酸，『20 °C and ambient pressure』= 低温；但全文没有任何『one single step / 单步水解』的表述（只提到『first requirement is the complete saccharification』）。缺一项 → 最高 2。旧判 3 过高。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "doc_id": "chk_81f471e4b99332ac2fa76c4c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《A review on biomass: importance, chemistry, classification, and conversion》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_83007366835035dd5c185f7b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Emission of trace gases and aerosols from biomass burning – an updated assessment》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_842cded8ae3ff892982f0306",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Beyond 2,5-furandicarboxylic acid: status quo, environmental assessment, and blind spots of furanic monomers for bio-based polymers》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_86dc8cb532b70edbb11eecd2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Photocatalytic conversion of sugars to 5-hydroxymethylfurfural using aluminium(III) and fulvic acid》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_8781e312c8a17f3f184b7414",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Furfural and 5-Hydroxymethylfurfural Production from Sugar Mixture Using Deep Eutectic Solvent/MIBK System》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_879685f2ffcdab00a8970202",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《The role of oxygen-vacancy in bifunctional indium oxyhydroxide catalysts for electrochemical coupling of biomass valorization with CO2 conversion》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_8812eb342f37103548b3697f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Photocatalytic conversion of sugars to 5-hydroxymethylfurfural using aluminium(III) and fulvic acid》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_8b24628a1d7001d6022ebc69",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《5-Hydroxymethylfurfural (HMF) Production from Real Biomasses》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_8ec72fde107b3b3733483bf0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Furfural and 5-Hydroxymethylfurfural Production from Sugar Mixture Using Deep Eutectic Solvent/MIBK System》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_8ed3d9603cf613139bfb9285",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Emission factors for open and domestic biomass burning for use in atmospheric models》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_8f55674ebe7e70e4832558e8",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Beyond 2,5-furandicarboxylic acid: status quo, environmental assessment, and blind spots of furanic monomers for bio-based polymers》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_93c29e9feb4a6c2cf3537c5b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。"
+  },
+  {
+   "doc_id": "chk_979045fd6bdb126a66d66d75",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Lignocellulose Fractionation Using Recyclable Phosphoric Acid: Lignin, Cellulose, and Furfural Production》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_99a565e408ffb7acb92c7220",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Bottle-grade polyethylene furanoate from ring-opening polymerisation of cyclic oligomers》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_9a727e2aeeb678129f39e293",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Lignocellulose Fractionation Using Recyclable Phosphoric Acid: Lignin, Cellulose, and Furfural Production》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_9bf9debfe7908c672c9e3f77",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《The conversion of lignocellulosics to levulinic acid》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_9ece375829e570a7bdced2bc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《5-Hydroxymethylfurfural (HMF) Production from Real Biomasses》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_9f994e2e49ec3c47a5ae2cda",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Furfural and 5-Hydroxymethylfurfural Production from Sugar Mixture Using Deep Eutectic Solvent/MIBK System》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_a454d43b6abf7762c671efed",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Lignocellulosic Biomass: A Sustainable Platform for Production of Bio-Based Chemicals and Polymers》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_a4d01743d153790bfe79f9be",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Emission factors for open and domestic biomass burning for use in atmospheric models》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_a4ea38ee15eed1393f309c59",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Hydrolysis of Hemicellulose and Derivatives—A Review of Recent Advances in the Production of Furfural》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "query_id": "q_0011",
+   "doc_id": "chk_a5b37d7f87977c7c9105ad34",
+   "relevance": 0,
+   "reason": "doc0: same paper, solvent/lignin topics; doc1: same paper, intro/background; doc2: same paper, Origin/Avantium processes; doc3: same paper, DAWN/YUKON process; doc4: same paper, HMF/CMF mechanism",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "5ef69240832309bb4d0a3c496d7feca07f1a841d5ceab58ac17b2b97acb3e1aa"
+  },
+  {
+   "doc_id": "chk_a7f0789b391dfbd307cc5e34",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《A Biorefinery Strategy That Introduces Hydrothermal Treatment Prior to Acid Hydrolysis for Co-generation of Furfural and Cellulose Nanocrystals》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_ad5180b277f6e342545badc6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Total utilization of lignin and carbohydrates in Eucalyptus grandis: an integrated biorefinery strategy towards phenolics, levulinic acid, and furfural》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_ae501def2dbeb7dd070848d6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Selective hydrogenation of 5-(hydroxymethyl)furfural to 5-methylfurfural over single atomic metals anchored on Nb2O5》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_b1f2dedd0a4929068b508542",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Lignocellulosic Biomass Transformations via Greener Oxidative Pretreatment Processes: Access to Energy and Value-Added Chemicals》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_b4a63245687199605240fc88",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Total utilization of lignin and carbohydrates in Eucalyptus grandis: an integrated biorefinery strategy towards phenolics, levulinic acid, and furfural》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_b57774d3d4688682f7455127",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Furfural and 5-Hydroxymethylfurfural Production from Sugar Mixture Using Deep Eutectic Solvent/MIBK System》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_b6316b7ca8c3d8bb12f16d30",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《5-Hydroxymethylfurfural (HMF) Production from Real Biomasses》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_b6dbd7562e2cfb9c0eaccea3",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。"
+  },
+  {
+   "doc_id": "chk_b9a24b63fea2ece8cdc8f0b1",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Recent Trends in the Pretreatment of Lignocellulosic Biomass for Value-Added Products》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "query_id": "q_0011",
+   "doc_id": "chk_ba01af9ffa82c6750e852f27",
+   "relevance": 0,
+   "reason": "doc0: same paper, solvent/lignin topics; doc1: same paper, intro/background; doc2: same paper, Origin/Avantium processes; doc3: same paper, DAWN/YUKON process; doc4: same paper, HMF/CMF mechanism",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "5ef69240832309bb4d0a3c496d7feca07f1a841d5ceab58ac17b2b97acb3e1aa"
+  },
+  {
+   "query_id": "q_0011",
+   "doc_id": "chk_ba9e5efc47058347fcc22d5a",
+   "relevance": 0,
+   "reason": "doc0: solvent screening table, unrelated to Bergius-Rheinau; doc1: DAWN process integration, no Bergius-Rheinau definition; doc2: temperature/yield study, unrelated; doc3: analytical methods, unrelated; doc4: biphasic history, no Bergius-Rheinau definition",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "a84ef4cc772a47d0776e1bbfb24586f8ff71a89dedf76e51bc5d7623595c41fb"
+  },
+  {
+   "query_id": "q_0011",
+   "doc_id": "chk_becf195b0c2c578f76b9f66b",
+   "relevance": 0,
+   "reason": "doc0: solvent screening table, unrelated to Bergius-Rheinau; doc1: DAWN process integration, no Bergius-Rheinau definition; doc2: temperature/yield study, unrelated; doc3: analytical methods, unrelated; doc4: biphasic history, no Bergius-Rheinau definition",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "a84ef4cc772a47d0776e1bbfb24586f8ff71a89dedf76e51bc5d7623595c41fb"
+  },
+  {
+   "query_id": "q_0011",
+   "doc_id": "chk_c126b5e76878bcd31b557746",
+   "relevance": 0,
+   "reason": "doc0: same paper, solvent/lignin topics; doc1: same paper, intro/background; doc2: same paper, Origin/Avantium processes; doc3: same paper, DAWN/YUKON process; doc4: same paper, HMF/CMF mechanism",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "5ef69240832309bb4d0a3c496d7feca07f1a841d5ceab58ac17b2b97acb3e1aa"
+  },
+  {
+   "doc_id": "chk_c1c69ec04b3141c9e4154bbd",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。"
+  },
+  {
+   "doc_id": "chk_c33f8d0ef45473c729100244",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Lignocellulose Fractionation Using Recyclable Phosphoric Acid: Lignin, Cellulose, and Furfural Production》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_c503286d2147479ecf90c334",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Recent Trends in the Pretreatment of Lignocellulosic Biomass for Value-Added Products》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_c5d50be1dad31c6cf407e567",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《High production of furfural by flash pyrolysis of C6 sugars and lignocellulose by Pd-PdO/ZnSO4 catalyst》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_c6e36c89613a88e682e0fc57",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《The conversion of lignocellulosics to levulinic acid》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_c7b7d600a23b05f53dd5778f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。",
+   "review_status": "Agent_review_completed",
+   "review_note": "与指定来源同一篇论文（2023 CMF 整合论文），属同论文的方法/工艺背景 → L1b = 1；维持原判",
+   "review_verdict": "不支持"
+  },
+  {
+   "doc_id": "chk_cb3c3126df8b050454033837",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Beyond 2,5-furandicarboxylic acid: status quo, environmental assessment, and blind spots of furanic monomers for bio-based polymers》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_d10851fbdfeb17dd8639fcec",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Lignocellulose Fractionation Using Recyclable Phosphoric Acid: Lignin, Cellulose, and Furfural Production》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_dc496ed295591c5ec2e957be",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Photocatalytic conversion of sugars to 5-hydroxymethylfurfural using aluminium(III) and fulvic acid》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_de09900101e01e0b89954559",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。"
+  },
+  {
+   "query_id": "q_0011",
+   "doc_id": "chk_df8e5c677fc02931a29f1e1b",
+   "relevance": 0,
+   "reason": "doc0: CMF yield optimization, unrelated to Bergius definition; doc1: CMF/furfural side reactions, unrelated; doc2: CMF history/Origin Materials, no Bergius definition; doc3: statistical DoE analysis, unrelated",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "3d98f21112e37455e27419e6db9908de5ac42687a15de20f05f11e874c0ae2c2"
+  },
+  {
+   "doc_id": "chk_e01045b3e11d46190f9dbdc8",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Review on the catalytic effects of alkali and alkaline earth metals (AAEMs) including sodium, potassium, calcium and magnesium on the pyrolysis of lignocellulosic biomass and on the co-pyrolysis of coal with biomass》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_e1016eacd88751fb5899db1f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Enhanced Furfural Production in Deep Eutectic Solvents Comprising Alkali Metal Halides as Additives》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_e28f6f46e6fb8de602a31917",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Photocatalytic conversion of sugars to 5-hydroxymethylfurfural using aluminium(III) and fulvic acid》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_e54aa9d5ccb265f1de0e57d7",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Lignocellulose Fractionation Using Recyclable Phosphoric Acid: Lignin, Cellulose, and Furfural Production》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_e60aed02a8ac8f6660c67644",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Photocatalytic conversion of sugars to 5-hydroxymethylfurfural using aluminium(III) and fulvic acid》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_e66153b2f5b37d57f58e54c1",
+   "relevance": 3,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。",
+   "review_status": "Agent_review_completed",
+   "review_note": "该块单独覆盖全部必需事实与硬性限定（低温/浓盐酸/单一水解步骤），且为指定来源同一篇论文 → 3 级；旧判 1 级为漏判",
+   "review_verdict": "支持"
+  },
+  {
+   "doc_id": "chk_e9e91c61f7837a4f71ca6620",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Lignocellulosic Biomass: A Sustainable Platform for Production of Bio-Based Chemicals and Polymers》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_eb4f6bb323f30e764139c04d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《5-Hydroxymethylfurfural (HMF) Production from Real Biomasses》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_ecf7095b4dda7bd7153f74d1",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《A Biorefinery Strategy That Introduces Hydrothermal Treatment Prior to Acid Hydrolysis for Co-generation of Furfural and Cellulose Nanocrystals》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_ecf871ff741b6fb42da924a7",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Beyond 2,5-furandicarboxylic acid: status quo, environmental assessment, and blind spots of furanic monomers for bio-based polymers》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_eddc849e74ee8a05d3379f29",
+   "relevance": 3,
+   "evidence_quotes": [
+    "The Bergius−Rheinau, or Bergius− Willstätter−Zechmeister process, is the hydrolysis of biomass by the action of fuming hydrochloric acid at a low temperature in one single step."
+   ],
+   "reason": "本块直接给出 Bergius–Rheinau（即 Bergius–Willstätter–Zechmeister）工艺的原文定义：以发烟盐酸在低温下通过单步水解生物质，单独即可回答本题所问的工艺定义。",
+   "review_status": "Agent_review_completed",
+   "review_note": "逐字给出必需事实 → 维持 3",
+   "review_verdict": "支持"
+  },
+  {
+   "doc_id": "chk_f6334e3e233a5be7e5e4b91b",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。",
+   "review_status": "Agent_review_completed",
+   "review_note": "同论文工艺背景 → L1b = 1；维持原判",
+   "review_verdict": "不支持"
+  },
+  {
+   "doc_id": "chk_fabe76d0771de3fd8c952475",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Lignocellulosic Biomass Transformations via Greener Oxidative Pretreatment Processes: Access to Energy and Value-Added Chemicals》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_faf230c7f5dbc5b4ffb78333",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "与本题同属 2023 CMF 整合论文（同一篇论文）的相邻段落，讨论 DAWN/Bergius 糖化或 CMF 集成工艺，属同一研究对象与背景，但不包含所问 Bergius–Rheinau 定义的原文证据。"
+  },
+  {
+   "doc_id": "chk_fbd0dd8ce8f01479f955b73d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《Emission of trace gases and aerosols from biomass burning – an updated assessment》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  },
+  {
+   "doc_id": "chk_fd9eb6976bb0f124fd7808eb",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "块来自另一篇论文《5-Hydroxymethylfurfural (HMF) Production from Real Biomasses》，研究对象/工艺路线与本题所问的 2023 CMF 整合论文中 Bergius–Rheinau 糖化工艺定义（发烟盐酸低温单步水解生物质）不同，属不同主题（不同化学品/工艺路线/研究领域）。"
+  }
+ ]
+}

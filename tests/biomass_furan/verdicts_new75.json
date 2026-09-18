@@ -1,0 +1,1452 @@
+[
+ {
+  "n": 16,
+  "query_id": "q_0005",
+  "doc_id": "chk_cac3807d9a18c151af2918db",
+  "old_grade": 2,
+  "final_grade": 2,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "部分支持"
+   }
+  ],
+  "actual_evidence": "Table 1. Effect of different dosage of SnCl4 and MgCl2 on the dehydration of xylose into furfural. Entry SnCl4 (mol%) MgCl2 (mol%) Furfural Yield (%) 1 10 0 71.1 2 8 2 69.8 3 8 0 62.0 4 5 5 68.8 5 5 0 52.4 6 0 10 4.5 Reaction conditions: 200 mg xylose, 1000 mg of EMIMBr; 130 ◦C; 1 h.",
+  "explanation": "该块给出与题目同一变量（SnCl4 用量）的实测收率表：5 mol% 52.4%、8 mol% 62.0%、10 mol% 71.1%，即必需事实中『用量增加—收率上升』这一半的定量依据直接落在块内；但块内没有『同时促进副反应』的机理句。块内唯一的副反应表述（massive brown residues in EMIMBF4）针对的是溶剂 EMIMBF4，不是锡盐用量。缺机理项 → 不能判 3，仅部分覆盖 → 维持 2。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 17,
+  "query_id": "q_0006",
+  "doc_id": "chk_eb28ef77eb4b424fe27b2883",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "不支持"
+   }
+  ],
+  "actual_evidence": "Figure 9. Time profile for the conversion of xylan to furfural in the EMIMBr/SnCl4 system. Reaction conditions: xylan 200 mg (1.5 mmol, based on monosaccharide units); 1000 mg of EMIMBr; molar ratio of SnCl4:monosaccharide = 1: 10; 130 ◦C; 1 h. ｜ when 50 μL 0.1mol/L HCl was added to the EMIMBr/SnCl4 system the furfural yield (54.6%) was almost equal to the furfural yield (54.5%) where 50 μL pure water was used",
+  "explanation": "通读全块：只有 Figure 9 的图注（木聚糖时间曲线）与 Figure 10 图注、以及加盐酸助催化剂的讨论（54.6% vs 54.5%）。必需事实的 50.1%（1 h）与 33.0%（4 h）两个数值在块内完全不出现，时间-收率趋势本身也未以文字给出。图注虽指向该趋势的数据来源，但不构成对必需事实的直接支持。块与题目同论文、同体系（EMIMBr/SnCl4）、同原料（xylan），只是条件（含水量、是否加酸）不同 → 归 L1a『同体系不同条件』= 1。旧判 2 过高，且旧理由自称 L1b（1 级类目）与所标 2 级自相矛盾。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 18,
+  "query_id": "q_0007",
+  "doc_id": "chk_5539978d73851dcba7b48239",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "不支持"
+   }
+  ],
+  "actual_evidence": "a Response Surface Method (RSM) was applied to optimize the parameters time (t, min), temperature (T, ◦C) and LiBr concentration (LiBr, wt.%). Concurrently, 23 (3 factors and 2 levels) factorial planning was carried out [35]",
+  "explanation": "该块只交代了优化方法：用 RSM 优化 time / temperature / LiBr wt.% 三个参数，并描述了统计口径（95% 置信、t 检验、Statistica）。157.3 ◦C、1.74 min、8.19 wt.% 三个最优值均未出现。属同论文的方法与数据口径段 → L1b = 1。旧判 2 过高，旧理由自称 L1b 且明说『未给出优化值』，与 2 级矛盾。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 19,
+  "query_id": "q_0007",
+  "doc_id": "chk_566e4ba7fd2e114be1aef258",
+  "old_grade": 1,
+  "final_grade": 1,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "不支持"
+   }
+  ],
+  "actual_evidence": "The reactions were carried out at 130 or 150 ◦C, and after the established reaction time (2.5 min) the samples were left to cool down... The xylan/DES weight ratio was fixed at 0.05 in accordance with previous optimization [31] ｜ A RSM was applied to simultaneously analyze various factors (temperature, time and LiBr wt.%)",
+  "explanation": "该块为同一论文的实验方法（微波反应器、130/150 ◦C、2.5 min、xylan/DES=0.05）与 RSM 优化流程说明，不含最优值 157.3 ℃/1.74 min/8.19 wt.% → L1b『同论文的方法或数据来源』= 1。与既有受保护修正（before 2 → after 1）一致，维持 1，不回滚。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 20,
+  "query_id": "q_0013",
+  "doc_id": "chk_8c43d6189bfd58b10083cf8d",
+  "old_grade": 2,
+  "final_grade": 3,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "Lignocelluloses are composed of cellulose (40–50%), hemicelluloses (25–35%) and lignin (15–20%) in an intricate structure where the components are rigidly associated through non-covalent bonds and covalent crosslinkages",
+  "explanation": "必答的是『三种主要聚合物组分』= 纤维素/半纤维素/木质素。该块逐字给出 cellulose、hemicelluloses、lignin 三项（并附 40–50%/25–35%/15–20% 组成占比），单独覆盖全部必需事实；且块来源 paper_2467240e9bec8a52db54345d 正是题目点名的 2018 综述本身，满足硬性来源限定。旧判 2 为漏判（旧理由自称 L1b，等级与理由同样矛盾）→ 升为 3。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 31,
+  "query_id": "q_0044",
+  "doc_id": "chk_b57774d3d4688682f7455127",
+  "old_grade": 2,
+  "final_grade": 2,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "部分支持"
+   },
+   {
+    "fact": 2,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "Recycling tests were performed using the ChCl/GA/H2O (1:3:10) DES, sugar mix as starting material, 160°C as reaction temperature, and 10 min as reaction time. ｜ in preliminary experiments, no glucose was left after a reaction of 10 mins at 160°C",
+  "explanation": "必需事实 2（糖混合物 160 ℃、10 min）在块内直接给出；必需事实 1 只覆盖『ChCl/GA 含水 DES』一半，块内全文未出现『不外加催化剂』的表述。两项必需事实未同时覆盖 → 不能判 3；已覆盖糖混合物条件与 DES 组成一半 → 2，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 32,
+  "query_id": "q_0045",
+  "doc_id": "chk_a6c8ba74e59565fc9abca5bd",
+  "old_grade": 2,
+  "final_grade": 2,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "部分支持"
+   }
+  ],
+  "actual_evidence": "In catalyst-free conditions (without added acid), integration of biomass pretreatment with fast pyrolysis by hot water extraction (HWE)... ｜ high-temperature water has the potential to substitute solid and liquid acids as a catalyst since it efficiently promotes the transfer of furfural initially formed in the water phase into the organic phase. In this study, ethyl butyrate with its excellent distribution coefficient permitted to furnish furfural in 75% yield at 200◦C for 3 h",
+  "explanation": "该块来自题目点名的 2018 hemicellulose-to-furfural 综述（Frontiers in Chemistry, Delbecq et al.）。块内确实给出『无外加酸/无催化剂条件下热水（高温水）转化 D-木糖并同时向有机相萃取糠醛』这一半（乙酸乙酯萃取，200 ℃/3 h、75%），但全文不含 sc-CO2（超临界 CO2）萃取这一关键限定。部分覆盖 → 2，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 33,
+  "query_id": "q_0004",
+  "doc_id": "chk_cac3807d9a18c151af2918db",
+  "old_grade": 3,
+  "final_grade": 2,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "部分支持"
+   }
+  ],
+  "actual_evidence": "Entry SnCl4 (mol%) MgCl2 (mol%) Furfural Yield (%) 1 10 0 71.1 ... 3 8 0 62.0 ... 5 5 0 52.4 Reaction conditions: 200 mg xylose, 1000 mg of EMIMBr; 130 ◦C; 1 h.",
+  "explanation": "必需事实含两段：『52.4% → 71.1%』与『继续增加用量反而下降』。块内 Table 1 只支持前一段（5 mol% 52.4%、10 mol% 71.1%）；表内 5→8→10 mol% 是单调上升（52.4→62.0→71.1），没有任何超过 10 mol% 的数据，也没有文字说明继续增加会下降——该下降句位于本块之外的正文。缺一项 → 最高 2。旧判 3 依据的『lower yields at 8 mol%』本身不成立（62.0% 高于 5 mol% 的 52.4%）。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 34,
+  "query_id": "q_0007",
+  "doc_id": "chk_4f86dedd60c3fd056c61dc03",
+  "old_grade": 3,
+  "final_grade": 2,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "部分支持"
+   }
+  ],
+  "actual_evidence": "results exceed even the performance of the DES in conjunction with GVL (75.0%) [31], while also having a faster reaction kinetic (1.74 vs. 2.5 min). ｜ The recovery of furfural was achieved through the direct distillation of this compound from the reaction media by reduced-pressure distillation in the following conditions: 50 °C and 6 mbar. With this strategy, 85.9% of furfural can be recovered",
+  "explanation": "必需事实是三个最优值（157.3 ℃、1.74 min、8.19 wt.%）。块内只出现 1.74 min（作为反应动力学对比），157.3 ℃ 与 8.19 wt.% 均未出现；后半段讲的是糠醛减压蒸馏回收（50 ℃/6 mbar、85.9%），与最优化条件无关。三项只覆盖一项 → 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 35,
+  "query_id": "q_0010",
+  "doc_id": "chk_27e71a7f418b0bd0a2dfe071",
+  "old_grade": 3,
+  "final_grade": 3,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "These furanic compounds are obtained using a biphasic system composed of the saccharide acidic solution and a nonmiscible organic solvent, in which the CMF and furfural were continuously extracted, limiting the contact time of these furanics with the strong acid present in the aqueous phase. By doing so, the separation of furanics in the organic solvent from the acid becomes a simple phase separation.",
+  "explanation": "必需事实『用不混溶有机溶剂原位萃取 CMF』被逐字覆盖（biphasic system + nonmiscible organic solvent + CMF continuously extracted），并交代了分离即为简单相分离、有机溶剂可蒸发回用。块来源 paper_d1a4e8bfc7c58b30dda482f2 即题目点名的 2023 CMF 论文，满足硬性来源限定 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 36,
+  "query_id": "q_0010",
+  "doc_id": "chk_4c284eac482a133d335c7ca7",
+  "old_grade": 3,
+  "final_grade": 3,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "The continuous extraction and protection of these furanics in an immiscible organic solvent drastically reduce the amount of side reactions between the furanics and the acid present in the aqueous phase. ｜ Later, the excess of HCl present in the acidic sugar solution after hydrolysis is enough to produce CMF in high yields using halogenated organic solvents (e.g., chlorobenzene) in biphasic reactors.",
+  "explanation": "必需事实（不混溶有机溶剂原位/连续萃取 CMF）被直接陈述：块内先给出双相体系中不混溶有机溶剂连续萃取的原理，随后又逐字描述本文（Avantium）自身工艺——用卤代有机溶剂在双相反应器中由酸性糖液高产率制取 CMF。块来源即题目点名的 2023 CMF 论文 → 覆盖单一必需事实 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 37,
+  "query_id": "q_0010",
+  "doc_id": "chk_f6334e3e233a5be7e5e4b91b",
+  "old_grade": 3,
+  "final_grade": 3,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "in this study, the acid−sugar solutions from saccharification were heated directly to convert the sugars into furanics without any prior purification... These furanic compounds are obtained using a biphasic system composed of the saccharide acidic solution and a nonmiscible organic solvent, in which the CMF and furfural were continuously extracted... By doing so, the separation of furanics in the organic solvent from the acid becomes a simple phase separation.",
+  "explanation": "同一篇 2023 CMF 论文的重叠块，逐字给出『不混溶有机溶剂 + 连续萃取 CMF + 简单相分离』，必需事实完整覆盖 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 38,
+  "query_id": "q_0011",
+  "doc_id": "chk_80cfb9a0ecf7628f4f48e9d3",
+  "old_grade": 3,
+  "final_grade": 2,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "部分支持"
+   }
+  ],
+  "actual_evidence": "Lignocellulosic biomass is the most available carbon source, and a first requirement for its valorization is the complete saccharification of its sugar-bearing components. HCl-based technologies can achieve this at 20 °C and ambient pressure. These principles were disclosed in the 1920s... Avantium Chemicals B.V. developed a modern version of this “Bergius” highly concentrated acid hydrolysis, in which the saccharides in HCl are transformed into furanics without any prior purification",
+  "explanation": "必需事实含三项：fuming HCl、low temperature、one single step。块内覆盖两项——『highly concentrated acid hydrolysis』『HCl-based』≈浓盐酸，『20 °C and ambient pressure』= 低温；但全文没有任何『one single step / 单步水解』的表述（只提到『first requirement is the complete saccharification』）。缺一项 → 最高 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 39,
+  "query_id": "q_0013",
+  "doc_id": "chk_5390b5325ecf463c4e9497d7",
+  "old_grade": 3,
+  "final_grade": 3,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "In general, the cellulose, hemicellulose and lignin contents in a typical LCB fall within the range of 30–60, 20–40, and 15–25%, respectively. ... Cellulose is a main structural and integral part of LCB... Hemicellulose is a second major component of LCB... Lignin forms a protecting boundary by covalently linking to the cellulose and hemicellulose",
+  "explanation": "必需事实三项（纤维素、半纤维素、木质素）在块内逐字出现并各有一段实质描述（含 30–60/20–40/15–25% 组成范围），块来源为题目点名的 2018 综述本身 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 40,
+  "query_id": "q_0013",
+  "doc_id": "chk_7764b60e09f53eaa5aa68fc6",
+  "old_grade": 3,
+  "final_grade": 3,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "The majority of LCB is composed of biological polymers such as cellulose, hemicellulose, and lignin, which are strongly associated with each other by covalent and hydrogen bonds thus forming a highly recalcitrant structure.",
+  "explanation": "该块为 2018 综述的标题页与摘要，摘要句逐字列出 cellulose、hemicellulose、lignin 三种生物聚合物，覆盖全部必需事实，来源即指定综述 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 41,
+  "query_id": "q_0014",
+  "doc_id": "chk_45a69b0e755aa8b4a0a506fb",
+  "old_grade": 3,
+  "final_grade": 3,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "AUTHOR CONTRIBUTIONS JB and BN drafted the portions on physical, chemical and physicochemical pretreatments. RS and SK drafted the portion on biological pretreatments.",
+  "explanation": "必需事实是四类预处理方法。块尾的作者贡献声明把本综述的预处理内容明确划为 physical、chemical、physicochemical、biological 四部分，四类名称齐备；块前半的 CONCLUSION 亦为综述对预处理方法的实质总结（成本、脱木质素、反应机理瓶颈），话题与问题一致。四项齐备 → 3，维持原判（记录：四类名的载体是该综述自述其章节构成，非纯书目/致谢类无实质内容块）。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 42,
+  "query_id": "q_0014",
+  "doc_id": "chk_7764b60e09f53eaa5aa68fc6",
+  "old_grade": 3,
+  "final_grade": 3,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "This has led to extensive research in the development of various pretreatment techniques utilizing various physical, chemical, physicochemical, and biological approaches which are specifically tailored toward the source biomaterial and its application.",
+  "explanation": "2018 综述摘要句逐字给出 physical、chemical、physicochemical、biological 四类方法，直接覆盖全部必需事实，来源即指定综述 → 3，维持原判（与 n=41 同块、不同题）。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 43,
+  "query_id": "q_0015",
+  "doc_id": "chk_225788b644ea25f4b634ffb6",
+  "old_grade": 3,
+  "final_grade": 2,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "部分支持"
+   }
+  ],
+  "actual_evidence": "The hydrolysate of the biphasic fractionation step was used at identical conditions with and without 2-MTHF as a second liquid phase. The in situ extraction of furfural into 2-MTHF at low xylose conversion (9%; at 168°C, 10 min) led to a selectivity of >80%... it enables a straightforward downstream processing, as furfural can be isolated by evaporation of 2-MTHF",
+  "explanation": "必需事实要求点明两种溶剂（water 与 2-MTHF）。该块反复出现 2-MTHF（第二液相、萃取相、可蒸发回收），但全块通篇未出现 water 一词，另一相只以 the hydrolysate / 水相含义隐含表达。两种溶剂只明确命名一种 → 部分覆盖 → 2。旧判 3 过高（旧理由本身也只说确认了 2-MTHF 一相）。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 44,
+  "query_id": "q_0015",
+  "doc_id": "chk_61fec0ffa9e553e9cc7bc451",
+  "old_grade": 3,
+  "final_grade": 3,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "Figure 1. Biomass fractionation and integrated furfural production using phosphoric acid as catalyst. The process consists of a swelling step of dried lignocellulosic biomass at 80°C, followed by a biphasic fractionation step, using water and 2-MTHF as solvents.",
+  "explanation": "图 1 图注逐字写出『using water and 2-MTHF as solvents』，两种溶剂齐备，来源即题目点名的 2021 磷酸法论文 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 45,
+  "query_id": "q_0015",
+  "doc_id": "chk_979045fd6bdb126a66d66d75",
+  "old_grade": 3,
+  "final_grade": 3,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "In the fractionation step, the acid is diluted with water to 8 wt%. 2-MTHF (equal volume to the aqueous phase) is added as a second phase, resulting in a biomass loading of 100 gL 1 referring to the aqueous phase. ｜ After removing the organic phase and the solid pulp, new 2MTHF (equal volume to the aqueous phase) is added to the hydrolysate",
+  "explanation": "块内同时明确命名 water（酸被水稀释至 8 wt%）与 2-MTHF（以等体积作第二相加入），两种溶剂齐备，来源即指定论文 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 46,
+  "query_id": "q_0015",
+  "doc_id": "chk_d669deac9629382e689cfc6a",
+  "old_grade": 3,
+  "final_grade": 2,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "部分支持"
+   }
+  ],
+  "actual_evidence": "To produce furfural with high selectivity and yield, the screening (Figure 3) showed an optimum at a temperature around 175°C and a reaction time of approximately 1 h... The hydrolysate of the biphasic fractionation step was used at identical conditions with and without 2-MTHF as a second liquid phase.",
+  "explanation": "与 n=43 同题同类：块内多次出现 2-MTHF（第二液相），但全块未出现 water 一词，另一相仅以 the hydrolysate 隐含表达。必需事实要求点名两种溶剂，实际只明确一种 → 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 47,
+  "query_id": "q_0016",
+  "doc_id": "chk_9b27a5144a763ff68f58aa16",
+  "old_grade": 3,
+  "final_grade": 3,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "Screening of the solid residue with a 300-mesh sieve can recover 91% of Pd/C, which was then subjected to simple washing and was used directly in the following cycle. As shown in Fig. 4, the yields of phenolic monomers were still retained at 35.1 wt% in the fourth run... Fig. 1 Schematic representation of the reductive catalytic fractionation (RCF) of Eucalyptus",
+  "explanation": "必需事实两项齐备：催化剂 Pd/C（含 91% 回收、循环复用）与产物类别 phenolic monomers（35.1 wt%、4-propanol guaiacol/syringol）。块来源即题目点名的 2020 Eucalyptus grandis 集成生物炼制论文 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 48,
+  "query_id": "q_0016",
+  "doc_id": "chk_ad5180b277f6e342545badc6",
+  "old_grade": 3,
+  "final_grade": 3,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "Table 1 Comparison of the results after the RCF of Eucalyptus under different temperatures Reaction conditions: Eucalyptus (1.0 g), 10 wt% Pd/C catalyst (100 mg), MeOH (40 mL), H2 (30 atm), 4 h ｜ Phenolic monomers yield (wt%)a Sugar retention (wt%)b",
+  "explanation": "块内 Table 1 表头与条件行同时给出『10 wt% Pd/C catalyst』与『Phenolic monomers yield』，两项必需事实齐备且属同一 RCF（第一段木质素处理）步骤 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 49,
+  "query_id": "q_0016",
+  "doc_id": "chk_c90f3629e80547c70ed57947",
+  "old_grade": 3,
+  "final_grade": 3,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "The soluble fraction contained monomeric, dimeric and oligomeric phenols derived from depolymerization of lignin... A proposed pathway to the major products included the cleavage of C–O bonds in β-O-4 linkages leading to monolignols and subsequent reduction of C=C bonds, and both steps would be catalyzed by Pd/C. The RCF reaction at 200 °C for 8 h and 250 °C for 2 h with Pd/C catalyst was also performed",
+  "explanation": "块内直接写明 Pd/C 催化木质素解聚为酚类单体（monomeric phenols derived from depolymerization of lignin + both steps catalyzed by Pd/C），两项齐备 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 50,
+  "query_id": "q_0016",
+  "doc_id": "chk_cc6f834d38212f53e2cabe1a",
+  "old_grade": 3,
+  "final_grade": 2,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "部分支持"
+   }
+  ],
+  "actual_evidence": "The soluble fraction contained monomeric, dimeric and oligomeric phenols derived from depolymerization of lignin, as well as polyols derived from partial hydrolysis of (hemi)cellulose... In the monomers, 4-propanol guaiacol (12.9 wt%) and 4-propanol syringol (31.9 wt%) were identified as the two major phenolic products with 90% selectivity",
+  "explanation": "逐字通读该块：只交代酚类单体（monomeric phenols、4-propanol guaiacol/syringol）一项，全块未出现 Pd/C 或任何催化剂名称（旧理由自称『Confirms monomeric phenol products』，本身也只覆盖一项）。两项必需事实缺一 → 最高 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 51,
+  "query_id": "q_0018",
+  "doc_id": "chk_3502598feddaf54c42179cfb",
+  "old_grade": 3,
+  "final_grade": 3,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "This procedure was repeated during four consecutive cycles to assess the resulting extractives and the overall performance. Remarkably, the efficiency of the fractionation (extracted lignin and residual pulp yields) is constant with each run... the excellent recyclability depicts a promising holistic approach that showed a stable performance of the catalyst and solvent during the four cycles.",
+  "explanation": "必需事实『四个连续循环』被逐字给出，并明确『效率保持稳定』（the efficiency of the fractionation is constant with each run），来源即指定论文 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 52,
+  "query_id": "q_0018",
+  "doc_id": "chk_69cf17a7e04566cf89d39367",
+  "old_grade": 3,
+  "final_grade": 3,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "This procedure was repeated during four consecutive cycles to assess the resulting extractives and the overall performance. Remarkably, the efficiency of the fractionation (extracted lignin and residual pulp yields) is constant with each run, as well as the hydrolysis of the cellulose enriched pulp (Figure 6a).",
+  "explanation": "同一论文的重叠块，同样逐字给出 four consecutive cycles 与效率恒定 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 53,
+  "query_id": "q_0023",
+  "doc_id": "chk_9a11044c6b0a3219c803c306",
+  "old_grade": 3,
+  "final_grade": 3,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "we exploit ring-opening polymerisation (ROP)15 as a faster synthetic route for PEF... In this process, the esterification by-products are removed prior to the actual polymerisation by forming macrocyclic oligomers in a diluted non-viscous environment. Since those macrocycles have no end-groups and low ring strain, ROP does not require any by-product removal",
+  "explanation": "两项齐备：ROP 被明确展开为 ring-opening polymerisation（开环聚合），且交代其直接原料是预先形成的 macrocyclic oligomers（环状低聚物），图 1 语境为 PEF。块来源即题目点名的 2018 环状低聚物制 PEF 论文 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 54,
+  "query_id": "q_0023",
+  "doc_id": "chk_c7386b23f1137ddd583d474b",
+  "old_grade": 3,
+  "final_grade": 3,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "Here we show that purified cyclic oligomers can be polymerised successfully within minutes... The cyclic PEF oligomers (cyOEF) can be prepared efficiently by depolymerisation18,19 of low molecular weight linear PEF oligomers (linOEF)... if needed further purified from residual linOEF to 99% purity via silica gel adsorption.",
+  "explanation": "两项齐备且更完整：ROP=开环聚合、直接原料为 purified cyclic oligomers（明确写出 cyOEF 与 99% 纯化）→ 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 55,
+  "query_id": "q_0024",
+  "doc_id": "chk_305f10f1a75a63236a4c181e",
+  "old_grade": 3,
+  "final_grade": 2,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "部分支持"
+   }
+  ],
+  "actual_evidence": "Choline chloride (ChCl) / glycolic acid (GA) deep eutectic solvent (DES) media with high water content but without any additional catalyst are introduced in furfural and 5hydroxymethylfurfural (HMF) production. ｜ High furfural yields were achieved, namely 62% from the sugar mixture",
+  "explanation": "必需事实的核心是机理链条：羧酸作为氢键供体（HBD）→ 赋予 DES 酸性 → 因此 DES 本身兼具溶剂与催化剂。该块为该文摘要，只给出『without any additional catalyst』与在无外加催化剂介质中取得 62% 收率，属该结论的可观测侧证；全块未出现 HBD、羧酸供质子或『溶剂兼催化剂』的表述。部分覆盖 → 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 56,
+  "query_id": "q_0027",
+  "doc_id": "chk_076b9346fadb8e7dee5524c6",
+  "old_grade": 3,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "不支持"
+   }
+  ],
+  "actual_evidence": "General conditions: carbohydrate pulp (0.15 g), metal halide catalysts in biphasic solvent (0.1 M, 12 mL), 170 °C for 120 min ｜ Under optimized conditions, lignin component (ca. 269 mg) in biomass matrix can be depolymerized into monomers (134 mg)... Results showed that high monomers yield of 49.8 wt% close to the theoretical maximum was obtained during RCF process",
+  "explanation": "必需事实是三个条件值（240 ℃、4 h、30 atm H2）。通读全块：只出现第二段（FeCl3 处理糖浆料）的条件 170 ℃/120 min 与 190 ℃/100 min，以及最高酚类单体收率 49.8 wt% 这一结果值；RCF 步骤的温度、时间、氢压三项一个都没有出现（只以『Under optimized conditions』带过）。三项全缺 → 不满足 2/3 级；但同论文、同 RCF 步骤、给出对应的最高收率与物料平衡 → L1b『同论文的方法或数据来源』= 1。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 57,
+  "query_id": "q_0032",
+  "doc_id": "chk_ae427d946654a90bad529088",
+  "old_grade": 3,
+  "final_grade": 3,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "As 2D layered nanomaterials offered large specific surface area and small sheet thickness of about 3 nm, the diffusion of reactant and product could be accelerated in the nanosheets... the 2D layered nanostructure would provide abundant reactive sites for adsorbing reactant molecules and enhance the adsorption ability of furfural substrates, which was demonstrated by furfural adsorption experiments. The nanostructure also facilitated the highly dispersion of Pt nanoparticles on its surface.",
+  "explanation": "必需事实三项齐备且各有原文对应：large specific surface area（2D 层状纳米材料提供大比表面积）、uniform dispersion of Pt nanoparticles（the nanostructure also facilitated the highly dispersion of Pt nanoparticles）、stronger furfural adsorption（enhance the adsorption ability of furfural substrates，并有吸附实验佐证）。块来源即题目点名的 2016 水相糠醛加氢论文 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 58,
+  "query_id": "q_0041",
+  "doc_id": "chk_61fec0ffa9e553e9cc7bc451",
+  "old_grade": 3,
+  "final_grade": 2,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "支持"
+   },
+   {
+    "fact": 2,
+    "verdict": "不支持"
+   },
+   {
+    "fact": 3,
+    "verdict": "不支持"
+   }
+  ],
+  "actual_evidence": "After phase separation and water evaporation, the phosphoric acid can be reused.",
+  "explanation": "该题是跨两篇文献的比较题（题目点名的两个来源分别为磷酸法论文与 Eucalyptus 论文）。本块全部内容来自 paper_07f06156408855a516ea618b，只覆盖必需事实 1（相分离与水蒸发后磷酸回用）；必需事实 2、3 属另一篇论文，块内不存在。3 项中命中 1 项 → 2。旧判 3 过高（跨文献题单篇块不可能覆盖全部必需事实）。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 59,
+  "query_id": "q_0041",
+  "doc_id": "chk_6f9e1ddf4e91431e9cfc6c46",
+  "old_grade": 3,
+  "final_grade": 2,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "不支持"
+   },
+   {
+    "fact": 2,
+    "verdict": "支持"
+   },
+   {
+    "fact": 3,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "Lignin was depolymerized into well-defined monomeric phenols in the first step using a Pd/C catalyst. ｜ High retention of cellulose and hemicellulose pulp was also obtained, which was treated with FeCl3 catalyst to attain 5-hydroxymethylfurfural, levulinic acid and furfural simultaneously.",
+  "explanation": "本块为 paper_81924125a737b5a88e728e25 的标题与摘要，逐字覆盖必需事实 2（Pd/C 解聚木质素）与必需事实 3（FeCl3 处理保留糖浆料得 HMF/乙酰丙酸/糠醛）；必需事实 1 属另一篇磷酸法论文，块内不存在。3 项命中 2 项 → 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 60,
+  "query_id": "q_0042",
+  "doc_id": "chk_3f69bf6b3a14097bc389e768",
+  "old_grade": 2,
+  "final_grade": 2,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "不支持"
+   },
+   {
+    "fact": 2,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "Glucose/xylose mixtures were converted to furfural and HMF in the ChCl/GA/H2O DES/MIBK system without any additional catalyst.",
+  "explanation": "跨文献比较题。本块为 ChCl/GA 论文的结论段，逐字覆盖必需事实 2（水相 ChCl/GA DES/MIBK 体系、无外加催化剂），必需事实 1（磷酸法水/2-MTHF 可回收磷酸）属另一篇论文 → 2。与既有受保护修正（before 3 → after 2）一致，维持，不回滚。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 61,
+  "query_id": "q_0042",
+  "doc_id": "chk_4d23c61724b8781b5c07f8ed",
+  "old_grade": 2,
+  "final_grade": 2,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "不支持"
+   },
+   {
+    "fact": 2,
+    "verdict": "部分支持"
+   }
+  ],
+  "actual_evidence": "Control experiments with various aqueous ChCl and GA systems and with a ChCl/GA/H2O (1:3:0.5) DES were performed... All control reactions were carried out using a sugar mixture as the feed, the biphasic system with MIBK as the extractive phase, 12.5 mins as the reaction time, and 160°C as the reaction temperature. ｜ Glycolic acid in water was a more effective catalyst than ChCl for furfural production (yield increased to 22%)... When a DES was formed from ChCl, GA, and a small quantity of water, the highest yields were achieved: 30% for furfural and 4% for HMF.",
+  "explanation": "本块覆盖必需事实 2 的体系侧：确认为水相 ChCl/GA/H2O（1:3:0.5）DES + MIBK 萃取相 + 糖混合物原料的体系，并以乙酸/ChCl 对照说明酸性介质是关键；但『不外加催化剂』的明确表述不在块内。必需事实 1 属另一篇论文。仅部分命中 1 项 → 2。属受保护修正（before 3 → after 2），维持，不回滚。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 62,
+  "query_id": "q_0042",
+  "doc_id": "chk_4f1003898eb083ea75f9672f",
+  "old_grade": 2,
+  "final_grade": 2,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "不支持"
+   },
+   {
+    "fact": 2,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "To the best of our knowledge, ChCl/GA/H2O DES has not been utilized either in sugar or in native biomass conversion to furfural or HMF without an additional catalyst. ｜ A high water content (32.9 wt.%) in the DES was used without turning the DES into an aqueous solution.",
+  "explanation": "本块明确写出『ChCl/GA/H2O DES ... without an additional catalyst』并交代 32.9 wt.% 高含水量，覆盖必需事实 2；必需事实 1 属另一篇论文 → 2。受保护修正（before 3 → after 2）维持，不回滚。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 63,
+  "query_id": "q_0042",
+  "doc_id": "chk_8781e312c8a17f3f184b7414",
+  "old_grade": 2,
+  "final_grade": 2,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "不支持"
+   },
+   {
+    "fact": 2,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "There are few studies using DESs as reaction media without any additional catalyst for converting lignocellulosic biomass to HMF or furfural... DES treatment without additional catalyst could be suitable for fractionation purposes (e.g., for separating hemicellulose).",
+  "explanation": "本块多次明确 DES 介质『without any additional catalyst』，覆盖必需事实 2；必需事实 1 属另一篇论文 → 2。受保护修正（before 3 → after 2）维持，不回滚。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 64,
+  "query_id": "q_0042",
+  "doc_id": "chk_9f994e2e49ec3c47a5ae2cda",
+  "old_grade": 2,
+  "final_grade": 2,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "不支持"
+   },
+   {
+    "fact": 2,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "Choline chloride (ChCl) / glycolic acid (GA) deep eutectic solvent (DES) media with high water content but without any additional catalyst are introduced in furfural and 5hydroxymethylfurfural (HMF) production. ｜ Applying only DES in a conversion reaction relies on the carboxylic acid acting as an HBD, which gives the DES acidic characteristics, and therefore, the DES itself can act as both the solvent and the catalyst.",
+  "explanation": "本块为该论文标题页/摘要与引言，覆盖必需事实 2（含水 ChCl/GA DES、无外加催化剂），并给出 HBD→酸性→溶剂兼催化剂的机理句；必需事实 1 属另一篇论文 → 2。受保护修正（before 3 → after 2）维持，不回滚。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 65,
+  "query_id": "q_0043",
+  "doc_id": "chk_6f9e1ddf4e91431e9cfc6c46",
+  "old_grade": 3,
+  "final_grade": 2,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "支持"
+   },
+   {
+    "fact": 2,
+    "verdict": "支持"
+   },
+   {
+    "fact": 3,
+    "verdict": "不支持"
+   }
+  ],
+  "actual_evidence": "Lignin was depolymerized into well-defined monomeric phenols in the first step using a Pd/C catalyst. ｜ High retention of cellulose and hemicellulose pulp was also obtained, which was treated with FeCl3 catalyst to attain 5-hydroxymethylfurfural, levulinic acid and furfural simultaneously.",
+  "explanation": "同为跨文献题。本块（Eucalyptus 论文摘要）覆盖必需事实 1（Pd/C 木质素→单体酚）与必需事实 2（糖浆料 FeCl3→HMF/乙酰丙酸/糠醛）；必需事实 3（磷酸流程在水/2-MTHF 中分离三组分）属另一篇论文，块内不存在。3 项命中 2 项 → 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 66,
+  "query_id": "q_0047",
+  "doc_id": "chk_6aa49b56f23286eccb100a58",
+  "old_grade": 3,
+  "final_grade": 2,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "部分支持"
+   }
+  ],
+  "actual_evidence": "Table 2. Mixed full factorial experimental design for birch sawdust conversion. Temperature [°C] Time [min] Water [equiv.] HMF yield [%] Furfural yield [%] 150 10 0.5 0 6.2 ... 170 10 10 2.9 37.5 ... 170 30 10 3.9 34.6 ｜ Dynamic TGA revealed that the DES lost its liquid state rapidly at temperatures above 215°C",
+  "explanation": "必需事实为『32.9 wt%，对应 10 当量』。块内 Table 2 以 Water [equiv.] 列给出 10 当量这一设计因子（并在 170 ℃/10 min/10 equiv. 下给出 37.5% 最高糠醛收率），但全块没有出现 32.9 wt% 这一质量百分比；节标题为 DES 稳定性与复用。数值二分之一命中 → 2。旧判 3 过高（旧理由本身也承认水 wt% 在摘要而不在本块）。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 67,
+  "query_id": "q_0049",
+  "doc_id": "chk_10c3ee898756bb2a39517650",
+  "old_grade": 3,
+  "final_grade": 2,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "不支持"
+   },
+   {
+    "fact": 2,
+    "verdict": "部分支持"
+   },
+   {
+    "fact": 3,
+    "verdict": "不支持"
+   }
+  ],
+  "actual_evidence": "The adsorption energy of HMF by C–OH adsorption mode on Nb2 site of Pt1/Nb2O5-Ov surfaces was −1.14 eV, which is much higher than the adsorption energy of HMF by C=O adsorption mode (−0.78 eV). ... we also calculated the H2 adsorption on Pt1/Nb2O5-Ov surfaces (Supplementary Fig. 10). The adsorption energy is exothermic 0.51 eV, which is weaker than HMF adsorption.",
+  "explanation": "必需事实 1（C=O 加氢在动力学与热力学上均优于 C–OH）与必需事实 3（完全转化时 MF 选择性 >99%）在本块均不出现；只有必需事实 2 的位点分工有一半落在块内——Nb2 位点对 C–OH 的吸附能（−1.14 eV）高于 C=O（−0.78 eV），以及 H2 在 Pt1/Nb2O5-Ov 表面的吸附能（放热 0.51 eV）。3 项命中不足 1 项完整 → 2。旧判 3 过高（旧理由本身也只提 C–OH 优先吸附一项）。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 68,
+  "query_id": "q_0049",
+  "doc_id": "chk_f073e3273982f5a713fc56f3",
+  "old_grade": 3,
+  "final_grade": 2,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "不支持"
+   },
+   {
+    "fact": 2,
+    "verdict": "支持"
+   },
+   {
+    "fact": 3,
+    "verdict": "不支持"
+   }
+  ],
+  "actual_evidence": "The reaction pathway over Pt1/ Nb2O5-Ov for the selective hydrogenation of HMF was also calculated by DFT (Fig. 6). First, the C–OH of HMF adsorbed on Nb sites, and then H2 adsorbed on Pt was readily split into two H species. ... The Pt–H species attacked the C site of C–OH in HMF accompanied by the breakage of C–O, leading to the formation of MF and -OH adsorbed on the Nb site.",
+  "explanation": "必需事实 2（Pt 活化 H2、Nb 位点活化 C–OH）在块内被完整支持：DFT 路径明确『C–OH 吸附在 Nb 位点，H2 在 Pt 上解离』。必需事实 1（C=O 加氢在动力学/热力学上更有利）与必需事实 3（完全转化时 MF 选择性 >99%）在本块不出现。3 项命中 1 项 → 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 69,
+  "query_id": "q_0013",
+  "doc_id": "chk_0a912b28229092da2e595f18",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "The pretreatment-based fractionation of lignocellulose to celluloserich fraction, pentose-rich fraction, and lignin fraction is more attrac tive from the view of biorefining. ｜ C5-sugars (pentoses) derived from hemicelluloses are typically not feasible for industrial fermentation processes",
+  "explanation": "题目点名 2018 年《Recent Trends in the Pretreatment...》综述，属硬性来源限定；本块来源为 paper_972ce08e4e1d4c13a274afd6（同一来源=否）。块内以『cellulose 富集相 / 戊糖富集相 / 木质素相』及其后文『C5-sugars derived from hemicelluloses』间接对应三种组分，属另一篇论文独立陈述相同概念。按规范 §八 规则 1，此情形最高判 1，不得判 2（否则完全没找到指定文献也会命中 HitRate/MRR）。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 70,
+  "query_id": "q_0013",
+  "doc_id": "chk_0fdd02015b6eb7d21ac6f9fd",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "Lignocellulosic biomass, which is composed of lignin, cellulose, and hemicellulose, represents the prevalent sustainable hydrocarbon resource for impactful conversion into our future chemicals and fuels [1–3].",
+  "explanation": "块来源为 paper_81924125a737b5a88e728e25（Eucalyptus 论文），非题目点名的 2018 综述。该块独立陈述了同样的三种组分，按规范 §八 规则 1：另一篇论文独立陈述相同事实 → 1 级，不得判 2。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 71,
+  "query_id": "q_0013",
+  "doc_id": "chk_19dc9d277d79c2e2421ec9bf",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "The second route includes the cell wall polymers themselves in which cellulose, hemicellulosic polysaccharides and lignin are isolated, processed, and converted to end products. ｜ the challenge for lignocellulosic biomass remains in the efficient separation of celllulose, hemicellulose and lignin from each other",
+  "explanation": "块来源为 paper_a39f1f9d78514a2f2d7f78be（可持续平台综述），非指定 2018 综述。该块独立列出纤维素/半纤维素/木质素三种组分，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 72,
+  "query_id": "q_0013",
+  "doc_id": "chk_1b3adced8f0344654ed5ebfa",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "2. Structure and Sources of Lignocellulosic Biomass. Lignocellulosic biomass is mainly composed of three polymers; cellulose, hemicellulose and lignin together with small amounts of other components, like acetyl groups, minerals and phenolic substituents",
+  "explanation": "块来源为 paper_a39f1f9d78514a2f2d7f78be（非指定 2018 综述），句式与必需事实高度相似（three polymers; cellulose, hemicellulose and lignin）。仍是另一篇论文独立陈述相同事实，按 §八 规则 1 最高 1 级（旧理由自称 L1c 也印证它只是他文同类对照）。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 73,
+  "query_id": "q_0013",
+  "doc_id": "chk_2664a01ff75abf215f6dbb9d",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "Lignocellulosics are a type of biomass, and mainly consist of: cellulose, hemicellulose, and lignin.",
+  "explanation": "块来源为 paper_fc29dce759c42c9a91aa8868（非指定 2018 综述）。该块独立陈述三种主要聚合物，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 74,
+  "query_id": "q_0013",
+  "doc_id": "chk_3182461b711d1f373bf36ac4",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "Lignocellulosic biomass, which is composed of lignin, cellulose, and hemicellulose, represents the prevalent sustainable hydrocarbon resource for impactful conversion into our future chemicals and fuels [1–3].",
+  "explanation": "块来源为 paper_81924125a737b5a88e728e25（Eucalyptus 论文），非指定 2018 综述。独立陈述同样三种组分，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 75,
+  "query_id": "q_0013",
+  "doc_id": "chk_4f283b17046ca64f70a75f0f",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "primarily due to high cost of production encompassing biomass pretreatment steps to biomass components (i.e., lignin, cellulose, and hemicellulose)",
+  "explanation": "块来源为 paper_f0e625aa9a89da78815e3099（Frontiers in Chemistry 2018 另一篇 Den et al.），非指定 2018 综述。独立点到三种组分，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 76,
+  "query_id": "q_0013",
+  "doc_id": "chk_5bdc404aaf3aa2d43a2e88b3",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "Lignocellulosic biomass generally comprises three types of biopolymers, namely cellulose, hemicellulose, and lignin.",
+  "explanation": "块来源为 paper_f0e625aa9a89da78815e3099（Frontiers in Chemistry 2018 Den et al.），非题目点名的 2018 综述。该块独立列出同样三种生物聚合物，按规范 §八 规则 1（另一篇论文独立陈述相同事实）最高 1 级，不得判 2。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 77,
+  "query_id": "q_0013",
+  "doc_id": "chk_837fe3919547666c018f0fcf",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "Apart from the three main biopolymer components, namely, cellulose, hemicellulose and lignin, lignocellulosic biomass also contains traces of extractive and mineral ash.",
+  "explanation": "块来源为 paper_a23d5abb9f77edeb68352119，非指定 2018 综述。独立陈述三种主要生物聚合物，按 §八 规则 1 最高 1 级（旧理由自称 L1c 同类对照，亦印证）。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 78,
+  "query_id": "q_0013",
+  "doc_id": "chk_949d6e15c39aa1680eb0597e",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "biomass transformation into energy products, and generation of valuable chemicals from biomass-derived components (e.g., lignin, cellulose, and hemicellulose).",
+  "explanation": "块来源为 paper_f0e625aa9a89da78815e3099，非指定 2018 综述。以举例形式列出三种组分，属另一篇论文独立陈述相同概念，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 79,
+  "query_id": "q_0013",
+  "doc_id": "chk_9e49aa0e6a155dbc4c439cf7",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "One of the most important goals is to fractionate lignocellulose into its three major components; cellulose, hemicelluloses and lignin.",
+  "explanation": "块来源为 paper_a39f1f9d78514a2f2d7f78be，非指定 2018 综述。独立给出三种主要组分，按 §八 规则 1 最高 1 级（旧理由自称 L1b，但该文并非本题指定来源，故只能按他文对照处理）。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 80,
+  "query_id": "q_0013",
+  "doc_id": "chk_a4cfb2dac7c22e914f7aa355",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "Biomass pretreatment results in cellulose-rich solids, frequently devoid of extractives/ash, and reduction of hemicellulose and lignin components depending on the applied techniques.",
+  "explanation": "块来源为 paper_d5bfa1893984e7871d3fd568（木质素靶向预处理综述），非指定 2018 综述。块内以预处理结果形式点到 cellulose / hemicellulose / lignin 三组分，属他文独立陈述，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 81,
+  "query_id": "q_0013",
+  "doc_id": "chk_b4a63245687199605240fc88",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "Conclusions: A two-step process (reductive catalytic fractionation followed by FeCl3 catalysis) allows the fractiona‐ tion of all the three biopolymers (cellulose, hemicellulose, and lignin) in Eucalyptus biomass",
+  "explanation": "块来源为 paper_81924125a737b5a88e728e25（Eucalyptus 论文），非指定 2018 综述；块主体为结论句尾 + CC 许可声明与作者单位（书目性元数据），仅结论一句点到三种生物聚合物。仍属他文独立陈述相同事实 → 按 §八 规则 1 判 1（不给 0，因确有该项组分的实质陈述）。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 82,
+  "query_id": "q_0013",
+  "doc_id": "chk_bd32559701129098222b039e",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "Table 1. Chemical composition of different types of lignocellulosic biomass. Lignocellulosic biomass % Cellulose % Hemicelluloses % Lignin Sugarcane bagasse 40 24 25 ...",
+  "explanation": "块来源为 paper_dc3af146aa40e29afdfa9838，非指定 2018 综述。Table 1 以 %Cellulose/%Hemicelluloses/%Lignin 三列枚举组分，属他文独立陈述相同事实，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 83,
+  "query_id": "q_0013",
+  "doc_id": "chk_d240b88640bce7f3b815a13f",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "Pretreatment of these biomass depolymerizes the complex lignin and cellulosic structures and separate lignin from cellulose and hemicellulose via hydrolysis. ｜ the unique binding affinities of a luminescent oligothiophenes to lignin, cellulose and hemicellulose",
+  "explanation": "块来源为 paper_f0e625aa9a89da78815e3099，非指定 2018 综述。图注与分析段两次并列 lignin / cellulose / hemicellulose，属他文独立陈述，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 84,
+  "query_id": "q_0013",
+  "doc_id": "chk_dae54923690abc9482389d41",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "Generally, lignocellulosic biomass consists of 35–50% cellulose, 20–35% hemicellulose, and 10–25% lignin. ｜ One of the most important goals of lignocellulosic biomass refining is to fractionate lignocellulose into its three major components; cellulose, hemicelluloses and lignin.",
+  "explanation": "块来源为 paper_a39f1f9d78514a2f2d7f78be，非指定 2018 综述。两处并列三种组分（含质量占比），仍为他文独立陈述相同事实，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 85,
+  "query_id": "q_0013",
+  "doc_id": "chk_df24437e6c790326b9602f5f",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "Lignocellulosics are a type of biomass, and mainly consist of: cellulose, hemicellulose, and lignin. ｜ Table 1. Chemical analysis of selected lignocellulosic sources. Cellulose (wt%) Hemicellulose (wt%) Lignin (wt%)",
+  "explanation": "块来源为 paper_fc29dce759c42c9a91aa8868，非指定 2018 综述。正文与 Table 1 均给三种组分，属他文独立陈述，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 86,
+  "query_id": "q_0013",
+  "doc_id": "chk_e40ff27103a7dff6aa294c49",
+  "old_grade": 3,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "Intermolecular interactions between the three major components of lignocellulosic biomass, which are cellulose, hemicelluloses and lignin, determine biomass recalcitrant structure (Figure 5).",
+  "explanation": "块内确实逐字给出三种主要组分，但块来源为 paper_dc3af146aa40e29afdfa9838，非题目点名的 2018 综述（同一来源=否）。题目点名来源即硬性限定，按规范 §八 规则 1：另一篇论文独立陈述相同事实 → 最高 1 级，不得判 2/3（『别的论文列了三种组分，证明不了指定综述列了那三种』）。旧判 3 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 87,
+  "query_id": "q_0013",
+  "doc_id": "chk_e86a4176f859f6fdd792fe54",
+  "old_grade": 2,
+  "final_grade": 0,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "不支持"
+   }
+  ],
+  "actual_evidence": "Donohoe, B.S., Decker, S.R., Tucker, M.P., Himmel, M.E., Vinzant, T.B., 2008. Visualizing lignin coalescence and migration through maize cell walls following thermochemical pretreatment. Biotechnol. Bioeng. 101 (5), 913-925. ｜ dos Santos, A.C., Ximenes, E., Kim, Y., Ladisch, M.R., 2019. Lignin-enzyme interactions...",
+  "explanation": "整块自首至尾都是参考文献条目（Donohoe 2008 / dos Santos 2019 / Dutta 2017 / Fang 2015 / Fushinobu 2014 / Giummarella 2016,2019 / Guerra 2006 / Guo 2014,2019a,2019b / Himmel 2007），没有任何关于三大组分的实质陈述；且块来源 paper_d5bfa1893984e7871d3fd568 亦非指定综述。按规范 §四『块只是参考文献条目 → 0』。旧判 2 与旧理由（理由已自认无法支持作答）自相矛盾 → 改为 0。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 88,
+  "query_id": "q_0013",
+  "doc_id": "chk_e9d4c44e3c2a99de94f93c42",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "From a macromolecular perspective, lignocellulosic materials contain three biopolymers: hemicellulose, cellulose, and lignin.",
+  "explanation": "块来源为 paper_d1a4e8bfc7c58b30dda482f2（2023 CMF 论文），非指定 2018 综述。独立陈述三种生物聚合物，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 89,
+  "query_id": "q_0013",
+  "doc_id": "chk_fa44890380cd28eeddd8114f",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "There are three main natural polymeric constituents composing the lignocellulosic biomass: cellulose, hemicellulose and lignin (see Fig. 1).",
+  "explanation": "块来源为 paper_a23d5abb9f77edeb68352119，非指定 2018 综述。独立列出三种主要天然聚合物，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 90,
+  "query_id": "q_0019",
+  "doc_id": "chk_867558c7dbce6d47c08806da",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "Amongst these monomers, a particular attention has been recently paid to 2,5-FDCA. The oxidation of HMF to FDCA was mainly catalyzed by Pt, Pd, and Au-based catalysts. ... Avantium aims to replace oil-based PET with its furanoic counterpart; polyethylene furanoate (PEF)",
+  "explanation": "题目点名 2024 年《Beyond 2,5-furandicarboxylic acid》综述，属硬性来源限定；本块来源 paper_a39f1f9d78514a2f2d7f78be 与之不同。块内确给出 HMF 氧化为 FDCA 并连到 PEF，但按 §八 规则 1，另一篇论文独立陈述相同事实只能判 1。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 91,
+  "query_id": "q_0019",
+  "doc_id": "chk_a7b4e7413f51520b5850ba43",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "The sustainable synthesis of two important intermediates relevant for the production of bio-based polymers, 2,5-furandicarboxylic acid (FDCA) and 5-hydroxymethyl-2-furancarboxylic acid (HFCA), via oxidation of 5-(hydroxymethyl)furfural (HMF) was investigated using supported gold- and silver-based catalysts in water with air as the oxidant.",
+  "explanation": "块来源为 paper_075d9e2d19ead8d2c43d1945（Green Chem. 2018 选择性氧化论文），非题目点名的 2024 综述。该文独立报告 HMF 氧化制 FDCA，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 92,
+  "query_id": "q_0019",
+  "doc_id": "chk_cc47e725f63493a672af98c3",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "The oxidation of HMF to FDCA was mainly catalyzed by Pt, Pd, and Au-based catalysts. ... Avantium aims to replace oil-based PET with its furanoic counterpart; polyethylene furanoate (PEF)",
+  "explanation": "块来源为 paper_a39f1f9d78514a2f2d7f78be，非指定 2024 综述。独立陈述 HMF 氧化为 FDCA 并连到 PEF，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 93,
+  "query_id": "q_0019",
+  "doc_id": "chk_ea12060a5eb8ed047561fe44",
+  "old_grade": 2,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "参考性叙述"
+   }
+  ],
+  "actual_evidence": "a metal-free heterogeneous selective oxidation of HMF to 2,5-furandicarboxylic acid (FDCA) (Figure 5); the process uses aerial oxygen under mild conditions ｜ FIGURE 5 | Aerial transformation of 5-(hydroxymethyl)furfural (HMF) to 2,5-furandicarboxylic acid (FDCA)... its conversion into FDCA provides an important polymer building block for the production of biopolymers (e.g., polyamides and polyesters).",
+  "explanation": "块来源为 paper_f0e625aa9a89da78815e3099（Frontiers in Chemistry 2018 绿色氧化综述），非指定 2024 综述。独立陈述 HMF→FDCA 及聚合单体用途，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 94,
+  "query_id": "q_0027",
+  "doc_id": "chk_50015abd498d99b96ac574fd",
+  "old_grade": 3,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "不支持"
+   }
+  ],
+  "actual_evidence": "The highest value of selectivity would be 64.98%, and would be obtained under the lowest conditions of the design, that is, 190 ◦C, [FeCl3] = 0.05 M, and 0.5 min. ... The highest yield value, 53.71%, is obtained at 200 ◦C, [FeCl3] = 0.07 M, and 0.5 min",
+  "explanation": "题目点名 2020 年 Eucalyptus grandis 集成炼制研究；本块来源 paper_65e9cfe7da55d5c5714aeb00 是另一篇 Molecules 2020 FeCl3 响应面优化论文。块内给的是该他文的 FeCl3 浓度/时间/温度最优组合，与所问 Eucalyptus RCF 酚类单体的 240 ℃/4 h/30 atm H2 完全不是同一组事实（三项值一个未出现）。属『不同论文的同类对照实验』= L1c = 1。旧判 3 严重过高（旧理由本身即写明不是 Eucalyptus RCF 条件）。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 95,
+  "query_id": "q_0029",
+  "doc_id": "chk_e769e00a4aa1cbe71b7a02cf",
+  "old_grade": 3,
+  "final_grade": 1,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "不支持"
+   }
+  ],
+  "actual_evidence": "Figure 6. Furfural yields attained with different cycles of the DES [Ch]Cl:Malic Acid (1:3) + 5 wt.% H2O with 8.19% LiBr added at 157.3 °C and 1.74 min. ｜ [Ch]Cl was used as the hydrogen bond acceptor (HBA) and malic acid (MA), as hydrogen bond donor (HBD).",
+  "explanation": "题目点名 2021 年 ChCl/GA 水合 DES 微波研究；本块来源 paper_0cc8554d80109d5ddfe91435 是另一篇 [Ch]Cl/苹果酸+LiBr 论文。块内为化学品清单与 DES 配制方法，并给出他文条件 157.3 ℃/1.74 min，所问『糖混合物 160 ℃/10 min、桦木锯屑 170 ℃/10 min』两项均未出现。属不同论文的同类对照实验 = L1c = 1。旧判 3 严重过高（旧理由本身即称其为『不同 DES 体系，作对照』）。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 96,
+  "query_id": "q_0044",
+  "doc_id": "chk_eec4496762bf30d4c915fc71",
+  "old_grade": 3,
+  "final_grade": 3,
+  "changed": false,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "支持"
+   },
+   {
+    "fact": 2,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "160°C reaction temperature and ChCl/GA/H2O (1:3:6) DES were used in all reactions. When HMF/furfural was used as a feedstock, reaction time was limited to 2 minutes, otherwise, it was set at 10 minutes. MIBK was used as extracting solvent unless otherwise stated. ｜ Table 1 ... 4 ZnCl2 as catalyst, glucose/xylose as feedstock 10 51",
+  "explanation": "两项必需事实齐备：DES 组成为 ChCl/GA/H2O (1:3:6) 且写明『used in all reactions』；微波条件为 160 ℃、10 min（非 HMF/糠醛原料时统一 10 min，即糖混合物条件）。『不外加催化剂』由 Table 1 的实验设计可确认——全部条目中只有 entry 4 单独标注『ZnCl2 as catalyst』，其余（含 entry 3 glucose/xylose as feedstock）均为无外加催化剂基线。块来源即指定论文 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 97,
+  "query_id": "q_0049",
+  "doc_id": "chk_1ed219cb4bb3138cf0b467a4",
+  "old_grade": 3,
+  "final_grade": 2,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "不支持"
+   },
+   {
+    "fact": 2,
+    "verdict": "支持"
+   },
+   {
+    "fact": 3,
+    "verdict": "部分支持"
+   }
+  ],
+  "actual_evidence": "the Pt1/ Nb2O5-Ov cooperated very well to promote the selective hydrogenation of HMF to MF. The Pt atom was responsible for the activation of H2 and the Nb sites activated C–OH. ｜ Both Pd1/Nb2O5-Ov and Au1/Nb2O5-Ov showed >99% selectivity of MF",
+  "explanation": "必需事实 2 逐字命中（Pt 活化 H2、Nb 活化 C–OH）；必需事实 3 只到『SAC 的 MF 选择性 >99%』这一半，块内未出现『at complete conversion』的条件限定；必需事实 1（C=O 加氢在动力学与热力学上优于 C–OH）在本块完全不出现。3 项命中 1 完整 + 1 部分 → 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 98,
+  "query_id": "q_0049",
+  "doc_id": "chk_df78a5c435d9c7f4639ab865",
+  "old_grade": 3,
+  "final_grade": 2,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "不支持"
+   },
+   {
+    "fact": 2,
+    "verdict": "不支持"
+   },
+   {
+    "fact": 3,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "Pt1/Nb2O5-Ov could efficiently catalyze the selective hydrogenation of HMF to MF with >99% selectivity at complete conversion of HMF in 4 h. The turnover frequency of producing MF could reach 1875 h−1 ｜ The quantum chemical calculations demonstrated that HMF could be hydrogenated to produce MF and DMF with Gibbs free energy (ΔG) of −1.37 and −2.93 eV",
+  "explanation": "必需事实 3 完整命中（>99% 选择性、complete conversion、4 h）。必需事实 2（Pt/Nb 分工）在本块不出现；必需事实 1（C=O 与 C–OH 的动力学/热力学比较）也不出现——块内 ΔG 计算针对的是 HMF→MF 与 HMF→DMF，而非 C=O 与 C–OH 之争。3 项命中 1 项 → 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 99,
+  "query_id": "q_0050",
+  "doc_id": "chk_1ed219cb4bb3138cf0b467a4",
+  "old_grade": 3,
+  "final_grade": 2,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "不支持"
+   },
+   {
+    "fact": 2,
+    "verdict": "支持"
+   },
+   {
+    "fact": 3,
+    "verdict": "部分支持"
+   }
+  ],
+  "actual_evidence": "The Pt atom was responsible for the activation of H2 and the Nb sites activated C–OH. ｜ Both Pd1/Nb2O5-Ov and Au1/Nb2O5-Ov showed >99% selectivity of MF... showing that the nature of the metal species in the SACs only affected the activity but not the selectivity",
+  "explanation": "与 n=97 同块（同一 doc_id 服务于 q_0049/q_0050）：命中必需事实 2；必需事实 3 只到 >99% 选择性、缺 complete conversion；必需事实 1 不出现 → 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 100,
+  "query_id": "q_0050",
+  "doc_id": "chk_df78a5c435d9c7f4639ab865",
+  "old_grade": 3,
+  "final_grade": 2,
+  "changed": true,
+  "fact_checks": [
+   {
+    "fact": 1,
+    "verdict": "不支持"
+   },
+   {
+    "fact": 2,
+    "verdict": "不支持"
+   },
+   {
+    "fact": 3,
+    "verdict": "支持"
+   }
+  ],
+  "actual_evidence": "Pt1/Nb2O5-Ov could efficiently catalyze the selective hydrogenation of HMF to MF with >99% selectivity at complete conversion of HMF in 4 h. ... the selectivities to MF are always >99% (Table 1, entry 3–6). ... the selectivity of MF was independent of the conversion of HMF and could reach >99% of all the reaction times.",
+  "explanation": "与 n=98 同块：必需事实 3 完整命中（SAC 完全转化时 MF 选择性 >99%，且在 4 h/变换温度氢压下稳定）；必需事实 1 与 2 在本块不出现 → 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ }
+]

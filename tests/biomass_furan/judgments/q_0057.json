@@ -1,0 +1,440 @@
+{
+ "query_id": "q_0057",
+ "judgments": [
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_01a6bca8563f302db9585444",
+   "relevance": 0,
+   "reason": "doc3: same paper, catalyst synthesis/characterization only, no site-role division",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "a966eb1fbfe7ff49baf67103d9cbd474f3c2892adfc8eadd02d2c4551b9dd045"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_0358d2f4512fe7562915e5d6",
+   "relevance": 1,
+   "reason": "L1c: comparable Pd-PdO/ZnSO4 run, but no PdO/Pd0 division.",
+   "evidence_quotes": [
+    "Clearly, the combination of Pd and ZnSO4 is capable of dehydrating as well as selectively cleaving the side group formaldehyde (HCHO) rather than over-cracking the entire C6 sugar molecule."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "a90cf438334d3f6d55c48ccbcd8fb9a689220d901bea963535096492f7107b9b"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_1093843a7109e88c64fcccb5",
+   "relevance": 2,
+   "reason": "Directly states Pt activates H2 and Nb activates C–OH for Pt1/Nb2O5-Ov (fact f1).",
+   "evidence_quotes": [
+    "The Pt atom sites can only activate the H2, and the Nb sites solely activate C–OH in the reaction, while none of the Nb and Pt sites can activate the C=O group."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "97c8fea6f7ac2bfffa12e9070e6509a1c173ddcd3a54a77fa8163fecd0a711ca"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_10c3ee898756bb2a39517650",
+   "relevance": 2,
+   "reason": "Nb site adsorbs C–OH; Pt/Ov promote adsorption, supporting site division.",
+   "evidence_quotes": [
+    "The adsorption energy of HMF by C–OH adsorption mode on Nb2 site of Pt1/Nb2O5-Ov surfaces was −1.14 eV, which is much higher than the adsorption energy of HMF by C=O adsorption mode (−0.78 eV). Furthermore, Pt and oxygen vacancies promoted the adsorption of HMF"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "a966eb1fbfe7ff49baf67103d9cbd474f3c2892adfc8eadd02d2c4551b9dd045"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_11662de455fbc00eecb0573c",
+   "relevance": 2,
+   "reason": "Background on SAC design for HMF hydrogenation; auxiliary context.",
+   "evidence_quotes": [
+    "Design of ideal catalysts is the key to achieve the selective hydrogenation of HMF to MF. In recent years, isolated single atomic catalysts (SACs) have been used in many reactions."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "a966eb1fbfe7ff49baf67103d9cbd474f3c2892adfc8eadd02d2c4551b9dd045"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_13deb44987f4d098b0753176",
+   "relevance": 3,
+   "reason": "Confirms division of roles between Pt and Nb sites (fact f1).",
+   "evidence_quotes": [
+    "The Pt sites were responsible for the activation of H2 and the Nb sites near Pt sites selectively activated the C–OH group in HMF"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "97c8fea6f7ac2bfffa12e9070e6509a1c173ddcd3a54a77fa8163fecd0a711ca"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_1dbb71d49fb9e628ed28a891",
+   "relevance": 2,
+   "reason": "Pd-PdO/ZnSO4 furfural formation from C6 intermediates; supports Pd-PdO role.",
+   "evidence_quotes": [
+    "with the addition of the Pd-PdO/ZnSO4 catalyst, the overall conversion of wet LGA was almost complete, and the selectivity of furfural reached ~61%, relative to only approximately 20% for LGO"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "a966eb1fbfe7ff49baf67103d9cbd474f3c2892adfc8eadd02d2c4551b9dd045"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_1e2971b44f0a7fc02acdced8",
+   "relevance": 1,
+   "reason": "L1b: same paper's C–OH adsorption evidence, partial site role.",
+   "evidence_quotes": [
+    "This is the direct evidence of chemical adsorption C–OH by Pt1/Nb2O5-Ov. However, Pt1/Nb2O5-Ov could not adsorb C=O groups chemically."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "a90cf438334d3f6d55c48ccbcd8fb9a689220d901bea963535096492f7107b9b"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_1ed219cb4bb3138cf0b467a4",
+   "relevance": 0,
+   "reason": "doc4: review of third-party Nb2O5 xylose dehydration, no Pt/Pd sites; doc5: same review, unrelated furfural production context",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0981d291d892e07b00a09c43338ae65ec2f3c94e7e18011ebce33d90b5589354"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_212f072413616a242ffb333e",
+   "relevance": 1,
+   "reason": "L1b: same paper's characterization data, no site-role division.",
+   "evidence_quotes": [
+    "The binding energy of Ptδ+4f5/2 (76.3 eV) and Ptδ+4f7/2 (73.0 eV) for used catalyst was almost the same as that of original Pt1/Nb2O5-Ov"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "a90cf438334d3f6d55c48ccbcd8fb9a689220d901bea963535096492f7107b9b"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_2457bcbec7234dbe74bc716f",
+   "relevance": 1,
+   "reason": "Describes PdO and ZnSO4 roles in the Pd-PdO/ZnSO4 furfural system.",
+   "evidence_quotes": [
+    "The use of pure PdO catalyst in Fig. 4b led to a decrease in the yield of furfural... The yields of permanent gases in Fig. 4c’ are also negligible, supporting the strong dehydration effect of the ZnSO4 support."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "defb26037a11f9ce427e8288b63fe79a726fced2320a17143dd70e08baedd672"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_458fda574db654e6641f0bf0",
+   "relevance": 3,
+   "reason": "Directly states Pt/Nb site division for Pt1/Nb2O5-Ov.",
+   "evidence_quotes": [
+    "The Pt atom sites can only activate the H2, and the Nb sites solely activate C–OH in the reaction, while none of the Nb and Pt sites can activate the C=O group."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "a90cf438334d3f6d55c48ccbcd8fb9a689220d901bea963535096492f7107b9b"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_72a32a4551589e3fbc54694d",
+   "relevance": 0,
+   "reason": "doc2: different paper, review of other catalysts; no Pt/Nb2O5 or Pd-PdO/ZnSO4 site division",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "defb26037a11f9ce427e8288b63fe79a726fced2320a17143dd70e08baedd672"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_765cb061e1f7730e719a8e05",
+   "relevance": 3,
+   "reason": "Directly states PdO/Pd0 division in Pd-PdO/ZnSO4, supporting f2.",
+   "evidence_quotes": [
+    "The PdO layer is active for the Grob fragmentation of formaldehyde (HCHO) from glucose, which is subsequently in-situ steam reformed into syngas (i.e. H2 and CO), whereas the Pd0 core is active in promoting the last dehydration step for the formation of furfural."
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0981d291d892e07b00a09c43338ae65ec2f3c94e7e18011ebce33d90b5589354"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_7a423d76a9aed8d18364ed16",
+   "relevance": 0,
+   "reason": "doc4: review of third-party Nb2O5 xylose dehydration, no Pt/Pd sites; doc5: same review, unrelated furfural production context",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0981d291d892e07b00a09c43338ae65ec2f3c94e7e18011ebce33d90b5589354"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_7f97da34ec5bc180ad75c39a",
+   "relevance": 0,
+   "reason": "doc0: 2023 Pd-PdO/ZnSO4 paper, but covers formaldehyde tracing/pathway, not PdO/Pd0 site roles; doc1: same 2021 paper, catalytic performance data, not site roles",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "97c8fea6f7ac2bfffa12e9070e6509a1c173ddcd3a54a77fa8163fecd0a711ca"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_86bc4e0d1009b89cf8767515",
+   "relevance": 2,
+   "reason": "Pt1/Nb2O5-Ov chemisorption of C–OH vs C=O, relevant to site division.",
+   "evidence_quotes": [
+    "the selective chemisorption of C–OH and C=O on the surface of Pt1/Nb2O5-Ov was investigated by FT-IR spectroscopy using methanol and n-propanal as model molecules. It was found that methanol dissociates into methoxy species on Pt1/Nb2O5-Ov"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "a966eb1fbfe7ff49baf67103d9cbd474f3c2892adfc8eadd02d2c4551b9dd045"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_932af02ade2343540404171d",
+   "relevance": 1,
+   "reason": "L1b: same paper's catalyst characterization, no site-role division.",
+   "evidence_quotes": [
+    "The detection of PdO by XRD is infeasible since its principal peaks (002) and (011) overlap with the (220) and (121) peaks"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "a90cf438334d3f6d55c48ccbcd8fb9a689220d901bea963535096492f7107b9b"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_a4b508537c897114032882d3",
+   "relevance": 3,
+   "reason": "Directly states the Pt/Nb site division of labor for Pt1/Nb2O5-Ov (f1).",
+   "evidence_quotes": [
+    "The Pt atom was responsible for the activation of H2 and the Nb sites activated C–OH."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "9a6fc02f25c2c88e4f6001621459e873e54e9699b2675c3b27ce9cdaa307cc80"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_b5a8ab34648f2ea8c8101bc6",
+   "relevance": 2,
+   "reason": "Directly states Pt activates H2 and Nb adsorbs C–OH in Pt1/Nb2O5-Ov.",
+   "evidence_quotes": [
+    "First, the C–OH of HMF adsorbed on Nb sites, and then H2 adsorbed on Pt was readily split into two H species."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "defb26037a11f9ce427e8288b63fe79a726fced2320a17143dd70e08baedd672"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_bb0bf9064a5ad067cf25ae4b",
+   "relevance": 3,
+   "reason": "Directly states Pt/Nb site division in Pt1/Nb2O5-Ov, supporting f1.",
+   "evidence_quotes": [
+    "The Pt atoms are responsible for the activation of H2 and the Nb sites activate C-OH in the reaction."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0981d291d892e07b00a09c43338ae65ec2f3c94e7e18011ebce33d90b5589354"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_c189cd855d6d974fa4f8ee42",
+   "relevance": 3,
+   "reason": "Duplicate of doc0 text, directly supports f1.",
+   "evidence_quotes": [
+    "The Pt atoms are responsible for the activation of H2 and the Nb sites activate C-OH in the reaction."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "0981d291d892e07b00a09c43338ae65ec2f3c94e7e18011ebce33d90b5589354"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_ca518f4edea642ce661c7f9b",
+   "relevance": 0,
+   "reason": "doc0: 2023 Pd-PdO/ZnSO4 paper, but covers formaldehyde tracing/pathway, not PdO/Pd0 site roles; doc1: same 2021 paper, catalytic performance data, not site roles",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "97c8fea6f7ac2bfffa12e9070e6509a1c173ddcd3a54a77fa8163fecd0a711ca"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_df78a5c435d9c7f4639ab865",
+   "relevance": 0,
+   "reason": "doc0: 2023 Pd-PdO/ZnSO4 paper, but covers formaldehyde tracing/pathway, not PdO/Pd0 site roles; doc1: same 2021 paper, catalytic performance data, not site roles",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "97c8fea6f7ac2bfffa12e9070e6509a1c173ddcd3a54a77fa8163fecd0a711ca"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_e5803672c0ec495b3a48c07f",
+   "relevance": 1,
+   "reason": "L1b: same paper's characterization of the Pt1/Nb2O5-Ov system, background on metal-support interaction, no site-role division.",
+   "evidence_quotes": [
+    "These results imply that there is a strong electron interaction between Nb2O5-Ov and Pt, and the electron transfers from Pt to the Nb2O5-Ov support."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "9a6fc02f25c2c88e4f6001621459e873e54e9699b2675c3b27ce9cdaa307cc80"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_e5df285a82ade082a60c09d9",
+   "relevance": 1,
+   "reason": "L1b: same paper's substrate-scope data for Pt1/Nb2O5-Ov, auxiliary to the site-role mechanism.",
+   "evidence_quotes": [
+    "was active for the hydrogenolysis of the furfuryl alcohol to 2methylfuran while inactive for the hydrogenation of furfural to furfuryl alcohol"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "9a6fc02f25c2c88e4f6001621459e873e54e9699b2675c3b27ce9cdaa307cc80"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_e99a090e45357de917d22420",
+   "relevance": 3,
+   "reason": "Directly states the Pt/Nb site division of labor for Pt1/Nb2O5-Ov (f1).",
+   "evidence_quotes": [
+    "The Pt sites were responsible for the activation of H2 and the Nb sites near Pt sites selectively activated the C–OH group in HMF"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "9a6fc02f25c2c88e4f6001621459e873e54e9699b2675c3b27ce9cdaa307cc80"
+  },
+  {
+   "query_id": "q_0057",
+   "doc_id": "chk_f073e3273982f5a713fc56f3",
+   "relevance": 2,
+   "reason": "DFT pathway confirming Nb adsorbs/activates C–OH and Pt activates H2; must be combined with the explicit statement (f1).",
+   "evidence_quotes": [
+    "the C–OH of HMF adsorbed on Nb sites, and then H2 adsorbed on Pt was readily split into two H species"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "9a6fc02f25c2c88e4f6001621459e873e54e9699b2675c3b27ce9cdaa307cc80"
+  }
+ ]
+}

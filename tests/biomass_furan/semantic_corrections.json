@@ -1,0 +1,74 @@
+[
+ {
+  "query_id": "q_0004",
+  "doc_id": "chk_ee4f714d67d858f105a035d3",
+  "kind": "read_based_spotcheck_correction",
+  "rule": "块写的是木糖载量(10->20 wt%)变化，题目问的是 SnCl4 用量(5->10 mol%)变化。变量不同，按规范属 L1a（同体系不同条件）= 1，不能判 2",
+  "before": 2,
+  "after": 1,
+  "before_reason": "Same paper/system; shows yield rises then falls, but variable is xylose loading not SnCl4 dosage."
+ },
+ {
+  "query_id": "q_0007",
+  "doc_id": "chk_566e4ba7fd2e114be1aef258",
+  "kind": "read_based_spotcheck_correction",
+  "rule": "理由自称 L1b（同一论文的优化方法/数据基础）且明说未给出优化值。L1b 按定义是 1 级，等级与理由矛盾",
+  "before": 2,
+  "after": 1,
+  "before_reason": "L1b: describes the RSM optimization method/data basis of the same paper, but does not state the optimized values."
+ },
+ {
+  "query_id": "q_0008",
+  "doc_id": "chk_e769e00a4aa1cbe71b7a02cf",
+  "kind": "read_based_spotcheck_correction",
+  "rule": "块给的是循环使用收率，题目要求区分预测值与实测值。不同条件属 L1a = 1",
+  "before": 2,
+  "after": 1,
+  "before_reason": "Same optimized LiBr system/conditions but reports recycling yields, not the predicted vs measured comparison."
+ },
+ {
+  "query_id": "q_0042",
+  "doc_id": "chk_3f69bf6b3a14097bc389e768",
+  "kind": "read_based_spotcheck_correction",
+  "rule": "题目有 2 项必需事实（一项来自磷酸法论文、一项来自 DES 论文）。已回读该题全部三级块：内容均为 ChCl/GA DES 体系，只支撑第 2 项，必需事实原文命中 1/2。三级要求单独覆盖全部必需事实，只能判 2",
+  "before": 3,
+  "after": 2,
+  "before_reason": "Directly states the ChCl/GA DES/MIBK sugar study requires no additional catalyst, answering the catalyst-strategy comparison."
+ },
+ {
+  "query_id": "q_0042",
+  "doc_id": "chk_4d23c61724b8781b5c07f8ed",
+  "kind": "read_based_spotcheck_correction",
+  "rule": "题目有 2 项必需事实（一项来自磷酸法论文、一项来自 DES 论文）。已回读该题全部三级块：内容均为 ChCl/GA DES 体系，只支撑第 2 项，必需事实原文命中 1/2。三级要求单独覆盖全部必需事实，只能判 2",
+  "before": 3,
+  "after": 2,
+  "before_reason": "Directly reports the aqueous ChCl/GA DES/MIBK sugar system without additional catalyst, supporting f2."
+ },
+ {
+  "query_id": "q_0042",
+  "doc_id": "chk_4f1003898eb083ea75f9672f",
+  "kind": "read_based_spotcheck_correction",
+  "rule": "题目有 2 项必需事实（一项来自磷酸法论文、一项来自 DES 论文）。已回读该题全部三级块：内容均为 ChCl/GA DES 体系，只支撑第 2 项，必需事实原文命中 1/2。三级要求单独覆盖全部必需事实，只能判 2",
+  "before": 3,
+  "after": 2,
+  "before_reason": "Confirms the ChCl/GA/H2O DES/MIBK sugar study operates without an additional catalyst, supporting f2."
+ },
+ {
+  "query_id": "q_0042",
+  "doc_id": "chk_8781e312c8a17f3f184b7414",
+  "kind": "read_based_spotcheck_correction",
+  "rule": "题目有 2 项必需事实（一项来自磷酸法论文、一项来自 DES 论文）。已回读该题全部三级块：内容均为 ChCl/GA DES 体系，只支撑第 2 项，必需事实原文命中 1/2。三级要求单独覆盖全部必需事实，只能判 2",
+  "before": 3,
+  "after": 2,
+  "before_reason": "States the ChCl/GA DES/MIBK study requires no additional catalyst, supporting f2."
+ },
+ {
+  "query_id": "q_0042",
+  "doc_id": "chk_9f994e2e49ec3c47a5ae2cda",
+  "kind": "read_based_spotcheck_correction",
+  "rule": "题目有 2 项必需事实（一项来自磷酸法论文、一项来自 DES 论文）。已回读该题全部三级块：内容均为 ChCl/GA DES 体系，只支撑第 2 项，必需事实原文命中 1/2。三级要求单独覆盖全部必需事实，只能判 2",
+  "before": 3,
+  "after": 2,
+  "before_reason": "Explains DES acts as both solvent and catalyst, supporting no additional catalyst needed."
+ }
+]

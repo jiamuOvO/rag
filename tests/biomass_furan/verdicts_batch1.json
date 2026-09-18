@@ -1,0 +1,92 @@
+[
+ {
+  "n": 16, "query_id": "q_0005", "doc_id": "chk_cac3807d9a18c151af2918db",
+  "old_grade": 2, "final_grade": 2, "changed": false,
+  "fact_checks": [{"fact": 1, "verdict": "部分支持"}],
+  "actual_evidence": "Table 1. Effect of different dosage of SnCl4 and MgCl2 on the dehydration of xylose into furfural. Entry SnCl4 (mol%) MgCl2 (mol%) Furfural Yield (%) 1 10 0 71.1 2 8 2 69.8 3 8 0 62.0 4 5 5 68.8 5 5 0 52.4 6 0 10 4.5 Reaction conditions: 200 mg xylose, 1000 mg of EMIMBr; 130 ◦C; 1 h.",
+  "explanation": "该块给出与题目同一变量（SnCl4 用量）的实测收率表：5 mol% 52.4%、8 mol% 62.0%、10 mol% 71.1%，即必需事实中『用量增加—收率上升』这一半的定量依据直接落在块内；但块内没有『同时促进副反应』的机理句。块内唯一的副反应表述（massive brown residues in EMIMBF4）针对的是溶剂 EMIMBF4，不是锡盐用量。缺机理项 → 不能判 3，仅部分覆盖 → 维持 2。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 17, "query_id": "q_0006", "doc_id": "chk_eb28ef77eb4b424fe27b2883",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "不支持"}],
+  "actual_evidence": "Figure 9. Time profile for the conversion of xylan to furfural in the EMIMBr/SnCl4 system. Reaction conditions: xylan 200 mg (1.5 mmol, based on monosaccharide units); 1000 mg of EMIMBr; molar ratio of SnCl4:monosaccharide = 1: 10; 130 ◦C; 1 h. ｜ when 50 μL 0.1mol/L HCl was added to the EMIMBr/SnCl4 system the furfural yield (54.6%) was almost equal to the furfural yield (54.5%) where 50 μL pure water was used",
+  "explanation": "通读全块：只有 Figure 9 的图注（木聚糖时间曲线）与 Figure 10 图注、以及加盐酸助催化剂的讨论（54.6% vs 54.5%）。必需事实的 50.1%（1 h）与 33.0%（4 h）两个数值在块内完全不出现，时间-收率趋势本身也未以文字给出。图注虽指向该趋势的数据来源，但不构成对必需事实的直接支持。块与题目同论文、同体系（EMIMBr/SnCl4）、同原料（xylan），只是条件（含水量、是否加酸）不同 → 归 L1a『同体系不同条件』= 1。旧判 2 过高，且旧理由自称 L1b（1 级类目）与所标 2 级自相矛盾。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 18, "query_id": "q_0007", "doc_id": "chk_5539978d73851dcba7b48239",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "不支持"}],
+  "actual_evidence": "a Response Surface Method (RSM) was applied to optimize the parameters time (t, min), temperature (T, ◦C) and LiBr concentration (LiBr, wt.%). Concurrently, 23 (3 factors and 2 levels) factorial planning was carried out [35]",
+  "explanation": "该块只交代了优化方法：用 RSM 优化 time / temperature / LiBr wt.% 三个参数，并描述了统计口径（95% 置信、t 检验、Statistica）。157.3 ◦C、1.74 min、8.19 wt.% 三个最优值均未出现。属同论文的方法与数据口径段 → L1b = 1。旧判 2 过高，旧理由自称 L1b 且明说『未给出优化值』，与 2 级矛盾。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 19, "query_id": "q_0007", "doc_id": "chk_566e4ba7fd2e114be1aef258",
+  "old_grade": 1, "final_grade": 1, "changed": false,
+  "fact_checks": [{"fact": 1, "verdict": "不支持"}],
+  "actual_evidence": "The reactions were carried out at 130 or 150 ◦C, and after the established reaction time (2.5 min) the samples were left to cool down... The xylan/DES weight ratio was fixed at 0.05 in accordance with previous optimization [31] ｜ A RSM was applied to simultaneously analyze various factors (temperature, time and LiBr wt.%)",
+  "explanation": "该块为同一论文的实验方法（微波反应器、130/150 ◦C、2.5 min、xylan/DES=0.05）与 RSM 优化流程说明，不含最优值 157.3 ℃/1.74 min/8.19 wt.% → L1b『同论文的方法或数据来源』= 1。与既有受保护修正（before 2 → after 1）一致，维持 1，不回滚。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 20, "query_id": "q_0013", "doc_id": "chk_8c43d6189bfd58b10083cf8d",
+  "old_grade": 2, "final_grade": 3, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "支持"}],
+  "actual_evidence": "Lignocelluloses are composed of cellulose (40–50%), hemicelluloses (25–35%) and lignin (15–20%) in an intricate structure where the components are rigidly associated through non-covalent bonds and covalent crosslinkages",
+  "explanation": "必答的是『三种主要聚合物组分』= 纤维素/半纤维素/木质素。该块逐字给出 cellulose、hemicelluloses、lignin 三项（并附 40–50%/25–35%/15–20% 组成占比），单独覆盖全部必需事实；且块来源 paper_2467240e9bec8a52db54345d 正是题目点名的 2018 综述本身，满足硬性来源限定。旧判 2 为漏判（旧理由自称 L1b，等级与理由同样矛盾）→ 升为 3。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 31, "query_id": "q_0044", "doc_id": "chk_b57774d3d4688682f7455127",
+  "old_grade": 2, "final_grade": 2, "changed": false,
+  "fact_checks": [{"fact": 1, "verdict": "部分支持"}, {"fact": 2, "verdict": "支持"}],
+  "actual_evidence": "Recycling tests were performed using the ChCl/GA/H2O (1:3:10) DES, sugar mix as starting material, 160°C as reaction temperature, and 10 min as reaction time. ｜ in preliminary experiments, no glucose was left after a reaction of 10 mins at 160°C",
+  "explanation": "必需事实 2（糖混合物 160 ℃、10 min）在块内直接给出；必需事实 1 只覆盖『ChCl/GA 含水 DES』一半，块内全文未出现『不外加催化剂』的表述。两项必需事实未同时覆盖 → 不能判 3；已覆盖糖混合物条件与 DES 组成一半 → 2，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 32, "query_id": "q_0045", "doc_id": "chk_a6c8ba74e59565fc9abca5bd",
+  "old_grade": 2, "final_grade": 2, "changed": false,
+  "fact_checks": [{"fact": 1, "verdict": "部分支持"}],
+  "actual_evidence": "In catalyst-free conditions (without added acid), integration of biomass pretreatment with fast pyrolysis by hot water extraction (HWE)... ｜ high-temperature water has the potential to substitute solid and liquid acids as a catalyst since it efficiently promotes the transfer of furfural initially formed in the water phase into the organic phase. In this study, ethyl butyrate with its excellent distribution coefficient permitted to furnish furfural in 75% yield at 200◦C for 3 h",
+  "explanation": "该块来自题目点名的 2018 hemicellulose-to-furfural 综述（Frontiers in Chemistry, Delbecq et al.）。块内确实给出『无外加酸/无催化剂条件下热水（高温水）转化 D-木糖并同时向有机相萃取糠醛』这一半（乙酸乙酯萃取，200 ℃/3 h、75%），但全文不含 sc-CO2（超临界 CO2）萃取这一关键限定。部分覆盖 → 2，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 33, "query_id": "q_0004", "doc_id": "chk_cac3807d9a18c151af2918db",
+  "old_grade": 3, "final_grade": 2, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "部分支持"}],
+  "actual_evidence": "Entry SnCl4 (mol%) MgCl2 (mol%) Furfural Yield (%) 1 10 0 71.1 ... 3 8 0 62.0 ... 5 5 0 52.4 Reaction conditions: 200 mg xylose, 1000 mg of EMIMBr; 130 ◦C; 1 h.",
+  "explanation": "必需事实含两段：『52.4% → 71.1%』与『继续增加用量反而下降』。块内 Table 1 只支持前一段（5 mol% 52.4%、10 mol% 71.1%）；表内 5→8→10 mol% 是单调上升（52.4→62.0→71.1），没有任何超过 10 mol% 的数据，也没有文字说明继续增加会下降——该下降句位于本块之外的正文。缺一项 → 最高 2。旧判 3 依据的『lower yields at 8 mol%』本身不成立（62.0% 高于 5 mol% 的 52.4%）。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 34, "query_id": "q_0007", "doc_id": "chk_4f86dedd60c3fd056c61dc03",
+  "old_grade": 3, "final_grade": 2, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "部分支持"}],
+  "actual_evidence": "results exceed even the performance of the DES in conjunction with GVL (75.0%) [31], while also having a faster reaction kinetic (1.74 vs. 2.5 min). ｜ The recovery of furfural was achieved through the direct distillation of this compound from the reaction media by reduced-pressure distillation in the following conditions: 50 °C and 6 mbar. With this strategy, 85.9% of furfural can be recovered",
+  "explanation": "必需事实是三个最优值（157.3 ℃、1.74 min、8.19 wt.%）。块内只出现 1.74 min（作为反应动力学对比），157.3 ℃ 与 8.19 wt.% 均未出现；后半段讲的是糠醛减压蒸馏回收（50 ℃/6 mbar、85.9%），与最优化条件无关。三项只覆盖一项 → 2。旧判 3 过高。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ },
+ {
+  "n": 35, "query_id": "q_0010", "doc_id": "chk_27e71a7f418b0bd0a2dfe071",
+  "old_grade": 3, "final_grade": 3, "changed": false,
+  "fact_checks": [{"fact": 1, "verdict": "支持"}],
+  "actual_evidence": "These furanic compounds are obtained using a biphasic system composed of the saccharide acidic solution and a nonmiscible organic solvent, in which the CMF and furfural were continuously extracted, limiting the contact time of these furanics with the strong acid present in the aqueous phase. By doing so, the separation of furanics in the organic solvent from the acid becomes a simple phase separation.",
+  "explanation": "必需事实『用不混溶有机溶剂原位萃取 CMF』被逐字覆盖（biphasic system + nonmiscible organic solvent + CMF continuously extracted），并交代了分离即为简单相分离、有机溶剂可蒸发回用。块来源 paper_d1a4e8bfc7c58b30dda482f2 即题目点名的 2023 CMF 论文，满足硬性来源限定 → 3，维持原判。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+ }
+]

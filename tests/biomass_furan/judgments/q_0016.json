@@ -1,0 +1,922 @@
+{
+ "query_id": "q_0016",
+ "judgments": [
+  {
+   "doc_id": "chk_02eab104b5a450716ef95106",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质绿色氧化预处理综述，不同工艺路线，与本题所问 Eucalyptus grandis 研究的 Pd/C 木质素解聚步骤无关。"
+  },
+  {
+   "doc_id": "chk_06c98d82705285fd7f0a7b3e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质素在生物质转化中作用及预处理策略的综述，不同工艺路线，与本题特定研究的 Pd/C 第一步无关。"
+  },
+  {
+   "doc_id": "chk_076b9346fadb8e7dee5524c6",
+   "relevance": 2,
+   "evidence_quotes": [
+    "lignin component (ca. 269 mg) in biomass matrix can be depolymerized into monomers (134 mg), dimers and oligomers through RCF process",
+    "leftover solid residue, contained cellulose (343 mg), hemicellulose (133 mg) and Pd/C catalyst",
+    "high monomers yield of 49.8 wt% close to the theoretical maximum was obtained during RCF process"
+   ],
+   "reason": "同篇论文质量平衡段，含 RCF 将木质素解聚为单体及 Pd/C 催化剂的直接证据，但需与他块组合才能完整回答（未单句点明 Pd/C 解聚木质素为单体）。"
+  },
+  {
+   "doc_id": "chk_0817e33e2bf2739b03aac2f4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质制备生物基化学品与聚合物的综述，属同一广泛领域但为不同研究，未涉及本题特定研究的 Pd/C 第一步事实。"
+  },
+  {
+   "doc_id": "chk_08a589c38c136ee25e85607e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质制备生物基化学品与聚合物的综述，属同一广泛领域但为不同研究，未涉及本题特定研究的 Pd/C 第一步事实。"
+  },
+  {
+   "doc_id": "chk_0ba8edcebae896a3df98e219",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于双相体系中戊糖脱水制糠醛的研究（引言段），产物为糠醛（不同化学品），并非本题的木质素→酚类单体。"
+  },
+  {
+   "doc_id": "chk_0f4f91682f41c6bccd619843",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于磷酸可回收分级分离木质纤维素生产糠醛的研究（引言段），采用磷酸催化路线（不同催化剂体系/工艺），与本题 Pd/C RCF 第一步不符。"
+  },
+  {
+   "query_id": "q_0016",
+   "doc_id": "chk_0fdd02015b6eb7d21ac6f9fd",
+   "relevance": 2,
+   "reason": "Background on RCF producing phenolic monomers from lignin.",
+   "evidence_quotes": [
+    "During RCF, protolignin in lignocellulose matrix was firstly depolymerized into phenolic monomers through the cleavage of C–O bonds in β-O-4 linkages"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "8928d588200475851057ce82664b570c688e6badee4a7a60d876ab9817f2f568"
+  },
+  {
+   "doc_id": "chk_11224370538ee1f12e08c53d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于戊糖富集生物质制备呋喃基含氧燃料添加剂的研究，不同化学品/工艺，与本题 Pd/C 木质素解聚无关。"
+  },
+  {
+   "doc_id": "chk_117a50a8e8188b27891c9506",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质生产糠醛的综述，主题为糠醛（碳水化合物产物），并非本题所问 2020 年 Eucalyptus grandis 集成生物精炼研究中 Pd/C 还原催化分馏第一步将木质素解聚为酚类单体的研究。"
+  },
+  {
+   "doc_id": "chk_1a2f94b4b272068f5c009827",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于碱/碱土金属(AAEMs)对生物质热解催化作用的综述，主题为热解（不同工艺路线），并非本题所指 Pd/C 催化木质素解聚研究。"
+  },
+  {
+   "doc_id": "chk_1a6f0d4d8d28ae3c145feaa9",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于戊糖富集生物质制备呋喃基含氧燃料添加剂的综述/结论段，不同化学品/工艺，与本题 Pd/C 木质素解聚无关。"
+  },
+  {
+   "doc_id": "chk_1ac4e0f95717f6390272b17e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于戊糖富集生物质制备呋喃基含氧燃料添加剂的研究，不同化学品/工艺，与本题 Pd/C 木质素解聚无关。"
+  },
+  {
+   "doc_id": "chk_1befc2738fbde698fbab5fc9",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于呋喃单体（FDCA 等）用于生物基聚合物的综述，不同化学品/应用，与本题木质素→酚类单体无关。"
+  },
+  {
+   "doc_id": "chk_1ce9a8a9b79ea2c82fa122a0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质素在生物质转化中作用及预处理策略的综述，不同工艺路线，与本题特定研究的 Pd/C 第一步无关。"
+  },
+  {
+   "doc_id": "chk_1ef9824da5f3c6ef0a7dfa60",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质生产糠醛的综述，主题为糠醛（碳水化合物产物），并非本题所问 Pd/C 还原催化分馏将木质素解聚为酚类单体的研究。"
+  },
+  {
+   "doc_id": "chk_21fb3d14e5c5195c881bfd3a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质制备生物基化学品与聚合物的综述，属同一广泛领域但为不同研究，未涉及本题特定研究的 Pd/C 第一步事实。"
+  },
+  {
+   "doc_id": "chk_22cef3588c17f56929a0fb5c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素转化为乙酰丙酸的研究，产物为乙酰丙酸（不同化学品），与本题木质素→酚类单体无关。"
+  },
+  {
+   "doc_id": "chk_29eb4c69a92d6647d05d57f8",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质素在生物质转化中作用及预处理策略的综述，不同工艺路线，与本题特定研究的 Pd/C 第一步无关。"
+  },
+  {
+   "doc_id": "chk_2eff81619efeb43adb3e2249",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质绿色氧化预处理综述，不同工艺路线，与本题所问 Eucalyptus grandis 研究的 Pd/C 木质素解聚步骤无关。"
+  },
+  {
+   "doc_id": "chk_2f496621a230273d77c042c5",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于非食用木质生物质转化为有机液体的研究（UCSB 工艺），不同催化体系/路线，并非本题 Pd/C RCF 研究。"
+  },
+  {
+   "doc_id": "chk_3182461b711d1f373bf36ac4",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇论文背景段，讨论木质纤维素生物精炼与木质素解聚为单体的普遍困难，未说明本研究使用 Pd/C，属背景内容。"
+  },
+  {
+   "doc_id": "chk_32ab3faa22677eb97419791b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于磷酸可回收分级分离木质纤维素生产糠醛的研究（引言/作者信息段），采用磷酸催化路线（不同催化剂体系/工艺），与本题 Pd/C RCF 第一步不符。"
+  },
+  {
+   "query_id": "q_0016",
+   "doc_id": "chk_33bf357cd18670d0d2ca2b34",
+   "relevance": 2,
+   "reason": "Directly states Pd/C catalyzes lignin depolymerization to phenolic monomers.",
+   "evidence_quotes": [
+    "A proposed pathway to the major products included the cleavage of C–O bonds in β-O-4 linkages leading to monolignols and subsequent reduction of C=C bonds, and both steps would be catalyzed by Pd/C."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "8928d588200475851057ce82664b570c688e6badee4a7a60d876ab9817f2f568"
+  },
+  {
+   "doc_id": "chk_3502598feddaf54c42179cfb",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于磷酸可回收分级分离木质纤维素生产糠醛的研究（实验段），采用磷酸催化路线（不同催化剂体系/工艺），与本题 Pd/C RCF 第一步不符。"
+  },
+  {
+   "doc_id": "chk_36168cf9a6852f62222d69a1",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于半纤维素水解制糠醛的综述，产物为糠醛（不同化学品），并非本题所问研究。"
+  },
+  {
+   "doc_id": "chk_396fbbf891060bcb9b5939fc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于半纤维素水解制糠醛的综述，产物为糠醛（不同化学品），并非本题所问研究。"
+  },
+  {
+   "doc_id": "chk_3c2f5c5161bde7c99c3d9006",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于非食用木质生物质转化为有机液体的研究（UCSB 工艺），不同催化体系/路线，并非本题 Pd/C RCF 研究。"
+  },
+  {
+   "doc_id": "chk_3d2a5f23a3c910b8212f3b85",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质绿色氧化预处理综述，不同工艺路线，与本题所问 Eucalyptus grandis 研究的 Pd/C 木质素解聚步骤无关。"
+  },
+  {
+   "doc_id": "chk_3e028900b59f4839685a65fe",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于呋喃单体（FDCA 等）用于生物基聚合物的综述，不同化学品/应用，与本题木质素→酚类单体无关。"
+  },
+  {
+   "doc_id": "chk_3ff92f5a9b7bbf4399689abb",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于呋喃单体（FDCA 等）用于生物基聚合物的综述，不同化学品/应用，与本题木质素→酚类单体无关。"
+  },
+  {
+   "doc_id": "chk_41aa02b04ab533f1b725e88c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于碱/碱土金属(AAEMs)对生物质热解催化作用的综述，主题为热解（不同工艺路线），并非本题所指 Pd/C 催化木质素解聚研究。"
+  },
+  {
+   "doc_id": "chk_4209304486d853885d1cbd79",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质制备生物基化学品与聚合物的综述，属同一广泛领域但为不同研究，未涉及本题特定研究的 Pd/C 第一步事实。"
+  },
+  {
+   "doc_id": "chk_421d978d5796d9bc888368e4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于非食用木质生物质转化为有机液体的研究（UCSB 工艺），不同催化体系/路线，并非本题 Pd/C RCF 研究。"
+  },
+  {
+   "doc_id": "chk_47d5b83ad2464bab7ae73701",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质制备生物基化学品与聚合物的综述，属同一广泛领域但为不同研究，未涉及本题特定研究的 Pd/C 第一步事实。"
+  },
+  {
+   "doc_id": "chk_4e13a7facb50cccdec14573f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于呋喃单体（FDCA 等）用于生物基聚合物的综述，不同化学品/应用，与本题木质素→酚类单体无关。"
+  },
+  {
+   "doc_id": "chk_507c625ae3a8d4d7205a1294",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质生产糠醛的综述（参考文献段），主题为糠醛，并非本题所问 Pd/C 还原催化分馏将木质素解聚为酚类单体的研究。"
+  },
+  {
+   "doc_id": "chk_53d2efc45f5cc176a84a6db7",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质生产糠醛的综述（引言段），主题为糠醛，并非本题所问 Pd/C 还原催化分馏将木质素解聚为酚类单体的研究。"
+  },
+  {
+   "doc_id": "chk_554d514cf75bce6647efcd57",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质生产糠醛的综述，主题为糠醛（碳水化合物产物），并非本题所问 Pd/C 还原催化分馏将木质素解聚为酚类单体的研究。"
+  },
+  {
+   "doc_id": "chk_574d288a57f3af631f39a603",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于生物质重要性、化学、分类与转化的综述，宏观主题不同，未涉及本题特定研究的 Pd/C 第一步事实。"
+  },
+  {
+   "doc_id": "chk_577217bcf4baf53b3901984f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于金/银催化剂将 HMF 选择性氧化为 FDCA 的研究，不同催化剂/化学品（HMF 氧化），与本题 Pd/C 木质素解聚无关。"
+  },
+  {
+   "doc_id": "chk_5bdc404aaf3aa2d43a2e88b3",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质绿色氧化预处理综述，不同工艺路线，与本题所问 Eucalyptus grandis 研究的 Pd/C 木质素解聚步骤无关。"
+  },
+  {
+   "doc_id": "chk_5c2c23f51048b41b861de97f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于戊糖富集生物质制备呋喃基含氧燃料添加剂的研究，不同化学品/工艺，与本题 Pd/C 木质素解聚无关。"
+  },
+  {
+   "doc_id": "chk_5e8157415986fe3d679bcb05",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇论文的参考文献列表，不提供本题所问的研究事实，属相邻内容。"
+  },
+  {
+   "doc_id": "chk_5fb58e2fd255287410064a91",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质制备生物基化学品与聚合物的综述，属同一广泛领域但为不同研究，未涉及本题特定研究的 Pd/C 第一步事实。"
+  },
+  {
+   "doc_id": "chk_60ce6f5ce7e7317f6454195e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于非食用木质生物质转化为有机液体的研究（UCSB 工艺），不同催化体系/路线，并非本题 Pd/C RCF 研究。"
+  },
+  {
+   "doc_id": "chk_60f1bca3fd3dea720c4cb95b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于微波辅助木糖脱水制糠醛的响应面优化研究，产物为糠醛（不同化学品/工艺），与本题木质素→酚类单体无关。"
+  },
+  {
+   "doc_id": "chk_61fec0ffa9e553e9cc7bc451",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于磷酸可回收分级分离木质纤维素生产糠醛的研究，采用磷酸催化路线（不同催化剂体系/工艺），与本题 Pd/C RCF 第一步不符。"
+  },
+  {
+   "doc_id": "chk_626aa762d449a6ec73b6becf",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质绿色氧化预处理综述，不同工艺路线，与本题所问 Eucalyptus grandis 研究的 Pd/C 木质素解聚步骤无关。"
+  },
+  {
+   "doc_id": "chk_63ed4f5cf0a3f86e588ca348",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于半纤维素水解制糠醛的综述，产物为糠醛（不同化学品），并非本题所问研究。"
+  },
+  {
+   "doc_id": "chk_650e0c7b090b1c542b89df4a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质制备生物基化学品与聚合物的综述，属同一广泛领域但为不同研究，未涉及本题特定研究的 Pd/C 第一步事实。"
+  },
+  {
+   "doc_id": "chk_66a6546be5c3b453a89369bc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于真实生物质制备 5-羟甲基糠醛(HMF)的研究，产物为 HMF（不同化学品），与本题木质素→酚类单体不符。"
+  },
+  {
+   "doc_id": "chk_66b17f72483933a2e17fcf0c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于戊糖富集生物质制备呋喃基含氧燃料添加剂的研究，不同化学品/工艺，与本题 Pd/C 木质素解聚无关。"
+  },
+  {
+   "doc_id": "chk_6b28f72f3a8139c6c69b1298",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质制备生物基化学品与聚合物的综述，属同一广泛领域但为不同研究，未涉及本题特定研究的 Pd/C 第一步事实。"
+  },
+  {
+   "doc_id": "chk_6e982e5b109501392da3ec18",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质绿色氧化预处理综述，不同工艺路线，与本题所问 Eucalyptus grandis 研究的 Pd/C 木质素解聚步骤无关。"
+  },
+  {
+   "doc_id": "chk_6f9e1ddf4e91431e9cfc6c46",
+   "relevance": 3,
+   "evidence_quotes": [
+    "Lignin was depolymerized into well-defined monomeric phenols in the first step using a Pd/C catalyst."
+   ],
+   "reason": "同篇论文(Chen et al. 2020)摘要，单块即明确给出答案：第一步用 Pd/C 催化剂将木质素解聚为明确的酚类单体。"
+  },
+  {
+   "doc_id": "chk_70789a3ab5ac34857bbee967",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质绿色氧化预处理综述，不同工艺路线，与本题所问 Eucalyptus grandis 研究的 Pd/C 木质素解聚步骤无关。"
+  },
+  {
+   "doc_id": "chk_74bddfd73f951e261bee4502",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质制备生物基化学品与聚合物的综述，属同一广泛领域但为不同研究，未涉及本题特定研究的 Pd/C 第一步事实。"
+  },
+  {
+   "doc_id": "chk_750ffc16645a7fd4e89ed566",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于呋喃单体（FDCA 等）用于生物基聚合物的综述，不同化学品/应用，与本题木质素→酚类单体无关。"
+  },
+  {
+   "doc_id": "chk_778068f42a04eb3dbb9c11a1",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质素在生物质转化中作用及预处理策略的综述，不同工艺路线，与本题特定研究的 Pd/C 第一步无关。"
+  },
+  {
+   "doc_id": "chk_77be0b16ac08b8fbd6826b20",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于双相体系中戊糖脱水制糠醛的研究，产物为糠醛（不同化学品），并非本题的木质素→酚类单体。"
+  },
+  {
+   "doc_id": "chk_77facfa72e40a0d2ff97fbfb",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质预处理综述，不同工艺路线，与本题所问特定研究的 Pd/C 第一步不符。"
+  },
+  {
+   "doc_id": "chk_79632c96f05e8dc2b5757744",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于戊糖富集生物质制备呋喃基含氧燃料添加剂的表格/数据段，不同化学品/工艺，与本题 Pd/C 木质素解聚无关。"
+  },
+  {
+   "doc_id": "chk_7aefa136404f2ef5f9a27881",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质绿色氧化预处理综述，不同工艺路线，与本题所问 Eucalyptus grandis 研究的 Pd/C 木质素解聚步骤无关。"
+  },
+  {
+   "doc_id": "chk_7c9ef250e5ed5cdee8273ad4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质制备生物基化学品与聚合物的综述，属同一广泛领域但为不同研究，未涉及本题特定研究的 Pd/C 第一步事实。"
+  },
+  {
+   "doc_id": "chk_7dd55ef0b7a12157d892a980",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于水热预处理结合酸水解联产糠醛与纤维素纳米晶的研究，不同工艺/产物，与本题不符。"
+  },
+  {
+   "doc_id": "chk_7f94c0223389f84105b2372e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于戊糖富集生物质制备呋喃基含氧燃料添加剂的表格段，不同化学品/工艺，与本题 Pd/C 木质素解聚无关。"
+  },
+  {
+   "doc_id": "chk_80cfb9a0ecf7628f4f48e9d3",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于从木质纤维素生产 5-氯甲基糠醛(CMF)的研究，产物为 CMF（不同化学品），与本题不符。"
+  },
+  {
+   "doc_id": "chk_8342126cb7cc5ce136a6c3d7",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于双相体系中戊糖脱水制糠醛的研究（催化剂稳定性段），产物为糠醛（不同化学品），并非本题的木质素→酚类单体。"
+  },
+  {
+   "doc_id": "chk_83754cc946a5d4f258b6d7c2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于非食用木质生物质转化为有机液体的研究（UCSB 工艺），不同催化体系/路线，并非本题 Pd/C RCF 研究。"
+  },
+  {
+   "doc_id": "chk_86b167183749d175d603d3aa",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于戊糖富集生物质制备呋喃基含氧燃料添加剂的参考文献段，不同化学品/工艺，与本题 Pd/C 木质素解聚无关。"
+  },
+  {
+   "doc_id": "chk_87845f6df2f3574c65fd06df",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于非食用木质生物质转化为有机液体的研究（UCSB 工艺），不同催化体系/路线，并非本题 Pd/C RCF 研究。"
+  },
+  {
+   "doc_id": "chk_8d84ef8e1e4c59f3a3a5b89d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质制备生物基化学品与聚合物的综述，属同一广泛领域但为不同研究，未涉及本题特定研究的 Pd/C 第一步事实。"
+  },
+  {
+   "doc_id": "chk_8df4ec2e5e536e334bed299c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质预处理综述（不同页），不同工艺路线，与本题所问 Pd/C 木质素解聚步骤无关。"
+  },
+  {
+   "doc_id": "chk_907d45632bfbfb6f8b638d36",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质绿色氧化预处理综述（引言段），不同工艺路线，与本题所问 Eucalyptus grandis 研究的 Pd/C 木质素解聚步骤无关。"
+  },
+  {
+   "doc_id": "chk_92741c293485307a5cde208c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于水合氢离子对 Pd 催化糠醛加氢影响的研究，产物为糠醛加氢（不同反应/化学品），虽含 Pd 催化剂但体系与本题木质素解聚完全不同。"
+  },
+  {
+   "doc_id": "chk_9361405943a06f0252f8f5f2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇论文的参考文献列表，不提供本题所问的研究事实，属相邻内容。"
+  },
+  {
+   "doc_id": "chk_93dc18b77ddf1ebab93dc5bf",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于呋喃单体（FDCA 等）用于生物基聚合物的综述，不同化学品/应用，与本题木质素→酚类单体无关。"
+  },
+  {
+   "doc_id": "chk_93f10bfc34f6ac4ab1cd3db3",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于金/银催化剂将 HMF 选择性氧化为 FDCA 的研究，不同催化剂/化学品（HMF 氧化），与本题 Pd/C 木质素解聚无关。"
+  },
+  {
+   "doc_id": "chk_94832d68d7c46da9eecf63e3",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于 Pd-PdO/ZnSO4 催化 C6 糖与木质纤维素闪速热解制糠醛的研究，不同催化体系(Pd-PdO/ZnSO4)与工艺路线（热解），与本题 Pd/C 还原催化分馏完全不同。"
+  },
+  {
+   "doc_id": "chk_9572ddcf26ca5754abbda184",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于戊糖富集生物质制备呋喃基含氧燃料添加剂的研究，不同化学品/工艺，与本题 Pd/C 木质素解聚无关。"
+  },
+  {
+   "doc_id": "chk_99f2f51b83157f55adf7c532",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质生产糠醛的综述，主题为糠醛（碳水化合物产物），并非本题所问 Pd/C 还原催化分馏将木质素解聚为酚类单体的研究。"
+  },
+  {
+   "doc_id": "chk_9a727e2aeeb678129f39e293",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于磷酸可回收分级分离木质纤维素生产糠醛的研究（引言段），采用磷酸催化路线（不同催化剂体系/工艺），与本题 Pd/C RCF 第一步不符。"
+  },
+  {
+   "query_id": "q_0016",
+   "doc_id": "chk_9b27a5144a763ff68f58aa16",
+   "relevance": 3,
+   "reason": "Scheme shows Pd/C used in RCF step yielding phenolic monomers.",
+   "evidence_quotes": [
+    "Pd/C\nMeOH, H2\ndimers, oligomers\nEucalyptus sawdust"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "36659920f598b63b0a6f86696714923f3b7ed789dd9c684417fbb62cf0f4c781",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 3,
+    "changed": false,
+    "explanation": "必需事实两项齐备：催化剂 Pd/C（含 91% 回收、循环复用）与产物类别 phenolic monomers（35.1 wt%、4-propanol guaiacol/syringol）。块来源即题目点名的 2020 Eucalyptus grandis 集成生物炼制论文 → 3，维持原判。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "doc_id": "chk_9bf9debfe7908c672c9e3f77",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素转化为乙酰丙酸的研究，产物为乙酰丙酸（不同化学品），与本题木质素→酚类单体无关。"
+  },
+  {
+   "doc_id": "chk_9f84c2a7278fad95b3f39af6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质绿色氧化预处理综述，不同工艺路线，与本题所问 Eucalyptus grandis 研究的 Pd/C 木质素解聚步骤无关。"
+  },
+  {
+   "doc_id": "chk_9f994e2e49ec3c47a5ae2cda",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于低共熔溶剂/MIBK 体系从糖混合物制备糠醛与 HMF 的研究，不同化学品/工艺，与本题不符。"
+  },
+  {
+   "doc_id": "chk_a0cbe0a8edf31d676f96ed7c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于戊糖富集生物质制备呋喃基含氧燃料添加剂的研究（摘要段），不同化学品/工艺，与本题 Pd/C 木质素解聚无关。"
+  },
+  {
+   "doc_id": "chk_a454d43b6abf7762c671efed",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质制备生物基化学品与聚合物的综述，属同一广泛领域但为不同研究，未涉及本题 2020 Eucalyptus grandis 研究中 Pd/C 第一步将木质素解聚为酚类单体的具体事实。"
+  },
+  {
+   "doc_id": "chk_a4fc3597af7482872c9c65c9",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于非食用木质生物质转化为有机液体的研究（UCSB 工艺，Cu-Mg-Al 等催化剂），不同催化体系/路线，并非本题研究。"
+  },
+  {
+   "doc_id": "chk_a637e64ac81d818c4a022292",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于戊糖富集生物质制备呋喃基含氧燃料添加剂的研究，不同化学品/工艺，与本题 Pd/C 木质素解聚无关。"
+  },
+  {
+   "doc_id": "chk_a6c8ba74e59565fc9abca5bd",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于半纤维素水解制糠醛的综述，产物为糠醛（不同化学品），并非本题所问研究。"
+  },
+  {
+   "doc_id": "chk_a8f12f47c1cb8f01cfd8dcb0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质绿色氧化预处理综述，不同工艺路线，与本题所问 Eucalyptus grandis 研究的 Pd/C 木质素解聚步骤无关。"
+  },
+  {
+   "doc_id": "chk_aab52ea69a4faea507a0a623",
+   "relevance": 2,
+   "evidence_quotes": [
+    "In a typical reaction, extracted Eucalyptus sawdust (1.0 g), Pd/C (100 mg, 10 wt%) and methanol (40 mL) were charged into the reactor",
+    "high monomers yield of 49.8 wt% close to the theoretical maximum was obtained during RCF process"
+   ],
+   "reason": "同篇论文材料方法与结果段，给出 RCF 使用 Pd/C(100 mg, 10 wt%)及单体收率 49.8 wt% 的直接证据，但“Pd/C 解聚木质素为单体”的因果陈述分散，需组合。"
+  },
+  {
+   "doc_id": "chk_ab3b26ab3f38c418ab74a0c8",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质制备生物基化学品与聚合物的综述，属同一广泛领域但为不同研究，未涉及本题特定研究的 Pd/C 第一步事实。"
+  },
+  {
+   "query_id": "q_0016",
+   "doc_id": "chk_ad5180b277f6e342545badc6",
+   "relevance": 3,
+   "reason": "Table 1 conditions confirm Pd/C catalyst for RCF of Eucalyptus.",
+   "evidence_quotes": [
+    "Reaction conditions: Eucalyptus (1.0 g), 10 wt% Pd/C catalyst (100 mg), MeOH (40 mL), H2 (30 atm), 4 h"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "36659920f598b63b0a6f86696714923f3b7ed789dd9c684417fbb62cf0f4c781",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 3,
+    "changed": false,
+    "explanation": "块内 Table 1 表头与条件行同时给出『10 wt% Pd/C catalyst』与『Phenolic monomers yield』，两项必需事实齐备且属同一 RCF（第一段木质素处理）步骤 → 3，维持原判。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "doc_id": "chk_ae642afeb7f1ca37f2d979f5",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于戊糖富集生物质制备呋喃基含氧燃料添加剂的研究，不同化学品/工艺，与本题 Pd/C 木质素解聚无关。"
+  },
+  {
+   "doc_id": "chk_b43dc72c23d3158ce4b74837",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于戊糖富集生物质制备呋喃基含氧燃料添加剂的研究，不同化学品/工艺，与本题 Pd/C 木质素解聚无关。"
+  },
+  {
+   "doc_id": "chk_b4a63245687199605240fc88",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇论文结论段，提到两步法(RCF+FeCl3)但未给出第一步所用 Pd/C 催化剂及木质素→酚类单体的具体事实，属相邻内容。"
+  },
+  {
+   "doc_id": "chk_b67c34297d27843315a94a21",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质绿色氧化预处理综述（参考文献列表段），不同工艺路线，与本题所问 Pd/C 木质素解聚步骤无关。"
+  },
+  {
+   "doc_id": "chk_bab5ac264d51f1601543992f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质绿色氧化预处理综述，不同工艺路线，与本题所问 Eucalyptus grandis 研究的 Pd/C 木质素解聚步骤无关。"
+  },
+  {
+   "doc_id": "chk_bb314185594eca777b1ff6c4",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇论文的参考文献列表，不提供本题所问的研究事实，属相邻内容。"
+  },
+  {
+   "doc_id": "chk_c468bbe4570e26d840ff8447",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于半纤维素水解制糠醛的综述，产物为糠醛（不同化学品），并非本题所问研究。"
+  },
+  {
+   "doc_id": "chk_c7b7d600a23b05f53dd5778f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于从木质纤维素生产 5-氯甲基糠醛(CMF)的研究，产物为 CMF（不同化学品），与本题不符。"
+  },
+  {
+   "doc_id": "chk_c90f3629e80547c70ed57947",
+   "relevance": 3,
+   "evidence_quotes": [
+    "both steps would be catalyzed by Pd/C. The RCF reaction at 200 °C for 8 h and 250 °C for 2 h with Pd/C catalyst was also performed (Additional file 1: Table S3, entries 5–6), which afforded phenolic monomer yields in 36.6 and 30.9 wt%, respectively."
+   ],
+   "reason": "同篇论文结果段，单块即明确给出：Pd/C 催化 β-O-4 断裂与还原步骤，RCF 以 Pd/C 进行并得到酚类单体收率。",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 3,
+    "changed": false,
+    "explanation": "块内直接写明 Pd/C 催化木质素解聚为酚类单体（monomeric phenols derived from depolymerization of lignin + both steps catalyzed by Pd/C），两项齐备 → 3，维持原判。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0016",
+   "doc_id": "chk_cc6f834d38212f53e2cabe1a",
+   "relevance": 2,
+   "reason": "Confirms monomeric phenol products from lignin depolymerization.",
+   "evidence_quotes": [
+    "The soluble fraction contained monomeric, dimeric and oligomeric phenols derived from depolymerization of lignin"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "36659920f598b63b0a6f86696714923f3b7ed789dd9c684417fbb62cf0f4c781",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 2,
+    "changed": true,
+    "explanation": "逐字通读该块：只交代酚类单体（monomeric phenols、4-propanol guaiacol/syringol）一项，全块未出现 Pd/C 或任何催化剂名称（旧理由自称『Confirms monomeric phenol products』，本身也只覆盖一项）。两项必需事实缺一 → 最高 2。旧判 3 过高。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "doc_id": "chk_ce7e04d40696f392c74a1e50",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于金/银催化剂将 HMF 选择性氧化为 FDCA 的研究，不同催化剂/化学品（HMF 氧化），与本题 Pd/C 木质素解聚无关。"
+  },
+  {
+   "doc_id": "chk_d10851fbdfeb17dd8639fcec",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于磷酸可回收分级分离木质纤维素生产糠醛的研究（作者信息段），采用磷酸催化路线（不同催化剂体系/工艺），与本题 Pd/C RCF 第一步不符。"
+  },
+  {
+   "doc_id": "chk_d25c7a2d89dbdffb6920d6af",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于戊糖富集生物质制备呋喃基含氧燃料添加剂的表格段，不同化学品/工艺，与本题 Pd/C 木质素解聚无关。"
+  },
+  {
+   "doc_id": "chk_d5dbbf45399a4a363187077c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于碱/碱土金属(AAEMs)对生物质热解催化作用的综述，主题为热解（不同工艺路线），并非本题所指 Pd/C 催化木质素解聚研究。"
+  },
+  {
+   "doc_id": "chk_d6ae27c7c9243138cb2aa76f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于水热预处理结合酸水解联产糠醛与纤维素纳米晶的研究，不同工艺/产物，与本题不符。"
+  },
+  {
+   "doc_id": "chk_d99ec4ae21f437212eaa519a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于水热预处理结合酸水解联产糠醛与纤维素纳米晶的研究，不同工艺/产物，与本题不符。"
+  },
+  {
+   "doc_id": "chk_dc5f4904672cd31c71f7d7bb",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于非食用木质生物质转化为有机液体的研究（UCSB 工艺），不同催化体系/路线，并非本题 Pd/C RCF 研究。"
+  },
+  {
+   "doc_id": "chk_df14944def12b693d84c50e7",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质生产糠醛的综述，主题为糠醛（碳水化合物产物），并非本题所问 Pd/C 还原催化分馏将木质素解聚为酚类单体的研究。"
+  },
+  {
+   "query_id": "q_0016",
+   "doc_id": "chk_df3aec9b2824dc7e019e2465",
+   "relevance": 0,
+   "reason": "doc1: bibliography entries only; doc2: same paper, carbohydrate/FeCl3 topic, no Pd/C lignin step",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "4c92ab472cc2ecbaea545e0ca3bfd73065c1cf57f499a37a577df8c8cc5901c1"
+  },
+  {
+   "doc_id": "chk_e01045b3e11d46190f9dbdc8",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于碱/碱土金属(AAEMs)对生物质热解催化作用的综述，主题为热解（不同工艺路线），并非本题所指 Pd/C 催化木质素解聚研究。"
+  },
+  {
+   "doc_id": "chk_e49d2fbc252819a326e878a5",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于非食用木质生物质转化为有机液体的研究（UCSB 工艺），不同催化体系/路线，并非本题 Pd/C RCF 研究。"
+  },
+  {
+   "doc_id": "chk_e5a7ab6d07e6cfcbd2a7b4a2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质制备生物基化学品与聚合物的综述，属同一广泛领域但为不同研究，未涉及本题特定研究的 Pd/C 第一步事实。"
+  },
+  {
+   "doc_id": "chk_e66fcdf9c2d9995449ad2106",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质制备生物基化学品与聚合物的综述，属同一广泛领域但为不同研究，未涉及本题特定研究的 Pd/C 第一步事实。"
+  },
+  {
+   "query_id": "q_0016",
+   "doc_id": "chk_e820d94c959ca330c769c54c",
+   "relevance": 0,
+   "reason": "doc1: bibliography entries only; doc2: same paper, carbohydrate/FeCl3 topic, no Pd/C lignin step",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "4c92ab472cc2ecbaea545e0ca3bfd73065c1cf57f499a37a577df8c8cc5901c1"
+  },
+  {
+   "doc_id": "chk_e95d121787c246125bf73d93",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于水合氢离子对 Pd 催化糠醛加氢影响的研究，产物为糠醛加氢（不同反应/化学品），虽含 Pd 催化剂但体系与本题木质素解聚完全不同。"
+  },
+  {
+   "doc_id": "chk_ea12060a5eb8ed047561fe44",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质绿色氧化预处理综述，不同工艺路线，与本题所问 Eucalyptus grandis 研究的 Pd/C 木质素解聚步骤无关。"
+  },
+  {
+   "doc_id": "chk_ef6324b80d2e0939a7a33c23",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同篇论文背景段，泛述 RCF 以钯等金属催化将原木质素解聚为酚类单体，未明确本研究采用 Pd/C，属背景内容。"
+  },
+  {
+   "doc_id": "chk_f123eb972f2f7fe4c511ab8b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于戊糖富集生物质制备呋喃基含氧燃料添加剂的数据表段，不同化学品/工艺，与本题 Pd/C 木质素解聚无关。"
+  },
+  {
+   "doc_id": "chk_f1c954bd64127c098c71e3aa",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于微波辅助木糖脱水制糠醛的响应面优化研究，产物为糠醛（不同化学品/工艺），与本题木质素→酚类单体无关。"
+  },
+  {
+   "doc_id": "chk_f1ccac9556e6c68bb7e642c7",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于戊糖富集生物质制备呋喃基含氧燃料添加剂的研究，不同化学品/工艺，与本题 Pd/C 木质素解聚无关。"
+  },
+  {
+   "doc_id": "chk_f51e24d3d48999cd07432194",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于木质纤维素生物质生产糠醛的综述，主题为糠醛（碳水化合物产物），并非本题所问 Pd/C 还原催化分馏将木质素解聚为酚类单体的研究。"
+  },
+  {
+   "doc_id": "chk_f5a47fe4c061f55f1ed107aa",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于半纤维素水解制糠醛的综述，产物为糠醛（不同化学品），并非本题所问研究。"
+  },
+  {
+   "doc_id": "chk_f6c45647d4b187dfeef2282e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于半纤维素水解制糠醛的综述，产物为糠醛（不同化学品），并非本题所问研究。"
+  },
+  {
+   "doc_id": "chk_f71bc0485d909dd7c458b19a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于生物质电化学合成大宗化学品的研究，采用电合成工艺（不同路线），与本题 Pd/C 催化木质素解聚无关。"
+  },
+  {
+   "doc_id": "chk_f8137dde867bbb4e2394cafb",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于非食用木质生物质转化为有机液体的研究（UCSB 工艺），不同催化体系/路线，并非本题 Pd/C RCF 研究。"
+  },
+  {
+   "doc_id": "chk_faca47ca10d9976456a089a5",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：关于碱/碱土金属(AAEMs)对生物质热解催化作用的综述，主题为热解（不同工艺路线），并非本题所指 Pd/C 催化木质素解聚研究。"
+  },
+  {
+   "query_id": "q_0016",
+   "doc_id": "chk_fce8c696e1dde260b93bd71e",
+   "relevance": 2,
+   "reason": "States Pd/C catalyst and monomeric phenol products from lignin.",
+   "evidence_quotes": [
+    "we used Pd/C as a catalyst to treat Eucalyptus sawdust, thus resulting in 4-propanol guaiacol/syringol with high yield from depolymerization of lignin component"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "8928d588200475851057ce82664b570c688e6badee4a7a60d876ab9817f2f568"
+  }
+ ]
+}

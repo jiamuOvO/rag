@@ -1,0 +1,23 @@
+{
+ "query_id": "q_0031",
+ "judgments": [
+  {
+   "query_id": "q_0031",
+   "doc_id": "chk_7764b60e09f53eaa5aa68fc6",
+   "relevance": 3,
+   "reason": "Directly states lignin makes the structure resistant to solubilization, inhibiting cellulose and hemicellulose hydrolysis.",
+   "evidence_quotes": [
+    "The presence of lignin renders the bio-polymeric structure highly resistant to solubilization thereby inhibiting the hydrolysis of cellulose and hemicellulose"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "3569bc9ac9dfbd17a934cc14df3da3263b9e5e4b34ef3fe68db9a5726534e726"
+  }
+ ]
+}

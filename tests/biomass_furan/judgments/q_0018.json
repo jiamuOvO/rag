@@ -1,0 +1,253 @@
+{
+ "query_id": "q_0018",
+ "judgments": [
+  {
+   "query_id": "q_0018",
+   "doc_id": "chk_1bbe24a3c6e11da36ab1e7f8",
+   "relevance": 0,
+   "reason": "doc1: other paper's CELF pretreatment review; doc3: furfural production overview, no recycling cycles",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d017c07242ddaf7196fb53776010deaa49350257ecda16ab065ec1e6141ee498"
+  },
+  {
+   "query_id": "q_0018",
+   "doc_id": "chk_225788b644ea25f4b634ffb6",
+   "relevance": 0,
+   "reason": "doc0,1,2,3,4: same paper but no cycle-count data; only general recycling statements",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "8c2c80697ca3be08eeca86a2d518784e17548d40cdbdd180b31e68ae0bd49ea6"
+  },
+  {
+   "query_id": "q_0018",
+   "doc_id": "chk_3502598feddaf54c42179cfb",
+   "relevance": 3,
+   "reason": "Directly states four consecutive phosphoric-acid recovery cycles with constant fractionation efficiency.",
+   "evidence_quotes": [
+    "This procedure was repeated during four consecutive cycles to assess the resulting extractives and the overall performance. Remarkably, the efficiency of the fractionation (extracted lignin and residual pulp yields) is constant with each run"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "e2da8e6dcf7a8e1dd6a1f3d543867013b50275553e5406808d8df8faed815673",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 3,
+    "changed": false,
+    "explanation": "必需事实『四个连续循环』被逐字给出，并明确『效率保持稳定』（the efficiency of the fractionation is constant with each run），来源即指定论文 → 3，维持原判。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0018",
+   "doc_id": "chk_61fec0ffa9e553e9cc7bc451",
+   "relevance": 0,
+   "reason": "doc0,1,2,3,4: same paper but no cycle-count data; only general recycling statements",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "8c2c80697ca3be08eeca86a2d518784e17548d40cdbdd180b31e68ae0bd49ea6"
+  },
+  {
+   "query_id": "q_0018",
+   "doc_id": "chk_69cf17a7e04566cf89d39367",
+   "relevance": 3,
+   "reason": "Same paper's recycling experiment details confirming four cycles and constant efficiency.",
+   "evidence_quotes": [
+    "This procedure was repeated during four consecutive cycles to assess the resulting extractives and the overall performance. Remarkably, the efficiency of the fractionation (extracted lignin and residual pulp yields) is constant with each run"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d017c07242ddaf7196fb53776010deaa49350257ecda16ab065ec1e6141ee498",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 3,
+    "changed": false,
+    "explanation": "同一论文的重叠块，同样逐字给出 four consecutive cycles 与效率恒定 → 3，维持原判。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0018",
+   "doc_id": "chk_7af141132e8e0940b1a99d94",
+   "relevance": 0,
+   "reason": "doc0: bibliography entry on coal pyrolysis/gasification, unrelated to phosphoric-acid recovery cycles",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "37bb5d10cdd3c28a8b62aae86f6aca8cc45d585f22f117bea7659855bf6c0838"
+  },
+  {
+   "query_id": "q_0018",
+   "doc_id": "chk_7b9b97db2d63961889b30137",
+   "relevance": 1,
+   "reason": "L1b: same paper's analytics, but unrelated to recycling cycle count.",
+   "evidence_quotes": [
+    "To evaluate the effect of the conditions applied here, the ratio between H-, G-, and S-units and the amount of linkages between the units was determined for raw"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "e2da8e6dcf7a8e1dd6a1f3d543867013b50275553e5406808d8df8faed815673"
+  },
+  {
+   "query_id": "q_0018",
+   "doc_id": "chk_7e3320c3ad73bbf359dec07d",
+   "relevance": 3,
+   "reason": "Directly states four consecutive cycles with maintained efficiency.",
+   "evidence_quotes": [
+    "a downstream and recycling strategy enabled recovery of phosphoric acid without loss of process efficiency over four consecutive cycles"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d017c07242ddaf7196fb53776010deaa49350257ecda16ab065ec1e6141ee498"
+  },
+  {
+   "query_id": "q_0018",
+   "doc_id": "chk_979045fd6bdb126a66d66d75",
+   "relevance": 0,
+   "reason": "doc0,1,2,3,4: same paper but no cycle-count data; only general recycling statements",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "8c2c80697ca3be08eeca86a2d518784e17548d40cdbdd180b31e68ae0bd49ea6"
+  },
+  {
+   "query_id": "q_0018",
+   "doc_id": "chk_9a727e2aeeb678129f39e293",
+   "relevance": 0,
+   "reason": "doc0,1,2,3,4: same paper but no cycle-count data; only general recycling statements",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "8c2c80697ca3be08eeca86a2d518784e17548d40cdbdd180b31e68ae0bd49ea6"
+  },
+  {
+   "query_id": "q_0018",
+   "doc_id": "chk_b4a63245687199605240fc88",
+   "relevance": 0,
+   "reason": "doc0: different 2020 eucalyptus FeCl3 study; doc3: other paper's review of CELF/GVL pretreatments",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "e2da8e6dcf7a8e1dd6a1f3d543867013b50275553e5406808d8df8faed815673"
+  },
+  {
+   "query_id": "q_0018",
+   "doc_id": "chk_c85488d90bdf2185f1eaf61b",
+   "relevance": 1,
+   "reason": "L1b: same paper's method/analytics, no cycle count.",
+   "evidence_quotes": [
+    "Phosphoric acid distribution: In a single experiment, 200 μL phosphoric acid (85 wt%), 3.8 mL water, and 4 mL 2-MTHF were mixed, heated to 140°C, and stirred for 3 h."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d017c07242ddaf7196fb53776010deaa49350257ecda16ab065ec1e6141ee498"
+  },
+  {
+   "query_id": "q_0018",
+   "doc_id": "chk_cb43075f01d7e4c1caaaae28",
+   "relevance": 0,
+   "reason": "doc1: other paper's CELF pretreatment review; doc3: furfural production overview, no recycling cycles",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d017c07242ddaf7196fb53776010deaa49350257ecda16ab065ec1e6141ee498"
+  },
+  {
+   "query_id": "q_0018",
+   "doc_id": "chk_d669deac9629382e689cfc6a",
+   "relevance": 0,
+   "reason": "doc0,1,2,3,4: same paper but no cycle-count data; only general recycling statements",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "8c2c80697ca3be08eeca86a2d518784e17548d40cdbdd180b31e68ae0bd49ea6"
+  },
+  {
+   "query_id": "q_0018",
+   "doc_id": "chk_e0e18e291841d2484c5dfd78",
+   "relevance": 0,
+   "reason": "doc0: different 2020 eucalyptus FeCl3 study; doc3: other paper's review of CELF/GVL pretreatments",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "e2da8e6dcf7a8e1dd6a1f3d543867013b50275553e5406808d8df8faed815673"
+  },
+  {
+   "query_id": "q_0018",
+   "doc_id": "chk_e54aa9d5ccb265f1de0e57d7",
+   "relevance": 1,
+   "reason": "L1b: same paper's method/data basis, but no cycle count or recycling numbers.",
+   "evidence_quotes": [
+    "As depicted in Figure 4, the swelling step promotes the efficiency of the fractionation in multiple ways."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "e2da8e6dcf7a8e1dd6a1f3d543867013b50275553e5406808d8df8faed815673"
+  }
+ ]
+}

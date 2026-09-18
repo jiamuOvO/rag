@@ -1,0 +1,8 @@
+{
+ "backup": "judgments_backup_semantic_20260918T113453",
+ "applied": 5,
+ "pending": 80,
+ "rule": "ANNOTATION_INSTRUCTIONS 第八节：题目点名具体文献时，另一篇论文独立陈述相同事实只能判 1",
+ "qrels_rows": 2777,
+ "note": "这些配对被 merge_gapfill.py 视为已修正，后续重新合并不会覆盖。"
+}

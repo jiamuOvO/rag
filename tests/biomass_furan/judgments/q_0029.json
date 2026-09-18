@@ -1,0 +1,352 @@
+{
+ "query_id": "q_0029",
+ "judgments": [
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_1e3eaec5bd452ddb3b9a4006",
+   "relevance": 3,
+   "reason": "Same paper's birch sawdust section confirms 170°C/10 min optimum for sawdust.",
+   "evidence_quotes": [
+    "the highest furfural yield (37.5%) was obtained using similar temperature and water quantity at a shorter reaction time of 10 mins"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "dba2a903da8648bc33dda5fba38e7d05e95dd82ebdb6e3238e871b0f93bf6246"
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_305f10f1a75a63236a4c181e",
+   "relevance": 3,
+   "reason": "Directly states both optimal temperatures/times for sugar mixture and birch sawdust.",
+   "evidence_quotes": [
+    "The optimal reaction conditions were 160°C and 10 minutes for the sugar mixture and 170°C and 10 minutes for birch sawdust in a microwave reactor."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "dba2a903da8648bc33dda5fba38e7d05e95dd82ebdb6e3238e871b0f93bf6246"
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_3340aec4dcb7f4689e5882be",
+   "relevance": 0,
+   "reason": "doc0: same paper, fractionation/stability topic; doc1: same paper, water dosage effect; doc2: same paper, control experiments; doc3: different paper, ChCl/MA xylan system; doc4: different paper, ChCl/MA salt optimization",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "93957bf7e1143c075bdeef6e5dafbe79a71b3287cde5f0065cb850dc977c6d6b"
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_4d23c61724b8781b5c07f8ed",
+   "relevance": 1,
+   "reason": "L1b: same paper's method/data basis for temperature-time screening, no birch sawdust optimum.",
+   "evidence_quotes": [
+    "Reaction temperatures were 150, 160, and 170°C, and reaction times reported in the literature ranged from 2.5 to 25 mins."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "36e17777264585b9cdad927051e396d88272bc02d6353e3d67ea954fd05f811c"
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_4f1003898eb083ea75f9672f",
+   "relevance": 0,
+   "reason": "doc0: same paper, fractionation/stability topic; doc1: same paper, water dosage effect; doc2: same paper, control experiments; doc3: different paper, ChCl/MA xylan system; doc4: different paper, ChCl/MA salt optimization",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "93957bf7e1143c075bdeef6e5dafbe79a71b3287cde5f0065cb850dc977c6d6b"
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_5539978d73851dcba7b48239",
+   "relevance": 0,
+   "reason": "doc0: same paper, fractionation/stability topic; doc1: same paper, water dosage effect; doc2: same paper, control experiments; doc3: different paper, ChCl/MA xylan system; doc4: different paper, ChCl/MA salt optimization",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "93957bf7e1143c075bdeef6e5dafbe79a71b3287cde5f0065cb850dc977c6d6b"
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_5b84605e7160a0a7610fa66d",
+   "relevance": 2,
+   "reason": "Auxiliary context on water content effects in the same DES system.",
+   "evidence_quotes": [
+    "The highest yields with 10 equiv. water were determined to 48% furfural and 7% HMF."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "12eb8affb9869ffb01d98b655b3566e5a8913f4140c25b0cc40837e698655981"
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_6aa49b56f23286eccb100a58",
+   "relevance": 2,
+   "reason": "Birch sawdust table includes 170°C, 10 min condition with highest furfural yield.",
+   "evidence_quotes": [
+    "Table 2. Mixed full factorial experimental design for birch sawdust conversion.\n\nTemperature\n[°C]\nTime\n[min]\nWater\n[equiv.]\nHMF\nyield\n[%]\nFurfural yield\n[%]\n150\n10\n0.5\n0\n6.2\n170\n10\n0.5\n0.4\n17.3"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "12eb8affb9869ffb01d98b655b3566e5a8913f4140c25b0cc40837e698655981"
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_766870290e51df24b37278cd",
+   "relevance": 2,
+   "reason": "Gives sugar mix 160°C/10 min; birch sawdust 170°C/10 min not stated here.",
+   "evidence_quotes": [
+    "Recycling tests were performed using the ChCl/GA/H2O (1:3:10) DES, sugar mix as starting material, 160°C as reaction temperature, and 10 min as reaction time."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "94a4bb4761e5ab4e34984189280a585fd7a00527d02da768c7bff9cbd1dcb307"
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_7c3158f72fa2cfb63ccab356",
+   "relevance": 0,
+   "reason": "doc3: 1872 bibliography entry, no experimental conditions",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "dba2a903da8648bc33dda5fba38e7d05e95dd82ebdb6e3238e871b0f93bf6246"
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_802511788cfba434ee41d9d2",
+   "relevance": 2,
+   "reason": "Confirms 170°C as the highest reaction temperature used in conversion experiments.",
+   "evidence_quotes": [
+    "isothermal TGA was performed at the highest reaction temperature used in the conversion experiments (170°C)"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "12eb8affb9869ffb01d98b655b3566e5a8913f4140c25b0cc40837e698655981"
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_8781e312c8a17f3f184b7414",
+   "relevance": 0,
+   "reason": "doc0: same paper, fractionation/stability topic; doc1: same paper, water dosage effect; doc2: same paper, control experiments; doc3: different paper, ChCl/MA xylan system; doc4: different paper, ChCl/MA salt optimization",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "93957bf7e1143c075bdeef6e5dafbe79a71b3287cde5f0065cb850dc977c6d6b"
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_8f15223194b581244bbaff16",
+   "relevance": 1,
+   "reason": "Same paper's DES/H2O system but covers NMR hydration, not optimal temperatures/times.",
+   "evidence_quotes": [
+    "The results demonstrated that, as the quantity of DES in a sample decreased"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "94a4bb4761e5ab4e34984189280a585fd7a00527d02da768c7bff9cbd1dcb307"
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_9cab79a36e3943428aa75d11",
+   "relevance": 0,
+   "reason": "doc1: 1922 bibliography, unrelated furfural history; doc3: other paper, ChCl:MA halide salts, no birch",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "36e17777264585b9cdad927051e396d88272bc02d6353e3d67ea954fd05f811c"
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_9f994e2e49ec3c47a5ae2cda",
+   "relevance": 3,
+   "reason": "Same paper's abstract repeats the exact optimal conditions.",
+   "evidence_quotes": [
+    "The optimal reaction conditions were 160°C and 10 minutes for the sugar mixture and 170°C and 10 minutes for birch sawdust in a microwave reactor."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "dba2a903da8648bc33dda5fba38e7d05e95dd82ebdb6e3238e871b0f93bf6246"
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_b57774d3d4688682f7455127",
+   "relevance": 1,
+   "reason": "L1a: same ChCl/GA DES and sugar mix, gives sugar-mixture condition (160°C, 10 min) but not birch sawdust.",
+   "evidence_quotes": [
+    "Recycling tests were performed using the ChCl/GA/H2O (1:3:10) DES, sugar mix as starting material, 160°C as reaction temperature, and 10 min as reaction time."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "36e17777264585b9cdad927051e396d88272bc02d6353e3d67ea954fd05f811c"
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_ba38a5eb11a7d2b01f992079",
+   "relevance": 0,
+   "reason": "doc1: 1922 bibliography, unrelated furfural history; doc3: other paper, ChCl:MA halide salts, no birch",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "36e17777264585b9cdad927051e396d88272bc02d6353e3d67ea954fd05f811c"
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_c115fc48e033db7f2ca20d86",
+   "relevance": 2,
+   "reason": "Directly states the selected optimum 160°C/10 min for the sugar mixture in the ChCl/GA DES system.",
+   "evidence_quotes": [
+    "Overall, based on these results, the biphasic system, a temperature of 160°C and a reaction time of 10 min were selected for further reactions."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "36e17777264585b9cdad927051e396d88272bc02d6353e3d67ea954fd05f811c"
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_d647a03afce77d8ec8093954",
+   "relevance": 0,
+   "reason": "doc0: same paper, fractionation/stability topic; doc1: same paper, water dosage effect; doc2: same paper, control experiments; doc3: different paper, ChCl/MA xylan system; doc4: different paper, ChCl/MA salt optimization",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "93957bf7e1143c075bdeef6e5dafbe79a71b3287cde5f0065cb850dc977c6d6b"
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_db3abd07ab2faed9034c87f6",
+   "relevance": 2,
+   "reason": "States the selected optimum for the sugar mixture (160°C, 10 min).",
+   "evidence_quotes": [
+    "Overall, based on these results, the biphasic system, a temperature of 160°C and a reaction time of 10 min were selected for further reactions."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "12eb8affb9869ffb01d98b655b3566e5a8913f4140c25b0cc40837e698655981"
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_e5c4b7f2e57957640e11cd4a",
+   "relevance": 2,
+   "reason": "Background on ChCl/GA DES choice for the conversion experiments.",
+   "evidence_quotes": [
+    "These features make ChCl/MA DES non-ideal for industrial use and ChCl/GA a more tempting option to investigate."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "12eb8affb9869ffb01d98b655b3566e5a8913f4140c25b0cc40837e698655981"
+  },
+  {
+   "query_id": "q_0029",
+   "doc_id": "chk_e769e00a4aa1cbe71b7a02cf",
+   "relevance": 1,
+   "reason": "Different DES system (malic acid/LiBr), but comparable furfural run conditions for contrast.",
+   "evidence_quotes": [
+    "Furfural yields attained with different cycles of the DES [Ch]Cl:Malic Acid (1:3) + 5 wt.% H2O with 8.19% LiBr added at 157.3 °C and 1.74 min."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "dba2a903da8648bc33dda5fba38e7d05e95dd82ebdb6e3238e871b0f93bf6246",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "题目点名 2021 年 ChCl/GA 水合 DES 微波研究；本块来源 paper_0cc8554d80109d5ddfe91435 是另一篇 [Ch]Cl/苹果酸+LiBr 论文。块内为化学品清单与 DES 配制方法，并给出他文条件 157.3 ℃/1.74 min，所问『糖混合物 160 ℃/10 min、桦木锯屑 170 ℃/10 min』两项均未出现。属不同论文的同类对照实验 = L1c = 1。旧判 3 严重过高（旧理由本身即称其为『不同 DES 体系，作对照』）。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  }
+ ]
+}

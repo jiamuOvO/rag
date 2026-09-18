@@ -1,0 +1,895 @@
+{
+ "query_id": "q_0007",
+ "judgments": [
+  {
+   "doc_id": "chk_0760bea4664774ad2bd462ba",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇论文3.5/3.6节方法（回收、HPLC定量）及结论起始，属方法/相邻内容。"
+  },
+  {
+   "doc_id": "chk_07b252e04e6faed35bdbf791",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：FeCl3催化木糖RSM论文的中心复合设计，催化剂体系不同。"
+  },
+  {
+   "doc_id": "chk_0d9b2e1365b477eb53951d45",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同工艺：松木热解生物油中糠醛等组分定量表征，与本题催化优化不同。"
+  },
+  {
+   "doc_id": "chk_0da56899416bd5c0fe205e77",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：2,5-呋喃二甲酸(FDCA)/HMF合成绿色指标表，与本题不同。"
+  },
+  {
+   "doc_id": "chk_13f73a9d011906ba174abc62",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：微波HCl、杂多酸、NaCl等多种催化制糠醛，体系不同。"
+  },
+  {
+   "doc_id": "chk_1759d55f26111cb779e1d610",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：SnCl4/离子液体中催化剂对木糖脱水的影响（Figure 1/2），体系不同。"
+  },
+  {
+   "doc_id": "chk_1a55c8728cce5dc368a01e1d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：HCl/CrCl3、离子液体等多种催化制糠醛条件表，体系不同。"
+  },
+  {
+   "doc_id": "chk_1c6ab83696da977fc3cb5dc2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：Nafion、MCM-41-SO3H等催化制糠醛，体系不同。"
+  },
+  {
+   "doc_id": "chk_1e3eaec5bd452ddb3b9a4006",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：ChCl/甘醇酸 DES + MIBK 转化桦木锯屑制糠醛，不同溶剂体系且未含LiBr优化。"
+  },
+  {
+   "doc_id": "chk_2340be417303afa6db1f7cca",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：生物炭、Amberlyst、Nafion等催化制糠醛，体系不同。"
+  },
+  {
+   "doc_id": "chk_234d648ac15bd624b36d5d61",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：定量研究木糖蒸馏生成糠醛的分析化学论文，研究主题不同。"
+  },
+  {
+   "doc_id": "chk_2554c51157cea048e651e294",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇论文中LiBr与NaBr在130/150°C的筛选对照实验，属优化前的背景内容。"
+  },
+  {
+   "doc_id": "chk_2713a17ac84042d412cae067",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：Pd-PdO/ZnSO4闪速热解制糠醛的参考文献，催化体系不同。"
+  },
+  {
+   "doc_id": "chk_2abf12ab9e60d0b4219f4658",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：2,5-呋喃二甲酸(FDCA)综述参考文献，与本题不同。"
+  },
+  {
+   "doc_id": "chk_2dea6b500a26dd4908bb4d6e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：黏土、离子交换树脂催化制糠醛，体系不同。"
+  },
+  {
+   "doc_id": "chk_2e78311dd1ccdf9a5161ed82",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：SnCl4/离子液体（EMIMBr）催化木糖/木聚糖制糠醛（2019），催化剂体系完全不同。"
+  },
+  {
+   "doc_id": "chk_2f5b38412a97992888bce4b0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：Commercial Furfural专著文献索引，与本题无关。"
+  },
+  {
+   "doc_id": "chk_305f10f1a75a63236a4c181e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：ChCl/甘醇酸 DES + MIBK 摘要/引言，不同体系且未含LiBr优化。"
+  },
+  {
+   "doc_id": "chk_325024141154cf46ea3f2ef4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：2,5-呋喃二甲酸(FDCA)综述参考文献，与本题不同。"
+  },
+  {
+   "doc_id": "chk_33a6d883153f6b7171cdfe7a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：FeCl3催化木糖RSM论文中的溶剂/催化剂汇总表，体系不同。"
+  },
+  {
+   "doc_id": "chk_343fc3a232723915eebd8638",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：SnCl4/离子液体中木糖脱水机理（2019），催化剂体系不同。"
+  },
+  {
+   "doc_id": "chk_3692b24fc41326eb1cd0c997",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：Commercial Furfural专著文献索引，与本题无关。"
+  },
+  {
+   "doc_id": "chk_3802f88572be015e0e26a58d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：SnCl4/离子液体中温度对木糖脱水的影响（2019），催化剂体系不同。"
+  },
+  {
+   "doc_id": "chk_3966d11a350c894b6c9bab9b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：SnCl4/离子液体与代表性体系对比（Table 3），催化剂体系不同。"
+  },
+  {
+   "doc_id": "chk_396fbbf891060bcb9b5939fc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：CrCl2/CrCl3、LiBr添加剂、Cu(II)等多种体系制糠醛，催化体系不同。"
+  },
+  {
+   "doc_id": "chk_3ab712c2d957016d61a1746e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：H2SO4双相体系戊糖制糠醛的树脂催化与结果表，催化剂不同。"
+  },
+  {
+   "doc_id": "chk_3abca309821216721c9a9a6d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：FeCl3（两水平因子设计）催化木糖制糠醛RSM（2020），催化剂与体系不同。"
+  },
+  {
+   "query_id": "q_0007",
+   "doc_id": "chk_3dac63a009a1213ba1abaadb",
+   "relevance": 2,
+   "reason": "Repeats the optimized temperature, time and LiBr loading.",
+   "evidence_quotes": [
+    "Furfural yields attained with different cycles of the DES [Ch]Cl:Malic Acid (1:3) + 5 wt.%\nH2O with 8.19% LiBr added at 157.3 °C and 1.74 min."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "1ce8e3c23f47eb23d533d0d86ef437aed49766b7c41a58138cf68bf4a0171a2b"
+  },
+  {
+   "doc_id": "chk_3f69bf6b3a14097bc389e768",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：ChCl/甘醇酸 DES + MIBK 的结论与循环实验，不同体系。"
+  },
+  {
+   "doc_id": "chk_40df1599eac1ba18d6eeb9b8",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：FeCl3催化木糖RSM论文的参考文献列表，催化剂体系不同。"
+  },
+  {
+   "doc_id": "chk_40f029be6954f7d92d3ccc07",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：木质纤维素转化制乙酰丙酸(levulinic acid)参考文献，主题不同。"
+  },
+  {
+   "doc_id": "chk_43fe5cdb3800d6d9d5836f00",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：SnCl4/离子液体论文的参考文献列表，体系不同。"
+  },
+  {
+   "doc_id": "chk_4419384458d12e56e17e3a01",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇论文的Figure 1卤化物筛选与机理图，为背景/方法相邻内容。"
+  },
+  {
+   "doc_id": "chk_46afa6e2d17534629415a50a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：2,5-呋喃二甲酸(FDCA)综述参考文献，与本题不同。"
+  },
+  {
+   "doc_id": "chk_4b1cc34f21b968e86267af2e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同底物/方法：葡萄糖电化学氧化机理，与本题制糠醛优化不同。"
+  },
+  {
+   "doc_id": "chk_4bf9c07e207731f07720a1fb",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：木质纤维素制5-氯甲基糠醛(CMF)，与本题糠醛+LiBr不同。"
+  },
+  {
+   "doc_id": "chk_4d23c61724b8781b5c07f8ed",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：ChCl/甘醇酸 DES + MIBK 体系，不同溶剂体系且未涉及LiBr优化，催化路线不同。"
+  },
+  {
+   "doc_id": "chk_4f1003898eb083ea75f9672f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：ChCl/甘醇酸 DES + MIBK 研究引言与对照实验，体系不同且无LiBr优化。"
+  },
+  {
+   "query_id": "q_0007",
+   "doc_id": "chk_4f86dedd60c3fd056c61dc03",
+   "relevance": 2,
+   "reason": "Confirms the optimized reaction time of 1.74 min.",
+   "evidence_quotes": [
+    "while also having a faster reaction kinetic (1.74 vs. 2.5 min)."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "1ce8e3c23f47eb23d533d0d86ef437aed49766b7c41a58138cf68bf4a0171a2b",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 2,
+    "changed": true,
+    "explanation": "必需事实是三个最优值（157.3 ℃、1.74 min、8.19 wt.%）。块内只出现 1.74 min（作为反应动力学对比），157.3 ℃ 与 8.19 wt.% 均未出现；后半段讲的是糠醛减压蒸馏回收（50 ℃/6 mbar、85.9%），与最优化条件无关。三项只覆盖一项 → 2。旧判 3 过高。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "doc_id": "chk_5004e7b2e2ef36cef37f7554",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：木质纤维素转化制乙酰丙酸(levulinic acid)，研究主题不同。"
+  },
+  {
+   "doc_id": "chk_507e5092f07606e8f162a909",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：玉米芯两步法、Nb2O5、硫酸化氧化物等催化制糠醛，体系不同。"
+  },
+  {
+   "doc_id": "chk_51128e533622af7a29364296",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：光催化葡萄糖制5-羟甲基糠醛(HMF)，与本题糠醛+LiBr不同。"
+  },
+  {
+   "doc_id": "chk_52753142bb95f2c173a84e2a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：超临界CO2无催化木糖制糠醛，工艺路线不同。"
+  },
+  {
+   "doc_id": "chk_528b3c52b19dce51bac27dc2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：木质纤维素制5-氯甲基糠醛(CMF)的材料与方法，与本题不同。"
+  },
+  {
+   "doc_id": "chk_53e21392be7f477eb4a192a9",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：木质纤维素制5-氯甲基糠醛(CMF)的温度筛选，工艺与化学品不同。"
+  },
+  {
+   "doc_id": "chk_54f75b6ae27983536bad5b0f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：SnCl4/离子液体论文的参考文献列表，与本题研究主题无关。"
+  },
+  {
+   "query_id": "q_0007",
+   "doc_id": "chk_5539978d73851dcba7b48239",
+   "relevance": 1,
+   "reason": "Same paper's optimization method/data source (L1b); names the three optimized variables but not the optimum values.",
+   "evidence_quotes": [
+    "a Response Surface Method (RSM) was applied to optimize the parameters time (t, min), temperature (T, ◦C) and LiBr concentration (LiBr, wt.%)."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "64cd6d9476818d5a216a192b3e65581530b735ec9fde5152eabbc880fd4835e9",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 2,
+    "final_grade": 1,
+    "changed": true,
+    "explanation": "该块只交代了优化方法：用 RSM 优化 time / temperature / LiBr wt.% 三个参数，并描述了统计口径（95% 置信、t 检验、Statistica）。157.3 ◦C、1.74 min、8.19 wt.% 三个最优值均未出现。属同论文的方法与数据口径段 → L1b = 1。旧判 2 过高，旧理由自称 L1b 且明说『未给出优化值』，与 2 级矛盾。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0007",
+   "doc_id": "chk_566e4ba7fd2e114be1aef258",
+   "relevance": 1,
+   "reason": "L1b: describes the RSM optimization method/data basis of the same paper, but does not state the optimized values.",
+   "evidence_quotes": [
+    "A RSM was applied to simultaneously analyze various factors (temperature, time and LiBr wt.%) and to identify the most significant parameters and their interaction, with the main goal of optimizing and promoting high furfural yields."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_spotcheck_corrected",
+   "answerability_conflict": false,
+   "raw_response_id": "f72727f93a54bf4b12704ebb48c9787bb9e66d2a7f17aff5484728067962f858",
+   "correction_kind": "read_based_spotcheck_correction",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 1,
+    "final_grade": 1,
+    "changed": false,
+    "explanation": "该块为同一论文的实验方法（微波反应器、130/150 ◦C、2.5 min、xylan/DES=0.05）与 RSM 优化流程说明，不含最优值 157.3 ℃/1.74 min/8.19 wt.% → L1b『同论文的方法或数据来源』= 1。与既有受保护修正（before 2 → after 1）一致，维持 1，不回滚。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "doc_id": "chk_57a33a6e0c4a7bc9c29181aa",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：定量研究木糖蒸馏生成糠醛的分析化学论文，研究主题不同。"
+  },
+  {
+   "doc_id": "chk_5862fd2a5382b7a86cdcd7c0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：2,5-呋喃二甲酸(FDCA)综述参考文献，与本题不同。"
+  },
+  {
+   "doc_id": "chk_59b0884caccff0d5a8d1e75c",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品/反应：Pt/g-C3N4催化糠醛加氢制糠醇（furfuryl alcohol），与制糠醛优化不同。"
+  },
+  {
+   "doc_id": "chk_5a452ff876a12d25244fbb00",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：呋喃基含氧燃料添加剂综述的参考文献，与本题无关。"
+  },
+  {
+   "doc_id": "chk_5b84605e7160a0a7610fa66d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：ChCl/甘醇酸 DES + MIBK 中水含量对DES结构的影响，不同体系。"
+  },
+  {
+   "doc_id": "chk_5d837fa337d61d0d9d977fac",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：Commercial Furfural专著的糠醛结构与制造史，与本题优化无关。"
+  },
+  {
+   "doc_id": "chk_61fec0ffa9e553e9cc7bc451",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：磷酸分级分离木质纤维素联产糠醛（不同催化剂与工艺路线）。"
+  },
+  {
+   "doc_id": "chk_63ed4f5cf0a3f86e588ca348",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：CrCl3、NaCl、钼酸盐等多种催化制糠醛，体系不同。"
+  },
+  {
+   "doc_id": "chk_647773cf5c3694c2d7fabd49",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：Commercial Furfural专著文献索引，与本题无关。"
+  },
+  {
+   "doc_id": "chk_6aa49b56f23286eccb100a58",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：ChCl/甘醇酸 DES + MIBK 的稳定性与可回收性，不同体系。"
+  },
+  {
+   "doc_id": "chk_6f03c344fb08302f28c6f79e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：Commercial Furfural专著的文献索引，与本题无关。"
+  },
+  {
+   "doc_id": "chk_6f25f7af1a297c17eaced5f2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇论文2.1节金属卤化物筛选与Figure 1，为优化前的盐筛选背景。"
+  },
+  {
+   "doc_id": "chk_7398f9b56ed82048d6e3aec5",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：Pd-PdO/ZnSO4闪速热解制糠醛的参考文献，体系不同。"
+  },
+  {
+   "doc_id": "chk_753f4affe2d2d946e5193fe0",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：2,5-呋喃二甲酸(FDCA)综述参考文献，与本题不同。"
+  },
+  {
+   "doc_id": "chk_754b18ffbaea380476fcdfc1",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：列举NaCl、LiBr水合物、FeCl3、NaHSO4等多种催化体系制糠醛，与本题ChCl/MA+LiBr特定研究主题不同。"
+  },
+  {
+   "doc_id": "chk_7af8d99455516ec32196a11d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：木质纤维素转化制乙酰丙酸(levulinic acid)及HMF，主题不同。"
+  },
+  {
+   "doc_id": "chk_7ef0cc547f306c6251e6e5ed",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：MCM-41-SO3H、sulfonated sporopollenin等催化制糠醛，体系不同。"
+  },
+  {
+   "doc_id": "chk_802511788cfba434ee41d9d2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：ChCl/甘醇酸 DES + MIBK 的TGA稳定性，不同体系。"
+  },
+  {
+   "doc_id": "chk_80c6f5afc46e29f7ef6620c4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：H2SO4双相体系工艺相关戊糖水解液制糠醛，催化剂不同。"
+  },
+  {
+   "doc_id": "chk_84aceebf3163b1d7e70fa9c1",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：呋喃基含氧燃料添加剂综述中糠醛制EFE/ETE路线，下游应用不同。"
+  },
+  {
+   "query_id": "q_0007",
+   "doc_id": "chk_86d0fa326f0392661191cc1c",
+   "relevance": 2,
+   "reason": "Confirms optimized time 1.74 min and temperature 157.3 °C.",
+   "evidence_quotes": [
+    "an 89.5 ± 0.3% furfural yield is the highest yield reported up to date in such a short time\n(1.74) and moderate temperature (157.3) of reaction."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "1ce8e3c23f47eb23d533d0d86ef437aed49766b7c41a58138cf68bf4a0171a2b"
+  },
+  {
+   "doc_id": "chk_8b5e454a5689a8ab08b1bb5b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：FeCl3催化木糖RSM论文的结论与参考文献，催化剂体系不同。"
+  },
+  {
+   "doc_id": "chk_93c29e9feb4a6c2cf3537c5b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：木质纤维素制5-氯甲基糠醛(CMF)的溶剂筛选，与本题不同。"
+  },
+  {
+   "doc_id": "chk_943b7a4df490b6418cf56c2d",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：光催化葡萄糖/果糖制5-羟甲基糠醛(HMF)，与本题糠醛+LiBr优化不同。"
+  },
+  {
+   "doc_id": "chk_9572ddcf26ca5754abbda184",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：呋喃基含氧燃料添加剂综述参考文献，与本题无关。"
+  },
+  {
+   "doc_id": "chk_998a8c5dcb670c8da134b838",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：2,5-呋喃二甲酸(FDCA)/HMF合成绿色指标表，与本题不同。"
+  },
+  {
+   "doc_id": "chk_9e7c81fe4b422c2de07889ca",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：定量研究木糖蒸馏生成糠醛的分析化学论文（NBS），研究主题与方法完全不同。"
+  },
+  {
+   "doc_id": "chk_9e8865841d4619f192e1d8c2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：HCl/MIBK双相、Lewis+Bronsted酸催化制糠醛，体系不同。"
+  },
+  {
+   "doc_id": "chk_9ece375829e570a7bdced2bc",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：真实生物质制5-羟甲基糠醛(HMF)，与本题糠醛+LiBr不同。"
+  },
+  {
+   "doc_id": "chk_9f04ce2bcfbc19847a759b43",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：NaCl、NaHSO4、GVL等添加剂催化制糠醛，体系不同。"
+  },
+  {
+   "doc_id": "chk_a1bda41258bb155ff6329a9d",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇论文的参考文献列表（页11-12），属同一论文相邻内容。"
+  },
+  {
+   "doc_id": "chk_a50b6f86afb0ed01e66f015e",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：Pd-PdO/ZnSO4催化C6糖闪速热解制糠醛（不同催化体系与技术路线）。"
+  },
+  {
+   "doc_id": "chk_a847899fb5e02a932c3383c5",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：Commercial Furfural专著文献索引，与本题无关。"
+  },
+  {
+   "doc_id": "chk_a8d5a7fbe645846b07a62f18",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：定量研究木糖蒸馏生成糠醛的分析化学论文，研究主题不同。"
+  },
+  {
+   "doc_id": "chk_a9d0b19959ec2fb0857a3f15",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：NaCl/FeCl3、烷基酚、HPA等催化制糠醛，体系不同。"
+  },
+  {
+   "doc_id": "chk_aa1dc469381d853d29a36574",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：2,5-呋喃二甲酸(FDCA)及相关呋喃单体综述，与本题不同。"
+  },
+  {
+   "doc_id": "chk_aadb1f108dc4034b348b7a36",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇论文页5卤化物盐筛选讨论（LiCl、阴离子效应），为优化前背景内容。"
+  },
+  {
+   "doc_id": "chk_aaff83e35ec0748b056b3658",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：FeCl3催化木糖RSM论文的结论与HPLC定量方法，催化剂体系不同。"
+  },
+  {
+   "doc_id": "chk_af1b2e8649d73a92e75f2c61",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：FeCl3催化木糖RSM论文讨论其他卤化物体系，催化剂体系不同。"
+  },
+  {
+   "doc_id": "chk_b345b55f971d6c63ac0dd078",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：AlCl3/甲酸、NaCl等各种催化制糠醛条件，与本题特定ChCl/MA+LiBr研究不同。"
+  },
+  {
+   "doc_id": "chk_b7b71e137dbe9fd058a9023a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：H2SO4双相体系从工艺相关戊糖制糠醛（2017），催化剂不同。"
+  },
+  {
+   "doc_id": "chk_ba38a5eb11a7d2b01f992079",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇论文的Figure 3卤化物盐筛选（130°C、2.5 min）及副产物讨论，属背景/筛选内容。"
+  },
+  {
+   "query_id": "q_0007",
+   "doc_id": "chk_baa9bfa115cb1a71967530ee",
+   "relevance": 2,
+   "reason": "Same paper's RSM optimization of temperature, time and LiBr wt.% for [Ch]Cl:MA+LiBr; gives ranges but not the exact optimum values, so must be combined.",
+   "evidence_quotes": [
+    "The results attained are in agreement with the values observed in the preliminary assays, revealing that the maximum furfural yield occurs between 1.2 and 2.2 min of reaction time, with temperatures ranging from 150 to 165 ◦C. Moreover, the optimal LiBr content is centered around 10.0 wt.%, which was the concentration used in the different preliminary assays."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "f72727f93a54bf4b12704ebb48c9787bb9e66d2a7f17aff5484728067962f858"
+  },
+  {
+   "doc_id": "chk_bb2350573b224a69783b7f13",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇论文引言，综述DES与卤化物盐用于制糠醛的背景及本研究切入点。"
+  },
+  {
+   "doc_id": "chk_c0dda1913e93376e3350d849",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：木质纤维素转化制乙酰丙酸(levulinic acid)，主题不同。"
+  },
+  {
+   "doc_id": "chk_c115fc48e033db7f2ca20d86",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：ChCl/甘醇酸 DES + MIBK 中水含量影响，不同体系且未含LiBr优化。"
+  },
+  {
+   "doc_id": "chk_c1a2e291f033734ca2ba63ee",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：NaCl/FeCl3、NaHSO4、Al2(SO4)3等催化制糠醛，与本题体系不同。"
+  },
+  {
+   "doc_id": "chk_c3236d1018b9abd887eaab2b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：FeCl3/NaCl、AlCl3等催化制糠醛，体系不同。"
+  },
+  {
+   "doc_id": "chk_c468bbe4570e26d840ff8447",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：甲酸/硫酸、树脂、Nafion等多种催化制糠醛，体系不同。"
+  },
+  {
+   "doc_id": "chk_c5d400ec3b261cc6e95d63d1",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：FeCl3催化木糖RSM论文的实验方法（HPLC/DOE），催化剂体系不同。"
+  },
+  {
+   "doc_id": "chk_c637afc692e7621538a73442",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：SnCl4/离子液体中催化剂筛选（Figure 1），催化剂体系不同。"
+  },
+  {
+   "doc_id": "chk_c75c331598d13d8972edcec5",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：FeCl3催化木糖制糠醛的RSM优化（Molecules 2020），催化剂与底物均不同。"
+  },
+  {
+   "doc_id": "chk_c85488d90bdf2185f1eaf61b",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：磷酸分级分离木质纤维素联产糠醛的方法与DOE，催化剂与工艺不同。"
+  },
+  {
+   "doc_id": "chk_cc726c05dc3005191f170fd2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同工艺：松木热解生物油组分随预处理温度的变化，与本题催化优化不同。"
+  },
+  {
+   "doc_id": "chk_d06eca1901fa570823b7fc02",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：H2SO4双相体系戊糖制糠醛的原料与方法，催化剂不同。"
+  },
+  {
+   "doc_id": "chk_d0d10ccda6e8d641d52553e2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇论文的参考文献列表（页12），属同一论文相邻内容。"
+  },
+  {
+   "doc_id": "chk_d334e314598123e8f2899fb9",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：Gürbüz、AlCl3/NaCl、甲酸等多种催化制糠醛，体系不同。"
+  },
+  {
+   "doc_id": "chk_d58dfae55ccad04cb588e2ae",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：糠醛生产文献综述（物理性质、应用），与本题特定优化研究不同。"
+  },
+  {
+   "doc_id": "chk_db3abd07ab2faed9034c87f6",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：ChCl/甘醇酸(GA) DES + MIBK 制糠醛与HMF，使用不同HBD（甘醇酸非苹果酸）且无LiBr，催化体系与本题不同。"
+  },
+  {
+   "doc_id": "chk_de436d161505414f91c4bb67",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：离子交换树脂、SAPO等催化制糠醛，体系不同。"
+  },
+  {
+   "doc_id": "chk_de6d867f6158072b73bf5cb8",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇论文引言段，提及HMF及本研究体系背景，未含优化数值。"
+  },
+  {
+   "doc_id": "chk_de8ed6767b301e54f3952681",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：SnCl4/离子液体中配对催化剂对木糖脱水的影响，体系不同。"
+  },
+  {
+   "doc_id": "chk_df3df711c7f3a83392c96ef2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：HCl/CrCl3双相制糠醛条件表，催化剂体系不同。"
+  },
+  {
+   "doc_id": "chk_e1016eacd88751fb5899db1f",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇论文的补充材料说明、作者贡献与参考文献，属同一论文相邻内容。"
+  },
+  {
+   "doc_id": "chk_e15e80e22a6d4c9e42b7aad2",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：HZSM-5、SBA-15、Amberlyst-70等催化制糠醛，体系不同。"
+  },
+  {
+   "doc_id": "chk_e237f13f02b839b14ff3b29f",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：呋喃基含氧燃料添加剂综述，属下游应用，与本题制糠醛优化不同。"
+  },
+  {
+   "doc_id": "chk_e29b435199d859f15cb96d89",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：FeCl3催化木糖RSM论文的因子设计表，催化剂体系不同。"
+  },
+  {
+   "doc_id": "chk_e5740ed8cf74c4dce8666f02",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇论文页2引言，讨论催化剂瓶颈与双相萃取溶剂背景，未含优化数值。"
+  },
+  {
+   "doc_id": "chk_e59b9573578a2ef6e31f67e2",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇论文的盐筛选结果与机理（Figure 1/2），为背景相邻内容。"
+  },
+  {
+   "doc_id": "chk_e5c4b7f2e57957640e11cd4a",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：ChCl/甘醇酸 DES + MIBK 引言段，不同溶剂体系且未含LiBr优化。"
+  },
+  {
+   "query_id": "q_0007",
+   "doc_id": "chk_e769e00a4aa1cbe71b7a02cf",
+   "relevance": 2,
+   "reason": "States the optimized conditions: 157.3 °C, 1.74 min, 8.19% LiBr.",
+   "evidence_quotes": [
+    "Furfural yields attained with different cycles of the DES [Ch]Cl:Malic Acid (1:3) + 5 wt.%\nH2O with 8.19% LiBr added at 157.3 °C and 1.74 min."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "1ce8e3c23f47eb23d533d0d86ef437aed49766b7c41a58138cf68bf4a0171a2b"
+  },
+  {
+   "doc_id": "chk_eb28ef77eb4b424fe27b2883",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：SnCl4/离子液体中木聚糖转化为糠醛（Figure 9/10），催化剂体系不同。"
+  },
+  {
+   "doc_id": "chk_ec1551e4a591e4ce7a231abf",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：无催化临界溶剂、超临界CO2制糠醛，工艺路线不同。"
+  },
+  {
+   "doc_id": "chk_edd0964c464bed419a057580",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：Commercial Furfural专著文献索引，与本题无关。"
+  },
+  {
+   "doc_id": "chk_eec4496762bf30d4c915fc71",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：ChCl/甘醇酸 DES + MIBK 的萃取条件优化，不同体系。"
+  },
+  {
+   "doc_id": "chk_f056bcf29b2823db34c1d520",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同底物/方法：葡萄糖电化学氧化制甲酸盐，与木糖/木聚糖制糠醛不同。"
+  },
+  {
+   "doc_id": "chk_f8468b2d448d2eac6dbda275",
+   "relevance": 1,
+   "evidence_quotes": [],
+   "reason": "同一篇论文的参考文献列表（页12），属同一论文相邻内容。"
+  },
+  {
+   "doc_id": "chk_f973bb4241a5f45a7f761414",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同化学品：2,5-呋喃二甲酸(FDCA)综述参考文献，与本题不同。"
+  },
+  {
+   "doc_id": "chk_f9e72b505a73a74304a647f4",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文（2018综述）：SAPO、A180-0.2等固体酸催化制糠醛，体系不同。"
+  },
+  {
+   "doc_id": "chk_faf767d531cf91dd76d76e82",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：定量研究木糖蒸馏生成糠醛的分析化学论文，研究主题不同。"
+  },
+  {
+   "doc_id": "chk_fb16270bda4da02f3902d888",
+   "relevance": 0,
+   "evidence_quotes": [],
+   "reason": "不同论文：Commercial Furfural专著的性质与用途章节，与本题优化研究无关。"
+  },
+  {
+   "query_id": "q_0007",
+   "doc_id": "chk_fbc7a95665f94f660bc1af2c",
+   "relevance": 2,
+   "reason": "Directly gives all three optimized parameters.",
+   "evidence_quotes": [
+    "the optimal values determined for the\nthree parameters are: 1.74 min of reaction time, 157.3 ◦C and 8.19 wt.% of LiBr."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "1ce8e3c23f47eb23d533d0d86ef437aed49766b7c41a58138cf68bf4a0171a2b"
+  }
+ ]
+}

@@ -1,0 +1,237 @@
+====================================================================================================
+[复核 1->0] q_0001 | Efficient Synthesis of Furfural from Biomass Using SnCl4 as Catalyst in 
+  池内总数 126，本桶取样 4 条
+  题    : 2019年SnCl4/EMIMBr研究比较金属盐催化剂时，木糖与离子液体各用了多少，催化剂与木糖的摩尔比是多少？
+  难度/分区: easy/dev | 指定来源: ['paper_db1a45d39737c05f08fff0fa'] | 该块来源: paper_db1a45d39737c05f08fff0fa
+  必需事实1: 木糖200 mg、EMIMBr 1000 mg，催化剂:木糖摩尔比1:10。
+     该块是否含此事实的原文: 否｜判据 'Reaction conditions: 200 mg of xylose was dissolved in 1000 mg of EMIMBr; molar ratio of c'
+  等级: 1 -> 0 | 记录来源 agent_era
+  新理由: 该块仅为参考文献条目列表（如'García-Sancho, C.; ...'、'Chang, G.Y.; ...'等引文），无任何关于木糖/EMIMBr用量或催化剂:木糖摩尔比的实质内容，与问题所问无关。规范第四节明确：块只是参考文献条目、致谢、期刊页眉属无实质内容，判0级（原判定1级维持错误，予以降级）。
+  原块正文前 700 字: 2013, 4, 196–199. [CrossRef] 51. García-Sancho, C.; Fúnez-Núñez, I.; Moreno-Tost, R.; Santamaría-González, J.; Pérez-Inestrosa, E.; Fierro, J.L.G.; Maireles-Torres, P. Beneficial effects of calcium chloride on glucose dehydration to 5-hydroxymethylfurfural in the presence of alumina as catalyst. Appl. Catal. B 2017, 206, 617–625. [CrossRef] 52. Chang, G.Y.; Zhang, S.; Pan, X. Effective conversion of biomass into bromomethylfurfural, furfural, and depolymerized lignin in lithium bromide molten salt hydrate of a biphasic system. RSC Adv. 2016, 7, 300–308. 53. D’Anna, F.; Marullo, S.; Vitale, P.; Rizzo, C.; Meo, P.L.; Noto, R. Ionic liquid binary mixtures: Promising reaction media for carbohydr
+
+====================================================================================================
+[复核 1->0] q_0003 | Hydrolysis of Hemicellulose and Derivatives—A Review of Recent Advances 
+  池内总数 126，本桶取样 4 条
+  题    : 在2019年EMIMBr/SnCl4体系中，130℃下木聚糖反应半小时的糠醛收率和最高收率分别是多少？
+  难度/分区: easy/dev | 指定来源: ['paper_db1a45d39737c05f08fff0fa'] | 该块来源: paper_fb5f556ebb605bbffb218189
+  必需事实1: 30 min时为41.7%；1 h达到最高50.1%。
+     该块是否含此事实的原文: 否｜判据 'We attempted to convert xylan into xylose in the EMIMBr/SnCl4 system at 130 ◦C. As shown i'
+  等级: 1 -> 0 | 记录来源 exhaustive-chemistry-qrels-v2-compact
+  新理由: doc3: other paper's review of NaCl/FeCl3 systems; doc4: same paper, xylose solvent/dosage study
+  原块正文前 700 字: Focusing only on the use of NaCl as catalyst, a comparison was also made between conventional heating and microwave technology (Xiouras et al., 2016). Higher yields were obtained after 7 min of heating in presence of NaCl (3.5 wt%) at 200◦C. The D-xylose conversion was complete giving 76% of furfural yield under microwave heating. Using metal salts, biphasic systems were developed making use of similar solvents as mentioned above. Isolation of hemicelluloses from Rubescens using a water-GVL biphasic system heated at 180◦C was studied (Luo et al., 2017). The hemicelluloses rich lignin fraction was then warmed up in presence of NaCl and THF giving a furfural yield of 77%. NaCl was also found r
+
+====================================================================================================
+[复核 1->0] q_0006 | Efficient Synthesis of Furfural from Biomass Using SnCl4 as Catalyst in 
+  池内总数 126，本桶取样 4 条
+  题    : 在2019年的锡盐—咪唑鎓溴盐体系里，以木聚糖为原料，达到最佳呋喃甲醛收率后继续煮到四小时，产率会怎样？
+  难度/分区: medium/dev | 指定来源: ['paper_db1a45d39737c05f08fff0fa'] | 该块来源: paper_db1a45d39737c05f08fff0fa
+  必需事实1: 1 h达到50.1%，延长至4 h下降到33.0%。
+     该块是否含此事实的原文: 否｜判据 'We attempted to convert xylan into xylose in the EMIMBr/SnCl4 system at 130 ◦C. As shown i'
+  等级: 1 -> 0 | 记录来源 exhaustive-chemistry-qrels-v2-compact
+  新理由: doc0: same paper but xylose/EMIMBr comparison, no xylan 4 h yield
+  原块正文前 700 字: This is consistent with the trend of conversion of xylose in aqueous acidic solutions [63] and ionic liquid EMIMCl [24]. The catalytic performance of the EMIMBr/SnCl4 system developed in this work was compared with other representative reaction systems reported recently. As shown in Table 3, unrealistic reaction conditions, including relative high reaction temperature, low xylose loading (lower than 10%), and large amount of organic solvents and electrolytes (such as NaCl) are indispensable to obtain relative high furfural yield from the water–organic solvent biphasic systems [34,65,66]. The furfural yield in the present work was higher than or comparable to previous reports even when the xy
+
+====================================================================================================
+[复核 1->0] q_0011 | Production and Downstream Integration of 5-(Chloromethyl)furfural from L
+  池内总数 126，本桶取样 4 条
+  题    : How does the 2023 CMF integration paper define the original Bergius–Rheinau saccharification process?
+  难度/分区: easy/dev | 指定来源: ['paper_d1a4e8bfc7c58b30dda482f2'] | 该块来源: paper_d1a4e8bfc7c58b30dda482f2
+  必需事实1: A single low-temperature biomass hydrolysis step using fuming hydrochloric acid.
+     该块是否含此事实的原文: 否｜判据 'The Bergius−Rheinau, or Bergius− Willstätter−Zechmeister process, is the hydrolysis of bio'
+  等级: 1 -> 0 | 记录来源 exhaustive-chemistry-qrels-v2-compact
+  新理由: doc0: same paper, solvent/lignin topics; doc1: same paper, intro/background; doc2: same paper, Origin/Avantium processes; doc3: same paper, DAWN/YUKON process; doc4: same paper, HMF/CMF mechanism
+  原块正文前 700 字: The major environmental impact of the process is related to the use of halogenated organic solvents, such as chlorobenzene and fluorobenzene. It is widely known that their use must be limited, and when alternatives are found, it is strongly recommended to pursue the scale-up of future technologies with other similar compounds.68,69 During this study, few alternatives to halogenated solvents were also tested (Figure 11). However, the presence of a halogen in the organic solvent greatly improves the selectivity of extraction toward CMF and furfural. Due to the high selectivity of these solvents to solely extract CMF and furfural from the aqueous acidic solution, this also allows for a simple d
+
+====================================================================================================
+[复核 降出正例(2/3->0/1)] q_0013 | Recent Trends in the Pretreatment of Lignocellulosic Biomass for Value-A
+  池内总数 18，本桶取样 4 条
+  题    : 2018年《Recent Trends in the Pretreatment of Lignocellulosic Biomass》综述列出木质纤维素的哪三种主要聚合物组分？
+  难度/分区: easy/test | 指定来源: ['paper_2467240e9bec8a52db54345d'] | 该块来源: paper_2467240e9bec8a52db54345d
+  必需事实1: 纤维素、半纤维素和木质素。
+     该块是否含此事实的原文: 否｜判据 'LCB is mainly composed of three polymers: cellulose (C6H10O5)n, hemicellulose (C5H8O4)m, a'
+  等级: 2 -> 1 | 记录来源 exhaustive-chemistry-qrels-v2-compact
+  新理由: L1b: same paper as the target review but covers supercritical CO2 pretreatment, not the polymer list.
+  新引文(1): 'Under high pressure the CO2 molecules penetrate into the biomass and shattered the higher level of structures comprising hemicellulose and lignin.'
+  原块正文前 700 字: Pretreatments Trends of Lignocelluloses appears to be a viable alternative owing to its lower energy requirements and use of the greener alternative compared to ammonia (Bharathiraja et al., 2018). Because of its characteristics of mass transfer of a “gaslike” with a “liquidlike” solvating power, supercritical CO2 can diffuse through interspaces like gas and dissolve materials like liquid (Rostagno et al., 2015). Under high pressure the CO2 molecules penetrate into the biomass and shattered the higher level of structures comprising hemicellulose and lignin. Once dissolved in water, CO2 will form carbonic acid, which catalyzes the hydrolysis of hemicellulose. This is the reason why this pretr
+
+====================================================================================================
+[复核 降出正例(2/3->0/1)] q_0013 | Recent Trends in the Pretreatment of Lignocellulosic Biomass for Value-A
+  池内总数 18，本桶取样 4 条
+  题    : 2018年《Recent Trends in the Pretreatment of Lignocellulosic Biomass》综述列出木质纤维素的哪三种主要聚合物组分？
+  难度/分区: easy/test | 指定来源: ['paper_2467240e9bec8a52db54345d'] | 该块来源: paper_2467240e9bec8a52db54345d
+  必需事实1: 纤维素、半纤维素和木质素。
+     该块是否含此事实的原文: 否｜判据 'LCB is mainly composed of three polymers: cellulose (C6H10O5)n, hemicellulose (C5H8O4)m, a'
+  等级: 2 -> 1 | 记录来源 exhaustive-chemistry-qrels-v2-compact
+  新理由: L1b: same 2018 review paper, conclusion mentions cellulose/hemicellulose/lignin matrix but not as the listed three main components.
+  新引文(1): 'The high crystallinity of cellulose and its sheathing by\nhemicellulose-lignin matrix furnish the resilient structure of\nLCB.'
+  原块正文前 700 字: Baruah et al. Pretreatments Trends of Lignocelluloses redox mediators. It is used in textile, bleaching, paper and pulp industries, production of biofuels, bioremediation of xenobiotic compounds, degradation of endocrine disrupting chemicals (Ravichandran and Sridhar, 2016). CONCLUSION The high crystallinity of cellulose and its sheathing by hemicellulose-lignin matrix furnish the resilient structure of LCB. Therefore, pretreatment is an extremely important step for conversion of LCB to sugars and further processing for industrially important bioproducts and biofuels. Extensive investigations have been carried out on the effects of different pretreatment methods on lignocellulosic compositio
+
+====================================================================================================
+[复核 降出正例(2/3->0/1)] q_0013 | Review on the catalytic effects of alkali and alkaline earth metals (AAE
+  池内总数 18，本桶取样 4 条
+  题    : 2018年《Recent Trends in the Pretreatment of Lignocellulosic Biomass》综述列出木质纤维素的哪三种主要聚合物组分？
+  难度/分区: easy/test | 指定来源: ['paper_2467240e9bec8a52db54345d'] | 该块来源: paper_a23d5abb9f77edeb68352119
+  必需事实1: 纤维素、半纤维素和木质素。
+     该块是否含此事实的原文: 否｜判据 'LCB is mainly composed of three polymers: cellulose (C6H10O5)n, hemicellulose (C5H8O4)m, a'
+  等级: 3 -> 1 | 记录来源 exhaustive-chemistry-qrels-v2-compact
+  新理由: L1d: names the three main biopolymers as background, not the 2018 review's list.
+  新引文(1): 'biomass contains an ash fraction in \naddition to the three main biopolymers (namely, cellulose, hemicellu\n\n\nlose and lignin)'
+  原块正文前 700 字: 4. Methods and strategies adopted in the literature 4.1. Water and acid washing 4.1.1. Biomass As explained in Section 2.1, biomass contains an ash fraction in addition to the three main biopolymers (namely, cellulose, hemicellu lose and lignin). This solid inorganic residue comprises a variety of el ements, such as potassium (K), silicon (Si), calcium (Ca), sodium (Na), and magnesium (Mg), along with some trace elements like iron (Fe), aluminum (Al),
+
+====================================================================================================
+[复核 降出正例(2/3->0/1)] q_0013 | Lignocellulosic Biomass Transformations via Greener Oxidative Pretreatme
+  池内总数 18，本桶取样 4 条
+  题    : 2018年《Recent Trends in the Pretreatment of Lignocellulosic Biomass》综述列出木质纤维素的哪三种主要聚合物组分？
+  难度/分区: easy/test | 指定来源: ['paper_2467240e9bec8a52db54345d'] | 该块来源: paper_f0e625aa9a89da78815e3099
+  必需事实1: 纤维素、半纤维素和木质素。
+     该块是否含此事实的原文: 否｜判据 'LCB is mainly composed of three polymers: cellulose (C6H10O5)n, hemicellulose (C5H8O4)m, a'
+  等级: 3 -> 1 | 记录来源 exhaustive-chemistry-qrels-v2-compact
+  新理由: L1d: mentions cellulose, hemicellulose, lignin as components but not as the review's listed three polymers.
+  新引文(1): 'Agricultural residues typically contain even less lignin (10–20% lignin, 20–30% hemicellulose, and 40–50% cellulose), and are thus more suitable as biomass feedstocks.'
+  原块正文前 700 字: Lignin consists primarily of complex phenolic heteropolymers. The most common bonding types in lignin, as shown in Figure 2, are the β-O-4’ aryl glycerol ether bond (∼45%) and the β-5 phenyl coumaran bond (∼10%), among others (Crestini et al., 2010). Consequently, the lack of specific bonding and subunit patterns in a lignin structure makes it challenging to decompose into selected desired compounds. Lignin is a major barrier to the use of lignocellulosic biomass in biological conversion process to bioenergy. In general, softwood possess the highest lignin matter, followed by hardwood and grasses. The intertwined spatial network of lignin is formed from three major phenylpropane units, namel
+
+====================================================================================================
+[复核 降级(3->2)] q_0003 | Efficient Synthesis of Furfural from Biomass Using SnCl4 as Catalyst in 
+  池内总数 26，本桶取样 4 条
+  题    : 在2019年EMIMBr/SnCl4体系中，130℃下木聚糖反应半小时的糠醛收率和最高收率分别是多少？
+  难度/分区: easy/dev | 指定来源: ['paper_db1a45d39737c05f08fff0fa'] | 该块来源: paper_db1a45d39737c05f08fff0fa
+  必需事实1: 30 min时为41.7%；1 h达到最高50.1%。
+     该块是否含此事实的原文: 是｜判据 'We attempted to convert xylan into xylose in the EMIMBr/SnCl4 system at 130 ◦C. As shown i'
+  等级: 3 -> 2 | 记录来源 exhaustive-chemistry-qrels-v2-compact
+  新理由: Directly gives 30 min 41.7% and maximum 50.1% at 1 h for xylan in EMIMBr/SnCl4 at 130 °C.
+  新引文(1): 'We attempted to convert xylan into xylose in the EMIMBr/SnCl4 system at 130 ◦C. As shown in Figure 9, the furfural yield was 41.7% after 30 min reaction. The maximum furfural yield of 50.1% was obtain'
+  原块正文前 700 字: We attempted to convert xylan into xylose in the EMIMBr/SnCl4 system at 130 ◦C. As shown in Figure 9, the furfural yield was 41.7% after 30 min reaction. The maximum furfural yield of 50.1% was obtained at 1 h. When the reaction time was prolonged to 4 h, the furfural yield declined to 33.0%. Our results showed that the optimized reaction conditions for xylose were also suitable for the conversion of xylan. Binder et al. investigated the conversion of xylan using CrCl2 in DMA–LiCl into furfural under identical reaction conditions (at 100 ◦C) with xylose [22]. However, only trace yields of furfural were obtained, suggesting that these conditions were too mild to accomplish the depolymerizatio
+
+====================================================================================================
+[复核 降级(3->2)] q_0010 | Production and Downstream Integration of 5-(Chloromethyl)furfural from L
+  池内总数 26，本桶取样 4 条
+  题    : 2023年将浓盐酸糖液直接转成CMF的研究采用什么办法实现CMF分离？
+  难度/分区: easy/dev | 指定来源: ['paper_d1a4e8bfc7c58b30dda482f2'] | 该块来源: paper_d1a4e8bfc7c58b30dda482f2
+  必需事实1: 用不混溶有机溶剂原位萃取CMF。
+     该块是否含此事实的原文: 否｜判据 'CMF is extracted in situ using immiscible organic solvents, allowing for an easy product s'
+  等级: 3 -> 2 | 记录来源 exhaustive-chemistry-qrels-v2-compact
+  新理由: Same paper's solvent-selection discussion confirming the organic solvent extracts CMF; supports the separation method.
+  新引文(1): 'The role of the organic solvent is to selectively extract and protect the CMF and furfural formed during the dehydration of saccharides.'
+  原块正文前 700 字: After the hydrolysis of hemicellulose and/or cellulose, the hydrolysate product stream (aqueous acidic saccharide solution) was placed in a sealed reactor with an organic immiscible solvent to form a biphasic system. This allows for the direct and continuous production of furfural and CMF depending on the hydrolysate composition. The DAWN preand main hydrolysates differ on their sugar composition and HCl concentration (vide supra). Solvent Selection. The role of the organic solvent is to selectively extract and protect the CMF and furfural formed during the dehydration of saccharides.59,62 The Hansen parameters allow one to study the miscibility between solvents63 and is a tool to predict th
+
+====================================================================================================
+[复核 降级(3->2)] q_0013 | The conversion of lignocellulosics to levulinic acid
+  池内总数 26，本桶取样 4 条
+  题    : 2018年《Recent Trends in the Pretreatment of Lignocellulosic Biomass》综述列出木质纤维素的哪三种主要聚合物组分？
+  难度/分区: easy/test | 指定来源: ['paper_2467240e9bec8a52db54345d'] | 该块来源: paper_fc29dce759c42c9a91aa8868
+  必需事实1: 纤维素、半纤维素和木质素。
+     该块是否含此事实的原文: 否｜判据 'LCB is mainly composed of three polymers: cellulose (C6H10O5)n, hemicellulose (C5H8O4)m, a'
+  等级: 3 -> 2 | 记录来源 exhaustive-chemistry-qrels-v2-compact
+  新理由: L1c: different paper independently states the three main polymer components of lignocellulosics, matching the asked facts.
+  新引文(1): 'Lignocellulosics are a type of biomass, and mainly consist \nof: cellulose, hemicellulose, and lignin.'
+  原块正文前 700 字: Lignocellulosic feedstocks Th e most abundant hexose sugar found in nature is glucose which is available in the polysaccharide form as starch or cellulose (in biomass) and in the disaccharide form as sucrose (derived from glucose and fructose). Other naturally occurring hexoses include galactose and mannose present in the hemicellulose component of biomass and fructose which along with glucose are found in many foods and are important dietary monosaccharides. Lignocellulosics are a type of biomass, and mainly consist of: cellulose, hemicellulose, and lignin. Lignocellulosics can be grouped into four main categories: agricultural residues (including corn stover and sugarcane bagasse), dedicat
+
+====================================================================================================
+[复核 降级(3->2)] q_0013 | Lignocellulosic Biomass: A Sustainable Platform for Production of Bio-Ba
+  池内总数 26，本桶取样 4 条
+  题    : 2018年《Recent Trends in the Pretreatment of Lignocellulosic Biomass》综述列出木质纤维素的哪三种主要聚合物组分？
+  难度/分区: easy/test | 指定来源: ['paper_2467240e9bec8a52db54345d'] | 该块来源: paper_a39f1f9d78514a2f2d7f78be
+  必需事实1: 纤维素、半纤维素和木质素。
+     该块是否含此事实的原文: 否｜判据 'LCB is mainly composed of three polymers: cellulose (C6H10O5)n, hemicellulose (C5H8O4)m, a'
+  等级: 3 -> 2 | 记录来源 exhaustive-chemistry-qrels-v2-compact
+  新理由: Same paper's own summary naming the three major components (L1b).
+  新引文(1): 'One of the most important goals is to \nfractionate lignocellulose into its three major components; \ncellulose, hemicelluloses and lignin.'
+  原块正文前 700 字: Hence, alternative sources are sought to produce valuable chemicals and polymers from renewable natural resources for decreasing the current dependence on fossil resources as well as alleviating their corresponding environmental threats. In this context, lignocellulosic biomass, as being the most abundant biorenewable biomass on earth, has a critical importance mainly owing to its worldwide avaliability and non-competitiveness with food supplies. Besides, it is significantly cheaper than crude oil and it can be produced quickly and at lower cost than other agriculturally important feedstocks. Thus, lignocellulosic biomass is considered as an ideal renewable feedstock to produce biofuels, com
+
+====================================================================================================
+[复核 升入正例(1->2/3)] q_0001 | Efficient Synthesis of Furfural from Biomass Using SnCl4 as Catalyst in 
+  池内总数 18，本桶取样 4 条
+  题    : 2019年SnCl4/EMIMBr研究比较金属盐催化剂时，木糖与离子液体各用了多少，催化剂与木糖的摩尔比是多少？
+  难度/分区: easy/dev | 指定来源: ['paper_db1a45d39737c05f08fff0fa'] | 该块来源: paper_db1a45d39737c05f08fff0fa
+  必需事实1: 木糖200 mg、EMIMBr 1000 mg，催化剂:木糖摩尔比1:10。
+     该块是否含此事实的原文: 否｜判据 'Reaction conditions: 200 mg of xylose was dissolved in 1000 mg of EMIMBr; molar ratio of c'
+  等级: 1 -> 2 | 记录来源 agent_era
+  新理由: 块内直接给出EMIMBr用量(1000 mg)与SnCl4:xylose摩尔比1:10，覆盖必需事实中的2项，但缺木糖200 mg这一项，需结合他块才能完整回答，依规范判2级。注：本块即题目指定来源论文，第八节「另一篇论文降1级」规则不触发。
+  新引文(1): '1000 mg of (EMIMBr + H2O); molar ratio of SnCl4:xylose = 1:10; 130 ◦C; 1 h.'
+  原块正文前 700 字: Molecules 2019, 24, 594 10 of 18 Figure 8. Effect of water content on the dehydration of xylose into furfural. Reaction conditions: 1000 mg of (EMIMBr + H2O); molar ratio of SnCl4:xylose = 1:10; 130 ◦C; 1 h. 2.6. Conversion of Xylan into Furfural Xylan, a polymer of xylose, is the predominant component in hemicellulose. In consequence, the conversion of xylan is critical for utilization of realistic biomass feedstocks [22,24]. Zhang et al. proposed that the (AlCln)(n−3)−complexes formed from the BMIMCl/AlCl3 system could weaken the glycosidic bonds and then facilitate the hydrolysis of xylan to xylose, which would be further dehydrated into furfural [24]. Likewise, Zhang and Zhao proposed th
+
+====================================================================================================
+[复核 升入正例(1->2/3)] q_0004 | Efficient Synthesis of Furfural from Biomass Using SnCl4 as Catalyst in 
+  池内总数 18，本桶取样 4 条
+  题    : 2019年SnCl4催化木糖实验中，将用量从5 mol%提高到10 mol%后，糠醛收率怎样变化？继续增加用量是否仍提高收率？
+  难度/分区: medium/dev | 指定来源: ['paper_db1a45d39737c05f08fff0fa'] | 该块来源: paper_db1a45d39737c05f08fff0fa
+  必需事实1: 收率由52.4%提高到71.1%，继续增加用量反而下降。
+     该块是否含此事实的原文: 否｜判据 'When the catalyst dosage increased from 5 mol% to 10 mol%, the furfural yield increased fr'
+  等级: 1 -> 2 | 记录来源 exhaustive-chemistry-qrels-v2-compact
+  新理由: Same paper/system; shows yield rises then falls, but variable is xylose loading not SnCl4 dosage.
+  新引文(1): 'When the xylose loading increased from 10 wt% to 20 wt%, the corresponding furfural yield increased from 60.0% to 71.1%. However, the furfural yield decreased with the further increase of xylose loadi'
+  原块正文前 700 字: Molecules 2019, 24, 594 8 of 18 Figure 6. The xylose conversion, furfural yield, and furfural selectivity at 130 ◦C in the EMIMBr/ SnCl4. Reaction conditions: 200 mg of xylose was dissolved in 1000 mg of EMIMBr; molar ratio of SnCl4:xylose = 1:10. 2.4. Effect of Initial Xylose Loading on the Dehydration of Xylose into Furfural The production of furfural from xylose at a high substrate loading is very important for large scale application [62]. Therefore, the effect of initial xylose loading on the dehydration of xylose into furfural was investigated. As shown in Figure 7, furfural yield was markedly affected by the initial xylose loading. When the xylose loading increased from 10 wt% to 20 w
+
+====================================================================================================
+[复核 升入正例(1->2/3)] q_0007 | Enhanced Furfural Production in Deep Eutectic Solvents Comprising Alkali
+  池内总数 18，本桶取样 4 条
+  题    : 2021年氯化胆碱/苹果酸加LiBr制糠醛研究的优化实验，温度、反应时间和LiBr质量分数各是多少？
+  难度/分区: medium/dev | 指定来源: ['paper_0cc8554d80109d5ddfe91435'] | 该块来源: paper_0cc8554d80109d5ddfe91435
+  必需事实1: 157.3℃、1.74 min、LiBr 8.19 wt.%。
+     该块是否含此事实的原文: 否｜判据 'the optimal values determined for the three parameters are: 1.74 min of reaction time, 157'
+  等级: 1 -> 2 | 记录来源 exhaustive-chemistry-qrels-v2-compact
+  新理由: L1b: describes the RSM optimization method/data basis of the same paper, but does not state the optimized values.
+  新引文(1): 'A RSM was applied to simultaneously analyze various factors (temperature, time and LiBr wt.%) and to identify the most significant parameters and their interaction, with the main goal of optimizing an'
+  原块正文前 700 字: 3.3. Xylan Hydrolysis and Dehydration to Furfural Microwave-assisted reactions were utilized to produce furfural from xylans. Microwave irradiation was utilized since it is extremely advantageous when compared with conventional heating due to the extremely rapid heating of the reaction media. Moreover, it has been reported that it can increase the yields of carbohydrates dehydration reactions [38]. The microwave-assisted reactions were carried out in a Monowave 300 microwave synthesis reactor from Anton Paar (Graz, Austria). Heating was applied as fast as possible, with a heating time always below 1 min. The xylan/DES weight ratio was fixed at 0.05 in accordance with previous optimization [3
+
+====================================================================================================
+[复核 升入正例(1->2/3)] q_0008 | Enhanced Furfural Production in Deep Eutectic Solvents Comprising Alkali
+  池内总数 18，本桶取样 4 条
+  题    : For the optimized LiBr-containing DES experiment in the 2021 alkali-halide study, distinguish the predicted furfural yield from the experimentally measured yield.
+  难度/分区: medium/dev | 指定来源: ['paper_0cc8554d80109d5ddfe91435'] | 该块来源: paper_0cc8554d80109d5ddfe91435
+  必需事实1: The prediction is 92.2%; the measured yield is 89.5 ± 0.3%.
+     该块是否含此事实的原文: 否｜判据 'the optimal values determined for the three parameters are: 1.74 min of reaction time, 157'
+  等级: 1 -> 2 | 记录来源 exhaustive-chemistry-qrels-v2-compact
+  新理由: Same optimized LiBr system/conditions but reports recycling yields, not the predicted vs measured comparison.
+  新引文(1): 'Furfural yields attained with different cycles of the DES [Ch]Cl:Malic Acid (1:3) + 5 wt.% H2O with 8.19% LiBr added at 157.3 °C and 1.74 min.'
+  原块正文前 700 字: 0 20 40 60 80 100 Cycle 1 Cycle 2 Cycle 3 Furfural Yield (%) Figure 6. Furfural yields attained with different cycles of the DES [Ch]Cl:Malic Acid (1:3) + 5 wt.% H2O with 8.19% LiBr added at 157.3 °C and 1.74 min. 3. Materials and Methods 3.1. Chemicals Cholinium chloride ([Ch]Cl) (≥99% purity), furfural (≥99 % purity) and sodium iodide (NaI, 99% purtiy) were supplied by Sigma (Ronkonkoma, NY, USA). DL-Malic acid (MA, 99.5% purity) was obtained from Panreac (Barcelona, Spain) was obtained from Acros Organics (USA). Commercial beechwood xylan (9.39 wt.% humidity) was purchased from Apollo Scientific (Stockport, UK). Sodium chloride (NaCl, 99.5% purity) and sodium bromide (NaBr, 99% purity) we
+
+====================================================================================================
+[本轮新增正例] q_0014 | Recent Trends in the Pretreatment of Lignocellulosic Biomass for Value-A
+  池内总数 158，本桶取样 4 条
+  题    : 2018年预处理综述将现有木质纤维素预处理方法分为哪四类？
+  难度/分区: easy/test | 指定来源: ['paper_2467240e9bec8a52db54345d'] | 该块来源: paper_2467240e9bec8a52db54345d
+  必需事实1: 物理、化学、物理化学和生物方法。
+     该块是否含此事实的原文: 是｜判据 'The pretreatment techniques currently in use, may be broadly classified as physical, chemi'
+  等级: None -> 3 | 记录来源 exhaustive-chemistry-qrels-v2-compact
+  新理由: States the four pretreatment classes.
+  新引文(1): 'The pretreatment techniques currently in use,\nmay be broadly classified as physical, chemical, physicochemical,\nand biological processes.'
+  原块正文前 700 字: Pretreatments Trends of Lignocelluloses basis (Hussain et al., 2017; Oliva et al., 2017). Amidst the existing alternative sources for energy, bioenergy derived from the renewable and sustainable resources, LCB for the production of biofuels like biodiesel/ biogasoline, high value chemicals such as ethanol fuels, acids, saccharides, phenols, aldehydes, xylitol, and cellulose acetate with low carbon emissions are the most promising (Behera et al., 2014; Chen et al., 2017). LCB involves organic materials including agricultural crops and agrowastes, algae, grass, wood all of which are abundant and renewable resources. In the past two decades, LCB such as wheat straw, rice straw, sugarcane bagass
+
+====================================================================================================
+[本轮新增正例] q_0024 | Furfural and 5-Hydroxymethylfurfural Production from Sugar Mixture Using
+  池内总数 158，本桶取样 4 条
+  题    : 2021年糖混合物/DES-MIBK论文为什么把羧酸型DES称为兼具溶剂和催化剂作用的介质？
+  难度/分区: medium/test | 指定来源: ['paper_107512d3ed43f43f9bd8f45e'] | 该块来源: paper_107512d3ed43f43f9bd8f45e
+  必需事实1: 羧酸作为氢键供体赋予DES酸性，因此DES本身兼具溶剂和催化剂作用。
+     该块是否含此事实的原文: 是｜判据 'Applying only DES in a conversion reaction relies on the carboxylic acid acting as an HBD,'
+  等级: None -> 3 | 记录来源 exhaustive-chemistry-qrels-v2-compact
+  新理由: Same paper's introduction, directly supports the dual solvent/catalyst role via carboxylic acid HBD.
+  新引文(1): 'Applying only DES in a conversion reaction relies on the carboxylic acid acting as an HBD, which gives the DES acidic characteristics, and therefore, the DES itself can act as both the solvent and the'
+  原块正文前 700 字: 1. Introduction Synthesis of high-value platform chemicals from lignocellulosic carbohydrates is a major step to achieve more sustainable processes for biorefineries. 5-Hydroxymethylfurfural (HMF) and furfural are considered key building blocks in biorefineries since they are produced from glucose and xylose, both present in lignocellulosic biomass, and they can be used as a starting material to produce versatile bulk chemicals, solvents, polymers, and fuels.[1,2] Current ways to produce HMF and furfural generally involve acid catalysts in aqueous media or solvents such as ionic liquids (ILs).[3] Recently, deep eutectic solvents (DESs) have gathered much interest due to similarly tunable pro
+
+====================================================================================================
+[本轮新增正例] q_0032 | Highly selective hydrogenation of furfural to furfuryl alcohol over Pt n
+  池内总数 158，本桶取样 4 条
+  题    : Why did nanosheet-supported Pt perform well in the 2016 aqueous furfural hydrogenation study?
+  难度/分区: medium/test | 指定来源: ['paper_1910bac59c2e4dc660743b72'] | 该块来源: paper_1910bac59c2e4dc660743b72
+  必需事实1: Large specific surface area, uniformly dispersed Pt nanoparticles and stronger furfural adsorption.
+     该块是否含此事实的原文: 否｜判据 'The large specific surface area, uniform dispersion of Pt nanoparticles and the stronger f'
+  等级: None -> 2 | 记录来源 exhaustive-chemistry-qrels-v2-compact
+  新理由: Same paper's comparative data showing support nature (nanosheets) enhances Pt activity, direct evidence for the performance claim.
+  新引文(1): 'Pt@TECN exhibited higher activity than Pt@C (50.6% yield of furfural alcohol within 1 h) under identical conditions. The results implied that the nature of the support had a \nnoticeable impact in the '
+  原块正文前 700 字: 1 h. The enhanced rate was presumably due to the activation of Pt@ TECN by reduction of Pt2+ to Pt0 in the initial experiment. The result was partly supported by XPS analysis, which showed that the Pt0 content in the used catalyst was higher than that in the fresh catalyst (see Figure S2 in the supplementary information). As the reaction continues, the concentration of furfural decreased gradually, while the concentration of furfuryl alcohol increased correspondingly. After reaction for 5 h, furfural was converted completely to furfuryl alcohol with about 99% yield via hydrogenation. It was worth mentioning that no other product was observed during the whole process. The results demonstrated
+
+====================================================================================================
+[本轮新增正例] q_0042 | Furfural and 5-Hydroxymethylfurfural Production from Sugar Mixture Using
+  池内总数 158，本桶取样 4 条
+  题    : Compare the solvent strategy and catalyst strategy of the 2021 phosphoric-acid fractionation study and the 2021 ChCl/GA DES/MIBK sugar study; does the latter require an additional catalyst?
+  难度/分区: hard/test | 指定来源: ['paper_07f06156408855a516ea618b', 'paper_107512d3ed43f43f9bd8f45e'] | 该块来源: paper_107512d3ed43f43f9bd8f45e
+  必需事实1: The phosphoric-acid study uses water/2-MTHF with recyclable phosphoric acid.
+     该块是否含此事实的原文: 否｜判据 'This paper explored the disentanglement of lignocellulose into hemicellulose-derived sugar'
+  必需事实2: The other study uses aqueous ChCl/GA DES without an additional catalyst.
+     该块是否含此事实的原文: 否｜判据 'Choline chloride (ChCl) / glycolic acid (GA) deep eutectic solvent (DES) media with high w'
+  等级: None -> 3 | 记录来源 exhaustive-chemistry-qrels-v2-compact
+  新理由: Directly reports the aqueous ChCl/GA DES/MIBK sugar system without additional catalyst, supporting f2.
+  新引文(1): 'When a DES was formed from ChCl, GA, and a small quantity of water, the highest yields were achieved: 30% for furfural and 4% for HMF.'
+  原块正文前 700 字: 2. Results and Discussion Control experiments with various aqueous ChCl and GA systems and with a ChCl/GA/H2O (1:3:0.5) DES were performed to demonstrate the influence of acidic DESs on carbohydrate conversion (Figure 1). All control reactions were carried out using a sugar mixture as the feed, the biphasic system with MIBK as the extractive phase, 12.5 mins as the reaction time, and 160°C as the reaction temperature. Reaction with pure water as the reactive phase gave minor yields (<3%). When ChCl was added to water, both yields increased but were still below 10%. Glycolic acid in water was a more effective catalyst than ChCl for furfural production (yield increased to 22%), but the HMF yie

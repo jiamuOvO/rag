@@ -1,0 +1,92 @@
+[
+ {
+  "n": 76, "query_id": "q_0013", "doc_id": "chk_5bdc404aaf3aa2d43a2e88b3",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "Lignocellulosic biomass generally comprises three types of biopolymers, namely cellulose, hemicellulose, and lignin.",
+  "explanation": "块来源为 paper_f0e625aa9a89da78815e3099（Frontiers in Chemistry 2018 Den et al.），非题目点名的 2018 综述。该块独立列出同样三种生物聚合物，按规范 §八 规则 1（另一篇论文独立陈述相同事实）最高 1 级，不得判 2。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 77, "query_id": "q_0013", "doc_id": "chk_837fe3919547666c018f0fcf",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "Apart from the three main biopolymer components, namely, cellulose, hemicellulose and lignin, lignocellulosic biomass also contains traces of extractive and mineral ash.",
+  "explanation": "块来源为 paper_a23d5abb9f77edeb68352119，非指定 2018 综述。独立陈述三种主要生物聚合物，按 §八 规则 1 最高 1 级（旧理由自称 L1c 同类对照，亦印证）。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 78, "query_id": "q_0013", "doc_id": "chk_949d6e15c39aa1680eb0597e",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "biomass transformation into energy products, and generation of valuable chemicals from biomass-derived components (e.g., lignin, cellulose, and hemicellulose).",
+  "explanation": "块来源为 paper_f0e625aa9a89da78815e3099，非指定 2018 综述。以举例形式列出三种组分，属另一篇论文独立陈述相同概念，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 79, "query_id": "q_0013", "doc_id": "chk_9e49aa0e6a155dbc4c439cf7",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "One of the most important goals is to fractionate lignocellulose into its three major components; cellulose, hemicelluloses and lignin.",
+  "explanation": "块来源为 paper_a39f1f9d78514a2f2d7f78be，非指定 2018 综述。独立给出三种主要组分，按 §八 规则 1 最高 1 级（旧理由自称 L1b，但该文并非本题指定来源，故只能按他文对照处理）。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 80, "query_id": "q_0013", "doc_id": "chk_a4cfb2dac7c22e914f7aa355",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "Biomass pretreatment results in cellulose-rich solids, frequently devoid of extractives/ash, and reduction of hemicellulose and lignin components depending on the applied techniques.",
+  "explanation": "块来源为 paper_d5bfa1893984e7871d3fd568（木质素靶向预处理综述），非指定 2018 综述。块内以预处理结果形式点到 cellulose / hemicellulose / lignin 三组分，属他文独立陈述，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 81, "query_id": "q_0013", "doc_id": "chk_b4a63245687199605240fc88",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "Conclusions: A two-step process (reductive catalytic fractionation followed by FeCl3 catalysis) allows the fractiona‐ tion of all the three biopolymers (cellulose, hemicellulose, and lignin) in Eucalyptus biomass",
+  "explanation": "块来源为 paper_81924125a737b5a88e728e25（Eucalyptus 论文），非指定 2018 综述；块主体为结论句尾 + CC 许可声明与作者单位（书目性元数据），仅结论一句点到三种生物聚合物。仍属他文独立陈述相同事实 → 按 §八 规则 1 判 1（不给 0，因确有该项组分的实质陈述）。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 82, "query_id": "q_0013", "doc_id": "chk_bd32559701129098222b039e",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "Table 1. Chemical composition of different types of lignocellulosic biomass. Lignocellulosic biomass % Cellulose % Hemicelluloses % Lignin Sugarcane bagasse 40 24 25 ...",
+  "explanation": "块来源为 paper_dc3af146aa40e29afdfa9838，非指定 2018 综述。Table 1 以 %Cellulose/%Hemicelluloses/%Lignin 三列枚举组分，属他文独立陈述相同事实，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 83, "query_id": "q_0013", "doc_id": "chk_d240b88640bce7f3b815a13f",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "Pretreatment of these biomass depolymerizes the complex lignin and cellulosic structures and separate lignin from cellulose and hemicellulose via hydrolysis. ｜ the unique binding affinities of a luminescent oligothiophenes to lignin, cellulose and hemicellulose",
+  "explanation": "块来源为 paper_f0e625aa9a89da78815e3099，非指定 2018 综述。图注与分析段两次并列 lignin / cellulose / hemicellulose，属他文独立陈述，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 84, "query_id": "q_0013", "doc_id": "chk_dae54923690abc9482389d41",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "Generally, lignocellulosic biomass consists of 35–50% cellulose, 20–35% hemicellulose, and 10–25% lignin. ｜ One of the most important goals of lignocellulosic biomass refining is to fractionate lignocellulose into its three major components; cellulose, hemicelluloses and lignin.",
+  "explanation": "块来源为 paper_a39f1f9d78514a2f2d7f78be，非指定 2018 综述。两处并列三种组分（含质量占比），仍为他文独立陈述相同事实，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ },
+ {
+  "n": 85, "query_id": "q_0013", "doc_id": "chk_df24437e6c790326b9602f5f",
+  "old_grade": 2, "final_grade": 1, "changed": true,
+  "fact_checks": [{"fact": 1, "verdict": "参考性叙述"}],
+  "actual_evidence": "Lignocellulosics are a type of biomass, and mainly consist of: cellulose, hemicellulose, and lignin. ｜ Table 1. Chemical analysis of selected lignocellulosic sources. Cellulose (wt%) Hemicellulose (wt%) Lignin (wt%)",
+  "explanation": "块来源为 paper_fc29dce759c42c9a91aa8868，非指定 2018 综述。正文与 Table 1 均给三种组分，属他文独立陈述，按 §八 规则 1 最高 1 级。旧判 2 违反 §八 → 改为 1。",
+  "review_type": "Agent review",
+  "review_basis": "原题+必需事实+硬性来源限定+完整原块阅读+§八来源限定规则"
+ }
+]

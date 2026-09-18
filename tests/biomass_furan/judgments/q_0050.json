@@ -1,0 +1,360 @@
+{
+ "query_id": "q_0050",
+ "judgments": [
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_1093843a7109e88c64fcccb5",
+   "relevance": 3,
+   "reason": "Directly reports site functions (Pt activates H2, Nb activates C–OH, neither activates C=O) and the resulting >99% MF selectivity at complete conversion, matching all three facts.",
+   "evidence_quotes": [
+    "The Pt atom sites can only activate the H2, and the Nb sites solely activate C–OH in the reaction, while none of the Nb and Pt sites can activate the C=O group. Thus, the selectivity of MF is exceptionally high."
+   ],
+   "fact_ids": [
+    "f1",
+    "f2",
+    "f3"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "c66c6a5ae2b79d4cb46746d82d156c0d25f30dbabf9bde2d5f77379f614eb614"
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_13deb44987f4d098b0753176",
+   "relevance": 3,
+   "reason": "Reports Pt/Nb site functions and links them to high MF selectivity.",
+   "evidence_quotes": [
+    "The Pt sites were responsible for the activation of H2 and the Nb sites near Pt sites selectively activated the C–OH group in HMF, and thus very high selectivity was achieved."
+   ],
+   "fact_ids": [
+    "f2",
+    "f3"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "a506da8ec215270eedc4c1b151a4f1710d60a694f18b8e50f6c654d92eafde25"
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_1be22b32a04367dba4bff916",
+   "relevance": 1,
+   "reason": "L1d: background on HMF/furfural hydrogenation selectivity, no asked numbers.",
+   "evidence_quotes": [
+    "It has been demonstrated that the selectivity to hydrogenation or hydrogenolysis products is influenced by the nature of the catalysts, applied potential or current density, electrolyte pH, and initial reactant concentration."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "81b3070aea8d2459a4fcf901440065f733a2ef2078f69dd82b7f15c347fe8651"
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_1ed219cb4bb3138cf0b467a4",
+   "relevance": 2,
+   "reason": "Directly states Pt activates H2 and Nb activates C-OH, and links site functions to MF selectivity.",
+   "evidence_quotes": [
+    "The Pt atom was responsible for the activation of H2 and the Nb sites activated C–OH. Following this mechanism, it can be deduced that the selectivity of MF should be independent of the characteristics of metal for SACs."
+   ],
+   "fact_ids": [
+    "f2",
+    "f3"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "answerability_conflict": false,
+   "raw_response_id": "81b3070aea8d2459a4fcf901440065f733a2ef2078f69dd82b7f15c347fe8651",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 2,
+    "changed": true,
+    "explanation": "与 n=97 同块（同一 doc_id 服务于 q_0049/q_0050）：命中必需事实 2；必需事实 3 只到 >99% 选择性、缺 complete conversion；必需事实 1 不出现 → 2。旧判 3 过高。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_2757014d17432387f6878143",
+   "relevance": 3,
+   "reason": "Directly states why H2 reduction of C-OH to MF is difficult (C=O favored kinetically and thermodynamically).",
+   "evidence_quotes": [
+    "the selective hydrogenation of the C–OH group in HMF to 5-methylfurfural (MF) has not been realized using H2 as the reducing agent, since in general the C=O bond is easier reduced than the C–OH bond in the hydrogenation of HMF from both kinetic and thermodynamic aspects15."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "a506da8ec215270eedc4c1b151a4f1710d60a694f18b8e50f6c654d92eafde25"
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_458fda574db654e6641f0bf0",
+   "relevance": 3,
+   "reason": "Gives MF selectivity >99% at complete conversion and the Pt/Nb site functions.",
+   "evidence_quotes": [
+    "The selectivity to MF can be as high as >99% at complete conversion. The unusual and unique property of the SACs for the reaction originates from the excellent cooperation of the Nb and Pt sites near the interface in the catalysts. The Pt atom sites can only activate the H2, and the Nb sites solely activate C–OH in the reaction, while none of the Nb and Pt sites can activate the C=O group."
+   ],
+   "fact_ids": [
+    "f2",
+    "f3"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "a506da8ec215270eedc4c1b151a4f1710d60a694f18b8e50f6c654d92eafde25"
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_491ef9b9b9dd1387c397b901",
+   "relevance": 0,
+   "reason": "doc2: same paper, bibliography list only",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "a506da8ec215270eedc4c1b151a4f1710d60a694f18b8e50f6c654d92eafde25"
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_703f54f97c4e7ee879d93ae0",
+   "relevance": 0,
+   "reason": "doc5: different paper, HMF oxidation not hydrogenation",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "81b3070aea8d2459a4fcf901440065f733a2ef2078f69dd82b7f15c347fe8651"
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_86bc4e0d1009b89cf8767515",
+   "relevance": 2,
+   "reason": "Explains thermodynamic difficulty of stopping at MF (C=O vs further hydrogenation) and reports >99% MF selectivity at ~100% conversion.",
+   "evidence_quotes": [
+    "The quantum chemical calculations demonstrated that HMF could be hydrogenated to produce MF and DMF with Gibbs free energy (ΔG) of −1.37 and −2.93 eV, respectively (Fig. 4a and Supplementary Table 3), indicating that MF is a thermodynamically unstable compound in the reaction. Even if MF is produced from the hydrogenation of HMF, it has the thermodynamic potential to be further hydrogenated to DMF."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "1714f59c41a4a9a434d676baf4c32011b31d5d22a60b69b7b5479f17d7fa1e2f"
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_9efa9e4ab2005850f0c650fb",
+   "relevance": 0,
+   "reason": "doc0: bibliography list only; doc1: same paper, intro/characterization not mechanism; doc2: same paper, SAC vs nanoparticle comparison; doc3: same paper, DFT adsorption/H2 pathway not the difficulty rationale",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "1714f59c41a4a9a434d676baf4c32011b31d5d22a60b69b7b5479f17d7fa1e2f"
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_a4b508537c897114032882d3",
+   "relevance": 0,
+   "reason": "doc0: bibliography list only; doc1: same paper, intro/characterization not mechanism; doc2: same paper, SAC vs nanoparticle comparison; doc3: same paper, DFT adsorption/H2 pathway not the difficulty rationale",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "1714f59c41a4a9a434d676baf4c32011b31d5d22a60b69b7b5479f17d7fa1e2f"
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_aa3638fdf650f523dd0bedfb",
+   "relevance": 2,
+   "reason": "States C=O is easier reduced than C-OH kinetically and thermodynamically, explaining difficulty.",
+   "evidence_quotes": [
+    "the selective hydrogenation of the C–OH group in HMF to 5-methylfurfural (MF) has not been realized using H2 as the reducing agent, since in general the C=O bond is easier reduced than the C–OH bond in the hydrogenation of HMF from both kinetic and thermodynamic aspects"
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "81b3070aea8d2459a4fcf901440065f733a2ef2078f69dd82b7f15c347fe8651"
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_bb0bf9064a5ad067cf25ae4b",
+   "relevance": 3,
+   "reason": "Same abstract text with full metadata; directly supports all three facts.",
+   "evidence_quotes": [
+    "hydrogenation of C=O bond in HMF is more favourable than C–OH both kinetically and thermodynamically, and this route has not been realized... the SACs can efficiently catalyze the hydrogenation of HMF to MF using H2 as the reducing agent with MF selectivity of >99% at complete conversion... The Pt atoms are responsible for the activation of H2 and the Nb sites activate C-OH in the reaction."
+   ],
+   "fact_ids": [
+    "f1",
+    "f2",
+    "f3"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_bf8f76f2861f9cfa75746a02",
+   "relevance": 1,
+   "reason": "L1d: background scheme on furfural/HMF reduction pathways, no data on the 2021 SAC system or its selectivity.",
+   "evidence_quotes": [
+    "Scheme 2. Key hydrogenation and hydrogenolysis products of furfural and HMF."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "c66c6a5ae2b79d4cb46746d82d156c0d25f30dbabf9bde2d5f77379f614eb614"
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_c189cd855d6d974fa4f8ee42",
+   "relevance": 3,
+   "reason": "Abstract directly states difficulty, site functions, and >99% MF selectivity.",
+   "evidence_quotes": [
+    "hydrogenation of C=O bond in HMF is more favourable than C–OH both kinetically and thermodynamically, and this route has not been realized. In this work, we prepare isolated single atomic catalysts (SACs) Pt1/Nb2O5-Ov, Pd1/Nb2O5-Ov, and Au1/Nb2O5-Ov... the SACs can efficiently catalyze the hydrogenation of HMF to MF using H2 as the reducing agent with MF selectivity of >99% at complete conversion... The Pt atoms are responsible for the activation of H2 and the Nb sites activate C-OH in the reaction."
+   ],
+   "fact_ids": [
+    "f1",
+    "f2",
+    "f3"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_caf71ea1191507a4dcae4820",
+   "relevance": 0,
+   "reason": "doc2,3: electrocatalytic furfural reduction, different system; doc4: biomass pyrolysis AAEM review, unrelated",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_d717c64c437981eff08c546f",
+   "relevance": 0,
+   "reason": "doc2,3: electrocatalytic furfural reduction, different system; doc4: biomass pyrolysis AAEM review, unrelated",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_df78a5c435d9c7f4639ab865",
+   "relevance": 2,
+   "reason": "Reports >99% MF selectivity at complete conversion for the SAC.",
+   "evidence_quotes": [
+    "Pt1/Nb2O5-Ov could efficiently catalyze the selective hydrogenation of HMF to MF with >99% selectivity at complete conversion of HMF in 4 h."
+   ],
+   "fact_ids": [
+    "f3"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_semantic_review_incomplete",
+   "answerability_conflict": false,
+   "raw_response_id": "81b3070aea8d2459a4fcf901440065f733a2ef2078f69dd82b7f15c347fe8651",
+   "review_type": "Agent review",
+   "agent_review": {
+    "old_grade": 3,
+    "final_grade": 2,
+    "changed": true,
+    "explanation": "与 n=98 同块：必需事实 3 完整命中（SAC 完全转化时 MF 选择性 >99%，且在 4 h/变换温度氢压下稳定）；必需事实 1 与 2 在本块不出现 → 2。旧判 3 过高。",
+    "basis": "原题+必需事实+硬性来源限定+完整原块阅读"
+   }
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_e504dcfd3d3c774ad2e0277e",
+   "relevance": 0,
+   "reason": "doc2,3: electrocatalytic furfural reduction, different system; doc4: biomass pyrolysis AAEM review, unrelated",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_e99a090e45357de917d22420",
+   "relevance": 0,
+   "reason": "doc0: bibliography list only; doc1: same paper, intro/characterization not mechanism; doc2: same paper, SAC vs nanoparticle comparison; doc3: same paper, DFT adsorption/H2 pathway not the difficulty rationale",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "1714f59c41a4a9a434d676baf4c32011b31d5d22a60b69b7b5479f17d7fa1e2f"
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_f073e3273982f5a713fc56f3",
+   "relevance": 0,
+   "reason": "doc0: bibliography list only; doc1: same paper, intro/characterization not mechanism; doc2: same paper, SAC vs nanoparticle comparison; doc3: same paper, DFT adsorption/H2 pathway not the difficulty rationale",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "1714f59c41a4a9a434d676baf4c32011b31d5d22a60b69b7b5479f17d7fa1e2f"
+  },
+  {
+   "query_id": "q_0050",
+   "doc_id": "chk_f911ff217295a9db6e89024f",
+   "relevance": 1,
+   "reason": "L1d: background on preferential C=O hydrogenation over other bonds, no HMF-to-MF numbers.",
+   "evidence_quotes": [
+    "The results indicate that the hydrogenation of the carbonyl bond efficiently proceeds via the heterolytic activation of hydrogen over the metal-oxygen site pair followed by the addition of the proton and hydride to the C and O atoms of the carbonyl."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "a506da8ec215270eedc4c1b151a4f1710d60a694f18b8e50f6c654d92eafde25"
+  }
+ ]
+}

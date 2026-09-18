@@ -1,0 +1,39 @@
+{
+ "query_id": "q_0040",
+ "judgments": [
+  {
+   "query_id": "q_0040",
+   "doc_id": "chk_5390b5325ecf463c4e9497d7",
+   "relevance": 3,
+   "reason": "Directly states cellulose water insolubility with pH exceptions and solubility in ILs/NMMO.",
+   "evidence_quotes": [
+    "This polymer is insoluble in water unless at extremely low or high pH levels. However, it is soluble in solvents like ionic liquids (ILs) and N-methylmorpholine-N-oxide (NMMO) (Liu et al., 2016)."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "38e70f446e96e5494b3f12a6549b803334050504171a9d354ff303b32c5497ce"
+  },
+  {
+   "query_id": "q_0040",
+   "doc_id": "chk_5df905ea50c0c8b3f5c8b61d",
+   "relevance": 3,
+   "reason": "Directly states cellulose water insolubility with pH exceptions and solubility in ILs/NMMO.",
+   "evidence_quotes": [
+    "This polymer is insoluble in water unless at extremely low or high pH levels. However, it is soluble in solvents like ionic liquids (ILs) and N-methylmorpholine-N-oxide (NMMO) (Liu et al., 2016)."
+   ],
+   "fact_ids": [
+    "f1"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "38e70f446e96e5494b3f12a6549b803334050504171a9d354ff303b32c5497ce"
+  }
+ ]
+}

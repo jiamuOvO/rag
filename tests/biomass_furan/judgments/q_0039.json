@@ -1,0 +1,452 @@
+{
+ "query_id": "q_0039",
+ "judgments": [
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_1a55c8728cce5dc368a01e1d",
+   "relevance": 0,
+   "reason": "doc1: xylose hydrolysis review, different reaction; doc3: HMF synthesis green metrics, unrelated",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "82bc638f45523b9824393dbb024d8be6c56c7c29f63d426fec2ca31be6ba1243"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_1e2971b44f0a7fc02acdced8",
+   "relevance": 0,
+   "reason": "doc0: different paper, HMF hydrogenation over Pt1/Nb2O5; doc2: different paper, furfural from sugars in DES; doc3: other paper's review of dehydration catalysts",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "863c495f74a17e3ab2ca0bfb494e871fb81d2f795a65fc3dbbe7f6d4cb87c780"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_1ed219cb4bb3138cf0b467a4",
+   "relevance": 0,
+   "reason": "doc1: same paper, unrelated HMF/Nb2O5 topic; doc3: MXene furfural, different catalyst/system; doc4: Co@CoO HMF hydrogenolysis, different system",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d8ba6b903089f29b0ba97cbdf9cc613499b276f54f24e57f1ce35b72f36c037b"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_212f072413616a242ffb333e",
+   "relevance": 0,
+   "reason": "doc0,2: same paper, HMF hydrogenation over Pt1/Nb2O5, unrelated to Pt/g-C3N4 furfural; doc1: hydrothermal furfural/CNC process, different system; doc4: review of hemicellulose hydrolysis, different reaction",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "2f0ec864d3ee7bf4ccbb7b553b7e2679b3dd3f60458dac468e54ea13560f7ffa"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_2ee25fc6c85bb69cf2ab47b4",
+   "relevance": 0,
+   "reason": "doc1: different paper, xylan-to-furfural in ionic liquid; doc3: different paper, Ti-MXene catalyst in 2-propanol",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "239c50217a9c2c5fec4c30e146429a28103f2fd336e0318f3033952fe1c3a677"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_39cb022b578f1757e4830bf0",
+   "relevance": 1,
+   "reason": "L1b: same paper's method/data basis, but no 5 h yield/selectivity numbers.",
+   "evidence_quotes": [
+    "In this work, g-C3N4 nanosheets were synthesized from bulk g-C3N4 by a thermal exfoliation method, and the as-prepared nanomaterials were used as a basic support for loading Pt nanoparticles."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "863c495f74a17e3ab2ca0bfb494e871fb81d2f795a65fc3dbbe7f6d4cb87c780"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_3dd660411d45be7c8efce7ec",
+   "relevance": 3,
+   "reason": "Directly reports the 100 °C/1 MPa H2/water conditions, bulk 60.2% yield, and nanosheet complete conversion with >99% selectivity after 5 h.",
+   "evidence_quotes": [
+    "The reaction was firstly conducted at 100 °C under 1 MPa H2 in water. When 5%Pt@g-C3N4 was used as the catalyst, furfuryl alcohol was found to be the main product with 60.2% yield based on furfural within 5 h (Entry 3, Table 1). ... when g-C3N4 nanosheets was used as the support for loading Pt nanoparticles, significant improvement of activity with complete conversion and high selectivity of furfuryl alcohol of >99% could be achieved in 5 h (Entry 7, Table 1)."
+   ],
+   "fact_ids": [
+    "f1",
+    "f2",
+    "f3"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_3e0dc46c1ee855297b3d0bd3",
+   "relevance": 3,
+   "reason": "Directly gives bulk 5%Pt@CN 60.9% conversion and 5%Pt@TECN >99% conversion/>99% selectivity after 5 h in water at 100 °C, 1.0 MPa H2.",
+   "evidence_quotes": [
+    "3\n5% Pt@CN\n60.9\n>99\n46\n4\n0.5% Pt@TECN\n32.1\n>99\n242\n5\n1% Pt@TECN\n49.4\n>99\n186\n6\n2.5% Pt@TECN\n95.9\n>99\n145\n7\n5% Pt@TECN\n>99\n>99\n75"
+   ],
+   "fact_ids": [
+    "f1",
+    "f2",
+    "f3"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "863c495f74a17e3ab2ca0bfb494e871fb81d2f795a65fc3dbbe7f6d4cb87c780"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_4c46dc16bc203f7290b4cd2a",
+   "relevance": 0,
+   "reason": "doc1: same paper, unrelated HMF/Nb2O5 topic; doc3: MXene furfural, different catalyst/system; doc4: Co@CoO HMF hydrogenolysis, different system",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d8ba6b903089f29b0ba97cbdf9cc613499b276f54f24e57f1ce35b72f36c037b"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_59b0884caccff0d5a8d1e75c",
+   "relevance": 2,
+   "reason": "Direct 5 h conversion/selectivity for 5%Pt@TECN nanosheet support; must be combined with bulk-support yield.",
+   "evidence_quotes": [
+    "As the Pt contents increased from 0.5 wt% to 5.0 wt%, the conversion of furfural after 5 h enhanced from 32.1% to 99% with high furfuryl alcohol selectivity of >99% (Entries 4–7, Table 1)."
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "239c50217a9c2c5fec4c30e146429a28103f2fd336e0318f3033952fe1c3a677"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_66e6c4ab587d6f0853cc37f9",
+   "relevance": 0,
+   "reason": "doc3: other paper's review on furfural production from xylose",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_74461aa8106ad59a3e7f3982",
+   "relevance": 2,
+   "reason": "Same paper, same catalyst/water system at 100 °C; supports reaction conditions (L1a/L1b).",
+   "evidence_quotes": [
+    "the capability of recycling 5%Pt@TECN catalysts was studied by the hydrogenation of furfural at 100 °C in water."
+   ],
+   "fact_ids": [
+    "f3"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "Agent_review_completed",
+   "answerability_conflict": false,
+   "raw_response_id": "82bc638f45523b9824393dbb024d8be6c56c7c29f63d426fec2ca31be6ba1243",
+   "review_note": "反应温度/溶剂有据、压力与对照数据缺失 → 维持 2",
+   "review_verdict": "部分"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_82746124c4d8439e62db7f22",
+   "relevance": 1,
+   "reason": "L1b: same paper's catalyst preparation basis, no 5 h yield/selectivity numbers.",
+   "evidence_quotes": [
+    "For comparison, bulk g-C3N4 supported Pt catalyst and activated carbon supported Pt catalyst were prepared in a similar procedure and denoted as Pt@gCN and Pt@C, respectively."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "239c50217a9c2c5fec4c30e146429a28103f2fd336e0318f3033952fe1c3a677"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_86d0eecaed56b884bdba46b2",
+   "relevance": 3,
+   "reason": "Directly reports the 100 °C/1 MPa H2/water conditions, bulk 60.2% yield, and nanosheet complete conversion with >99% selectivity after 5 h.",
+   "evidence_quotes": [
+    "The reaction was firstly conducted at 100 °C under 1 MPa H2 in water. When 5%Pt@g-C3N4 was used as the catalyst, furfuryl alcohol was found to be the main product with 60.2% yield based on furfural within 5 h (Entry 3, Table 1). ... when g-C3N4 nanosheets was used as the support for loading Pt nanoparticles, significant improvement of activity with complete conversion and high selectivity of furfuryl alcohol of >99% could be achieved in 5 h (Entry 7, Table 1)."
+   ],
+   "fact_ids": [
+    "f1",
+    "f2",
+    "f3"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_8781e312c8a17f3f184b7414",
+   "relevance": 0,
+   "reason": "doc0: different paper, HMF hydrogenation over Pt1/Nb2O5; doc2: different paper, furfural from sugars in DES; doc3: other paper's review of dehydration catalysts",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "863c495f74a17e3ab2ca0bfb494e871fb81d2f795a65fc3dbbe7f6d4cb87c780"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_8cc5cec9a375be2393d7efb8",
+   "relevance": 0,
+   "reason": "doc1: different paper, xylan-to-furfural in ionic liquid; doc3: different paper, Ti-MXene catalyst in 2-propanol",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "239c50217a9c2c5fec4c30e146429a28103f2fd336e0318f3033952fe1c3a677"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_901909ef8b9f367a79c93c09",
+   "relevance": 1,
+   "reason": "L1b: same paper's material preparation, no reaction results.",
+   "evidence_quotes": [
+    "Bulk g-C3N4 was first obtained by thermal polymerization of dicyandiamide at 550 °C. Then the bulk materials were delaminated to reduce the thickness to several nanometers by thermal oxidation etching process in air, thus yielding nanosheets."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "239c50217a9c2c5fec4c30e146429a28103f2fd336e0318f3033952fe1c3a677"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_9326f8e75cf43d68ec9232fb",
+   "relevance": 3,
+   "reason": "Directly reports the 5 h, 100 °C, 1 MPa H2 water run over Pt/g-C3N4 nanosheet (TECN) catalyst with >99% conversion and >99% furfuryl alcohol selectivity.",
+   "evidence_quotes": [
+    "Table 3. Effect of solvent on furfural hydrogenation over 5%Pt@TECN after 5 h reaction at 100 °Ca. aReaction conditions: Pt@TECN (0.24 mol% Pt relative to substrate), 20 mL solvents, 0.4 mL furfural, 1.0 MPa H2, 100 °C, 5 h."
+   ],
+   "fact_ids": [
+    "f2",
+    "f3"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d8ba6b903089f29b0ba97cbdf9cc613499b276f54f24e57f1ce35b72f36c037b"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_998a8c5dcb670c8da134b838",
+   "relevance": 0,
+   "reason": "doc1: xylose hydrolysis review, different reaction; doc3: HMF synthesis green metrics, unrelated",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "82bc638f45523b9824393dbb024d8be6c56c7c29f63d426fec2ca31be6ba1243"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_a6c8ba74e59565fc9abca5bd",
+   "relevance": 0,
+   "reason": "doc0,2: same paper, HMF hydrogenation over Pt1/Nb2O5, unrelated to Pt/g-C3N4 furfural; doc1: hydrothermal furfural/CNC process, different system; doc4: review of hemicellulose hydrolysis, different reaction",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "2f0ec864d3ee7bf4ccbb7b553b7e2679b3dd3f60458dac468e54ea13560f7ffa"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_c5cf24b6c854add07ffc9812",
+   "relevance": 2,
+   "reason": "Same paper, nanosheet Pt@TECN 5 h result; supports complete conversion and ~99% yield (selectivity), part of the bulk/nanosheet comparison.",
+   "evidence_quotes": [
+    "After reaction for 5 h, furfural was converted completely to furfuryl alcohol with about 99% yield via hydrogenation."
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "82bc638f45523b9824393dbb024d8be6c56c7c29f63d426fec2ca31be6ba1243"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_ca518f4edea642ce661c7f9b",
+   "relevance": 0,
+   "reason": "doc0,2: same paper, HMF hydrogenation over Pt1/Nb2O5, unrelated to Pt/g-C3N4 furfural; doc1: hydrothermal furfural/CNC process, different system; doc4: review of hemicellulose hydrolysis, different reaction",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "2f0ec864d3ee7bf4ccbb7b553b7e2679b3dd3f60458dac468e54ea13560f7ffa"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_d57d83960dc8bc64370f81cf",
+   "relevance": 0,
+   "reason": "doc1: same paper, unrelated HMF/Nb2O5 topic; doc3: MXene furfural, different catalyst/system; doc4: Co@CoO HMF hydrogenolysis, different system",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d8ba6b903089f29b0ba97cbdf9cc613499b276f54f24e57f1ce35b72f36c037b"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_dc64698ea1bca06a22e862a2",
+   "relevance": 3,
+   "reason": "Directly reports the 100 °C/1 MPa H2/water conditions, bulk 60.2% yield, and nanosheet complete conversion with >99% selectivity after 5 h.",
+   "evidence_quotes": [
+    "The reaction was firstly conducted at 100 °C under 1 MPa H2 in water. When 5%Pt@g-C3N4 was used as the catalyst, furfuryl alcohol was found to be the main product with 60.2% yield based on furfural within 5 h (Entry 3, Table 1). ... when g-C3N4 nanosheets was used as the support for loading Pt nanoparticles, significant improvement of activity with complete conversion and high selectivity of furfuryl alcohol of >99% could be achieved in 5 h (Entry 7, Table 1)."
+   ],
+   "fact_ids": [
+    "f1",
+    "f2",
+    "f3"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_dcb22ad046bf500d340b9711",
+   "relevance": 0,
+   "reason": "doc0: different paper, HMF hydrogenation over Pt1/Nb2O5; doc2: different paper, furfural from sugars in DES; doc3: other paper's review of dehydration catalysts",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "863c495f74a17e3ab2ca0bfb494e871fb81d2f795a65fc3dbbe7f6d4cb87c780"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_df78a5c435d9c7f4639ab865",
+   "relevance": 0,
+   "reason": "doc1: same paper, unrelated HMF/Nb2O5 topic; doc3: MXene furfural, different catalyst/system; doc4: Co@CoO HMF hydrogenolysis, different system",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "d8ba6b903089f29b0ba97cbdf9cc613499b276f54f24e57f1ce35b72f36c037b"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_e402dda34b2b2f53ca0a67c7",
+   "relevance": 1,
+   "reason": "Same 2016 Pt/g-C3N4 nanosheet study; supports nanosheet-support comparison context, though yield/selectivity numbers not in this chunk.",
+   "evidence_quotes": [
+    "The carbon nitride materials with the nanosheet architecture were superior carriers for small-size noble metal loading. For the Pt supported on TECN sample, the Pt could be well dispersed on the surface of nanosheets"
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "2f0ec864d3ee7bf4ccbb7b553b7e2679b3dd3f60458dac468e54ea13560f7ffa"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_e6d04bb5ae3e98dbe7647695",
+   "relevance": 2,
+   "reason": "Same paper, same 5%Pt@TECN/water system; 5 h water result supporting nanosheet yield/selectivity.",
+   "evidence_quotes": [
+    "the reaction in water showed the best activity for furfural hydrogenation, giving >99% yield toward furfuryl alcohol after 5 h (Entry 1, Table 3)."
+   ],
+   "fact_ids": [
+    "f2"
+   ],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false,
+   "raw_response_id": "82bc638f45523b9824393dbb024d8be6c56c7c29f63d426fec2ca31be6ba1243"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_e7b48ec9a6e70f4ca4026799",
+   "relevance": 0,
+   "reason": "doc0,2: same paper, HMF hydrogenation over Pt1/Nb2O5, unrelated to Pt/g-C3N4 furfural; doc1: hydrothermal furfural/CNC process, different system; doc4: review of hemicellulose hydrolysis, different reaction",
+   "evidence_quotes": [],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "judgment_encoding": "explicit_document_grade",
+   "answerability_conflict": false,
+   "raw_response_id": "2f0ec864d3ee7bf4ccbb7b553b7e2679b3dd3f60458dac468e54ea13560f7ffa"
+  },
+  {
+   "query_id": "q_0039",
+   "doc_id": "chk_f4974affabe1c28fb9399f89",
+   "relevance": 1,
+   "reason": "L1d: same paper's background/mechanistic explanation of why nanosheet support improves activity, without the asked yield/selectivity numbers.",
+   "evidence_quotes": [
+    "The nanosheets had a large surface area and small sheet thickness of ~3 nm, which made small-size Pt nanoparticles well distributed on the surface of the carbon nitride."
+   ],
+   "fact_ids": [],
+   "method": "exhaustive-chemistry-qrels-v2-compact",
+   "human_review": false,
+   "review_status": "AI_first_pass",
+   "answerability_conflict": false
+  }
+ ]
+}

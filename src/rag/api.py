@@ -42,6 +42,12 @@ app = FastAPI(title="Li_Jia Research RAG", version="0.4.0", lifespan=lifespan)
 web_dir = Path(__file__).with_name("web")
 app.mount("/assets", StaticFiles(directory=web_dir), name="assets")
 
+# Explicit local benchmark mode only; no route or test dependency in ordinary deployments.
+if __import__("os").environ.get("RAG_BENCHMARK_TOKEN"):
+    import runpy
+    benchmark_bridge = Path(__file__).resolve().parents[2] / "tests" / "biomass_furan" / "bridge.py"
+    runpy.run_path(str(benchmark_bridge))["install"](app, pipeline)
+
 
 def error_payload(request: Request, code: str, stage: str, message: str,
                   exception_type: str, *, retryable: bool = False) -> dict:

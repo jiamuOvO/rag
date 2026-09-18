@@ -1,0 +1,14 @@
+{
+ "backup": "judgments_backup_20260918T143109",
+ "existing_before": 2961,
+ "gapfill_validated": 1118,
+ "added": 35,
+ "queries_extended": 6,
+ "unchanged": 1083,
+ "revisions_recheck_superseded": 0,
+ "conflicts_kept": 0,
+ "keep_existing_flag": false,
+ "qrels_rows": 2996,
+ "scope_pairs": 1312,
+ "rule": "pair-level; re-check items take the gapfill grade (task files mark them 【原判定】 and instruct 维持/升级/降级); all other disagreements keep the existing record; unjudged pairs are never written and never default to 0"
+}
