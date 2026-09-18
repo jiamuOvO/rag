@@ -1,26 +1,35 @@
 # Li_Jia 科研论文 RAG（v0.4.1 可调节、可诊断问答）
 
-## 当前状态（2026-09-15）
+## 当前状态（2026-09-18）
 
-- 自动化回归为 **61 passed, 6 warnings**；真实 SQLite 为 schema v16，包含 18 篇论文、258 页、929 chunks 和 929 embeddings。
-- 端到端问题集位于 `tests/eval_cases.yaml`，共 8 题；检索金标位于 `tests/retrieval_gold.yaml`，共 5 题，支持 HitRate@K、Recall@K、Precision@K、MRR 和 nDCG@K。
-- 2026-09-15 真实 HTTP 复现确认：本地检索约 0.4 秒、Embedding 31 ms；跨论文比较请求在远端 Chat 返回响应头前等待 180 秒并触发 `CHAT_TIMEOUT`。TCP 连接仅 31 ms，响应体尚未开始读取，问题位于远端 Chat 服务的排队/生成层。
-- Chat 调用现记录 `connect_ms`、`headers_ms`、`body_ms` 和失败时的 `duration_ms`。详细证据与处理建议见 [`docs/Chat生成超时诊断-2026-09-15.md`](./docs/Chat生成超时诊断-2026-09-15.md)。
-- PDF 文本层出现少量错误 glyph 映射时，会对断裂英文单词执行保守的 block 局部 OCR；公式字符不自动猜测。详见 [`docs/PDF文本层污染与局部OCR-2026-09-15.md`](./docs/PDF文本层污染与局部OCR-2026-09-15.md)。
+- 当前 `main` 分支数据库迁移为 **schema v17**。真实 SQLite 已通过 `integrity_check`，外键违规为 0；共有 **51 篇论文、929 页、5,444 chunks 和 5,444 embeddings**，其中 36 篇 `ready`、15 篇 `partial_failed`。
+- 当前自动化验证为 **71 项生产测试 + 6 项 benchmark 测试全部通过**。Windows 上 `tests/biomass_furan/runtime/pytest` 与部分 `__pycache__` 目录存在 ACL 拒绝访问，直接递归执行裸 `pytest` 可能在收集阶段失败；项目代码的 63 个 Python 文件已完成只读语法校验。
+- 生产 RAG 已实现多作用域授权、BM25 + Dense + RRF、可选 reranker、引用边界校验、PDF/OCR 质量路由、持久化入库任务、诊断日志和抽取式降级。服务当前需通过 `scripts/start.ps1` 注入 Chat/Embedding 密钥后启动；缺少 Embedding 凭据时会显式降级为纯 BM25。
+- 旧的 8 题端到端集和 5 题检索金标仍保留作轻量回归。新的长期检索 benchmark 位于 [`tests/biomass_furan`](./tests/biomass_furan/)，包含 **60 题、48 个来源、5,066 个语料块**；维护与复现入口见 [`EVALUATION_GUIDE.md`](./tests/biomass_furan/EVALUATION_GUIDE.md)。
+- benchmark frozen scope 为 1,312 个 `(query_id, doc_id)` 组合，其中 1,194 个已有等级、118 个为 `exhausted_unresolved`，覆盖率 **91.0%**。当前指标必须标记为 `PROVISIONAL_UNJUDGED_AS_ZERO`，不是完整人工金标或正式验收结果。
+- 当前派生结果中，HTTP Hybrid 的 nDCG@10 / Recall@20 / MRR@10 为 **0.5288 / 0.6954 / 0.7016**，149/180 次 formal 请求成功；isolated BM25 为 **0.4893 / 0.6664 / 0.6736**，180/180 成功。两次历史运行的 corpus hash 不同，不能把差值全部归因于 Dense 检索。
+- benchmark 是冻结快照，不等于当前生产库：生产库比快照多 3 篇论文，且共有 378 个数据库 chunk 未进入 `corpus.jsonl`。新增或修复语料后必须建立新 frozen scope，不能覆盖现有历史运行。
 
 ### 已知问题
 
-1. Chat 接口仍为非流式请求。远端模型变慢时，页面只能等待完整响应；当前本地配置的总上限为 180 秒，超时后降级为抽取式证据。
-2. 现有计时已定位到等待响应头，但无法区分远端内部的队列时间和模型推理时间；需要远端服务日志才能继续拆分。
-3. `Pipeline` 选择 8 条 evidence，而 Chat provider 当前最多发送前 5 条，诊断窗口和真实提示词窗口尚未统一。
-4. 后台入库队列和生成并发控制以单进程部署为边界，不支持多个 Uvicorn worker 竞争任务。
+1. 15 篇论文仍为 `partial_failed`；污染文本层、复杂表格、公式和跨页阅读顺序仍可能造成证据缺失或失真。
+2. benchmark 仍有 118 个无有效标签的 frozen-scope 组合，且标签为 Agent review、未经领域专家完整人工验收；当前分数只能作为候选基线。
+3. HTTP Hybrid 与 isolated BM25 历史运行并非同一 corpus hash，现有对比存在语料混杂，不能据此严谨判断 Dense 的净增益。
+4. Chat 接口仍为非流式请求。远端模型变慢时页面只能等待完整响应；当前实现能记录连接、响应头、响应体和总耗时并显式降级，但无法拆分远端队列与推理耗时。
+5. `Pipeline` 的 standard/deep 档选择 8 条 evidence，Chat provider 仍只发送前 5 条，诊断窗口、引用白名单和模型真实上下文尚未统一。
+6. `chat.timeout_seconds` 已被读取但实际调用使用 connect/read/total 三个独立超时字段；该旧字段容易造成配置误解。
+7. `Store.connect()` 仍按操作创建和关闭 SQLite 连接；当前规模可用，但重复连接已成为本机检索延迟的重要来源。
+8. 后台入库队列和生成并发控制以单进程部署为边界，不支持多个 Uvicorn worker 竞争任务。
+9. 项目版本仍有漂移：`pyproject.toml` 为 0.4.1，`src/rag/__init__.py` 仍为 0.2.0；CI、LICENSE、日志/备份轮转也尚未补齐。
 
 ### 后续优化方向
 
-1. **先限制失败成本：** 用 8 题真实 HTTP 集验证 90 秒总超时和明确的输出 token 上限，比较成功率、降级率、P50/P95 与答案完整性。
-2. **再改善等待体验：** 若远端支持 OpenAI-compatible streaming，再实现 FastAPI SSE 转发和浏览器增量显示；流式输出不替代总超时。
-3. **扩充质量评测：** 将现有 5 题检索金标扩展到约 20 题，并增加逐结论引用支持度和拒答正确性人工标注。
-4. **按规模升级：** 只有单机 SQLite worker 成为真实瓶颈后，才引入多 worker 租约或外部任务队列。
+1. **先建立可比基线：** 从当前生产库冻结新的 corpus snapshot，在完全相同的语料、查询、scope 和 qrels 上分别运行 BM25 与 Hybrid；旧 run 保持只读。
+2. **再完善评测可信度：** 对 118 个 exhausted 组合保持未判定，不自动补 0；需要正式交付时增加领域专家抽检，并单独评估引用支持度、拒答与答案生成质量。
+3. **修复语料质量：** 优先处理 15 篇 `partial_failed` 文档。任何 OCR、解析器或切块变化都应先做非覆盖备份，并对受影响 doc_id 重判或建立迁移映射。
+4. **统一运行契约：** 统一模型实际可见 evidence 数、诊断字段与引用白名单；清理死配置和版本漂移，并提供不会递归进入 runtime 目录的标准测试入口。
+5. **改善服务稳定性：** 在同一批问题上持续报告成功率、降级率和 P50/P95；上游支持时再实现 SSE 流式转发，并保留总超时和抽取式降级。
+6. **按测量结果优化：** 优先降低 SQLite 重复连接开销；只有单机队列或向量矩阵成为实测瓶颈后，再引入连接复用、多 worker 租约、外部队列或向量数据库。
 
 ## v0.4 本轮优化（2026-09-11）
 
@@ -100,9 +109,17 @@
 
 生产接入方需要提供可信身份适配器，将 JWT、可信反向代理身份或内部服务凭据转换为 `Principal`，并明确 tenant、subject 与 roles。可以向 `app.state.principal_resolver` 注入上层 JWT 解析器，或配置 `RAG_TRUSTED_IDENTITY_SECRET` 使用带 60 秒时效 HMAC 签名的 `X-RAG-Tenant/Subject/Roles/Identity-Timestamp/Identity-Signature` 可信代理协议。部署必须提供 `RAG_SESSION_SECRET`、管理员密码哈希以及模型密钥环境变量；不得开启开发身份头。当前实现不绑定特定厂商 JWT/JWKS，以免把本模块变成另一个用户中心。
 
-> 最后更新时间：2026-09-15 10:00（Asia/Shanghai）
+> 最后更新时间：2026-09-18（Asia/Shanghai）
 
 ## 更新记录
+
+### 2026-09-18：v0.4.1 生产语料扩充与检索 benchmark 首版
+
+- 生产库扩充到 51 篇论文、929 页、5,444 chunks / embeddings，数据库迁移到 schema v17；页级可检索标记会排除覆盖异常页面的 chunk。
+- 新增 60 题 biomass/furan 检索 benchmark、5,066 块冻结语料、分级 qrels、HTTP/isolated 原始运行、评分器、标注与复核留痕，以及长期维护手册。
+- frozen scope 当前覆盖 1,194/1,312；118 个 exhausted 组合保持未判定。所有当前指标均为 provisional，不将未判定自动伪造为 0 标签。
+- 当前 HTTP run 完成率为 149/180；质量指标只读取完整成功的 repeat 1，可靠性单独按全部 180 次请求报告。
+- 明确记录 benchmark 快照与生产库的差异，以及两个历史 run corpus hash 不同导致的可比性限制。
 
 ### 2026-09-11 10:00：v0.3 多作用域真实浏览器验收
 
@@ -162,7 +179,7 @@
 - 修复 SQLite 每个连接都启用外键约束，确保 `ingest --force` 能事务化替换论文、chunks 和旧向量。
 - 自动化回归测试更新为 11 项，覆盖 Dense 检索、RRF、YAML/环境变量密钥分离、明文密钥拒绝及强制重建。
 
-当前状态：代码已支持独立 Chat 和 Embedding provider。真实库现有 929 个 chunks 和 929 条同维度 embedding；切换 embedding provider、model 或维度时仍必须先执行非覆盖备份，再用 `python -m rag.cli embed` 原子重建，不需重新解析 PDF 或 OCR。本次最终浏览器验收使用抽取式 provider，不将其当作外部生成模型的正常路径验证。
+该段记录的是 2026-09-09 的首版状态：当时真实库有 929 个 chunks 和 929 条同维度 embedding。当前规模以 README 顶部的 2026-09-18 状态为准。切换 embedding provider、model 或维度时仍必须先执行非覆盖备份，再用 `python -m rag.cli embed` 原子重建，不需重新解析 PDF 或 OCR。
 
 这是一个面向生物质与呋喃论文的小规模、可诊断 RAG 第一版。它不复制旧项目中依赖缺失、异常吞没和不稳定 ID 的实现，而是提供一条可独立运行的基线：
 
@@ -373,7 +390,7 @@ python -m rag.cli query "Summarize the reported furfural yields."
 
 业务代码只依赖 `ChatProvider` 接口。服务不可用、返回格式错误或配置不完整时，响应标记降级并返回检索证据，不伪造正常生成结果。
 
-填好 URL 和 Key 后必须重建一次索引，给现有 929 个 chunks 生成向量：
+填好 URL 和 Key 后必须重建一次索引，为当前 5,444 个 chunks 生成同一模型与维度的向量：
 
 ```powershell
 python -m rag.cli doctor
@@ -439,7 +456,7 @@ python .\scripts\smoke_ocr.py
 python -m rag.cli evaluate
 ```
 
-测试现为 61 项，覆盖稳定 ID、切块来源、BM25/Dense/RRF/reranker、三档深度、三种回答策略、无证据拒答、引用绑定/修复/编号/高亮、可信可视化、PDF 污染与局部 OCR 路由、公式保护、页面与查询快照、持久任务/中断、管理员认证、作用域隔离、上传校验、重试血缘、一致性备份、正常生成、主要降级路径和 Chat 分阶段计时。OCR smoke 只处理历史扫描件前两页。`evaluate` 运行 8 个真实语料案例并返回每例 request_id；模型未配置时的全绿结果只表示检索检查通过，不表示生成模型验收通过。
+当前显式验证为 71 项生产测试和 6 项 benchmark 测试，覆盖稳定 ID、切块来源、BM25/Dense/RRF/reranker、三档深度、三种回答策略、无证据拒答、引用绑定/修复/编号/高亮、可信可视化、PDF 污染与局部 OCR 路由、公式保护、页面与查询快照、持久任务/中断、管理员认证、作用域隔离、上传校验、重试血缘、一致性备份、正常生成、主要降级路径、Chat 分阶段计时，以及 benchmark 鉴权、冻结 ID 与提示词边界。受 Windows ACL 影响，递归执行裸 `pytest` 可能误入 `tests/biomass_furan/runtime/pytest`；在清理 ACL 或补充测试配置前应显式运行根目录 `test_*.py` 和 `tests/biomass_furan/test_benchmark.py`。OCR smoke 只处理历史扫描件前两页。`evaluate` 的模型未配置全绿只表示检索检查通过，不表示生成模型验收通过。
 
 真实数据验收使用 `ingest` 返回的 `counts` 核对 discovered、succeeded、failed、pages、ocr_pages、chunks 和 attachments。
 
@@ -480,7 +497,7 @@ python -m rag.cli evaluate
 
 ### 仍然缺失
 
-- 经人工标注扩充的检索阈值与 citation precision/recall 评测；现有 8 题端到端集和 5 题检索金标仍只适合回归与故障归因。
+- 领域专家完整验收的检索金标、逐声明 citation precision/recall、拒答质量和答案生成评测；当前 60 题 benchmark 是覆盖率 91.0% 的 Agent-review 候选基线，旧的 8 题端到端集和 5 题检索金标仅用于轻量回归。
 - 表格单元格、图片/图注、公式、bbox、对象级证据和 SI 内容解析。
 - 更完整的催化剂/溶剂词典、单位换算、跨 evidence 实验条件组装和人工复核队列；当前 Schema 原型保守且可关闭。
 - 逐声明自然语言蕴含验证；当前只验证模型引用 ID 必须来自本次上下文。
@@ -500,4 +517,4 @@ python -m rag.cli evaluate
 
 本轮没有新增第三方 Python 依赖，继续使用锁定版本。FastAPI/Pydantic 为 MIT，Uvicorn 为 BSD-3-Clause，NumPy 为 BSD，PyYAML 为 MIT，RapidOCR 代码为 Apache-2.0、ONNX Runtime 为 MIT。PyMuPDF 采用 AGPL/商业双许可证，若网站以不符合 AGPL 的方式对外分发或提供修改版，应在部署前由交付方确认商业许可证或完整 AGPL 合规方案。
 
-当前规模下 SQLite、BM25 和向量矩阵均驻留单机即可。常规文本 PDF 主要消耗 CPU 与磁盘；历史扫描件 OCR 是峰值 CPU/内存与耗时来源。929 个 float32 向量的磁盘量取决于模型维度，远小于引入独立向量数据库的固定成本。安装阶段需要 PyPI 或预先准备的 wheel 缓存；运行时 PyMuPDF、RapidOCR、BM25 和 `lexical_coverage` 可离线工作，OpenAI-compatible chat/embedding 需要配置的模型服务可达。模型不可达时系统显式降级，不会伪装正常回答。
+当前 5,444 个 1024 维 float32 向量仍适合由 SQLite 和单机向量矩阵承载，尚没有引入独立向量数据库的必要。常规文本 PDF 主要消耗 CPU 与磁盘；扫描件 OCR 是峰值 CPU/内存与耗时来源。安装阶段需要 PyPI 或预先准备的 wheel 缓存；运行时 PyMuPDF、RapidOCR、BM25 和 `lexical_coverage` 可离线工作，OpenAI-compatible chat/embedding 需要配置的模型服务可达。模型不可达时系统显式降级，不会伪装正常回答。
